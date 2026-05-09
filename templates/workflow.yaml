@@ -1,0 +1,47 @@
+id: example-workflow
+name: Example VWork Workflow
+version: 0.1.0
+
+business:
+  goal: "Describe the business outcome."
+  monetization:
+    type: affiliate
+    cta: "Open product page"
+
+source:
+  adapter: source.example
+  params:
+    query: ""
+    limit: 20
+
+normalize:
+  object_type: Product
+  identifiers:
+    primary: model_number
+    secondary: jan
+
+generate:
+  - id: description
+    adapter: ai.text
+    output: product_description
+  - id: ogp
+    adapter: ai.image
+    output: ogp_image
+  - id: short_video
+    adapter: video.hyperframes
+    output: short_video
+
+publish:
+  - adapter: website.page
+    output: product_page
+  - adapter: website.sitemap
+    output: sitemap_entry
+  - adapter: sns.post
+    output: sns_post
+
+track:
+  - adapter: analytics.simple
+    events:
+      - page_view
+      - outbound_click
+

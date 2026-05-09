@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VWork Product",
+  "type": "object",
+  "required": ["name"],
+  "properties": {
+    "id": {"type": ["string", "integer"]},
+    "name": {"type": "string"},
+    "maker": {"type": "string"},
+    "model_number": {"type": "string"},
+    "jan": {"type": "string"},
+    "description": {"type": "string"},
+    "source_url": {"type": "string", "format": "uri"},
+    "image_url": {"type": "string"},
+    "price": {"type": ["integer", "number", "null"]},
+    "affiliate": {
+      "type": "object",
+      "properties": {
+        "provider": {"type": "string"},
+        "url": {"type": "string"}
+      }
+    },
+    "metadata": {"type": "object"},
+    "artifacts": {
+      "type": "object",
+      "properties": {
+        "page_url": {"type": "string"},
+        "ogp_image": {"type": "string"},
+        "video_url": {"type": "string"},
+        "sns_url": {"type": "string"}
+      }
+    }
+  }
+}
+

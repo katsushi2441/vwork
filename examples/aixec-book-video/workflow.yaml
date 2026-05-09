@@ -1,0 +1,79 @@
+id: aixec-book-video
+name: AIxEC Book Import to Short Video Distribution
+version: 0.1.0
+
+business:
+  goal: "Import book data, publish product pages, generate short videos, and distribute through search and SNS."
+  monetization:
+    type: affiliate
+    provider: rakuten_books
+    cta: "楽天ブックスで購入"
+
+source:
+  adapter: rakuten.books
+  params:
+    categories:
+      - label: "機械工学"
+        genre_id: "001012010003"
+        group: mechanical_engineering
+      - label: "電気工事・工具"
+        genre_id: "001012010001"
+        keyword: "電気工事士"
+        group: electrical_tools
+      - label: "DIY・リフォーム"
+        genre_id: "001010004003"
+        keyword: "DIY"
+        group: diy_renovation
+      - label: "木工・工具"
+        genre_id: "001010004001"
+        keyword: "木工"
+        group: woodworking_tools
+      - label: "建設・施工"
+        genre_id: "001012010002"
+        keyword: "施工"
+        group: construction
+    sort: sales
+    hits: 20
+
+normalize:
+  object_type: Product
+  identifiers:
+    primary: isbn
+    map_to:
+      jan: isbn
+      model_number: isbn
+      internal_sku: "rakuten_books:{isbn}"
+
+generate:
+  - id: local_book_image
+    adapter: media.download
+    output: "/images/products/books/{isbn}.jpg"
+  - id: genre_index
+    adapter: data.json_index
+    output: "/data/book_genres.json"
+  - id: short_video
+    adapter: video.hyperframes
+    output: "/video/{product_id}.mp4"
+
+publish:
+  - adapter: aixec.product_api
+    output: product
+  - adapter: ftp.public_assets
+    output:
+      - image
+      - video
+      - genre_json
+  - adapter: aixtube.register
+    output: aixtube_video_page
+  - adapter: sitemap.video
+    output: google_video_search
+  - adapter: sns.post
+    output: x_distribution
+
+track:
+  - adapter: simpletrack
+    events:
+      - product_page_view
+      - video_page_view
+      - affiliate_click
+

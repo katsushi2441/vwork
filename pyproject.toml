@@ -1,0 +1,15 @@
+[project]
+name = "vwork"
+version = "0.1.0"
+description = "Reusable workflow primitives for AI-driven business operations"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "packages"}
+
+[tool.setuptools.packages.find]
+where = ["packages"]
+
