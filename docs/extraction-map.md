@@ -51,3 +51,19 @@ Project-specific:
 - Bankr/x402 account addresses
 - exact product names and hosted paths
 
+## Microsoft 365 / Copilot Camp
+
+Reusable:
+
+- Excel Online connector pattern
+- Power Automate write-back pattern for Excel tables
+- custom connector setup flow
+- Microsoft 365 Copilot / Copilot Studio agent integration notes
+- OAuth/Microsoft Graph authentication reference
+
+Project-specific:
+
+- customer Microsoft 365 tenant
+- workbook URLs and table names
+- credentials and connection ownership
+- business data stored in Excel

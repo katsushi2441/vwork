@@ -52,6 +52,7 @@ Customer PC
 ```text
 vwork/
 ├── BUSINESS.md              # Business model and monetization patterns
+├── START_HERE.md            # First steps after cloning VWork
 ├── DESIGN.md                # Product and content design principles
 ├── SYSTEM.md                # Reference architecture and runtime shape
 ├── CLIENT_SETUP.md          # Customer PC setup and onboarding
@@ -59,7 +60,11 @@ vwork/
 ├── SUPPORT.md               # Support / coaching boundary
 ├── WORKFLOW.md              # How to turn a business issue into code
 ├── docs/
-│   └── extraction-map.md     # What was extracted from existing projects
+│   ├── extraction-map.md     # What was extracted from existing projects
+│   ├── microsoft365/         # Microsoft 365 / Excel vibe coding guides
+│   └── reference/            # Third-party reference material with licenses
+├── use-cases/                # Business-owner use case starting points
+├── prompts/                  # Copyable Codex request templates
 ├── client-template/
 │   ├── BUSINESS.md           # Customer workspace template
 │   ├── DESIGN.md
@@ -99,6 +104,7 @@ Examples:
 - create affiliate links and SEO metadata
 - register generated content into feeds, sitemaps, and social channels
 - create small internal scripts, dashboards, data tools, or site pages
+- connect AI work to existing Excel workbooks before replacing them
 - leave the customer with an editable Codex-ready workspace
 
 ## Standard Handover
