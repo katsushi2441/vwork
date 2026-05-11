@@ -1,93 +1,100 @@
 # DESIGN
 
-## Design Goal
+このファイルは、VWorkの設計思想をまとめたものです。
 
-VWork should make AI-driven operations understandable to both humans and AI
-agents. A workflow should be readable as documentation and executable as a plan.
+## 設計の目的
 
-In customer delivery, VWork should also make the customer feel:
+VWorkは、経営者がCodexと会話しながら、業務改善を進められるようにするための作業基盤です。
 
-- "I know where the work is."
-- "I can ask Codex for the next change."
-- "The code is not a mysterious outsourced artifact."
-- "My business issue has been converted into an editable workflow."
+そのため、デザインの中心は派手な画面ではなく、次の3つです。
 
-## Principles
+- 経営者が理解できる
+- Codexが作業できる
+- 改善履歴が残る
 
-1. Natural-language first
-   - The business request should be preserved.
-   - The workflow should explain how that request becomes actions.
+## 大切にする体験
 
-2. Data before content
-   - AI generation should start from structured data.
-   - Content should preserve source URLs, identifiers, and provenance.
+お客様に感じてもらいたいこと:
 
-3. Human-readable outputs
-   - Generated artifacts should have titles, summaries, metadata, and status.
-   - Operators should be able to inspect what was created and why.
+- どこに何があるか分かる
+- 自分の業務課題が文書化されている
+- Codexに次の改善を頼める
+- 作ったコードがブラックボックスではない
+- 小さく動かしながら改善できる
 
-4. Publishable by default
-   - SEO title, description, OGP image, canonical URL, and tracking hooks should be part of the workflow.
+## ドキュメント設計
 
-5. Replaceable adapters
-   - Marketplace, CMS, video engine, SNS, and analytics integrations should be adapters, not hardcoded into the core.
+VWorkでは、ドキュメントは単なる説明書ではありません。
 
-## Content Design Pattern
+Codexに仕事を依頼するためのコンテキストです。
 
-For each generated content item:
+- `BUSINESS.md`: なぜ作るか
+- `DESIGN.md`: どんな出力なら使いやすいか
+- `SYSTEM.md`: どのデータ、ファイル、コマンドで動くか
+- `TASKS.md`: 今やること、次にやること、やらないこと
+- `WORKLOG.md`: 実行結果、エラー、次回依頼文
 
-- title
-- one-line value proposition
-- source data
-- generated explanation
-- primary CTA
-- secondary links
-- OGP image
+## 出力設計
+
+最初の成果物は、大きなアプリでなくてよいです。
+
+用途に応じて、小さく確認できる形式を選びます。
+
+- Markdownレポート
+- CSV
+- HTMLページ
+- 簡易Webツール
+- SNS投稿案
+- PDF化しやすい説明ページ
+- HyperFramesで動画化しやすい1テーマ1ページ
+
+## UI設計
+
+業務ツールでは、見た目の派手さよりも、繰り返し使いやすいことを優先します。
+
+- 見るべき結果を上に出す
+- 入力欄と実行ボタンを明確にする
+- 説明しすぎず、迷わない画面にする
+- スマホで崩れないようにする
+- 文字が重ならないようにする
+- 結果を保存、コピー、共有しやすくする
+
+## コンテンツ設計
+
+AIで文章やページを生成する場合、次を揃えます。
+
+- タイトル
+- 要約
+- 元データ
+- 生成した説明
+- CTA
+- OGP画像
 - canonical URL
-- tracking tags
+- simpletrack.php / Google Analytics
+- SNS展開やサイトマップ登録の導線
 
-## Video Design Pattern
+## 動画化を意識した設計
 
-Short-form product videos should include:
+VWorkの説明ページや業務紹介ページは、PDF化やHyperFrames動画化もしやすい構成にします。
 
-- product/book title
-- visual asset
-- short explanation
-- price or CTA when available
-- purchase or detail link
-- metadata for video search
-- path for SNS distribution
+- 1ページ1テーマ
+- 見出しを明確にする
+- 長すぎる段落を避ける
+- 重要な文を先に出す
+- OGP画像を設定する
+- 専門用語を必要以上に増やさない
 
-## Documentation Design
+## 引き渡し設計
 
-Each workflow should include:
+VWorkの引き渡しでは、「完成しました」ではなく「ここから改善できます」と伝えることが大切です。
 
-- `BUSINESS`: why this workflow exists
-- `DESIGN`: what experience/content it creates
-- `SYSTEM`: how it runs
-- `workflow.yaml`: executable shape
+引き渡し時に残すもの:
 
-Each customer workspace should include:
+- 今動くコマンド
+- 入力データ
+- 出力場所
+- 既知の制限
+- 次にCodexへ頼むこと
+- 注意点
 
-- `BUSINESS.md`: the customer's issue, goal, and expected business effect
-- `DESIGN.md`: how the output should feel and how people use it
-- `SYSTEM.md`: local setup, commands, files, data flow, and external services
-- `TASKS.md`: current backlog and next improvements
-- `WORKLOG.md`: what was done during setup and handover
-
-## Handover Design
-
-The handover should avoid the feeling of a finished but untouchable system.
-
-Good handover language:
-
-- "This is the first working base."
-- "This file explains how the workflow is built."
-- "These are the next tasks you can ask Codex to do."
-- "This command runs the current version."
-
-Avoid:
-
-- pretending the workspace is a complete enterprise system
-- hiding the implementation details
-- making the customer dependent on one developer for every change
+これにより、お客様が外部依存せずに改善を続けやすくなります。

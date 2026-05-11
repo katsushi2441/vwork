@@ -1,29 +1,85 @@
 # DESIGN
 
-## User Experience
+このファイルは、作ったものを経営者や現場が実際に使える形にするための共通テンプレートです。
 
-How should the user interact with the tool or output?
+VWorkでは、見た目の派手さよりも、判断しやすさ、再実行しやすさ、引き継ぎやすさを重視します。
 
-## Output Format
+## デザインの基本原則
 
-Examples:
+- 最初の画面や出力で、何を見るべきか分かる
+- 操作は少なくする
+- 専門用語を避ける
+- 結果をコピー、保存、共有しやすくする
+- PDF化、HTML化、動画化しやすい構成にする
+- スマホで見る必要がある場合は、文字やボタンが崩れないようにする
+- エラー時に、何を直せばよいか分かるようにする
 
-- CSV
-- HTML page
-- dashboard
-- report
-- API response
-- SNS post
-- video
+## 最初の出力形式
 
-## Tone And Content
+最初から大きなWebアプリにしなくても構いません。
 
-If the workflow generates text or pages, define the tone here.
+用途に合わせて、最小の出力を選びます。
 
-## Acceptance Criteria
+- `output/report.md`: 経営者が読むレポート
+- `output/result.csv`: Excelで確認できる結果
+- `output/index.html`: ブラウザで見られる確認ページ
+- `output/posts.md`: SNS投稿案
+- `output/errors.csv`: 修正が必要なデータ一覧
 
-- [ ] The output is easy to understand
-- [ ] The user can run the workflow
-- [ ] The result solves the first issue
-- [ ] The next improvement is clear
+## 良い出力の条件
 
+- タイトルがある
+- いつ、どのデータから作ったか分かる
+- 重要な結論が先にある
+- 表やリストで確認できる
+- 次に確認すべきことが書かれている
+- 実行コマンドがWORKLOG.mdに残っている
+
+## Codexへの依頼例
+
+```text
+DESIGN.mdを読んで、経営者が見やすい出力形式を提案してください。
+最初は大きなWebアプリではなく、Markdown、CSV、HTMLのどれがよいか理由つきで整理してください。
+```
+
+```text
+この出力HTMLを、PDF化とHyperFrames動画化に向いた構成にしてください。
+見出しを明確にし、1セクション1テーマで読みやすくしてください。
+```
+
+## UIを作る場合の共通方針
+
+- 業務ツールは静かで分かりやすい画面にする
+- 入力欄、実行ボタン、結果表示を明確に分ける
+- 重要な数字や結果を上に出す
+- 装飾よりも読みやすさを優先する
+- 画面内の説明文を増やしすぎない
+- モバイル表示でも崩れないようにする
+
+## 今回の案件メモ
+
+ここから下は、Codexとの会話で具体化します。
+
+### 利用者
+
+-
+
+### 最初に見るべき結果
+
+-
+
+### 出力形式
+
+-
+
+### 画面が必要か
+
+-
+
+### PDF化・動画化の必要性
+
+-
+
+### 使ってはいけない表現や注意点
+
+-

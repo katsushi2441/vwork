@@ -1,47 +1,75 @@
 # SUPPORT
 
-## Support Position
+このファイルは、VWork導入後の伴走支援の考え方をまとめたものです。
 
-VWork support is companion support for AI-driven improvement.
+## 支援の位置づけ
 
-It is not hidden outsourced maintenance.
+VWorkの支援は、隠れた保守代行ではありません。
 
-## Support Can Include
+お客様がCodexと一緒に業務改善を続けられるようにする伴走支援です。
 
-- reviewing Codex-generated changes
-- fixing errors in the workspace
-- refining `BUSINESS.md`, `DESIGN.md`, and `SYSTEM.md`
-- adding adapters or templates
-- helping the customer define the next task
-- improving prompts and workflow instructions
-- turning prototypes into more stable internal tools
+## 支援できること
 
-## Support Should Avoid
+- 経営課題の整理
+- Codexへの依頼文作成
+- `BUSINESS.md`、`DESIGN.md`、`SYSTEM.md` の改善
+- `TASKS.md` の優先順位整理
+- `WORKLOG.md` の整理
+- Codexが作ったコードのレビュー
+- エラー修正
+- 小さな機能追加
+- Excel/CSV処理
+- Webページ生成
+- 簡易Webツール作成
+- API連携
+- SEO/OGP/SNS対応
 
-- becoming the only person who can modify the system
-- accepting unlimited completion responsibility without scope
-- hiding implementation details from the customer
-- treating the VWork workspace as a black box
+## 支援で避けること
 
-## Monthly Support Model
+- すべてをこちらだけが分かる状態にする
+- コードや実行方法を隠す
+- 無制限の完成責任を負う
+- お客様がCodexを使わない前提に戻す
+- 作業履歴を残さずに修正する
 
-Possible monthly support menu:
+## 時間清算の考え方
 
-- issue review
-- code review
-- one small implementation
-- workflow design session
-- deployment check
-- analytics review
+VWork基本導入後の追加作業は、時間清算で対応します。
 
-## Escalation
+対象:
 
-When a prototype becomes mission-critical, separate work may be needed:
+- 追加実装
+- レビュー
+- エラー対応
+- プロンプト改善
+- 業務整理
+- Web公開
+- API連携
+- データ処理
 
-- production architecture
-- authentication and permissions
-- backup and restore design
-- monitoring
-- security review
-- server operation
+## 本番運用が必要になった場合
 
+小さなツールが重要な業務に育った場合は、別途本番設計が必要です。
+
+検討すること:
+
+- 認証
+- 権限
+- バックアップ
+- 監視
+- ログ
+- セキュリティ
+- サーバ運用
+- データ保護
+
+## 支援のゴール
+
+お客様が次の状態になることを目指します。
+
+```text
+自分の課題をCodexに話せる。
+作業フォルダを見れば現在地が分かる。
+実行方法がWORKLOG.mdに残っている。
+次の改善がTASKS.mdにある。
+必要な時だけ支援を依頼できる。
+```

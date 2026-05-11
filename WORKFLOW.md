@@ -1,88 +1,101 @@
 # WORKFLOW
 
-## From Business Issue To Code
+このファイルは、経営課題をCodexで実行できる作業へ変える流れをまとめたものです。
 
-VWork turns a customer's business issue into a Codex-ready workflow.
-
-```text
-Issue
-  -> Goal
-  -> Current work
-  -> Data
-  -> Smallest useful output
-  -> First implementation
-  -> Next tasks
-```
-
-## Step 1: Capture The Issue
-
-Write the issue in plain language.
-
-Example:
-
-> We manually copy product data from spreadsheets into the website. It takes too
-> much time and mistakes happen.
-
-## Step 2: Define The Smallest Useful Output
-
-Avoid starting with a large final system.
-
-Good:
-
-> A script that reads one CSV and creates clean product records.
-
-Too large:
-
-> A complete EC management system.
-
-## Step 3: Create The Local Workspace
-
-Use the client template:
+## 基本フロー
 
 ```text
-BUSINESS.md
-DESIGN.md
-SYSTEM.md
-TASKS.md
-WORKLOG.md
-src/
-data/
-output/
+経営者との会話
+  -> 課題の整理
+  -> 最初の成果物を決める
+  -> data/ に入力を置く
+  -> Codexに小さく依頼する
+  -> output/ で結果を見る
+  -> WORKLOG.md に記録する
+  -> TASKS.md に次の改善を残す
 ```
 
-## Step 4: Build With Codex
+## Step 1: 会話から始める
 
-Ask Codex for one concrete change at a time:
+最初に文書を書き切る必要はありません。
 
-- read the existing files
-- create the smallest working script
-- run it with sample data
-- write the result to `output/`
-- document how to run it
+経営者が困っていること、使っているExcel、手作業の流れ、最初に見たい結果をCodexに話します。
 
-## Step 5: Handover
+Codexとの会話から、`BUSINESS.md`、`DESIGN.md`、`SYSTEM.md`、`TASKS.md` の下書きを作ります。
 
-The handover should include:
+## Step 2: 最小の成果物を決める
 
-- current command
-- current output
-- known limitations
-- next three tasks
-- examples of good Codex requests
+最初から完成システムを作りません。
 
-## Example Codex Requests
+良い例:
 
 ```text
-このCSVを読んで、商品名、型番、価格だけを抽出するPythonスクリプトを作って。
-出力は output/products_clean.csv にして。
+売上CSVから月別売上と上位商品を出すMarkdownレポートを作る。
 ```
+
+大きすぎる例:
 
 ```text
-SYSTEM.mdを読んで、この処理を毎朝実行する方法を提案して。
-まだ実装しなくていいので、必要なファイルと手順を整理して。
+会社全体の売上管理システムを作る。
 ```
+
+## Step 3: データを置く
+
+最初は、`data/` にサンプルデータやコピーしたデータを置きます。
+
+例:
+
+- `data/sales.csv`
+- `data/products.xlsx`
+- `data/inquiries.csv`
+- `data/urls.txt`
+
+機密情報や個人情報がある場合は、サンプル化または匿名化します。
+
+## Step 4: Codexに小さく依頼する
+
+一度に大きく頼まず、1つの具体的な成果物を依頼します。
 
 ```text
-このエラーを直して。既存の処理は壊さず、修正後にサンプルCSVで動作確認して。
+BUSINESS.md、DESIGN.md、SYSTEM.md、TASKS.mdを読んでください。
+data/sales.csvを読み、月別売上と上位商品をoutput/sales_summary.mdに出すPythonスクリプトを作ってください。
+実行方法と結果をWORKLOG.mdに追記してください。
 ```
 
+## Step 5: 実行して確認する
+
+作ったコードは必ず実行します。
+
+確認するもの:
+
+- コマンドが動くか
+- `output/` に結果が出るか
+- 経営者が結果を理解できるか
+- エラーがあれば何が原因か
+
+## Step 6: 記録する
+
+`WORKLOG.md` に残すもの:
+
+- 実行コマンド
+- 変更したファイル
+- 出力結果
+- エラー
+- 次に頼むこと
+
+## Step 7: 次の改善へ進む
+
+`TASKS.md` に、次の改善を小さく書きます。
+
+```text
+Next Improvements
+- 前月比を追加する
+- 上位商品だけでなく利益率も出す
+- HTMLで見られるようにする
+```
+
+## この流れの意味
+
+VWorkは、経営者の頭の中にある課題を、AIが実行できる形へ変えていく作業です。
+
+そのために、会話、文書、コード、実行結果、次の改善を1つのフォルダに残します。

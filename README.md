@@ -1,150 +1,128 @@
 # VWork
 
-VWork is a customer-installable vibe coding workbench for AI-driven business
-operations.
+VWorkは、経営者のPCに導入して使うバイブコーディング作業基盤です。
 
-The business goal is not to deliver a finished custom system as a black box.
-The goal is to install a practical foundation on the customer's own PC, create
-the first useful code for their real problem, and hand over a workspace they can
-continue improving with Codex.
+完成したシステムを外注して受け取るのではなく、経営者自身の課題をCodexと一緒に整理し、小さなコード、資料、Webページ、業務ツールへ変えていくためのフレームワークです。
 
-It extracts the generic patterns that emerged while operating `exdirect.net`,
-AIxEC, HyperFrames video generation, and URL2AI:
+## なぜ作るのか
 
-- turn natural-language business requests into executable workflows
-- connect data ingestion, AI generation, publishing, SEO, SNS, and affiliate flows
-- keep business, design, and system decisions documented in portable files
-- make project-specific code replaceable through adapters
+この1年間、`exdirect.net` のEC運営、AIxECの商品データ登録、AIxTubeの動画配信、HyperFramesによるショート動画生成、URL2AIのコンテンツ生成などを進める中で、バイブコーディングで繰り返し使える作法が見えてきました。
 
-This folder is intentionally not a copy of AIxEC or URL2AI. It is the reusable
-delivery layer for customer workspaces, and can later become an OSS repository
-or package.
+VWorkは、それらのうち特定プロジェクトに依存しない部分を、経営者向けの作業基盤としてまとめたものです。
 
-## Service Position
+## VWorkの位置づけ
 
 ```text
-Not:  outsourced development of a complete system
-But:  installation of an AI-driven workbench + first implementation + handover
+従来の受託開発:
+  完成システムを外部に作ってもらう
+
+VWork:
+  お客様PCにAI駆動の作業環境を作り、
+  最初の課題解決コードを一緒に作り、
+  その後もCodexと改善を続けられる状態にする
 ```
 
-VWork is useful when a customer says:
+VWorkは、完成システム一式ではありません。
 
-- "We have business problems, but we do not know how to turn them into code."
-- "We want to use Codex, but we need a safe working structure."
-- "We want the ability to keep improving after delivery."
-- "We need an example implementation that proves the workflow."
+経営者をAI駆動経営へ進めるための「最初の作業場」です。
 
-## Delivery Image
+## 提供価値
 
-```text
-Customer PC
-  -> install Codex / editor / Git / runtime tools
-  -> create VWork workspace
-  -> write BUSINESS.md / DESIGN.md / SYSTEM.md
-  -> select one real business problem
-  -> build first code or automation
-  -> document how to continue with vibe coding
-  -> hand over workspace
-```
+- VS Code + Codexを前提にした作業環境を作る
+- 経営課題をCodexが扱える単位に分解する
+- Excel、CSV、URL、既存Webサイト、PDFなどを入口にする
+- `BUSINESS.md`、`DESIGN.md`、`SYSTEM.md` を会話から育てる
+- 最初の実用ツールを小さく作る
+- `TASKS.md` と `WORKLOG.md` に次の改善と履歴を残す
+- セミナーで終わらず、企業内にバイブコーディングを取り込むところまで伴走する
 
-## Structure
+## 重要な考え方
+
+最初から完璧な仕様書を書く必要はありません。
+
+経営者がCodexと会話し、困っていること、使っているExcel、手作業の流れ、最初に見たい結果を話すことで、必要なドキュメントが育っていきます。
+
+ただし、テンプレート側には最初から最低限の作法を入れます。
+
+- 最初から大きなシステムを作らない
+- 1日以内に確認できる成果物から始める
+- `data/` から読み、`output/` に出す
+- 秘密情報をリポジトリに入れない
+- Codexへの依頼を小さく切る
+- 実行コマンドと結果を `WORKLOG.md` に残す
+- 次の改善を `TASKS.md` に残す
+
+## 構成
 
 ```text
 vwork/
-├── BUSINESS.md              # Business model and monetization patterns
-├── START_HERE.md            # First steps after cloning VWork
-├── DESIGN.md                # Product and content design principles
-├── SYSTEM.md                # Reference architecture and runtime shape
-├── CLIENT_SETUP.md          # Customer PC setup and onboarding
-├── DELIVERABLES.md          # What is delivered and what is not
-├── SUPPORT.md               # Support / coaching boundary
-├── WORKFLOW.md              # How to turn a business issue into code
-├── docs/
-│   ├── extraction-map.md     # What was extracted from existing projects
-│   ├── microsoft365/         # Microsoft 365 / Excel vibe coding guides
-│   └── reference/            # Third-party reference material with licenses
-├── use-cases/                # Business-owner use case starting points
-├── prompts/                  # Copyable Codex request templates
-├── client-template/
-│   ├── BUSINESS.md           # Customer workspace template
-│   ├── DESIGN.md
-│   ├── SYSTEM.md
-│   ├── TASKS.md
-│   └── WORKLOG.md
-├── templates/
-│   ├── workflow.yaml         # Portable workflow definition template
-│   ├── product.schema.json   # Generic product/content data shape
-│   └── agents.md            # Agent operating instructions template
-├── examples/
-│   └── aixec-book-video/
-│       └── workflow.yaml     # Example: book import to AIxTube video flow
-└── packages/
-    └── vwork_core/
-        ├── __init__.py
-        ├── models.py
-        └── workflow.py
+├── README.md                # VWork全体の概要
+├── START_HERE.md            # clone後に最初に読む導入手順
+├── BUSINESS.md              # VWorkの事業設計
+├── DESIGN.md                # VWorkの設計思想
+├── SYSTEM.md                # VWorkの技術方針
+├── CLIENT_SETUP.md          # お客様PCへの導入手順
+├── DELIVERABLES.md          # 納品範囲
+├── SUPPORT.md               # 伴走支援の考え方
+├── WORKFLOW.md              # 課題をコード化する作業フロー
+├── client-template/         # お客様案件にコピーするノウハウ入りテンプレート
+├── use-cases/               # 経営者向けの活用例
+├── prompts/                 # Codexへ依頼する文章例
+├── docs/                    # 補足資料、Microsoft 365、参照資料
+├── templates/               # workflowやschemaの雛形
+├── examples/                # 実例
+└── packages/                # 将来の共通コード
 ```
 
-## Core Concept
+## 直下ドキュメントとclient-templateの違い
+
+`vwork` 直下のドキュメントは、VWorkという商品・フレームワーク自体の説明書です。
+
+`client-template/` は、お客様ごとの作業フォルダにコピーして使う実務テンプレートです。
 
 ```text
-Business Issue
-  -> Workflow
-  -> First Working Code
-  -> Documentation
-  -> Handover
-  -> Improve
+vwork直下:
+  VWorkをどう提供するか、何を大切にするか
+
+client-template:
+  お客様案件で実際に使うBUSINESS/DESIGN/SYSTEM/TASKS/WORKLOG
 ```
 
-Examples:
+## 最初に作りやすいもの
 
-- import product data from a marketplace API
-- generate product descriptions, SNS posts, videos, or reports
-- publish pages to a public site
-- create affiliate links and SEO metadata
-- register generated content into feeds, sitemaps, and social channels
-- create small internal scripts, dashboards, data tools, or site pages
-- connect AI work to existing Excel workbooks before replacing them
-- leave the customer with an editable Codex-ready workspace
+- 売上Excelの集計レポート
+- 商品データ整理
+- SNS告知文生成
+- 問い合わせ分類
+- 簡易Webツール
+- URL一覧からの要約
+- ECサイトやアフィリエイト用コンテンツ生成
 
-## Standard Handover
+## 提供モデル
 
-The minimum useful handover is:
+基本導入:
 
-- VWork installed on the customer's PC
-- a project folder with `BUSINESS.md`, `DESIGN.md`, `SYSTEM.md`
-- a clear `TASKS.md`
-- one real working example
-- commands needed to run it
-- notes explaining how to ask Codex for the next improvement
+- お客様PCへのVWorkインストール
+- VS Code + Codex前提の作業環境作り
+- 導入コンサルティング
+- 最初の課題整理
 
-## Boundary
+追加支援:
 
-VWork delivery is not a promise that the final system is complete. It is a
-foundation for continuing AI-driven development.
+- 時間清算でのバイブコーディング作業支援
+- コードレビュー
+- プロンプト改善
+- 業務ツール追加
+- Webページ、Excel処理、API連携、SNS/SEO対応
 
-The difference matters:
+## 目指す状態
 
-- outsourced development delivers a finished artifact
-- VWork delivery gives the customer a working base for continuous improvement
-- support is coaching, review, and additional implementation help, not hidden maintenance
+お客様が、次のように言える状態を目指します。
 
-## What Should Stay Project-Specific
-
-- API credentials
-- database paths
-- FTP hosts
-- domain names
-- affiliate IDs
-- exact product categories
-- private prompts or business data
-
-## What Can Become Generic
-
-- workflow definition format
-- product/content schema
-- adapter interfaces
-- generation pipeline shape
-- publishing checklist
-- SEO/OGP/SNS tracking conventions
-- documentation templates
+```text
+自社の課題をCodexに相談できる。
+作業フォルダのどこに何があるか分かる。
+最初のツールを動かせる。
+次に何を改善すればよいか分かる。
+改善の履歴が残っている。
+```

@@ -1,78 +1,181 @@
 # CLIENT_SETUP
 
-This document describes the standard setup flow for installing VWork on a
-customer PC.
+VWorkは、VS Codeを前提にお客様PCへ導入します。
 
-## Goal
+目的は、経営者または担当者がVS Code上でVWorkのドキュメント、データ、コードを開き、Codex拡張機能を使ってバイブコーディングを始められる状態にすることです。
 
-Create a local workspace where the customer can continue vibe coding with Codex.
+## 導入完了の状態
 
-The setup is complete when:
+- VS Codeがインストールされている
+- VS Codeの拡張機能からCodexを使える
+- GitでVWorkをcloneできる
+- お客様用ワークスペースをVS Codeで開ける
+- Codexとの会話から`BUSINESS.md`、`DESIGN.md`、`SYSTEM.md`、`TASKS.md`の下書きを作れる
+- 最初の小さな実装をローカルで実行できる
+- 次の改善依頼が`TASKS.md`に書かれている
 
-- the customer can open the project folder
-- Codex can read the project documents
-- the first implementation runs locally
-- the next tasks are written clearly
+## 1. VS Codeをインストールする
 
-## Standard Setup Steps
+お客様PCにVisual Studio Codeをインストールします。
 
-1. Confirm the customer goal
+確認すること:
 
-   - What business issue should be solved first?
-   - What data or files are available?
-   - Who will use the output?
-   - What is the smallest useful result?
+- VS Codeを起動できる
+- 日本語入力が問題なく使える
+- ターミナルを開ける
+- 作業フォルダを開ける
 
-2. Install tools
+## 2. VS Code拡張機能でCodexを使えるようにする
 
-   - editor
-   - Codex access
-   - Git
-   - Python 3
-   - Node.js when needed
-   - workflow-specific tools
+VS Codeの拡張機能画面を開き、Codex用の拡張機能をインストールします。
 
-3. Create workspace
+基本手順:
 
-   ```bash
-   mkdir customer-vwork
-   cp -R vwork/client-template/* customer-vwork/
-   ```
+1. VS Codeを開く
+2. 左側のExtensionsを開く
+3. `Codex` または `OpenAI Codex` で検索する
+4. Codex拡張機能をインストールする
+5. 必要に応じてOpenAIアカウントでログインする
+6. VS Code内でCodexのチャットまたは作業パネルを開けることを確認する
 
-4. Fill the documents
+確認すること:
 
-   - `BUSINESS.md`
-   - `DESIGN.md`
-   - `SYSTEM.md`
-   - `TASKS.md`
-   - `WORKLOG.md`
+- Codexに日本語で依頼できる
+- 開いているフォルダ内のファイルを読める
+- ファイル編集の提案または実行ができる
+- ターミナルコマンドの実行方針を相談できる
 
-5. Build the first implementation
+## 3. Gitをインストールする
 
-   Examples:
+VWorkはGitHubからcloneして使います。
 
-   - CSV cleanup script
-   - product import script
-   - small dashboard
-   - report generator
-   - web page
-   - API connector
-   - content generation workflow
+確認コマンド:
 
-6. Handover
+```bash
+git --version
+```
 
-   - show how to run the current code
-   - show where data is stored
-   - show how to ask Codex for the next change
-   - write remaining tasks in `TASKS.md`
+GitHubからVWorkを取得します。
 
-## Completion Checklist
+```bash
+git clone https://github.com/katsushi2441/vwork.git
+cd vwork
+code .
+```
 
-- [ ] Customer can open the folder
-- [ ] Customer understands the business goal document
-- [ ] First code runs
-- [ ] Setup commands are documented
-- [ ] Known limitations are documented
-- [ ] Next tasks are written
-- [ ] Credentials are outside the repository
+`code .` でVS Codeが開けない場合は、VS CodeのコマンドパレットからShell Commandを有効にするか、VS Codeの「フォルダーを開く」から`vwork`を選択します。
 
+## 4. 実行環境を準備する
+
+最初の業務改善で使う範囲に合わせて、必要な実行環境を入れます。
+
+標準:
+
+- Python 3
+- Git
+- VS Code
+- Codex拡張機能
+
+必要に応じて:
+
+- Node.js
+- ExcelまたはMicrosoft 365
+- ブラウザ
+- API利用に必要な認証情報
+
+確認コマンド:
+
+```bash
+python3 --version
+node --version
+```
+
+Node.jsは必要になったときだけで構いません。
+
+## 5. お客様用ワークスペースを作る
+
+VWork本体を直接編集するのではなく、お客様ごとの作業フォルダを作ります。
+
+```bash
+cp -R client-template ../customer-work
+cd ../customer-work
+mkdir -p data output src docs
+code .
+```
+
+`customer-work` は会社名、案件名、業務名などに置き換えます。
+
+## 6. Codexと会話しながら最初の文書を作る
+
+最初から完璧な`BUSINESS.md`、`DESIGN.md`、`SYSTEM.md`を書く必要はありません。
+
+経営者はまず、困っていること、やりたいこと、今使っているExcelや業務手順をCodexに話します。その会話をもとに、Codexが必要な文書の下書きを作ります。
+
+会話で伝えること:
+
+- 今困っている業務
+- その業務にかかっている時間
+- 使っているExcel、CSV、Webサイト、資料
+- 最初に見たい結果
+- 誰が使うのか
+- どこまで自動化したいのか
+
+Codexに作ってもらう文書:
+
+- `BUSINESS.md`: 課題、目的、期待する効果
+- `DESIGN.md`: 使う人、見やすい出力、画面や文章の方針
+- `SYSTEM.md`: 使うデータ、ファイル、ツール、実行方法
+- `TASKS.md`: 次にやる小さな作業
+- `WORKLOG.md`: 会話から整理された作業履歴と確認結果
+
+最初は粗い下書きで十分です。作業を進めながら、Codexとの会話で少しずつ更新していきます。
+
+## 7. Codexへ最初の依頼をする
+
+VS Codeで顧客ワークスペースを開いた状態で、Codexに依頼します。
+
+最初の依頼例:
+
+```text
+まず、私の業務課題を聞き取りしてください。
+その内容からBUSINESS.md、DESIGN.md、SYSTEM.md、TASKS.mdの下書きを作ってください。
+
+課題:
+売上Excelを毎月手作業で確認していて、上位商品や前月比を見るのに時間がかかっています。
+
+使えるデータ:
+data/sales.csv
+
+最初に作りたいもの:
+月別売上と上位商品を集計するレポート
+
+下書き作成後に、data/sales.csvを使ってPythonスクリプトを作ってください。
+data/sales.csvを使って、月別売上と上位商品を集計するPythonスクリプトを作ってください。
+出力はoutput/sales_summary.csvとoutput/sales_summary.mdにしてください。
+実行方法をWORKLOG.mdに追記し、動作確認まで行ってください。
+```
+
+## 8. 動作確認と引き渡し
+
+最初の実装ができたら、VS Codeのターミナルで実行します。
+
+確認すること:
+
+- コマンドが動く
+- `output/` に成果物ができる
+- お客様が出力内容を理解できる
+- `WORKLOG.md`に実行方法が残っている
+- `TASKS.md`に次の改善が書かれている
+
+## 導入チェックリスト
+
+- [ ] VS Codeをインストールした
+- [ ] Codex拡張機能をインストールした
+- [ ] Codexにログインできた
+- [ ] GitでVWorkをcloneできた
+- [ ] 顧客ワークスペースをVS Codeで開けた
+- [ ] Codexとの会話から`BUSINESS.md`、`DESIGN.md`、`SYSTEM.md`の下書きを作った
+- [ ] サンプルデータを`data/`に置いた
+- [ ] Codexへ最初の依頼を出した
+- [ ] 最初のコードを実行できた
+- [ ] 秘密情報がリポジトリに入っていない

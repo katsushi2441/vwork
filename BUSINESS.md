@@ -1,143 +1,99 @@
 # BUSINESS
 
-## Purpose
+このファイルは、VWorkというサービスの事業設計をまとめたものです。
 
-VWork is for turning AI-assisted work into repeatable business operations on the
-customer's own PC.
+## 事業コンセプト
 
-The service is positioned as vibe coding foundation delivery:
+VWorkは、経営者をAI駆動経営へ導くためのバイブコーディングフレームワークです。
 
-- install the working environment
-- organize the customer's business issue
-- create the first useful code
-- hand over the workspace so the customer can continue improving it
+システム開発を丸ごと受託するのではなく、お客様のPCにAI駆動の作業環境を作り、経営者がCodexと会話しながら業務改善ツールを作れる状態を提供します。
 
-This is intentionally different from conventional outsourced system
-development.
+## 背景
 
-The original use case is EC operation:
+`exdirect.net` のEC運営から始まり、AIxEC、HyperFrames、AIxTube、URL2AIなどを作っていく中で、次のような作業が繰り返し発生しました。
 
-- product data registration
-- affiliate monetization
-- AI-generated product pages
-- short video generation
-- SNS and search distribution
-- analytics feedback
+- 商品データを取り込む
+- AIで説明文や記事を生成する
+- SEO、OGP、SNS、RSS、サイトマップを整える
+- 生成したコンテンツを公開する
+- アフィリエイトリンクや計測を組み込む
+- 動画生成や動画検索への展開を行う
+- 作業結果を見て次の改善へつなげる
 
-The reusable business idea is broader:
+これらは特定サイトだけの話ではなく、多くの企業の業務改善にも応用できます。
 
-> A business operator gives a goal in natural language, and AI executes the
-> operational workflow across data, content, publishing, and distribution.
+## VWorkで売るもの
 
-For customer delivery:
+VWorkで売るものは「完成システム」ではありません。
 
-> A business operator receives a local AI-driven workbench, sees one real issue
-> solved in code, and learns how to continue the same process.
+売るものは、次の3つです。
 
-## Business Objects
+- 経営者がAIと仕事を進めるための作業環境
+- これまでの実践から抽出した共通ノウハウ
+- 最初の課題解決コードを作る伴走
 
-VWork workflows should be able to operate on these generic objects:
+## 基本導入
 
-- `Product`: item, book, tool, software, service, event
-- `Content`: article, summary, SNS post, short video, report
-- `Channel`: website, RSS, sitemap, SNS, marketplace, video search
-- `Monetization`: affiliate link, paid API, lead generation, direct sale
-- `Measurement`: access log, click log, conversion event, search index status
+基本導入料金は、VWorkのインストールと導入コンサルティング費用です。
 
-## Monetization Patterns
+含まれるもの:
 
-0. Vibe coding foundation delivery
-   - Install VWork and required tools on the customer's PC.
-   - Create customer-specific `BUSINESS.md`, `DESIGN.md`, and `SYSTEM.md`.
-   - Build the first issue-solving code as a working example.
-   - Provide handover and optional monthly support.
+- お客様PCへのVWork導入
+- VS Code + Codex前提の作業環境作り
+- 顧客ワークスペース作成
+- 最初の課題ヒアリング
+- Codexとの会話から初期ドキュメントを作る支援
 
-1. Affiliate commerce
-   - Create product pages.
-   - Add affiliate links through a redirect layer.
-   - Generate videos and SNS posts that point back to product pages.
+## 追加支援
 
-2. AI media distribution
-   - Convert source data into articles, videos, reports, or feed entries.
-   - Register pages into search and social channels.
-   - Use analytics to find topics worth expanding.
+導入後は、時間清算でバイブコーディング作業を支援します。
 
-3. Tool/API packaging
-   - Wrap useful internal capabilities as MCP tools, HTTP APIs, or paid endpoints.
-   - Keep business-specific credentials outside the framework.
+対象例:
 
-## Operating Loop
+- Excel/CSV処理
+- 商品データ整理
+- SNS投稿文生成
+- Webページ生成
+- 簡易Webツール作成
+- API連携
+- 既存コード改善
+- Codexへの依頼文改善
+- WORKLOG/TASKS整理
 
-```text
-Hear customer issue
-  -> Convert to workflow
-  -> Build first implementation with Codex
-  -> Run it on customer PC
-  -> Document what changed
-  -> Hand over the workspace
-  -> Continue improvements with support
-```
+## 経営者向けの価値
 
-For EC/media projects, the loop becomes:
+経営者が大切にしているのは、技術そのものではなく、経営課題が前に進むことです。
 
-```text
-Discover demand
-  -> Import data
-  -> Enrich with AI
-  -> Publish content
-  -> Distribute through search/SNS/video
-  -> Track results
-  -> Improve categories, prompts, and pages
-```
+VWorkでは、次の価値を提供します。
 
-## Product Packages
+- 開発会社へ依頼する前に小さく試せる
+- 自社内にAI活用の作業習慣が残る
+- Excelや既存業務を入口にできる
+- 経営者の言葉からコードやレポートへつなげられる
+- 変更や改善をCodexに依頼しやすくなる
 
-### Intro Seminar
+## ビジネス上の境界
 
-Purpose:
-Explain the difference between using AI and making AI execute work.
+VWorkは、すべての完成責任を負う受託開発ではありません。
 
-Output:
-Understanding, not a code deliverable.
+必要に応じて、本番運用、認証、監視、セキュリティ、データ移行などは別途設計・見積もりします。
 
-### Foundation Setup
+## OSSまたはパッケージ化の候補
 
-Purpose:
-Install the local VWork environment and prepare the customer workspace.
+将来的に汎用化できるもの:
 
-Output:
-Codex-ready project folder with initial documentation.
+- ドキュメントテンプレート
+- workflow.yaml
+- product/content schema
+- Codex依頼文テンプレート
+- SEO/OGP/SNSチェックリスト
+- Excel/CSV処理の基本形
 
-### First Issue Implementation
+プロジェクト固有として分けるもの:
 
-Purpose:
-Take one real customer issue and implement a small working solution.
-
-Output:
-Runnable code, scripts, page, API, automation, or data workflow.
-
-### Companion Support
-
-Purpose:
-Help the customer continue improving with vibe coding.
-
-Output:
-Review, fixes, next-task planning, prompt/workflow refinement.
-
-## OSS Boundary
-
-Good OSS candidates:
-
-- workflow DSL
-- adapter interfaces
-- local CLI skeleton
-- content generation templates
-- SEO/OGP checklist
-- publication pipeline examples
-
-Keep private:
-
-- affiliate IDs
-- customer data
-- server credentials
-- exact monetization playbooks when sensitive
+- 顧客データ
+- APIキー
+- アフィリエイトID
+- FTP情報
+- 本番DBパス
+- 個別の収益化ノウハウ

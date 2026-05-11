@@ -1,34 +1,114 @@
 # BUSINESS
 
-## Customer
+このファイルは、経営課題をCodexが扱える作業単位へ変換するための共通テンプレートです。
+
+最初から完璧に埋める必要はありません。経営者がCodexと会話しながら、ここに書かれた観点を少しずつ具体化します。
+
+## VWorkの基本姿勢
+
+VWorkでは、いきなり完成システムを作りません。
+
+まず、経営に効く小さな成果物を1つ作ります。動かして確認し、次の改善を積み上げます。
+
+```text
+経営課題
+  -> 小さな成果物
+  -> 実行できるコード
+  -> 結果確認
+  -> 次の改善
+```
+
+## 最初に守る原則
+
+- 最初の成果物は1日以内に確認できる大きさにする
+- Excel、CSV、URL、既存サイト、PDFなど、今あるデータを入口にする
+- まず `data/` から読み、`output/` に結果を出す
+- 売上、時間削減、ミス削減、問い合わせ削減など、経営効果を言葉にする
+- 完成システムではなく、改善を続ける作業基盤として考える
+- Codexには大きな依頼を一度に投げず、小さく依頼する
+
+## Codexとの最初の会話で聞くこと
+
+```text
+まず、私の業務課題を聞き取りしてください。
+その内容からBUSINESS.md、DESIGN.md、SYSTEM.md、TASKS.mdの下書きを作ってください。
+最初の成果物は1日以内に確認できる大きさにしてください。
+```
+
+Codexには、次のことを話します。
+
+- 今いちばん時間がかかっている業務
+- 毎月、毎週、毎日繰り返している作業
+- ミスが起きやすい作業
+- ExcelやCSVで管理しているもの
+- WebサイトやSNSに転記しているもの
+- 最初に見たい結果
+- その結果が経営判断にどう役立つか
+
+## 経営課題の書き方
+
+悪い例:
+
+```text
+売上管理システムを作りたい。
+```
+
+良い例:
+
+```text
+毎月の売上CSVを見て、商品別売上ランキングと前月比を手作業で確認している。
+作業に2時間かかり、確認漏れもある。
+まずはCSVから月別売上、上位商品、前月比を出すレポートを作りたい。
+```
+
+## 最小の成果物
+
+最初の成果物は、経営者が「使える」と判断できる小さなものにします。
+
+例:
+
+- 売上CSVから月次レポートを作る
+- 商品一覧からSEOタイトルと説明文を作る
+- 問い合わせCSVをカテゴリと緊急度で分類する
+- URL一覧からページ要約を作る
+- SNS投稿文をMarkdownで出力する
+- 簡単なHTML確認ページを作る
+
+## 経営効果の見方
+
+最初の実装では、次のどれに効くかを必ず書きます。
+
+- 作業時間を減らす
+- ミスを減らす
+- 売上や問い合わせを増やす
+- 判断を速くする
+- 属人化を減らす
+- ノウハウを会社に残す
+
+## 今回の案件メモ
+
+ここから下は、Codexとの会話で具体化します。
+
+### 課題
 
 -
 
-## Business Issue
+### 最初の成果物
 
-Describe the real issue in plain language.
+-
 
-## Goal
+### 使えるデータ
 
-What should become easier, faster, cheaper, or more accurate?
+-
 
-## Smallest Useful Output
+### 使う人
 
-What is the first result that would prove this workflow is useful?
+-
 
-## Users
+### 期待する経営効果
 
-Who will use the output?
+-
 
-## Business Value
+### 今回はやらないこと
 
-- time saved:
-- mistakes reduced:
-- sales or leads improved:
-- knowledge retained:
-
-## Scope Boundary
-
-This workspace is a vibe coding foundation and first implementation.
-It is not a fully completed outsourced system unless separately scoped.
-
+-

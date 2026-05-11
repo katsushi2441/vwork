@@ -1,56 +1,67 @@
 # DELIVERABLES
 
-## What VWork Delivery Provides
+このファイルは、VWorkで何を提供し、何を提供しないかをまとめたものです。
 
-VWork delivery provides a foundation for AI-driven improvement, not a fully
-finished outsourced system.
+## VWorkで提供するもの
 
-Standard deliverables:
+VWorkの納品物は、完成した大規模システムではありません。
 
-- local VWork workspace
-- business/design/system documents
-- first working implementation
-- run instructions
-- task backlog
-- handover explanation
-- optional adapter or workflow templates
+お客様がCodexと一緒に業務改善を始められる作業基盤です。
 
-## What The First Implementation Can Be
+標準で提供するもの:
 
-The first implementation should be small enough to understand and useful enough
-to prove the workflow.
+- お客様PCへのVWorkインストール
+- VS Code + Codex前提の作業環境
+- 顧客ワークスペース
+- ノウハウ入り `client-template`
+- Codexとの会話から作る初期ドキュメント
+- 最初の小さな実用ツール
+- 実行コマンド
+- `WORKLOG.md`
+- `TASKS.md`
+- 次にCodexへ頼む依頼文
 
-Examples:
+## 最初の実装例
 
-- import data from an API
-- clean and transform CSV files
-- generate product descriptions
-- create a static page
-- create a simple internal dashboard
-- generate short-form video assets
-- post generated content to a CMS or SNS
-- create a report from existing data
+- Excel/CSV集計
+- 商品データ整理
+- 問い合わせ分類
+- SNS投稿文生成
+- Markdownレポート
+- HTML確認ページ
+- 簡易Webツール
+- URL一覧からの要約
 
-## What Is Not Included By Default
+## 含まれないもの
 
-- full enterprise system completion
-- indefinite bug fixing
-- production SLA
-- server operation on behalf of the customer
-- security audit
-- full data migration
-- custom development without customer handover
+標準のVWork導入には、次は含みません。
 
-These can be separate paid work if needed.
+- 完成システム一式
+- 無制限の修正
+- 本番サーバ運用
+- SLA
+- セキュリティ監査
+- 大規模データ移行
+- 全業務の自動化
+- 秘密情報の管理代行
 
-## Handover Standard
+必要な場合は、別途見積もりや時間清算で対応します。
 
-At handover, the customer should know:
+## 引き渡し時に残すもの
 
-- what problem was addressed
-- what files were created
-- what commands run the current version
-- what data is used
-- what is not finished
-- what to ask Codex next
+引き渡し時には、次を確認します。
 
+- 何の課題に取り組んだか
+- どのファイルを使うか
+- どのコマンドで動くか
+- どこに結果が出るか
+- 何がまだ未完成か
+- 次にCodexへ何を頼むか
+
+## 大切な境界
+
+VWorkは「作って終わり」ではありません。
+
+お客様が自分のPCで作業を続けられるようにすることが目的です。
+
+完成物だけでなく、改善を続けるための作業構造を納品します。
