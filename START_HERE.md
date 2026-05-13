@@ -39,17 +39,17 @@ GitHub
   -> improve it
 ```
 
-## Step 1: Create A Customer Workspace
+## Step 1: Create A Project Workspace
 
 From the folder that contains this repository:
 
 ```bash
-cp -R client-template ../customer-work
-cd ../customer-work
-mkdir -p data output src docs
+cp -R project-template ../project-sales
+cd ../project-sales
 ```
 
-Use a real customer or project name instead of `customer-work`.
+Use a real project name instead of `project-sales`.
+`data/`, `output/`, `src/`, `docs/` are already included.
 
 ## Step 2: Fill The First Documents
 
