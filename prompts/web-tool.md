@@ -3,7 +3,7 @@
 ## Create A Local Web Tool
 
 ```text
-BUSINESS.md, DESIGN.md, SYSTEM.mdを読んでください。
+BUSINESS.md, RULES.md, SERVERS.mdを読んでください。
 次の業務を助けるローカルWebツールを作ってください。
 
 業務:

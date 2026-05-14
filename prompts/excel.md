@@ -3,7 +3,7 @@
 ## Analyze Excel Or CSV
 
 ```text
-BUSINESS.mdとSYSTEM.mdを読んでください。
+BUSINESS.md、RULES.md、SERVERS.mdを読んでください。
 data/[ファイル名] を分析して、経営判断に使える要約を作ってください。
 
 出力:

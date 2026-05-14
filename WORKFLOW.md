@@ -21,7 +21,7 @@
 
 経営者が困っていること、使っているExcel、手作業の流れ、最初に見たい結果をCodexに話します。
 
-Codexとの会話から、`BUSINESS.md`、`DESIGN.md`、`SYSTEM.md`、`TASKS.md` の下書きを作ります。
+Codexとの会話から、`BUSINESS.md`、`RULES.md`、`SERVERS.md`、`TASKS.md` の下書きを作ります。
 
 ## Step 2: 最小の成果物を決める
 
@@ -57,7 +57,7 @@ Codexとの会話から、`BUSINESS.md`、`DESIGN.md`、`SYSTEM.md`、`TASKS.md`
 一度に大きく頼まず、1つの具体的な成果物を依頼します。
 
 ```text
-BUSINESS.md、DESIGN.md、SYSTEM.md、TASKS.mdを読んでください。
+BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
 data/sales.csvを読み、月別売上と上位商品をoutput/sales_summary.mdに出すPythonスクリプトを作ってください。
 実行方法と結果をWORKLOG.mdに追記してください。
 ```

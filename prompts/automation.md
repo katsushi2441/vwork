@@ -3,7 +3,7 @@
 ## Automate A Repeated Task
 
 ```text
-BUSINESS.mdとWORKFLOW.mdを読んでください。
+BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
 次の繰り返し作業を自動化する最初のスクリプトを作ってください。
 
 作業:
@@ -32,5 +32,5 @@ BUSINESS.mdとWORKFLOW.mdを読んでください。
 - 必要なコマンドを整理
 - 入力と出力を整理
 - 失敗時の確認方法を書く
-- SYSTEM.mdとTASKS.mdに追記する
+- SERVERS.mdとTASKS.mdに追記する
 ```

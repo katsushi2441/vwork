@@ -31,7 +31,7 @@ VWorkでは、いきなり完成システムを作りません。
 
 ```text
 まず、私の業務課題を聞き取りしてください。
-その内容からBUSINESS.md、DESIGN.md、SYSTEM.md、TASKS.mdの下書きを作ってください。
+その内容からBUSINESS.md、RULES.md、SERVERS.md、TASKS.mdの下書きを作ってください。
 最初の成果物は1日以内に確認できる大きさにしてください。
 ```
 

@@ -3,8 +3,8 @@
 ## Before Handover
 
 - [ ] `BUSINESS.md` explains the customer issue
-- [ ] `DESIGN.md` explains the expected output and user experience
-- [ ] `SYSTEM.md` explains files, commands, data, and credentials
+- [ ] `RULES.md` explains output quality, safety rules, and agent behavior
+- [ ] `SERVERS.md` explains files, commands, data, `.env`, and external services
 - [ ] `TASKS.md` contains the next improvements
 - [ ] `WORKLOG.md` records what was done
 - [ ] first implementation runs
@@ -26,4 +26,3 @@
 - [ ] customer can ask Codex to read the docs
 - [ ] customer can run the first implementation
 - [ ] support scope is clear
-

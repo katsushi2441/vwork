@@ -1,16 +1,24 @@
 # Prompts
 
-These prompts are written for business owners using Codex with VWork.
+このフォルダは、VWorkを使う経営者がCodexへ依頼するときの文章例です。
 
-How to use:
+使い方:
 
-1. Copy a prompt.
-2. Replace the bracketed parts.
-3. Ask Codex inside the customer workspace.
-4. Keep the first request small.
-5. Ask Codex to update `WORKLOG.md` and `TASKS.md`.
+1. 近いプロンプトを選ぶ
+2. `[ここに書く]` の部分を自社の内容に置き換える
+3. お客様用ワークスペースをVS Codeで開いた状態でCodexへ依頼する
+4. 最初の依頼は小さくする
+5. 実行後に `WORKLOG.md` と `TASKS.md` を更新してもらう
 
-Prompt files:
+顧客環境の基本Markdown:
+
+- `BUSINESS.md`
+- `RULES.md`
+- `SERVERS.md`
+- `TASKS.md`
+- `WORKLOG.md`
+
+プロンプトファイル:
 
 - `business-owner.md`
 - `excel.md`

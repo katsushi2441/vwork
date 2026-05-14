@@ -13,7 +13,7 @@ VWorkの納品物は、完成した大規模システムではありません。
 - お客様PCへのVWorkインストール
 - VS Code + Codex前提の作業環境
 - 顧客ワークスペース
-- ノウハウ入り `client-template`
+- ノウハウ入り `project-template`
 - Codexとの会話から作る初期ドキュメント
 - 最初の小さな実用ツール
 - 実行コマンド

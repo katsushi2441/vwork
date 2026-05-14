@@ -1,112 +1,115 @@
 # START_HERE
 
-VWork is a vibe coding framework for business owners.
+VWorkは、経営者のPCに導入して使うバイブコーディング作業基盤です。
 
-It is not a finished management system. It is a starting workspace for turning
-real business issues into small, useful tools with Codex.
+完成した管理システムではありません。経営者がCodexと会話しながら、実際の業務課題を小さなツール、レポート、Webページ、業務フローへ変えていくための作業場です。
 
-## First Goal
+## 最初のゴール
 
-Create one useful tool for one real business problem.
+最初のゴールは、1つの実業務に対して、1つの小さな成果物を作ることです。
 
-Good first goals:
+良い最初のテーマ:
 
-- read an Excel or CSV file and create a report
-- clean product data
-- generate product descriptions
-- make a simple internal web page
-- summarize inquiries
-- create SNS posts from business data
-- automate a repeated copy-and-paste task
+- ExcelやCSVから経営者向けレポートを作る
+- 商品データを整理する
+- 商品説明文やSNS投稿案を生成する
+- 問い合わせ内容を分類する
+- URL一覧から要約を作る
+- 簡単な社内確認ページを作る
 
-Avoid starting with:
+避けること:
 
-- a complete company-wide system
-- a full ERP replacement
-- a perfect dashboard
-- a large app before the data is understood
+- いきなり会社全体の基幹システムを作る
+- 完璧なダッシュボードから始める
+- データの中身を見ないまま大きなアプリを作る
+- 秘密情報をMarkdownやGitに書く
 
-## Setup Image
+## 基本の流れ
 
 ```text
-GitHub
-  -> clone vwork on the customer's PC
-  -> copy client-template into a customer project
-  -> write the business issue
-  -> put sample data in the project
-  -> ask Codex to build the first small tool
-  -> run it
-  -> improve it
+GitHubからVWorkをclone
+  -> project-templateをお客様用フォルダへコピー
+  -> 経営課題をCodexと会話する
+  -> data/ にサンプルデータを置く
+  -> 最初の小さな成果物を作る
+  -> output/ で結果を見る
+  -> WORKLOG.md と TASKS.md に残す
 ```
 
-## Step 1: Create A Project Workspace
+## 1. お客様用ワークスペースを作る
 
-From the folder that contains this repository:
+このリポジトリをcloneしたフォルダで実行します。
 
 ```bash
-cp -R project-template ../project-sales
-cd ../project-sales
+cp -R project-template ../customer-work
+cd ../customer-work
 ```
 
-Use a real project name instead of `project-sales`.
-`data/`, `output/`, `src/`, `docs/` are already included.
+`customer-work` は会社名、案件名、業務名などに置き換えます。
 
-## Step 2: Fill The First Documents
+## 2. 最初に使うMarkdown
 
-Start with plain language. Do not write technical details first.
+顧客環境では、Markdownを増やしすぎません。基本は次の5つです。
 
-Edit these files:
+- `BUSINESS.md`: 経営課題、目的、期待する効果
+- `RULES.md`: Codex/Claudeが守る作業ルール
+- `SERVERS.md`: PC、サーバー、API、`.env`、公開先
+- `TASKS.md`: 今やること、次にやること、まだやらないこと
+- `WORKLOG.md`: 実行結果、変更ファイル、エラー、次の依頼文
 
-- `BUSINESS.md`: business issue, goal, value
-- `DESIGN.md`: who will use the output and what must be easy
-- `SYSTEM.md`: available data, tools, files, APIs
-- `TASKS.md`: next small tasks
-- `WORKLOG.md`: what was done today
+`RULES.md` と `SERVERS.md` があることで、AIが毎回「FTPはどうするか」「HTMLには何を入れるか」「秘密情報はどこか」を聞き直さずに作業できます。
 
-## Step 3: Put Sample Data In `data/`
+ホームページ、ランディングページ、UI、営業資料など、見た目の品質が重要な案件では、追加で `DESIGN.md` を作ります。全案件で必須ではありませんが、HP制作では作った方が安全です。
 
-Examples:
+## 3. サンプルデータを置く
 
-- `data/products.csv`
-- `data/sales.xlsx`
+最初は `data/` にコピーまたは匿名化したデータを置きます。
+
+例:
+
+- `data/sales.csv`
+- `data/products.xlsx`
 - `data/inquiries.csv`
 - `data/orders.csv`
 - `data/source-url-list.txt`
 
-Use copies or sanitized files when the data is sensitive.
+本番データ、個人情報、秘密情報をそのまま置く場合は、必ず扱い方を `RULES.md` と `SERVERS.md` に書きます。
 
-## Step 4: Ask Codex For The First Tool
+## 4. Codexへ最初に頼むこと
 
-Use one of the prompts in:
-
-- `prompts/business-owner.md`
-- `prompts/excel.md`
-- `prompts/web-tool.md`
-- `prompts/automation.md`
-
-The first request should be small enough to finish and verify.
-
-Example:
+最初から文書を完璧に埋める必要はありません。経営者が困っていることを話し、Codexに聞き取りと下書きを頼みます。
 
 ```text
-BUSINESS.md, SYSTEM.md, TASKS.mdを読んでください。
-data/sales.csv から月別売上と上位商品を集計するPythonスクリプトを作ってください。
-出力は output/sales_summary.csv と output/sales_summary.md にしてください。
-実行方法もWORKLOG.mdに追記してください。
+BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
+まず私の業務課題を聞き取りしてください。
+その内容から、最初に1日以内で確認できる成果物を提案してください。
+必要ならBUSINESS.md、TASKS.md、WORKLOG.mdを更新してください。
 ```
 
-## Step 5: Run, Check, Improve
+最初の実装依頼例:
 
-After Codex creates the first tool:
+```text
+BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
+data/sales.csvから月別売上と上位商品を集計するPythonスクリプトを作ってください。
+出力はoutput/sales_summary.csvとoutput/sales_summary.mdにしてください。
+実行方法と確認結果をWORKLOG.mdに追記してください。
+```
 
-1. Run it.
-2. Check the output.
-3. Write what worked in `WORKLOG.md`.
-4. Add the next improvement to `TASKS.md`.
+## 5. 動かして、記録して、次へ進む
 
-## Rule
+Codexが作ったものは必ず実行して確認します。
 
-VWork grows from real work.
+確認すること:
 
-Do not try to design everything first. Start with one useful result, then keep
-expanding the workspace with documents, scripts, pages, and workflows.
+- コマンドが動く
+- `output/` に結果が出る
+- 経営者が結果を理解できる
+- エラーがあれば原因が分かる
+- `WORKLOG.md` に実行結果が残っている
+- `TASKS.md` に次の改善が残っている
+
+## 大切なルール
+
+VWorkは、最初から設計書を完璧に作るものではありません。
+
+実際の仕事を1つ動かし、その結果を見て、必要な文書、コード、手順を育てます。

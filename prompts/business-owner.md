@@ -3,7 +3,7 @@
 ## Turn A Business Issue Into Tasks
 
 ```text
-BUSINESS.md, DESIGN.md, SYSTEM.mdを読んでください。
+BUSINESS.md, RULES.md, SERVERS.mdを読んでください。
 次の経営課題を、vworkで進める小さな実装タスクに分解してください。
 
 課題:
@@ -19,7 +19,7 @@ BUSINESS.md, DESIGN.md, SYSTEM.mdを読んでください。
 ## Create The First Working Tool
 
 ```text
-BUSINESS.md, SYSTEM.md, TASKS.mdを読んでください。
+BUSINESS.md, RULES.md, SERVERS.md, TASKS.mdを読んでください。
 [対象データファイル] を使って、最初の実用ツールを作ってください。
 
 やりたいこと:

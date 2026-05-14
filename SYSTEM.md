@@ -23,8 +23,8 @@ VWorkは、お客様PC上のVS Code + Codexを前提に始めます。
 ```text
 customer-work/
 ├── BUSINESS.md
-├── DESIGN.md
-├── SYSTEM.md
+├── RULES.md
+├── SERVERS.md
 ├── TASKS.md
 ├── WORKLOG.md
 ├── data/
@@ -61,7 +61,7 @@ customer-work/
 Level 1: 文書と会話の作業場
 
 - 経営課題をCodexと会話して整理する
-- `BUSINESS.md`、`DESIGN.md`、`SYSTEM.md` の下書きを作る
+- `BUSINESS.md`、`RULES.md`、`SERVERS.md` の下書きを作る
 
 Level 2: ローカル実行
 
@@ -105,7 +105,7 @@ Level 4: 運用ワークフロー
 実装依頼の前には、次のように依頼します。
 
 ```text
-BUSINESS.md、DESIGN.md、SYSTEM.md、TASKS.mdを読んでください。
+BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
 既存ファイルを確認し、最小の実装から提案してください。
 秘密情報はリポジトリに入れないでください。
 ```

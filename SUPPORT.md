@@ -12,7 +12,7 @@ VWorkの支援は、隠れた保守代行ではありません。
 
 - 経営課題の整理
 - Codexへの依頼文作成
-- `BUSINESS.md`、`DESIGN.md`、`SYSTEM.md` の改善
+- `BUSINESS.md`、`RULES.md`、`SERVERS.md` の改善
 - `TASKS.md` の優先順位整理
 - `WORKLOG.md` の整理
 - Codexが作ったコードのレビュー

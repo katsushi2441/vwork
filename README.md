@@ -31,7 +31,7 @@ VWorkは、完成システム一式ではありません。
 - VS Code + Codexを前提にした作業環境を作る
 - 経営課題をCodexが扱える単位に分解する
 - Excel、CSV、URL、既存Webサイト、PDFなどを入口にする
-- `BUSINESS.md`、`DESIGN.md`、`SYSTEM.md` を会話から育てる
+- `BUSINESS.md`、`RULES.md`、`SERVERS.md` を会話から育てる
 - 最初の実用ツールを小さく作る
 - `TASKS.md` と `WORKLOG.md` に次の改善と履歴を残す
 - セミナーで終わらず、企業内にバイブコーディングを取り込むところまで伴走する
@@ -65,7 +65,7 @@ vwork/
 ├── DELIVERABLES.md          # 納品範囲
 ├── SUPPORT.md               # 伴走支援の考え方
 ├── WORKFLOW.md              # 課題をコード化する作業フロー
-├── client-template/         # お客様案件にコピーするノウハウ入りテンプレート
+├── project-template/        # お客様案件にコピーする実務テンプレート
 ├── use-cases/               # 経営者向けの活用例
 ├── prompts/                 # Codexへ依頼する文章例
 ├── docs/                    # 補足資料、Microsoft 365、参照資料
@@ -74,19 +74,27 @@ vwork/
 └── packages/                # 将来の共通コード
 ```
 
-## 直下ドキュメントとclient-templateの違い
+## 直下ドキュメントとproject-templateの違い
 
 `vwork` 直下のドキュメントは、VWorkという商品・フレームワーク自体の説明書です。
 
-`client-template/` は、お客様ごとの作業フォルダにコピーして使う実務テンプレートです。
+`project-template/` は、お客様ごとの作業フォルダにコピーして使う実務テンプレートです。
 
 ```text
 vwork直下:
   VWorkをどう提供するか、何を大切にするか
 
-client-template:
-  お客様案件で実際に使うBUSINESS/DESIGN/SYSTEM/TASKS/WORKLOG
+project-template:
+  お客様案件で実際に使うBUSINESS/RULES/SERVERS/TASKS/WORKLOG
 ```
+
+顧客環境ではMarkdownを増やしすぎません。
+
+- `BUSINESS.md`: 経営課題、目的、期待する効果
+- `RULES.md`: Codex/Claudeが守る作業ルール
+- `SERVERS.md`: PC、サーバー、API、`.env`、公開先
+- `TASKS.md`: 今やること、次にやること、まだやらないこと
+- `WORKLOG.md`: 実行結果、変更ファイル、エラー、次の依頼文
 
 ## 最初に作りやすいもの
 
