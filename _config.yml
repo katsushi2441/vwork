@@ -4,7 +4,7 @@ url: "https://katsushi2441.github.io"
 baseurl: "/vwork"
 lang: ja
 author: 株式会社エクスブリッジ
-seo_image: "https://exbridge.jp/images/vibe-coding-seminar-banner.png"
+seo_image: "https://exbridge.jp/images/vwork-banner.png"
 theme: null
 markdown: kramdown
 exclude:
