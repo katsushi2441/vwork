@@ -68,6 +68,7 @@ vwork/
 ├── project-template/        # お客様案件にコピーする実務テンプレート
 ├── use-cases/               # 経営者向けの活用例
 ├── prompts/                 # Codexへ依頼する文章例
+├── blog/                    # バイブコーディングの実践知、営業文脈、気づき
 ├── docs/                    # 補足資料、Microsoft 365、参照資料
 ├── templates/               # workflowやschemaの雛形
 ├── examples/                # 実例
@@ -105,6 +106,15 @@ project-template:
 - 簡易Webツール
 - URL一覧からの要約
 - ECサイトやアフィリエイト用コンテンツ生成
+
+## Blog
+
+`blog/` は、VWorkを育てるための知識置き場兼ブログです。
+
+ここには、バイブコーディングを企業内に導入するための考え方、実践知、営業・導入で得た気づきを記録します。
+
+- [VWork Blog](blog/README.md)
+- [VWorkリポジトリを知識置き場兼ブログにする](blog/2026-05-18-vwork-as-knowledge-blog.md)
 
 ## 提供モデル
 
