@@ -114,6 +114,7 @@ project-template:
 ここには、バイブコーディングを企業内に導入するための考え方、実践知、営業・導入で得た気づきを記録します。
 
 - [VWork Blog](blog/README.md)
+- [VWorkとは？](blog/2026-05-18-what-is-vwork.md)
 - [VWorkリポジトリを知識置き場兼ブログにする](blog/2026-05-18-vwork-as-knowledge-blog.md)
 
 ## 提供モデル
