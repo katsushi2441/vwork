@@ -1,5 +1,6 @@
 ---
 title: "VWorkとは？"
+description: "VWorkは、VS CodeとCodexを使い、経営者のPCにAI駆動の作業場を作るバイブコーディングフレームワークです。"
 date: 2026-05-18
 tags: [VWork, バイブコーディング, Codex, AI駆動経営, 業務改善]
 status: published

@@ -1,5 +1,6 @@
 ---
 title: "VWorkリポジトリを知識置き場兼ブログにする"
+description: "VWorkリポジトリをMarkdownブログとして育て、Codexが読めるナレッジベース兼公開ブログにする考え方。"
 date: 2026-05-18
 tags: [VWork, GitHub, バイブコーディング, Codex, ナレッジ移植, ブログ]
 status: published

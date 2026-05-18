@@ -1,5 +1,6 @@
 ---
 title: "バイブコーディングは、すべてのPC作業に使える"
+description: "バイブコーディングをシステム開発だけでなく、Excel、PowerPoint、資料作成、ナレッジ活用まで含むPC作業全体の仕事術として考える記事。"
 date: 2026-05-18
 tags: [VWork, バイブコーディング, ナレッジ管理, PC作業, Office, 業務改善]
 status: published
