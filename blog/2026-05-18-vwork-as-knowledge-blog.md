@@ -3,6 +3,8 @@ title: "VWorkリポジトリを知識置き場兼ブログにする"
 date: 2026-05-18
 tags: [VWork, GitHub, バイブコーディング, Codex, ナレッジ移植, ブログ]
 status: published
+layout: default
+permalink: /blog/2026-05-18-vwork-as-knowledge-blog.html
 ---
 
 # VWorkリポジトリを知識置き場兼ブログにする
