@@ -34,7 +34,7 @@
 <p>つまり、VWorkリポジトリは「商品本体」でありながら、「知識置き場」であり、「営業資料」であり、「ブログ」にもなります。</p>
 <h2>推奨する構成</h2>
 <p>VWorkリポジトリは、次のように役割を分けると扱いやすくなります。</p>
-<pre><code>vwork/
+<pre><code class="language-text">vwork/
 ├── README.md
 ├── START_HERE.md
 ├── BUSINESS.md
@@ -56,7 +56,8 @@
     ├── customer-knowledge-transfer.md
     ├── seo-ogp-checklist.md
     ├── ai-runtime-options.md
-    └── sns-posting.md</code></pre>
+    └── sns-posting.md
+</code></pre>
 <p><code>docs/</code> は体系化された説明書です。</p>
 <p><code>knowledge/</code> は再利用できるノウハウです。</p>
 <p><code>blog/</code> は思考、営業文脈、実践記録、気づきを残す場所です。</p>
@@ -83,15 +84,16 @@
 <p>VWorkリポジトリを知識置き場にするうえで、最も重要なのは、顧客の秘密情報を入れないことです。</p>
 <p>置いてよいのは、匿名化・一般化された知見です。</p>
 <p>例えば、次のように扱います。</p>
-<pre><code>入れない:
+<pre><code class="language-text">入れない:
   顧客名、実データ、認証情報、社内URL、具体的な取引先名
 
 入れる:
-  業務改善の考え方、よくある失敗、標準手順、チェックリスト、抽象化した事例</code></pre>
+  業務改善の考え方、よくある失敗、標準手順、チェックリスト、抽象化した事例
+</code></pre>
 <p>顧客案件で得た知見は、そのまま貼るのではなく、VWorkの汎用ノウハウとして再編集してから残します。</p>
 <h2>ブログ記事の型</h2>
 <p>VWork Blogの記事は、次の型で書くと後から再利用しやすくなります。</p>
-<pre><code>---
+<pre><code class="language-markdown">---
 title: &quot;Codexを入れるだけではバイブコーディングは始まらない&quot;
 date: 2026-05-18
 tags: [VWork, Codex, バイブコーディング, ナレッジ移植]
@@ -110,7 +112,8 @@ status: draft
 
 ## 顧客に残すもの
 
-## まとめ</code></pre>
+## まとめ
+</code></pre>
 <p>ブログは単なる日記ではなく、VWorkの営業、導入、改善、Codexへの知識共有に使える資産として残します。</p>
 <h2>まとめ</h2>
 <p>VWorkリポジトリを、知識置き場兼ブログにする方向は良い選択です。</p>
