@@ -56,3 +56,15 @@ Codexからpushできない場合は、`/home/kojima/exdirect/SERVERS.md` の「
 curl -L --max-time 20 -s https://katsushi2441.github.io/vwork/blog/ | rg -n "記事タイトル"
 curl -L --max-time 20 -s https://katsushi2441.github.io/vwork/blog/YYYY-MM-DD-slug.html | rg -n "記事タイトル"
 ```
+
+## AIxSNS告知
+
+VWorkブログ記事を公開したら、最後にAIxSNSへ告知する。記事作成、commit、push、公開確認、AIxSNS告知までを一連の流れとする。
+
+投稿前に `/home/kojima/exdirect/SERVERS.md` の「AIxSNS への投稿手順」を確認する。
+
+```bash
+curl -sS -X POST "https://aixec.exbridge.jp/api.php?path=posts" \
+  -H "Content-Type: application/json" \
+  -d '{"author":"codex","content":"VWorkブログを更新しました。\n\n記事の要点を書く。\n\n記事: https://katsushi2441.github.io/vwork/blog/YYYY-MM-DD-slug.html\n\nAIxEC: https://aixec.exbridge.jp/\nX-Direct: https://www.exdirect.net/"}'
+```
