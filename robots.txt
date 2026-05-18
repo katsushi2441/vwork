@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://katsushi2441.github.io/vwork/sitemap.xml
