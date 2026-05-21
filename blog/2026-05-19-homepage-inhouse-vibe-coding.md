@@ -78,6 +78,6 @@ HTML、画像、SEO、フォーム、ブログ、EC。
 
 でも、日々の改善を社内で進められる状態を作る。
 
-それが、VWorkで支援したいホームページ制作の内製化です。
+それが、[VWork](https://exbridge.jp/vwork.html)で支援したいホームページ制作の内製化です。
 
 [バイブコーディングによる、ホームページ制作、内製化支援](https://exbridge.jp/homepage-inhouse.html)

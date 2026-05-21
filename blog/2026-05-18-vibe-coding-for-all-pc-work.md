@@ -54,7 +54,7 @@ PCを使って成果物を作る人なら、誰でも対象になります。
 
 ## GitHubブログは、公開できるナレッジベースになる
 
-VWorkでは、GitHub上のMarkdownブログをナレッジ置き場として使っています。
+[VWork](https://exbridge.jp/vwork.html)では、GitHub上のMarkdownブログをナレッジ置き場として使っています。
 
 これは単なるブログではありません。
 
