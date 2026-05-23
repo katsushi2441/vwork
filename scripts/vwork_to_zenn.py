@@ -12,31 +12,31 @@ OUT_DIR = ROOT / "articles"
 
 # タグ→Zenn topics変換（スラッグ形式に）
 TAG_MAP = {
-    "VWork": "vwork",
-    "バイブコーディング": "vibe-coding",
-    "手入力ゼロ化": "automation",
-    "業務改善": "business",
-    "システム内製化": "system-dev",
-    "ナレッジ管理": "knowledge",
-    "PC作業": "productivity",
-    "Office": "productivity",
+    "VWork": "個人開発",
+    "バイブコーディング": "生成ai",
+    "手入力ゼロ化": "業務効率化",
+    "業務改善": "業務効率化",
+    "システム内製化": "個人開発",
+    "ナレッジ管理": "ポエム",
+    "PC作業": "業務効率化",
+    "Office": "業務効率化",
     "GitHub": "github",
-    "Codex": "codex",
-    "AI駆動経営": "ai",
-    "ナレッジ移植": "knowledge",
-    "ブログ": "blog",
-    "AIxEC": "ai",
-    "AIエージェント": "ai",
-    "Hermes": "hermes",
-    "OpenClaw": "automation",
+    "Codex": "openai",
+    "AI駆動経営": "生成ai",
+    "ナレッジ移植": "ポエム",
+    "ブログ": "ポエム",
+    "AIxEC": "生成ai",
+    "AIエージェント": "aiagent",
+    "Hermes": "個人開発",
+    "OpenClaw": "python",
     "Ollama": "llm",
-    "自動化": "automation",
-    "アーキテクチャ": "architecture",
+    "自動化": "個人開発",
+    "アーキテクチャ": "アーキテクチャ",
     "API": "api",
-    "UI": "design",
-    "Claude": "ai",
-    "ホームページ": "web",
-    "経営": "business",
+    "UI": "ui",
+    "Claude": "生成ai",
+    "ホームページ": "個人開発",
+    "経営": "業務効率化",
 }
 
 # タグ→絵文字
@@ -68,6 +68,22 @@ def pick_emoji(tags: list[str]) -> str:
     return DEFAULT_EMOJI
 
 
+TITLE_TOPIC_MAP = [
+    (["API", "システム", "アーキテクチャ"], ["api", "アーキテクチャ", "個人開発"]),
+    (["ホームページ", "Web", "制作"], ["個人開発", "生成ai", "業務効率化"]),
+    (["経営者", "経営", "ビジネス"], ["業務効率化", "生成ai", "ポエム"]),
+    (["バイブコーディング", "Vibe"], ["生成ai", "個人開発"]),
+    (["自動化", "パイプライン"], ["生成ai", "個人開発"]),
+]
+
+
+def topics_from_title(title: str) -> list[str]:
+    for keywords, topics in TITLE_TOPIC_MAP:
+        if any(kw in title for kw in keywords):
+            return topics
+    return ["個人開発", "生成ai"]
+
+
 def convert_tags(tags: list[str]) -> list[str]:
     seen = []
     for tag in tags:
@@ -76,7 +92,7 @@ def convert_tags(tags: list[str]) -> list[str]:
             seen.append(slug)
         if len(seen) >= 5:
             break
-    return seen or ["vwork"]
+    return seen or ["個人開発"]
 
 
 def parse_frontmatter(text: str) -> tuple[dict, str]:
@@ -105,7 +121,7 @@ def parse_frontmatter(text: str) -> tuple[dict, str]:
 def build_zenn_frontmatter(fm: dict, tags: list[str]) -> str:
     title = fm.get("title", "")
     emoji = pick_emoji(tags)
-    topics = convert_tags(tags)
+    topics = fm.pop("_override_topics", None) or convert_tags(tags)
     published = fm.get("status", "published") == "published"
     topics_yaml = "[" + ", ".join(topics) + "]"
     lines = [
@@ -126,6 +142,12 @@ def convert_file(src: Path, dst: Path):
     tags = fm.get("tags") or []
     if isinstance(tags, str):
         tags = [t.strip() for t in tags.split(",")]
+
+    # タグなし記事はタイトルから推測
+    if not tags:
+        title = fm.get("title", "")
+        return_topics = topics_from_title(title)
+        fm["_override_topics"] = return_topics
 
     zenn_fm = build_zenn_frontmatter(fm, tags)
     output = zenn_fm + "\n\n" + body

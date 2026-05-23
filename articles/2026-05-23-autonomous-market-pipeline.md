@@ -2,7 +2,7 @@
 title: "Hermes + OpenClaw + Claude + Ollama で商品登録を全自動化した"
 emoji: "🛒"
 type: "tech"
-topics: [ai, vibe-coding, hermes, llm, automation]
+topics: [生成ai, 個人開発, llm]
 published: true
 ---
 

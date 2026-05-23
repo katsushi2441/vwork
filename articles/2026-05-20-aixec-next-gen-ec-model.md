@@ -2,7 +2,7 @@
 title: "AIエージェントによる次世代ECモデルの実験 — AIxEC"
 emoji: "🛒"
 type: "tech"
-topics: [ai, vibe-coding]
+topics: [生成ai, aiagent]
 published: true
 ---
 

@@ -2,7 +2,7 @@
 title: "VWorkリポジトリを知識置き場兼ブログにする"
 emoji: "🐙"
 type: "tech"
-topics: [vwork, github, vibe-coding, codex, knowledge]
+topics: [個人開発, github, 生成ai, openai, ポエム]
 published: true
 ---
 

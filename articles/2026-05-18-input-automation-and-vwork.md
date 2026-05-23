@@ -2,7 +2,7 @@
 title: "手入力をなくすことは、システム内製化の入口"
 emoji: "🎵"
 type: "tech"
-topics: [vwork, vibe-coding, automation, business, system-dev]
+topics: [個人開発, 生成ai, 業務効率化]
 published: true
 ---
 

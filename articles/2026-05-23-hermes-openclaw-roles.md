@@ -2,7 +2,7 @@
 title: "Hermes と OpenClaw の役割分担 — orchestration と capability を分離する"
 emoji: "🤖"
 type: "tech"
-topics: [ai, hermes, automation, architecture]
+topics: [aiagent, 個人開発, python, アーキテクチャ]
 published: true
 ---
 

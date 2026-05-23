@@ -2,7 +2,7 @@
 title: "バイブコーディングで、ホームページ制作を内製化する"
 emoji: "💡"
 type: "tech"
-topics: [vwork]
+topics: [個人開発, 生成ai, 業務効率化]
 published: true
 ---
 

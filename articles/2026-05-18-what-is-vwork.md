@@ -2,7 +2,7 @@
 title: "VWorkとは？"
 emoji: "🎵"
 type: "tech"
-topics: [vwork, vibe-coding, codex, ai, business]
+topics: [個人開発, 生成ai, openai, 業務効率化]
 published: true
 ---
 

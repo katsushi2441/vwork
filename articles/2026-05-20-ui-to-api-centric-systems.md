@@ -2,7 +2,7 @@
 title: "業務システムの本質は「UI中心」から「API中心」へ"
 emoji: "💡"
 type: "tech"
-topics: [vwork]
+topics: [api, アーキテクチャ, 個人開発]
 published: true
 ---
 

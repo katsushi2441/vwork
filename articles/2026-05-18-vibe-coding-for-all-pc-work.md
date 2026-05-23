@@ -2,7 +2,7 @@
 title: "バイブコーディングは、すべてのPC作業に使える"
 emoji: "🎵"
 type: "tech"
-topics: [vwork, vibe-coding, knowledge, productivity, business]
+topics: [個人開発, 生成ai, ポエム, 業務効率化]
 published: true
 ---
 

@@ -2,7 +2,7 @@
 title: "経営者にこそ、バイブコーディングを体感してほしい"
 emoji: "💡"
 type: "tech"
-topics: [vwork]
+topics: [業務効率化, 生成ai, ポエム]
 published: true
 ---
 
