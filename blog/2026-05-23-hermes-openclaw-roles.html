@@ -1,0 +1,112 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hermes と OpenClaw の役割分担 — orchestration と capability を分離する | VWork バイブコーディングフレームワーク</title><meta name="description" content="Autonomous Market Pipeline を構成する際の Hermes（実行制御）と OpenClaw（スキル管理）の役割分担、および Claude と Ollama の WHY/WHAT 分離について。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-05-23-hermes-openclaw-roles.html"><meta property="og:type" content="article"><meta property="og:title" content="Hermes と OpenClaw の役割分担 — orchestration と capability を分離する"><meta property="og:description" content="Autonomous Market Pipeline を構成する際の Hermes（実行制御）と OpenClaw（スキル管理）の役割分担、および Claude と Ollama の WHY/WHAT 分離について。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-05-23-hermes-openclaw-roles.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Hermes と OpenClaw の役割分担 — orchestration と capability を分離する"><meta name="twitter:description" content="Autonomous Market Pipeline を構成する際の Hermes（実行制御）と OpenClaw（スキル管理）の役割分担、および Claude と Ollama の WHY/WHAT 分離について。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Hermes と OpenClaw の役割分担 — orchestration と capability を分離する", "description": "Autonomous Market Pipeline を構成する際の Hermes（実行制御）と OpenClaw（スキル管理）の役割分担、および Claude と Ollama の WHY/WHAT 分離について。", "url": "https://katsushi2441.github.io/vwork/blog/2026-05-23-hermes-openclaw-roles.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-05-23", "dateModified": "2026-05-23", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">Blog</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Hermes と OpenClaw の役割分担 — orchestration と capability を分離する</h1>
+<p><a href="/blog/2026-05-23-autonomous-market-pipeline.html">Autonomous Market Pipeline</a> を構成する中で、Hermes と OpenClaw の役割分担はかなり重要だと感じている。</p>
+<p>この2つを混ぜてしまうと、AIエージェント構成はすぐ破綻する。</p>
+<p>今回の構成では、</p>
+<ul>
+<li><strong>Hermes</strong> = 実行制御・時間管理</li>
+<li><strong>OpenClaw</strong> = スキル・能力管理</li>
+</ul>
+<p>として分離している。</p>
+<hr />
+<h2>Hermes は「いつ動くか」を管理する</h2>
+<p>Hermes は、cron や workflow orchestration に近い役割。</p>
+<ul>
+<li>定時実行</li>
+<li>Queue管理</li>
+<li>Retry</li>
+<li>Pipeline実行</li>
+<li>実行順序制御</li>
+</ul>
+<p>つまり「何をするか」ではなく、「いつ・どの順番で・どう流すか」を担当する。</p>
+<p>Autonomous Market Pipeline では：</p>
+<pre><code>市場監視
+↓
+記事生成
+↓
+SEO反映
+↓
+SNS投稿
+↓
+分析
+</code></pre>
+<p>という一連の流れを時間軸で管理する必要がある。その役割を Hermes が担う。</p>
+<hr />
+<h2>OpenClaw は「何ができるか」を管理する</h2>
+<p>一方 OpenClaw は Skill Registry に近い。</p>
+<ul>
+<li>Facebook投稿</li>
+<li>dev.to投稿</li>
+<li>RSS解析</li>
+<li><a href="https://aixec.exbridge.jp/aixtube.php">AIxTube</a> 生成</li>
+<li><a href="https://aixec.exbridge.jp/">AIxEC</a> 商品登録</li>
+<li>OGP画像生成</li>
+</ul>
+<p>などの「能力」を持つ。OpenClaw は、AIエージェントが持つ「手」や「道具箱」に近い。</p>
+<p>Hermes が「今は Facebook 投稿スキルを実行」と判断し、OpenClaw 側の capability を呼び出す。</p>
+<hr />
+<h2>「いつ動くか」と「何ができるか」を分離する</h2>
+<p>この分離はかなり重要。</p>
+<p>もし OpenClaw に scheduler 的な役割まで持たせると、状態管理・実行順序・時間管理・スキル管理が全部混ざり始める。逆に Hermes 側が capability を持ち始めると、workflow engine と skill system が密結合になる。</p>
+<p>だから、</p>
+<ul>
+<li><strong>Hermes</strong> = orchestration</li>
+<li><strong>OpenClaw</strong> = capability</li>
+</ul>
+<p>に分けるのはかなり自然。</p>
+<hr />
+<h2>Claude と Ollama の役割分担も同じ</h2>
+<p>この構成では、</p>
+<ul>
+<li><strong>Claude</strong> = WHY（市場判断・戦略・文脈理解・意図決定）</li>
+<li><strong>Ollama/Gemma</strong> = WHAT（大量バッチ処理・ローカル推論・スコアリング）</li>
+</ul>
+<p>という分離もしている。</p>
+<p>Claude が「なぜ動くか」を決め、Ollama が「実際の処理」を回す。</p>
+<hr />
+<h2>AI が「業務」ではなく「事業サイクル」を回す</h2>
+<p>重要なのは、単なる AI 自動化ではないこと。</p>
+<p>従来の自動化：</p>
+<pre><code>人間 → 指示 → システム
+</code></pre>
+<p>Autonomous Market Pipeline が目指す循環：</p>
+<pre><code>AI
+↓
+市場観測
+↓
+判断
+↓
+コンテンツ生成
+↓
+投稿
+↓
+流入獲得
+↓
+収益化
+↓
+次の行動
+</code></pre>
+<p>AI が単なる作業ツールではなく、市場サイクルそのものを回す構造。それが Autonomous Market Pipeline の本質だと思っている。</p>
+<hr />
+<p><a href="https://exbridge.jp/">エクスブリッジ</a> / <a href="https://aixec.exbridge.jp/">AIxEC</a> / <a href="https://exbridge.jp/vwork.html">VWork</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
