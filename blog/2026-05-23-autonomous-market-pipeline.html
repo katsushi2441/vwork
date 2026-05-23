@@ -1,0 +1,100 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hermes + OpenClaw + Claude + Ollama で商品登録を全自動化した | VWork バイブコーディングフレームワーク</title><meta name="description" content="AIxECの商品登録をHermes cronで定期実行し、Claude Code OAuthがジャンルを選定、Ollamaが商品を評価してAIxECへ登録するパイプラインをバイブコーディングで構築した記録。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-05-23-autonomous-market-pipeline.html"><meta property="og:type" content="article"><meta property="og:title" content="Hermes + OpenClaw + Claude + Ollama で商品登録を全自動化した"><meta property="og:description" content="AIxECの商品登録をHermes cronで定期実行し、Claude Code OAuthがジャンルを選定、Ollamaが商品を評価してAIxECへ登録するパイプラインをバイブコーディングで構築した記録。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-05-23-autonomous-market-pipeline.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Hermes + OpenClaw + Claude + Ollama で商品登録を全自動化した"><meta name="twitter:description" content="AIxECの商品登録をHermes cronで定期実行し、Claude Code OAuthがジャンルを選定、Ollamaが商品を評価してAIxECへ登録するパイプラインをバイブコーディングで構築した記録。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Hermes + OpenClaw + Claude + Ollama で商品登録を全自動化した", "description": "AIxECの商品登録をHermes cronで定期実行し、Claude Code OAuthがジャンルを選定、Ollamaが商品を評価してAIxECへ登録するパイプラインをバイブコーディングで構築した記録。", "url": "https://katsushi2441.github.io/vwork/blog/2026-05-23-autonomous-market-pipeline.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-05-23", "dateModified": "2026-05-23", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">Blog</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Hermes + OpenClaw + Claude + Ollama で商品登録を全自動化した</h1>
+<p><a href="https://aixec.exbridge.jp/">AIxEC</a> の商品登録を、AIエージェントが完全に自律して動かす仕組みをバイブコーディングで構築した。</p>
+<p>今日、その仕組みが実際に動き始めた。</p>
+<h2>何を作ったか</h2>
+<pre><code>Hermes cron（毎日6時・18時）
+    ↓
+[Step 1] marketing_context.py
+    現在のAIxEC状況を整理 → marketing_context.md
+
+[Step 2] Claude Code OAuth
+    「次に登録すべき楽天市場ジャンルを1つ選べ」
+    → market_task.generated.json（ジャンル・キーワード・方針）
+
+[Step 3] Ollama gemma4:e4b
+    楽天市場APIで商品候補を収集
+    → バッチでスコアリング（accept/reject + 0-100点）
+
+[Step 4] AIxECへ登録
+    スコアの高い商品だけ登録
+
+[Step 5] AIxSNSへ投稿
+    「何のジャンルで何件登録したか」を自動通知
+</code></pre>
+<p>人間がやることは何もない。Hermesが定時に起動し、ClaudeとOllamaが判断し、AIxECに商品が増え、<a href="https://aixec.exbridge.jp/sns.php">AIxSNS</a>に結果が流れる。</p>
+<h2>役割分担</h2>
+<table>
+<thead>
+<tr>
+<th>ツール</th>
+<th>役割</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hermes</strong></td>
+<td>スケジューラ。毎日6時・18時にパイプラインを起動</td>
+</tr>
+<tr>
+<td><strong>OpenClaw</strong></td>
+<td>スキル管理。AIxECスキルを保持し手動トリガーも可能</td>
+</tr>
+<tr>
+<td><strong>Claude Code OAuth</strong></td>
+<td>戦略判断。市場状況を読んで「次のジャンル」を決める</td>
+</tr>
+<tr>
+<td><strong>Ollama gemma4:e4b</strong></td>
+<td>商品評価。候補をバッチ処理してスコアリング</td>
+</tr>
+</tbody>
+</table>
+<p>ClaudeはマーケティングのWHYを判断し、Ollamaは個別商品のWHATを判断する。役割が明確に分かれている。</p>
+<h2>バイブコーディングで開発した</h2>
+<p>このパイプライン全体は、<a href="https://exbridge.jp/vwork.html">VWork</a>のバイブコーディングで作った。</p>
+<p>コードを一行一行書いたわけではない。</p>
+<p>「AIxECに楽天市場商品を自動登録したい」「Claudeに戦略を立てさせて、Ollamaに選定させたい」「Hermesで定期実行したい」という意図をCodexに伝え、Codexが実装・改善を繰り返した。</p>
+<p><code>autonomous_market_pipeline.py</code>、<code>claude_select_market_task.py</code>、<code>register_market_task_worker.py</code> という3つのスクリプトが生まれ、それぞれが明確な役割を持つ構造になった。</p>
+<p>HermesとOpenClawのインストールと設定も、Codexが手順を調べて実行した。</p>
+<p>「作りたいものの意図を持つ人間」と「実装するAI」の分業が、そのまま開発フローになっている。</p>
+<h2>実際に動いた</h2>
+<p>ドライランで確認した出力：</p>
+<pre><code>candidates=10
+ollama scored 3/10 selected=3
+selected id=dry score=95 経営戦略（ベーシック＋）
+selected id=dry score=95 改訂版 強い会社が実行している「経営戦略」の教科書
+selected id=dry score=95 仮想と現実で読み解く組織マネジメント
+pipeline complete
+</code></pre>
+<p>Ollamaがジャンルの方針（AIxECはAI・経営・業務効率化を優先）に沿って商品を選んでいる。</p>
+<p>次回の本番実行は今日18時。</p>
+<h2>これが意味すること</h2>
+<p>商品を探す、選ぶ、登録する、告知する。この一連の業務をAIが自律してこなす。</p>
+<p>人間がやることは、意図を決めることだけだ。</p>
+<p>どのジャンルを攻めるか、何を基準に選ぶか。その判断基準を <code>SKILL.md</code> に書いておけば、ClaudeとOllamaがそれを読んで動く。</p>
+<p>AIxECは、AIエージェントが商品を登録し、<a href="https://aixec.exbridge.jp/aixtube.php">AIxTube</a>で動画を作り、AIxSNSで告知するという「AIが自律運営するEC」の実験だ。</p>
+<p>今日、その自律サイクルに「自動で商品を仕入れる判断」が加わった。</p>
+<hr />
+<p><a href="https://exbridge.jp/">エクスブリッジ</a> / <a href="https://aixec.exbridge.jp/">AIxEC</a> / <a href="https://exbridge.jp/vwork.html">VWork</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
