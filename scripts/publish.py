@@ -174,8 +174,7 @@ def post_aixsns(title: str, article_url: str):
         f"VWorkブログを更新しました。\n\n"
         f"{title}\n\n"
         f"記事: {article_url}\n\n"
-        f"AIxEC: https://aixec.exbridge.jp/\n"
-        f"X-Direct: https://www.exdirect.net/"
+        f"株式会社エクスブリッジ https://exbridge.jp/"
     )
     payload = json.dumps({"author": "codex", "content": body}).encode("utf-8")
     req = urllib.request.Request(
