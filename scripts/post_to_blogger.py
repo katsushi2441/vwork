@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Post VWork blog posts to Hatena Blog via email."""
+"""Post VWork blog posts to Blogger via email."""
 from __future__ import annotations
 
 import re
@@ -8,12 +8,11 @@ import ssl
 import os
 import time
 from email.mime.text import MIMEText
-from email.header import Header
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BLOG_DIR = ROOT / "blog"
-POSTED = ROOT / "storage" / "hatena_posted.txt"
+POSTED = ROOT / "storage" / "blogger_posted.txt"
 
 
 def parse_frontmatter(text: str) -> tuple[dict, str]:
@@ -22,16 +21,12 @@ def parse_frontmatter(text: str) -> tuple[dict, str]:
     end = text.find("\n---", 3)
     if end == -1:
         return {}, text
-    fm_block = text[3:end].strip()
-    body = text[end + 4:].lstrip("\n")
-    fm: dict = {}
-    for line in fm_block.splitlines():
+    fm = {}
+    for line in text[3:end].strip().splitlines():
         m = re.match(r'^(\w+):\s*(.*)', line)
-        if not m:
-            continue
-        key, val = m.group(1), m.group(2).strip().strip('"\'')
-        fm[key] = val
-    return fm, body
+        if m:
+            fm[m.group(1)] = m.group(2).strip().strip('"\'')
+    return fm, text[end + 4:].lstrip("\n")
 
 
 def load_posted() -> set:
@@ -46,12 +41,12 @@ def mark_posted(slug: str):
         fh.write(slug + "\n")
 
 
-def send_mail(title: str, body: str, to_override: str = ""):
+def send_mail(title: str, body: str):
     smtp_host = os.environ.get("SMTP_HOST", "mail18.heteml.jp")
     smtp_port = int(os.environ.get("SMTP_PORT", 465))
     smtp_from = os.environ["SMTP_FROM"]
     smtp_pass = os.environ["SMTP_PASSWORD"]
-    to_addr = to_override or os.environ["HATENA_POST_EMAIL"]
+    to_addr = os.environ["BLOGGER_POST_EMAIL"]
 
     msg = MIMEText(body, "plain", "utf-8")
     msg["Subject"] = title
@@ -72,23 +67,17 @@ def main():
     targets = [f for f in sources if f.stem not in posted]
     print(f"{len(targets)}件を投稿します（済み: {len(posted)}件）")
 
-    blogger = os.environ.get("BLOGGER_POST_EMAIL", "")
-
     for src in targets:
         text = src.read_text(encoding="utf-8")
         fm, body = parse_frontmatter(text)
         title = fm.get("title", src.stem)
-        status = fm.get("status", "published")
-        if status != "published":
+        if fm.get("status", "published") != "published":
             print(f"  skip (unpublished): {src.name}")
             continue
 
         send_mail(title, body)
-        if blogger:
-            send_mail(title, body, to_override=blogger)
-            print(f"  blogger: {title}")
         mark_posted(src.stem)
-        print(f"  hatena: {title}")
+        print(f"  posted: {title}")
         time.sleep(3)
 
     print("done.")
