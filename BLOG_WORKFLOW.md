@@ -5,6 +5,7 @@
 - リポジトリ: `/home/kojima/exdirect/vwork`
 - 記事（markdown）: `blog/YYYY-MM-DD-slug.md`
 - 公開URL: `https://katsushi2441.github.io/vwork/`
+- はてなブログ: `名古屋バイブコーディング経営革命`
 
 ## 記事を公開する（通常手順）
 
