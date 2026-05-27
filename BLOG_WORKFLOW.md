@@ -24,7 +24,7 @@
 ## ブログの使い分け
 
 - `blog/`: VWorkブログ。VWorkを使ってバイブコーディングを始める人向けの記事を書く。
-- `articles/`: Zenn用ブログ。AI OSS技術解説として、Zennにそのまま連携できる形式の記事を書く。
+- `articles/`: Zenn用ブログ。AI OSS技術解説として、Zennにそのまま連携できる形式の記事を書く。公開ページは `https://katsushi2441.github.io/vwork/articles/`。
 - `scripts/vwork_to_zenn.py`: VWorkブログ記事をZenn形式にコピーする補助スクリプト。今後の技術記事は原則 `articles/` に直接書く。
 
 ### 1. markdownファイルを作る

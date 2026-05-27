@@ -53,7 +53,7 @@ HTML_TEMPLATE = """\
     .meta {{ margin:-8px 0 22px; color:var(--muted); font-size:13px; }}
     footer {{ max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }}
     @media (max-width:720px) {{ .bar {{ align-items:flex-start; flex-direction:column; }} article {{ padding:22px; }} h1 {{ font-size:27px; }} }}
-</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">Blog</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article>{body}</article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article>{body}</article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
 """
 
 
