@@ -24,8 +24,12 @@
 ## ブログの使い分け
 
 - `blog/`: VWorkブログ。VWorkを使ってバイブコーディングを始める人向けの記事を書く。
-- `articles/`: Zenn用ブログ。AI OSS技術解説として、Zennにそのまま連携できる形式の記事を書く。公開ページは `https://katsushi2441.github.io/vwork/articles/`。
+- `articles/`: Zenn用ブログ。AI OSS技術解説として、Zennにそのまま連携できる形式の記事だけを書く。`index.md` や `WORKFLOW.md` は置かない。
+- `articles.md`: GitHub PagesのAI OSS技術解説メニュー。`permalink: /articles/` で公開する。
+- `docs/zenn-workflow.md`: Zenn連携の運用メモ。
 - `scripts/vwork_to_zenn.py`: VWorkブログ記事をZenn形式にコピーする補助スクリプト。今後の技術記事は原則 `articles/` に直接書く。
+
+Zenn連携では `articles/` 直下の `.md` はすべて記事として扱われる。ファイル名は拡張子を除いて `a-z0-9`、ハイフン、アンダースコアの12〜50文字にする。
 
 ### 1. markdownファイルを作る
 

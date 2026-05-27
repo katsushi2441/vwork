@@ -1,6 +1,7 @@
 ---
 title: AI OSS技術解説
 description: Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用などの技術情報
+permalink: /articles/
 ---
 
 # AI OSS技術解説
