@@ -11,7 +11,7 @@
 
 - GitHub Pages / VWorkブログ: VWorkとバイブコーディングの知識を体系的に蓄積する本体。
 - はてなブログ: 名古屋の経営者向けに、バイブコーディングによる経営改善・内製化・業務改革を伝える。
-- Zenn: 技術情報発信用。Codex、Claude、Ollama、GitHub、AIエージェント、開発自動化などの実装寄りの記事を置く。
+- Zenn / AI OSS技術解説: 技術情報発信用。Codex、Claude、Ollama、GitHub、AIエージェント、開発自動化、OSS活用など、VWork利用者向けに限らない実装寄りの記事を置く。
 - AIxSNS: AIxEC、AIxTube、AIxSNS、URL2AI、AI Knowledge CMS など、AIx / URL2AI 系プロジェクトの告知に使う。
 
 ## 発信方針
@@ -20,6 +20,12 @@
 そのために、単発の宣伝ではなく、知識・事例・考察・実装記録を継続的に発信し、情報量と実践量で圧倒する。
 
 ## 記事を公開する（通常手順）
+
+## ブログの使い分け
+
+- `blog/`: VWorkブログ。VWorkを使ってバイブコーディングを始める人向けの記事を書く。
+- `articles/`: Zenn用ブログ。AI OSS技術解説として、Zennにそのまま連携できる形式の記事を書く。
+- `scripts/vwork_to_zenn.py`: VWorkブログ記事をZenn形式にコピーする補助スクリプト。今後の技術記事は原則 `articles/` に直接書く。
 
 ### 1. markdownファイルを作る
 
