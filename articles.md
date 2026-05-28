@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AIニュース日報 2026-05-29](2026-05-29-ai-news.html)
 - [URL2AI / OSS2API を x402 AI Agent として PayAPI Market に公開した](2026-05-28-x402-ai-agent-payapi-url2ai.html)
 - [バイブコーディングを体系的に学ぶ：easy-vibe 教材を紹介する](2026-05-25-easy-vibe-introduction.html)
 - [Hermes と OpenClaw の役割分担 — orchestration と capability を分離する](2026-05-23-hermes-openclaw-roles.html)
