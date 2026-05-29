@@ -9,7 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
-- [AI・Web3ニュースまとめ 05-30](2026-05-30-ai-news.html)
+- [ローカルAIとAI半導体、次の主戦場が見えた日 05-30](2026-05-30-ai-news.html)
 - [Codex/ClaudeからYouTubeへ動画投稿するOAuthアップロードの仕組み](2026-05-29-youtube-oauth-upload.html)
 - [HorizonでAIニュースを収集してGitHub Pagesに投稿し、KurageでAIショート動画を自動生成する仕組み](2026-05-29-horizon-kurage-pipeline.html)
 - [AIが変える未来：インフラから金融まで最前線速報 05-29](2026-05-29-ai-news.html)
