@@ -1,5 +1,5 @@
 ---
-title: "Horizon.AI生成ニュース動画をYouTubeにも投稿できるようになりました"
+title: "Horizon-AI生成ニュース動画をYouTubeにも投稿できるようになりました"
 description: "AIで記事を作り、Kurageで動画化し、YouTubeへ投稿し、SNSで告知するところまでつながったことを紹介します。"
 date: 2026-05-29
 layout: default
@@ -7,7 +7,7 @@ permalink: /blog/2026-05-29-youtube-ai-video-publishing.html
 status: published
 ---
 
-# Horizon.AI生成ニュース動画をYouTubeにも投稿できるようになりました
+# Horizon-AI生成ニュース動画をYouTubeにも投稿できるようになりました
 
 Horizonで生成したAIニュース記事を、Kurageでショート動画にして、さらにYouTubeへ投稿できるようになりました。
 
