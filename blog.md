@@ -1,0 +1,29 @@
+---
+title: VWorkブログ — 経営者向けバイブコーディング実践記
+description: バイブコーディング・AI内製化・EC自動化・動画生成など、経営者向けに実践知を発信します
+permalink: /blog/
+---
+
+# VWorkブログ
+
+バイブコーディングによるシステム内製化の実践記録です。名古屋の経営者・プログラマー社長が、AIと一緒に作り続けています。
+
+- [AIで経営を変える — 株式会社エクスブリッジが実証するバイブコーディング内製化](2026-05-29-exbridge-for-business.html)
+- [経営者こそ見るべき、AIが毎日作るニュース動画「Horizon-AI生成ニュース動画」](2026-05-29-horizonv-for-business.html)
+- [Horizon-AI生成ニュース動画をYouTubeにも投稿できるようになりました](2026-05-29-youtube-ai-video-publishing.html)
+- [URL2AI / OSS2API が PayAPI Market の審査を通過しました](2026-05-28-payapi-x402-ai-agent-business.html)
+- [愛知・名古屋で、AI事業を一緒に作るビジネスパートナーを募集します](2026-05-27-business-partner-ai-vibe-coding.html)
+- [AI革命の今、バイブコーディングを愛知の経営者に届けたい——営業パートナー募集](2026-05-26-sales-partner-recruit.html)
+- [バイブコーディング学習ロードマップ：easy-vibe Stage 1 学習マップ](2026-05-25-easy-vibe-learning-map.html)
+- [バイブコーディングを体系的に学ぶ：easy-vibe 教材を紹介する](2026-05-25-easy-vibe-introduction.html)
+- [AIの時代：話せればコードが書ける — easy-vibe Stage 1](2026-05-25-easy-vibe-ai-era.html)
+- [Hermes と OpenClaw の役割分担 — orchestration と capability を分離する](2026-05-23-hermes-openclaw-roles.html)
+- [Hermes + OpenClaw + Claude + Ollama で商品登録を全自動化した](2026-05-23-autonomous-market-pipeline.html)
+- [業務システムの本質は「UI中心」から「API中心」へ](2026-05-20-ui-to-api-centric-systems.html)
+- [AIエージェントによる次世代ECモデルの実験 — AIxEC](2026-05-20-aixec-next-gen-ec-model.html)
+- [経営者にこそ、バイブコーディングを体感してほしい](2026-05-19-message-to-business-owners.html)
+- [バイブコーディングで、ホームページ制作を内製化する](2026-05-19-homepage-inhouse-vibe-coding.html)
+- [VWorkとは？](2026-05-18-what-is-vwork.html)
+- [VWorkリポジトリを知識置き場兼ブログにする](2026-05-18-vwork-as-knowledge-blog.html)
+- [バイブコーディングは、すべてのPC作業に使える](2026-05-18-vibe-coding-for-all-pc-work.html)
+- [手入力をなくすことは、システム内製化の入口](2026-05-18-input-automation-and-vwork.html)
