@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AIの「安全性」と「超小型化」が鍵：Web3から次世代デバイスまで最新動向 05-31](2026-05-31-ai-news.html)
 - [Capafy — AIスキルをクローズドで販売できるマーケットプレイスが登場](capafy-skill-marketplace.html)
 - [ローカルAIとAI半導体、次の主戦場が見えた日 05-30](2026-05-30-ai-news.html)
 - [株式会社エクスブリッジの取り組み — URL2AI・AIxEC・Kurageプロジェクト・VWork](2026-05-29-exbridge-introduction.html)
