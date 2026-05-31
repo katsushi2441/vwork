@@ -1,0 +1,30 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>世界最速クラスのx402 AI Agent実装者として、PayAPIに取り上げられた | VWork バイブコーディングフレームワーク</title><meta name="description" content="世界最速クラスのx402 AI Agent実装者として、PayAPIに取り上げられた"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-01-x402-ai-agent-payapi-interview.html"><meta property="og:type" content="article"><meta property="og:title" content="世界最速クラスのx402 AI Agent実装者として、PayAPIに取り上げられた"><meta property="og:description" content="世界最速クラスのx402 AI Agent実装者として、PayAPIに取り上げられた"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-01-x402-ai-agent-payapi-interview.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="世界最速クラスのx402 AI Agent実装者として、PayAPIに取り上げられた"><meta name="twitter:description" content="世界最速クラスのx402 AI Agent実装者として、PayAPIに取り上げられた"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "世界最速クラスのx402 AI Agent実装者として、PayAPIに取り上げられた", "description": "世界最速クラスのx402 AI Agent実装者として、PayAPIに取り上げられた", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-01-x402-ai-agent-payapi-interview.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-01", "dateModified": "2026-06-01", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><p>x402プロトコルは2026年4月にLinux Foundationへ移管された。AIエージェント同士が自律的に決済を行うための仕組みであり、将来的には「人間がサービスへ支払う回数」よりも「AIがAIへ支払う回数」の方が多くなるとも言われている。</p>
+<p>私も4月、このx402を活用したAI Agentの開発に着手した。当時は、すぐに利用が広がるとは考えていなかった。しかし、この技術は近い将来必ず重要になると感じ、誰よりも早く実装経験を積んでおきたいと思った。</p>
+<p>5月下旬、プロダクトを公開したプラットフォームから連絡が入った。審査上の指摘事項があったものの、24時間以内に対応し、無事に承認・公開された。そして、その直後にインタビューの依頼を受けた。</p>
+<p>話を聞くと、この分野に挑戦しているエンジニアは世界的にもまだ少なく、さらに、日本円ステーブルコイン対応のx402 AI Agentについては、世界でも最速クラスの取り組みだったらしい。</p>
+<p>結果として、技術実装のスピードだけでなく、インタビューでの回答内容も評価され、記事は短期間で公開された。</p>
+<p>その記事を読んだとき、単に自分の活動が紹介されたという以上の意味を感じた。AI同士が価値を交換するという、人類にとって大きな変化をもたらす可能性を持つ新しい技術に対して、世界でも最も早い段階で挑戦したエンジニアの一人であることを証明してくれたように思えた。</p>
+<p>▶ 記事はこちら：https://www.payapi.market/blog/the-week-payapi-started-telling-the-truth</p>
+<p>株式会社エクスブリッジ https://exbridge.jp/</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
