@@ -5,7 +5,9 @@ date: 2026-06-02
 status: published
 ---
 
-![システム開発費、半額以下に抑えませんか？](https://exbridge.jp/images/system-development-cost-ogp.png)
+<figure style="margin:8px auto 24px;max-width:420px;">
+  <img src="https://exbridge.jp/images/system-development-cost-ogp.png" alt="システム開発費、半額以下に抑えませんか？" width="420" style="display:block;width:100%;max-width:420px;height:auto;border:1px solid #d9e4e8;border-radius:6px;box-shadow:0 3px 14px rgba(20,38,50,.08);">
+</figure>
 
 システム開発の見積もりを見て、「高い」と感じたことがある経営者は多いと思います。
 
@@ -90,4 +92,3 @@ LPはこちらです。
 ▶ [システム開発費、半額以下に抑えませんか？](https://exbridge.jp/system-development-cost.html)
 
 株式会社エクスブリッジは、名古屋・愛知の企業に向けて、バイブコーディングによるシステム開発、内製化支援、AI活用ビジネスの実践を広げていきます。
-
