@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """AI活用エピソード記事生成スクリプト
-有名な日本人のAI関連ニュースを検索し、エピソード記事をOllamaで生成する。
+有名な日本人のAI関連ニュースを検索し、エピソード記事をClaudeで生成する。
 """
 from __future__ import annotations
-import json
 import re
+import subprocess
 import time
 import urllib.request
 import urllib.parse
@@ -15,147 +15,96 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "episodes"
 OUT_DIR.mkdir(exist_ok=True)
 
-OLLAMA_API = "https://exbridge.ddns.net/api/generate"
-OLLAMA_MODEL = "gemma4:e4b"
+CLAUDE_BIN = "/home/kojima/.vscode-server/extensions/anthropic.claude-code-2.1.145-linux-x64/resources/native-binary/claude"
 
-# 対象人物リスト（カテゴリ: 経営者/タレント/スポーツ/研究者）
 PEOPLE = [
-    # 経営者・起業家
-    {"name": "孫正義", "en": "Masayoshi Son", "category": "経営者", "company": "ソフトバンク"},
-    {"name": "三木谷浩史", "en": "Hiroshi Mikitani", "category": "経営者", "company": "楽天"},
-    {"name": "前澤友作", "en": "Yusaku Maezawa", "category": "経営者", "company": "ZOZO"},
-    {"name": "堀江貴文", "en": "Takafumi Horie", "category": "経営者", "company": ""},
-    {"name": "川上量生", "en": "Nobuo Kawakami", "category": "経営者", "company": "ドワンゴ"},
-    {"name": "藤田晋", "en": "Susumu Fujita", "category": "経営者", "company": "サイバーエージェント"},
-    {"name": "田中良和", "en": "Yoshikazu Tanaka", "category": "経営者", "company": "GREE"},
-    {"name": "南場智子", "en": "Tomoko Namba", "category": "経営者", "company": "DeNA"},
-    {"name": "笠原健治", "en": "Kenji Kasahara", "category": "経営者", "company": "mixi"},
-    {"name": "増田宗昭", "en": "Muneaki Masuda", "category": "経営者", "company": "TSUTAYA"},
-    {"name": "永守重信", "en": "Shigenobu Nagamori", "category": "経営者", "company": "日本電産"},
-    {"name": "柳井正", "en": "Tadashi Yanai", "category": "経営者", "company": "ユニクロ"},
-    {"name": "安田隆夫", "en": "Takao Yasuda", "category": "経営者", "company": "ドン・キホーテ"},
-    {"name": "新浪剛史", "en": "Takeshi Niinami", "category": "経営者", "company": "サントリー"},
-    {"name": "出澤剛", "en": "Takeshi Idezawa", "category": "経営者", "company": "LINE"},
-    # 研究者・クリエイター
-    {"name": "落合陽一", "en": "Yoichi Ochiai", "category": "研究者", "company": "筑波大学"},
-    {"name": "松尾豊", "en": "Yutaka Matsuo", "category": "研究者", "company": "東京大学"},
-    {"name": "西田豊明", "en": "Toyoaki Nishida", "category": "研究者", "company": ""},
-    {"name": "川村元気", "en": "Genki Kawamura", "category": "クリエイター", "company": ""},
-    {"name": "秋元康", "en": "Yasushi Akimoto", "category": "クリエイター", "company": ""},
-    # タレント・アイドル
-    {"name": "中田敦彦", "en": "Atsuhiko Nakata", "category": "タレント", "company": ""},
-    {"name": "ヒカキン", "en": "Hikakin", "category": "タレント", "company": ""},
-    {"name": "ホリエモン", "en": "Horiemon", "category": "タレント", "company": ""},
-    {"name": "西野亮廣", "en": "Akihiro Nishino", "category": "タレント", "company": ""},
-    {"name": "キングコング西野", "en": "Akihiro Nishino", "category": "タレント", "company": ""},
-    {"name": "浜田雅功", "en": "Masatoshi Hamada", "category": "タレント", "company": ""},
-    {"name": "明石家さんま", "en": "Sanma Akashiya", "category": "タレント", "company": ""},
-    # スポーツ
-    {"name": "大谷翔平", "en": "Shohei Ohtani", "category": "スポーツ", "company": ""},
-    {"name": "本田圭佑", "en": "Keisuke Honda", "category": "スポーツ", "company": ""},
-    {"name": "錦織圭", "en": "Kei Nishikori", "category": "スポーツ", "company": ""},
-    {"name": "羽生結弦", "en": "Yuzuru Hanyu", "category": "スポーツ", "company": ""},
-    {"name": "石川祐希", "en": "Yuki Ishikawa", "category": "スポーツ", "company": ""},
+    {"name": "孫正義",   "category": "経営者", "company": "ソフトバンク"},
+    {"name": "三木谷浩史", "category": "経営者", "company": "楽天"},
+    {"name": "前澤友作",  "category": "経営者", "company": "ZOZO"},
+    {"name": "堀江貴文",  "category": "経営者", "company": ""},
+    {"name": "川上量生",  "category": "経営者", "company": "ドワンゴ"},
+    {"name": "藤田晋",   "category": "経営者", "company": "サイバーエージェント"},
+    {"name": "南場智子",  "category": "経営者", "company": "DeNA"},
+    {"name": "永守重信",  "category": "経営者", "company": "日本電産"},
+    {"name": "柳井正",   "category": "経営者", "company": "ユニクロ"},
+    {"name": "新浪剛史",  "category": "経営者", "company": "サントリー"},
+    {"name": "落合陽一",  "category": "研究者", "company": "筑波大学"},
+    {"name": "松尾豊",   "category": "研究者", "company": "東京大学"},
+    {"name": "安野貴博",  "category": "起業家", "company": ""},
+    {"name": "西野亮廣",  "category": "クリエイター", "company": ""},
+    {"name": "中田敦彦",  "category": "タレント", "company": ""},
+    {"name": "ヒカキン",  "category": "YouTuber", "company": ""},
+    {"name": "本田圭佑",  "category": "スポーツ", "company": ""},
+    {"name": "大谷翔平",  "category": "スポーツ", "company": ""},
+    {"name": "羽生善治",  "category": "将棋棋士", "company": ""},
+    {"name": "渡辺明",   "category": "将棋棋士", "company": ""},
+    {"name": "斎藤ウィリアム浩幸", "category": "起業家", "company": ""},
+    {"name": "夏野剛",   "category": "経営者", "company": "ドワンゴ"},
+    {"name": "河野太郎",  "category": "政治家", "company": ""},
+    {"name": "平将明",   "category": "政治家", "company": ""},
+    {"name": "小林史明",  "category": "政治家", "company": ""},
 ]
 
 
-def fetch_news(person: dict) -> str:
-    """Google Newsから人物のAI関連ニュースを取得"""
-    query = urllib.parse.quote(f'{person["name"]} AI 人工知能 活用')
+def fetch_news(name: str) -> str:
+    query = urllib.parse.quote(f"{name} AI 人工知能 活用")
     url = f"https://news.google.com/rss/search?q={query}&hl=ja&gl=JP&ceid=JP:ja"
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=15) as r:
             xml = r.read().decode("utf-8", errors="replace")
-        # タイトルと説明を抽出
         titles = re.findall(r"<title><!\[CDATA\[(.*?)\]\]></title>", xml)
-        descs  = re.findall(r"<description><!\[CDATA\[(.*?)\]\]></description>", xml)
-        items = []
-        for t, d in zip(titles[1:6], descs[:5]):  # 先頭はフィードタイトルなのでスキップ
-            clean_d = re.sub(r"<[^>]+>", "", d)[:200]
-            items.append(f"・{t}\n  {clean_d}")
-        return "\n".join(items)
-    except Exception as e:
+        return "\n".join(f"・{t}" for t in titles[1:5])
+    except Exception:
         return ""
 
 
-def call_ollama(prompt: str) -> str:
-    payload = json.dumps({
-        "model": OLLAMA_MODEL,
-        "prompt": prompt,
-        "stream": False,
-        "options": {"temperature": 0.7, "num_ctx": 4096},
-    }).encode("utf-8")
-    req = urllib.request.Request(
-        OLLAMA_API,
-        data=payload,
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=120) as r:
-            data = json.loads(r.read())
-        return data.get("response", "").strip()
-    except Exception as e:
-        print(f"  Ollama error: {e}")
-        return ""
+def call_claude(prompt: str) -> str:
+    cmd = [CLAUDE_BIN, "-p", "--input-format", "text", "--output-format", "text"]
+    result = subprocess.run(cmd, input=prompt, text=True, capture_output=True, timeout=300)
+    return result.stdout.strip()
 
 
 def gen_episode(person: dict, news: str) -> str | None:
-    """エピソード記事を生成。AIエピソードがなければNoneを返す"""
     name = person["name"]
     category = person["category"]
-    company = person["company"]
-
+    company = person.get("company", "")
     news_section = f"\n参考ニュース:\n{news}" if news else ""
 
-    prompt = f"""あなたはブログ記事ライターです。
-以下の人物について、AI・人工知能に関するエピソードと名言を含む記事を書いてください。
+    prompt = f"""以下の人物について、AI・人工知能に関するエピソードと名言を含む記事を日本語で書いてください。
 
-人物: {name}（{category}{f'/{company}' if company else ''}）
-{news_section}
+人物: {name}（{category}{f"/{company}" if company else ""}）{news_section}
 
 【条件】
-- AIや人工知能に関する具体的なエピソードや発言が実際にある場合のみ記事を書く
-- エピソードが全くない・不明な場合は「SKIP」とだけ出力する
-- ある場合は以下の形式で書く:
+- AIや人工知能に関する具体的なエピソードや発言が実際にある場合のみ書く
+- 実際のエピソードが全くない場合は「SKIP」とだけ出力する
+- ある場合は以下の3段落構成で書く（見出しや項目名は一切つけない）:
+  1段落目: AI活用の具体的なエピソード（200〜300字）
+  2段落目: その人物のAIや仕事に関する実際の名言を「」で引用して1文
+  3段落目: このエピソードから読者へのメッセージ（100字程度）
 
-エピソード（200〜300字）:
-AIに関する実際の取り組み、発言、エピソードを具体的に書く。
+余計な見出し・ラベル・記号は不要。本文のみ出力。"""
 
-名言:
-その人物のAIや仕事・挑戦に関する実際の名言を1つ引用する。
-
-まとめ（100字程度）:
-このエピソードから読者へのメッセージ。
-
----
-記事のみ出力。前置きや説明は不要。"""
-
-    result = call_ollama(prompt)
+    result = call_claude(prompt)
     if not result or result.strip().upper().startswith("SKIP"):
         return None
     return result
 
 
 def slug(name: str) -> str:
-    # ひらがな・カタカナ・漢字をローマ字風に（簡易）
     import unicodedata
     normalized = unicodedata.normalize("NFKC", name)
-    # 日本語はそのままスラッグ化
     return re.sub(r"[^\w\-]", "-", normalized).strip("-")
 
 
-def save_article(person: dict, content: str, today: str):
+def save_article(person: dict, content: str, today: str) -> Path:
     name = person["name"]
-    category = person["category"]
     fname = f"{today}-{slug(name)}-ai-episode.md"
     path = OUT_DIR / fname
-
     md = f"""---
 title: "{name}のAI活用エピソードと名言"
 date: {today}
-category: {category}
+category: {person["category"]}
 person: {name}
 status: published
 ---
@@ -180,14 +129,14 @@ def main():
     for person in PEOPLE:
         name = person["name"]
         print(f"[{name}] ニュース検索中...")
-        news = fetch_news(person)
+        news = fetch_news(name)
         time.sleep(1)
 
-        print(f"[{name}] エピソード生成中...")
+        print(f"[{name}] Claude生成中...")
         content = gen_episode(person, news)
 
         if content is None:
-            print(f"[{name}] → SKIP（AIエピソードなし）")
+            print(f"[{name}] → SKIP")
             skipped += 1
         else:
             save_article(person, content, today)
