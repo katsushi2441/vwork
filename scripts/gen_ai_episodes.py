@@ -65,7 +65,8 @@ def call_claude(prompt: str) -> str:
     return result.stdout.strip()
 
 
-def gen_episode(person: dict, news: str) -> str | None:
+def gen_episode(person: dict, news: str) -> tuple[str, str] | None:
+    """(title, content) を返す。SKIPの場合はNone。"""
     name = person["name"]
     category = person["category"]
     company = person.get("company", "")
@@ -78,17 +79,32 @@ def gen_episode(person: dict, news: str) -> str | None:
 【条件】
 - AIや人工知能に関する具体的なエピソードや発言が実際にある場合のみ書く
 - 実際のエピソードが全くない場合は「SKIP」とだけ出力する
-- ある場合は以下の3段落構成で書く（見出しや項目名は一切つけない）:
-  1段落目: AI活用の具体的なエピソード（200〜300字）
-  2段落目: その人物のAIや仕事に関する実際の名言を「」で引用して1文
-  3段落目: このエピソードから読者へのメッセージ（100字程度）
+- ある場合は以下の形式で出力する:
 
-余計な見出し・ラベル・記号は不要。本文のみ出力。"""
+TITLE: （{name}の名前を含む、記事内容を反映した具体的なタイトル。「〜のAI活用エピソードと名言」ではなく、内容に合った独自のタイトル）
+BODY:
+（3段落構成。見出し・ラベル不要）
+1段落目: AI活用の具体的なエピソード（200〜300字）
+2段落目: その人物のAIや仕事に関する実際の名言を「」で引用して1文
+3段落目: このエピソードから読者へのメッセージ（100字程度）"""
 
     result = call_claude(prompt)
     if not result or result.strip().upper().startswith("SKIP"):
         return None
-    return result
+
+    # TITLE / BODY を分離
+    title_match = re.search(r"TITLE:\s*(.+)", result)
+    body_match  = re.search(r"BODY:\s*([\s\S]+)", result)
+
+    if title_match and body_match:
+        title   = title_match.group(1).strip()
+        content = body_match.group(1).strip()
+    else:
+        # フォールバック
+        title   = f"{name}のAI活用エピソードと名言"
+        content = result
+
+    return title, content
 
 
 def slug(name: str) -> str:
@@ -97,19 +113,19 @@ def slug(name: str) -> str:
     return re.sub(r"[^\w\-]", "-", normalized).strip("-")
 
 
-def save_article(person: dict, content: str, today: str) -> Path:
+def save_article(person: dict, title: str, content: str, today: str) -> Path:
     name = person["name"]
     fname = f"{today}-{slug(name)}-ai-episode.md"
     path = OUT_DIR / fname
     md = f"""---
-title: "{name}のAI活用エピソードと名言"
+title: "{title}"
 date: {today}
 category: {person["category"]}
 person: {name}
 status: published
 ---
 
-# {name}のAI活用エピソードと名言
+# {title}
 
 {content}
 
@@ -117,7 +133,7 @@ status: published
 *株式会社エクスブリッジ https://exbridge.jp/*
 """
     path.write_text(md, encoding="utf-8")
-    print(f"  → saved: {fname}")
+    print(f"  → {title}")
     return path
 
 
@@ -139,7 +155,8 @@ def main():
             print(f"[{name}] → SKIP")
             skipped += 1
         else:
-            save_article(person, content, today)
+            title, body = content
+            save_article(person, title, body, today)
             generated += 1
 
         time.sleep(2)
