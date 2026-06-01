@@ -11,6 +11,8 @@ from email.mime.text import MIMEText
 from email.header import Header
 from pathlib import Path
 
+import markdown
+
 ROOT = Path(__file__).resolve().parents[1]
 BLOG_DIR = ROOT / "blog"
 POSTED = ROOT / "storage" / "hatena_posted.txt"
@@ -46,6 +48,10 @@ def mark_posted(slug: str):
         fh.write(slug + "\n")
 
 
+def body_to_html(body: str) -> str:
+    return markdown.markdown(body, extensions=["extra"])
+
+
 def send_mail(title: str, body: str, to_override: str = ""):
     smtp_host = os.environ.get("SMTP_HOST", "mail18.heteml.jp")
     smtp_port = int(os.environ.get("SMTP_PORT", 465))
@@ -53,7 +59,7 @@ def send_mail(title: str, body: str, to_override: str = ""):
     smtp_pass = os.environ["SMTP_PASSWORD"]
     to_addr = to_override or os.environ["HATENA_POST_EMAIL"]
 
-    msg = MIMEText(body, "plain", "utf-8")
+    msg = MIMEText(body_to_html(body), "html", "utf-8")
     msg["Subject"] = title
     msg["From"] = smtp_from
     msg["To"] = to_addr
