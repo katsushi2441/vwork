@@ -46,6 +46,7 @@ HTML_TEMPLATE = """\
     h2 {{ margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }}
     h3 {{ margin:26px 0 10px; font-size:18px; }}
     p {{ margin:0 0 14px; }}
+    article p > img {{ display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }}
     ul {{ padding-left:1.3em; }}
     code {{ padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }}
     pre {{ overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }}
