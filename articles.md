@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Hermes Dashboard と RQDB4AI — AIワーカー運用を共通result仕様で安定させる](2026-06-03-rqdb4ai-hermes-dashboard.html)
 - [AIの最前線とセキュリティ警告：Microsoftの次世代モデルとWeb3の動向 06-03](2026-06-03-ai-news-3.html)
 - [AIの知能が限界に？：マイクロソフトの次世代モデルから発見された重大なセキュリティ脆弱性まで 06-03](2026-06-03-ai-news-2.html)
 - [AIの進化とセキュリティの最前線：GoogleからMicrosoftの最新動向まで 06-03](2026-06-03-ai-news.html)
