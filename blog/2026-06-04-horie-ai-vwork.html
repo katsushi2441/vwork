@@ -1,0 +1,69 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AIに奪われる仕事ではなく、AIと進める仕事へ | VWork バイブコーディングフレームワーク</title><meta name="description" content="堀江貴文さんのAI観を入口に、VWorkが目指すバイブコーディングによる業務内製化と、AI時代の仕事の作り方を紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-04-horie-ai-vwork.html"><meta property="og:type" content="article"><meta property="og:title" content="AIに奪われる仕事ではなく、AIと進める仕事へ"><meta property="og:description" content="堀江貴文さんのAI観を入口に、VWorkが目指すバイブコーディングによる業務内製化と、AI時代の仕事の作り方を紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-04-horie-ai-vwork.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AIに奪われる仕事ではなく、AIと進める仕事へ"><meta name="twitter:description" content="堀江貴文さんのAI観を入口に、VWorkが目指すバイブコーディングによる業務内製化と、AI時代の仕事の作り方を紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AIに奪われる仕事ではなく、AIと進める仕事へ", "description": "堀江貴文さんのAI観を入口に、VWorkが目指すバイブコーディングによる業務内製化と、AI時代の仕事の作り方を紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-04-horie-ai-vwork.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-04", "dateModified": "2026-06-04", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>AIに奪われる仕事ではなく、AIと進める仕事へ</h1>
+<p>VWorkのAIエピソードに、堀江貴文さんのAIに対する考え方を紹介する記事を掲載しました。</p>
+<p><a href="https://katsushi2441.github.io/vwork/episodes/2026-06-01-%E5%A0%80%E6%B1%9F%E8%B2%B4%E6%96%87-ai-episode.html">堀江貴文が断言する「AIに奪われる仕事は、そもそも人間がやるべきではない」</a></p>
+<p>この記事で取り上げたメッセージは、少し挑発的に聞こえるかもしれません。けれど、VWorkが日々実践しているバイブコーディングの現場感覚から見ると、とても現実的な話です。</p>
+<p>AIに仕事を奪われるかどうかを考えるより先に、まず「その作業は、本当に人間が毎回手でやる必要があるのか」を見直すべき時代になりました。</p>
+<h2>AIは人を置き換えるだけの道具ではない</h2>
+<p>生成AIを単なる文章作成ツールとして見ると、できることは限定的に見えます。</p>
+<p>しかし、実際の業務では、AIはもっと広い範囲で使えます。</p>
+<ul>
+<li>問い合わせ内容を読み取る</li>
+<li>商品情報やランキングを収集する</li>
+<li>レポートやブログ記事の下書きを作る</li>
+<li>画像や動画の素材を生成する</li>
+<li>キューに入った処理の結果を監視する</li>
+<li>Webサイトや業務システムのコードを改善する</li>
+</ul>
+<p>つまりAIは「人間の代わりに一つの作業をする存在」というより、仕事の進め方そのものを組み替えるための相棒です。</p>
+<h2>VWorkは、AI時代の仕事の進め方を記録するブログです</h2>
+<p>VWorkは、バイブコーディングを企業内に導入するための実践ブログです。</p>
+<p>バイブコーディングとは、AIに丸投げすることではありません。経営者や現場担当者が「何を実現したいか」を言葉にし、AIと一緒に設計し、試し、直しながら、実際に動く仕組みへ育てていく方法です。</p>
+<p>このブログでは、次のようなテーマを扱っています。</p>
+<ul>
+<li>システム開発を外注だけに頼らず内製化する方法</li>
+<li>手入力や定型作業を減らす業務改善</li>
+<li>AIエージェント、Ollama、Codex、Claudeを使った自動化</li>
+<li>EC、SNS、動画、ブログ投稿をつなぐ実践例</li>
+<li>経営者がAI時代に持つべき判断軸</li>
+</ul>
+<p>堀江さんの記事で触れた「AIに任せられる仕事は任せる」という考え方は、VWorkの中心にある発想でもあります。</p>
+<h2>重要なのは、AIを使う側に回ること</h2>
+<p>AI時代に必要なのは、すべての人がプログラマーになることではありません。</p>
+<p>大切なのは、自分の仕事を分解して、どこをAIに任せ、どこを人間が判断するのかを決められるようになることです。</p>
+<p>たとえば、毎日同じような情報収集をしているなら、収集はAIエージェントに任せる。判断や優先順位づけは人間が行う。記事化、要約、SNS告知、動画化は半自動化する。</p>
+<p>このように仕事を組み替えると、人間は単純作業から離れ、企画、判断、顧客理解、事業づくりに時間を使えるようになります。</p>
+<h2>VWorkで見せたいもの</h2>
+<p>VWorkでは、理想論ではなく、実際に作って動かしている仕組みを記録しています。</p>
+<p>うまくいったことだけでなく、キュー管理、ジョブ監視、投稿失敗、API連携、GitHub Pages公開、AI動画生成など、現場で起きる細かい問題も含めて残しています。</p>
+<p>AI時代の仕事は、きれいな完成品だけではなく、動かしながら改善するプロセスそのものに価値があります。</p>
+<p>VWorkブログは、そのプロセスを公開し、これからAIを仕事に入れたい人が「自分の会社でもできそうだ」と感じられる場所にしていきます。</p>
+<p>AIに奪われる仕事を心配するより、AIと一緒に進める仕事を作る。</p>
+<p>VWorkは、そのための実践記録です。</p>
+<hr />
+<p>VWork Blog<br />
+https://katsushi2441.github.io/vwork/blog/</p>
+<p>株式会社エクスブリッジ<br />
+https://exbridge.jp/</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
