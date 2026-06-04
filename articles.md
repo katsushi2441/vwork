@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AIの次なる進化：Googleの巨額資金調達から最新モデル、開発の新潮流まで 06-04](2026-06-04-ai-news.html)
 - [Kurage Mail — Roundcubeをhetemlに導入し、Codexからメール処理できる入口を作る](2026-06-04-kurage-mail-roundcube-codex.html)
 - [Hermes Dashboard と RQDB4AI — AIワーカー運用を共通result仕様で安定させる](2026-06-03-rqdb4ai-hermes-dashboard.html)
 - [AIの最前線とセキュリティ警告：Microsoftの次世代モデルとWeb3の動向 06-03](2026-06-03-ai-news-3.html)
