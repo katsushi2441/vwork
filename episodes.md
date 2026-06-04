@@ -8,6 +8,7 @@ permalink: /episodes/
 
 AI時代を生き抜く経営者・研究者・政治家・有名人のAI活用、AI事業、AI市場への考察とエピソードを紹介します。
 
+- [MIXI木村弘毅が語るAIアプリケーションレイヤー——モンストを成功させた経営者の市場観](2026-06-05-木村弘毅-ai-application-layer-episode.html)
 - [ひろゆきが読み解くAIメガIPO——SpaceX・OpenAI・Anthropic上場ラッシュは何を意味するのか](2026-06-05-ひろゆき-ai-ipo-episode.html)
 - [ひろゆきが読むAI企業の寡占——巨大GPU投資の先で、普通の会社は何を使えばいいのか](2026-06-05-ひろゆき-ai-episode.html)
 - [三木谷浩史が描くAI経済圏——楽天がオープンソースLLM「RakutenAI」を世界へ放った理由](2026-06-01-三木谷浩史-ai-episode.html)
