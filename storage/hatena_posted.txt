@@ -21,3 +21,4 @@
 2026-06-02-system-development-cost-vibe-coding
 2026-06-03-rqdb4ai-management-dashboard
 2026-06-04-horie-ai-vwork
+2026-06-04-vibe-mail-order-analysis
