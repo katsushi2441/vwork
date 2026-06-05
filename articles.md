@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AIの効率化と安全性の壁：最新モデルと基盤技術の最前線 06-05](2026-06-05-ai-news-2.html)
 - [AIの進化が加速：LLM最適化、セキュリティ、エンタープライズAIの最前線速報 06-05](2026-06-05-ai-news.html)
 - [Kurage Agent Deckの技術解説：スマホからCodex CLIを操作する軽量Webコンソール](2026-06-05-kurage-agent-deck-technical-overview.html)
 - [Codexエージェントとは何か：LLMとローカル開発環境をつなぐ仕組み](2026-06-05-codex-agent-technical-overview.html)
