@@ -32,7 +32,7 @@ AI革命の主役は、最終的にはモデルやインフラそのものでは
 
 参考:
 
-- 木村弘毅氏のX投稿: https://x.com/kokikimura/status/2061613116954419351?s=20
+- 木村弘毅氏のX投稿: https://x.com/kokikimura/status/2062700409349971979?s=20
 - MIXI 役員紹介: https://mixi.co.jp/company/officer/
 - ミクシル「無限の可能性がある。そう、”コミュニケーション”にはね。代表取締役社長 木村弘毅」: https://mixil.mixi.co.jp/people/8649/
 - 経済界「変わりゆくコミュニケーションの在り方 人とのつながりを復活させる事業を 木村弘毅 MIXI」: https://net.keizaikai.co.jp/archives/2798

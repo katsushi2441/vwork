@@ -2,6 +2,7 @@
 """Post VWork blog posts to Hatena Blog via email."""
 from __future__ import annotations
 
+import argparse
 import re
 import smtplib
 import ssl
@@ -71,8 +72,16 @@ def send_mail(title: str, body: str, to_override: str = ""):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("files", nargs="*", help="Specific blog markdown files to post")
+    args = parser.parse_args()
+
     posted = load_posted()
-    sources = sorted(BLOG_DIR.glob("*.md"))
+    if args.files:
+        sources = [Path(f) for f in args.files]
+        sources = [f if f.is_absolute() else ROOT / f for f in sources]
+    else:
+        sources = sorted(BLOG_DIR.glob("*.md"))
     sources = [f for f in sources if f.name not in ("README.md", "index.md")]
 
     targets = [f for f in sources if f.stem not in posted]

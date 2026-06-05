@@ -22,3 +22,4 @@
 2026-06-03-rqdb4ai-management-dashboard
 2026-06-04-horie-ai-vwork
 2026-06-04-vibe-mail-order-analysis
+2026-06-05-kimura-mixi-ai-application-layer
