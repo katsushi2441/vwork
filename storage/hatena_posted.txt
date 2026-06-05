@@ -23,3 +23,4 @@
 2026-06-04-horie-ai-vwork
 2026-06-04-vibe-mail-order-analysis
 2026-06-05-kimura-mixi-ai-application-layer
+2026-06-05-本田圭佑-ai-agent-producer-episode
