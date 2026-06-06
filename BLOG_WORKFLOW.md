@@ -13,6 +13,7 @@
 - はてなブログ: 名古屋の経営者向けに、バイブコーディングによる経営改善・内製化・業務改革を伝える。
 - Zenn / AI OSS技術解説: 技術情報発信用。Codex、Claude、Ollama、GitHub、AIエージェント、開発自動化、OSS活用など、VWork利用者向けに限らない実装寄りの記事を置く。
 - AIxSNS: AIxEC、AIxTube、AIxSNS、URL2AI、AI Knowledge CMS など、AIx / URL2AI 系プロジェクトの告知に使う。
+- YouTube: VWork記事をKurage/Horizonで動画化した後の投稿先。投稿手順は `docs/youtube-upload-workflow.md` を読む。
 
 ## 発信方針
 
@@ -20,6 +21,8 @@
 そのために、単発の宣伝ではなく、知識・事例・考察・実装記録を継続的に発信し、情報量と実践量で圧倒する。
 
 ## 記事を公開する（通常手順）
+
+記事公開後にKurage/Horizon動画を作り、YouTubeへ投稿する場合は、先に `docs/youtube-upload-workflow.md` を読む。
 
 ## ブログの使い分け
 
