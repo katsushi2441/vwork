@@ -1,0 +1,116 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>外出先からスマホだけでサーバ障害を復旧できた日 | VWork バイブコーディングフレームワーク</title><meta name="description" content="Kurage Agent Deck と VWork があったことで、PCが手元にない外出先でもAIxECの負荷障害を調査し、停止、修正、再起動まで進められた実例を紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-06-smartphone-incident-response-kurage-agent-deck.html"><meta property="og:type" content="article"><meta property="og:title" content="外出先からスマホだけでサーバ障害を復旧できた日"><meta property="og:description" content="Kurage Agent Deck と VWork があったことで、PCが手元にない外出先でもAIxECの負荷障害を調査し、停止、修正、再起動まで進められた実例を紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-06-smartphone-incident-response-kurage-agent-deck.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="外出先からスマホだけでサーバ障害を復旧できた日"><meta name="twitter:description" content="Kurage Agent Deck と VWork があったことで、PCが手元にない外出先でもAIxECの負荷障害を調査し、停止、修正、再起動まで進められた実例を紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "外出先からスマホだけでサーバ障害を復旧できた日", "description": "Kurage Agent Deck と VWork があったことで、PCが手元にない外出先でもAIxECの負荷障害を調査し、停止、修正、再起動まで進められた実例を紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-06-smartphone-incident-response-kurage-agent-deck.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-06", "dateModified": "2026-06-06", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>外出先からスマホだけでサーバ障害を復旧できた日</h1>
+<p>今日、AIxECのAPIサーバが重くなりました。</p>
+<p>外出先でした。手元にPCはありません。スマホだけです。</p>
+<p>普通ならかなり不安になる状況です。サーバに入れるのか。どのプロセスが重いのか。止めていいプロセスなのか。止めたあと、どう復旧するのか。</p>
+<p>ところが今回は、Kurage Agent Deck からCodexに依頼して、SSH接続、プロセス確認、サービス停止、原因調査、コード修正、リモートサーバへの反映、サービス再起動、疎通確認まで進めることができました。</p>
+<p>これは単なる「AIでコードを書けた」という話ではありません。</p>
+<p>経営者が、自社のシステム運用に直接関われる状態を作っておくことの価値を、かなり強く実感した出来事でした。</p>
+<h2>障害時に一番困るのは、状況が見えないこと</h2>
+<p>システム障害で一番怖いのは、サーバが落ちることそのものではありません。</p>
+<p>何が起きているかわからないことです。</p>
+<ul>
+<li>どのサーバが重いのか</li>
+<li>どのプロセスがCPUを使っているのか</li>
+<li>そのプロセスを止めてよいのか</li>
+<li>止めたらどの機能に影響するのか</li>
+<li>復旧後に同じことが再発しないか</li>
+</ul>
+<p>外出先でPCがないと、この確認がさらに難しくなります。</p>
+<p>しかし、Kurage Agent Deck があれば、スマホから自然文で指示できます。</p>
+<p>「SSHのポートは2222。ユーザーはこの情報。入ってプロセスを止めて」</p>
+<p>このように依頼すれば、Codexがサーバに入り、ログやプロセスを確認し、必要な操作を進められます。</p>
+<p>もちろん、すべてを自動で任せるわけではありません。止めるべきプロセス、サービス名、影響範囲、復旧確認を会話しながら進めます。</p>
+<p>ここが重要です。AIは魔法ではありませんが、経営者の判断を支える実務担当者のように動けます。</p>
+<h2>今回止めたのはAIxECのAPIサーバ</h2>
+<p>今回重くなっていたのは、AIxECで使っている <code>api_server.py</code> でした。</p>
+<p>このAPIは、AIxECの商品データ、投稿、楽天API中継、ランキング、worker状態管理、LP生成など、いくつかの処理をまとめて受け持っていました。</p>
+<p>調査すると、公開WEBサーバからAPIへのアクセスが増えたときに、APIサーバ側の負荷がそのまま上がる構造になっていました。</p>
+<p>特に負荷になりやすいのは、次のような処理です。</p>
+<ul>
+<li>楽天APIへ問い合わせる書籍ランキング</li>
+<li>Ollamaに投げるLP生成</li>
+<li>worker状態確認の頻繁なアクセス</li>
+<li>公開WEBサイトからの投稿一覧や商品検索</li>
+</ul>
+<p>ひとつひとつは必要な機能です。</p>
+<p>しかし、これらを1つのAPIプロセスにまとめていると、アクセス増加時に重い処理が全体へ影響します。</p>
+<p>今回も、まずサービスを止めてサーバを落ち着かせました。その後、APIの中身を確認し、重くなりやすい処理を洗い出しました。</p>
+<h2>復旧だけで終わらせない</h2>
+<p>障害対応で大事なのは、ただ再起動することではありません。</p>
+<p>再発しにくくすることです。</p>
+<p>今回は、最新コードを取り込み、<code>/books/ranking</code> にキャッシュを追加しました。楽天APIへ毎回問い合わせるのではなく、一定時間は保存済みの結果を返すようにしました。</p>
+<p>また、外部API取得中に同じリクエストが何本も走らないようにし、失敗時には古いキャッシュを返せるようにしました。</p>
+<p>さらに、<code>/lp/generate</code> は新規生成を止めている状態では即座に <code>disabled</code> を返すようにしました。重い生成処理が不用意に動かないようにするためです。</p>
+<p>修正後、リモートサーバに反映し、systemdのサービスとして起動し直しました。</p>
+<p>最後に、ローカルAPIと公開プロキシの両方で <code>200</code> 応答を確認しました。</p>
+<p>スマホだけで、ここまでの運用ができました。</p>
+<h2>経営者にとっての本当の価値</h2>
+<p>この体験で改めて感じたのは、VWork や Kurage Agent Deck の価値は「開発を速くすること」だけではないということです。</p>
+<p>経営者が、自社の業務システムを理解し、運用し、改善できる状態を作ることに価値があります。</p>
+<p>従来なら、障害が起きたら開発会社や詳しい担当者へ連絡し、状況説明を待ち、対応を待つことになります。</p>
+<p>もちろん、専門家の力が必要な場面はあります。</p>
+<p>しかし、すべてを外部待ちにすると、判断も改善も遅くなります。小さな問題でも、自社側で何が起きているか見えないと、経営判断ができません。</p>
+<p>VWork では、経営者のPCや作業環境に、AIと一緒に業務改善を進めるための土台を作ります。</p>
+<p>Kurage Agent Deck は、その土台をさらに実務へ近づけるものです。</p>
+<p>PCが手元になくても、スマホからAIエージェントに指示できる。<br />
+サーバの状況を調べられる。<br />
+止めるべきものを止められる。<br />
+コードを確認できる。<br />
+修正して、再起動して、結果を確認できる。</p>
+<p>これは、経営者にとってかなり大きな安心材料です。</p>
+<h2>障害対応は、システムを育てる機会でもある</h2>
+<p>今回の対応で、次の課題も見えました。</p>
+<p>APIサーバを1本にまとめすぎているため、公開WEBからのアクセス増加、外部API待ち、生成AI処理、worker管理が同じプロセスに集中しています。</p>
+<p>今後は、処理を分ける必要があります。</p>
+<ul>
+<li>公開WEB向けの読み取りAPI</li>
+<li>楽天APIなどの外部API中継</li>
+<li>Ollamaを使う生成系処理</li>
+<li>worker起動や状態報告の管理API</li>
+</ul>
+<p>このように分ければ、アクセス増加に強くなります。別サーバへ逃がすこともできます。</p>
+<p>障害は嫌なものです。</p>
+<p>しかし、AIと一緒に調査できる環境があれば、障害対応そのものがシステム改善の入口になります。</p>
+<p>「なぜ重くなったのか」</p>
+<p>「どこを分けるべきか」</p>
+<p>「短期対策として何を入れるか」</p>
+<p>「長期的にはどう設計を直すか」</p>
+<p>ここまで会話しながら進められるのが、バイブコーディングの実務的な強さです。</p>
+<h2>AIを導入するとは、経営の反応速度を上げること</h2>
+<p>AI活用というと、文章生成や画像生成の話になりがちです。</p>
+<p>しかし、会社にとって本当に重要なのは、日々の業務とシステム運用の反応速度を上げることです。</p>
+<p>問題が起きたときに、すぐ状況を見る。<br />
+必要な処置をする。<br />
+原因を調べる。<br />
+改善を入れる。<br />
+その内容をブログや社内ナレッジに残す。</p>
+<p>今回、復旧できたこと自体も大きいですが、それ以上に「この仕組みを作っておいてよかった」と実感しました。</p>
+<p>VWork は、完成したシステムを納品して終わるものではありません。</p>
+<p>経営者がAIと一緒に、自社のシステムを育てていくための作業基盤です。</p>
+<p>Kurage Agent Deck は、その実践をスマホからでも扱えるようにします。</p>
+<p>外出先でPCがなくても、会社のシステムに向き合える。</p>
+<p>この安心感は、経営者にとってかなり大きな価値だと思います。</p>
+<p><a href="https://exbridge.jp/">エクスブリッジ</a> / <a href="https://exbridge.jp/vwork.html">VWork</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
