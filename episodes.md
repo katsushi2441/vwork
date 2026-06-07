@@ -8,6 +8,11 @@ permalink: /episodes/
 
 AI時代を生き抜く経営者・研究者・政治家・有名人のAI活用、AI事業、AI市場への考察とエピソードを紹介します。
 
+- [坂本龍一の音楽から考える生成AI——音、ノイズ、記憶をどう作品にするか](2026-06-08-坂本龍一-ai-music-episode.html)
+- [手塚治虫作品とAI漫画制作——『ぱいどん』が問いかけた創作の継承](2026-06-08-手塚治虫-ai-manga-episode.html)
+- [イーロン・マスクが鳴らすAIリスクへの警鐘——加速と規制を同時に語る矛盾の意味](2026-06-08-イーロンマスク-ai-risk-episode.html)
+- [ビル・ゲイツが語るAI時代の仕事観——パソコン革命を見た経営者の次の確信](2026-06-08-ビルゲイツ-ai-work-episode.html)
+- [孫正義がAGIの先に見ているもの——AI投資はなぜインフラ勝負になるのか](2026-06-08-孫正義-ai-investment-agi-episode.html)
 - [本田圭佑さんが、AIエージェントをつくることを専門としたAIエージェントプロデューサーを探してます](2026-06-05-本田圭佑-ai-agent-producer-episode.html)
 - [MIXI木村弘毅が語るAIアプリケーションレイヤー——モンストを成功させた経営者の市場観](2026-06-05-木村弘毅-ai-application-layer-episode.html)
 - [ひろゆきが読み解くAIメガIPO——SpaceX・OpenAI・Anthropic上場ラッシュは何を意味するのか](2026-06-05-ひろゆき-ai-ipo-episode.html)
