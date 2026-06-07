@@ -1,0 +1,164 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kurage Agent Deckをマルチサーバ対応にした：OpenClaw経由でCodex/Claudeを各サーバへ届ける | VWork バイブコーディングフレームワーク</title><meta name="description" content="kdeckをマルチサーバ対応にし、OpenClaw gateway経由でCodex CLI / Claude CLIを各サーバへ届ける構成と運用ルールを解説します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/articles/2026-06-07-kdeck-multi-server-openclaw.html"><meta property="og:type" content="article"><meta property="og:title" content="Kurage Agent Deckをマルチサーバ対応にした：OpenClaw経由でCodex/Claudeを各サーバへ届ける"><meta property="og:description" content="kdeckをマルチサーバ対応にし、OpenClaw gateway経由でCodex CLI / Claude CLIを各サーバへ届ける構成と運用ルールを解説します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/articles/2026-06-07-kdeck-multi-server-openclaw.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://katsushi2441.github.io/vwork/articles/kdeck-system.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Kurage Agent Deckをマルチサーバ対応にした：OpenClaw経由でCodex/Claudeを各サーバへ届ける"><meta name="twitter:description" content="kdeckをマルチサーバ対応にし、OpenClaw gateway経由でCodex CLI / Claude CLIを各サーバへ届ける構成と運用ルールを解説します。"><meta name="twitter:image" content="https://katsushi2441.github.io/vwork/articles/kdeck-system.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Kurage Agent Deckをマルチサーバ対応にした：OpenClaw経由でCodex/Claudeを各サーバへ届ける", "description": "kdeckをマルチサーバ対応にし、OpenClaw gateway経由でCodex CLI / Claude CLIを各サーバへ届ける構成と運用ルールを解説します。", "url": "https://katsushi2441.github.io/vwork/articles/2026-06-07-kdeck-multi-server-openclaw.html", "image": "https://katsushi2441.github.io/vwork/articles/kdeck-system.png", "datePublished": "2026-06-07", "dateModified": "2026-06-07", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+* { box-sizing:border-box; } body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+a { color:var(--blue); text-decoration:none; } header { background:#fff; border-bottom:1px solid var(--line); } .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; } .brand { font-weight:800; color:var(--ink); } nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; } main { max-width:960px; margin:0 auto; padding:34px 22px 64px; } article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); } h1 { margin:0 0 18px; font-size:34px; line-height:1.3; } h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; } h3 { margin:26px 0 10px; font-size:18px; } p { margin:0 0 14px; } article p > img { display:block; width:min(100%, 760px); height:auto; margin:8px auto 24px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); } ul { padding-left:1.3em; } table { border-collapse:collapse; width:100%; margin:16px 0; } th,td { border:1px solid var(--line); padding:8px 10px; vertical-align:top; } th { background:#edf4f6; } code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; } pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; } pre code { padding:0; background:transparent; color:inherit; } footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; } @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Kurage Agent Deckをマルチサーバ対応にした：OpenClaw経由でCodex/Claudeを各サーバへ届ける</h1>
+<p>スマホからAIエージェントに作業を頼むだけなら、ブラウザからローカルのCodex CLIを呼べば十分に見えます。</p>
+<p>しかし実運用では、作業対象のサーバが1台とは限りません。</p>
+<p>今回のKurage Agent Deck、略称kdeckでは、スマホのブラウザから、複数サーバ上のCodex CLI / Claude CLIへ作業を渡せる構成にしました。</p>
+<p>ポイントは、kdeckから各サーバへSSHで直接コマンドを投げるのではなく、各サーバにOpenClaw gatewayを置き、kdeck APIからOpenClaw経由でAIエージェントを実行することです。</p>
+<p><img alt="Kurage Agent Deck system overview" src="https://katsushi2441.github.io/vwork/articles/kdeck-system.png" /></p>
+<hr />
+<h2>なぜマルチサーバ化が必要だったか</h2>
+<p>運用しているAIシステムが増えてくると、サーバごとに役割が分かれます。</p>
+<p>今回の構成では、次のように役割を分けています。</p>
+<pre><code class="language-text">192.168.0.3  kdeck統合管理サーバ
+192.168.0.2  Hermesスケジューラ担当
+192.168.0.14 AIxEC API server担当
+192.168.0.11 Hyperframes動画生成担当
+</code></pre>
+<p>たとえば、AIxECのAPIを移行したいとき、統合管理サーバ側のCodexが、AIxEC API server側のCodexへ「この要件で確認して」「このフォルダを見て」「このAPIを直して」と指示できる必要があります。</p>
+<p>また、動画生成の問題を調べたいときは、Hyperframesが動いているサーバでClaudeやCodexにログや生成物を見てもらいたい。</p>
+<p>このとき、kdeckが単に「管理サーバ上のCLIを呼ぶだけ」だと、実際に問題が起きているサーバの文脈に入れません。</p>
+<p>そこで、kdeckをマルチサーバAIエージェントの入口にしました。</p>
+<hr />
+<h2>実現した構成</h2>
+<p>kdeckの入口はスマホのブラウザです。</p>
+<pre><code class="language-text">Smartphone
+  -&gt; https://kurage.exbridge.jp/kdeck.php
+  -&gt; PHP proxy with Kurage common X login
+  -&gt; kdeck FastAPI on 192.168.0.3:18301
+  -&gt; OpenClaw remote gateway selected by target_agent
+     -&gt; 192.168.0.2:18789  Hermes scheduler agent
+     -&gt; 192.168.0.14:18789 AIxEC API server agent
+     -&gt; 192.168.0.11:18789 Hyperframes video agent
+</code></pre>
+<p>ブラウザは直接FastAPIやOpenClaw gatewayへアクセスしません。</p>
+<p>ブラウザから見えるのは <code>kurage.exbridge.jp/kdeck.php</code> だけです。<br />
+PHP側で共通ログインを通し、API tokenはサーバ側に隠します。</p>
+<p>FastAPI側は <code>kdeck-api.service</code> として常駐し、<code>192.168.0.3:18301</code> で動かしています。</p>
+<p>各実行先サーバには、OpenClaw gatewayを <code>openclaw-gateway.service</code> として常駐させています。</p>
+<hr />
+<h2>サーバごとのフォルダを混同しない</h2>
+<p>この構成で重要なのは、フォルダ指定の考え方です。</p>
+<p>管理サーバの <code>/home/kojima/work/...</code> と、リモートサーバの <code>/home/kojima/exdirect/...</code> は別物です。</p>
+<p>kdeckでは、画面上で次の情報を分けて持つ必要があります。</p>
+<ul>
+<li><code>local_cwd</code>: kdeck統合管理サーバ側の作業フォルダ</li>
+<li><code>target_agent</code>: 実行先サーバ</li>
+<li><code>cwd</code>: 実行先サーバ側の作業フォルダ</li>
+<li><code>remote_llm_backend</code>: Codex CLIかClaude CLIか</li>
+<li><code>remote_model</code>: 実行モデル</li>
+</ul>
+<p>今回の実行先ごとのルールは次の通りです。</p>
+<table>
+<thead>
+<tr>
+<th>実行先</th>
+<th>役割</th>
+<th>リモート側の主な作業root</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hermes-192-168-0-2</code></td>
+<td>Hermesスケジューラ</td>
+<td><code>/home/kojima/exdirect</code></td>
+</tr>
+<tr>
+<td><code>aixec-api-192-168-0-14</code></td>
+<td>AIxEC API server</td>
+<td><code>/home/kojima/bittensorman/aidexx</code></td>
+</tr>
+<tr>
+<td><code>hyperframes-192-168-0-11</code></td>
+<td>Hyperframes動画生成</td>
+<td><code>/home/kojima/exdirect</code></td>
+</tr>
+</tbody>
+</table>
+<p>ここを混同すると、管理サーバには存在するフォルダをリモートサーバで指定してしまったり、逆にリモートサーバ固有のリポジトリを管理サーバに勝手にcloneしてしまったりします。</p>
+<p>kdeckは、単なるリモートシェルではなく「どのサーバの、どの役割のAIエージェントに頼むか」を明示するための画面です。</p>
+<hr />
+<h2>SSH直接実行ではなくOpenClaw経由にした理由</h2>
+<p>最初にやりがちな実装は、kdeck APIからSSHでリモートサーバへ入り、そこで <code>codex</code> や <code>claude</code> コマンドを直接実行する方法です。</p>
+<p>これは手軽ですが、今回の目的とは違います。</p>
+<p>やりたいことは、管理サーバが別サーバのAIエージェントへ、メッセージ、要件、作業フォルダ、状態を渡すことです。</p>
+<p>そのため、通常の作業実行ではSSHを使いません。</p>
+<p>SSHは次の用途に限定します。</p>
+<ul>
+<li>OpenClawのインストール</li>
+<li>gateway serviceの設定</li>
+<li>systemd serviceの確認</li>
+<li>認証や接続のメンテナンス</li>
+</ul>
+<p>通常のAI作業はOpenClaw gateway経由にします。</p>
+<p>成功判定も、単に「SSHコマンドが終了した」ではなく、kdeck APIの結果に <code>control_plane: openclaw</code> が含まれ、選択したエージェントが完了結果を返したことを見ます。</p>
+<hr />
+<h2>Codex CLI / Claude CLIの扱い</h2>
+<p>kdeckの画面では、リモートLLM backendとして <code>codex-cli</code> と <code>claude-cli</code> を選べるようにしています。</p>
+<p>内部的にはOpenClawのmodel名へ変換します。</p>
+<pre><code class="language-text">codex-cli  -&gt; openai/gpt-5.5
+claude-cli -&gt; claude-cli/claude-sonnet-4-6
+</code></pre>
+<p>重要なのは、<code>codex-cli</code> は単なるOpenAI API呼び出しではなく、Codex app-server harnessを通すという点です。</p>
+<p>つまり、リモートサーバ上でCodex CLIとして作業するための経路です。</p>
+<p>今回、<code>.2</code>、<code>.14</code>、<code>.11</code> の各サーバで、OpenClaw gatewayからCodex CLI / Claude CLIの両方を実行できることを確認しました。</p>
+<hr />
+<h2>service化したもの</h2>
+<p>今回のマルチサーバ対応では、プロセスを手動起動に残さず、systemd user serviceに寄せました。</p>
+<p>管理サーバ側:</p>
+<pre><code class="language-text">kdeck-api.service
+  -&gt; /usr/bin/python3 -m uvicorn app.main:app --host 0.0.0.0 --port 18301
+</code></pre>
+<p>各リモートサーバ側:</p>
+<pre><code class="language-text">openclaw-gateway.service
+  -&gt; OpenClaw gateway
+  -&gt; listen: 0.0.0.0:18789
+</code></pre>
+<p>これにより、kdeck APIと各OpenClaw gatewayが再起動後も復帰しやすくなります。</p>
+<p>実行確認では、次の組み合わせで <code>Return OK only</code> を投げ、すべて <code>OK</code> を返しました。</p>
+<ul>
+<li><code>.2</code> + Codex CLI</li>
+<li><code>.2</code> + Claude CLI</li>
+<li><code>.14</code> + Codex CLI</li>
+<li><code>.14</code> + Claude CLI</li>
+<li><code>.11</code> + Codex CLI</li>
+<li><code>.11</code> + Claude CLI</li>
+</ul>
+<hr />
+<h2>何ができるようになったか</h2>
+<p>この構成で、スマホのブラウザから次のような作業ができます。</p>
+<ul>
+<li>Hermesサーバのスケジュールやenqueue設定を確認する</li>
+<li>AIxEC API server側でAPIやdashboard reportを調査する</li>
+<li>Hyperframesサーバ側で動画生成やYouTube投稿の手順を確認する</li>
+<li>管理サーバのCodexから、別サーバのCodex / Claudeへ要件付きで作業を渡す</li>
+<li>会話履歴、対象サーバ、対象フォルダ、実行backendをセットで残す</li>
+</ul>
+<p>特に大きいのは、「別サーバへ作業を頼むときに、文脈を文章で渡せる」ことです。</p>
+<p>これまでは、サーバ移行や障害調査のとき、片方のターミナルで見た内容を別のサーバ作業へ手で伝える必要がありました。</p>
+<p>kdeck + OpenClaw構成では、管理サーバ側のAIエージェントが、別サーバのAIエージェントへ作業対象と要件を渡せます。</p>
+<p>これは、スマホ対応の作業画面というより、LAN内のAI作業チームを束ねる小さな操作盤に近いです。</p>
+<hr />
+<h2>今後の課題</h2>
+<p>今回の構成は動きましたが、まだ完成ではありません。</p>
+<p>今後は次の整理が必要です。</p>
+<ul>
+<li>kdeck上で、サーバごとのフォルダ候補をもっと見やすくする</li>
+<li>タスク履歴を「どのサーバで何をしたか」で検索しやすくする</li>
+<li>成功、失敗、実行中、承認待ちをUIで明確に分ける</li>
+<li>秘密情報がブラウザや共有メモリへ出ないようにする</li>
+<li>複数サーバ間で作業要約を共有するSwarmClaw的な記憶を強化する</li>
+</ul>
+<p>ただし、今回の段階で大事な線引きはできました。</p>
+<p>kdeck本体は、特定アプリに依存しない汎用のAgent Deckです。<br />
+AIxEC、Hermes、Hyperframes、VWorkなどの固有ロジックは、それぞれのリポジトリに置く。</p>
+<p>kdeckは、スマホからそれらのAIエージェントへ安全に作業を渡すための共通入口として育てます。</p>
+<hr />
+<h2>関連</h2>
+<ul>
+<li>Kurage Agent Deck: https://github.com/katsushi2441/kdeck</li>
+<li>VWork: https://katsushi2441.github.io/vwork/</li>
+<li>AI OSS技術解説: https://katsushi2441.github.io/vwork/articles/</li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
