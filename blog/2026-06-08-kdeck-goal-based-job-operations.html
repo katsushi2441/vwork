@@ -1,0 +1,136 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ジョブを時間で動かすのではなく、目標達成まで動かす | VWork バイブコーディングフレームワーク</title><meta name="description" content="kdeckとRQDB4AIを使い、定刻実行中心のジョブ運用から、目標達成を基準にしたAIワーカー運用へ移行した実例を経営者向けに紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-08-kdeck-goal-based-job-operations.html"><meta property="og:type" content="article"><meta property="og:title" content="ジョブを時間で動かすのではなく、目標達成まで動かす"><meta property="og:description" content="kdeckとRQDB4AIを使い、定刻実行中心のジョブ運用から、目標達成を基準にしたAIワーカー運用へ移行した実例を経営者向けに紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-08-kdeck-goal-based-job-operations.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ジョブを時間で動かすのではなく、目標達成まで動かす"><meta name="twitter:description" content="kdeckとRQDB4AIを使い、定刻実行中心のジョブ運用から、目標達成を基準にしたAIワーカー運用へ移行した実例を経営者向けに紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ジョブを時間で動かすのではなく、目標達成まで動かす", "description": "kdeckとRQDB4AIを使い、定刻実行中心のジョブ運用から、目標達成を基準にしたAIワーカー運用へ移行した実例を経営者向けに紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-08-kdeck-goal-based-job-operations.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-08", "dateModified": "2026-06-08", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>ジョブを時間で動かすのではなく、目標達成まで動かす</h1>
+<p>AIを業務に入れると、最初は「毎日何時に実行するか」を考えがちです。</p>
+<p>たとえば、朝に商品登録をする。昼にレポートを作る。夜にブログや動画を生成する。<br />
+従来のシステム運用では、cronのような定時実行が自然な考え方でした。</p>
+<p>しかし、AIワーカーを事業で使い始めると、定時実行だけでは足りません。</p>
+<p>大事なのは「何時に動いたか」ではなく、「今日の目標を達成したか」です。</p>
+<p>今回、社内で使っているAIジョブ運用を見直し、192.168.0.2で動いていたHermesの時刻ベース実行から、192.168.0.3を統合管理サーバとするkdeck + RQDB4AIの目標達成型運用へ移行しました。</p>
+<h2>定時実行は、起動しただけで満足しやすい</h2>
+<p>定時実行の問題は、ジョブが「起動した」ことと、事業上の「成果が出た」ことが混ざりやすい点です。</p>
+<p>たとえばAIxECの商品登録なら、ジョブが動いたこと自体には意味がありません。</p>
+<p>必要なのは、未登録の商品が実際に登録されたか。<br />
+ランキングや候補が取得できたか。<br />
+APIで弾かれていないか。<br />
+登録件数が目標に届いたか。</p>
+<p>Horizonなら、動画生成ジョブを起動しただけでは足りません。<br />
+記事ができ、動画ができ、YouTubeに投稿され、AIxSNSで告知されて、初めて業務として完了です。</p>
+<p>つまり、AIワーカー運用では「起動ログ」ではなく「成果ログ」を見る必要があります。</p>
+<h2>.3を統合管理サーバにした理由</h2>
+<p>今回の構成では、192.168.0.3をkdeck統合管理サーバにしました。</p>
+<p>kdeckは、スマホやPCからAIエージェント、ジョブ、各サーバの状態を見るための入口です。<br />
+RQDB4AIは、実際にジョブをキューへ入れて、workerで処理するための実行基盤です。</p>
+<p>役割を整理すると、次のようになります。</p>
+<ul>
+<li>kdeck: 何を達成したいかを見る司令塔画面</li>
+<li>RQDB4AI: ジョブを安全に並べて実行するキュー基盤</li>
+<li>各アプリ: AIxEC、URL2AI、Horizon、buzbloggerなどの実処理ロジック</li>
+<li>各サーバ: Ollama、API、動画生成など、それぞれの得意領域を担当</li>
+</ul>
+<p>以前は、192.168.0.2のHermesが時刻になったらジョブを投入する形でした。</p>
+<p>これは単純でわかりやすい一方、事業目標を見ていませんでした。</p>
+<p>朝9時にmarket-pipelineを動かした。<br />
+でも500件登録できなかった。<br />
+APIが403で弾かれた。<br />
+Ollamaが混んでいた。<br />
+それでも次の時刻まで待つ。</p>
+<p>この運用では、事業が進みません。</p>
+<h2>目標達成型のジョブ運用に変える</h2>
+<p>今回の考え方は、定刻ではなくGoalです。</p>
+<p>たとえばmarket-pipelineなら、1日の目標を新規2000件とします。</p>
+<p>1回で500件を狙う。<br />
+500件に届かなければ、別ジャンルや別条件で再実行する。<br />
+ただし、楽天APIやOllamaへ負荷をかけすぎないようにcooldownを挟む。</p>
+<p>そして、market-pipelineがcooldown中なら、他のジョブを止める必要はありません。</p>
+<p>register-market、Horizon、OSS、Polymarket、FinReport、buzbloggerなど、実行できるジョブを順番に進めます。</p>
+<p>つまり、</p>
+<ul>
+<li>目標未達なら再実行する</li>
+<li>実行中なら重複投入しない</li>
+<li>cooldown中なら別の仕事を進める</li>
+<li>成果が出た件数を記録する</li>
+<li>失敗理由を残す</li>
+</ul>
+<p>という運用です。</p>
+<p>これは、人間のマネージャーに近い考え方です。</p>
+<p>「9時だから作業する」ではなく、「今日の目標が終わっていないから、次に何をすべきか考える」という形です。</p>
+<h2>経営者にとって重要なのは、AIが働いているかではなく、会社が前に進んでいるか</h2>
+<p>AI活用の現場では、AIが動いているだけで安心してしまうことがあります。</p>
+<p>しかし経営者が見るべきなのは、AIの稼働時間ではありません。</p>
+<p>見るべきなのは、事業の前進です。</p>
+<ul>
+<li>商品が増えたか</li>
+<li>記事が公開されたか</li>
+<li>動画が投稿されたか</li>
+<li>SNS告知が出たか</li>
+<li>エラーが解消されたか</li>
+<li>未達の理由がわかるか</li>
+</ul>
+<p>このように、AIワーカーの成果を経営指標に近づけていく必要があります。</p>
+<p>kdeckとRQDB4AIを組み合わせることで、AIジョブを単なる自動実行ではなく、目標達成のための業務運用に近づけられます。</p>
+<h2>AIエージェントは万能ではない。だから運用基盤が必要</h2>
+<p>今回の移行では、Hermes agentの使い方についても見直しが必要だとわかりました。</p>
+<p>Hermesを単なるcronの代わりに使うだけでは意味がありません。</p>
+<p>本来、AIエージェントに期待したいのは、状況を読んで、失敗理由を考え、必要なら別サーバの担当エージェントへ調査を依頼するような判断です。</p>
+<p>一方で、日々の基本的な自動運転は、安定したPython runnerで行う方が確実です。</p>
+<p>そのため、現時点では次のように整理しました。</p>
+<ul>
+<li>通常運転: Python runnerがRQDB4AIへジョブを投入し、結果を監視する</li>
+<li>実行基盤: RQDB4AIがジョブをキューで管理する</li>
+<li>状態画面: kdeckがGoal、進捗、実行中ジョブを表示する</li>
+<li>AI判断: HermesやOpenClawは、未達や障害時の調査・作戦変更に使う</li>
+</ul>
+<p>AIにすべて任せるのではなく、AIが力を発揮しやすい場所と、機械的に安定させる場所を分けることが重要です。</p>
+<h2>これは小さな業務改善ではなく、会社の運転方法の変更</h2>
+<p>今回の変更は、単にジョブ管理画面を作ったという話ではありません。</p>
+<p>会社のシステム運用を「時間で回す」から「目標で回す」へ変える試みです。</p>
+<p>営業でも、ECでも、コンテンツ運用でも同じです。</p>
+<p>大事なのは、作業予定ではありません。<br />
+成果です。</p>
+<p>AIワーカーが増えるほど、経営者は「どのAIが動いているか」ではなく、「会社のどの目標がどこまで進んでいるか」を見たくなります。</p>
+<p>kdeckとRQDB4AIは、そのための土台です。</p>
+<p>AIを導入するとは、単に文章やコードを生成することではありません。</p>
+<p>会社の作業を、目標に向かって自動的に進める仕組みを作ることです。</p>
+<p>そして、その進み具合を経営者が見て、必要なときに判断できる状態にすることです。</p>
+<p>VWorkでは、このようなAI活用を、実験ではなく日常業務の運用として育てていきます。</p>
+<h2>関連リンク</h2>
+<ul>
+<li>
+<p>VWork バイブコーディングフレームワーク<br />
+  https://katsushi2441.github.io/vwork/</p>
+</li>
+<li>
+<p>Kurage Agent Deck 技術解説<br />
+  https://katsushi2441.github.io/vwork/articles/2026-06-07-kdeck-multi-server-openclaw.html</p>
+</li>
+<li>
+<p>RQDB4AI / Hermes Dashboard 技術解説<br />
+  https://katsushi2441.github.io/vwork/articles/2026-06-03-rqdb4ai-hermes-dashboard.html</p>
+</li>
+<li>
+<p>株式会社エクスブリッジ<br />
+  https://exbridge.jp/</p>
+</li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
