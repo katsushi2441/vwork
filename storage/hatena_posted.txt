@@ -25,3 +25,4 @@
 2026-06-05-kimura-mixi-ai-application-layer
 2026-06-05-本田圭佑-ai-agent-producer-episode
 2026-06-06-smartphone-incident-response-kurage-agent-deck
+2026-06-08-kdeck-goal-based-job-operations
