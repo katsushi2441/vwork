@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [OpenEnvとGemma 4が牽引するAIエージェントの進化とWeb3の融合 06-09](2026-06-09-ai-news.html)
 - [MicrosoftとSam Altmanで読むAIエージェント基盤 06-08](2026-06-08-ai-news-4.html)
 - [Gemma4とdatasette-agent-editで読むAIエージェント編集 06-08](2026-06-08-ai-news-3.html)
 - [Gemma4と3Dアバターで読むローカルAIの進化 06-08](2026-06-08-ai-news-2.html)
