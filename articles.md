@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AIが描く未来：高性能LLMのベンチマークから言語による制御の進化まで 06-08](2026-06-08-ai-news-3.html)
 - [AIの進化が日常に：ローカルLLMの性能向上と言語による物理的制御の最前線 06-08](2026-06-08-ai-news-2.html)
 - [AIの「ローカル化」が加速：高性能LLMの最適化と次世代インターフェース最前線 06-08](2026-06-08-ai-news.html)
 - [Kurage Agent Deckをマルチサーバ対応にした：OpenClaw経由でCodex/Claudeを各サーバへ届ける](2026-06-07-kdeck-multi-server-openclaw.html)
