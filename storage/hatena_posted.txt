@@ -27,3 +27,4 @@
 2026-06-06-smartphone-incident-response-kurage-agent-deck
 2026-06-08-kdeck-goal-based-job-operations
 2026-06-08-ai-news-4
+2026-06-09-aixec-go-simpletrack-click-quality
