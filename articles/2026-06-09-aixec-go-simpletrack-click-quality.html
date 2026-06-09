@@ -1,0 +1,126 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた | VWork バイブコーディングフレームワーク</title><meta name="description" content="AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/articles/2026-06-09-aixec-go-simpletrack-click-quality.html"><meta property="og:type" content="article"><meta property="og:title" content="AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた"><meta property="og:description" content="AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた"><meta property="og:url" content="https://katsushi2441.github.io/vwork/articles/2026-06-09-aixec-go-simpletrack-click-quality.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた"><meta name="twitter:description" content="AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた", "description": "AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた", "url": "https://katsushi2441.github.io/vwork/articles/2026-06-09-aixec-go-simpletrack-click-quality.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "", "dateModified": "", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた</h1>
+<p>AIxECの商品ページでは、Amazonや楽天への外部遷移を <code>go.php</code> 経由にしています。</p>
+<p>目的は、商品ページからどの外部ECへ送客できているかを <code>simpletrack.php</code> の簡易アクセス解析で見ることです。</p>
+<p>しかし今回、<code>go.php</code> 側のログではAmazon遷移が直近24時間で100件以上あるのに、Amazonアソシエイト側では1件程度しかクリックとして見えていない、というズレが出ました。</p>
+<p>最初に疑ったのは、<code>go.php</code> のリダイレクト処理でAmazonアソシエイトタグが消えている可能性です。</p>
+<p>実際に <code>Location:</code> ヘッダーを確認すると、Amazonへの遷移先には次のようにタグが残っていました。</p>
+<pre><code class="language-text">https://www.amazon.co.jp/...&amp;tag=bittensorman-22
+</code></pre>
+<p>つまり、問題はAmazonタグではありませんでした。</p>
+<p>問題は、AIxEC側のアクセス解析が「Amazonに飛ばしたリクエスト」をそのままクリックとして数えていたことです。Amazonアソシエイト側は、bot、プレビュー、無効な連続アクセス、参照元のない自動アクセスを除外します。そのため、こちらのrawログとAmazon側の有効クリックが大きくズレていました。</p>
+<hr />
+<h2>起きていたこと</h2>
+<p>直近24時間のログでは、<code>go.php -&gt; Amazon</code> が100件以上ありました。</p>
+<p>ただし中身を見ると、ほとんどが次のようなアクセスでした。</p>
+<ul>
+<li><code>Referer</code> が空</li>
+<li><code>from</code> パラメータだけが付いている</li>
+<li>User-Agent は一見ブラウザ風だが、毎回ばらばら</li>
+<li>サイト内ページ閲覧の直後にクリックした痕跡がない</li>
+</ul>
+<p>この状態で <code>go.php</code> が全部をクリックとして記録すると、ダッシュボード上は「Amazon 107クリック」のように見えます。</p>
+<p>一方で、Amazonアソシエイト側が実クリックとして認識するのは、人間のブラウザ操作に近い1件だけでした。</p>
+<p>この差分を潰すために、AIxEC側のクリック集計を次の2種類に分けました。</p>
+<pre><code class="language-text">raw
+  go.phpに来た外部遷移リクエストの総数
+
+likely_human
+  人間のクリックである可能性が高いもの
+</code></pre>
+<p>ダッシュボードでは、<code>Amazon 実クリック / raw</code> のように表示します。</p>
+<hr />
+<h2>go.phpでクリック品質を付ける</h2>
+<p><code>go.php</code> は外部ECへ302リダイレクトする前に、<code>simpletrack.php</code> へ内部記録を送ります。</p>
+<p>今回、ここに <code>click_quality</code> と <code>click_signal</code> を追加しました。</p>
+<pre><code class="language-php">$seen_cookie = go_recent_seen_cookie();
+$valid_ref = go_valid_referrer($ref);
+
+$click_url .= (strpos($click_url, '?') === false ? '?' : '&amp;')
+    . 'click=' . rawurlencode($to)
+    . '&amp;product_id=' . rawurlencode($pid)
+    . '&amp;model_number=' . rawurlencode($model)
+    . '&amp;jan=' . rawurlencode($jan)
+    . '&amp;asin=' . rawurlencode($asin)
+    . '&amp;from=' . rawurlencode($from)
+    . '&amp;click_quality=' . rawurlencode(($valid_ref || $seen_cookie) ? 'likely_human' : 'raw')
+    . '&amp;click_signal=' . rawurlencode($valid_ref ? 'referrer' : ($seen_cookie ? 'seen_cookie' : 'none'));
+</code></pre>
+<p>判定はシンプルです。</p>
+<ul>
+<li><code>Referer</code> が <code>aixec.exbridge.jp</code> または <code>*.exbridge.jp</code> なら <code>likely_human</code></li>
+<li>直近24時間以内にサイト閲覧Cookieがあれば <code>likely_human</code></li>
+<li>どちらもなければ <code>raw</code></li>
+</ul>
+<p><code>from=</code> だけで来たアクセスは、呼び出し元情報としては残します。ただし、それだけでは実クリック扱いにしません。</p>
+<hr />
+<h2>simpletrack.phpで閲覧Cookieを発行する</h2>
+<p><code>simpletrack.php</code> は各ページからJavaScriptとして呼ばれます。</p>
+<p>そこで、通常のページ閲覧時に <code>aixec_st_seen</code> Cookieを発行するようにしました。</p>
+<pre><code class="language-php">function st_set_seen_cookie(){
+    $secure = (!empty($_SERVER[&quot;HTTPS&quot;]) &amp;&amp; $_SERVER[&quot;HTTPS&quot;] !== &quot;off&quot;);
+    $cookie = &quot;aixec_st_seen=&quot; . time()
+        . &quot;; Path=/; Max-Age=2592000; SameSite=Lax&quot;
+        . ($secure ? &quot;; Secure&quot; : &quot;&quot;)
+        . &quot;; HttpOnly&quot;;
+    header(&quot;Set-Cookie: &quot; . $cookie, false);
+}
+</code></pre>
+<p><code>go.php</code> 側ではこのCookieの時刻を見て、直近24時間以内の閲覧履歴があるかを確認します。</p>
+<p>これで、Refererがブラウザや環境によって落ちた場合でも、サイトを見たあとにクリックした可能性があるアクセスを実クリック候補にできます。</p>
+<hr />
+<h2>ダッシュボードは実クリックとrawを並べる</h2>
+<p><code>simpletrack.php?dashboard=1</code> では、従来の <code>clicks</code> だけではなく <code>raw_clicks</code> も持つようにしました。</p>
+<pre><code class="language-php">$go_from_count[$from_key][&quot;raw_clicks&quot;]++;
+if($is_likely_human_click) $go_from_count[$from_key][&quot;clicks&quot;]++;
+</code></pre>
+<p>商品別集計も同じです。</p>
+<pre><code class="language-php">$go_product_count[$key][&quot;raw_clicks&quot;]++;
+if($is_likely_human_click) $go_product_count[$key][&quot;clicks&quot;]++;
+</code></pre>
+<p>トップ表示も次のように変えました。</p>
+<pre><code class="language-text">Amazon 実クリック / raw
+楽天 実クリック / raw
+</code></pre>
+<p>今回の修正後、直近24時間の表示は次のような見え方になりました。</p>
+<pre><code class="language-text">Amazon: 2 / 104
+楽天: 0 / 94
+</code></pre>
+<p>この表示なら、内部的に <code>go.php</code> が何回呼ばれたかと、広告側のクリックに近い数字がどれかを分けて読めます。</p>
+<hr />
+<h2>アフィリエイト計測で重要なのは「同じ定義で見る」こと</h2>
+<p>自前のアクセス解析は、ログに来たものを全部数えられます。</p>
+<p>一方で、Amazonアソシエイトや楽天アフィリエイトは、広告ネットワーク側のルールで有効クリックだけを数えます。</p>
+<p>この2つを同じ「クリック」と呼ぶと、運用判断を間違えます。</p>
+<p>今回の修正で、AIxECでは次のように見ることにしました。</p>
+<ul>
+<li>rawは異常検知用</li>
+<li>実クリックは送客評価用</li>
+<li>Amazonや楽天の管理画面と比較するのは実クリック</li>
+<li>rawが急増して実クリックが増えない場合はbotや自動アクセスを疑う</li>
+</ul>
+<p>小さなPHPの修正ですが、ECやアフィリエイトの運用では重要です。</p>
+<p>アクセス解析は、数字を増やすためではなく、現実に近い判断をするためにあります。</p>
+<p>今回の <code>go.php</code> と <code>simpletrack.php</code> の修正は、そのための一歩です。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
