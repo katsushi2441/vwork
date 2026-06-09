@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AnthropicのClaude Fable 5とCohere North Mini Codeが示すAIモデルの進化と競争 06-10](2026-06-10-ai-news.html)
 - [AppleのCoreAI、Microsoftのセキュリティ脅威、そしてA16zが挑むWeb3の未来：AIインフラの最前線 06-09](2026-06-09-ai-news-2.html)
 - [AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた](2026-06-09-aixec-go-simpletrack-click-quality.html)
 - [Kurage Voice-Proの技術解説：UMediaとOSS Voice-Proをつないだ翻訳字幕・吹き替え動画生成](2026-06-09-kurage-voice-pro-technical-overview.html)
