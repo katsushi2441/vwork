@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた](2026-06-09-aixec-go-simpletrack-click-quality.html)
 - [Kurage Voice-Proの技術解説：UMediaとOSS Voice-Proをつないだ翻訳字幕・吹き替え動画生成](2026-06-09-kurage-voice-pro-technical-overview.html)
 - [OpenEnvとGemma 4が牽引するAIエージェントの進化とWeb3の融合 06-09](2026-06-09-ai-news.html)
 - [MicrosoftとSam Altmanで読むAIエージェント基盤 06-08](2026-06-08-ai-news-4.html)
