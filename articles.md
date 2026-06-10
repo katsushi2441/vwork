@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [ClaudeとCohereが警告するAIの「壁」：Gemmaなど小型モデルが切り開く新たな競争領域 06-10](2026-06-10-ai-news-2.html)
 - [AnthropicのClaude Fable 5とCohere North Mini Codeが示すAIモデルの進化と競争 06-10](2026-06-10-ai-news.html)
 - [AppleのCoreAI、Microsoftのセキュリティ脅威、そしてA16zが挑むWeb3の未来：AIインフラの最前線 06-09](2026-06-09-ai-news-2.html)
 - [AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた](2026-06-09-aixec-go-simpletrack-click-quality.html)
