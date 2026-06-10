@@ -1,0 +1,228 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン | VWork バイブコーディングフレームワーク</title><meta name="description" content="kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/articles/2026-06-10-kgrowth-gsc-accesslog-pipeline.html"><meta property="og:type" content="article"><meta property="og:title" content="kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン"><meta property="og:description" content="kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン"><meta property="og:url" content="https://katsushi2441.github.io/vwork/articles/2026-06-10-kgrowth-gsc-accesslog-pipeline.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン"><meta name="twitter:description" content="kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン", "description": "kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン", "url": "https://katsushi2441.github.io/vwork/articles/2026-06-10-kgrowth-gsc-accesslog-pipeline.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "", "dateModified": "", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン</h1>
+<p>kgrowthは、Google Search Console（GSC）とWebサーバーのアクセスログを統合し、検索流入の分析から改善ジョブの提案・実行まで自動化するPythonパイプラインです。AIxEC / AIxSNS / AIxTubeなどのコンテンツサービスのグロースを自動化するために開発しました。</p>
+<p>コードは約1,300行のPythonで書かれており、外部ライブラリへの依存を最小限に抑えた設計になっています。</p>
+<h2>アーキテクチャ概要</h2>
+<p>パイプライン全体の流れは次のとおりです。</p>
+<pre><code>Google Search Console API
+FTP（Webサーバー access.log）
+    ↓ fetch
+data/gsc_latest.json
+data/access_logs/
+    ↓ analyze
+data/analysis_latest.json
+data/improvement_jobs_latest.json
+reports/growth_plan_latest.md
+    ↓ 実行
+kdeck Goal Queue → rqdb4ai → AIxEC / BuzBlogger / AIxTube
+</code></pre>
+<p>CLIは4つのサブコマンドで構成されています。</p>
+<pre><code class="language-bash">python3 -m kgrowth.cli fetch-gsc    # GSCデータ取得
+python3 -m kgrowth.cli fetch-logs   # アクセスログFTP取得
+python3 -m kgrowth.cli analyze      # 分析・レポート生成
+python3 -m kgrowth.cli weekly       # 上記をまとめて実行
+</code></pre>
+<p>常駐運用はsystemdユーザーサービス（<code>kgrowth-hermes-commander.service</code>）として動かしています。</p>
+<h2>GSC認証：標準ライブラリだけでJWT署名する</h2>
+<p>GSCのService Account認証で、<code>google-auth</code>などのライブラリを使わずに実装した点が特徴です。</p>
+<p>JWT（RS256）の生成は次のように行っています。</p>
+<pre><code class="language-python">def _sign_rs256(private_key: str, signing_input: str) -&gt; bytes:
+    try:
+        from cryptography.hazmat.primitives import hashes, serialization
+        from cryptography.hazmat.primitives.asymmetric import padding
+    except Exception:
+        # cryptographyがない場合はopenssl CLIにフォールバック
+        with tempfile.NamedTemporaryFile(&quot;w&quot;, delete=True) as key_file:
+            key_file.write(private_key)
+            key_file.flush()
+            proc = subprocess.run(
+                [&quot;openssl&quot;, &quot;dgst&quot;, &quot;-sha256&quot;, &quot;-sign&quot;, key_file.name],
+                input=signing_input.encode(&quot;utf-8&quot;),
+                stdout=subprocess.PIPE,
+            )
+        return proc.stdout
+    key = serialization.load_pem_private_key(private_key.encode(&quot;utf-8&quot;), password=None)
+    return key.sign(signing_input.encode(&quot;utf-8&quot;), padding.PKCS1v15(), hashes.SHA256())
+</code></pre>
+<p><code>cryptography</code>がインストールされていれば使い、なければ<code>openssl dgst</code>コマンドにフォールバックします。これにより、環境に応じて依存ライブラリなしでも動作します。</p>
+<p>認証モードは設定ファイルで切り替えられます。</p>
+<pre><code class="language-json">{ &quot;gsc_auth&quot;: &quot;service_account&quot; }  // デフォルト
+{ &quot;gsc_auth&quot;: &quot;gcloud&quot; }           // gcloud CLIのADCを使う
+</code></pre>
+<p>GSCのsearchAnalytics APIは25,000行/リクエストの上限があるため、<code>startRow</code>を使ったページネーションで全データを取得しています。</p>
+<h2>アクセスログ解析：2種類のフォーマットに対応</h2>
+<p>サーバーのアクセスログには、Apache Combined Log形式とsimpletrack独自形式の2種類があります。</p>
+<pre><code class="language-python"># Apache Combined Log
+LOG_RE = re.compile(
+    r'(?P&lt;ip&gt;\S+) \S+ \S+ \[(?P&lt;time&gt;[^\]]+)\] '
+    r'&quot;(?P&lt;method&gt;\S+) (?P&lt;path&gt;[^&quot;]*?) (?P&lt;proto&gt;[^&quot;]*)&quot; '
+    r'(?P&lt;status&gt;\d{3}) (?P&lt;bytes&gt;\S+) &quot;(?P&lt;referer&gt;[^&quot;]*)&quot; &quot;(?P&lt;ua&gt;[^&quot;]*)&quot;'
+)
+
+# simpletrack形式（パイプ区切り）
+# 2026-01-01 12:00:00|1.2.3.4|https://example.com/path|https://referer.com|UA文字列
+if &quot;|&quot; in line and line[:4].isdigit():
+    parts = line.rstrip(&quot;\n&quot;).split(&quot;|&quot;, 4)
+</code></pre>
+<p>行頭が数字4文字かつパイプ区切りならsimpletrack形式、そうでなければ正規表現でApache形式として解析しています。</p>
+<h3>ボット除外</h3>
+<p>ボット判定は50以上のUserAgent文字列との部分一致で行っています。</p>
+<pre><code class="language-python">BOT_WORDS = (
+    &quot;bot&quot;, &quot;crawler&quot;, &quot;spider&quot;, &quot;curl&quot;, &quot;wget&quot;, &quot;python&quot;,
+    &quot;googlebot&quot;, &quot;bingbot&quot;, &quot;gptbot&quot;, &quot;claudebot&quot;, &quot;ccbot&quot;,
+    ...
+)
+
+def is_bot_ua(ua: str) -&gt; bool:
+    ua = ua.lower().strip()
+    if not ua:
+        return True
+    return any(word in ua for word in BOT_WORDS)
+</code></pre>
+<h3>アフィリエイトクリック追跡</h3>
+<p><code>/go.php</code>へのリクエストを追跡し、実クリック（likely_human）とrawクリック（ボット除外後）を分けて集計します。</p>
+<pre><code class="language-python">def _track_go_click(parsed, referer, ...):
+    quality = first(&quot;click_quality&quot;).lower()
+    likely_human = quality == &quot;likely_human&quot;
+    if not quality:
+        likely_human = bool(referer)  # refererがあれば人間と判定
+</code></pre>
+<p><code>click_quality=likely_human</code>が明示されているか、Refererが存在する場合に実クリックとして計上します。商品ごとに<code>pid</code>・<code>jan</code>・<code>asin</code>・<code>model</code>・<code>keyword</code>でキーを構成し、どのページから何がクリックされたかを記録します。</p>
+<h2>GSC分析：CTRベンチマークで改善候補を特定する</h2>
+<p>GSCデータの分析では、位置別の期待CTRとの乖離を使って改善候補クエリを抽出しています。</p>
+<pre><code class="language-python">def expected_ctr(pos: float) -&gt; float:
+    if pos &lt;= 1:  return 0.28
+    if pos &lt;= 2:  return 0.15
+    if pos &lt;= 3:  return 0.10
+    if pos &lt;= 5:  return 0.06
+    if pos &lt;= 10: return 0.025
+    return 0.005
+
+# 検索順位10位以内で、期待CTRの50%未満ならタイトル改善候補
+if entry[&quot;pos&quot;] &lt;= 10 and entry[&quot;imp&quot;] &gt;= title_min and entry[&quot;ctr&quot;] &lt; expected_ctr(entry[&quot;pos&quot;]) * 0.5:
+    title_fixes.append(...)
+
+# 11〜30位で表示回数があれば、コンテンツ強化候補
+if 10 &lt; entry[&quot;pos&quot;] &lt;= 30 and entry[&quot;imp&quot;] &gt;= boost_min:
+    boost_queries.append(...)
+</code></pre>
+<p>クエリをトークナイズしてクラスタリングし、複数クエリにまたがるテーマ語を抽出してハブ記事の候補にする機能もあります。</p>
+<pre><code class="language-python">def tokenize(query: str) -&gt; list[str]:
+    parts = re.split(r&quot;[\s　]+&quot;, query.strip())
+    tokens = []
+    for part in parts:
+        if len(part) &gt;= 2:
+            tokens.append(part)
+        if re.match(r&quot;^[A-Za-z0-9-]{4,}$&quot;, part):
+            tokens.append(part.upper())  # 英数字は大文字正規化
+    return tokens
+</code></pre>
+<h2>改善ジョブ：SHA1で内容一致型IDを生成する</h2>
+<p>分析結果から生成する改善ジョブは、ジョブの種別とペイロードからSHA1ハッシュでIDを生成します。</p>
+<pre><code class="language-python">def _job_id(kind: str, payload: dict) -&gt; str:
+    raw = json.dumps({&quot;kind&quot;: kind, &quot;payload&quot;: payload}, ensure_ascii=False, sort_keys=True)
+    return hashlib.sha1(raw.encode(&quot;utf-8&quot;)).hexdigest()[:16]
+</code></pre>
+<p>同じ内容のジョブは常に同じIDになるため、重複提案の検出がシンプルに行えます。</p>
+<p>生成されるジョブの種類は現在4種類です。</p>
+<table>
+<thead>
+<tr>
+<th>kind</th>
+<th>目的</th>
+<th>target_app</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>search_query_answer_article</code></td>
+<td>11〜30位クエリへの回答記事</td>
+<td>aixec</td>
+</tr>
+<tr>
+<td><code>affiliate_product_article</code></td>
+<td>実クリック商品の記事化</td>
+<td>aixec</td>
+</tr>
+<tr>
+<td><code>amazon_hub_article</code></td>
+<td>クエリクラスタからハブ記事</td>
+<td>aixec</td>
+</tr>
+<tr>
+<td><code>buzblogger_search_intent</code></td>
+<td>BuzBlogger生成仕様の調整</td>
+<td>buzblogger</td>
+</tr>
+</tbody>
+</table>
+<p>各ジョブには<code>success_rule</code>（完了条件）、<code>cooldown_minutes</code>、<code>max_attempts_per_day</code>が設定されており、kdeck Goal Queueが管理します。</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: &quot;a3f2b1c9d4e5f678&quot;,
+  &quot;kind&quot;: &quot;search_query_answer_article&quot;,
+  &quot;title&quot;: &quot;検索意図回答記事を作る: python おすすめ 本&quot;,
+  &quot;priority&quot;: 10,
+  &quot;status&quot;: &quot;proposed&quot;,
+  &quot;target_app&quot;: &quot;aixec&quot;,
+  &quot;action&quot;: &quot;enqueue:search_query_answer_article&quot;,
+  &quot;payload&quot;: {
+    &quot;query&quot;: &quot;python おすすめ 本&quot;,
+    &quot;position&quot;: 14.3,
+    &quot;impressions&quot;: 420,
+    &quot;preferred_affiliate&quot;: &quot;amazon&quot;
+  },
+  &quot;cooldown_minutes&quot;: 120,
+  &quot;max_attempts_per_day&quot;: 1
+}
+</code></pre>
+<h2>FTPログ取得：タイムスタンプ付きスナップショット管理</h2>
+<p>Webサーバーのアクセスログは<code>ftplib</code>で定期的にダウンロードします。ファイル名にはダウンロード時刻のタイムスタンプを付加します。</p>
+<pre><code>data/access_logs/20260610_095935_web__aixec_exbridge_jp__access.log
+</code></pre>
+<p><code>parse_mode: latest_snapshot</code>（デフォルト）では、同じ時刻プレフィックスを持つ最新セットのみを解析対象にします。これにより、複数回ダウンロードした場合でも重複カウントを防ぎます。</p>
+<p>FTPの認証情報は環境変数、設定ファイル、既存ヘルパーファイルの優先順位で解決します。機密情報をリポジトリにコミットしない設計です。</p>
+<h2>レポート生成</h2>
+<p>週次レポートはMarkdownで生成し、<code>reports/growth_plan_latest.md</code>に保存します。内容は次のセクションで構成されます。</p>
+<ul>
+<li>Context（GSC集計値・アクセスログ集計値）</li>
+<li>改善1: BuzBlogger検索クエリ対応（優先度最高）</li>
+<li>改善2: 重複ページのnoindex</li>
+<li>改善3: ハブ記事候補一覧</li>
+<li>改善4: AIxTube動画の外部配信候補</li>
+<li>アフィリエイト実クリック集計</li>
+<li>アクセスログ詳細（ページタイプ・404上位）</li>
+<li>今週の実行順と次週の比較観点</li>
+</ul>
+<h2>まとめ</h2>
+<p>kgrowthの設計で意図したのは次の点です。</p>
+<ul>
+<li><strong>外部ライブラリ依存を最小化</strong>：標準ライブラリだけで動くため、サーバー環境の制約を受けにくい</li>
+<li><strong>2種類のログ形式に透過的に対応</strong>：simpletrackとApache Combined Logを同一パーサーで処理</li>
+<li><strong>実クリックとbotを分離</strong>：SEO指標とアフィリエイト成果の両方を正確に把握する</li>
+<li><strong>内容一致型ジョブID</strong>：同じ分析結果から同じジョブIDが生成されるため、重複管理がシンプル</li>
+<li><strong>提案と実行の分離</strong>：kgrowthはジョブを提案するだけで、実行はkdeck + rqdb4aiが担う</li>
+</ul>
+<p>週次で分析・提案を自動化し、人間はジョブ承認と結果評価に集中できる構成を目指しています。</p>
+<p>ソースは <code>/home/kojima/work/kgrowth</code> にあります。AIxEC / AIxSNSなど複数サービスの成長改善に継続運用中です。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
