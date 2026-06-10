@@ -1,0 +1,85 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>スマホからサーバーのAIに指示する：Kurage Agent Deck（kdeck）でできること | VWork バイブコーディングフレームワーク</title><meta name="description" content="出先のスマホからLinuxサーバーのCodex・Claudeに指示して、コーディング・調査・ブログ投稿・動画作成・YouTube投稿まで実行できるシステムの概要と経営的価値。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-10-kdeck-smartphone-server-control.html"><meta property="og:type" content="article"><meta property="og:title" content="スマホからサーバーのAIに指示する：Kurage Agent Deck（kdeck）でできること"><meta property="og:description" content="出先のスマホからLinuxサーバーのCodex・Claudeに指示して、コーディング・調査・ブログ投稿・動画作成・YouTube投稿まで実行できるシステムの概要と経営的価値。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-10-kdeck-smartphone-server-control.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="スマホからサーバーのAIに指示する：Kurage Agent Deck（kdeck）でできること"><meta name="twitter:description" content="出先のスマホからLinuxサーバーのCodex・Claudeに指示して、コーディング・調査・ブログ投稿・動画作成・YouTube投稿まで実行できるシステムの概要と経営的価値。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "スマホからサーバーのAIに指示する：Kurage Agent Deck（kdeck）でできること", "description": "出先のスマホからLinuxサーバーのCodex・Claudeに指示して、コーディング・調査・ブログ投稿・動画作成・YouTube投稿まで実行できるシステムの概要と経営的価値。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-10-kdeck-smartphone-server-control.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-10", "dateModified": "2026-06-10", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>スマホからサーバーのAIに指示する：Kurage Agent Deck（kdeck）でできること</h1>
+<p>出先でも、スマホから自社のLinuxサーバーにあるAIエージェント（CodexやClaude）に指示を出して、コーディング・リサーチ・ブログ投稿・動画生成・YouTube投稿まで実行させることができる。</p>
+<p>これが「Kurage Agent Deck（kdeck）」が実現したことです。</p>
+<h2>何ができるか</h2>
+<p>kdeck は、スマホのブラウザからアクセスできるコントロールパネルです。</p>
+<p>画面を開いて、日本語で指示を入力するだけで、サーバー上のAIエージェントが作業を開始します。</p>
+<p>できることの例を挙げると：</p>
+<ul>
+<li><strong>コーディング</strong> : バグを直してほしい、この機能を追加してほしい、と指示するだけ</li>
+<li><strong>リサーチ</strong> : 競合調査・市場調査・技術調査をAIが実施して結果をまとめる</li>
+<li><strong>ブログ投稿</strong> : 記事を書いてVWorkブログ・はてなブログ・Bloggerに投稿する</li>
+<li><strong>動画生成</strong> : ブログ記事をKurage動画システムで動画に変換する</li>
+<li><strong>YouTube投稿</strong> : 生成した動画をそのままYouTubeにアップロードする</li>
+<li><strong>ジョブ状況の確認</strong> : 実行中のAIジョブが今どの段階にあるかをリアルタイムで確認できる</li>
+</ul>
+<p>移動中の電車の中でも、打ち合わせの合間でも、スマホ一台で全部できます。</p>
+<h2>なぜこれが重要か</h2>
+<p>従来、サーバー上での作業はエンジニアがPCで行う必要がありました。</p>
+<p>指示するにしても、Slackやメールで依頼して、実行してもらって、結果を報告してもらう。それに時間がかかっていました。</p>
+<p>kdeck では、経営者やリーダーが直接AIに指示できます。</p>
+<p>エンジニアへの依頼と返答待ちがなくなり、「思いついたらすぐ実行できる」状態になります。</p>
+<h2>複数サーバーを一つの画面で管理する</h2>
+<p>kdeck は一台のサーバーだけではなく、社内ネットワーク内の複数サーバーを同じ画面から操作できます。</p>
+<ul>
+<li><strong>コーディング担当サーバー</strong>（Hermes / スケジューラー）</li>
+<li><strong>ECサイト担当サーバー</strong>（AIxEC APIサーバー）</li>
+<li><strong>動画生成担当サーバー</strong>（Hyperframes / 動画特化機）</li>
+</ul>
+<p>指示を出すとき、どのサーバーのどのAIに頼むかを選ぶだけです。</p>
+<p>裏側では、サーバーごとに用途に最適化されたAIエージェント（Codex / Claude）が動いており、ひとつの画面から全部コントロールできます。</p>
+<h2>ジョブキューで「今何が動いているか」を把握できる</h2>
+<p>AIに作業を頼むと、それはジョブとして記録されます。</p>
+<p>kdeck の画面には「今日の進捗」「実行中のジョブ」「次に実行するジョブ」「完了済みジョブ」が一覧で表示されます。</p>
+<p>経営者が「あの作業、終わったかな」と思ったとき、メッセージを送らなくても、kdeck を開けば状況が分かります。</p>
+<p>kgrowth（検索データ分析システム）と連携して、「検索流入を増やすために、どのコンテンツを改善すべきか」を自動的に分析し、改善ジョブをキューに積んでいく仕組みもあります。</p>
+<h2>セキュリティの考え方</h2>
+<p>スマホのブラウザからサーバーを操作するということは、セキュリティが重要です。</p>
+<p>kdeck は次の設計でこれを解決しています。</p>
+<ul>
+<li>スマホのブラウザにはAPIトークンや認証情報が渡らない</li>
+<li>PHP代理サーバーが間に入り、認証済みユーザーだけがアクセスできる</li>
+<li>Xログイン（Twitter OAuth）で本人確認</li>
+<li>ローカルネットワーク内のAIサーバーは外部から直接アクセスできない</li>
+</ul>
+<p>「スマホから操作できる」と「安全に使える」を両立させています。</p>
+<h2>実行モードの選択肢</h2>
+<p>AIが何をしてよいかを、指示の前に選べます。</p>
+<ul>
+<li><strong>チャットのみ</strong> : 相談・確認だけ。ファイルもサーバーも触らない</li>
+<li><strong>リサーチ</strong> : 調査・検索だけ。変更操作はしない</li>
+<li><strong>確認して実行</strong> : 実行前に確認画面を挟む</li>
+<li><strong>フルアクセス</strong> : 指示通りにすべて実行</li>
+</ul>
+<p>「試しに相談してみたい」から「一気にやってしまいたい」まで、状況に合わせて選べます。</p>
+<h2>まとめ</h2>
+<p>Kurage Agent Deck（kdeck）は、スマホのブラウザから複数のLinuxサーバー上のAIエージェントを操作するためのコントロールパネルです。</p>
+<p>コーディング・リサーチ・ブログ投稿・動画生成・YouTube投稿まで、スマホから指示するだけで実行できます。</p>
+<p>ジョブキューで進捗が分かり、複数サーバーをひとつの画面で管理でき、エンジニアへの依頼待ちなしに、経営者が直接AIに指示できる環境を実現します。</p>
+<p>AIを「使ってもらうもの」から「自分でコントロールするもの」に変える、これが kdeck の本質です。</p>
+<hr />
+<p>株式会社エクスブリッジでは、VWorkフレームワークを活用して、こうしたAI内製化を名古屋・愛知の中小企業に展開しています。</p>
+<p>詳細は <a href="https://exbridge.jp/">エクスブリッジ</a> まで。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
