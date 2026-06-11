@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ](2026-06-11-kuragevp-public-api-incident.html)
 - [PyTorchで読む：DiffusionGemmaが示す、次世代の高性能オープンモデル・AIエージェントの暴走リスクが浮き彫りに 06-11](2026-06-11-ai-news-3.html)
 - [NVIDIA、AMD、Grokを巡るAIインフラ競争：エージェントの暴走とデータ革命の最前線 06-11](2026-06-11-ai-news-2.html)
 - [GoogleのDiffusionGemmaとDeepSeek-V4が示すAI効率化の最前線とAnthropicのガードレール批判 06-11](2026-06-11-ai-news.html)
