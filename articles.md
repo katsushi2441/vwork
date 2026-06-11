@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [NVIDIA、AMD、Grokを巡るAIインフラ競争：エージェントの暴走とデータ革命の最前線 06-11](2026-06-11-ai-news-2.html)
 - [GoogleのDiffusionGemmaとDeepSeek-V4が示すAI効率化の最前線とAnthropicのガードレール批判 06-11](2026-06-11-ai-news.html)
 - [kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン](2026-06-10-kgrowth-gsc-accesslog-pipeline.html)
 - [ClaudeとCohereが警告するAIの「壁」：Gemmaなど小型モデルが切り開く新たな競争領域 06-10](2026-06-10-ai-news-2.html)
