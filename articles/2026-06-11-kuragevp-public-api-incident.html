@@ -1,0 +1,233 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ | VWork バイブコーディングフレームワーク</title><meta name="description" content="Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/articles/2026-06-11-kuragevp-public-api-incident.html"><meta property="og:type" content="article"><meta property="og:title" content="Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ"><meta property="og:description" content="Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ"><meta property="og:url" content="https://katsushi2441.github.io/vwork/articles/2026-06-11-kuragevp-public-api-incident.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ"><meta name="twitter:description" content="Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ", "description": "Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ", "url": "https://katsushi2441.github.io/vwork/articles/2026-06-11-kuragevp-public-api-incident.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "", "dateModified": "", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ</h1>
+<p>AI OSSや自作AIツールを実運用していると、「便利に公開すること」と「勝手に使われないように守ること」の境界が難しくなります。</p>
+<p>今回、Kurage Voice-Proで、こちらが意図していない動画翻訳ジョブが生成されているように見える事象がありました。</p>
+<p>最初に疑うべきことは、大きく3つあります。</p>
+<ul>
+<li>CodexやAIエージェントが勝手に実行したのか</li>
+<li>RQDB4AIなどのジョブキューから自動実行されたのか</li>
+<li>外部から公開APIを直接叩かれたのか</li>
+</ul>
+<p>調査の結果、今回のケースは「AIエージェントが勝手に作った」のではなく、外部IPからKurage Voice-ProのFastAPIに直接アクセスされ、<code>/generate</code> が実行された可能性が高いと判断しました。</p>
+<p>この記事では、今回の切り分け、原因、対策を、AI OSS運用の技術メモとしてまとめます。</p>
+<hr />
+<h2>起きたこと</h2>
+<p>Kurage Voice-Proは、XやYouTubeなどの動画URLを受け取り、次の処理を行うAI動画翻訳ワークフローです。</p>
+<pre><code class="language-text">動画URL
+  -&gt; 動画取得
+  -&gt; ffmpegで音声抽出
+  -&gt; Whisperで文字起こし
+  -&gt; 翻訳
+  -&gt; TTS音声生成
+  -&gt; 字幕焼き込み
+  -&gt; 吹き替え動画生成
+  -&gt; Kurage動画として公開
+</code></pre>
+<p>問題になったジョブは、次のような動画でした。</p>
+<pre><code class="language-text">job_id: 762b2d8818184877
+created_at: 2026-06-11 07:36:12
+completed_at: 2026-06-11 07:36:18
+source: X投稿URL
+content_type: voice_pro_translation
+</code></pre>
+<p>Kurage側には、次のようなタイトルで公開されていました。</p>
+<pre><code class="language-text">It’s not looking like “Canada Strong” is going t
+</code></pre>
+<p>さらに、その直前に3件の失敗ジョブがありました。</p>
+<pre><code class="language-text">2026-06-11 07:28:15  error  YouTube URL
+2026-06-11 07:32:27  error  YouTube URL
+2026-06-11 07:34:06  error  YouTube URL
+2026-06-11 07:36:12  done   X URL
+</code></pre>
+<p>失敗ジョブは、YouTubeから取得したMP4をffmpegで読み込めず、<code>moov atom not found</code> で落ちていました。</p>
+<pre><code class="language-text">Error opening input file ... www.youtube.com_watch.mp4
+moov atom not found
+Invalid data found when processing input
+</code></pre>
+<p>これは、動画処理パイプライン自体の不具合というより、壊れた、または実体のないMP4を取得してしまった時の典型的な失敗です。</p>
+<hr />
+<h2>まずRQDB4AIを見る</h2>
+<p>この環境では、AIワーカーや自動処理はRQDB4AIで管理しています。</p>
+<p>そのため、意図しないジョブが見つかったときに最初に見るべき場所はRQDB4AIです。</p>
+<p>確認するポイントは次の通りです。</p>
+<ul>
+<li>該当時刻にジョブがenqueueされているか</li>
+<li>queue名は何か</li>
+<li>function名は何か</li>
+<li><code>source</code> が <code>web_online</code> か <code>worker_auto</code> か</li>
+<li>RQ jobのdescriptionやmetaに該当URLが入っているか</li>
+<li>failed / finished registryに残っているか</li>
+</ul>
+<p>今回、Redis上のRQ job keyやRQDB4AIのジョブ一覧を確認しましたが、該当するKurage Voice-Proの4ジョブは見つかりませんでした。</p>
+<p>つまり、少なくとも今回の4件は、RQDB4AIから通常のワーカーとして投入された履歴ではありませんでした。</p>
+<p>これは重要です。</p>
+<p>AIエージェントやジョブキューが原因であれば、RQDB4AIに痕跡が残るはずです。そこに残っていない場合、別経路、つまりWeb APIへの直接アクセスを疑う必要があります。</p>
+<hr />
+<h2>FastAPIのアクセスログを見る</h2>
+<p>次に、Kurage Voice-ProのFastAPIログを確認しました。</p>
+<p>Kurage Voice-Pro APIは、uvicornで次のように起動していました。</p>
+<pre><code class="language-text">uvicorn backend.main:app --host 0.0.0.0 --port 18302
+</code></pre>
+<p><code>0.0.0.0</code> でbindしているため、サーバ外部から <code>18302</code> に到達できる構成です。</p>
+<p>ログを見ると、該当時刻に同じ外部IPから連続してアクセスがありました。</p>
+<pre><code class="language-text">2026-06-11 07:28:15  37.19.211.98  POST /generate
+2026-06-11 07:32:27  37.19.211.98  POST /generate
+2026-06-11 07:34:06  37.19.211.98  POST /generate
+2026-06-11 07:36:12  37.19.211.98  POST /generate
+</code></pre>
+<p>さらに、同じIPは次のようなAPIも叩いていました。</p>
+<pre><code class="language-text">GET /health
+GET /jobs?limit=20
+GET /status/{job_id}
+GET /file/{job_id}/translated_srt
+GET /file/{job_id}/translated_audio
+</code></pre>
+<p>これは単なるポートスキャンというより、APIの構造を理解してジョブ一覧、状態、生成物を見ている挙動に近いです。</p>
+<p>外部IPはDatacamp系のTorontoホストでした。VPNやホスティング経由のアクセスである可能性があります。</p>
+<hr />
+<h2>原因は「公開APIが認証なしで操作可能だった」こと</h2>
+<p>今回の本質的な原因は、Kurage Voice-Pro APIが外部公開されていること自体ではありません。</p>
+<p>外部WebサーバからAPIを呼ぶ構成では、APIが公開されている必要があります。</p>
+<p>問題は、公開されたAPIに認証や送信元制限がなく、誰でも次の操作ができたことです。</p>
+<pre><code class="language-text">POST /generate
+GET /jobs
+GET /status/{job_id}
+GET /file/{job_id}/{kind}
+</code></pre>
+<p>特に <code>POST /generate</code> はGPU、Whisper、TTS、ffmpegを使う重い処理です。</p>
+<p>これが誰でも叩ける状態だと、次のリスクがあります。</p>
+<ul>
+<li>勝手に動画生成される</li>
+<li>GPUやCPUを消費される</li>
+<li>ストレージを埋められる</li>
+<li>過去ジョブ一覧を見られる</li>
+<li>生成物ファイルを取得される</li>
+<li>正規ユーザーの処理が遅くなる</li>
+</ul>
+<p>AI OSSツールでは、管理画面やデモ画面を作った時点で「とりあえず動くAPI」を公開しがちです。</p>
+<p>しかし、AI処理APIは通常のCRUD APIよりコストが重い。公開範囲の設計を間違えると、すぐに実害が出ます。</p>
+<hr />
+<h2>すぐに行った対策</h2>
+<p>今回の環境では、PHPのWeb画面は外部Webサーバにあり、そこからこのFastAPIを呼びます。</p>
+<p>そのため、単純にAPIを <code>127.0.0.1</code> に閉じることはできません。</p>
+<p>最初にローカルbindへ変更する案も考えましたが、それでは外部Webサーバから生成できなくなります。</p>
+<p>そこで、APIは <code>0.0.0.0:18302</code> で公開したまま、FastAPI側で送信元IP allowlistを入れました。</p>
+<p>許可するのは次のようなIPだけです。</p>
+<pre><code class="language-text">127.0.0.1
+::1
+外部WebサーバのIP
+</code></pre>
+<p>実装はFastAPI middlewareで行いました。</p>
+<pre><code class="language-python">@app.middleware(&quot;http&quot;)
+async def restrict_client_ip(request: Request, call_next):
+    allowed = allowed_client_ips()
+    client_host = request.client.host if request.client else &quot;&quot;
+    if allowed and client_host not in allowed:
+        return JSONResponse(
+            {&quot;ok&quot;: False, &quot;error&quot;: &quot;forbidden&quot;, &quot;client&quot;: client_host},
+            status_code=403,
+        )
+    return await call_next(request)
+</code></pre>
+<p>allowlistは環境変数で渡します。</p>
+<pre><code class="language-text">KURAGEVP_ALLOWED_CLIENT_IPS=127.0.0.1,::1,外部WebサーバIP
+</code></pre>
+<p>この対策により、正規のWebサーバからの利用は維持しつつ、未知の外部IPからの直接生成は拒否できます。</p>
+<hr />
+<h2>本来はAPIトークンも入れるべき</h2>
+<p>IP allowlistは即効性がありますが、万能ではありません。</p>
+<p>長期的には、次のどちらか、または両方を入れるべきです。</p>
+<pre><code class="language-text">1. IP allowlist
+2. API token / Bearer token
+</code></pre>
+<p>PHP側からFastAPIを呼ぶなら、例えば次のような構成にできます。</p>
+<pre><code class="language-text">PHP Web
+  -&gt; Authorization: Bearer &lt;server-side-token&gt;
+  -&gt; FastAPI
+</code></pre>
+<p>FastAPI側では、<code>/generate</code> や <code>/file</code> などの操作APIにトークンチェックを入れます。</p>
+<pre><code class="language-python">expected = os.environ.get(&quot;KURAGEVP_API_TOKEN&quot;)
+provided = request.headers.get(&quot;authorization&quot;, &quot;&quot;)
+</code></pre>
+<p>APIトークン方式の利点は、WebサーバのIPが変わっても対応しやすいことです。</p>
+<p>一方で、PHP側の環境変数管理、トークンローテーション、ログに出さない配慮が必要になります。</p>
+<p>今回のようにまず止血したい場合はIP allowlist、本格運用ではAPI token、さらに余裕があれば両方、という順番が現実的です。</p>
+<hr />
+<h2>RQDB4AIとAPI直叩きは分けて考える</h2>
+<p>今回の調査で重要だったのは、RQDB4AIの責務とWeb APIの責務を分けて考えたことです。</p>
+<p>RQDB4AIは、キューに積まれたAIジョブを管理するための仕組みです。</p>
+<p>一方で、Web APIが直接スレッドを立てて処理する設計だと、そのジョブはRQDB4AIには出ません。</p>
+<pre><code class="language-text">RQDB4AI経由
+  -&gt; Redis / RQ jobとして履歴が残る
+  -&gt; queue, function, meta, resultを追える
+
+API直叩き
+  -&gt; FastAPIログとアプリ独自job JSONに残る
+  -&gt; RQDB4AIには出ない
+</code></pre>
+<p>今回のKurage Voice-Proは後者でした。</p>
+<p>そのため、「RQDB4AIにないから何も起きていない」ではなく、「RQDB4AIを通らない実行経路がある」と判断する必要がありました。</p>
+<p>AIシステムを複数作っていくと、こうした実行経路が増えます。</p>
+<ul>
+<li>RQDB4AI経由のworker</li>
+<li>FastAPI直実行</li>
+<li>PHP proxy経由</li>
+<li>cron / systemd timer</li>
+<li>CodexやClaudeからのCLI実行</li>
+<li>手動curl</li>
+</ul>
+<p>インシデント調査では、どの経路で実行されたかを最初に切り分けることが大切です。</p>
+<hr />
+<h2>AI OSS運用で最低限入れたい防御</h2>
+<p>AI OSSや自作AIツールを公開する場合、最低限次のチェックリストを持つべきです。</p>
+<pre><code class="language-text">[ ] POST系APIに認証がある
+[ ] 重い生成APIにrate limitがある
+[ ] 外部公開ポートが把握されている
+[ ] Web UI経由とAPI直叩きのログを分けて見られる
+[ ] job_id, source_url, client_ip, user_agentを保存している
+[ ] RQDB4AI経由ジョブとAPI直実行ジョブを区別できる
+[ ] /jobs や /file が必要以上に公開されていない
+[ ] 失敗ジョブが大量発生した時に通知される
+[ ] allowlistやtokenを環境変数で変更できる
+</code></pre>
+<p>特に、AI動画生成、TTS、Whisper、画像生成、LLM推論などは、外部から見ると「無料GPU API」に見えてしまいます。</p>
+<p>デモ用に公開したつもりでも、検索エンジン、スキャナ、Bot、VPN経由のユーザーに見つかれば、すぐに使われます。</p>
+<hr />
+<h2>今回の教訓</h2>
+<p>今回のケースは、サーバ全体に侵入された証拠ではありませんでした。</p>
+<p>しかし、公開APIが認証なしで操作可能だったことは明確な問題でした。</p>
+<p>得られた教訓は次の通りです。</p>
+<ul>
+<li>AIエージェントが勝手に動いたと決めつけず、まず実行経路を分解する</li>
+<li>RQDB4AIに履歴がない場合、API直叩きやcronを疑う</li>
+<li>FastAPIを <code>0.0.0.0</code> で公開するなら、認証か送信元制限を必ず入れる</li>
+<li>外部Webサーバから呼ぶ必要がある場合、localhost bindではなくallowlistやtokenで守る</li>
+<li><code>/jobs</code> や <code>/file</code> も情報漏えいになり得るので保護対象にする</li>
+<li>AI生成APIは計算資源を消費するため、通常APIより厳しく守る</li>
+</ul>
+<p>AI OSSは、組み合わせればすぐに便利なサービスになります。</p>
+<p>その一方で、OSSを実サービスとして公開した瞬間から、運用とセキュリティの責任が発生します。</p>
+<p>「動いた」だけで終わらせず、「誰が、どこから、どの経路で、何を実行できるのか」を設計に含める。</p>
+<p>これが、AI OSSを実運用に載せるうえでの大事な境界線だと思います。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
