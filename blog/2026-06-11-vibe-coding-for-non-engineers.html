@@ -1,0 +1,119 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>バイブコーディングとは？非エンジニアがAIで仕事を自動化する新しい方法 | VWork バイブコーディングフレームワーク</title><meta name="description" content="バイブコーディングは、難しいプログラミングを覚えなくても、AIにやりたいことを普通の言葉で伝えてアプリや業務自動化を作る方法です。事務作業、アイデアの試作、AI時代のスキルとしてのメリットを解説します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-11-vibe-coding-for-non-engineers.html"><meta property="og:type" content="article"><meta property="og:title" content="バイブコーディングとは？非エンジニアがAIで仕事を自動化する新しい方法"><meta property="og:description" content="バイブコーディングは、難しいプログラミングを覚えなくても、AIにやりたいことを普通の言葉で伝えてアプリや業務自動化を作る方法です。事務作業、アイデアの試作、AI時代のスキルとしてのメリットを解説します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-11-vibe-coding-for-non-engineers.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="バイブコーディングとは？非エンジニアがAIで仕事を自動化する新しい方法"><meta name="twitter:description" content="バイブコーディングは、難しいプログラミングを覚えなくても、AIにやりたいことを普通の言葉で伝えてアプリや業務自動化を作る方法です。事務作業、アイデアの試作、AI時代のスキルとしてのメリットを解説します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "バイブコーディングとは？非エンジニアがAIで仕事を自動化する新しい方法", "description": "バイブコーディングは、難しいプログラミングを覚えなくても、AIにやりたいことを普通の言葉で伝えてアプリや業務自動化を作る方法です。事務作業、アイデアの試作、AI時代のスキルとしてのメリットを解説します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-11-vibe-coding-for-non-engineers.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-11", "dateModified": "2026-06-11", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>バイブコーディングとは？非エンジニアがAIで仕事を自動化する新しい方法</h1>
+<p>「バイブコーディング」という言葉を聞いたことはありますか。</p>
+<p>最近注目されているバイブコーディング（Vibe Coding）は、難しいプログラミング文法を一から覚えなくても、AIに「こんな感じでやってほしい」と雰囲気や目的を伝えるだけで、アプリ、ツール、事務作業の自動化を作っていく新しい方法です。</p>
+<p>大事なのは、完璧な仕様書を書くことではありません。</p>
+<p>「このExcelを読み込んで、集計して、グラフにして、定型メールに添付して送って」</p>
+<p>このように、普段の仕事の言葉でAIに伝え、AIと会話しながら形にしていくことです。</p>
+<h2>バイブコーディングは、プログラミングではなく「作れる力」</h2>
+<p>従来のプログラミングは、まず言語を覚え、文法を覚え、エラーと向き合い、少しずつ動くものを作っていく世界でした。</p>
+<p>もちろん、今でも本格的な開発にはエンジニアの力が必要です。</p>
+<p>しかし、ChatGPT、Claude、Codex、CursorのようなAIが登場したことで、最初の一歩は大きく変わりました。</p>
+<p>非エンジニアでも、次のようなことをAIに頼めるようになっています。</p>
+<ul>
+<li>Excelの集計を自動化する</li>
+<li>メール返信の下書きを作る</li>
+<li>報告書のたたき台を作る</li>
+<li>顧客リストを整理する</li>
+<li>自分専用の小さな管理ツールを作る</li>
+<li>Webサイトやブログ記事の下書きを作る</li>
+<li>動画やSNS投稿まで一連の流れにする</li>
+</ul>
+<p>つまりバイブコーディングとは、「コードを書く技術」というより、AIに仕事を形にしてもらうための指示力です。</p>
+<h2>非エンジニアが学ぶ3つのメリット</h2>
+<h3>1. 日常の事務作業が劇的に楽になる</h3>
+<p>多くの会社には、毎週、毎月、何度も繰り返している作業があります。</p>
+<p>たとえば、Excelの集計、定型メール作成、請求書や報告書の整理、CSVデータの加工、会議メモの要約などです。</p>
+<p>これまでは「面倒だけど人がやるしかない」と思われていた作業も、バイブコーディングを使えばAIに自動化のたたき台を作らせることができます。</p>
+<p>最初から完璧なシステムを作る必要はありません。</p>
+<p>まずは、毎週30分かかっている作業を10分にする。毎月2時間かかっている集計を、ボタンひとつで終わるようにする。</p>
+<p>その小さな改善の積み重ねが、会社全体の時間を大きく変えていきます。</p>
+<h3>2. 自分のアイデアをすぐ形にできる</h3>
+<p>「自分専用の家計簿アプリがほしい」</p>
+<p>「予約管理ツールを作りたい」</p>
+<p>「営業リストを整理して、メール文面まで自動で作りたい」</p>
+<p>こうしたアイデアは、以前ならエンジニアに依頼するか、プログラミングスクールに通ってからでないと形にしづらいものでした。</p>
+<p>しかし今は、AIに相談しながら試作品を作ることができます。</p>
+<p>最初は小さくて構いません。画面が少し不格好でも、機能が一部だけでも構いません。</p>
+<p>動くものを早く作り、実際に使いながら「もっとシンプルに」「この項目を追加して」「スマホでも見やすくして」と調整していく。</p>
+<p>このスピード感が、バイブコーディングの大きな魅力です。</p>
+<h3>3. AI時代に強い自分だけの武器になる</h3>
+<p>これからの仕事では、AIを使える人と、AIに何を頼めばよいかわからない人の差が大きくなります。</p>
+<p>重要なのは、AIに丸投げすることではありません。</p>
+<p>自分の仕事を理解し、目的を言葉にし、AIに具体的に伝え、出てきたものを確認し、必要に応じて直すことです。</p>
+<p>この力は、業種を問わず役に立ちます。</p>
+<p>経理、営業、総務、広報、店舗運営、EC、士業、製造業、教育、医療、介護。どの現場にも、まだ自動化できる作業や、AIで改善できる流れがあります。</p>
+<p>バイブコーディングを身につけることは、AI時代に「自分の仕事を自分で改善できる人」になることです。</p>
+<h2>基本は3ステップだけ</h2>
+<p>バイブコーディングの始め方は、とてもシンプルです。</p>
+<h3>ステップ1: Vibeを伝える</h3>
+<p>まず、普通の言葉でAIにやりたいことを伝えます。</p>
+<p>たとえば、次のような指示です。</p>
+<blockquote>
+<p>このExcelファイルを読み込んで、部署ごとに売上を集計して、グラフを作って、結果をメール本文にまとめてください。</p>
+</blockquote>
+<p>最初から専門用語を使う必要はありません。</p>
+<p>「こういう感じにしたい」「この作業を楽にしたい」「毎週やっているこの処理を自動化したい」と伝えるところから始めます。</p>
+<h3>ステップ2: AIに作ってもらう</h3>
+<p>AIは、Pythonスクリプト、Excelマクロ、Webページ、簡単なアプリ、文章テンプレートなどを提案してくれます。</p>
+<p>ここで大切なのは、AIが出したものを完成品だと思い込まないことです。</p>
+<p>あくまで最初のたたき台です。</p>
+<p>動かしてみて、読んでみて、違うところを見つけて、次の指示を出します。</p>
+<h3>ステップ3: 微調整する</h3>
+<p>バイブコーディングのコツは、微調整を怖がらないことです。</p>
+<p>「もっとシンプルに」</p>
+<p>「初心者でも使えるように」</p>
+<p>「この項目を追加して」</p>
+<p>「エラーが出たので直して」</p>
+<p>「見た目をもう少し業務用にして」</p>
+<p>このように、AIと会話しながら少しずつ良くしていきます。</p>
+<p>最初から完璧でなくて大丈夫です。</p>
+<p>「なんかいい感じ」を積み重ねることが、バイブコーディングの一番実践的な進め方です。</p>
+<h2>まず何から始めればいいか</h2>
+<p>最初におすすめなのは、いきなり大きなシステムを作ろうとしないことです。</p>
+<p>次のような、小さくて効果が見えやすい作業から始めると続けやすくなります。</p>
+<ul>
+<li>毎週作っている報告書の下書き</li>
+<li>Excel集計の自動化</li>
+<li>メール返信テンプレートの作成</li>
+<li>議事録の要約</li>
+<li>問い合わせ内容の分類</li>
+<li>商品説明文やSNS投稿文の作成</li>
+<li>ファイル名の整理やフォルダ分け</li>
+</ul>
+<p>「これ、毎回同じことをしているな」と感じる作業があれば、それが最初の候補です。</p>
+<h2>VWorkが目指していること</h2>
+<p>VWorkは、バイブコーディングを会社の中で実践するための考え方と作業基盤です。</p>
+<p>単にAIツールを紹介するだけではなく、日々の仕事の中で、AIに何を任せ、どこを人間が判断し、どう改善を積み重ねるかを形にしていきます。</p>
+<p>経営者や現場担当者が、自分の言葉でAIに指示し、自社の業務を少しずつ内製化していく。</p>
+<p>外注待ちで止まらず、アイデアをすぐ試し、面倒な作業を減らし、本当に時間を使うべき仕事に集中する。</p>
+<p>そのための入口が、バイブコーディングです。</p>
+<h2>まとめ</h2>
+<p>バイブコーディングは、エンジニアだけのものではありません。</p>
+<p>むしろ、日々の仕事を一番よく知っている非エンジニアこそ、大きな効果を出せる可能性があります。</p>
+<p>プログラミングを完璧に覚える前に、まずAIへ「こんな感じでやってほしい」と伝えてみる。</p>
+<p>そこから、作業の自動化、アイデアの試作、自分専用ツールの作成が始まります。</p>
+<p>これからの時代に強いのは、すべてを自分で手作業する人ではなく、AIと一緒に作れる人です。</p>
+<p>バイブコーディングは、その第一歩です。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
