@@ -35,3 +35,4 @@
 2026-06-10-kdeck-smartphone-server-control
 2026-06-11-kurage-voice-pro-for-business
 2026-06-11-ai-news
+2026-06-11-vibe-coding-for-non-engineers
