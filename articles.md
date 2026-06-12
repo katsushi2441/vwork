@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [FTXで読む：ジェフ・ベゾス、Huawei、MiniMaxAIが牽引するAIの物理世界と次世代モデル競争 06-12](2026-06-12-ai-news-7.html)
 - [DN42とQATで読む：Jeff BezosのPrometheusとGemma 4が描く、AIの次世代インフラ競争 06-12](2026-06-12-ai-news-6.html)
 - [SpaceXで読む：BezosのPrometheusとGemma 4が示す、AIの「物理世界」への大規模な進出 06-12](2026-06-12-ai-news-5.html)
 - [AmazonのPrometheus、Gemma 4、そしてSpaceX：AIと物理世界を変える巨額投資の最前線 06-12](2026-06-12-ai-news-4.html)
