@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [BezosのPrometheusとGemma 4が描くAIの未来：物理世界とオープンモデルの競争 06-12](2026-06-12-ai-news-2.html)
 - [NewとMusicで読む：CoinbaseのAIエージェントと銀行の変革：デジタル金融の最前線 06-12](2026-06-12-ai-news.html)
 - [LLMの重い処理はキューに逃がす：RQDB4AIとWebポーリングで作る実運用向けAIジョブ基盤](2026-06-12-rqdb4ai-web-polling-llm-jobs.html)
 - [Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ](2026-06-11-kuragevp-public-api-incident.html)
