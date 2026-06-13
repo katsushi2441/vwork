@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [QwenとPiで実現するローカルAI革命：オープンソースモデルの最新動向とWeb3の潮流 06-14](2026-06-14-ai-news.html)
 - [「AnthropicのFable 5とMythos 5」に何が？米政府のAI規制が描く未来 06-13](2026-06-13-ai-news-2.html)
 - [Googleの訴訟からCRISPR、olmo-evalまで：AIとバイオテクノロジーの最新動向 06-13](2026-06-13-ai-news.html)
 - [FTXで読む：ジェフ・ベゾス、Huawei、MiniMaxAIが牽引するAIの物理世界と次世代モデル競争 06-12](2026-06-12-ai-news-7.html)
