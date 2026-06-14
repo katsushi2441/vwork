@@ -41,3 +41,13 @@
 2026-06-11-kuragevp-public-api-incident
 2026-06-12-rqdb4ai-web-polling-llm-jobs
 2026-06-12-ai-news
+2026-06-12-ai-news-2
+2026-06-12-ai-news-3
+2026-06-12-ai-news-4
+2026-06-12-ai-news-5
+2026-06-12-ai-news-6
+2026-06-12-ai-news-7
+2026-06-13-ai-news
+2026-06-13-ai-news-2
+2026-06-14-ai-news
+2026-06-14-ai-news-2
