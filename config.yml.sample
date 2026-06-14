@@ -1,0 +1,104 @@
+# VWork configuration sample
+# Copy to config.yml for local operation. Leave secrets in .env, not here.
+
+site:
+  name:
+  description:
+  base_url:
+  language:
+  author:
+  organization:
+  seo_image:
+  ga_measurement_id:
+  simpletrack_url:
+
+repository:
+  remote:
+  main_branch:
+  pages_branch:
+  gh_pages_dir:
+
+content:
+  blog_dir:
+  articles_dir:
+  episodes_dir:
+  storage_dir:
+  generated_status:
+  default_status:
+
+publish:
+  github_pages:
+    enabled:
+    base_url:
+    worktree_dir:
+  aixsns:
+    enabled:
+    api_url:
+    author:
+  hatena:
+    enabled:
+    posted_log:
+    post_email_env:
+  blogger:
+    enabled:
+    posted_log:
+    post_email_env:
+
+mail:
+  smtp_host_env:
+  smtp_port_env:
+  smtp_from_env:
+  smtp_password_env:
+  sleep_seconds_between_posts:
+
+llm:
+  provider:
+  claude:
+    command_env:
+    model_env:
+    timeout_seconds_env:
+  ollama:
+    base_url_env:
+    model_env:
+  openai:
+    api_key_env:
+    model_env:
+  anthropic:
+    api_key_env:
+    model_env:
+
+research:
+  google_news:
+    rss_base_url_env:
+    locale_env:
+    region_env:
+    default_query_suffix:
+    max_items:
+
+video:
+  kurage:
+    base_url_env:
+    api_url_env:
+  kurage_voice_pro:
+    base_url_env:
+    api_url_env:
+  youtube:
+    client_secrets_file_env:
+    token_file_env:
+
+tracking:
+  simpletrack_url_env:
+  ga_measurement_id_env:
+
+storage:
+  hatena_posted_file:
+  blogger_posted_file:
+  work_dir:
+  cache_dir:
+
+runtime:
+  python_bin:
+  git_bin:
+  ssh_auth_sock_env:
+  dry_run:
+  log_level:
