@@ -39,6 +39,41 @@ WORKLOG.md
 
 `.env` はGit管理しません。
 
+必要に応じて、値を空欄にした `.env.sample` を作ります。
+
+```text
+SMTP_HOST=
+SMTP_PORT=
+API_BASE_URL=
+API_TOKEN=
+FTP_HOST=
+FTP_USER=
+FTP_PASSWORD=
+```
+
+実値は `.env` またはサーバ環境変数に置きます。
+
+## 設定ファイル
+
+サイト名、公開先、ジョブ種別、目標件数など、秘密ではない設定項目が増えたら `config.yml.sample` を作ります。
+
+```yaml
+site:
+  name:
+  base_url:
+
+jobs:
+  daily_target:
+  interval_seconds:
+  queue_name:
+
+publish:
+  enabled:
+  destination:
+```
+
+実際の `config.yml` はGit管理しません。
+
 ## 外部サービス
 
 ```text
@@ -68,10 +103,26 @@ FTP/SSH/API:
 
 ```
 
+## ジョブ・キュー・常駐サービス
+
+長時間処理や繰り返し実行がある場合に書きます。
+
+```text
+ジョブ管理:
+キュー:
+常駐サービス名:
+起動/停止/再起動:
+管理画面:
+ログ:
+1日の目標件数:
+実行間隔:
+重複防止:
+失敗時の確認方法:
+```
+
 ## 注意点
 
 - 本番データを直接上書きしない
 - 接続情報は `.env` に置く
 - 初めて行った作業手順はこのファイルに追記する
 - サーバー反映が必要な作業は、反映先と確認URLを書く
-
