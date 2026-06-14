@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [GLM 5.2とOpenAIの動向から読み解く：AIモデルとWebAssemblyの進化 06-14](2026-06-14-ai-news-3.html)
 - [OpenAIの法的課題とKPMGの警告：AIの信頼性と進化の最前線 06-14](2026-06-14-ai-news-2.html)
 - [QwenとPiで実現するローカルAI革命：オープンソースモデルの最新動向とWeb3の潮流 06-14](2026-06-14-ai-news.html)
 - [「AnthropicのFable 5とMythos 5」に何が？米政府のAI規制が描く未来 06-13](2026-06-13-ai-news-2.html)
