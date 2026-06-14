@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Cryptoで読む：Deepseek 4 flashがMacで動作！XiaomiとQwen3.5が描くローカルAIの進化 06-15](2026-06-15-ai-news-2.html)
 - [Theで読む：Deepseek V4 FlashとDGX Sparks：ローカルLLMの処理速度競争が激化 06-15](2026-06-15-ai-news.html)
 - [X APIを使わずにAIエージェントからXを検索・投稿する方法（Agent Reach + twitter-cli）](2026-06-14-agent-reach-x-no-api.html)
 - [Anthropic、OpenAI、Amazonを巡るAI規制の波とGLM 5.2の登場：AI開発の最前線 06-14](2026-06-14-ai-news-4.html)
