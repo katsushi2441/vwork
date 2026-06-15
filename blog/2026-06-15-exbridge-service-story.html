@@ -1,0 +1,68 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「AIを入れたい」から「AIで動かしている」まで、エクスブリッジが伴走します | VWork バイブコーディングフレームワーク</title><meta name="description" content="バイブコーディングセミナー、手入力ゼロ化支援、AIラボ契約。AI × OSSで競争優位性を持つエクスブリッジが、経営者のAI活用を段階的にサポートします。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-15-exbridge-service-story.html"><meta property="og:type" content="article"><meta property="og:title" content="「AIを入れたい」から「AIで動かしている」まで、エクスブリッジが伴走します"><meta property="og:description" content="バイブコーディングセミナー、手入力ゼロ化支援、AIラボ契約。AI × OSSで競争優位性を持つエクスブリッジが、経営者のAI活用を段階的にサポートします。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-15-exbridge-service-story.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「AIを入れたい」から「AIで動かしている」まで、エクスブリッジが伴走します"><meta name="twitter:description" content="バイブコーディングセミナー、手入力ゼロ化支援、AIラボ契約。AI × OSSで競争優位性を持つエクスブリッジが、経営者のAI活用を段階的にサポートします。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「AIを入れたい」から「AIで動かしている」まで、エクスブリッジが伴走します", "description": "バイブコーディングセミナー、手入力ゼロ化支援、AIラボ契約。AI × OSSで競争優位性を持つエクスブリッジが、経営者のAI活用を段階的にサポートします。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-15-exbridge-service-story.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-15", "dateModified": "2026-06-15", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>「AIを入れたい」から「AIで動かしている」まで、エクスブリッジが伴走します</h1>
+<p>「うちもAIを使わないといけないとは思っている」</p>
+<p>そう言う経営者は増えた。でも、その言葉の後に続くのは大抵こういうことだ。</p>
+<p>「何から始めればいいかわからない」「ChatGPTは使っているけど、それ以上が進まない」「社員に任せたら止まった」「AI会社に相談したら、高いツールを勧められた」。</p>
+<p>エクスブリッジはこの「わかっているけど進まない」状態を、段階的に解決するための3つの入口を用意している。</p>
+<hr />
+<h2>なぜエクスブリッジのAIは安く動くのか</h2>
+<p>3つのサービスを説明する前に、一つ伝えておきたいことがある。</p>
+<p>エクスブリッジはAIと「OSS（無償で公開されているソフトウェア）」を組み合わせて自社のシステムを作り続けている会社だ。動画を自動生成するシステムも、書類をAIで読み取るシステムも、SNSを自動で動かす仕組みも、すべてOSSを組み合わせて動いている。</p>
+<p>この蓄積があるから、特定のSaaSベンダーに依存せず、安く、速く、自社仕様で動くシステムを作れる。そしてその技術と実績を、顧客企業へのサービスに還元している。</p>
+<hr />
+<h2>入口①　まず経営者自身が体験する——バイブコーディングセミナー</h2>
+<p>「AIを導入したいが、自分がよくわかっていない状態では決断できない」という経営者のために、体験型のセミナーを名古屋・愛知エリアで実施している。</p>
+<p>ここで伝えているのは一つのことだ。</p>
+<p><strong>ChatGPTは「考えるAI」、CodexやClaudeは「実行するAI」</strong>。</p>
+<p>ChatGPTは優秀なコンサルタントだ。アイデアを整理し、文章を作り、相談に乗る。しかしそれだけでは業務は動かない。Codexは実際に手を動かすAIエンジニアだ。コードを書き、ファイルを編集し、システムを作り上げる。</p>
+<p>このセミナーでは、「実行するAI」が目の前で業務システムを作っていく様子をデモで体験できる。実際にFAX発注書をスマートフォンで撮影し、AIがデータを読み取って受注システムに登録するまでの一連の流れを、現場で見てもらった経営者から「これは本物だ」という声が返ってくる。</p>
+<p><strong>経営者自身が体験して初めて、「どこに投資すべきか」の判断ができる。</strong></p>
+<p>→ <a href="https://exbridge.jp/seminar.html">バイブコーディングセミナーを詳しく見る</a></p>
+<hr />
+<h2>入口②　現場の手入力をなくす——システム内製化支援</h2>
+<p>セミナーを受けて「これを自社でやりたい」と思ったとき、次のステップが内製化支援だ。</p>
+<p>まだ、毎日手入力していないだろうか。</p>
+<p>FAX、紙の伝票、PDFのメール——これを見てExcelに打ち込み、基幹システムに転記する。この作業が月に100時間あれば、年間で約180万円が消えている計算になる。</p>
+<p>エクスブリッジの内製化支援は、この手入力を自社専用のシステムに変える。しかも「作って終わり」ではなく、VWorkとCodexを使って社内で育て続けられる仕組みとして残す。外注に頼らず、現場が自分たちで改善できる状態を目指す。</p>
+<p><strong>月額SaaSを増やすのではなく、自社の資産として残るシステムを作る。</strong></p>
+<p>参考として、FAX発注書の入力自動化を例に挙げると、初期費用の投資回収は約2.4ヶ月。それ以降は毎年の削減効果がそのまま利益に変わる。</p>
+<p>→ <a href="https://exbridge.jp/input-automation.html">手入力ゼロ化支援を詳しく見る</a></p>
+<hr />
+<h2>入口③　忙しくて自分では動けない——AIラボ契約</h2>
+<p>「セミナーで重要性はわかった。でも経営者も社員も本業で手が回らない」。</p>
+<p>そういう企業のために、エクスブリッジのエンジニアがAI活用をまるごと代行する月額契約がある。</p>
+<p>月20時間、担当エンジニアが実際に手を動かして実装する。それに加えて、GPU・AI・自動化ツールが24時間365日稼働し続ける。人間が寝ている間も、AIは処理を続けられる。</p>
+<p>動かせる範囲は広い。業務の自動化、Webサイトのコンテンツ強化、動画の量産、データレポートの定期生成、競合情報の収集と要約、既存システムとのAPI連携——優先度の高い課題から順に実装していく。</p>
+<p>ここでエクスブリッジのOSSと自社プロダクトの蓄積が活きる。ゼロから環境を整える必要がなく、すでに実戦で動いてきた仕組みをそのまま活用できるため、初月から成果が出るスピードが違う。</p>
+<p><strong>「理解はしている。でも動けていない」企業のための、実務代行サービス。</strong></p>
+<p>→ <a href="https://exbridge.jp/vibe-lab.html">AIラボ契約を詳しく見る</a></p>
+<hr />
+<h2>3つの入口は、つながっている</h2>
+<p>セミナーで体験し → 内製化で動かし始め → 忙しくなったらラボ契約で伴走してもらう。</p>
+<p>この流れは一本のストーリーだ。どこから入っても構わない。「まず体験したい」ならセミナーから。「すぐに現場の改善をしたい」なら内製化支援から。「全部お任せしたい」ならラボ契約から。</p>
+<p>そしてすべての土台に、AI × OSSで積み上げてきた技術がある。特定のベンダーに縛られず、安く、速く、自社仕様で動かせる——その強みを、顧客企業の経営課題に直接当てることがエクスブリッジの仕事だ。</p>
+<hr />
+<p>「まず話を聞いてみたい」という段階でも構わない。どの入口から相談しても、状況に合った提案をします。</p>
+<p><a href="https://exbridge.jp/">株式会社エクスブリッジ — ご相談はこちら</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
