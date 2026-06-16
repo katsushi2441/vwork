@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [LinkedInにおける「仕事のオファー」に潜むバックドアの危険性・Claude Fable 5の進化とAIモデルの「蒸留（Distillation）」技術 06-16](2026-06-16-ai-news-4.html)
 - [Securityで読む：Iroh 1.0とAnthropicの規制論争：AIインフラとガバナンスの最前線 06-16](2026-06-16-ai-news-3.html)
 - [Anthropicの規制問題とLinkedInの脆弱性：AI企業の競争とセキュリティの最前線 06-16](2026-06-16-ai-news-2.html)
 - [SalesforceがFinを買収、Gemma 4がモバイル展開：AIエージェントとエンタープライズの最前線 06-16](2026-06-16-ai-news.html)
