@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [MistralとGLM-5.2が牽引するオープンAIモデル競争の最前線：最新AI動向まとめ 06-17](2026-06-17-ai-news-2.html)
 - [VibeThinkerとEthereumが示すAIの進化：小規模モデルの飛躍とWeb3インフラの信頼性 06-17](2026-06-17-ai-news.html)
 - [LinkedInにおける「仕事のオファー」に潜むバックドアの危険性・Claude Fable 5の進化とAIモデルの「蒸留（Distillation）」技術 06-16](2026-06-16-ai-news-4.html)
 - [Securityで読む：Iroh 1.0とAnthropicの規制論争：AIインフラとガバナンスの最前線 06-16](2026-06-16-ai-news-3.html)
