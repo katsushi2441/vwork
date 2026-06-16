@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Securityで読む：Iroh 1.0とAnthropicの規制論争：AIインフラとガバナンスの最前線 06-16](2026-06-16-ai-news-3.html)
 - [Anthropicの規制問題とLinkedInの脆弱性：AI企業の競争とセキュリティの最前線 06-16](2026-06-16-ai-news-2.html)
 - [SalesforceがFinを買収、Gemma 4がモバイル展開：AIエージェントとエンタープライズの最前線 06-16](2026-06-16-ai-news.html)
 - [TheとYourで読む：「Qwen 27B」の効率進化と「AIレイオフ」の波：モデルと労働市場の最前線 06-15](2026-06-15-ai-news-4.html)
