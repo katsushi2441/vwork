@@ -60,3 +60,8 @@
 2026-06-15-ai-news-3
 2026-06-15-exbridge-ai-oss-business
 2026-06-15-exbridge-service-story
+2026-06-15-ai-news-4
+2026-06-16-ai-news
+2026-06-16-ai-news-2
+2026-06-16-keieisha-vibe-coding-seminar
+2026-06-16-marp-cli-pptx-web-slide
