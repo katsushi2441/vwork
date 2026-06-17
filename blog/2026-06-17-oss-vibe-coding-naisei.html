@@ -1,0 +1,128 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>外注より安く、SaaSより自由に。OSS×バイブコーディングで「自社のシステム」を持つ | VWork バイブコーディングフレームワーク</title><meta name="description" content="高い外注費、積み上がるSaaSの月額、ベンダーロックイン。その多くはオープンソース(OSS)とバイブコーディングで置き換えられます。経営者向けに、低コスト内製化の考え方と進め方を解説します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-17-oss-vibe-coding-naisei.html"><meta property="og:type" content="article"><meta property="og:title" content="外注より安く、SaaSより自由に。OSS×バイブコーディングで「自社のシステム」を持つ"><meta property="og:description" content="高い外注費、積み上がるSaaSの月額、ベンダーロックイン。その多くはオープンソース(OSS)とバイブコーディングで置き換えられます。経営者向けに、低コスト内製化の考え方と進め方を解説します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-17-oss-vibe-coding-naisei.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="外注より安く、SaaSより自由に。OSS×バイブコーディングで「自社のシステム」を持つ"><meta name="twitter:description" content="高い外注費、積み上がるSaaSの月額、ベンダーロックイン。その多くはオープンソース(OSS)とバイブコーディングで置き換えられます。経営者向けに、低コスト内製化の考え方と進め方を解説します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "外注より安く、SaaSより自由に。OSS×バイブコーディングで「自社のシステム」を持つ", "description": "高い外注費、積み上がるSaaSの月額、ベンダーロックイン。その多くはオープンソース(OSS)とバイブコーディングで置き換えられます。経営者向けに、低コスト内製化の考え方と進め方を解説します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-17-oss-vibe-coding-naisei.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-17", "dateModified": "2026-06-17", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>外注より安く、SaaSより自由に。OSS×バイブコーディングで「自社のシステム」を持つ</h1>
+<p>「AIで業務を効率化したい」「自社に合ったシステムが欲しい」。
+そう考えたとき、多くの会社が突き当たるのは技術ではなく、<strong>コストと主導権</strong>の問題です。</p>
+<ul>
+<li>外注すると、見積もりが高く、改修のたびに費用と時間がかかる</li>
+<li>SaaS（月額サービス）を足していくと、固定費が積み上がり、やめられなくなる</li>
+<li>どちらを選んでも、肝心のシステムは「自社のもの」にならない</li>
+</ul>
+<p>この記事では、経営者の視点から、<strong>OSS（オープンソース）とバイブコーディングを組み合わせて、低コストで自社システムを内製する</strong>という選択肢を整理します。</p>
+<h2>なぜ「コストが下がらない」のか</h2>
+<p>システムにお金がかかり続ける理由は、たいてい次の3つに集約されます。</p>
+<h3>1. ライセンス・利用料が永続的に出ていく</h3>
+<p>SaaSは便利ですが、使い続ける限り月額が発生します。ツールを増やすほど固定費が膨らみ、「もう止められない」状態になります。これは資産ではなく、<strong>毎月消えていくコスト</strong>です。</p>
+<h3>2. 改修のたびに外注費がかかる</h3>
+<p>外注開発は、最初の構築費だけでなく、小さな改修でも見積もりと依頼が必要です。「ボタンを1つ足したい」だけで数週間待ち、数十万円——という話は珍しくありません。</p>
+<h3>3. ベンダーロックイン</h3>
+<p>提供元の仕様変更や値上げに振り回され、自社では手を入れられない。これが一番こわい状態です。事業の根幹を、他社の都合に握られてしまいます。</p>
+<h2>OSSという選択肢 ——「自社のシステム資産」を持つ</h2>
+<p>OSS（オープンソースソフトウェア）は、世界中で使われ、実績のあるソフトウェアを<strong>ライセンス費ゼロ</strong>で使えるものが中心です。エクスブリッジ自身、長年にわたってOSSを徹底活用し、低コストなシステム開発を行ってきました。</p>
+<p>OSSを土台にすると、経営的に大きな利点があります。</p>
+<ul>
+<li><strong>ライセンス費がかからない</strong> — SaaSの月額固定費を、自社の資産に置き換えられる</li>
+<li><strong>ソースコードが自社に残る</strong> — 値上げや仕様変更に振り回されない</li>
+<li><strong>ベンダーロックインを回避できる</strong> — 主導権が自社にある</li>
+</ul>
+<p>つまり、SaaSを増やして「借り続ける」のではなく、OSSで「自社のシステムを持つ」発想に変わります。</p>
+<h2>バイブコーディング ——「持つ」を「作れる・育てられる」に変える</h2>
+<p>とはいえ、OSSを使いこなすには開発力が要る、と思われがちです。ここを変えるのが<strong>バイブコーディング</strong>です。</p>
+<p>バイブコーディングは、ひとことで言えば「やりたいことを言葉で伝えると、AIがシステムを作ってくれる」開発スタイルです。業務を一番よく知っている人（=現場と経営者）が、AIと一緒に小さく作り、使いながら改善していけます。</p>
+<p>OSSという土台に、バイブコーディングという作り方を組み合わせると——</p>
+<ul>
+<li>外注を待たず、<strong>自分たちで小さく作って改善できる</strong></li>
+<li>改善ノウハウ・依頼文・運用ルールまで、<strong>社内に残る</strong></li>
+<li>結果として、<strong>外注より安く、SaaSより自由</strong>な状態になる</li>
+</ul>
+<h2>外注・SaaS・OSS×バイブコーディングの違い</h2>
+<p>同じ「自社システムを持つ」でも、選び方でコスト構造はまったく変わります。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>外注開発</th>
+<th>SaaS（月額）</th>
+<th>OSS×バイブコーディング</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>利用料</td>
+<td>保守費が継続</td>
+<td>月額が永続発生</td>
+<td>OSSはゼロが中心</td>
+</tr>
+<tr>
+<td>ソースの所有</td>
+<td>契約次第・不透明</td>
+<td>提供元が保有</td>
+<td>自社が保有</td>
+</tr>
+<tr>
+<td>改修スピード</td>
+<td>見積・依頼待ち</td>
+<td>提供元の仕様に依存</td>
+<td>社内ですぐ回せる</td>
+</tr>
+<tr>
+<td>自社仕様への適合</td>
+<td>都度費用が発生</td>
+<td>既製の枠内</td>
+<td>自由に作り込める</td>
+</tr>
+<tr>
+<td>ロックイン</td>
+<td>起きやすい</td>
+<td>起きやすい</td>
+<td>回避しやすい</td>
+</tr>
+</tbody>
+</table>
+<h2>大事なのは「内製でできること・できないこと」を分けること</h2>
+<p>ここで強調したいのは、「全部を社内で抱え込め」という話ではない、ということです。<strong>境界線を正しく知ること</strong>が、失敗しない内製化の第一歩です。</p>
+<ul>
+<li><strong>AIに任せて社内で内製できる</strong>：要件定義・仕様づくり・システム設計・実装・テスト・運用・改善</li>
+<li><strong>プロに任せたほうが速くて安い</strong>：技術選定（どの基盤を使うか）・インフラ設計・サーバ構築・セキュリティ</li>
+</ul>
+<p>機能づくりは内製、<strong>土台と安全はプロ</strong>。この役割分担が、もっとも速く・もっとも低コストです。専門領域まで社内で学習して抱え込むより、そこはプロに相談したほうが結局は安く済みます。</p>
+<h2>進め方は「学んでから、内製する」</h2>
+<p>私たちがおすすめする順番は、いきなり開発から入らないことです。</p>
+<ol>
+<li><strong>まずバイブコーディングセミナーを受講する</strong> — OSSとバイブコーディングで「何が、どこまで、いくらで」内製できるのか、経営判断に必要な全体像を、事例とデモで掴みます。</li>
+<li><strong>OSSで土台を選ぶ</strong> — 自社業務に合うOSSを、ライセンス費ゼロ・自社所有の形で設計します。</li>
+<li><strong>バイブコーディングで内製開発</strong> — AIと社内人材で小さく作り、育てる。改善を社内で回せる状態にします。</li>
+</ol>
+<p>学んでから動くほうが、遠回りに見えて、結局いちばん速くて安く済みます。</p>
+<h2>まとめ</h2>
+<ul>
+<li>システムのコストが下がらない原因は、永続的な利用料・都度の外注費・ベンダーロックイン</li>
+<li><strong>OSSで「自社のシステム資産」を持ち、バイブコーディングで「作れる・育てられる」状態にする</strong></li>
+<li>全部を抱え込まず、機能は内製・土台と安全はプロ、と役割を分ける</li>
+<li>まずはセミナーで全体像を学んでから、内製化へ進む</li>
+</ul>
+<p>外注費やSaaSの固定費に疑問を感じている経営者の方は、一度この選択肢を検討してみてください。</p>
+<p>サービスの詳細はこちら 👉 <a href="https://exbridge.jp/oss-vibe-coding.html">OSS×バイブコーディングで低コスト内製化</a>
+バイブコーディングセミナーはこちら 👉 <a href="https://exbridge.jp/seminar.html">経営者向けバイブコーディングセミナー</a></p>
+<p>ご相談は <a href="https://exbridge.jp/">exbridge.jp</a> から。名古屋・愛知圏を中心に、OSS×バイブコーディングによる内製化を伴走支援しています。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
