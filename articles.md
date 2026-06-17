@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Localで読む：Pramaana LabsがAIシステムに「形式検証」を導入：安全性確保へ・ローカル30Bエージェントが「純粋なC言… 06-18](2026-06-18-ai-news.html)
 - [Hugging Faceからロボットまで：GLM-5.2とLeRobotが描くAIの物理的進化 06-17](2026-06-17-ai-news-4.html)
 - [MistralとSpaceXが描くAIインフラの未来：Cursor買収からAndroid 17の最新動向まで 06-17](2026-06-17-ai-news-3.html)
 - [MistralとGLM-5.2が牽引するオープンAIモデル競争の最前線：最新AI動向まとめ 06-17](2026-06-17-ai-news-2.html)
