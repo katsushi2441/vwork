@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Algorandが量子耐性を目指すWeb3と、OSSモデルが市場を席巻するLLMの最新動向 06-19](2026-06-19-ai-news.html)
 - [TheとSnapで読む：GLM-5.2からGemma 4まで：AIモデルの進化と国際的な競争の最前線 06-18](2026-06-18-ai-news-4.html)
 - [TheとROIで読む：Gemma 4とGLM-5.2が示すAIの進化：世界が求める「アメリカのAI」とは？ 06-18](2026-06-18-ai-news-3.html)
 - [Theで読む：世界のリーダーが懸念する「アメリカAI」の行方・Gemma 4 E2Bがブラウザ上で動作：WebGPUによる高速実行の実現 06-18](2026-06-18-ai-news-2.html)
