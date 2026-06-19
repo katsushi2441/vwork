@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [GLM-5.2がGPT-5.5を凌ぐ？AIモデルの競争激化とインフラ投資の最前線 06-19](2026-06-19-ai-news-3.html)
 - [AIが操作するデモ動画、台本までAIに書かせる — 自作ツール×OSS Argo 融合パイプライン 06-19](2026-06-19-kargov-fusion-pipeline.html)
 - [AIエージェントに自社プロダクトを操作させて、デモ動画を自動録画する 06-19](2026-06-19-ai-agent-demo-recording.html)
 - [GLMとU.Sで読む：Amazon AWSがNvidiaに挑む？ OpenAIのIPOを前に加速するAIインフラ競争 06-19](2026-06-19-ai-news-2.html)
