@@ -79,3 +79,4 @@
 2026-06-19-ai-news
 2026-06-19-ai-news-2
 2026-06-19-ai-agent-demo-recording
+2026-06-19-pc-gyomu-ai-agent-jidoka
