@@ -1,0 +1,82 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「パソコン操作をAIに任せる」時代へ — 操作手順の自動動画化と、業務そのものを動かすAIエージェント | VWork バイブコーディングフレームワーク</title><meta name="description" content="新人教育のマニュアル作り、属人化した手順の引き継ぎ、毎日の繰り返し作業。これらをAIが代行できる時代になりました。パソコン業務の操作手順を自動で動画マニュアル化する仕組みと、その先にある「業務そのものを自動化するAIエージェント」開発について、経営者向けに解説します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-19-pc-gyomu-ai-agent-jidoka.html"><meta property="og:type" content="article"><meta property="og:title" content="「パソコン操作をAIに任せる」時代へ — 操作手順の自動動画化と、業務そのものを動かすAIエージェント"><meta property="og:description" content="新人教育のマニュアル作り、属人化した手順の引き継ぎ、毎日の繰り返し作業。これらをAIが代行できる時代になりました。パソコン業務の操作手順を自動で動画マニュアル化する仕組みと、その先にある「業務そのものを自動化するAIエージェント」開発について、経営者向けに解説します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-19-pc-gyomu-ai-agent-jidoka.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「パソコン操作をAIに任せる」時代へ — 操作手順の自動動画化と、業務そのものを動かすAIエージェント"><meta name="twitter:description" content="新人教育のマニュアル作り、属人化した手順の引き継ぎ、毎日の繰り返し作業。これらをAIが代行できる時代になりました。パソコン業務の操作手順を自動で動画マニュアル化する仕組みと、その先にある「業務そのものを自動化するAIエージェント」開発について、経営者向けに解説します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「パソコン操作をAIに任せる」時代へ — 操作手順の自動動画化と、業務そのものを動かすAIエージェント", "description": "新人教育のマニュアル作り、属人化した手順の引き継ぎ、毎日の繰り返し作業。これらをAIが代行できる時代になりました。パソコン業務の操作手順を自動で動画マニュアル化する仕組みと、その先にある「業務そのものを自動化するAIエージェント」開発について、経営者向けに解説します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-19-pc-gyomu-ai-agent-jidoka.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-19", "dateModified": "2026-06-19", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>「パソコン操作をAIに任せる」時代へ — 操作手順の自動動画化と、業務そのものを動かすAIエージェント</h1>
+<p>「この作業、できる人が一人しかいない」
+「新しい人が入るたびに、同じ操作を何度も教えている」
+「手順書を作る時間がない。作っても、画面が変わると古くなる」</p>
+<p>多くの会社で、パソコン業務はこうした<strong>属人化と教育コスト</strong>の塊になっています。受発注の入力、見積作成、各種システムへの登録、データの転記——どれも「やり方を知っている人」に依存し、その人が休めば止まってしまう。</p>
+<p>実は今、この問題に対して<strong>新しい解き方</strong>が生まれています。キーワードは「AIにパソコンを操作させる」です。</p>
+<h2>1. AIが、人の代わりにパソコンを操作する</h2>
+<p>最近のAIは、文章を書くだけではありません。<strong>画面を見て、どこをクリックし、何を入力すればよいかを自分で判断し、実際にソフトやWebサイトを操作する</strong>ところまで来ています。いわゆる「AIエージェント」です。</p>
+<p>人が「この画面でこのボタンを押して、ここに入力して…」と手で行っていた操作を、AIが代わりに実行する。しかも、その操作を<strong>最初から最後まで記録</strong>できます。</p>
+<p>ここから、経営にとって価値のある2つの使い方が見えてきます。</p>
+<h2>2. 提案①：操作手順を「自動で動画マニュアル化」する</h2>
+<p>まず手軽で効果が大きいのが、<strong>業務マニュアルの自動動画化</strong>です。</p>
+<p>AIに「この業務をやってみせて」と指示すると、AIが実際にパソコンを操作し、その様子がそのまま<strong>手順動画</strong>になります。人が画面録画ソフトを立ち上げ、ナレーションを入れ、編集する——という手間が要りません。</p>
+<ul>
+<li><strong>新人教育</strong>：入社時に「動画を見れば分かる」状態を、手間なく用意できる</li>
+<li><strong>属人化の解消</strong>：ベテランの頭の中にある手順を、誰でも再現できる動画に</li>
+<li><strong>引き継ぎ・退職対策</strong>：担当者が変わっても、業務が止まらない</li>
+<li><strong>更新も簡単</strong>：画面が変わったら、AIにもう一度やらせて録り直すだけ</li>
+</ul>
+<p>「マニュアルを作る時間がない」という現場ほど、効果が出ます。</p>
+<blockquote>
+<p>実際に当社では、自社のAIツールをAIエージェントに操作させ、その一部始終を動画として自動生成する仕組みを構築・運用しています。「AIが自社の業務システムを操作する様子」を、人の手を介さず動画にできることを実証済みです。</p>
+</blockquote>
+<h2>3. 提案②：その先——「業務そのもの」をAIに自動化させる</h2>
+<p>動画マニュアル化は入口にすぎません。本命は、<strong>手順を記録するだけでなく、業務そのものをAIに代行させる</strong>ことです。</p>
+<p>たとえば——</p>
+<ul>
+<li>メールやFAXで届いた注文を、AIが読み取って基幹システムに入力する</li>
+<li>毎朝の在庫・売上データを、複数の画面から集めて一枚の表にまとめる</li>
+<li>定型の見積書・請求書を、条件に応じてAIが作成する</li>
+</ul>
+<p>これらは「人が毎日パソコンに向かってやっている作業」です。AIエージェントは、こうした<strong>繰り返しのパソコン業務を、人の代わりに実行</strong>できます。残業の削減、入力ミスの撲滅、そして何より「人にしかできない仕事」に時間を使えるようになります。</p>
+<h2>4. なぜ、エクスブリッジなのか</h2>
+<p>株式会社エクスブリッジは、名古屋を拠点に、<strong>パソコン業務そのものを自動化するAIエージェントの開発</strong>を行っています。</p>
+<p>私たちの強みは、「AIを使う」だけでなく、<strong>AIに業務を実行させる仕組みを自分たちで作り、自社で使い倒している</strong>ことです。AIエージェントによる操作の自動化、その動画化、そして無料のオープンソース(OSS)を活用した低コストな内製化——これらを、外注に頼らず一気通貫で実現しています。</p>
+<p>だからこそ、</p>
+<ul>
+<li>高価なパッケージや月額SaaSを増やさずに</li>
+<li>御社の業務に合わせた形で</li>
+<li>「動画でマニュアル化」から「業務まるごと自動化」まで</li>
+</ul>
+<p>段階的にご提案できます。</p>
+<h2>5. まずは小さく始められます</h2>
+<p>いきなり全部を自動化する必要はありません。「一番手間のかかっている、あの繰り返し作業」を一つ選び、</p>
+<ol>
+<li>まずAIに操作手順を動画化させてみる</li>
+<li>効果を確かめたら、その業務をAIエージェントに代行させる</li>
+</ol>
+<p>という順で、リスクを抑えて始められます。</p>
+<p>「うちのこの業務、AIに任せられる？」——その一言からで構いません。御社のパソコン業務を見せていただければ、<strong>何が・どこまで・どれくらいのコストで自動化できるか</strong>を具体的にお答えします。</p>
+<hr />
+<ul>
+<li>経営者向けセミナー：<a href="https://exbridge.jp/seminar.html">https://exbridge.jp/seminar.html</a></li>
+<li>手入力ゼロ化・業務の内製化：<a href="https://exbridge.jp/input-automation.html">https://exbridge.jp/input-automation.html</a></li>
+<li>OSS×バイブコーディングで低コスト内製化：<a href="https://exbridge.jp/oss-vibe-coding.html">https://exbridge.jp/oss-vibe-coding.html</a></li>
+<li>お問い合わせ：<a href="https://exbridge.jp/contact.php">https://exbridge.jp/contact.php</a></li>
+</ul>
+<p>名古屋・愛知で「AIに業務を“実行させる”経営」を、地元でご一緒できればうれしいです。
+<strong>株式会社エクスブリッジ</strong></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
