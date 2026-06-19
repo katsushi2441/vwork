@@ -1,0 +1,78 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「やってみせる動画」をAIが自動で作る — Kurage Argo Video と、エクスブリッジのAI×OSS内製力 | VWork バイブコーディングフレームワーク</title><meta name="description" content="操作マニュアル動画・デモ動画・研修動画は、撮影・ナレーション・編集と手間もコストもかかります。Kurage Argo Videoは、AIが自分でソフトを操作し、その実演をナレーション・字幕つきの動画に自動で仕上げる仕組みです。完全自社内製・追加の月額コストなしで実現する、エクスブリッジのAI×OSS技術力とあわせてご紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-19-kurage-argo-video-business.html"><meta property="og:type" content="article"><meta property="og:title" content="「やってみせる動画」をAIが自動で作る — Kurage Argo Video と、エクスブリッジのAI×OSS内製力"><meta property="og:description" content="操作マニュアル動画・デモ動画・研修動画は、撮影・ナレーション・編集と手間もコストもかかります。Kurage Argo Videoは、AIが自分でソフトを操作し、その実演をナレーション・字幕つきの動画に自動で仕上げる仕組みです。完全自社内製・追加の月額コストなしで実現する、エクスブリッジのAI×OSS技術力とあわせてご紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-19-kurage-argo-video-business.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「やってみせる動画」をAIが自動で作る — Kurage Argo Video と、エクスブリッジのAI×OSS内製力"><meta name="twitter:description" content="操作マニュアル動画・デモ動画・研修動画は、撮影・ナレーション・編集と手間もコストもかかります。Kurage Argo Videoは、AIが自分でソフトを操作し、その実演をナレーション・字幕つきの動画に自動で仕上げる仕組みです。完全自社内製・追加の月額コストなしで実現する、エクスブリッジのAI×OSS技術力とあわせてご紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「やってみせる動画」をAIが自動で作る — Kurage Argo Video と、エクスブリッジのAI×OSS内製力", "description": "操作マニュアル動画・デモ動画・研修動画は、撮影・ナレーション・編集と手間もコストもかかります。Kurage Argo Videoは、AIが自分でソフトを操作し、その実演をナレーション・字幕つきの動画に自動で仕上げる仕組みです。完全自社内製・追加の月額コストなしで実現する、エクスブリッジのAI×OSS技術力とあわせてご紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-19-kurage-argo-video-business.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-19", "dateModified": "2026-06-19", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>「やってみせる動画」をAIが自動で作る — Kurage Argo Video と、エクスブリッジのAI×OSS内製力</h1>
+<p>「この操作、口で説明するより画面を見せたほうが早いんだけど、動画を作る時間がない」
+「研修用に手順動画を作ったが、システムの画面が変わって、もう作り直し」
+「外注すると1本あたりの費用が高く、本数を増やせない」</p>
+<p>操作マニュアルやデモ動画、研修動画は、<strong>撮影・ナレーション収録・編集</strong>と、想像以上に手間とコストがかかります。だから後回しになり、結局「できる人に聞く」属人化が残る——多くの現場で起きていることです。</p>
+<p>この課題に対して、当社が開発したのが <strong>Kurage Argo Video</strong> です。</p>
+<h2>Kurage Argo Video とは</h2>
+<p>ひとことで言うと、<strong>「AIが自分でパソコンを操作し、その“やってみせる”様子を、ナレーション・字幕つきの動画に自動で仕上げる」仕組み</strong>です。</p>
+<p>人が画面録画ソフトを立ち上げ、操作し、声を吹き込み、テロップを付けて編集する——という一連の作業を、AIが代わりに行います。</p>
+<h2>主な機能（と、経営にとっての意味）</h2>
+<h3>① AIが自分でソフトを操作し、その実演をそのまま動画化</h3>
+<p>AIに「この操作をやってみせて」と指示すると、AIが実際に画面をクリック・入力し、その様子が<strong>手順動画</strong>になります。
+→ <em>新人教育・引き継ぎ・属人化の解消に。「動画を見れば分かる」状態を、手間なく用意できます。</em></p>
+<h3>② ナレーション原稿もAIが自然な日本語で自動作成</h3>
+<p>操作の流れに合わせた説明ナレーションを、AIが読みやすい日本語で書き起こし、音声化します。台本書きも吹き込みも不要です。
+→ <em>「何を説明すればいいか」から解放され、誰でも一定品質の解説動画を量産できます。</em></p>
+<h3>③ 字幕つき・縦型/横型の両対応</h3>
+<p>画面には要点の字幕を自動で焼き込み。社内マニュアル向けの横型（16:9）も、SNS発信向けの縦型（9:16）も書き出せます。
+→ <em>社内研修にも、サービス紹介の情報発信にも、同じ仕組みで使い回せます。</em></p>
+<h3>④ 完全自社内製・追加の月額コストなし</h3>
+<p>高価な動画編集ソフトや、本数に応じて課金される月額サービスは使いません。無料のオープンソース(OSS)と、手元で動くAIだけで完結します。
+→ <em>本数を増やしてもコストが膨らまない。これが内製化の最大のメリットです。</em></p>
+<blockquote>
+<p>実際に当社では、自社のAIツールをAIエージェントに操作させ、その一部始終を解説動画として自動生成する仕組みを構築・運用しています。下記は、その実物のサンプル動画です。</p>
+<ul>
+<li>生成サンプル: <a href="https://kurage.exbridge.jp/kuragev.php?id=979c1478e3468b93">https://kurage.exbridge.jp/kuragev.php?id=979c1478e3468b93</a></li>
+</ul>
+</blockquote>
+<h2>なぜ、エクスブリッジに作れるのか — AI×OSSの内製力</h2>
+<p>Kurage Argo Videoは、既製品を買ってきて組み合わせたものではありません。<strong>当社が、無料のOSSと自社開発で“作り切った”</strong>ものです。ここにこそ、私たちの技術的な強みがあります。</p>
+<ul>
+<li><strong>OSSを使いこなして内製する力</strong>：世界中で公開されている優れた無料ソフト(OSS)を選び、組み合わせ、自社の道具に仕立てます。月額SaaSを増やさずに、必要な仕組みを手に入れられます。</li>
+<li><strong>賢いAIと安いAIを“使い分ける”設計力</strong>：言葉の仕上げのような繊細な部分は高性能AIに、単純な判断や大量処理は手元の低コストAIに——と役割分担させることで、<strong>品質を保ちながらコストを最小化</strong>します。今回も「操作の判断は手元のAI、ナレーション原稿の仕上げは高性能AI」と分担させています。</li>
+<li><strong>“動画化”の先まで作れる力</strong>：私たちの本領は、操作を録画することだけではありません。<strong>業務そのものをAIに代行させるAIエージェントの開発</strong>こそが本命です。動画マニュアル化は、その入口にすぎません。</li>
+</ul>
+<p>つまりエクスブリッジは、<strong>「AIを使う」会社ではなく、「AIに仕事をさせる仕組みを自分たちで作り、自社で使い倒している」会社</strong>です。</p>
+<h2>こんな場面で効きます</h2>
+<ul>
+<li><strong>製造・卸</strong>：受発注システムの入力手順を、新人向けに動画マニュアル化</li>
+<li><strong>士業・管理部門</strong>：会計・申請ソフトの操作手順を、毎年の制度変更にあわせて録り直し</li>
+<li><strong>サービス業</strong>：自社ツール・予約システムの使い方を、顧客向けの紹介動画に</li>
+<li><strong>EC・販促</strong>：操作デモを縦型ショートにして、そのままSNS発信</li>
+</ul>
+<h2>まずは小さく始められます</h2>
+<p>いきなり全部を仕組み化する必要はありません。「一番よく聞かれる、あの操作手順」をひとつ選んで動画化してみる——そこからで十分です。効果を確かめたら、<strong>その業務自体をAIエージェントに代行させる</strong>段階へ、リスクを抑えて進められます。</p>
+<p>「うちのこの作業、動画にできる？ AIに任せられる？」——その一言からで構いません。御社のパソコン業務を見せていただければ、<strong>何が・どこまで・どれくらいのコストで自動化できるか</strong>を具体的にお答えします。</p>
+<hr />
+<ul>
+<li>経営者向けセミナー：<a href="https://exbridge.jp/seminar.html">https://exbridge.jp/seminar.html</a></li>
+<li>手入力ゼロ化・業務の内製化：<a href="https://exbridge.jp/input-automation.html">https://exbridge.jp/input-automation.html</a></li>
+<li>OSS×バイブコーディングで低コスト内製化：<a href="https://exbridge.jp/oss-vibe-coding.html">https://exbridge.jp/oss-vibe-coding.html</a></li>
+<li>お問い合わせ：<a href="https://exbridge.jp/contact.php">https://exbridge.jp/contact.php</a></li>
+</ul>
+<p>名古屋・愛知で「AIに業務を“実行させる”経営」を、地元でご一緒できればうれしいです。
+<strong>株式会社エクスブリッジ</strong></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
