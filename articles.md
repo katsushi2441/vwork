@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [JDK 28のProject Valhallaから読み解くJavaの進化と、Claude Fable/GLM 5.2が示すAIエージェントの最前線 06-20](2026-06-20-ai-news.html)
 - [ASMLの規制、GLM-5.2 vs GPT-5.5：AIのインフラと競争の最前線 06-19](2026-06-19-ai-news-4.html)
 - [GLM-5.2がGPT-5.5を凌ぐ？AIモデルの競争激化とインフラ投資の最前線 06-19](2026-06-19-ai-news-3.html)
 - [AIが操作するデモ動画、台本までAIに書かせる — 自作ツール×OSS Argo 融合パイプライン 06-19](2026-06-19-kargov-fusion-pipeline.html)
