@@ -6,7 +6,7 @@ topics: [browseruse, ollama, claude, ffmpeg, oss]
 published: true
 ---
 
-前回、[AIブラウザエージェントに自社プロダクトを操作させ、その様子をCDP screencastで録画する](https://zenn.dev/katsushi2441/articles/2026-06-19-ai-agent-demo-recording)仕組みを作りました。動くには動くのですが、出てくるのは「ナレーションも字幕もない、ただの操作録画」。デモ動画として人に見せるには物足りない。
+前回、[AIブラウザエージェントに自社プロダクトを操作させ、その様子をCDP screencastで録画する](https://katsushi2441.github.io/vwork/articles/2026-06-19-ai-agent-demo-recording.html)仕組みを作りました。動くには動くのですが、出てくるのは「ナレーションも字幕もない、ただの操作録画」。デモ動画として人に見せるには物足りない。
 
 ちょうどそのとき、[shreyaskarnik/argo](https://github.com/shreyaskarnik/argo) というOSSを見つけました。**Playwrightスクリプト → AIナレーション付きの製品デモ動画**を作るツールで、シーン整列・字幕オーバーレイ・縦横書き出しまで揃っています。
 
