@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [DeepMindからAnthropicへ：AIモデルの最新動向とGemma 4の躍進 06-21](2026-06-21-ai-news-2.html)
 - [kvtuberでYouTube Live配信まで到達した：PNGアバター、配信用viewer、RTMP送信の技術メモ 06-21](2026-06-21-kvtuber-youtube-live-rtmp.html)
 - [AnthropicのFable 5に何が起こった？AI規制と国家安全保障の最前線 06-21](2026-06-21-ai-news.html)
 - [Mythosで読む：Anthropicの規制強化とGLM、Qwenが牽引するAIモデル競争の最前線 06-20](2026-06-20-ai-news-4.html)
