@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AnthropicのFable 5に何が起こった？AI規制と国家安全保障の最前線 06-21](2026-06-21-ai-news.html)
 - [Mythosで読む：Anthropicの規制強化とGLM、Qwenが牽引するAIモデル競争の最前線 06-20](2026-06-20-ai-news-4.html)
 - [Agentsで読む：規制の壁を越えるAIの進展：AnthropicのFable 5の状況・AIエージェントの信頼性を高める：Model… 06-20](2026-06-20-ai-news-3.html)
 - [Anthropicの規制とオープンモデルの台頭：AIの未来を左右する最新動向 06-20](2026-06-20-ai-news-2.html)
