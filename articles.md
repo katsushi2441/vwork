@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AnthropicのClaudeに本人確認義務化？AI利用におけるプライバシーと規制の最前線 06-22](2026-06-22-ai-news-2.html)
 - [Gemma 4の最適化：QATとKVキャッシュ量子化でローカルLLMの性能が飛躍的に向上 06-22](2026-06-22-ai-news.html)
 - [Ethereumで読む：Anthropicへの人材流動と、iOSが警告するAI時代におけるプライバシーの危機 06-21](2026-06-21-ai-news-3.html)
 - [Kurage AI VTuberとKurage Argo Videoで、AIがライブ配信してデモ動画まで作る流れを実現した](2026-06-21-kvtuber-kargov-live-demo.html)
