@@ -11,3 +11,4 @@
 2026-05-25-easy-vibe-introduction
 2026-06-12-rqdb4ai-web-polling-llm-jobs
 2026-06-21-kvtuber-youtube-live-rtmp
+2026-06-21-kurage-ai-vtuber-kargov-business
