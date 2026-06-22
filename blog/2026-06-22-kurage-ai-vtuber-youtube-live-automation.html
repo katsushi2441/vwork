@@ -1,0 +1,177 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kurage AI VTuberにYouTubeライブ自動配信機能を追加しました | VWork バイブコーディングフレームワーク</title><meta name="description" content="株式会社エクスブリッジは、Kurage AI VTuberに、Kurage動画の投稿チェックからYouTube Live配信、AIxSNSとXでの告知までを自動化するパイプラインを追加しました。AI、動画、ライブ配信、SNS運用をつなげて実運用できる技術的優位性を紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-22-kurage-ai-vtuber-youtube-live-automation.html"><meta property="og:type" content="article"><meta property="og:title" content="Kurage AI VTuberにYouTubeライブ自動配信機能を追加しました"><meta property="og:description" content="株式会社エクスブリッジは、Kurage AI VTuberに、Kurage動画の投稿チェックからYouTube Live配信、AIxSNSとXでの告知までを自動化するパイプラインを追加しました。AI、動画、ライブ配信、SNS運用をつなげて実運用できる技術的優位性を紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-22-kurage-ai-vtuber-youtube-live-automation.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Kurage AI VTuberにYouTubeライブ自動配信機能を追加しました"><meta name="twitter:description" content="株式会社エクスブリッジは、Kurage AI VTuberに、Kurage動画の投稿チェックからYouTube Live配信、AIxSNSとXでの告知までを自動化するパイプラインを追加しました。AI、動画、ライブ配信、SNS運用をつなげて実運用できる技術的優位性を紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Kurage AI VTuberにYouTubeライブ自動配信機能を追加しました", "description": "株式会社エクスブリッジは、Kurage AI VTuberに、Kurage動画の投稿チェックからYouTube Live配信、AIxSNSとXでの告知までを自動化するパイプラインを追加しました。AI、動画、ライブ配信、SNS運用をつなげて実運用できる技術的優位性を紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-22-kurage-ai-vtuber-youtube-live-automation.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-22", "dateModified": "2026-06-22", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Kurage AI VTuberにYouTubeライブ自動配信機能を追加しました</h1>
+<p>株式会社エクスブリッジでは、AIを「話題の技術」として紹介するだけでなく、実際に会社の情報発信を動かす仕組みとして開発しています。</p>
+<p>今回、<strong>Kurage AI VTuber</strong>に、YouTubeライブ自動配信のための機能を追加しました。</p>
+<p>これは、単にVTuberの画面をYouTubeへ流せるようにした、という話ではありません。</p>
+<p>Kurageに新しく投稿されたショート動画をチェックし、一定本数がたまったらYouTube Live向けに連続配信し、公開ライブURLを確認し、AIxSNSとXで告知するところまでを、自動化パイプラインとしてつなげています。</p>
+<p>つまり、次の流れを自動化できるようになりました。</p>
+<pre><code class="language-text">Kurageに動画が投稿される
+  ↓
+新しいショート動画を監視する
+  ↓
+未配信の動画が一定本数たまる
+  ↓
+YouTube Live用の連続配信動画を準備する
+  ↓
+RTMPでYouTubeへライブ配信する
+  ↓
+ライブURLが実際に公開状態か確認する
+  ↓
+AIxSNSとXで告知する
+</code></pre>
+<p>企業の動画活用で大変なのは、動画を1本作ることだけではありません。</p>
+<p>作った動画を継続的に出し、配信し、告知し、次の発信につなげることです。今回の機能追加は、その運用部分をAIと自動化で支えるための重要な一歩です。</p>
+<hr />
+<h2>何を実現したのか</h2>
+<p>今回追加した機能は、Kurage AI VTuberを中心に、Kurage動画システム、YouTube Live、AIxSNS、X投稿をつなぐ配信パイプラインです。</p>
+<p>主なポイントは次の通りです。</p>
+<ul>
+<li>Kurageに登録されたショート動画を定期的にチェックする</li>
+<li>すでに配信済みの動画を記録し、同じ動画を繰り返し拾わない</li>
+<li>新しい動画が一定本数たまったら、YouTube Live用の配信対象にする</li>
+<li>複数のショート動画を順番に流せる形へまとめる</li>
+<li>ffmpegでYouTube RTMPへ送信する</li>
+<li>YouTube側でライブURLが実際に公開されているか確認する</li>
+<li>AIxSNSへ告知投稿する</li>
+<li>Xへも同じ告知内容で投稿する</li>
+</ul>
+<p>この仕組みによって、Kurageで作った動画を「投稿して終わり」にせず、YouTube Liveという別の接点へ再活用できます。</p>
+<p>特にショート動画は、1本ずつ単発で見せるだけでなく、複数本をまとめてライブ配信することで、番組のように見せることができます。</p>
+<p>たとえば、AIニュース、サービス紹介、技術解説、セミナー切り抜き、社内教育コンテンツなどを、一定本数たまるたびに自動でライブ配信できます。</p>
+<hr />
+<h2>実現方法</h2>
+<p>実装としては、Kurage AI VTuber側に監視ジョブとYouTube Live配信ジョブを追加しました。</p>
+<p>役割は大きく分けて3つです。</p>
+<h3>1. Kurage動画のチェック</h3>
+<p>まず、Kurageに登録された動画一覧を確認します。</p>
+<p>ここで重要なのは、単に最新動画を取るだけではなく、<strong>どの動画をすでにライブ配信したかを記録すること</strong>です。</p>
+<p>自動化では、同じ動画を何度も配信してしまう、途中で止まった動画を配信済みにしてしまう、対象外の動画を拾ってしまう、といった問題が起きやすくなります。</p>
+<p>そのため、配信済みIDを状態ファイルで管理し、次回以降は未配信の動画だけを対象にします。</p>
+<h3>2. YouTube Liveへの連続配信</h3>
+<p>未配信のショート動画が一定本数たまると、YouTube Live用の配信を開始します。</p>
+<p>配信では、ffmpegを使ってRTMPでYouTubeへ送信します。</p>
+<p>YouTube Liveは、ローカルで動画を再生できることと、YouTube側で実際に公開ライブとして見えることが別問題です。そのため、配信開始後に公開URLを確認し、ライブとして見られる状態になっているかをチェックします。</p>
+<p>今回の開発では、ここが重要な学びでした。</p>
+<p><strong>RTMP送信が成功しただけでは、ユーザーに届いているとは言えません。</strong></p>
+<p>実運用では、YouTubeの公開ライブURLを確認し、そこから告知へ進む必要があります。</p>
+<h3>3. AIxSNSとXでの告知</h3>
+<p>ライブ配信が確認できたら、AIxSNSへ告知を投稿します。</p>
+<p>さらに、Xにも告知を出せるようにしました。</p>
+<p>X投稿については、APIだけに依存するのではなく、認証済みブラウザを操作するbrowser-use系の自動化も使えるようにしています。これは、現実の運用ではAPI制限や認証状態の問題が起きるためです。</p>
+<p>また、AIxSNSとXで投稿内容がずれると、ブランド表現や告知文の品質が不安定になります。そのため、告知文は共通化し、同じ内容をAIxSNSとXへ流せるようにしています。</p>
+<hr />
+<h2>なぜ経営者にとって重要なのか</h2>
+<p>経営者にとって重要なのは、「AIで動画を作れます」という機能紹介ではありません。</p>
+<p>大事なのは、<strong>会社の情報発信を継続的に回せる仕組みを持てるか</strong>です。</p>
+<p>動画制作は、多くの企業にとって重い業務です。</p>
+<ul>
+<li>何を話すか考える</li>
+<li>台本を作る</li>
+<li>動画を作る</li>
+<li>投稿する</li>
+<li>YouTubeにも展開する</li>
+<li>SNSで告知する</li>
+<li>次の投稿を準備する</li>
+</ul>
+<p>これを毎回人手でやると、どうしても止まります。</p>
+<p>最初の数本は頑張れても、継続できない会社が多いのは自然です。</p>
+<p>しかし、Kurage AI VTuberと自動配信パイプラインを組み合わせると、発信の流れを次のように変えられます。</p>
+<pre><code class="language-text">日々の情報をKurageで動画化する
+  ↓
+一定本数たまったら自動でYouTube Live配信する
+  ↓
+AIxSNSとXで告知する
+  ↓
+配信済みを記録し、次の動画を待つ
+</code></pre>
+<p>これは、会社の中に小さなAI放送局を持つようなものです。</p>
+<p>しかも、単なるライブ配信ではなく、動画生成、AI VTuber、ブラウザ自動化、SNS告知までつながっています。</p>
+<hr />
+<h2>エクスブリッジの技術的優位性</h2>
+<p>エクスブリッジの強みは、個別のAIツールを使えることではありません。</p>
+<p><strong>AI、OSS、動画生成、ブラウザ自動化、ライブ配信、SNS投稿を組み合わせて、業務として動くパイプラインにできること</strong>です。</p>
+<p>今回のYouTubeライブ自動配信機能には、次のような技術要素が含まれています。</p>
+<ul>
+<li>Kurage動画システムとの連携</li>
+<li>Kurage AI VTuberの配信基盤</li>
+<li>ショート動画の監視と配信済み管理</li>
+<li>ffmpegによるRTMP配信</li>
+<li>YouTube Liveの公開状態チェック</li>
+<li>AIxSNSへの告知投稿</li>
+<li>browser-useによるX投稿自動化</li>
+<li>GitHubで管理できるプロダクト化</li>
+<li>常駐監視ジョブとして運用できる設計</li>
+</ul>
+<p>これらを別々に見ると、それぞれ既存技術です。</p>
+<p>しかし、実際に会社の発信業務で使えるようにするには、つなぎ込み、例外処理、状態管理、運用確認が必要です。</p>
+<p>たとえば、配信が始まっていないのに告知してしまうと、視聴者には何も届きません。XとAIxSNSで文面がずれると、発信の品質が落ちます。配信済み管理が甘いと、同じ動画を何度も流してしまいます。</p>
+<p>こうした細かい運用上の課題を、実際に動かしながら潰していけることが、エクスブリッジの開発力です。</p>
+<p>AI活用は、きれいなデモを作るだけでは不十分です。</p>
+<p><strong>動くこと、続くこと、業務の流れに入ること。</strong></p>
+<p>そこまで作り込めることが、エクスブリッジの優位性です。</p>
+<hr />
+<h2>中小企業の発信をAIで強くする</h2>
+<p>この仕組みは、さまざまな企業活動に応用できます。</p>
+<ul>
+<li>経営者ブログを動画化し、YouTube Liveでまとめ配信する</li>
+<li>商品紹介ショートを一定本数ごとにライブ番組化する</li>
+<li>採用向けの会社紹介動画を定期配信する</li>
+<li>セミナー切り抜きを自動で再配信する</li>
+<li>AIニュースや業界ニュースを番組として流す</li>
+<li>社内教育コンテンツを繰り返し配信する</li>
+</ul>
+<p>中小企業にとって、広告費や制作費を大量に使い続けるのは簡単ではありません。</p>
+<p>だからこそ、自社で動画を作り、自社で配信し、自社で告知まで回せる仕組みが重要になります。</p>
+<p>エクスブリッジは、AIとOSSを活用して、この内製化を現実的なコストと速度で進めます。</p>
+<hr />
+<h2>Kurage AI VTuberは、AI発信基盤へ進化している</h2>
+<p>Kurage AI VTuberは、単にアバターが話すシステムではありません。</p>
+<p>番組を持ち、動画を扱い、YouTube Liveへ配信し、SNSで告知し、必要に応じてkdeckなどのAI Agent実行基盤とも連携できる、AI発信基盤へ進化しています。</p>
+<p>これにより、企業は次のような未来に近づきます。</p>
+<pre><code class="language-text">人が伝えたいことを決める
+  ↓
+AIが動画化する
+  ↓
+AI VTuberが番組化する
+  ↓
+YouTube Liveで配信する
+  ↓
+SNSで告知する
+  ↓
+反応を見て次の発信へつなげる
+</code></pre>
+<p>AIは、文章を作るだけの存在ではありません。</p>
+<p>会社の情報発信を、実際に前へ進める実行基盤になりつつあります。</p>
+<p>エクスブリッジは、この領域を自社プロダクトとして実装し、検証し、改善しています。</p>
+<hr />
+<h2>関連リンク</h2>
+<ul>
+<li>GitHub: <a href="https://github.com/katsushi2441/kvtuber">Kurage AI VTuber / kvtuber</a></li>
+<li>GitHub: <a href="https://github.com/katsushi2441/kargov">Kurage Argo Video / kargov</a></li>
+<li>関連デモ: <a href="https://kurage.exbridge.jp/kuragev.php?id=dd456c7c59e34fe5">Kurage AI VTuber ライブ配信デモ</a></li>
+<li>エクスブリッジ: <a href="https://exbridge.jp/">https://exbridge.jp/</a></li>
+<li>お問い合わせ: <a href="https://exbridge.jp/contact.php">https://exbridge.jp/contact.php</a></li>
+</ul>
+<p>株式会社エクスブリッジは、名古屋・愛知の企業向けに、AI内製化、バイブコーディング、AI VTuber、動画生成、業務自動化の実践支援を行っています。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
