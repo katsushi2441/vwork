@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Denoで読む：ApertusとGLM-5.2が描くAIの未来：ローカルLLMとAIエージェントの最前線 06-22](2026-06-22-ai-news-4.html)
 - [ApertusとCloudflareが示すAIインフラの最新動向：LLMのローカル最適化とガバナンス 06-22](2026-06-22-ai-news-3.html)
 - [AnthropicのClaudeに本人確認義務化？AI利用におけるプライバシーと規制の最前線 06-22](2026-06-22-ai-news-2.html)
 - [Gemma 4の最適化：QATとKVキャッシュ量子化でローカルLLMの性能が飛躍的に向上 06-22](2026-06-22-ai-news.html)
