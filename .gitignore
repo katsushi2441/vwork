@@ -3,3 +3,5 @@ __pycache__/
 .DS_Store
 .env
 config.yml
+
+storage/easy_vibe_stage1_progress.json
