@@ -78,10 +78,10 @@ JOB_ID="..."
 curl -sS --max-time 15 "http://exbridge.ddns.net:18200/status/${JOB_ID}" | jq .
 ```
 
-Horizon動画ページ:
+Kurage動画:
 
 ```bash
-HORIZON_URL="https://aiknowledgecms.exbridge.jp/horizonv.php?id=${JOB_ID}"
+KURAGE_VIDEO_URL="https://kurage.exbridge.jp/kuragev.php?id=${JOB_ID}"
 ```
 
 動画ファイルの標準位置:
@@ -102,13 +102,13 @@ cd /home/kojima/work/airadio-scripted-mv
 python3 tools/youtube/upload_youtube.py \
   "/home/kojima/work/kurage/storage/jobs/${JOB_ID}/output.mp4" \
   --title "$TITLE" \
-  --description "Kurage Horizonで生成した動画です。
+  --description "Kurageで生成した動画です。
 
 元記事:
 ${ARTICLE_URL}
 
-Horizon動画ページ:
-${HORIZON_URL}
+Kurage動画:
+${KURAGE_VIDEO_URL}
 
 VWork:
 https://katsushi2441.github.io/vwork/
@@ -191,7 +191,9 @@ curl -sS -X POST 'https://aixec.exbridge.jp/api.php?path=posts' \
   -d @- <<JSON
 {
   "author": "kurage",
-  "content": "Kurage Horizonで新しい動画をYouTubeに公開しました。\\n\\n${TITLE}\\n\\nYouTube:\\n${YOUTUBE_URL}\\n\\nHorizon動画ページ:\\n${HORIZON_URL}\\n\\n元記事:\\n${ARTICLE_URL}"
+  "content": "Kurageで新しい動画を公開しました。\\n\\n${TITLE}\\n\\nYouTube:\\n${YOUTUBE_URL}\\n\\nKurage動画:\\n${KURAGE_VIDEO_URL}\\n\\n元記事:\\n${ARTICLE_URL}",
+  "kind": "kurage_video_announcement",
+  "source_url": "${KURAGE_VIDEO_URL}"
 }
 JSON
 ```
@@ -200,7 +202,7 @@ JSON
 
 ```bash
 curl -L --max-time 20 -s -o /tmp/article.html -w "article:%{http_code}\n" "$ARTICLE_URL"
-curl -L --max-time 20 -s -o /tmp/horizon.html -w "horizon:%{http_code}\n" "$HORIZON_URL"
+curl -L --max-time 20 -s -o /tmp/kurage_video.html -w "kurage_video:%{http_code}\n" "$KURAGE_VIDEO_URL"
 curl -L --max-time 20 -s -o /tmp/youtube.html -w "youtube:%{http_code}\n" "$YOUTUBE_URL"
 curl -L --max-time 20 -s -o /tmp/sns.html -w "sns:%{http_code}\n" "$AIXSNS_URL"
 ```
