@@ -1,0 +1,176 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>初級二：AI プログラミングツールを学ぶ — easy-vibe Stage 1 | VWork バイブコーディングフレームワーク</title><meta name="description" content="easy-vibe Stage 1『初級二：AI プログラミングツールを学ぶ』をVWork向けに日本語で紹介。バイブコーディングを実務に活かすための要点を整理します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-22-easy-vibe-stage1-ai-ide-tools.html"><meta property="og:type" content="article"><meta property="og:title" content="初級二：AI プログラミングツールを学ぶ — easy-vibe Stage 1"><meta property="og:description" content="easy-vibe Stage 1『初級二：AI プログラミングツールを学ぶ』をVWork向けに日本語で紹介。バイブコーディングを実務に活かすための要点を整理します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-22-easy-vibe-stage1-ai-ide-tools.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="初級二：AI プログラミングツールを学ぶ — easy-vibe Stage 1"><meta name="twitter:description" content="easy-vibe Stage 1『初級二：AI プログラミングツールを学ぶ』をVWork向けに日本語で紹介。バイブコーディングを実務に活かすための要点を整理します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "初級二：AI プログラミングツールを学ぶ — easy-vibe Stage 1", "description": "easy-vibe Stage 1『初級二：AI プログラミングツールを学ぶ』をVWork向けに日本語で紹介。バイブコーディングを実務に活かすための要点を整理します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-22-easy-vibe-stage1-ai-ide-tools.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-22", "dateModified": "2026-06-22", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>初級二：AI プログラミングツールを学ぶ — easy-vibe Stage 1</h1>
+<p><a href="https://github.com/datawhalechina/easy-vibe">easy-vibe</a> Stage 1 の続きとして、今回は <strong>「初級二：AI プログラミングツールを学ぶ」</strong> をVWork向けに日本語で紹介します。</p>
+<p>この記事は、公式教材の内容をもとに、バイブコーディングを仕事やプロダクト開発に使う視点で読みやすく整理したものです。</p>
+<hr />
+<h2>本章のガイド</h2>
+<p>前の章では、z.ai で AI プログラミングを体験しましたが、ウェブ版には多くの制限があります——<strong>いつでも保存できない</strong>、<strong>ファイル管理がしにくい</strong>、<strong>複雑なプロジェクトが作れない</strong>。この章は、開発環境を自分のパソコンに移し、<strong>本当に独立してものを作れる</strong>ようにします。</p>
+<p>まず <strong>IDE と AI IDE の違いが何か</strong>を明確にし、なぜ後者が<strong>効率を倍増</strong>させるのかを理解します。その後、<strong>手取りで</strong>Trae を使ってローカルでスネークゲームを作り、インストールから実行までの<strong>完全なフロー</strong>を体験します。最後に、AI との対話の<strong>実用的なテクニック</strong>を共有し、遠回りを避けられるようにします。</p>
+<p>この章を終えると、<strong>プログラマーと似た開発フローをマスター</strong>できます。</p>
+<h2>1. コードを書くために必要な環境とツール</h2>
+<h3>1.1 思考の転換：問題があったら、まず AI に聞く</h3>
+<p>様々な環境やツールを紹介する前に、まず<strong>思考習慣を変える</strong>必要があります。</p>
+<p>従来のプログラミング学習では、Python をインストールしたり、Conda を設定したり、npm のインストール失敗を解決したりするとき、通常は検索エンジンを開き、チュートリアルを見つけて、ステップに従って操作していました。途中でエラーが出たら、さらにエラー情報を検索し、何度も試行錯誤するという方法でした。</p>
+<p>間違いです！❌</p>
+<p>AI 時代、特に AI IDE を使用する場合、コア原則を覚えておいてください：<strong>どんな操作も、まず AI に聞いてみて、必要なら直接やらせることができます。</strong></p>
+<ul>
+<li><strong>環境のインストール方法が分からない？</strong> サイドバーで AI に直接聞く：「Python を書きたいから、Python がインストールされているか確認してくれて。なければインストールして。」</li>
+<li><strong>ネットワークが遅い？</strong> 依存パッケージのインストール中に回り続けたりエラーが出たら、エラーをそのまま AI に投げる：「ダウンロードが失敗した。ネットワークの問題？国内のミラーサイトに切り替えてくれない？」</li>
+<li><strong>コマンドを覚えられない？</strong> Git コマンドや Conda コマンドを暗記する必要はありません。AI に直接伝える：「新しい仮想環境を作って。名前は demo にして。」</li>
+</ul>
+<h3>1.2 なぜ環境とツールが必要なのか</h3>
+<p>「数行のコードを書いてみる」ことから「長期的にメンテナンスできるプロジェクトを作る」ことになると、環境とツールに対する要件は完全に異なります。</p>
+<p>理論上、システム付属のメモ帳でもコードは書けますが、問題はすぐに起こります：</p>
+<ul>
+<li><strong>コードがすべて黒い文字</strong>で、キーワード、文字列、コメントが混ざり合って、構造が一目で分からない</li>
+<li><strong>インテリセンスがない</strong>、すべての単語を手入力する必要があり、1文字でも間違えると何度も確認し直す</li>
+<li><strong>ファイルが増えると混乱する</strong>、十数個のファイルを行き来して切り替え、変更したい行がどこにあるか見つからない</li>
+<li><strong>エラーの原因が推測しかできない</strong>、プログラムがクラッシュしてもどこが問題か分からず、1行ずつログを出力して試すしかない</li>
+</ul>
+<p>したがって、IDE（統合開発環境）が必要です。IDE はコードを色分けして表示し、入力時に自動補完し、ファイルをプロジェクト単位で整理し、エラーをステップごとに追跡できるため、開発の効率と正確さが大幅に向上します。</p>
+<h2>2. IDE とは何か、なぜ IDE が必要なのか</h2>
+<p>プログラミングの初期時代は、シンプルなテキストエディタと言語プロセッサだけで十分でした。しかしプロジェクトの複雑さが増すと、開発者はファイル管理、シンタックスハイライト、デバッグを効率的に行うツールを切実に必要とするようになり、IDE（統合開発環境）が誕生しました。</p>
+<p>IDE は「コードを編集、管理、実行、デバッグする」ための専用プログラムと理解できます。初期の IDE は非常に「原始的」で、ほぼ完全にキーボード操作でした。</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image1.png" /><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image2.png" /></p>
+<p>ターミナル画面（Terminal） 画像出典：https://en.wikipedia.org/wiki/File:Emacs-screenshot.png</p>
+<p><code>Vim</code> のような機能が成熟した「内蔵 IDE」は、サーバーのリモート操作によく使われます。</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image3.png" /></p>
+<p>より効率的にするために、マウス操作をサポートするモダン IDE が必要です。通常、以下を含みます：
+- <strong>ソースコードエディタ</strong>：シンタックスハイライト、自動補完
+- <strong>ビルド＆実行ツール</strong>：内蔵のコンパイラ/インタプリタ
+- <strong>デバッガ</strong>：ブレークポイントデバッグ、変数の確認</p>
+<p>モダン IDE にはさらに Git などのツールが内蔵されていることも多いです。最も人気のあるのは Microsoft の <strong><a href="https://code.visualstudio.com/">Visual Studio Code (VS Code)</a></strong> で、軽量で拡張性が高いです。JetBrains 全家桶などの専門 IDE もありますが、VS Code は初学者に最も親和的です。</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image4.png" /></p>
+<p>VS Code のコア理念は「すべてがプラグイン」です。プラグインメカニズムを通じて各言語をサポートし、Python プラグインをインストールすれば Python IDE に、C++ プラグインをインストールすれば C++ IDE になります。プラグインをインストールしなければ、高度なテキストエディタに過ぎません。</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image5.png" /></p>
+<p>Markdown ドキュメントを編集することもできます。</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image6.png" /></p>
+<p>要するに、IDE は開発者が効率的にコードを書き、プログラムを実行するためのツールキットです。</p>
+<p>より詳細な解説は、<a href="/ja-jp/appendix/2-development-tools/ide-basics">付録の仮想 IDE 可視化 IDE 原理部分</a>を参照してください。</p>
+<h2>3. AI IDE と通常の IDE の違い</h2>
+<p>通常の IDE（例えばオリジナルの VS Code）は本質的に「ツールボックス」です：
+プロジェクトを開き、コードを書き、実行・デバッグでき、プラグインもインストールできますが、自分が何をすべきか、どうやるべきかを知っていることが前提です：</p>
+<ul>
+<li>エラーが出たら、自分でメッセージを読み、どの行に問題があるか確認する</li>
+<li>新しいページや新しい API を追加したいとき、対応するファイルを自分で探し、自分でコードを書く</li>
+<li>環境設定やビルドを行うとき、自分でドキュメントを調べ、ステップに従って操作する</li>
+</ul>
+<p>しかし AI IDE では、大規模言語モデルを使ってコーディングやファイルの修正を直接支援できます：</p>
+<ul>
+<li>「ログインページを作って」と言うだけで、まずベースとなるコード構造を自動生成</li>
+<li>エラーメッセージと関連コードを投げると、原因を分析し修正案を提示</li>
+<li>確認後、AI が自動的に新しいファイルを作成し、コードを一括修正し、複数ファイルにまたがる作業を処理</li>
+</ul>
+<p>例えば、コードの一部を選択して「リファクタリングして」「コメントを付けて」と言ったり、サイドバーで「このプロジェクトはどう設計されているの？」と聞いたりすることもできます。<code>@ファイル名</code> や <code>@プロジェクト全体</code> で参照範囲を指定し、一文で新しいファイルの作成、コードの記述、実行までの面倒な操作を自動化できます。</p>
+<p>最新版の VS Code には、大規模言語モデルアシスタントが内蔵されています。コードリポジトリ全体、特定のファイル、さらには特定の関数とモデルと対話できます。Web 版で自動コード生成ツールを使ったときと同様に、ニーズをプロンプトとしてコーディング Agent に送信し、機能の実装、ファイルの作成、コードの修正、環境設定などを自動的に行わせることができます。</p>
+<p>VS Code をインストールして、右上のサイドバー入口をクリックし、AI 機能領域を開くと、これらの機能を体験できます。</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image7.png" /></p>
+<p>しかし、VS Code は AI 能力が最強の IDE ではありません。大量の AI 補助コーディングが必要なシーンでは、「もっと賢く、効率の良い」ツールを使いたいと思うでしょう——良い AI IDE はコードの記述やバグ修正の時間を大幅に削減できます。以下では、現在比較的人気のある AI IDE をいくつ紹介します。個人の好みに応じてどれでも選んで使えます。</p>
+<p>VS Code はオープンソース（誰でもソースコードをダウンロードして自分でコンパイル可能）のため、現在の市場の大多数の AI IDE は VS Code をベースに二次開発されています。したがって「いろいろな IDE を学び直す」心配はありません——<strong>VS Code の基本的な使い方に慣れていれば</strong>、これらの AI IDE に移行しても新しく学ぶ必要はありません。</p>
+<p>一般的に、異なる AI IDE 間の違いは主に4つの側面にあります：価格；使用できるモデルの種類（一部の高級モデルは特定の地域で制限される場合がある）；Agent の能力（コーディング支援時の知性と実行力）；実行速度とパフォーマンス。実際のテスト結果に基づいて選んでください。自分に合うものが最高です。</p>
+<blockquote>
+<p>典型的な AI IDE は以下のコア能力を備えています：</p>
+<ul>
+<li>インテリジェントなコード生成と補完：従来の IDE では、数文字入力して変数名や関数名を補完するのが一般的でしたが、モダン AI IDE では数行の疑似コードや簡単な要件説明で、IDE が完全なロジックを自動補完し、指示に基づいて大段落のコードやモジュール全体を生成することも可能。</li>
+<li>コード理解と Q&amp;A：IDE が特定のコード、ファイル、プロジェクト全体のディレクトリ構造に関する質問に理解して回答する。</li>
+<li>コードのリファクタリングと最適化：ユーザーの意図に基づいて、指定したコードフラグメントの実装を書き換えたり最適化したりする。</li>
+<li>テストの自動生成：各関数やモジュールに対するテストコードを自動生成し、的を絞ったテストが可能。</li>
+<li>Agent 式タスク実行：インテリジェント Agent がファイルの生成、パッケージのインストール、実行、コードの修正などを自動で行い、多くのタスクで初級ソフトウェアエンジニアの仕事を部分的に代替可能。</li>
+</ul>
+</blockquote>
+<h2>4. 実践：AI IDE を使ってローカルでスネークゲームを生成する</h2>
+<p>前のセクションでは主に「概念」と「違い」について説明しました。このセクションでは、完全な実践を通じて抽象的な概念を具体的な操作に落とし込みます：<strong>空のフォルダを作成 → AI IDE で開く → サイドバーでチャットし、React でスネークゲームをゼロから生成。</strong> ここでは上記で紹介した Trae を例にします。</p>
+<h3>4.1 準備：Trae のインストールと概要</h3>
+<h4>4.1.1 Trae とは</h4>
+<p>Trae の正式名称は "The Real AI Engineer" と理解でき、ByteDance が開発した適応型 AI IDE です。人気のある VS Code をベースに構築されているため、すでに VS Code に慣れているなら、Trae のインターフェースレイアウトや基本操作は非常に馴染みのあるものになるでしょう。</p>
+<p>Trae のコア目標は開発者の「インテリジェントなプログラミングパートナー」になることです。AI 能力を深く統合することで、大量の反復作業を自動処理し、より直感的で効率的な開発体験を提供します。単なる「コード補完ツール」ではなく、プロジェクトの作成、コードの記述、デバッグ、テストからデプロイまでの開発ワークフロー全体をサポートします。</p>
+<h4>4.1.2 Trae のインストール</h4>
+<p>Trae は国際版と中国版に分かれています。国際版は海外ネットワークへのアクセスが必要ですが、GPT-5 などの最新の海外モデルが使用可能。中国版は主に国内の最新の大規模モデルをサポートし、例えば GLM、Qwen、Kimi などを使用できます。</p>
+<p>国際版ダウンロード：https://www.trae.ai/
+中国版ダウンロード：https://www.trae.cn/</p>
+<h5>Trae の料金と使用方法</h5>
+<blockquote>
+<p>💡 <strong>現在 OpenRouter の無料モデルを使ったテストを推奨</strong></p>
+<p>チチュートリアル執筆時点（2026-02-12）の時点で、StepFun のモデルを無料で試用できます。詳細は以下の 4.2 セのモデル統合方法を参照し、<code>stepfun/step-3.5-flash:free</code> を統合してください。
+</p>
+</blockquote>
+<p>Trae の料金と使用方法には以下のオプションがあります：</p>
+<ul>
+<li><strong>中国版 CN 版（強く推奨）</strong>：基本使用は無料、現在の全体の使用体験が国際版より優れており、初心者に最適。ユーザー数が多いため一時的に順番待ちが発生する場合があります。</li>
+<li><strong>国際版</strong>：月額約3ドルのサブスクリプションで利用可能。GPT-5 などの海外モデルにアクセスできるが、海外ネットワークへの接続が必要。</li>
+<li><strong>サードパーティモデル統合</strong>：DeepSeek、通義千問（Qwen）、Kimi などの国内大規模モデルの Token API を既に持っている場合、Trae のサードパーティモデル設定機能でこれらの API を統合して使用可能。各クラウドサービスプロバイダ（Alibaba Cloud、Tencent Cloud、Baidu Cloud など）は通常 Coding Plan サブスクリプションを提供しており、購入するとそのクラウドベンダーの大規模モデル API をより安価に使用できます。自分の好きなモデルを自由に選びながらコストを制御できます。</li>
+</ul>
+<p>初心者は中国 CN 版の無料版から始めることをお勧めします（ダウンロード：https://www.trae.cn/ ）。現在 CN 版の方が使用体験が良く完全に無料です。順番待ちの問題が発生したら、サードパーティモデルの統合やクラウドベンダーの Coding Plan プランの購入を検討してください。</p>
+<h4>4.1.3 Trae の画面の概要</h4>
+<p>インターフェースの見た目は、Trae は日常的に使っている VS Code と非常に似ています：左側にエクスプローラー、中央にエディタ、右側に拡張パネルという古典的な3カラムレイアウトです。</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image17.png" /></p>
+<p>右側のサイドバーが Copilot インタラクションウィンドウ、または Agent ウィンドウとしても機能します。表示されていない場合は、Trae 右上のサイドバーアイコンをクリックして開いてください。</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image18.png" /></p>
+<p>サイドバーを開くと、<code>Builder</code> オプションが表示されます。これが Agent モードです。シンプルに理解すると、z.ai の「ローカル版」のようなもので、ローカル環境で操作を実行し、環境をインストールし、ウェブページを開いたりできます。</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image19.png" /></p>
+<p>"Builder" をクリックすると、"Chat" モードと "Builder with MCP" モードが表示されます：</p>
+<ul>
+<li><strong>Chat モード</strong>：主に現在のフォルダ内のコードと対話する、または通常のチャットモデルとして使用。（左上の "File" メニューからフォルダを開くことができます。この場合、Builder が作成・変更するファイルはすべてそのフォルダ内に限定されます。）</li>
+<li><strong>Builder with MCP モード</strong>：Agent に更多のツールを提供（例えば、言語モデルを他のソフトウェアと接続したり、天気をクエリしたりなど）。簡単に言うと、MCP は言語モデルに様々な外部ツールを呼び出すことをより便利にします。</li>
+</ul>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image20.png" /></p>
+<p>下のエリアにはモデル選択オプションがあり、クリックすると現在の大規模モデルを変更できます。中国版では Kimi k2 や GLM などの国内モデルを選択可能。国際版 Trae を使用している場合は ChatGPT や Claude などの海外モデルも選択可能。ただし、国内大規模モデルの発展は非常に速く、Kimi、Qwen、GLM などは多くのタスクで Claude 3.5 や 3.7 に近い実力を既に備えており、日常の開発には十分すぎるため、国際版か中国版のどちらを使用しても構いません。</p>
+<p><strong>注意：Auto モード（モデルを自動選択）の使用は推奨しません。</strong> 国際版の場合は Gemini または GPT モデルを、中国版の場合は Kimi k2、Minimax、GLM などの国内モデルを推奨します。<strong> 異なるモデルには異なる使用シーンがあり、教条的にどれが優れているかを断定するものではありません。</strong>異なるタスクで行き詰まったらモデルを切り替え、複数回テストして自分にとって最適な結果を得てください。</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/image21.png" /></p>
+<p>以上が Trae の簡単な紹介です。次に、以前 z.ai で行った操作を振り返り、Trae で同じことを試してみましょう。</p>
+<h3>4.2 ステップ1：空のフォルダを作成し AI IDE で開く</h3>
+<p>実際に作業を始める前に、まずクリーンなプロジェクトワークディレクトリを準備する必要があります。</p>
+<p>このセクションの例では、ローカルに <code>snake-game-react</code> という名前の空フォルダを作成します。</p>
+<p>その後、インストール済みの AI IDE を開き、起動画面で "Open Folder" を選択し、その空のフォルダをプロジェクトルートとしてインポートします。または、フォルダを IDE のウィンドウにドラッグ＆ドロップして開くこともできます。この時点で、左側のエクスプローラーにはコードファイルが何も表示されず、完全に空白のプロジェクト状態から始まることを示しています。</p>
+<p>Trae でカスタムモデルを統合する際、<strong>デフォルトで OpenRouter 方案を推奨</strong>します。OpenRouter は統一 API インターフェースを提供し、複数の大規模言語モデルを便利に統合できます。</p>
+<p><strong>2026年2月12日時点で、無料の StepFun API も利用可能です：</strong></p>
+<ul>
+<li><strong><code>stepfun/step-3.5-flash:free</code></strong>：StepFun（階跃星辰）が提供する無料モデル。Trae で直接統合して使用可能。</li>
+</ul>
+<p><strong>その他の無料モデル：</strong></p>
+<ul>
+<li><strong><code>openrouter/free</code></strong>：無料 LLM API をデフォルトで使用するモデルオプション。Trae の Custom Model 統合でそのまま使用可能（モデル ID を直接入力するだけ）。無料で AI プログラミング機能を体験できます。</li>
+</ul>
+<p>これらの無料オプションは初心者に最適です。本格的な本番環境に導入する前に、無料方案で AI IDE のワークフローに慣れることができます。</p>
+<p><strong>オプション：大規模モデル API の統合（DeepSeek の例）</strong></p>
+<ol>
+<li>DeepSeek プラットフォームにアクセス：https://platform.deepseek.com/usage</li>
+<li>アカウントを登録してログイン</li>
+<li>チャージページで10元の Token パッケージを購入</li>
+<li>充電完了後、API Keys ページで API Key を作成してコピー</li>
+<li>Trae で <strong>"Add Model"</strong> をクリックし、DeepSeek を選択、対応するモデルを入力、API Key を入力して使用可能</li>
+</ol>
+<p>以下の画面で、カスタムモデルを追加できます。（注意：モデル選択のオプションの後【必ず最後までスクロール】し、下部に「自定义模型」があるのでクリックしてモデル ID を入力。上記の推奨モデル ID である <code>stepfun/step-3.5-flash:free</code> を直接入力。同時に下部の "Get Key" をクリックして公式サイトにアクセスし、対応する API Key を入力すれば正常に使用できます。）</p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/index-2026-02-12-14-14-51.png" /></p>
+<p><img alt="" src="../../../zh-cn/stage-1/introduction-to-ai-ide/images/index-2026-02-12-14-15-29.png" />
+例えば下図のように、<strong>AI Agent が実行中に一時停止することがあります。これはユーザーの入力を待っているため</strong>です。例えば、作成する名前の入力、Enter でコマンドの実行確認、またはコマンドのクリックなど。通常はそのまま Enter を押せば問題ありません。このステップで何をすべきか分からない場合は、現在の画面のスクリーンショットを撮って AI に聞いてください。</p>
+<hr />
+<h2>VWorkとしての見方</h2>
+<p>このセクションのポイントは、AIに任せる範囲を広げることではなく、<strong>人間が目的・条件・確認ポイントを言葉で整理し、AIに実装を進めさせる力を育てること</strong>です。</p>
+<p>バイブコーディングでは、コードを書く前に「何を作るのか」「誰に使ってもらうのか」「どこまでできれば試せるのか」を言語化する力が重要になります。</p>
+<hr />
+<p>出典：<a href="https://github.com/datawhalechina/easy-vibe">datawhalechina/easy-vibe</a> / 原文: <a href="https://raw.githubusercontent.com/datawhalechina/easy-vibe/main/docs/ja-jp/stage-1/introduction-to-ai-ide/index.md">docs/ja-jp/stage-1/introduction-to-ai-ide/index.md</a><br />
+ライセンス：Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</p>
+<p><a href="https://exbridge.jp/">エクスブリッジ</a> / <a href="https://exbridge.jp/vwork.html">VWork</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
