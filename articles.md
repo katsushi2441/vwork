@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [CUGAやUnlimited OCRで見る、次世代AIエージェントと高性能なテキスト処理の最前線 06-24](2026-06-24-ai-news.html)
 - [Prompt Injectionで読む：PP-OCRv6からEU AI Actまで：AIの技術進化とセキュリティ、そして規制の最前線 06-23](2026-06-23-ai-news-3.html)
 - [Groq、Nvidia、そして「Loopy」：AIインフラの進化と新たな課題 06-23](2026-06-23-ai-news-2.html)
 - [OCRで読む：Ling and Ringによる超大規模AIの進化と、Gemma 4、そして金融の「Anchorage」「OKX」が描く… 06-23](2026-06-23-ai-news.html)
