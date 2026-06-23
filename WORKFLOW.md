@@ -7,6 +7,7 @@
 ```text
 経営者との会話
   -> 課題の整理
+  -> WORK_PROTOCOL/RULESで作業ルールを確認
   -> 最初の成果物を決める
   -> data/ に入力を置く
   -> Codexに小さく依頼する
@@ -22,6 +23,8 @@
 経営者が困っていること、使っているExcel、手作業の流れ、最初に見たい結果をCodexに話します。
 
 Codexとの会話から、`BUSINESS.md`、`RULES.md`、`SERVERS.md`、`TASKS.md` の下書きを作ります。
+
+`WORK_PROTOCOL.md`、`AGENTS.md`、`CLAUDE.md` は最初からテンプレートに入っています。案件固有の注意がある場合だけ追記します。
 
 ## Step 2: 最小の成果物を決める
 
@@ -57,7 +60,7 @@ Codexとの会話から、`BUSINESS.md`、`RULES.md`、`SERVERS.md`、`TASKS.md`
 一度に大きく頼まず、1つの具体的な成果物を依頼します。
 
 ```text
-BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
+WORK_PROTOCOL.md、AGENTS.md、BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
 data/sales.csvを読み、月別売上と上位商品をoutput/sales_summary.mdに出すPythonスクリプトを作ってください。
 実行方法と結果をWORKLOG.mdに追記してください。
 ```

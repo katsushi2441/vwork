@@ -92,6 +92,18 @@ vwork/
 └── packages/                # 将来の共通コード
 ```
 
+## AI作業プロトコルを同梱する理由
+
+お客様環境では、CodexだけでなくClaude Code、別のAIエージェント、手作業が混ざることがあります。
+
+そのためVWorkの `project-template/` には、最初から次の入口を入れます。
+
+- `WORK_PROTOCOL.md`: 目的、実行、検証、記録、完了条件
+- `AGENTS.md`: CodexなどのAIエージェント向けルール
+- `CLAUDE.md`: Claude Code向けルール
+
+これにより、どのAIで作業しても「確認せず完了と言わない」「外部送信や本番反映は事前確認する」「実行結果をWORKLOGに残す」という同じ基準で進められます。
+
 ## 直下ドキュメントとproject-templateの違い
 
 `vwork` 直下のドキュメントは、VWorkという商品・フレームワーク自体の説明書です。
@@ -109,6 +121,9 @@ project-template:
 顧客環境ではMarkdownを増やしすぎません。
 
 - `BUSINESS.md`: 経営課題、目的、期待する効果
+- `WORK_PROTOCOL.md`: Codex/Claude/AIエージェント/手作業で共通する作業プロトコル
+- `AGENTS.md`: AIエージェントが最初に読む作業ルール
+- `CLAUDE.md`: Claude Code向けの入口
 - `RULES.md`: Codex/Claudeが守る作業ルール
 - `SERVERS.md`: PC、サーバー、API、`.env`、公開先
 - `TASKS.md`: 今やること、次にやること、まだやらないこと

@@ -49,9 +49,12 @@ cd ../customer-work
 
 ## 2. 最初に使うMarkdown
 
-顧客環境では、Markdownを増やしすぎません。基本は次の5つです。
+顧客環境では、Markdownを増やしすぎません。基本セットは次のファイルです。
 
 - `BUSINESS.md`: 経営課題、目的、期待する効果
+- `WORK_PROTOCOL.md`: AIと人間が共通で守る作業プロトコル
+- `AGENTS.md`: CodexなどのAIエージェントが最初に読むルール
+- `CLAUDE.md`: Claude Code向けの入口
 - `RULES.md`: Codex/Claudeが守る作業ルール
 - `SERVERS.md`: PC、サーバー、API、`.env`、公開先
 - `TASKS.md`: 今やること、次にやること、まだやらないこと
@@ -80,7 +83,7 @@ cd ../customer-work
 最初から文書を完璧に埋める必要はありません。経営者が困っていることを話し、Codexに聞き取りと下書きを頼みます。
 
 ```text
-BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
+WORK_PROTOCOL.md、AGENTS.md、BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
 まず私の業務課題を聞き取りしてください。
 その内容から、最初に1日以内で確認できる成果物を提案してください。
 必要ならBUSINESS.md、TASKS.md、WORKLOG.mdを更新してください。
@@ -89,7 +92,7 @@ BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
 最初の実装依頼例:
 
 ```text
-BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
+WORK_PROTOCOL.md、AGENTS.md、BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
 data/sales.csvから月別売上と上位商品を集計するPythonスクリプトを作ってください。
 出力はoutput/sales_summary.csvとoutput/sales_summary.mdにしてください。
 実行方法と確認結果をWORKLOG.mdに追記してください。
