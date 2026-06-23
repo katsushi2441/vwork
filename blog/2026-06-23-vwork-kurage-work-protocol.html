@@ -1,0 +1,201 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AIに仕事を任せる前に、仕事の進め方を入れる。VWorkにKurage Work Protocolを組み込みました | VWork バイブコーディングフレームワーク</title><meta name="description" content="SuperpowersというAIエージェント向け開発方法論に着想を得て、株式会社エクスブリッジはVWorkフレームワークにKurage Work Protocolを組み込みました。Codex、Claude Code、kdeck、手作業のどれでも同じ品質基準で業務改善を進めるための仕組みを、経営者向けに解説します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-23-vwork-kurage-work-protocol.html"><meta property="og:type" content="article"><meta property="og:title" content="AIに仕事を任せる前に、仕事の進め方を入れる。VWorkにKurage Work Protocolを組み込みました"><meta property="og:description" content="SuperpowersというAIエージェント向け開発方法論に着想を得て、株式会社エクスブリッジはVWorkフレームワークにKurage Work Protocolを組み込みました。Codex、Claude Code、kdeck、手作業のどれでも同じ品質基準で業務改善を進めるための仕組みを、経営者向けに解説します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-23-vwork-kurage-work-protocol.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AIに仕事を任せる前に、仕事の進め方を入れる。VWorkにKurage Work Protocolを組み込みました"><meta name="twitter:description" content="SuperpowersというAIエージェント向け開発方法論に着想を得て、株式会社エクスブリッジはVWorkフレームワークにKurage Work Protocolを組み込みました。Codex、Claude Code、kdeck、手作業のどれでも同じ品質基準で業務改善を進めるための仕組みを、経営者向けに解説します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AIに仕事を任せる前に、仕事の進め方を入れる。VWorkにKurage Work Protocolを組み込みました", "description": "SuperpowersというAIエージェント向け開発方法論に着想を得て、株式会社エクスブリッジはVWorkフレームワークにKurage Work Protocolを組み込みました。Codex、Claude Code、kdeck、手作業のどれでも同じ品質基準で業務改善を進めるための仕組みを、経営者向けに解説します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-23-vwork-kurage-work-protocol.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-23", "dateModified": "2026-06-23", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>AIに仕事を任せる前に、仕事の進め方を入れる。VWorkにKurage Work Protocolを組み込みました</h1>
+<p>AIで業務改善を進めるとき、多くの人が最初に考えるのは「どのAIを使うか」です。</p>
+<p>Codexを使うのか。Claude Codeを使うのか。ChatGPTを使うのか。あるいは、自社専用のAIエージェントを作るのか。</p>
+<p>もちろん、使うAIは重要です。</p>
+<p>しかし実際に仕事で使ってみると、もっと大事な問題が見えてきます。</p>
+<p>それは、<strong>AIに何をどう任せるか</strong>です。</p>
+<p>AIに「これ作って」と頼めば、何かは出てきます。けれど、実務ではそれだけでは足りません。</p>
+<ul>
+<li>何をもって完了とするのか</li>
+<li>どのデータを触ってよいのか</li>
+<li>公開してよいのか、確認が必要なのか</li>
+<li>エラーが出たときにどう記録するのか</li>
+<li>作ったものを誰がどう確認するのか</li>
+<li>次に改善することをどこへ残すのか</li>
+</ul>
+<p>ここが曖昧なままAIを使うと、作業は速く見えても、会社の中には不安定なものが増えていきます。</p>
+<p>株式会社エクスブリッジでは、VWorkフレームワークに <strong>Kurage Work Protocol</strong> を組み込みました。</p>
+<p>これは、お客様環境でバイブコーディングを始めるときに、最初から「AIと仕事を進めるルール」を同梱するための仕組みです。</p>
+<hr />
+<h2>Superpowersから得たヒント</h2>
+<p>今回の発想のきっかけになったOSSが、<a href="https://github.com/obra/superpowers">obra/superpowers</a> です。</p>
+<p>Superpowersは、AIコーディングエージェント向けのスキルフレームワークであり、ソフトウェア開発の方法論です。</p>
+<p>特徴は、AIにいきなりコードを書かせるのではなく、次のような流れを重視する点です。</p>
+<ul>
+<li>まず目的を確認する</li>
+<li>仕様を整理する</li>
+<li>実装計画を作る</li>
+<li>小さなタスクへ分ける</li>
+<li>テストやレビューを挟む</li>
+<li>完了前に検証する</li>
+<li>作業の証跡を残す</li>
+</ul>
+<p>つまり、Superpowersは「AIを賢くする魔法」ではありません。</p>
+<p>むしろ、AIが暴走しないように、仕事の進め方を先に決める仕組みです。</p>
+<p>これは経営者にとって非常に重要です。</p>
+<p>AI導入で失敗しやすいのは、AIの性能が低いからだけではありません。多くの場合、仕事の渡し方、確認の仕方、完了の定義が曖昧だからです。</p>
+<hr />
+<h2>Kurage Work Protocolとは何か</h2>
+<p>Kurage Work Protocolは、エクスブリッジが実際のAI開発、動画生成、ブログ投稿、SNS告知、ブラウザ自動化、YouTube投稿、業務ツール開発で得た失敗と改善をもとに整理した、AI作業の共通プロトコルです。</p>
+<p>重要なのは、これはkdeck専用の機能ではないということです。</p>
+<p>kdeckは、AI Agentタスクを管理する強力な入口のひとつです。しかし、すべての作業をkdeckだけで行うわけではありません。</p>
+<p>実際の現場では、次のような入口が混在します。</p>
+<ul>
+<li>Codex</li>
+<li>Claude Code</li>
+<li>kdeck</li>
+<li>kvtuberからの依頼</li>
+<li>workerジョブ</li>
+<li>browser-useやkargovによる自動操作</li>
+<li>手作業のターミナル実行</li>
+</ul>
+<p>だからこそ、入口ごとにルールを作るのではなく、<strong>どの入口から作業しても共通して守る作業プロトコル</strong> が必要になります。</p>
+<p>Kurage Work Protocolは、そのための共通ルールです。</p>
+<hr />
+<h2>何を防ぐための仕組みなのか</h2>
+<p>AI活用で怖いのは、失敗そのものではありません。</p>
+<p>本当に怖いのは、失敗したのに成功したように見えてしまうことです。</p>
+<p>たとえば、次のようなことが起きます。</p>
+<ul>
+<li>動画が生成されたが、音声が入っていない</li>
+<li>画面はそれらしいが、本物の操作ではない</li>
+<li>投稿ジョブはキューに入ったが、公開はされていない</li>
+<li>YouTubeに送信したが、公開URLでは見られない</li>
+<li>SNS投稿文に古いURLや間違った投稿者が入っている</li>
+<li>コードは書いたが、コミットされず残骸が残っている</li>
+<li>AIが「完了」と言ったが、実際には確認していない</li>
+</ul>
+<p>これは、AIが悪いというより、完了条件が曖昧なまま作業していることが原因です。</p>
+<p>Kurage Work Protocolでは、次の考え方を明確にしています。</p>
+<pre><code class="language-text">開始した = 完了ではない
+キューに入った = 完了ではない
+アップロードした = 完了ではない
+生成した = 完了ではない
+公開URLで確認できた、動作を確認した、記録を残した = 完了
+</code></pre>
+<p>この違いを、最初から作業ルールとして入れることが重要です。</p>
+<hr />
+<h2>VWorkフレームワークにどう組み込んだか</h2>
+<p>VWorkは、お客様PCに導入して使うバイブコーディング作業基盤です。</p>
+<p>今回、VWorkの <code>project-template</code> に、次の3つの入口ファイルを追加しました。</p>
+<ul>
+<li><code>WORK_PROTOCOL.md</code></li>
+<li><code>AGENTS.md</code></li>
+<li><code>CLAUDE.md</code></li>
+</ul>
+<p>お客様環境でVWorkを始めるときは、<code>project-template</code> をコピーして作業フォルダを作ります。</p>
+<p>つまり、これからはVWorkを入れた時点で、最初からAI作業プロトコルも一緒に入ります。</p>
+<p>標準の作業フォルダは、次のようになります。</p>
+<pre><code class="language-text">customer-work/
+├── WORK_PROTOCOL.md
+├── AGENTS.md
+├── CLAUDE.md
+├── BUSINESS.md
+├── RULES.md
+├── SERVERS.md
+├── TASKS.md
+├── WORKLOG.md
+├── data/
+├── src/
+├── output/
+└── docs/
+</code></pre>
+<p>これにより、CodexでもClaude Codeでも、最初に読むべきルールが明確になります。</p>
+<p>たとえば、最初の依頼文はこうなります。</p>
+<pre><code class="language-text">WORK_PROTOCOL.md、AGENTS.md、BUSINESS.md、RULES.md、SERVERS.md、TASKS.mdを読んでください。
+まず私の業務課題を聞き取りしてください。
+その内容から、最初に1日以内で確認できる成果物を提案してください。
+</code></pre>
+<p>AIにいきなり「システムを作って」と頼むのではなく、まず経営課題、ルール、サーバー、タスク、完了条件を読ませる。</p>
+<p>これだけで、AIの動き方は大きく変わります。</p>
+<hr />
+<h2>VWorkはどう進化したのか</h2>
+<p>これまでのVWorkは、経営者がCodexと一緒に業務課題を整理し、小さなツールやレポートを作るための作業基盤でした。</p>
+<p>今回の追加によって、VWorkは一段進みました。</p>
+<p>単なるテンプレートではなく、<strong>AIに仕事を任せるための運用ルールを最初から持ったフレームワーク</strong> になりました。</p>
+<p>具体的には、次のように進化しています。</p>
+<h3>1. AIの入口が増えても迷わない</h3>
+<p>お客様環境では、最初はCodexだけでも、後からClaude Code、別のAIエージェント、ブラウザ自動化、workerジョブが入ることがあります。</p>
+<p>そのとき、ツールごとに作業ルールが違うと混乱します。</p>
+<p>VWorkでは、入口が何であっても <code>WORK_PROTOCOL.md</code> を共通の作業ルールにします。</p>
+<h3>2. 完了条件が明確になる</h3>
+<p>経営者にとって困るのは、「できました」と言われたのに、実際には動かないことです。</p>
+<p>VWorkでは、<code>WORKLOG.md</code> に実行コマンド、出力、確認結果、未確認事項を残す流れを標準にしています。</p>
+<p>これにより、作業がブラックボックスになりにくくなります。</p>
+<h3>3. 外部送信や本番反映で事故を防ぐ</h3>
+<p>メール送信、SNS投稿、YouTube投稿、本番サーバー反映、既存データの一括変更などは、便利な一方で事故につながりやすい作業です。</p>
+<p>Kurage Work Protocolでは、こうした操作は実行前に人間へ確認するルールにしています。</p>
+<p>AIに任せるところと、人間が判断するところを分けることで、安心してAI活用を進められます。</p>
+<h3>4. ノウハウが会社に残る</h3>
+<p>VWorkでは、成果物だけでなく、作業過程を残すことを重視します。</p>
+<ul>
+<li>なぜ作ったか</li>
+<li>どのデータを使ったか</li>
+<li>どう実行したか</li>
+<li>何を確認したか</li>
+<li>次に何を改善するか</li>
+</ul>
+<p>これが残ることで、外注で作って終わりではなく、会社の中に改善の知識が蓄積されます。</p>
+<hr />
+<h2>経営者にとっての意味</h2>
+<p>AI導入を「便利なツールを入れること」だと考えると、どうしても単発の効率化で終わりがちです。</p>
+<p>しかし、会社を変えるには、AIを日常業務の改善サイクルに入れる必要があります。</p>
+<p>VWorkが目指しているのは、まさにそこです。</p>
+<pre><code class="language-text">業務課題を話す
+  ↓
+AIが小さな成果物に分解する
+  ↓
+実装する
+  ↓
+実行して確認する
+  ↓
+記録する
+  ↓
+次の改善へ進む
+</code></pre>
+<p>この流れが会社の中に入ると、外注に丸投げするだけではなく、自社の業務を自社で改善できるようになります。</p>
+<p>もちろん、すべてを経営者ひとりでやる必要はありません。</p>
+<p>エクスブリッジは、VWorkの導入、最初の課題整理、AI作業ルールの整備、業務ツールの実装、動画やSNS発信まで伴走できます。</p>
+<p>重要なのは、AIに任せる前に、AIと仕事を進める土台を作ることです。</p>
+<p>その土台として、VWorkにKurage Work Protocolを組み込みました。</p>
+<hr />
+<h2>エクスブリッジの強み</h2>
+<p>エクスブリッジの強みは、AIツールを紹介することではありません。</p>
+<p>実際に、AIでブログを書き、動画を作り、YouTubeに投稿し、SNSへ告知し、VTuberを動かし、ブラウザ操作を自動化し、workerジョブを運用しながら、失敗したところを仕組みに変えていることです。</p>
+<p>今回のKurage Work Protocolも、理屈だけで作ったものではありません。</p>
+<p>実際の開発で起きた問題、公開確認の漏れ、動画品質の失敗、ジョブ管理の混乱、コミット漏れ、デザインの揺れを、次に繰り返さないために形にしたものです。</p>
+<p>AI活用では、成功事例だけでなく、失敗をプロトコルに変えられる会社が強いと考えています。</p>
+<p>VWorkは、その実践知をお客様環境へ持ち込むためのフレームワークです。</p>
+<p>AIを導入するだけでなく、AIと継続的に仕事を進める会社へ。</p>
+<p>その第一歩として、VWorkはKurage Work Protocolを標準搭載しました。</p>
+<hr />
+<h2>関連リンク</h2>
+<ul>
+<li>Superpowers: <a href="https://github.com/obra/superpowers">https://github.com/obra/superpowers</a></li>
+<li>VWork GitHub: <a href="https://github.com/katsushi2441/vwork">https://github.com/katsushi2441/vwork</a></li>
+<li>VWork Blog: <a href="https://katsushi2441.github.io/vwork/blog/">https://katsushi2441.github.io/vwork/blog/</a></li>
+<li>株式会社エクスブリッジ: <a href="https://exbridge.jp/">https://exbridge.jp/</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
