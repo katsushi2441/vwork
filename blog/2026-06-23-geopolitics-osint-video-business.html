@@ -1,0 +1,134 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>戦争映像を消費せず、経営資産に変える。Kurageで地政学OSINT動画を生成した理由 | VWork バイブコーディングフレームワーク</title><meta name="description" content="株式会社エクスブリッジは、公開映像とAI編集を組み合わせ、地政学・軍事OSINT系の解説動画をKurageで生成しました。単なる動画自動生成ではなく、素材収集、ライセンス確認、日本語編集、動画化、公開前確認までを一つの事業パイプラインとして設計した背景を紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-23-geopolitics-osint-video-business.html"><meta property="og:type" content="article"><meta property="og:title" content="戦争映像を消費せず、経営資産に変える。Kurageで地政学OSINT動画を生成した理由"><meta property="og:description" content="株式会社エクスブリッジは、公開映像とAI編集を組み合わせ、地政学・軍事OSINT系の解説動画をKurageで生成しました。単なる動画自動生成ではなく、素材収集、ライセンス確認、日本語編集、動画化、公開前確認までを一つの事業パイプラインとして設計した背景を紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-23-geopolitics-osint-video-business.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="戦争映像を消費せず、経営資産に変える。Kurageで地政学OSINT動画を生成した理由"><meta name="twitter:description" content="株式会社エクスブリッジは、公開映像とAI編集を組み合わせ、地政学・軍事OSINT系の解説動画をKurageで生成しました。単なる動画自動生成ではなく、素材収集、ライセンス確認、日本語編集、動画化、公開前確認までを一つの事業パイプラインとして設計した背景を紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "戦争映像を消費せず、経営資産に変える。Kurageで地政学OSINT動画を生成した理由", "description": "株式会社エクスブリッジは、公開映像とAI編集を組み合わせ、地政学・軍事OSINT系の解説動画をKurageで生成しました。単なる動画自動生成ではなく、素材収集、ライセンス確認、日本語編集、動画化、公開前確認までを一つの事業パイプラインとして設計した背景を紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-23-geopolitics-osint-video-business.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-23", "dateModified": "2026-06-23", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>戦争映像を消費せず、経営資産に変える。Kurageで地政学OSINT動画を生成した理由</h1>
+<p>AIを使った動画ビジネスの世界では、顔出しなし、声出しなし、最小限の編集で大きな再生数を取る「faceless YouTube」の事例が増えています。</p>
+<p>その中でも、戦争・軍事・地政学の映像を扱うチャンネルは、非常に強い需要があります。ウクライナ情勢、中東、ドローン戦、兵器分析、OSINTなどは、ニュースとしての関心が高く、視聴者の滞在時間も伸びやすいテーマです。</p>
+<p>一方で、この領域は危険も大きいです。</p>
+<p>既存映像をただつなぐだけでは、著作権、再利用コンテンツ、暴力描写、プロパガンダ、倫理面の問題が一気に出ます。短期的に再生数を取れても、企業が継続的なメディア資産として運用するには不安定です。</p>
+<p>そこでエクスブリッジでは、単に「戦争映像を集めて動画にする」のではなく、<strong>公開映像をもとに、AIで日本語の解説コンテンツへ変換するパイプライン</strong>として実験しました。</p>
+<p>今回、Kurageで生成した修正版テスト動画は、その実証です。</p>
+<hr />
+<h2>きっかけは、海外で伸びている動画モデル</h2>
+<p>今回の開発の出発点は、海外で注目されているfaceless動画モデルです。</p>
+<p>長い戦争・紛争系の映像をクリップ化し、AIでタイトルやナレーションを作り、地図や字幕を重ねて投稿する。うまくいけば、低コストで大量の動画を作れます。</p>
+<p>ただし、ここで重要なのは、表面的なやり方をそのまま真似しないことです。</p>
+<ul>
+<li>生々しい映像を並べるだけでは、企業発信として危険</li>
+<li>他者の動画を無加工で使うと、再利用コンテンツになりやすい</li>
+<li>英語やロシア語のタイトルをそのまま読み上げても、日本の視聴者には価値が低い</li>
+<li>事実確認や文脈化が弱いと、単なる煽り動画になる</li>
+<li>YouTubeやSNSのポリシーに左右されやすい</li>
+</ul>
+<p>つまり、必要なのは「動画を自動生成するAI」ではなく、<strong>情報を集め、選別し、編集し、企業が出せる形に変換するコンテンツエンジン</strong>です。</p>
+<hr />
+<h2>Kurageで作った制作フロー</h2>
+<p>今回の実験では、次の流れで動画を作りました。</p>
+<pre><code class="language-text">市場で伸びている動画モデルを分析
+  ↓
+地政学・OSINT系のテーマを設定
+  ↓
+YouTube検索情報をトレンド把握に利用
+  ↓
+実際の映像素材はWikimedia Commonsなどの公開・ライセンス確認可能な素材から収集
+  ↓
+暴力描写、捕虜、プロパガンダ色の強すぎる素材を除外
+  ↓
+AIで日本語の解説台本を生成
+  ↓
+英語・ロシア語タイトルの読み上げではなく、日本語の文脈説明に変換
+  ↓
+TTS、字幕、映像編集を行い、Kurage動画として登録
+  ↓
+公開前に再生確認し、必要なら修正
+</code></pre>
+<p>この流れで重要なのは、YouTube上の人気動画をそのまま素材として使わないことです。</p>
+<p>YouTubeの情報は、あくまで「何が注目されているか」を見るために使います。実際の映像素材は、ライセンスや出典を確認できる公開素材を中心にします。</p>
+<p>これにより、単なる転載ではなく、独自の日本語解説コンテンツとして成立させやすくなります。</p>
+<hr />
+<h2>最初の失敗から、品質要件が見えた</h2>
+<p>今回の実験では、最初からうまくいったわけではありません。</p>
+<p>初回生成では、台本に問題がありました。</p>
+<ul>
+<li>注意事項や補足説明が何度も繰り返される</li>
+<li>英語の資料名や動画タイトルを長く読み上げてしまう</li>
+<li>日本語の視聴者に向けた解説になっていない</li>
+<li>「何を学べる動画なのか」が弱い</li>
+</ul>
+<p>これは、AI動画生成でよく起きる失敗です。</p>
+<p>AIに素材を渡して「動画にして」と頼むだけでは、素材の説明を並べるだけになりがちです。経営者向け、一般視聴者向け、専門家向けなど、誰に何を伝えるのかを設計しないと、薄い動画になります。</p>
+<p>そこで修正版では、台本生成の方針を変えました。</p>
+<ul>
+<li>日本語の説明を中心にする</li>
+<li>素材タイトルを読ませず、内容を要約して語らせる</li>
+<li>同じ注意事項を繰り返さない</li>
+<li>戦闘映像そのものではなく、ドローン、公開情報、地政学、現代戦の変化を解説する</li>
+<li>煽りではなく、ビジネスパーソンが理解できるニュース解説に寄せる</li>
+</ul>
+<p>これにより、単なる素材集ではなく、<strong>公開映像から現代の安全保障とテクノロジーを読み解く動画</strong>に近づきました。</p>
+<hr />
+<h2>企業にとっての価値</h2>
+<p>この実験で見えた価値は、戦争動画そのものではありません。</p>
+<p>本質は、<strong>専門性のある情報を、AIで継続的に動画コンテンツへ変換できること</strong>です。</p>
+<p>同じ仕組みは、さまざまな業界に応用できます。</p>
+<ul>
+<li>金融ニュースを、投資初心者向けの解説動画にする</li>
+<li>製造業の技術ニュースを、営業資料として使える動画にする</li>
+<li>物流、半導体、エネルギー、サイバーセキュリティの動向を定期動画にする</li>
+<li>海外記事や公開資料を、日本語の業界解説に変換する</li>
+<li>自社サービスの利用事例や導入効果を動画化する</li>
+</ul>
+<p>多くの企業は、情報を持っています。しかし、それを継続的に発信する体制がありません。</p>
+<p>記事を書く人、動画を作る人、投稿する人、SNSで告知する人が分断されているため、1本作るだけで止まってしまいます。</p>
+<p>Kurageのような仕組みを使えば、情報収集、台本生成、音声、字幕、映像編集、投稿、確認までを一つの流れにできます。</p>
+<p>これは、単なるAI動画ツールではなく、企業の情報発信を継続運用するための基盤です。</p>
+<hr />
+<h2>エクスブリッジの強み</h2>
+<p>エクスブリッジの強みは、AIのアイデアを説明するだけでなく、実際に動くところまで作ることです。</p>
+<p>今回も、単に「こういう動画は伸びそうです」と分析しただけではありません。</p>
+<p>実際に、動画収集、フィルタリング、台本生成、TTS、字幕、動画登録、再生確認までをつなぎ、Kurage上で再生できる状態まで持っていきました。</p>
+<p>さらに、再生できない問題が起きたときには、PHP側で大容量動画を一括読み込みしていた原因を修正し、ストリーミング再生できるようにしました。</p>
+<p>AI活用で重要なのは、生成AIのプロンプトだけではありません。</p>
+<ul>
+<li>ジョブを毎日安定して動かす仕組み</li>
+<li>失敗した動画を確認できる管理画面</li>
+<li>大容量ファイルを扱うWeb配信</li>
+<li>SNSやYouTubeへつなげる配信設計</li>
+<li>品質が悪いときに改善できるフィードバックループ</li>
+</ul>
+<p>ここまで含めて、事業で使えるAIシステムになります。</p>
+<hr />
+<h2>AI時代のコンテンツ制作は、単発制作からパイプラインへ</h2>
+<p>これからの企業発信は、1本の動画を外注して終わりでは足りません。</p>
+<p>市場は毎日動きます。ニュースも、技術も、顧客の関心も変わります。</p>
+<p>その変化を拾い、会社の視点で解釈し、動画・ブログ・SNSに展開できる会社は、情報発信のスピードで優位に立てます。</p>
+<p>今回の地政学OSINT動画は、その一例です。</p>
+<p>戦争映像を刺激的に消費するのではなく、公開情報をもとに、現代のテクノロジーと安全保障を理解するためのコンテンツへ変換する。</p>
+<p>この考え方は、どの業界にも応用できます。</p>
+<p>エクスブリッジは、AI、OSS、動画生成、ジョブ管理、Web公開、SNS運用をつなげ、企業が自社の情報発信を内製化できる仕組みを作っています。</p>
+<p>生成AIを「文章を作る道具」で終わらせず、<strong>会社の発信力を高める実行基盤</strong>にする。</p>
+<p>そこに、これからのAI活用の大きな可能性があります。</p>
+<hr />
+<h2>修正版テスト動画</h2>
+<p>今回制作したKurage動画はこちらです。</p>
+<p><a href="https://kurage.exbridge.jp/kuragev.php?id=geo0d995007caf9">公開映像で読む、ウクライナ戦争とドローン時代の地政学（修正版テスト）</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
