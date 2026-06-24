@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [海外で伸びるAI収益化動画を読む：CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)](2026-06-24-ai-monetization-claude-code-full-course-4.html)
 - [OPFSで読む：H1: H100/H200チップからAnthropicのClaudeまで：AIインフラとエンタープライズの最前線 06-24](2026-06-24-ai-news-2.html)
 - [Kurage Montageの技術設計：参照動画から日本語ショート動画を生成するAI OSSパイプライン](2026-06-24-kmontage-openmontage-reference-video-pipeline.html)
 - [CUGAやUnlimited OCRで見る、次世代AIエージェントと高性能なテキスト処理の最前線 06-24](2026-06-24-ai-news.html)
