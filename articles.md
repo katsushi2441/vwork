@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AgentsとMoEで読む：Qwenと中国のチップ企業が示す、AIエージェントとインフラの最前線 06-24](2026-06-24-ai-news-3.html)
 - [Kurage SNS Poster：browser-useとログイン済みChromeでThreads自動投稿まで到達した実装メモ](2026-06-24-ksnsposter-threads-browser-use.html)
 - [海外で伸びるAI収益化動画を読む：CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)](2026-06-24-ai-monetization-claude-code-full-course-4.html)
 - [OPFSで読む：H1: H100/H200チップからAnthropicのClaudeまで：AIインフラとエンタープライズの最前線 06-24](2026-06-24-ai-news-2.html)
