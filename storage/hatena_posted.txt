@@ -110,3 +110,5 @@
 2026-06-24-kurage-montage-business-video
 2026-06-24-ksnsposter-threads-browser-use
 2026-06-24-ai-news-3
+2026-06-25-ai-news
+2026-06-25-ai-news-2
