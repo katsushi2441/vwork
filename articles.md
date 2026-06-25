@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [OpenAIのカスタムチップとNVIDIAの最新モデルが示すAIインフラ競争の最前線 06-25](2026-06-25-ai-news-4.html)
 - [海外で伸びるAI収益化動画を読む：How I Vibe Coded a $400K/mo App with Claude Code (Fu](2026-06-25-ai-monetization-how-i-vibe-coded-a-400k-mo.html)
 - [OpenAIのカスタムチップとGoogle流出から読み解く、AI時代の半導体・人材競争 06-25](2026-06-25-ai-news-3.html)
 - [NVIDIA NeMoとGefenで深掘りするAIモデルの最適化技術と、AI時代のキャリア倫理 06-25](2026-06-25-ai-news-2.html)
