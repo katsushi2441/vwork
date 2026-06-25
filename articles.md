@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [OpenAIのカスタムチップとGoogle流出から読み解く、AI時代の半導体・人材競争 06-25](2026-06-25-ai-news-3.html)
 - [NVIDIA NeMoとGefenで深掘りするAIモデルの最適化技術と、AI時代のキャリア倫理 06-25](2026-06-25-ai-news-2.html)
 - [OpenAIがBroadcomと組むカスタムチップ「Jalapeño」で描くAIインフラの最前線 06-25](2026-06-25-ai-news.html)
 - [AgentsとMoEで読む：Qwenと中国のチップ企業が示す、AIエージェントとインフラの最前線 06-24](2026-06-24-ai-news-3.html)
