@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [CVE-2026-LGTMで読む：【OpenAI/Anthropicが描く未来】AI開発の最前線から学ぶ、セキュリティとエンジニアリン… 06-27](2026-06-27-ai-news.html)
 - [Japaneseで読む：AnthropicのClaude vs OpenAI：AIエージェントとvLLMが描く最前線 06-26](2026-06-26-ai-news-4.html)
 - [TheとTTSで読む：AIの責任問題とClaudeの躍進：Anthropicが描く次世代AI市場の構図 06-26](2026-06-26-ai-news-3.html)
 - [Runで読む：AnthropicのClaudeがChatGPTを脅かす？AIエージェント、vLLM、そして金融Web3の最新動向 06-26](2026-06-26-ai-news-2.html)
