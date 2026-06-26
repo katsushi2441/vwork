@@ -1,0 +1,151 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AIラジオの実画面を、AIがデモ動画にして公開する — Kurage Argo VideoとAIRadioの連携 | VWork バイブコーディングフレームワーク</title><meta name="description" content="Kurage Argo VideoがKurage AI VTuber Radioの実画面を録画し、機能解説付きのデモ動画としてKurageに公開しました。AIラジオ、ブラウザ自動録画、動画公開基盤を組み合わせたエクスブリッジの技術的優位性を経営者向けに解説します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-06-26-kargov-airadio-demo-pipeline.html"><meta property="og:type" content="article"><meta property="og:title" content="AIラジオの実画面を、AIがデモ動画にして公開する — Kurage Argo VideoとAIRadioの連携"><meta property="og:description" content="Kurage Argo VideoがKurage AI VTuber Radioの実画面を録画し、機能解説付きのデモ動画としてKurageに公開しました。AIラジオ、ブラウザ自動録画、動画公開基盤を組み合わせたエクスブリッジの技術的優位性を経営者向けに解説します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-06-26-kargov-airadio-demo-pipeline.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AIラジオの実画面を、AIがデモ動画にして公開する — Kurage Argo VideoとAIRadioの連携"><meta name="twitter:description" content="Kurage Argo VideoがKurage AI VTuber Radioの実画面を録画し、機能解説付きのデモ動画としてKurageに公開しました。AIラジオ、ブラウザ自動録画、動画公開基盤を組み合わせたエクスブリッジの技術的優位性を経営者向けに解説します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AIラジオの実画面を、AIがデモ動画にして公開する — Kurage Argo VideoとAIRadioの連携", "description": "Kurage Argo VideoがKurage AI VTuber Radioの実画面を録画し、機能解説付きのデモ動画としてKurageに公開しました。AIラジオ、ブラウザ自動録画、動画公開基盤を組み合わせたエクスブリッジの技術的優位性を経営者向けに解説します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-06-26-kargov-airadio-demo-pipeline.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-06-26", "dateModified": "2026-06-26", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>AIラジオの実画面を、AIがデモ動画にして公開する — Kurage Argo VideoとAIRadioの連携</h1>
+<p>株式会社エクスブリッジでは、AIを「文章を書く道具」としてだけではなく、実際の業務画面を動かし、録画し、動画として公開するところまでを一つのパイプラインとして開発しています。</p>
+<p>今回、<strong>Kurage Argo Video</strong> を使って、<strong>Kurage AI VTuber Radio（AIRadio）</strong> の実画面を録画し、機能解説付きのデモ動画として <strong>Kurage</strong> に公開しました。</p>
+<p>デモ動画はこちらです。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/kuragev.php?id=4ae09591e7994ef0">Kurage AI VTuber Radio デモ：話す・記録する・コメントを受けるAIラジオ</a></li>
+<li><a href="https://github.com/katsushi2441/kargov">Kurage Argo Video GitHub</a></li>
+<li><a href="https://github.com/katsushi2441/airadio">Kurage AI VTuber Radio GitHub</a></li>
+<li><a href="https://github.com/katsushi2441/kvtuber">Kurage AI VTuber GitHub</a></li>
+</ul>
+<p>これは単なる画面録画ではありません。</p>
+<p><strong>AIラジオを実際に動かし、その様子をAIが録画し、解説動画に編集し、Kurage上で公開する</strong>という、企業の情報発信を内製化するための実証です。</p>
+<h2>AIRadioとは何か</h2>
+<p>Kurage AI VTuber Radio、通称AIRadioは、AI VTuberがラジオDJのように話し続けるシステムです。</p>
+<p>編集者のプロフィールや指定テーマに合わせて台本を作り、AI VTuberが音声で話し、画面には次のような情報が表示されます。</p>
+<ul>
+<li>AI VTuberのアバター</li>
+<li>現在話している内容</li>
+<li>コメント欄</li>
+<li>Loop Log</li>
+<li>YouTube Live配信操作</li>
+<li>テーマ割込み用の入力欄</li>
+</ul>
+<p>AIRadioの役割は、単に音声を読み上げることではありません。</p>
+<p>企業が発信したいテーマを、ラジオ番組のように継続的に話し続けることです。たとえば、AI活用、バイブコーディング、Web3、社内教育、サービス紹介、採用広報などを、AI VTuberが穏やかに話す番組にできます。</p>
+<h2>今回のデモ動画で見せた機能</h2>
+<p>今回のデモ動画では、AIRadioの画面をスクロールしながら、単なるトップ画面ではなく、実際に運用で重要になる部分を見せています。</p>
+<p>具体的には、次の機能を動画内で確認できるようにしました。</p>
+<ul>
+<li>プロフィールに合わせた台本生成</li>
+<li>AI VTuberによるラジオ音声</li>
+<li>「今話している内容」の表示</li>
+<li>コメント欄</li>
+<li>Loop Logによる処理状況の可視化</li>
+<li>テーマ割込み機能</li>
+<li>YouTube Live配信へつなげる操作領域</li>
+</ul>
+<p>経営者にとって重要なのは、「AIが話します」という説明だけではありません。</p>
+<p>実際の画面で、何を話しているのか、運用ログがどう見えるのか、コメントや配信操作がどこにあるのかが分かることです。今回のデモでは、そこを見せるために画面スクロールを入れています。</p>
+<h2>Kurage Argo Videoの役割</h2>
+<p>Kurage Argo Videoは、ブラウザ操作を録画し、デモ動画として仕上げるための仕組みです。</p>
+<p>Webサービスのデモ動画を作る場合、通常は次のような作業が必要です。</p>
+<ol>
+<li>ブラウザを開く</li>
+<li>操作手順を決める</li>
+<li>画面録画する</li>
+<li>ナレーションを作る</li>
+<li>不要部分をカットする</li>
+<li>テロップや説明カードを入れる</li>
+<li>動画として書き出す</li>
+<li>公開ページにアップする</li>
+</ol>
+<p>Kurage Argo Videoは、この流れをAIと自動化で短縮するためのプロダクトです。</p>
+<p>今回のデモでは、AIRadioの実画面を録画し、前後に機能説明を加え、縦型ショート形式の動画としてKurageに公開しました。</p>
+<p>ここで大事なのは、架空の画面を作ったのではなく、<strong>実際に動いているAIRadioの画面を録画している</strong>ことです。</p>
+<h2>Kurage公開基盤の役割</h2>
+<p>録画した動画は、Kurageの動画公開ページで見られるようにしました。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/kuragev.php?id=4ae09591e7994ef0">公開デモ動画</a></li>
+</ul>
+<p>Kurageは、動画生成・動画公開・サムネイル・タイトル・説明文を扱うための基盤です。今回のようなデモ動画を、単にローカルファイルとして残すのではなく、URLで共有できる状態にします。</p>
+<p>営業、採用、投資家向け説明、社内共有では、動画ファイルを送るよりも、公開URLで見せられる方が使いやすくなります。</p>
+<h2>技術的には何をしているのか</h2>
+<p>今回の連携は、複数のシステムをつないでいます。</p>
+<pre><code class="language-text">AIRadio
+  ↓ 実ブラウザで動作
+Kurage Argo Video
+  ↓ 画面と音声を録画
+動画編集パイプライン
+  ↓ 機能説明カードと実音声区間を結合
+Kurage
+  ↓ 公開用URLとして配信
+VWork Blog / SNS
+  ↓ 事例として説明・発信
+</code></pre>
+<p>AIRadio側では、AI VTuberの画面、台本生成、TTS音声、コメント、Loop Logなどを表示します。</p>
+<p>Kurage Argo Video側では、ブラウザの画面と音声を録画します。今回の録画では、画面スクロールを入れて、上部の見た目だけでなく、実際の運用情報が見える下部セクションも映しました。</p>
+<p>Kurage側では、完成した動画をジョブID付きで公開し、タイトルや説明文も整えています。</p>
+<p>この一連の流れにより、<strong>プロダクトの実画面を、説明可能な動画コンテンツへ変換する</strong>ことができます。</p>
+<h2>なぜ経営者に重要なのか</h2>
+<p>企業が新しいシステムを作っても、それを社内外に伝えるのは意外と難しいものです。</p>
+<ul>
+<li>営業資料だけでは伝わりにくい</li>
+<li>長いマニュアルは読まれにくい</li>
+<li>デモ動画を毎回作るのは手間がかかる</li>
+<li>担当者が説明しないと価値が伝わらない</li>
+</ul>
+<p>しかし、AIが実画面を録画し、機能を説明する動画まで作れるようになれば、状況が変わります。</p>
+<p>新機能を作ったら、すぐにデモ動画を作る。社内ツールを更新したら、操作説明動画を作る。営業で見せたい画面を、短い動画にして共有する。</p>
+<p>これを少人数で回せるようになります。</p>
+<h2>エクスブリッジの技術的優位性</h2>
+<p>エクスブリッジの強みは、単体のAIツールを使うことではありません。</p>
+<p><strong>AI、OSS、ブラウザ自動化、VTuber、TTS、動画生成、公開基盤、ブログ/SNS発信を、業務で使える形につなげていること</strong>です。</p>
+<p>今回のデモには、少なくとも次の技術要素が入っています。</p>
+<ul>
+<li>AI VTuber画面</li>
+<li>AIラジオ台本生成</li>
+<li>TTS音声生成</li>
+<li>ブラウザ自動操作</li>
+<li>画面録画</li>
+<li>音声付き動画生成</li>
+<li>縦型ショート動画化</li>
+<li>Kurageでの公開</li>
+<li>VWork Blogでの事例化</li>
+</ul>
+<p>これは、AIに文章を書かせるだけの導入とは違います。</p>
+<p>実際に画面を動かし、動画にし、公開し、説明記事にする。ここまでを一つの仕組みにできるから、企業の情報発信と業務改善に直結します。</p>
+<h2>今後の活用例</h2>
+<p>この仕組みは、AIRadioだけでなく、さまざまな業務に応用できます。</p>
+<ul>
+<li>新サービスのデモ動画</li>
+<li>社内システムの操作説明</li>
+<li>採用向けの仕事紹介</li>
+<li>研修コンテンツ</li>
+<li>営業提案用のプロトタイプ動画</li>
+<li>顧客向けの導入説明</li>
+<li>AI Agentが実行した作業の証跡動画</li>
+</ul>
+<p>企業にとって、動画は「広報用の特別な制作物」から、「日々の業務を説明するための標準出力」になっていきます。</p>
+<p>エクスブリッジは、そのためのAI×OSSプロダクト群を実装し続けています。</p>
+<h2>関連リンク</h2>
+<ul>
+<li>デモ動画: <a href="https://kurage.exbridge.jp/kuragev.php?id=4ae09591e7994ef0">https://kurage.exbridge.jp/kuragev.php?id=4ae09591e7994ef0</a></li>
+<li>Kurage Argo Video: <a href="https://github.com/katsushi2441/kargov">https://github.com/katsushi2441/kargov</a></li>
+<li>Kurage AI VTuber Radio: <a href="https://github.com/katsushi2441/airadio">https://github.com/katsushi2441/airadio</a></li>
+<li>Kurage AI VTuber: <a href="https://github.com/katsushi2441/kvtuber">https://github.com/katsushi2441/kvtuber</a></li>
+<li>株式会社エクスブリッジ: <a href="https://exbridge.jp/">https://exbridge.jp/</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
