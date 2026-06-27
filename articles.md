@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [OpenAIとAnthropicの競争激化：Apple Vision Proのエグゼクティブ流出とAIモデルの動向 06-28](2026-06-28-ai-news-2.html)
 - [TheとFintechで読む：Anthropicの規制を背景に：アジアAIの台頭とClaudeが描くAI最前線 06-28](2026-06-28-ai-news.html)
 - [OpenAI、NVIDIA、Googleが加速させる「自社AIチップ」開発競争と最新モデルの動向 06-27](2026-06-27-ai-news-4.html)
 - [OpenAI、Nvidia、Googleが挑む「AIチップ戦争」：GPT-5.6の規制と次世代モデルの波 06-27](2026-06-27-ai-news-3.html)
