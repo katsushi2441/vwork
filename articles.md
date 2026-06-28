@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Micronが狙うAIハードウェアの未来：NvidiaとAnthropicが示す競争の行方 06-29](2026-06-29-ai-news-2.html)
 - [Frameworkで読む：AI技術動向：ローカルLLMの性能が飛躍的に向上・Web3・金融動向：AIとロボティクスへの資金流入が加速 06-29](2026-06-29-ai-news.html)
 - [Anthropicの規制を乗り越えるアジアAIの躍進：OpenAI、Apple、次世代モデルの競争 06-28](2026-06-28-ai-news-4.html)
 - [GitHubで読む：Anthropicの輸出規制を巡るAI競争：アジアの新モデルとOpenAIの動向 06-28](2026-06-28-ai-news-3.html)
