@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [ClaudeとGLM 5.2が激突するAIベンチマーク：採用バイアスや監視技術のリスクを考察 06-29](2026-06-29-ai-news-4.html)
 - [GLM 5.2がClaudeを凌駕？ AI競争の最前線と、人間が不可欠な理由 06-29](2026-06-29-ai-news-3.html)
 - [Micronが狙うAIハードウェアの未来：NvidiaとAnthropicが示す競争の行方 06-29](2026-06-29-ai-news-2.html)
 - [Frameworkで読む：AI技術動向：ローカルLLMの性能が飛躍的に向上・Web3・金融動向：AIとロボティクスへの資金流入が加速 06-29](2026-06-29-ai-news.html)
