@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [BNY Mellon、Circle USDCを核に金融機関向けステーブルコイン市場が拡大：AIインフラからWeb3まで 06-30](2026-06-30-ai-news.html)
 - [ClaudeとGLM 5.2が激突するAIベンチマーク：採用バイアスや監視技術のリスクを考察 06-29](2026-06-29-ai-news-4.html)
 - [GLM 5.2がClaudeを凌駕？ AI競争の最前線と、人間が不可欠な理由 06-29](2026-06-29-ai-news-3.html)
 - [Micronが狙うAIハードウェアの未来：NvidiaとAnthropicが示す競争の行方 06-29](2026-06-29-ai-news-2.html)
