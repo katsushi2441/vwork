@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Amazon、NVIDIA、Huaweiが挑むAIインフラの覇権争い：OpenAI・Anthropicの動向も 07-01](2026-07-01-ai-news.html)
 - [Ornith-1.0から学ぶ次世代エージェント：Qwen 3.6とMiCA規制が描くAI・Web3の最前線 06-30](2026-06-30-ai-news-4.html)
 - [OneとBitcoinで読む：Ornith-1.0、Qwen 3.6、Arena：AIが描くインフラとビジネスの進化 06-30](2026-06-30-ai-news-3.html)
 - [Ornith-1.0とQwen 3.6が示すAIエージェントの最前線：ローカル開発からインフラ競争まで 06-30](2026-06-30-ai-news-2.html)
