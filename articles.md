@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Claude Sonnet 5とHuawei OpenPangu-2.0-Flashが示すAIモデルの高速進化競争 07-01](2026-07-01-ai-news-4.html)
 - [Internetで読む：NVIDIA、Huaweiが牽引するAIモデル戦争：Qwen 3.6やOpenPangu-2.0の最新動向 07-01](2026-07-01-ai-news-3.html)
 - [ClaudeからQwenまで：主要プレイヤーによる最新AIモデルとエージェント技術の進化 07-01](2026-07-01-ai-news-2.html)
 - [Amazon、NVIDIA、Huaweiが挑むAIインフラの覇権争い：OpenAI・Anthropicの動向も 07-01](2026-07-01-ai-news.html)
