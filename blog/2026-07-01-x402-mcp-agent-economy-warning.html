@@ -1,0 +1,102 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「AIエージェントに仕事をさせて稼ぐ」の実態 — x402/MCP/A2Aの本物の技術と、偽エンゲージメント系プラットフォームへの注意喚起 | VWork バイブコーディングフレームワーク</title><meta name="description" content="「AIエージェントに仕事をさせて稼ぐ」の実態 — x402/MCP/A2Aの本物の技術と、偽エンゲージメント系プラットフォームへの注意喚起"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-07-01-x402-mcp-agent-economy-warning.html"><meta property="og:type" content="article"><meta property="og:title" content="「AIエージェントに仕事をさせて稼ぐ」の実態 — x402/MCP/A2Aの本物の技術と、偽エンゲージメント系プラットフォームへの注意喚起"><meta property="og:description" content="「AIエージェントに仕事をさせて稼ぐ」の実態 — x402/MCP/A2Aの本物の技術と、偽エンゲージメント系プラットフォームへの注意喚起"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-07-01-x402-mcp-agent-economy-warning.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「AIエージェントに仕事をさせて稼ぐ」の実態 — x402/MCP/A2Aの本物の技術と、偽エンゲージメント系プラットフォームへの注意喚起"><meta name="twitter:description" content="「AIエージェントに仕事をさせて稼ぐ」の実態 — x402/MCP/A2Aの本物の技術と、偽エンゲージメント系プラットフォームへの注意喚起"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「AIエージェントに仕事をさせて稼ぐ」の実態 — x402/MCP/A2Aの本物の技術と、偽エンゲージメント系プラットフォームへの注意喚起", "description": "「AIエージェントに仕事をさせて稼ぐ」の実態 — x402/MCP/A2Aの本物の技術と、偽エンゲージメント系プラットフォームへの注意喚起", "url": "https://katsushi2441.github.io/vwork/blog/2026-07-01-x402-mcp-agent-economy-warning.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "", "dateModified": "", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><blockquote>
+<p>本記事は「AIエージェントに仕事をさせて報酬を得たい」という動機で、実在するエージェント向けマーケットプレイスを2つ実際にAPIから調査した記録です。<strong>本物のOSS標準（x402 / MCP / A2A）の技術解説</strong>と、<strong>"AIエージェントのJOB"を装った偽エンゲージメント・相場操縦プラットフォームへの注意喚起</strong>をまとめます。</p>
+</blockquote>
+<h1>はじめに：エージェント経済は「配管は本物、でも中身を見極めろ」</h1>
+<p>2026年、「AIエージェントが自律的に仕事を受注し、暗号通貨で報酬を受け取る」という<strong>エージェント経済（agent economy）</strong>の“配管”は、確かに実在します。x402・MCP・A2Aといった<strong>オープンな標準</strong>が整い、APIから数分でエージェントを登録・公開できるところまで来ています。</p>
+<p>ただし——<strong>「JOBがある＝稼げる」とは限りません。</strong> 実際に手を動かして2つのプラットフォームを調べたところ、片方は「本物だが需要ゼロ」、もう片方は「APIは本物だが、やる仕事が偽エンゲージメントと相場操縦」でした。順に解説します。</p>
+<hr />
+<h2>🔧 まず、本物のOSS標準を理解する</h2>
+<p>エージェント経済を支える中核技術は、特定企業の製品ではなく<strong>オープンな仕様</strong>です。ここが分かると、怪しいものを見分けやすくなります。</p>
+<h3>x402 — 「HTTP 402 Payment Required」を復活させた課金プロトコル</h3>
+<p>HTTPには昔から未使用の <code>402 Payment Required</code> ステータスがあります。x402は、これを使って<strong>APIを1回叩くごとに暗号通貨（USDCなど）で自動決済</strong>する仕組みです。</p>
+<ul>
+<li>クライアント（人間 or エージェント）がAPIを呼ぶ → サーバが <code>402</code> と支払い条件を返す → クライアントが署名付き支払いを添えて再送 → サーバが検証して結果を返す。</li>
+<li>人手のクレカ登録なしに、<strong>エージェント同士がマシンスピードで少額決済</strong>できるのが肝。</li>
+<li>発見用に <code>/.well-known/x402</code> を公開する実装が多い。</li>
+</ul>
+<h3>MCP — Model Context Protocol</h3>
+<p>AIアシスタント（Claude Code等）が<strong>外部ツール／データに接続する標準</strong>。エージェントがマーケットのAPIをMCP経由で叩けば、「設計を読む」「JOBを取る」といった操作を統一的に行えます。多くのプラットフォームが <code>/mcp</code> エンドポイントを持ちます。</p>
+<h3>A2A — Agent-to-Agent</h3>
+<p><strong>エージェント同士が発見・交渉・委任・決済する</strong>ためのプロトコル。<code>/.well-known/agent-card.json</code>（＝そのエージェントの“名刺”）で能力を公開し、<code>message:send</code> などで仕事をやり取りします。</p>
+<h3>OpenAPI / Agent Card</h3>
+<p>まともなプラットフォームは <code>openapi.json</code> を公開しており、<strong>エンドポイント一覧を見れば「何をする場所か」が一発で分かります</strong>。これが今回の調査で決定打になりました。</p>
+<hr />
+<h2>✅ ケース1：OpenTask — 「本物だが、まだ需要がない」</h2>
+<p><a href="https://opentask.ai">opentask.ai</a> は「自律エージェントに仕事を仲介するマーケット」。実際にAPI（<code>https://opentask.ai/api</code>、<code>OpenTask Agent API v1.0.0</code>）を叩いて検証しました。</p>
+<p><strong>分かったこと：</strong>
+- <strong>API経由で完全に登録できる。</strong> <code>POST /agent/register</code> は認証不要で、必須は <code>handle</code> と <code>password</code> だけ。メールもウォレットも不要。数分でエージェント・アカウントとAPIトークンが手に入りました。
+- <strong>設計が真っ当。</strong> OAuth 2.0（<code>/oauth/register</code>, <code>/oauth/token</code>）、A2A（<code>/a2a/message:send</code>, <code>/a2a/tasks</code>）、hosted MCP（<code>/mcp</code>）、そして<strong>テストネット決済（<code>/agent/payments/testnet-onboarding</code>）</strong>まで揃っている。
+- 仕事のライフサイクルも一通り：<code>/agent/tasks</code>（JOB一覧）→ <code>/agent/tasks/{id}/bids</code>（入札）→ <code>/agent/contracts</code>（契約）→ <code>/agent/contracts/{id}/submissions</code>（納品）→ <code>payout-methods</code>（受取）。</p>
+<p><strong>しかし現実は：</strong>
+- 調査時点で <strong>募集タスク＝0件</strong>。
+- <code>discovery-readiness</code> の "Payments" セクションが <strong><code>blocked</code>（"OpenTask payments are temporarily unavailable for new paid proposals"）</strong>。つまり<strong>有料案件がプラットフォーム側で一時停止中</strong>。</p>
+<blockquote>
+<p><strong>結論：技術（配管）は本物。でも“今この瞬間に流れている仕事とお金”はほぼゼロ。</strong> エージェント経済は「インフラは立派だが、需要がまだ来ていない」段階だと、実データで確認できました。準備だけ済ませて「需要が動いたら通知」する監視に留めるのが賢い使い方です。</p>
+</blockquote>
+<hr />
+<h2>⚠️ ケース2：wurk.fun — 「APIは本物、でも“仕事”が偽エンゲージメントと相場操縦」</h2>
+<p>ここが本記事の<strong>注意喚起の本題</strong>です。</p>
+<p><a href="https://wurk.fun">wurk.fun</a> は「Microtask Marketplace for Humans &amp; AI Agents」を名乗り、"1日100ドル"的な訴求をするサイト。トップは中身の薄いSPAですが、フロントのリンクから<strong>実APIホスト <code>wurkapi.fun</code></strong> を特定しました：<code>openapi.json</code> / <code>/mcp</code> / <code>/.well-known/x402</code> / <code>skill.md</code> を完備し、<strong>x402決済もMCPも本物</strong>です。</p>
+<p>問題は<strong>エンドポイント一覧＝“やる仕事の中身”</strong>でした。ほぼ全てがこれです（一部を抜粋）：</p>
+<ul>
+<li><code>xlikes</code> / <code>xfollowers</code> / <code>xviews</code> / <code>xreposts</code> / <code>xbookmarks</code> … <strong>X（Twitter）の偽いいね・偽フォロワー・偽表示の売買</strong></li>
+<li><code>instafollowers</code> / <code>ytlikes</code> / <code>ytsubs</code> / <code>tgmembers</code> … <strong>Instagram / YouTube / Telegram の偽エンゲージメント</strong></li>
+<li><code>xraid/*</code> / <code>heylolraid/*</code> … <strong>協調“レイド”（組織的な一斉いいね・拡散）</strong></li>
+<li><code>cmcvote</code> / <code>cgvote</code> / <code>moontokvote</code> / <code>dex-rocket</code> … <strong>CoinMarketCap / CoinGecko の投票操作、DEXの“ロケット”＝仮想通貨のランキング・注目度を人工的に吊り上げる操作</strong></li>
+</ul>
+<p>要するに wurk.fun の実態は、<strong>SNSの数字を水増しするSMM（Social Media Manipulation）パネル＋仮想通貨のランキング/価格を操作するサービス</strong>です。「AIエージェントのJOB」という言葉で綺麗に包装されていますが、中身は<strong>偽エンゲージメント生成と相場操縦（pump）</strong>でした。</p>
+<h3>なぜ手を出してはいけないのか</h3>
+<ul>
+<li><strong>各SNSの利用規約違反</strong>（bot・偽エンゲージメント・協調的不正行為）。→ 使ったアカウントの<strong>BANリスク</strong>。</li>
+<li><strong>仮想通貨の投票/ランキング操作・pump</strong>は、<strong>相場操縦・詐欺の幇助</strong>に当たりうる行為。多くは<strong>pump&amp;dump（吊り上げて売り抜ける詐欺）の燃料</strong>です。</li>
+<li>ここでの「1日100ドル」は、<strong>他人を騙す数字づくり／詐欺コインの後押し</strong>で得るお金。実際の価値を何も生んでおらず、<strong>リスクだけが自分に跳ね返る</strong>。</li>
+</ul>
+<blockquote>
+<p><strong>結論：wurk.fun は「稼げる場所」ではなく「加担するとリスクを負う場所」。</strong> APIが立派でも、<strong>やる仕事が反社会的</strong>なら意味がありません。</p>
+</blockquote>
+<hr />
+<h2>🛡️ 見分け方：まっとうなエージェントJOBか、操作系か</h2>
+<p>同じ「x402 / MCP完備のエージェントマーケット」でも、天と地の差があります。チェックポイントはシンプルです。</p>
+<ol>
+<li><strong><code>openapi.json</code> のエンドポイント名を読む。</strong> ここに“やる仕事”が全部出ています。</li>
+<li><code>summarize</code> / <code>translate</code> / <code>render</code> / <code>analyze</code> / <code>generate</code> … → <strong>価値を生む実務</strong>の匂い。</li>
+<li><code>likes</code> / <code>followers</code> / <code>views</code> / <code>raid</code> / <code>vote</code> / <code>rocket</code> / <code>pump</code> … → <strong>偽エンゲージメント・相場操縦</strong>の匂い。<strong>避ける。</strong></li>
+<li><strong>成果物が「本物の価値」か「偽の数字」か。</strong> 誰かの役に立つ成果物なら健全。SNSの数字や投票の水増しなら不健全。</li>
+<li><strong>煽り文句を疑う。</strong> 「1日100ドル」「放置で稼げる」「先に少額入金」→ 高確率で操作系 or 詐欺。</li>
+<li><strong>自衛の鉄則：</strong></li>
+<li>稼ぐのに<strong>先払い・デポジットを要求されたら即撤退。</strong></li>
+<li>ウォレットは<strong>残高ゼロの新規</strong>、<code>approve</code>/送金署名は拒否、受取アドレス登録のみ。</li>
+<li>新興プラットは<strong>テストネット or 少額で“実際に着金するか”を先に検証。</strong></li>
+</ol>
+<hr />
+<h2>まとめ</h2>
+<ul>
+<li><strong>エージェント経済のOSS標準（x402 / MCP / A2A / Agent Card / OpenAPI）は本物</strong>で、APIから数分でエージェントを立ち上げられるところまで来ている。</li>
+<li>ただし現状は <strong>「配管は立派、需要はこれから」</strong>（OpenTaskは登録できたが仕事ゼロ・支払い停止中）。</li>
+<li>そして<strong>“AIエージェントのJOB”を装いつつ、実態は偽エンゲージメント・相場操縦というプラットフォームが存在する</strong>（wurk.fun）。<strong>APIの綺麗さと、やる仕事の健全さは別物。</strong></li>
+<li>見分ける鍵は<strong><code>openapi.json</code>のエンドポイント名</strong>。<code>vote</code> / <code>raid</code> / <code>followers</code> / <code>rocket</code> が並んでいたら、それは“操作”のためのAPIです。</li>
+</ul>
+<p>技術は中立です。x402もMCPも素晴らしいOSSですが、<strong>同じ技術で価値を生むことも、他人を騙すこともできる</strong>。「稼げる」の一言に飛びつかず、<strong>自分が何に加担するのか</strong>を、エンドポイント一覧まで見て判断してください。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
