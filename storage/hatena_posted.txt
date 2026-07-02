@@ -142,3 +142,6 @@
 2026-07-01-x402-mcp-agent-economy-warning
 2026-07-01-ai-news-4
 2026-07-02-ai-news
+2026-07-02-ai-news-2
+2026-07-02-ai-news-3
+2026-07-02-phaser3-matter-tentacle-climbing
