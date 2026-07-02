@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Podmanで読む：Anthropic、Gemma 4、Microsoftが描くAIインフラの未来：カスタムチップとオープンソース競争 07-03](2026-07-03-ai-news-2.html)
 - [Microsoft、Gemma 4、そしてBlackRock：AIとRWAが描く新時代のインフラ競争 07-03](2026-07-03-ai-news.html)
 - [Googleのセキュリティ懸念とGemmaによるオープンモデル開発：AI時代のインフラ競争 07-02](2026-07-02-ai-news-4.html)
 - [「失敗動画がバズる」ブラウザゲームをPhaser 3 + Matter.jsで作る — ばね1本の触手物理とMediaRecorder内蔵クリップ共有](2026-07-02-phaser3-matter-tentacle-climbing.html)
