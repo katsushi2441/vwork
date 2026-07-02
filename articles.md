@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [「失敗動画がバズる」ブラウザゲームをPhaser 3 + Matter.jsで作る — ばね1本の触手物理とMediaRecorder内蔵クリップ共有](2026-07-02-phaser3-matter-tentacle-climbing.html)
 - [GoogleのGemma、Cloudflareの新ポリシー、そしてVenice AIが描く次世代AI・Web3の潮流 07-02](2026-07-02-ai-news-3.html)
 - [ForとTheで読む：Hugging FaceとGemma 4が挑む、リアルタイム音声AIと次世代LLMの競争 07-02](2026-07-02-ai-news-2.html)
 - [Gemma 4とMetaが描く、次世代AIインフラの競争：音声・計算資源の最前線 07-02](2026-07-02-ai-news.html)
