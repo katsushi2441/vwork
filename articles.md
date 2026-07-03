@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Theで読む：AnthropicのカスタムチップからDeepSeek V4 Flashの実力まで：AIインフラとオープンソース化が描く… 07-03](2026-07-03-ai-news-4.html)
 - [Agentsで読む：Anthropic、Gemma 4とNvidiaが描く「AIインフラ」競争の最前線：オープンソース化の潮流 07-03](2026-07-03-ai-news-3.html)
 - [Podmanで読む：Anthropic、Gemma 4、Microsoftが描くAIインフラの未来：カスタムチップとオープンソース競争 07-03](2026-07-03-ai-news-2.html)
 - [Microsoft、Gemma 4、そしてBlackRock：AIとRWAが描く新時代のインフラ競争 07-03](2026-07-03-ai-news.html)
