@@ -26,7 +26,7 @@ import yaml
 
 REPO_ROOT = Path(__file__).parent.parent
 GH_PAGES_DIR = Path("/tmp/vwork-gh-pages")
-REMOTE = "git@github.com:katsushi2441/vwork.git"
+REMOTE = "https://github.com/katsushi2441/vwork.git"  # この環境はSSH不可のためHTTPS
 BASE_URL = "https://katsushi2441.github.io/vwork"
 AIXSNS_API = "https://aixec.exbridge.jp/api.php?path=posts"
 
@@ -207,11 +207,8 @@ def main():
     article_url = f"{BASE_URL}/blog/{html_filename}"
 
     print(f"[1/5] SSH agent を探す")
-    ssh_sock = find_ssh_sock()
-    if not ssh_sock:
-        print("SSH agent socketが見つかりません", file=sys.stderr)
-        sys.exit(1)
-    print(f"  使用: {ssh_sock}")
+    ssh_sock = find_ssh_sock() or ""
+    print(f"  使用: {ssh_sock or '(HTTPSリモートのためSSH agent不要)'}")
 
     print(f"[2/5] gh-pages worktree を準備")
     ensure_gh_pages_worktree(ssh_sock)

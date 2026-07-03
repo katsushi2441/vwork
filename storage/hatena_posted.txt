@@ -148,3 +148,9 @@
 2026-07-02-first-game-dev-with-claude-code
 2026-07-02-ai-news-4
 2026-07-03-ai-news
+2026-07-03-ai-news-2
+2026-07-03-ai-news-3
+2026-07-03-ai-news-4
+2026-07-04-ai-news
+2026-07-04-ai-news-2
+2026-07-04-kurage-public-contents-links
