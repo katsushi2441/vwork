@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Open Source AIで読む：Mistralが新しい高性能モデル「Leanstral-1.5」をリリース・オープンソースAIの現… 07-04](2026-07-04-ai-news-3.html)
 - [Russianで読む：Mistral、Deepseekが加速させるAIの未来：ローカル環境でのSOTA LLM活用法と「自律判断」への… 07-04](2026-07-04-ai-news-2.html)
 - [Mistralの専門LLM発表とPalantirのオープンソース論争：AI開発最前線の動向 07-04](2026-07-04-ai-news.html)
 - [Theで読む：AnthropicのカスタムチップからDeepSeek V4 Flashの実力まで：AIインフラとオープンソース化が描く… 07-03](2026-07-03-ai-news-4.html)
