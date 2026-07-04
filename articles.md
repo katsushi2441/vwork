@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Kurage SNS PosterにYouTubeアップロード機能を追加した：youtube-uploader-mcpを業務パイプラインに組み込む](2026-07-04-ksnsposter-youtube-mcp-upload.html)
 - [Open Source AIで読む：Mistralが新しい高性能モデル「Leanstral-1.5」をリリース・オープンソースAIの現… 07-04](2026-07-04-ai-news-3.html)
 - [Russianで読む：Mistral、Deepseekが加速させるAIの未来：ローカル環境でのSOTA LLM活用法と「自律判断」への… 07-04](2026-07-04-ai-news-2.html)
 - [Mistralの専門LLM発表とPalantirのオープンソース論争：AI開発最前線の動向 07-04](2026-07-04-ai-news.html)
