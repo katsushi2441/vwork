@@ -1,0 +1,149 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>動画を作って終わりにしない。Kurage動画をテーマ別の知識ライブラリに育てる機能を追加しました | VWork バイブコーディングフレームワーク</title><meta name="description" content="株式会社エクスブリッジは、Kurageで生成された多数のAI動画をテーマ別に整理し、経営者や実務担当者が学びやすい知識ページとして育てるKurage Knowledge Libraryを実装しました。動画を単発コンテンツで終わらせず、企業の知識資産へ変える取り組みを紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-07-04-kurage-knowledge-library-business.html"><meta property="og:type" content="article"><meta property="og:title" content="動画を作って終わりにしない。Kurage動画をテーマ別の知識ライブラリに育てる機能を追加しました"><meta property="og:description" content="株式会社エクスブリッジは、Kurageで生成された多数のAI動画をテーマ別に整理し、経営者や実務担当者が学びやすい知識ページとして育てるKurage Knowledge Libraryを実装しました。動画を単発コンテンツで終わらせず、企業の知識資産へ変える取り組みを紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-07-04-kurage-knowledge-library-business.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="動画を作って終わりにしない。Kurage動画をテーマ別の知識ライブラリに育てる機能を追加しました"><meta name="twitter:description" content="株式会社エクスブリッジは、Kurageで生成された多数のAI動画をテーマ別に整理し、経営者や実務担当者が学びやすい知識ページとして育てるKurage Knowledge Libraryを実装しました。動画を単発コンテンツで終わらせず、企業の知識資産へ変える取り組みを紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "動画を作って終わりにしない。Kurage動画をテーマ別の知識ライブラリに育てる機能を追加しました", "description": "株式会社エクスブリッジは、Kurageで生成された多数のAI動画をテーマ別に整理し、経営者や実務担当者が学びやすい知識ページとして育てるKurage Knowledge Libraryを実装しました。動画を単発コンテンツで終わらせず、企業の知識資産へ変える取り組みを紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-07-04-kurage-knowledge-library-business.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-07-04", "dateModified": "2026-07-04", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>動画を作って終わりにしない。Kurage動画をテーマ別の知識ライブラリに育てる機能を追加しました</h1>
+<p>AIで動画を作れる時代になりました。</p>
+<p>しかし、企業にとって本当に重要なのは「動画を何本作ったか」ではありません。</p>
+<p>作った動画が、あとから見つけやすく、学びやすく、社内や顧客に伝えやすい形で蓄積されているか。ここが大事です。</p>
+<p>エクスブリッジでは、Kurageシリーズを使って、AI OSS、バイブコーディング、YouTube/SNS運用、AI VTuber、翻訳字幕、ニュース考察、企業発信など、さまざまなテーマの動画を継続的に生成してきました。</p>
+<p>その結果、<a href="https://kurage.exbridge.jp/kuragev.php">Kurage動画一覧</a> には多くの動画が蓄積され、まさに「知識の宝庫」と呼べる状態になってきました。</p>
+<p>一方で、動画が増えるほど、時系列一覧だけでは伝わりにくくなります。</p>
+<p>そこで今回、Kurageに <strong>動画をテーマ別に整理し、知識ページとして育てる機能</strong> を追加しました。</p>
+<p>公開ページはこちらです。</p>
+<p><a href="https://kurage.exbridge.jp/kurage_knowledge.php">Kurage Knowledge Library</a></p>
+<hr />
+<h2>なぜこの機能を作ったのか</h2>
+<p>動画は、発信力のある形式です。</p>
+<p>短い時間で雰囲気が伝わり、SNSにも流しやすく、経営者や実務担当者にも見てもらいやすい。</p>
+<p>しかし動画には弱点もあります。</p>
+<ul>
+<li>あとから探しにくい</li>
+<li>関連動画がつながりにくい</li>
+<li>似たテーマの動画が埋もれる</li>
+<li>1本ごとの学びが断片化しやすい</li>
+<li>企業の知識資産として整理されにくい</li>
+</ul>
+<p>これは、多くの企業のYouTubeやSNSでも起きている問題です。</p>
+<p>動画を作って投稿しても、数日後にはタイムラインの下に流れていく。せっかく作った解説動画、事例動画、ノウハウ動画が、継続的に活用されない。</p>
+<p>これでは、動画制作は「消費されるコンテンツ」で終わってしまいます。</p>
+<p>エクスブリッジが目指しているのは、そこではありません。</p>
+<p><strong>動画を、企業の知識資産に変えること。</strong></p>
+<p>今回のKurage Knowledge Libraryは、そのための一歩です。</p>
+<hr />
+<h2>実装した機能</h2>
+<p>今回、Kurageフォルダに次の機能を実装しました。</p>
+<pre><code class="language-text">Kurageで生成された動画ジョブ
+  ↓
+タイトル、台本、説明文、メタ情報を読み取り
+  ↓
+テーマ別に分類
+  ↓
+代表動画、関連動画、キーワード、要約を生成
+  ↓
+テーマ別の知識ページとして公開
+  ↓
+10分ごとにバックグラウンド更新
+</code></pre>
+<p>現在は、Kurageに蓄積された1000本以上の動画をもとに、次のようなテーマに整理しています。</p>
+<ul>
+<li>AI動画生成・ショート動画制作</li>
+<li>AI OSS・LLM技術解説</li>
+<li>バイブコーディング・AI収益化</li>
+<li>Kurageプロダクト・自動化パイプライン</li>
+<li>YouTube・SNS運用と成長戦略</li>
+<li>翻訳字幕・吹き替え・音声生成</li>
+<li>ニュース反応・コメント考察</li>
+<li>企業発信・メディア自動化</li>
+<li>エンタメ・人物・話題の考察</li>
+<li>人生・学び・物語</li>
+</ul>
+<p>テーマ一覧ページでは、各テーマの説明、動画数、代表動画、キーワードを表示します。</p>
+<p>テーマ詳細ページでは、Kurage編集者がそのテーマの流れを要約し、まず見るべき代表動画と関連動画を案内します。</p>
+<p>例えば、AI OSSやLLM関連の動画は、次のようなページで整理されます。</p>
+<p><a href="https://kurage.exbridge.jp/kurage_topic.php?slug=ai-oss-llm">AI OSS・LLM技術解説 | Kurage Knowledge Library</a></p>
+<hr />
+<h2>Kurageアバターを「編集者」として配置</h2>
+<p>今回の機能では、単なる機械的な一覧ではなく、Kurageアバターを「編集者」として配置しています。</p>
+<p>これは、見た目の演出だけではありません。</p>
+<p>Kurageシリーズでは、AI VTuber、Kurage Montage、Kurage Voice Pro、AIRadioなど、キャラクターが情報を案内する体験を重視してきました。</p>
+<p>知識ライブラリでも同じ考え方を取り入れています。</p>
+<p>動画をただ並べるのではなく、Kurageが編集者として、テーマを案内し、関連する動画をまとめ、学びの入り口を作る。</p>
+<p>さらに、kvtuberで使っている正規アバター素材をKurage側にも反映し、静止アイコンではなく、口パクと呼吸感のある動くアバターとして表示するようにしました。</p>
+<p>これにより、Kurageシリーズ全体でキャラクター体験が統一されます。</p>
+<hr />
+<h2>バックグラウンドで育つ知識ページ</h2>
+<p>この機能の重要な点は、手作業でページを更新するのではなく、バックグラウンドで育っていく設計にしていることです。</p>
+<p>Kurageで新しい動画が生成されると、定期的にナレッジデータを再構築します。</p>
+<p>実装としては、Kurage内の動画ジョブデータを読み取り、テーマ別JSONを生成し、公開サーバへ同期する仕組みにしています。</p>
+<p>現在は10分ごとに更新されるタイマーとして稼働しています。</p>
+<p>つまり、動画が増えるほど、テーマ別ページも育っていきます。</p>
+<p>これは、企業メディア運用において非常に重要です。</p>
+<p>ブログも動画も、単発で終わらせるのではなく、積み上がるほど価値が増す構造にする。</p>
+<p>Kurage Knowledge Libraryは、その思想を実装したものです。</p>
+<hr />
+<h2>経営者にとっての価値</h2>
+<p>経営者にとって、AI動画生成の価値は「安く動画が作れる」だけではありません。</p>
+<p>本質的な価値は、会社の知見、事例、調査、解説、営業メッセージを継続的に発信し、それを資産として蓄積できることです。</p>
+<p>例えば、次のような使い方が考えられます。</p>
+<ul>
+<li>自社の技術解説動画をテーマ別に整理する</li>
+<li>営業資料として見せやすい動画ページを作る</li>
+<li>社内教育用の動画ライブラリを育てる</li>
+<li>顧客向けのFAQやノウハウ動画を分類する</li>
+<li>SNSで流した動画を、あとから検索できる知識ページに戻す</li>
+<li>経営者向け、現場向け、技術者向けに見せ方を変える</li>
+</ul>
+<p>動画を作るだけなら、多くのAIツールでできます。</p>
+<p>しかし、動画を作り、公開し、分類し、要約し、関連づけ、知識ページとして育てるところまでつなげるには、システム全体の設計が必要です。</p>
+<p>エクスブリッジは、そこを実装しています。</p>
+<hr />
+<h2>Kurageシリーズ全体の進化</h2>
+<p>今回の機能追加は、Kurage単体の小さな改善ではありません。</p>
+<p>これまで開発してきたKurageシリーズの流れとつながっています。</p>
+<ul>
+<li>Kurage: ブログやテキストからAIショート動画を生成</li>
+<li>Kurage Voice Pro: 翻訳字幕、吹き替え、海外動画の日本語化</li>
+<li>Kurage Montage: X、YouTube、ブログ、PDFから要点動画を生成</li>
+<li>Kurage AI VTuber: アバターが話す配信・解説体験</li>
+<li>AIRadio: 情報収集しながら話し続けるAIラジオ</li>
+<li>KSNPoster: SNSやYouTubeへの投稿自動化</li>
+<li>Kurage Knowledge Library: 生成された動画をテーマ別の知識ページに整理</li>
+</ul>
+<p>これらは別々のデモではなく、企業の情報発信を自動化する一つのパイプラインです。</p>
+<p>情報を集める。台本にする。動画にする。アバターが説明する。SNSに流す。YouTubeに投稿する。そして、あとから知識ページとして整理する。</p>
+<p>この一連の流れを、自社で実装し、改善し続けていることが、エクスブリッジの技術的な強みです。</p>
+<hr />
+<h2>企業発信は「投稿」から「知識化」へ</h2>
+<p>これからの企業発信は、単に投稿数を増やすだけでは不十分です。</p>
+<p>AIによってコンテンツの量は増えます。</p>
+<p>だからこそ、重要になるのは整理です。</p>
+<p>何を伝えているのか。どのテーマに属するのか。どの順番で見れば理解しやすいのか。どの動画が代表例なのか。</p>
+<p>この整理ができていないと、せっかくのAI生成コンテンツは、ただ流れて消えていきます。</p>
+<p>今回のKurage Knowledge Libraryは、そこに対するエクスブリッジの答えです。</p>
+<p>動画を作る。</p>
+<p>動画を届ける。</p>
+<p>そして、動画を知識にする。</p>
+<p>この流れを企業の中に持てるようになれば、情報発信は単なる広報作業ではなく、会社の資産形成になります。</p>
+<p>エクスブリッジは、AI、OSS、動画生成、AI VTuber、SNS運用、ナレッジ化を組み合わせ、企業が自分たちの知識を継続的に発信し、育てていく仕組みを開発していきます。</p>
+<p>今回追加したKurage Knowledge Libraryも、その実証の一つです。</p>
+<p><a href="https://kurage.exbridge.jp/kurage_knowledge.php">Kurage Knowledge Libraryを見る</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
