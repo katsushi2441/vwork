@@ -1,0 +1,189 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kurage SNS PosterにYouTubeアップロード機能を追加した：youtube-uploader-mcpを業務パイプラインに組み込む | VWork バイブコーディングフレームワーク</title><meta name="description" content="youtube-uploader-mcpをKurage SNS Posterへ組み込み、既存OAuthトークン、MCP stdio、CLI安全設計でYouTube投稿を実現した技術メモです。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/articles/2026-07-04-ksnsposter-youtube-mcp-upload.html"><meta property="og:type" content="article"><meta property="og:title" content="Kurage SNS PosterにYouTubeアップロード機能を追加した：youtube-uploader-mcpを業務パイプラインに組み込む"><meta property="og:description" content="youtube-uploader-mcpをKurage SNS Posterへ組み込み、既存OAuthトークン、MCP stdio、CLI安全設計でYouTube投稿を実現した技術メモです。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/articles/2026-07-04-ksnsposter-youtube-mcp-upload.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Kurage SNS PosterにYouTubeアップロード機能を追加した：youtube-uploader-mcpを業務パイプラインに組み込む"><meta name="twitter:description" content="youtube-uploader-mcpをKurage SNS Posterへ組み込み、既存OAuthトークン、MCP stdio、CLI安全設計でYouTube投稿を実現した技術メモです。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Kurage SNS PosterにYouTubeアップロード機能を追加した：youtube-uploader-mcpを業務パイプラインに組み込む", "description": "youtube-uploader-mcpをKurage SNS Posterへ組み込み、既存OAuthトークン、MCP stdio、CLI安全設計でYouTube投稿を実現した技術メモです。", "url": "https://katsushi2441.github.io/vwork/articles/2026-07-04-ksnsposter-youtube-mcp-upload.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-07-04", "dateModified": "2026-07-04", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Kurage SNS PosterにYouTubeアップロード機能を追加した</h1>
+<p>Kurage SNS Poster（<code>ksnsposter</code>）に、YouTubeアップロード機能を追加しました。</p>
+<p>これまで <code>ksnsposter</code> は、Threads、TikTok、Instagram、Reddit、Telegram など、主に「Web UI操作が現実的なSNS投稿」を扱うためのツールでした。今回そこに、OSSの <a href="https://github.com/anwerj/youtube-uploader-mcp">anwerj/youtube-uploader-mcp</a> を取り込み、YouTube投稿だけはブラウザ操作ではなく <strong>MCPサーバ + YouTube Data API</strong> で実行できるようにしました。</p>
+<p>リポジトリはこちらです。</p>
+<ul>
+<li><a href="https://github.com/katsushi2441/ksnsposter">katsushi2441/ksnsposter</a></li>
+<li><a href="https://github.com/anwerj/youtube-uploader-mcp">anwerj/youtube-uploader-mcp</a></li>
+</ul>
+<p>今回のポイントは、単にOSSをcloneしたことではありません。既存のKurage動画生成・YouTube OAuth認証・SNS告知の運用に合わせて、<code>youtube-uploader-mcp</code> を <strong>ksnsposterの安全な投稿コマンド</strong>として包み込んだことです。</p>
+<h2>なぜYouTubeだけMCP/APIにしたのか</h2>
+<p>Threads、TikTok、InstagramのようなSNS投稿は、公式APIの審査や権限取得が重く、実運用では「VNC上で一度ログインしたChromeプロファイルをbrowser-useで操作する」方法が現実的です。</p>
+<p>一方でYouTubeアップロードは、すでにKurage系のプロジェクトでYouTube OAuth認証と <code>token.json</code> の再利用が動いていました。つまり、YouTubeについてはWeb UIをAIに操作させるより、APIで投稿した方が安定します。</p>
+<p>そこで今回、役割を分けました。</p>
+<pre><code class="language-text">Threads / TikTok / Instagram / Reddit
+  -&gt; browser-use + ログイン済みChromeプロファイル
+
+YouTube
+  -&gt; youtube-uploader-mcp + YouTube Data API
+</code></pre>
+<p>これにより、<code>ksnsposter</code> は「SNS投稿の入口」として統一しつつ、実行方式はプラットフォームごとに最適化できます。</p>
+<h2>youtube-uploader-mcpとは</h2>
+<p><code>youtube-uploader-mcp</code> は、MCPクライアントからYouTube動画をアップロードするためのOSSです。OAuth2認証、アクセストークン/リフレッシュトークン管理、複数チャンネル、予約投稿に対応しています。</p>
+<p>MCPとして見ると、Claude DesktopやCursorなどから「YouTubeへ動画をアップロードするツール」として呼び出せます。</p>
+<p>ただし、Kurageの運用では、LLMに直接「投稿して」と投げるより、既存の動画生成ジョブや告知パイプラインからCLIとして呼べる方が使いやすいです。</p>
+<p>そこで、<code>ksnsposter</code> 側に次の薄いラッパーを作りました。</p>
+<pre><code class="language-text">ksnsposter/
+  ksnsposter/youtube_mcp.py  # MCP stdio client + YouTube upload wrapper
+  ksnsposter/cli.py          # post --platform youtube / youtube-upload
+  examples/youtube_post.json
+</code></pre>
+<p>upstream のcloneは <code>ksnsposter/youtube-uploader-mcp/</code> に置きますが、これはgit管理対象外です。実行バイナリも <code>storage/bin/</code> に置き、これもgit管理対象外にしています。</p>
+<pre><code class="language-text">youtube-uploader-mcp/                         # ignored
+storage/bin/youtube-uploader-mcp-linux-amd64  # ignored
+</code></pre>
+<p>コードとして管理するのは、あくまで <code>ksnsposter</code> からどう呼び出すか、どのように安全に運用するか、という自前の接続レイヤーだけです。</p>
+<h2>既存OAuthトークンをMCP用チャンネルキャッシュに橋渡しする</h2>
+<p>今回一番重要だったのは、認証情報の扱いです。</p>
+<p>Kurage系では、すでにYouTube投稿用のOAuth tokenが保存されています。これをそのままGitに入れることはできません。そこで <code>ksnsposter</code> では、認証情報をリポジトリ外に置いたまま参照します。</p>
+<pre><code class="language-text">/home/kojima/.config/youtube-uploader-mcp/client_secret.json
+/home/kojima/.config/youtube-uploader-mcp/.youtube_uploader_channels_cache
+/home/kojima/work/airadio-scripted-mv/storage/youtube/token.json
+</code></pre>
+<p><code>youtube-uploader-mcp</code> は、アップロード対象チャンネルを見つけるために独自のチャンネルキャッシュを使います。そこで <code>ksnsposter/youtube_mcp.py</code> に <code>seed_channel_cache()</code> を実装し、既存の <code>token.json</code> からMCP用キャッシュを生成するようにしました。</p>
+<p>設計の要点は次の通りです。</p>
+<ul>
+<li><code>client_secret.json</code> と token はGitに入れない</li>
+<li>既存のYouTube OAuth tokenを再利用する</li>
+<li>過去のYouTubeアップロードレスポンスから <code>channelId</code> を推定する</li>
+<li>MCPのチャンネルキャッシュは <code>0600</code> で保存する</li>
+<li>コマンド出力にアクセストークンやリフレッシュトークンを出さない</li>
+</ul>
+<p>これで、既存の認証運用を壊さず、MCPサーバ側の期待する形式へ橋渡しできます。</p>
+<h2>MCP stdioをPythonから直接叩く</h2>
+<p><code>youtube-uploader-mcp</code> はMCPサーバなので、通常はMCPクライアントから呼びます。</p>
+<p>ただし今回は、<code>ksnsposter</code> のCLIから使いたいため、Pythonで最小限のMCP stdioクライアントを書きました。</p>
+<p>流れはこうです。</p>
+<pre><code class="language-text">1. youtube-uploader-mcp バイナリを起動
+2. JSON-RPC initialize を送る
+3. notifications/initialized を送る
+4. tools/call で channels / upload_video を呼ぶ
+5. tool result をJSONとして受け取る
+</code></pre>
+<p>この形にすると、MCPサーバを「LLM専用ツール」としてではなく、通常の業務CLIからも扱えます。</p>
+<p>MCPはAIエージェント向けの規格として語られがちですが、実際には「外部ツールをJSON-RPCで呼び出す標準インターフェース」としても使えます。今回の実装は、その実用例です。</p>
+<h2>CLIの使い方</h2>
+<p>YouTube投稿は、既存の <code>post</code> コマンドに <code>youtube</code> platformとして追加しました。</p>
+<pre><code class="language-bash">./scripts/ksnsposter post \
+  --platform youtube \
+  --media /path/to/video.mp4 \
+  --title &quot;Kurage video title&quot; \
+  --text-file /tmp/youtube-description.txt \
+  --tags &quot;Kurage,AI,Shorts&quot; \
+  --privacy private
+</code></pre>
+<p>この状態では実アップロードしません。YouTube APIには「下書き作成だけ」という概念が弱いので、<code>--confirm-post</code> がない場合は <code>draft_ready</code> として、アップロード前の検証結果だけを返すようにしています。</p>
+<p>実際にアップロードする場合だけ、明示的に <code>--confirm-post</code> を付けます。</p>
+<pre><code class="language-bash">./scripts/ksnsposter post \
+  --platform youtube \
+  --media /path/to/video.mp4 \
+  --title &quot;Kurage video title&quot; \
+  --text-file /tmp/youtube-description.txt \
+  --privacy public \
+  --confirm-post
+</code></pre>
+<p>専用コマンドも用意しました。</p>
+<pre><code class="language-bash">./scripts/ksnsposter youtube-upload \
+  --media /path/to/video.mp4 \
+  --title &quot;Kurage video title&quot; \
+  --text-file /tmp/youtube-description.txt \
+  --privacy public \
+  --confirm-post
+</code></pre>
+<p>チャンネルキャッシュ確認は次のコマンドです。</p>
+<pre><code class="language-bash">./scripts/ksnsposter youtube-channels --seed-cache
+</code></pre>
+<h2>browser-use依存を遅延importにした理由</h2>
+<p>今回の実装で見落としやすいのが、CLI起動時の依存関係です。</p>
+<p><code>ksnsposter</code> はもともとbrowser-useを使うプロジェクトなので、<code>cli.py</code> の先頭で <code>browser_runner</code> をimportしていました。しかしYouTube投稿はbrowser-useを使いません。にもかかわらず、環境に <code>browser_use</code> Pythonモジュールが入っていないだけで、<code>youtube-upload</code> まで起動できない状態になっていました。</p>
+<p>そこで、<code>browser_runner</code> は本当にブラウザ操作が必要なときだけ遅延importするように変更しました。</p>
+<pre><code class="language-text">platforms
+youtube-channels
+youtube-upload
+post --platform youtube
+  -&gt; browser-use 不要
+
+post --platform threads/tiktok/instagram/reddit
+reddit-research
+  -&gt; browser-use が必要
+</code></pre>
+<p>これは小さな変更ですが、CLIツールとしてはかなり重要です。</p>
+<p>投稿プラットフォームごとに実行方式が違うなら、依存関係も分離しなければいけません。YouTubeのAPI投稿だけをしたいのに、ブラウザ自動化環境が壊れているせいで全体が落ちる、という状態は避けるべきです。</p>
+<h2>Shortsのサムネイル問題から学んだこと</h2>
+<p>今回の実装中に、YouTube Shortsのサムネイルについても整理しました。</p>
+<p>通常動画なら、サムネイルアップロード機能を追加する価値があります。しかしShortsでは、APIやStudioから自由にサムネイルを安定制御できる前提で設計しない方がよいです。</p>
+<p>さらに、単純に「冒頭0.0秒付近をサムネとして作り込めばよい」という話でもありません。Shortsではどのフレームがサムネイルとして使われるかを完全には制御できません。</p>
+<p>つまり、Shorts向けの自動投稿パイプラインでは、投稿側でサムネイル設定にこだわるより、動画生成側で次のような方針にするのが現実的です。</p>
+<ul>
+<li>特定の1フレームに依存しない</li>
+<li>冒頭数秒のどこを切られても意味が伝わる構成にする</li>
+<li>文字は画像生成AIに任せず、HyperFramesなどで読みやすく重ねる</li>
+<li>YouTube投稿側は、タイトル・説明・公開設定・予約投稿に集中する</li>
+</ul>
+<p>今回の <code>ksnsposter</code> 側では、サムネイルアップロードを主機能にしませんでした。これは機能不足ではなく、Shorts運用では優先順位が低いと判断したためです。</p>
+<h2>検証したこと</h2>
+<p>今回の実装では、実アップロードの前に安全な検証を行いました。</p>
+<pre><code class="language-text">python3 -m py_compile ksnsposter/cli.py ksnsposter/tasks.py ksnsposter/youtube_mcp.py
+python3 -m ksnsposter.cli platforms
+python3 -m ksnsposter.cli youtube-channels --seed-cache
+python3 -m ksnsposter.cli post --platform youtube ...   # draft_ready
+python3 -m ksnsposter.cli youtube-upload ...            # draft_ready
+</code></pre>
+<p>確認できたことは次の通りです。</p>
+<ul>
+<li><code>youtube</code> platformがCLIに表示される</li>
+<li><code>youtube-channels --seed-cache</code> でチャンネルキャッシュを作れる</li>
+<li><code>post --platform youtube</code> が <code>draft_ready</code> を返す</li>
+<li><code>youtube-upload</code> も <code>draft_ready</code> を返す</li>
+<li><code>--confirm-post</code> がない限り、実アップロードしない</li>
+<li>system pythonでもYouTube系コマンドがbrowser-use依存で落ちない</li>
+<li>upstream cloneとバイナリはgit管理対象外</li>
+<li>認証情報はgitに入らない</li>
+</ul>
+<p>この確認により、「MCPサーバを起動できる」だけではなく、<code>ksnsposter</code> の投稿導線として安全に呼べることを確認しました。</p>
+<h2>何が良くなったのか</h2>
+<p>今回の変更で、<code>ksnsposter</code> は単なるブラウザ投稿ツールから、SNS投稿を統合する小さな実行レイヤーに近づきました。</p>
+<pre><code class="language-text">Kurage / kmontage / AIRadio
+  -&gt; 動画生成
+  -&gt; ksnsposter
+     -&gt; YouTube API投稿
+     -&gt; Threads/TikTok/Instagram/Reddit/Telegram投稿
+</code></pre>
+<p>YouTubeはAPIで安定投稿し、APIが難しいSNSはログイン済みブラウザで投稿する。プラットフォームごとに現実的な手段を選びながら、入口は <code>ksnsposter</code> に寄せる構成です。</p>
+<p>この設計にすると、今後の拡張もしやすくなります。</p>
+<ul>
+<li>Kurage動画生成後にYouTubeへ投稿</li>
+<li>投稿成功後にAIxSNSへ告知</li>
+<li>Threads/TikTok/Instagramへ横展開</li>
+<li>投稿結果を保存して二重投稿を防ぐ</li>
+<li>予約投稿や公開設定をジョブ側から制御する</li>
+</ul>
+<p>「全部を1つの巨大な自動投稿スクリプトにする」のではなく、各SNSごとの現実的な実行方式を <code>ksnsposter</code> に束ねる。これが今回の設計です。</p>
+<h2>まとめ</h2>
+<p><code>youtube-uploader-mcp</code> は、YouTube投稿をMCPツールとして扱える有用なOSSです。</p>
+<p>ただし実運用では、OSSをそのまま置くだけでは足りません。既存のOAuthトークン、チャンネルキャッシュ、秘密情報の置き場所、CLIの安全設計、<code>--confirm-post</code> のような誤投稿防止、browser-use依存の分離まで含めて、業務パイプラインに接続する必要があります。</p>
+<p>今回の <code>ksnsposter</code> への実装は、MCPを「LLMのための道具」から「自社メディア運用の部品」に変える実装例になりました。</p>
+<p>Kurageシリーズでは、動画生成、YouTube投稿、SNS告知、ブログ化をすべて自動化の対象にしています。今回のYouTube MCP連携は、その中でも「生成した動画を確実に配信へつなげる」ための重要な一歩です。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
