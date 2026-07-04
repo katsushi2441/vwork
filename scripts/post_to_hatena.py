@@ -17,6 +17,7 @@ import markdown
 ROOT = Path(__file__).resolve().parents[1]
 BLOG_DIR = ROOT / "blog"
 POSTED = ROOT / "storage" / "hatena_posted.txt"
+BLOGGER_POSTED = ROOT / "storage" / "blogger_posted.txt"
 
 
 def parse_frontmatter(text: str) -> tuple[dict, str]:
@@ -46,6 +47,15 @@ def load_posted() -> set:
 def mark_posted(slug: str):
     POSTED.parent.mkdir(parents=True, exist_ok=True)
     with POSTED.open("a", encoding="utf-8") as fh:
+        fh.write(slug + "\n")
+
+
+def mark_blogger_posted(slug: str):
+    BLOGGER_POSTED.parent.mkdir(parents=True, exist_ok=True)
+    posted = set(BLOGGER_POSTED.read_text(encoding="utf-8").splitlines()) if BLOGGER_POSTED.exists() else set()
+    if slug in posted:
+        return
+    with BLOGGER_POSTED.open("a", encoding="utf-8") as fh:
         fh.write(slug + "\n")
 
 
@@ -101,6 +111,7 @@ def main():
         send_mail(title, body)
         if blogger:
             send_mail(title, body, to_override=blogger)
+            mark_blogger_posted(src.stem)
             print(f"  blogger: {title}")
         mark_posted(src.stem)
         print(f"  hatena: {title}")
