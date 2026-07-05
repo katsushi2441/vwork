@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [longcat 2.0がMITライセンスで公開！AIモデルのオープン化と金融システムの変化 07-06](2026-07-06-ai-news-2.html)
 - [Qwenで読む：longcat 2.0がオープンウェイト化！AIとステーブルコインの最新動向を深掘り 07-06](2026-07-06-ai-news.html)
 - [Fableで読む：Googleの最新動向から探るAIインフラ競争：Midjourney、Anthropic、そしてMistral AI… 07-05](2026-07-05-ai-news-4.html)
 - [Hermes AgentにGSC・Google Analyticsを監視させてSEO対策させる方法と、自作Agent Loopへの応用ノート](2026-07-05-hermes-agent-seo-loop-notes.html)
