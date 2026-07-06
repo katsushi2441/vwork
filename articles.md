@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Tencent Hy3、HuggingFace Kernelsから読み解く次世代AIインフラの進化 07-06](2026-07-06-ai-news-4.html)
 - [BanksとOpen Weight LLMで読む：オープンソースの波：自作LLMと金融機関が問うAIインフラの未来 07-06](2026-07-06-ai-news-3.html)
 - [longcat 2.0がMITライセンスで公開！AIモデルのオープン化と金融システムの変化 07-06](2026-07-06-ai-news-2.html)
 - [Qwenで読む：longcat 2.0がオープンウェイト化！AIとステーブルコインの最新動向を深掘り 07-06](2026-07-06-ai-news.html)
