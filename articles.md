@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [TencentのHy3が示すAIインフラ競争：大規模モデル、セキュリティ脅威、そして市場崩壊のリスク 07-07](2026-07-07-ai-news-3.html)
 - [Oneで読む：【最前線】Vercel CEOから見るエージェント戦争とQwenによる効率化の波：AIインフラ最新動向 07-07](2026-07-07-ai-news-2.html)
 - [Newで読む：Summer.fiの脆弱性とGigaChat3.5が示す最新AI・Web3の課題：今日のテックニュースまとめ 07-07](2026-07-07-ai-news.html)
 - [Tencent Hy3、HuggingFace Kernelsから読み解く次世代AIインフラの進化 07-06](2026-07-06-ai-news-4.html)
