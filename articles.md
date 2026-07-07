@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [NVIDIAと中国の規制が示すAI覇権争いの最前線：最新モデルからWeb3動向まで 07-08](2026-07-08-ai-news.html)
 - [TheとRansomwareで読む：NVIDIA、自律走行車からLLM市場まで：AI技術が描く新たな戦争・経済圏 07-07](2026-07-07-ai-news-4.html)
 - [TencentのHy3が示すAIインフラ競争：大規模モデル、セキュリティ脅威、そして市場崩壊のリスク 07-07](2026-07-07-ai-news-3.html)
 - [Oneで読む：【最前線】Vercel CEOから見るエージェント戦争とQwenによる効率化の波：AIインフラ最新動向 07-07](2026-07-07-ai-news-2.html)
