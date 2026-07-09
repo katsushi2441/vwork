@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [TheとRustで読む：OpenAIのGPT-Liveから読み解く、次世代AIエージェントと産業革命の最前線 07-09](2026-07-09-ai-news-3.html)
 - [TheとDataで読む：vLLMの高速化とMistralが示す次世代AI：ロボティクスからAGIへの進化 07-09](2026-07-09-ai-news-2.html)
 - [Llamaで読む：GitHubの脆弱性からMiniMaxの超巨大モデルまで：AIセキュリティとLLM最前線 07-09](2026-07-09-ai-news.html)
 - [Tendaの脆弱性から学ぶ、AnthropicとMetaが直面するAI時代のセキュリティと倫理 07-08](2026-07-08-ai-news-4.html)
