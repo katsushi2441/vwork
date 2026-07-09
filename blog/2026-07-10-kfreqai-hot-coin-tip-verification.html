@@ -1,0 +1,104 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SNSで見た「今ホットな銘柄」をAIトレードボットにそのまま追加しなかった話 | VWork バイブコーディングフレームワーク</title><meta name="description" content="AIトレードボットkfreqaiの取引対象に、SNSで話題の急騰meme銘柄を追加してほしいという相談があった。取引所APIで裏取りした結果、1銘柄だけ学習データが2日分しかなく追加を見送り。代わりに取引パイプラインと切り離した軽量ウォッチャーを新設した経緯を記録します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-07-10-kfreqai-hot-coin-tip-verification.html"><meta property="og:type" content="article"><meta property="og:title" content="SNSで見た「今ホットな銘柄」をAIトレードボットにそのまま追加しなかった話"><meta property="og:description" content="AIトレードボットkfreqaiの取引対象に、SNSで話題の急騰meme銘柄を追加してほしいという相談があった。取引所APIで裏取りした結果、1銘柄だけ学習データが2日分しかなく追加を見送り。代わりに取引パイプラインと切り離した軽量ウォッチャーを新設した経緯を記録します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-07-10-kfreqai-hot-coin-tip-verification.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="SNSで見た「今ホットな銘柄」をAIトレードボットにそのまま追加しなかった話"><meta name="twitter:description" content="AIトレードボットkfreqaiの取引対象に、SNSで話題の急騰meme銘柄を追加してほしいという相談があった。取引所APIで裏取りした結果、1銘柄だけ学習データが2日分しかなく追加を見送り。代わりに取引パイプラインと切り離した軽量ウォッチャーを新設した経緯を記録します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "SNSで見た「今ホットな銘柄」をAIトレードボットにそのまま追加しなかった話", "description": "AIトレードボットkfreqaiの取引対象に、SNSで話題の急騰meme銘柄を追加してほしいという相談があった。取引所APIで裏取りした結果、1銘柄だけ学習データが2日分しかなく追加を見送り。代わりに取引パイプラインと切り離した軽量ウォッチャーを新設した経緯を記録します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-07-10-kfreqai-hot-coin-tip-verification.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-07-10", "dateModified": "2026-07-10", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>SNSで見た「今ホットな銘柄」をAIトレードボットにそのまま追加しなかった話</h1>
+<p>エクスブリッジでは、<a href="https://kurage.exbridge.jp/">Kurageプロジェクト</a>の一環としてAIトレードボット「kfreqai」を紙上取引(dry-run、実資金は動いていません)で運用しています。今回書きたいのは、「SNSで見つけた今アツい銘柄リストを、そのまま監視対象に追加してほしい」という相談を受けた際に、AIエージェントがどう裏取りし、どこで線を引いたかという話です。</p>
+<hr />
+<h2>発端：SNSの「今ホットな銘柄」リスト</h2>
+<p>ある日、次のようなリストが持ち込まれました。</p>
+<ul>
+<li><strong>CASHCAT</strong> — Robinhood Chain上のmemeコイン。直近1,400%超の急騰、MEXCに新規上場、取引量急増中</li>
+<li><strong>Zcash (ZEC)</strong> — プライバシーコインで7日+19%超、機関投資家の買いが入っている様子</li>
+<li><strong>Hyperliquid (HYPE) / Solana (SOL)</strong> エコシステム関連</li>
+<li>その他、Uniswap (UNI)、Bittensor (TAO) など</li>
+</ul>
+<p>いかにも「今すぐ乗るべき」という体裁で書かれた内容でしたが、こういうリストをそのまま設定に反映するのは危険です。まず裏を取ることにしました。</p>
+<h2>裏取り：取引所APIに直接聞く</h2>
+<p>AIエージェントに、実際にボットが使っている取引所(MEXC)のAPIへ直接問い合わせさせ、次の3点を確認しました。</p>
+<ol>
+<li><strong>本当に上場しているか</strong>(spot市場に存在するか)</li>
+<li><strong>流動性は十分か</strong>(24時間出来高)</li>
+<li><strong>FreqAI(機械学習モデル)が学習できるだけのデータ来歴があるか</strong></li>
+</ol>
+<p>結果は次の通りでした。</p>
+<table>
+<thead>
+<tr>
+<th>銘柄</th>
+<th>上場</th>
+<th>24h出来高</th>
+<th>データ来歴</th>
+<th>判定</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ZEC / UNI / SOL</td>
+<td>○</td>
+<td>十分</td>
+<td>十分</td>
+<td><strong>既に運用中(追加不要)</strong></td>
+</tr>
+<tr>
+<td>HYPE / TAO</td>
+<td>○</td>
+<td>既存の最小流動性銘柄と同程度</td>
+<td>60日以上</td>
+<td><strong>追加OK</strong></td>
+</tr>
+<tr>
+<td><strong>CASHCAT</strong></td>
+<td>○</td>
+<td>既存最小銘柄の1/10以下</td>
+<td><strong>わずか2日分</strong></td>
+<td><strong>見送り</strong></td>
+</tr>
+</tbody>
+</table>
+<p>CASHCATは上場からまだ2日しか経っておらず、日足データが2本しか取得できませんでした。このボットのAIモデル(FreqAI)は直近30日分のデータで学習する設計なので、そもそも学習が成立しません。さらに確認した時点で、<strong>すでに直近24時間で-13.93%の下落</strong>が始まっていました。「1,400%高騰した銘柄がSNSで拡散される頃には、すでに調整局面に入っている」という、よくあるパターンがそのまま現実になっていた形です。</p>
+<p>裏取りの結果、ZEC・UNI・SOLは既に監視対象済みと判明し、HYPE・TAOの2銘柄だけを新たに追加しました。設定を変更した後は、ボットを再起動せずに設定リロードAPIを叩き、両銘柄の学習データが正常にダウンロードされてエラーが出ていないことをログで確認しています。</p>
+<h2>「ウォッチだけしたい」という要望と、システムの制約</h2>
+<p>CASHCATを追加候補から外した後、「今後活発化しそうだから見るだけでもしておきたい」という要望がありました。ここで一つ、システムの仕組み上の制約を説明する必要がありました。</p>
+<p>このボットの銘柄リスト(<code>pair_whitelist</code>)には、<strong>「見るだけモード」が存在しません。</strong> リストに入れた時点で、その銘柄は自動的に「AIモデルの学習→予測→エントリー判定」という一連のパイプラインに乗ります。データが足りない状態で無理に追加すると、</p>
+<ul>
+<li>学習がエラーで弾かれる</li>
+<li>あるいは、わずかなデータで無理やり学習してしまい、根拠の薄い「予測」に基づいて紙上とはいえ実際にエントリーシグナルが出てしまう</li>
+</ul>
+<p>というどちらかが起こり得ます。「見るだけ」のつもりが、実質的には「データ不足のまま取引対象にする」ことと同義になってしまうわけです。</p>
+<h2>対策：取引パイプラインから完全に切り離した軽量ウォッチャー</h2>
+<p>そこで、<code>pair_whitelist</code>とは別に、値動きだけを記録する軽量なウォッチャーを新設しました。</p>
+<ul>
+<li>取引所APIから価格・出来高・24時間変化率だけを取得し、1日1回JSON形式で追記するだけの単純な仕組み</li>
+<li>AIモデルの学習にも、エントリー判定にも一切関与しない</li>
+<li>観測日数がFreqAIの学習に必要な基準(30日)に達したら、ログで「判断の目安に達しました」と知らせる。ただし<strong>自動で取引対象に昇格させることはしない</strong> — 昇格させるかどうかは、引き続き人間が判断する</li>
+</ul>
+<p>systemdの日次タイマーに登録し、既存の市場地合い判定(1時間ごと)やリスク方針判断(1日3回)と同じ運用に乗せています。これで1ヶ月後には、CASHCATが本当に定着した銘柄なのか、それとも一時的な急騰で終わったのかを、実データで判断できるようになります。</p>
+<hr />
+<h2>まとめ</h2>
+<p>「SNSで話題」という情報は、意思決定の入力としては使えても、そのまま設定に反映していい理由にはなりません。今回は取引所APIに直接問い合わせて裏を取ったことで、</p>
+<ul>
+<li>3銘柄は追加不要(既に監視中)と判明</li>
+<li>2銘柄は技術的な根拠を持って追加</li>
+<li>1銘柄はデータ不足かつタイミング的にも危険と判断して見送り、代わりに「取引には影響しない観測の仕組み」を別途用意</li>
+</ul>
+<p>という、単純な「追加する/しない」の二択より一段細かい対応ができました。派手なリターンを狙う前に「暴走しないAI」を作ることを優先する、というkfreqaiの一貫した設計方針が、ここでも活きた形です。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
