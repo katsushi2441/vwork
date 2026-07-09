@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [GPT-5.6の登場とOpenAIを巡る法廷闘争：Meta、Googleも追随するAI最前線 07-10](2026-07-10-ai-news-2.html)
 - [「勝率65%なのに負けている」暗号資産AI自動取引ボットのentry_thresholdを検証したら見えた罠](kfreqai-entry-threshold-explained.html)
 - [Anthropic、OpenAI、そしてOllama：巨大テック企業からオープンソースまで、AIインフラ競争が加速する日 07-10](2026-07-10-ai-news.html)
 - [GPTとSony、Grokが示すAIの未来：次世代モデルから金融規制まで最前線ニュースまとめ 07-09](2026-07-09-ai-news-4.html)
