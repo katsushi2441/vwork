@@ -48,3 +48,4 @@
 2026-07-10-ai-news
 kfreqai-entry-threshold-explained
 2026-07-10-kfreqai-hot-coin-tip-verification
+2026-07-10-ai-news-2
