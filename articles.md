@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [FreqAIボットに「自己反省・自己改良」のLLM3層を実装した — 制約付き仮説DSLと自動バックテストの設計](2026-07-10-freqai-llm-self-improvement-lab.html)
 - [OpenAI、GPT-5.6が描く未来：Copilot 365と次世代エージェントの最前線 07-10](2026-07-10-ai-news-3.html)
 - [OfficeCLIとは？AIエージェントにWord/Excel/PowerPointを操作させる「エージェント専用Officeスイート」を解説](2026-07-10-officecli-agent-office-suite.html)
 - [GPT-5.6の登場とOpenAIを巡る法廷闘争：Meta、Googleも追随するAI最前線 07-10](2026-07-10-ai-news-2.html)
