@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Qwen3.6で実現するローカルLLM革命：OpenAIの動向とWeb3の法整備 07-11](2026-07-11-ai-news.html)
 - [OpenAIのGPT-5.6が示す、Microsoft Copilotと次世代AIモデル競争の最前線 07-10](2026-07-10-ai-news-4.html)
 - [FreqAIボットに「自己反省・自己改良」のLLM3層を実装した — 制約付き仮説DSLと自動バックテストの設計](2026-07-10-freqai-llm-self-improvement-lab.html)
 - [OpenAI、GPT-5.6が描く未来：Copilot 365と次世代エージェントの最前線 07-10](2026-07-10-ai-news-3.html)
