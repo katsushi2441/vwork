@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Hederaでの大規模ハッキングから学ぶWeb3の脆弱性、AnthropicのJ-Spaceで見るAIモデル操作のリスク 07-12](2026-07-12-ai-news-2.html)
 - [Apple vs OpenAI：法廷闘争とAIによるEthereumの深層調査が示す最前線 07-12](2026-07-12-ai-news.html)
 - [SKハイニックスの巨額資金調達から読み解く半導体市場と、Apple対OpenAIの法廷闘争：最前線のAI動向 07-11](2026-07-11-ai-news-4.html)
 - [SKハイニックスによる巨額IPOから見る半導体戦略：OpenAIとAppleを巡るAI競争の最新動向 07-11](2026-07-11-ai-news-3.html)
