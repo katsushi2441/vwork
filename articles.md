@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [SKハイニックスの巨額資金調達から読み解く半導体市場と、Apple対OpenAIの法廷闘争：最前線のAI動向 07-11](2026-07-11-ai-news-4.html)
 - [SKハイニックスによる巨額IPOから見る半導体戦略：OpenAIとAppleを巡るAI競争の最新動向 07-11](2026-07-11-ai-news-3.html)
 - [OpenAIのGPT-5.6とSKハイニックス：AI能力の飛躍と半導体インフラ競争が加速する日 07-11](2026-07-11-ai-news-2.html)
 - [Qwen3.6で実現するローカルLLM革命：OpenAIの動向とWeb3の法整備 07-11](2026-07-11-ai-news.html)
