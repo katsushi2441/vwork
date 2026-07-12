@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Claude Code対OpenCode：効率性とAnthropic、Qwen3-8Bが示すAIモデルの真実 07-13](2026-07-13-ai-news-2.html)
 - [Apple SiliconとMLXが切り拓く「ローカルAI」の最前線：画像から3D生成への挑戦 07-13](2026-07-13-ai-news.html)
 - [llama.cppとMesh LLMで読み解く、AIモデルの効率的な実行とハードウェア最適化 07-12](2026-07-12-ai-news-4.html)
 - [AntとOracleで読む：DeepSeekが挑む独自チップ開発と、AI投資シフトで見るWeb3の現在地 07-12](2026-07-12-ai-news-3.html)
