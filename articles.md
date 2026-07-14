@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Buildingで読む：Anthropicの最新技術とApple M7チップが示す、ローカルAIモデルの最前線 07-14](2026-07-14-ai-news-3.html)
 - [AppleとOpenAIを巡る攻防：AI競争の最前線で問われる「電力」と「知財」 07-14](2026-07-14-ai-news-2.html)
 - [Zhipuが提唱するオープンソースAIの潮流：Apple M7 UltraやAnthropic動向から読み解く最前線 07-14](2026-07-14-ai-news.html)
 - [iPhoneで実現するローカルAI最前線：Apple vs OpenAI、そしてQwenとGemmaの躍進 07-13](2026-07-13-ai-news-4.html)
