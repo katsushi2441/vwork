@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [ReflectionとNebiusが示す、AIインフラの巨大な競争とオープンソース化の波 07-15](2026-07-15-ai-news.html)
 - [Batteriesで読む：オープンソースの台頭：Nous ResearchやApple M7が描く、巨大テック企業への対抗馬 07-14](2026-07-14-ai-news-4.html)
 - [Buildingで読む：Anthropicの最新技術とApple M7チップが示す、ローカルAIモデルの最前線 07-14](2026-07-14-ai-news-3.html)
 - [AppleとOpenAIを巡る攻防：AI競争の最前線で問われる「電力」と「知財」 07-14](2026-07-14-ai-news-2.html)
