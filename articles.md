@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [無名映画のショート動画が検索流入の5割を占めた — ローカルLLMで作る「固有名詞SEO」自動化 07-15](2026-07-15-proper-noun-seo-local-llm.html)
 - [DeepMind CEOが警鐘：AI規制の動きと、Googleを襲う著作権訴訟の波紋 07-15](2026-07-15-ai-news-2.html)
 - [ReflectionとNebiusが示す、AIインフラの巨大な競争とオープンソース化の波 07-15](2026-07-15-ai-news.html)
 - [Batteriesで読む：オープンソースの台頭：Nous ResearchやApple M7が描く、巨大テック企業への対抗馬 07-14](2026-07-14-ai-news-4.html)
