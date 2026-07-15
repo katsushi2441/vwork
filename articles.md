@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [勝てるbotは売らない ― コードはOSSで全公開、「判断」だけをx402で量り売りする設計 07-15](2026-07-15-oss-body-metered-brain-x402.html)
 - [「Anthropic」「Apple」が示すAIの進化：モデルから実装へ、そしてインターネット標準化まで 07-16](2026-07-16-ai-news.html)
 - [Andで読む：OpenAI、Microsoft、そしてLlamaV3が描く次世代AIとWeb3の融合：モデル進化と金融インフラの変化 07-15](2026-07-15-ai-news-4.html)
 - [OpenAIからBonsai 27Bまで：Deepseek、Mistralが加速させる次世代AIモデル競争 07-15](2026-07-15-ai-news-3.html)
