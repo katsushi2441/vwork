@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Modeで読む：NVIDIA Nemotron 3とオープンモデルInklingが描くAIの進化：セキュリティ脆弱性の課題も浮き彫りに 07-17](2026-07-17-ai-news-2.html)
 - [Apple Intelligenceが中国進出を加速。OpenAIやAnthropicのエコシステム競争とDeepSeekの躍進 07-17](2026-07-17-ai-news.html)
 - [Theで読む：InklingのオープンウェイトモデルとClaudeの脆弱性：AIが直面する「信頼」と「実装」の課題 07-16](2026-07-16-ai-news-4.html)
 - [Google Gemma 4、xAI Grok、そしてDTCCが示す「信頼性」への回帰：AIとWeb3の最新動向 07-16](2026-07-16-ai-news-3.html)
