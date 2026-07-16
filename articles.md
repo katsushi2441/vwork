@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [「出口をいくら弄っても黒字にならない」ボットの本丸は特徴量だった ― FreqAIに3本目の相関ペアを足したら赤字が黒字に反転した話 07-16](2026-07-16-freqai-3rd-corr-pair-sol-validation.html)
 - [TheとLlamaで読む：Google Gemma 4が進化！AIインフラの最前線とDTCCによる金融革命 07-16](2026-07-16-ai-news-2.html)
 - [勝てるbotは売らない ― コードはOSSで全公開、「判断」だけをx402で量り売りする設計 07-15](2026-07-15-oss-body-metered-brain-x402.html)
 - [「Anthropic」「Apple」が示すAIの進化：モデルから実装へ、そしてインターネット標準化まで 07-16](2026-07-16-ai-news.html)
