@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [StripeとSWIFTの覇権争い、NVIDIAが描くAIインフラの最前線：最新テクノロジー動向まとめ 07-18](2026-07-18-ai-news-3.html)
 - [AWSで読む：AI技術：モデルの小型化とインフラの進化・グローバル金融：決済インフラの次世代標準をめぐり激突 07-18](2026-07-18-ai-news-2.html)
 - [Asiaで読む：AIインフラはどこへ？ $400Mの資金調達が示す「推論チップ」へのシフトとSoofi Sの台頭 07-18](2026-07-18-ai-news.html)
 - [GoogleとMicrosoftで読む：NVIDIAとKimiが示すAIのベンチマーク競争：最前線の技術動向まとめ 07-17](2026-07-17-ai-news-4.html)
