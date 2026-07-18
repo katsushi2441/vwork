@@ -1,0 +1,85 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI投資委員会「KAIC」を開発しました - 投資情報からAI自動取引、x402 AI Agentへ | VWork バイブコーディングフレームワーク</title><meta name="description" content="暗号資産・FX・PolymarketをAIが毎日調査し、7日後に答え合わせするKAICを開発しました。投資家への情報提供からkfreqai・kfxai、将来のx402 AI Agent APIへつなげる狙いを紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-07-19-kaic-ai-investment-committee.html"><meta property="og:type" content="article"><meta property="og:title" content="AI投資委員会「KAIC」を開発しました - 投資情報からAI自動取引、x402 AI Agentへ"><meta property="og:description" content="暗号資産・FX・PolymarketをAIが毎日調査し、7日後に答え合わせするKAICを開発しました。投資家への情報提供からkfreqai・kfxai、将来のx402 AI Agent APIへつなげる狙いを紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-07-19-kaic-ai-investment-committee.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AI投資委員会「KAIC」を開発しました - 投資情報からAI自動取引、x402 AI Agentへ"><meta name="twitter:description" content="暗号資産・FX・PolymarketをAIが毎日調査し、7日後に答え合わせするKAICを開発しました。投資家への情報提供からkfreqai・kfxai、将来のx402 AI Agent APIへつなげる狙いを紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI投資委員会「KAIC」を開発しました - 投資情報からAI自動取引、x402 AI Agentへ", "description": "暗号資産・FX・PolymarketをAIが毎日調査し、7日後に答え合わせするKAICを開発しました。投資家への情報提供からkfreqai・kfxai、将来のx402 AI Agent APIへつなげる狙いを紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-07-19-kaic-ai-investment-committee.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-07-19", "dateModified": "2026-07-19", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>AI投資委員会「KAIC」を開発しました</h1>
+<p>株式会社エクスブリッジは、AIが暗号資産・FX・Polymarketの情報を毎日調査し、三つの市場について投資判断を公開する<strong>Kurage AI Investment Committee（KAIC）</strong>を開発しました。</p>
+<p>コンセプトは、<strong>Three Markets. One Decision. Seven Days to Prove It.</strong></p>
+<p>AIがその日に何を選び、なぜ選んだのかを公開するだけではありません。判断時の価格と根拠を記録し、7日後に結果を確認して考察まで残します。</p>
+<p><a href="https://kurage.exbridge.jp/kaic.php">Kurage AI Investment Committee（KAIC）を見る</a></p>
+<h2>「おすすめして終わり」にしない投資情報</h2>
+<p>市場予測のコンテンツは数多くあります。しかし、公開時点の情報や価格が曖昧なままでは、後から判断の良し悪しを検証できません。また、当たった予測だけを取り上げても、その情報が本当に有益だったのかは判断できません。</p>
+<p>KAICでは、毎日次の情報を一つの記録として公開します。</p>
+<ul>
+<li>暗号資産、FX、Polymarketから選んだ各市場の判断</li>
+<li>判断時に参照したニュースや市場情報</li>
+<li>推奨理由と注意すべきリスク</li>
+<li>判断時点の基準価格と目標</li>
+<li>7日後の結果とAI VTuber Kurageによる考察</li>
+</ul>
+<p>過去の日付もカレンダーから確認できます。同じ銘柄を連日「新しいおすすめ」として繰り返すのではなく、7日後の検証が終わるまで一つの判断として追跡します。</p>
+<p>AIの回答を一度表示して終わるのではなく、<strong>根拠、判断、結果、反省を一続きの情報として残すこと</strong>がKAICの特徴です。</p>
+<h2>投資家に役立つ情報を、AI自動取引を知る入口にする</h2>
+<p>KAICを開発した第一の狙いは、暗号資産やFXなどに関心を持つ投資家へ、継続して検証できる情報を届けることです。</p>
+<p>そして、その情報をきっかけに、エクスブリッジが開発している二つのAI自動取引プロジェクトを知ってもらいたいと考えています。</p>
+<ul>
+<li><a href="https://kfreqai.exbridge.jp/kfreqai.html">Kurage Freq AI Trade（kfreqai）</a>：暗号資産市場を対象に、取引判断と結果を研究し続けるAI自動取引システム</li>
+<li><a href="https://kfxai.exbridge.jp/kfxai.html">Kurage FX AI Trade（kfxai）</a>：FX市場を対象に、予測、リスク管理、取引結果を検証するAI自動取引システム</li>
+</ul>
+<p>KAICは、kfreqaiやkfxaiの判断をそのまま転載する仕組みではありません。ニュース、市場データ、複数の見方を集め、AI投資委員会として独立した判断を作る上流の調査・意思決定レイヤーです。</p>
+<p>その判断をkfreqaiやkfxaiが取引材料の一つとして利用し、各システムが独自のリスク管理に基づいて実行を判断する。この関係にすることで、情報発信と自動取引の双方を改善していきます。</p>
+<h2>コンテンツ生成で育てた「AIの知能」をAPIにする</h2>
+<p>KAICを毎日運営するには、単にLLMへ「おすすめを教えて」と質問するだけでは足りません。</p>
+<p>市場データとニュースを収集し、情報の時点を揃え、候補を比較し、根拠とリスクを整理する必要があります。さらに、過去の推奨との重複を避け、7日後には価格変化と当初の根拠を照合して、結果を説明しなければなりません。</p>
+<p>この過程で作られる機能には、ほかの投資アプリケーションやAIエージェントからも利用できるものがあります。</p>
+<ul>
+<li>複数市場から投資候補を抽出する機能</li>
+<li>ニュースと価格変動の関係を整理する機能</li>
+<li>複数のAI視点から判断を統合する機能</li>
+<li>推奨理由とリスクを説明可能な形にする機能</li>
+<li>一定期間後に予測を採点し、改善点を返す機能</li>
+</ul>
+<p>こうした<strong>LLMを使う知能部分を再利用可能なAPIとして切り出し、利用量に応じて課金できるx402 AI Agentとして提供すること</strong>が、KAICのもう一つの狙いです。</p>
+<p>アプリケーション本体はOSSとして公開し、導入、検証、改良をしやすくする。一方で、高性能なLLMや継続的な市場分析を必要とする知能部分は、APIとして安定運用し、使った分だけ支払えるサービスにする。エクスブリッジが進めている<strong>「OSS body, metered brain」</strong>という事業モデルを、投資情報の領域でも育てていきます。</p>
+<h2>情報発信とプロダクト開発を一つの循環にする</h2>
+<p>KAICは、記事を増やすためだけのコンテンツ生成システムではありません。</p>
+<p>投資家に役立つ情報を公開する。読者から見られたテーマや、7日後の結果を確認する。その実績をもとに判断ロジックを改善し、kfreqaiやkfxaiにも活かす。さらに、汎用性の高い知能をAPIにして、外部のアプリケーションやAIエージェントへ提供する。</p>
+<p>この循環を作ることで、情報発信がプロダクトの認知につながり、日々の運用がAPIの品質向上につながります。</p>
+<ol>
+<li>KAICが、根拠と期限のある投資情報を毎日公開する</li>
+<li>投資家が結果を確認し、kfreqai・kfxaiを知る</li>
+<li>公開結果と運用データからAIの判断を改善する</li>
+<li>有益な知能機能をx402対応APIとして提供する</li>
+<li>APIの利用から得た知見を、再びKAICと自動取引へ戻す</li>
+</ol>
+<p>情報メディア、自動取引システム、AI APIを別々に作るのではなく、互いの価値を高める一つの事業として運営していきます。</p>
+<h2>7日後の答えまで公開する</h2>
+<p>AIは、説得力のある文章を作ることができます。しかし、文章が自然であることと、投資判断が正しいことは別です。</p>
+<p>だからこそKAICでは、判断の根拠だけでなく、7日後の結果まで公開します。うまくいかなかった判断も履歴から消さず、何を見落としたのか、次にどう改善するのかを考察します。</p>
+<p>投資成果を保証するサービスではありません。公開された根拠と結果を読者自身が確認できること、そしてAIの判断が改善されていく過程まで共有することに価値があると考えています。</p>
+<h2>関連リンク</h2>
+<ul>
+<li><a href="https://kurage.exbridge.jp/kaic.php">Kurage AI Investment Committee（KAIC）</a></li>
+<li><a href="https://kfreqai.exbridge.jp/kfreqai.html">Kurage Freq AI Trade（kfreqai）</a></li>
+<li><a href="https://kfxai.exbridge.jp/kfxai.html">Kurage FX AI Trade（kfxai）</a></li>
+<li><a href="https://exbridge.jp/">株式会社エクスブリッジ</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
