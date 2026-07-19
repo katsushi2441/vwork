@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Minecraftで読む：Qwen 3.8の登場とHuggingFaceで浮き彫りになったAIセキュリティの課題 07-20](2026-07-20-ai-news-2.html)
 - [NOFXを日本語化し、kcbrainをDeepSeek V4 Flash対応にした：AI自動取引OSSと知能APIを分離する](2026-07-20-kcbrain-nofx-deepseek-japanese.html)
 - [Current AIによる「AIのWWW」構想と、TetherやQwenを巡る最新テック動向 07-20](2026-07-20-ai-news.html)
 - [Zcashの超高速プライバシー技術とOpenAIが注視する中国製モデルのリスク 07-19](2026-07-19-ai-news-4.html)
