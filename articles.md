@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Current AIによる「AIのWWW」構想と、TetherやQwenを巡る最新テック動向 07-20](2026-07-20-ai-news.html)
 - [Zcashの超高速プライバシー技術とOpenAIが注視する中国製モデルのリスク 07-19](2026-07-19-ai-news-4.html)
 - [OpenAIが警鐘を鳴らす中国製オープンウェイトモデルの脅威とKimiの躍進 07-19](2026-07-19-ai-news-3.html)
 - [GPT-5.6が凸最適化の難問を解決、Kimi K3もベンチマークで躍進 07-19](2026-07-19-ai-news-2.html)
