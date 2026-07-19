@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [OpenAIが警鐘を鳴らす中国製オープンウェイトモデルの脅威とKimiの躍進 07-19](2026-07-19-ai-news-3.html)
 - [GPT-5.6が凸最適化の難問を解決、Kimi K3もベンチマークで躍進 07-19](2026-07-19-ai-news-2.html)
 - [Modelで読む：LGモニターのセキュリティ懸念と、Qwen/DeepSeekを巡るAIモデルの透明性問題 07-19](2026-07-19-ai-news.html)
 - [Claudeで読む：Stripe、NVIDIA、Anthropic：AI時代を支える「基盤」の変化と経済的波紋 07-18](2026-07-18-ai-news-4.html)
