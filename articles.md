@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [中国のオープンウェイト戦略とNVIDIA・GoogleによるAIインフラの進化 07-21](2026-07-21-ai-news-2.html)
 - [Kimi K3とCodexのガードレール問題：AIセキュリティにおける「過度な制限」のジレンマ 07-21](2026-07-21-ai-news.html)
 - [Allbridgeの脆弱性露呈とSam Altmanが示すOpenAIのオープンソース戦略 07-20](2026-07-20-ai-news-4.html)
 - [HuggingFaceの脆弱性とOpenAI、Appleによる次世代AIハードウェアへの攻勢 07-20](2026-07-20-ai-news-3.html)
