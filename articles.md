@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Qwen-Image-3.0の登場とHugging Face、Anthropicが描くAI開発の最前線 07-22](2026-07-22-ai-news.html)
 - [IncrementalとGoogleで読むAIニュース 07-21](2026-07-21-ai-news-4.html)
 - [ModelsとGoogleで読む：中国製AIモデルへの懸念・人間の数学者を凌駕するAIの反例生成 07-21](2026-07-21-ai-news-3.html)
 - [中国のオープンウェイト戦略とNVIDIA・GoogleによるAIインフラの進化 07-21](2026-07-21-ai-news-2.html)
