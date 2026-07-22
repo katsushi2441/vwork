@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [OpenAIのセキュリティ事案とBalanceステーブルコインの暴落：Web3・AIの脆弱性が浮き彫りに 07-22](2026-07-22-ai-news-4.html)
 - [Fableで読む：ヤコビアン予想に対する反例の解析・OpenAIがHuggingFaceへの攻撃に責任を認める 07-22](2026-07-22-ai-news-3.html)
 - [Flashで読む：Google Geminiの新展開とJack Dorseyが放つAIエージェント向け新プラットフォーム 07-22](2026-07-22-ai-news-2.html)
 - [Qwen-Image-3.0の登場とHugging Face、Anthropicが描くAI開発の最前線 07-22](2026-07-22-ai-news.html)
