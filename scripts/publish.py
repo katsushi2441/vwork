@@ -18,6 +18,8 @@ import os
 import re
 import subprocess
 import sys
+import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -27,6 +29,8 @@ import yaml
 REPO_ROOT = Path(__file__).parent.parent
 GH_PAGES_DIR = Path("/tmp/vwork-gh-pages")
 REMOTE = "https://github.com/katsushi2441/vwork.git"  # この環境はSSH不可のためHTTPS
+GITHUB_REPO = "katsushi2441/vwork"
+PAGES_WORKFLOW = "pages.yml"
 BASE_URL = "https://katsushi2441.github.io/vwork"
 AIXSNS_API = "https://aixec.exbridge.jp/api.php?path=posts"
 
@@ -170,6 +174,62 @@ def ensure_gh_pages_worktree(ssh_sock: str):
         print(f"  gh-pages worktree を作成しました")
 
 
+def ensure_pages_workflow(commit_sha: str):
+    result = subprocess.run(
+        [
+            "gh", "run", "list",
+            "--repo", GITHUB_REPO,
+            "--workflow", PAGES_WORKFLOW,
+            "--commit", commit_sha,
+            "--limit", "1",
+            "--json", "databaseId,status,conclusion",
+        ],
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        raise RuntimeError(f"GitHub Pages実行状況を確認できません: {result.stderr.strip()}")
+
+    runs = json.loads(result.stdout or "[]")
+    if runs:
+        print(f"  Pages workflow: {runs[0]['status']}")
+        return
+
+    subprocess.run(
+        ["gh", "workflow", "run", PAGES_WORKFLOW, "--repo", GITHUB_REPO, "--ref", "main"],
+        check=True,
+    )
+    print("  Pages workflow: push起動がなかったため手動起動しました")
+
+
+def wait_for_public_article(article_url: str, title: str, timeout: int = 600):
+    deadline = time.monotonic() + timeout
+    verify_url = f"{article_url}?verify={int(time.time())}"
+    last_status = "未確認"
+
+    while time.monotonic() < deadline:
+        request = urllib.request.Request(
+            verify_url,
+            headers={"Cache-Control": "no-cache", "User-Agent": "vwork-publisher/1.0"},
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=20) as response:
+                body = response.read().decode("utf-8", errors="replace")
+                last_status = f"HTTP {response.status}"
+                if response.status == 200 and title in body:
+                    print(f"  公開確認: HTTP 200 ({article_url})")
+                    return
+        except urllib.error.HTTPError as exc:
+            last_status = f"HTTP {exc.code}"
+        except urllib.error.URLError as exc:
+            last_status = str(exc.reason)
+
+        print(f"  Pages反映待ち: {last_status}")
+        time.sleep(10)
+
+    raise RuntimeError(f"GitHub Pages公開を確認できませんでした: {article_url} ({last_status})")
+
+
 def post_aixsns(title: str, article_url: str):
     body = (
         f"VWorkブログを更新しました。\n\n"
@@ -206,14 +266,14 @@ def main():
     html_filename = slug + ".html"
     article_url = f"{BASE_URL}/blog/{html_filename}"
 
-    print(f"[1/5] SSH agent を探す")
+    print(f"[1/6] SSH agent を探す")
     ssh_sock = find_ssh_sock() or ""
     print(f"  使用: {ssh_sock or '(HTTPSリモートのためSSH agent不要)'}")
 
-    print(f"[2/5] gh-pages worktree を準備")
+    print(f"[2/6] gh-pages worktree を準備")
     ensure_gh_pages_worktree(ssh_sock)
 
-    print(f"[3/5] HTML生成・インデックス更新")
+    print(f"[3/6] HTML生成・インデックス更新")
     body_html = md_to_html(body_md)
     article_html = make_article_html(fm, body_html, article_url)
     out_path = GH_PAGES_DIR / "blog" / html_filename
@@ -225,12 +285,13 @@ def main():
     update_md_index(REPO_ROOT / "blog" / "index.md", html_filename, title)
     update_md_index(REPO_ROOT / "blog" / "README.md", md_path.name, title)
 
-    print(f"[4/5] commit & push")
+    print(f"[4/6] commit & push")
     env = {**os.environ, "SSH_AUTH_SOCK": ssh_sock}
 
     # main
     git(["add", "blog/"], cwd=REPO_ROOT)
     git(["commit", "-m", f"Add blog: {title}"], cwd=REPO_ROOT)
+    main_sha = git(["rev-parse", "HEAD"], cwd=REPO_ROOT)
     subprocess.run(["git", "push", REMOTE, "main"], cwd=REPO_ROOT, env=env, check=True)
     print("  main: push完了")
 
@@ -240,7 +301,11 @@ def main():
     subprocess.run(["git", "push", REMOTE, "HEAD:gh-pages"], cwd=GH_PAGES_DIR, env=env, check=True)
     print("  gh-pages: push完了")
 
-    print(f"[5/5] AIxSNS告知")
+    print(f"[5/6] GitHub Pages公開確認")
+    ensure_pages_workflow(main_sha)
+    wait_for_public_article(article_url, title)
+
+    print(f"[6/6] AIxSNS告知")
     if args.no_sns:
         print("  --no-sns のためスキップ")
     else:
