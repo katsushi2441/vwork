@@ -1,0 +1,101 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「使ってくれてありがとう」をオンチェーンで返す：URL2Pubに10,000 URLAI利用特典を実装しました | VWork バイブコーディングフレームワーク</title><meta name="description" content="Kurage URL2AI Publisherの利用者へ10,000 URLAIを自動配布する仕組みを実装しました。サービス利用、発信、トークン還元を一つの循環にする狙いと、安全な配布設計を紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-07-23-url2pub-urlai-user-reward.html"><meta property="og:type" content="article"><meta property="og:title" content="「使ってくれてありがとう」をオンチェーンで返す：URL2Pubに10,000 URLAI利用特典を実装しました"><meta property="og:description" content="Kurage URL2AI Publisherの利用者へ10,000 URLAIを自動配布する仕組みを実装しました。サービス利用、発信、トークン還元を一つの循環にする狙いと、安全な配布設計を紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-07-23-url2pub-urlai-user-reward.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-banner.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「使ってくれてありがとう」をオンチェーンで返す：URL2Pubに10,000 URLAI利用特典を実装しました"><meta name="twitter:description" content="Kurage URL2AI Publisherの利用者へ10,000 URLAIを自動配布する仕組みを実装しました。サービス利用、発信、トークン還元を一つの循環にする狙いと、安全な配布設計を紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-banner.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「使ってくれてありがとう」をオンチェーンで返す：URL2Pubに10,000 URLAI利用特典を実装しました", "description": "Kurage URL2AI Publisherの利用者へ10,000 URLAIを自動配布する仕組みを実装しました。サービス利用、発信、トークン還元を一つの循環にする狙いと、安全な配布設計を紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-07-23-url2pub-urlai-user-reward.html", "image": "https://exbridge.jp/images/vwork-banner.png", "datePublished": "2026-07-23", "dateModified": "2026-07-23", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>「使ってくれてありがとう」をオンチェーンで返す</h1>
+<p>株式会社エクスブリッジは、URLを入力するとAIが内容を読み、告知文とブログ記事を生成して複数メディアへ配信する<strong>Kurage URL2AI Publisher（URL2Pub）</strong>に、利用者向けのURLAI特典を追加しました。</p>
+<p>現在、URL2Pubを利用し、XアカウントとBaseウォレットを接続した方へ、<strong>1人1回10,000 URLAIを先着1,000人に自動配布</strong>します。</p>
+<p><a href="https://url2ai.exbridge.jp/url2pub.php">Kurage URL2AI Publisherを使う</a></p>
+<p>今回作ったのは、単にトークンを配るキャンペーンではありません。サービスを試してくれた人、動作確認に協力してくれた人、URL2Pubを通じて情報を発信してくれた人へ、感謝をオンチェーンで返す仕組みです。</p>
+<h2>URLを渡すと、AIが発信まで進める</h2>
+<p>URL2Pubは、紹介したいWebページのURLを入力すると、Kurageさんがページを読み、内容に基づいた告知文とブログ記事を生成するWebアプリケーションです。</p>
+<p>生成したコンテンツは、AIxSNS、Bluesky、はてなブックマーク、Kurage Blog、はてなブログなどへ配信できます。利用者が各サービスのAPIキーや投稿用パスワードをURL2Pubへ預ける必要はありません。</p>
+<p>これまでのURL2Pubは、「URLを入力し、AIが読み、文章を作り、発信する」ところまでを一つの流れにしていました。今回、そこへ利用特典を加えました。</p>
+<ol>
+<li>XアカウントでURL2Pubへログインする</li>
+<li>Base対応ウォレットを接続する</li>
+<li>URLを入力してURL2Pubを利用する</li>
+<li>配布申請がRQDB4AIのキューへ登録される</li>
+<li>ローカルworkerが10,000 URLAIを送金する</li>
+<li>送金結果とトランザクションを画面から確認する</li>
+</ol>
+<p>配信先の一時的な障害など、利用者に責任がない理由で一部の投稿が失敗しても、URL2Pubを使ってくれたこと自体を特典の対象にしています。</p>
+<h2>利用、発信、還元を一つの循環にする</h2>
+<p>Webサービスを公開しても、最初から多くの利用者が集まるとは限りません。特に、複数メディアへの投稿やウォレット連携を含むサービスは、実際に使ってもらうことで初めて見つかる改善点があります。</p>
+<p>利用者がURL2Pubを試す。紹介したい情報が発信される。運営側は実際の利用から改善点を見つける。そして、協力してくれた利用者へURLAIを返す。</p>
+<p>この循環を作ることが、今回の取り組みの狙いです。</p>
+<ul>
+<li>利用者は、URLから告知文と記事を生成して発信できる</li>
+<li>発信されたコンテンツが、URL2Pubと紹介元ページの認知につながる</li>
+<li>実利用の結果から、生成品質や投稿処理を改善できる</li>
+<li>利用への感謝を、URLAIとしてウォレットへ直接返せる</li>
+<li>URLAIを保有する利用者と一緒に、活用方法を増やしていける</li>
+</ul>
+<p>広告費を支払って一方的にアクセスを集めるだけでなく、サービスを使い、改善に参加してくれた人へ価値を戻す。小さな規模からでも、プロダクトとコミュニティを一緒に育てる方法になると考えています。</p>
+<h2>Webサーバーに送金権限を置かない</h2>
+<p>トークン配布では、使いやすさ以上に安全性が重要です。</p>
+<p>URL2Pubの公開Webサーバーは、配布対象となるXアカウント、ウォレット、申請状態を記録し、RQDB4AIへジョブを登録します。しかし、Webサーバー自身はトークンを送金しません。</p>
+<p>実際の送金は、ローカル環境で常駐する専用workerがBankrのウォレットAPIを通じて実行します。APIキーは公開Webサーバーやブラウザへ渡しません。</p>
+<p>また、同じ利用者へ二重送金しないため、次の境界で重複を防いでいます。</p>
+<ul>
+<li>Xアカウントにつき1回</li>
+<li>ウォレットにつき1回</li>
+<li>申請IDを使った冪等なジョブ実行</li>
+<li>Web側台帳とworker側台帳の照合</li>
+<li>送金済みジョブを再実行しても、再送金せず状態だけを同期</li>
+</ul>
+<p>送金中に通信が切れた場合も、単純にもう一度送るのではなく、ローカル台帳と公開台帳を確認してから処理します。これは、AIやworkerに金融処理を任せる際に欠かせない設計です。</p>
+<h2>RQDB4AIで「受付」と「送金」を分離する</h2>
+<p>ウォレットへの送金は、Web画面のリクエスト内で同期実行していません。URL2Pubが申請を受け付けた後、RQDB4AIへジョブを登録し、専用workerが順番に処理します。</p>
+<p>この構成には、次の利点があります。</p>
+<ul>
+<li>Bankr APIの応答を待たずに、Web画面の処理を完了できる</li>
+<li>一時的な通信障害を、Web画面から切り離して扱える</li>
+<li>実行中、成功、失敗の状態を履歴として残せる</li>
+<li>送金処理を1つのworkerへ集約し、重複実行を抑えられる</li>
+<li>公開サーバーと送金環境の責任範囲を分離できる</li>
+</ul>
+<p>LLM生成、動画生成、外部投稿、ブロックチェーン送金のように、時間がかかる処理や再試行が必要な処理は、画面から直接実行するよりも、キューとworkerへ分けた方が安定します。</p>
+<h2>実際のBaseトランザクションまで確認</h2>
+<p>実装後は、Bankr APIの現行送金仕様に合わせてworkerを修正し、1 URLAIの自己送金で実経路を検証しました。</p>
+<p><a href="https://basescan.org/tx/0x3451badfa8805cff131691cfcf944870150461db0b0708a34c908bf6ec357f85">Base上の検証トランザクションをBasescanで確認する</a></p>
+<p>APIが成功を返しただけで完了とはせず、Baseのブロックに取り込まれ、トランザクションが成功していることまで確認しています。</p>
+<p>現在は、公開ページで利用特典を案内し、RQDB4AIの専用workerが常駐して申請を待つ状態になっています。</p>
+<h2>トークンを「持つ理由」をサービスから作る</h2>
+<p>トークンを発行するだけでは、利用者にとって意味のあるものにはなりません。まず必要なのは、そのトークンが生まれたプロジェクトを知り、実際のサービスとの関係を理解してもらうことです。</p>
+<p>URLAIは、URLを起点にAIが情報を読み、生成し、発信するURL2AIプロジェクトから生まれたトークンです。今回の利用特典は、URLAIを投機対象として宣伝するためではなく、URL2AIのサービスを利用した人との接点を作るための取り組みです。</p>
+<p>今後も、URL2Pubの利用、コンテンツ発信、AI Agent向けAPI、コミュニティへの参加など、プロジェクトの活動とURLAIが自然につながる用途を増やしていきます。</p>
+<p>トークンの価格や将来の利益を保証するものではありません。だからこそ、価格の話から始めるのではなく、<strong>実際に動くサービスと、利用者への還元から始める</strong>ことを大切にします。</p>
+<h2>バイブコーディングで、事業の循環まで実装する</h2>
+<p>今回の仕組みは、VWorkで進めているバイブコーディングの実践例でもあります。</p>
+<p>「URL2Pubを使ってくれた人へURLAIを届けたい」という事業アイデアから、ログイン条件、ウォレット接続、重複防止、キュー管理、送金worker、公開画面、実トランザクション検証まで、AIと対話しながら一つずつ実装しました。</p>
+<p>バイブコーディングで作れるのは、画面や便利ツールだけではありません。</p>
+<p>誰に使ってほしいのか。使ってくれた人へ何を返すのか。運用で起きる失敗をどう記録し、安全に再実行するのか。プロダクトとコミュニティをどう循環させるのか。</p>
+<p>こうした事業の仕組みそのものも、会話から設計し、動く形にできます。</p>
+<h2>関連リンク</h2>
+<ul>
+<li><a href="https://url2ai.exbridge.jp/url2pub.php">Kurage URL2AI Publisher</a></li>
+<li><a href="https://url2ai.exbridge.jp/">URL2AIプロジェクト</a></li>
+<li><a href="https://github.com/katsushi2441/url2pub">URL2Pub GitHubリポジトリ</a></li>
+<li><a href="https://katsushi2441.github.io/vwork/">VWork バイブコーディングフレームワーク</a></li>
+<li><a href="https://exbridge.jp/">株式会社エクスブリッジ</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
