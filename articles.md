@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [SIMDとIBMで読む：OpenAIのセキュリティ問題とMicrosoft「Fara」の登場：最前線のAI技術動向 07-23](2026-07-23-ai-news-3.html)
 - [AnthropicやOpenAIを巡る地政学リスクと、ChatGPTが挑む数学の最前線 07-23](2026-07-23-ai-news-2.html)
 - [Mistralモデルを採用するオーストリア政府のAI基盤構築とupstageのSolar-Open2リリース 07-23](2026-07-23-ai-news.html)
 - [OpenAIのセキュリティ事案とBalanceステーブルコインの暴落：Web3・AIの脆弱性が浮き彫りに 07-22](2026-07-22-ai-news-4.html)
