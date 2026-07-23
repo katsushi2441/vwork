@@ -244,3 +244,6 @@ kfreqai-entry-threshold-explained
 2026-07-23-ai-news-2
 2026-07-23-ai-news-3
 2026-07-23-url2pub-urlai-user-reward-satellite
+2026-07-23-ai-news-4
+2026-07-24-ai-news
+url2pub-i18n-hatena-summary
