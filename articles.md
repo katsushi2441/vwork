@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AMDのHeliosシステムがNvidiaの覇権に挑む：最新AI・Web3ニュース 07-24](2026-07-24-ai-news-4.html)
 - [AMDのHeliosシステムによるNVIDIAへの挑戦と、audio.cppの音声モデル進化 07-24](2026-07-24-ai-news-3.html)
 - [NOFXは数値で売買するのか、AIが決めるのか？ペーパートレードで追った判断とリスク制御の境界](2026-07-24-nofx-ai-decision-risk-boundary.html)
 - [AMDのHeliosシステムがNVIDIAに挑む：AIインフラとDeepSeekのAGIへの野心 07-24](2026-07-24-ai-news-2.html)
