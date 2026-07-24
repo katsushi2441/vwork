@@ -106,3 +106,6 @@ kfreqai-entry-threshold-explained
 2026-07-23-ai-news
 2026-07-23-ai-news-2
 2026-07-23-ai-news-3
+2026-07-23-ai-news-4
+2026-07-24-ai-news
+2026-07-24-ai-news-2
