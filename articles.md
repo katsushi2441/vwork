@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [NOFXは数値で売買するのか、AIが決めるのか？ペーパートレードで追った判断とリスク制御の境界](2026-07-24-nofx-ai-decision-risk-boundary.html)
 - [AMDのHeliosシステムがNVIDIAに挑む：AIインフラとDeepSeekのAGIへの野心 07-24](2026-07-24-ai-news-2.html)
 - [1ファイルで多言語化：url2pubを日英対応にしたi18n実装（PHP+Cookie+JS+生成AI） 07-24](2026-07-24-url2pub-i18n-single-file.html)
 - [Etchedの企業価値急騰とDeepSeekが掲げるAGI優先戦略 07-24](2026-07-24-ai-news.html)
