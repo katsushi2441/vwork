@@ -254,3 +254,4 @@ url2pub-i18n-hatena-summary
 2026-07-24-ai-news-4
 2026-07-25-ai-news
 2026-07-25-ai-news-2
+2026-07-25-tradingagents-jp-ksbrain-summary
