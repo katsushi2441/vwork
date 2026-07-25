@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Infrastructureで読む：AnthropicのClaude Opus 5登場とGoogleらによるオープンウェイトモデルへの… 07-26](2026-07-26-ai-news-2.html)
 - [Anthropicが放つClaude Opus 5の衝撃と、AIデータセンターを襲う電力インフラの脆弱性 07-26](2026-07-26-ai-news.html)
 - [GPUで読む：Claude Opus 5の登場とNVIDIA・Metaらが訴えるオープンウェイトモデルの重要性 07-25](2026-07-25-ai-news-4.html)
 - [AMDで読む：Claude Opus 5の登場とNVIDIA、Metaらによるオープンウェイトモデル規制への反対運動 07-25](2026-07-25-ai-news-3.html)
