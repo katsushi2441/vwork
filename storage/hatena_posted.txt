@@ -250,3 +250,7 @@ url2pub-i18n-hatena-summary
 2026-07-24-urlai-kurage-decentralized-tokenomics-vision
 2026-07-24-ai-news-2
 2026-07-24-nofx-ai-decision-summary
+2026-07-24-ai-news-3
+2026-07-24-ai-news-4
+2026-07-25-ai-news
+2026-07-25-ai-news-2
