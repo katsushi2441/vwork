@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AMDで読む：Claude Opus 5の登場とNVIDIA、Metaらによるオープンウェイトモデル規制への反対運動 07-25](2026-07-25-ai-news-3.html)
 - [TradingAgents-JPを公開し、判断基盤ksbrainを独立APIにした設計——日本株AIで「画面」と「頭脳」を分ける](2026-07-25-tradingagents-jp-ksbrain-evidence-api.html)
 - [AnthropicのOpus 5登場とNVIDIA・Microsoftらが訴えるAI規制の課題 07-25](2026-07-25-ai-news-2.html)
 - [Hugging Faceの「The Stack v3」公開とNVIDIAらによるオープンモデル保護への提言 07-25](2026-07-25-ai-news.html)
