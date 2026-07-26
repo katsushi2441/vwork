@@ -23,11 +23,11 @@ data/      入力データ。Excel、CSV、URL一覧、サンプルファイル
 src/       スクリプトや小さなWebツール
 output/    生成結果。CSV、Markdown、HTML、ログ
 docs/      補足資料
-BUSINESS.md
+AGENTS.md
+WORK_PROTOCOL.md
 RULES.md
+VERIFICATION.md
 SERVERS.md
-TASKS.md
-WORKLOG.md
 ```
 
 ## 環境変数
@@ -97,7 +97,7 @@ FTP/SSH/API:
 
 ## 実行コマンド
 
-実際に動いたコマンドをここに整理します。実行結果の履歴は `WORKLOG.md` に残します。
+実際に動いたコマンドをここに整理します（`VERIFICATION.md` の環境チェック結果もここに記録します）。
 
 ```bash
 
