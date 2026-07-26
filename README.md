@@ -114,7 +114,7 @@ VWorkは、完成システム一式ではありません。
 - `data/` から読み、`output/` に出す
 - 秘密情報をリポジトリに入れない
 - AIエージェントへの依頼を小さく切る
-- 実行結果と次の改善を記録に残す（`WORKLOG.md` / `TASKS.md` は必要な案件で使う）
+- 実行結果と次の改善を、報告とgitのコミットメッセージに残す
 
 ## 企業導入で最初にMarkdown化すること
 
@@ -184,14 +184,14 @@ project-template:
 
 顧客環境ではMarkdownを増やしすぎません。
 
-- `BUSINESS.md`: 経営課題、目的、期待する効果
+- `AGENTS.md`: AIエージェントが最初に読む入口
 - `WORK_PROTOCOL.md`: Codex/Claude/AIエージェント/手作業で共通する作業プロトコル
-- `AGENTS.md`: AIエージェントが最初に読む作業ルール
-- `CLAUDE.md`: Claude Code向けの入口
-- `RULES.md`: Codex/Claudeが守る作業ルール
-- `SERVERS.md`: PC、サーバー、API、`.env`、公開先
-- `TASKS.md`: 今やること、次にやること、まだやらないこと
-- `WORKLOG.md`: 実行結果、変更ファイル、エラー、次の依頼文
+- `RULES.md`: 禁止事項、確認が必要な操作、秘密情報の扱い
+- `VERIFICATION.md`: 「できました」と言う前の確認手順
+- `SERVERS.md`: 環境チェック結果、PC、サーバー、API、`.env`、公開先
+- `DESIGN.md`: 見た目の品質が価値に直結する案件で使う
+- `WORKFLOW.md`: 繰り返す作業の手順
+- `CLAUDE.md`: Claude Code併用時の差分
 
 ## 最初に作りやすいもの
 
