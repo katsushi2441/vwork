@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [EuropeとUseで読む：Googleが推進するオープンウェイトモデルへの支持とAIデータセンターのインフラ課題 07-26](2026-07-26-ai-news-4.html)
 - [kfreqaiをHyperliquidに対応させた設計——非カストディ委任・1プロセス多テナント執行・kcbrain/kfxbrainのAI判断ゲート](2026-07-26-kfreqai-hyperliquid-multitenant.html)
 - [Google vs AnthropicのOpenWeight論争とLlama.cppのMCP対応など最新テック動向 07-26](2026-07-26-ai-news-3.html)
 - [Infrastructureで読む：AnthropicのClaude Opus 5登場とGoogleらによるオープンウェイトモデルへの… 07-26](2026-07-26-ai-news-2.html)
