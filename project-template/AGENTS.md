@@ -29,6 +29,7 @@
 - `AGENTS.md`（このファイル）: AIエージェントが最初に読む入口
 - `WORK_PROTOCOL.md`: 目的・成果物・確認・記録の共通フロー
 - `RULES.md`: 禁止事項、確認が必要な操作、秘密情報の扱い
+- `VERIFICATION.md`: **「できました」と言う前の確認手順**（環境チェック、スクリーンショット目視、HTTP確認、置換の検算）
 
 案件に応じて追加:
 
@@ -38,6 +39,12 @@
 必要になったときだけ:
 
 - `BUSINESS.md` / `SERVERS.md` / `TASKS.md` / `WORKLOG.md`
+
+## 最初の作業で必ずやること
+
+新しいPC・新しい案件では、**まず `VERIFICATION.md` の「0. 環境チェック」を実行**し、
+使えるツール（python3 / node / php / git / curl / Chrome / Playwright）を実際に確かめて
+`SERVERS.md` に記録します。**無いツールを前提にした手順を書かないでください。**
 
 ## 秘密情報（このリポジトリの前提）
 
