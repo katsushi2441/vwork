@@ -38,3 +38,11 @@
 必要になったときだけ:
 
 - `BUSINESS.md` / `SERVERS.md` / `TASKS.md` / `WORKLOG.md`
+
+## 秘密情報（このリポジトリの前提）
+
+- 実値は `.env` にだけ書く。`.env` は `.gitignore` 済みで共有されない。
+- 環境ごとの設定は `config.yml`（同じく `.gitignore` 済み）。
+- 共有するのは `.env.sample` / `config.yml.sample`（**変数名と説明だけ**、値は空）。
+- `SERVERS.md` には「`.env` のどこに何があるか」だけを書く。値は書かない。
+- AIエージェントは、APIキー・パスワード・トークンの**実値を出力・記録・コミットしない**。

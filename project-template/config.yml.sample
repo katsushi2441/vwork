@@ -1,0 +1,28 @@
+# config.yml.sample — 秘密ではない設定の雛形
+#
+# 使い方:
+#   1) このファイルを config.yml にコピーする   cp config.yml.sample config.yml
+#   2) config.yml に自社の値を書く
+#   3) config.yml は .gitignore 済み（環境ごとに違うため共有しない）
+#
+# 使い分け:
+#   .env          … パスワード、APIキー、トークンなど「漏れると困る値」
+#   config.yml    … 会社名、公開URL、出力先、件数など「環境ごとに違うが秘密ではない値」
+#   このファイル   … 上記2つに「何を設定すべきか」を示す見本（Git管理する）
+
+project:
+  name:
+  owner:
+  description:
+
+paths:
+  data_dir: data
+  output_dir: output
+
+publish:
+  base_url:
+  # 公開先の認証情報は .env に置く（ここには書かない）
+
+options:
+  language: ja
+  dry_run: true

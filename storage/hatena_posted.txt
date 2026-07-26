@@ -262,3 +262,5 @@ url2pub-i18n-hatena-summary
 2026-07-26-ai-news-3
 2026-07-26-kfreqai-hyperliquid-summary
 2026-07-26-urlai-tokenomics-summary
+2026-07-26-ai-news-4
+2026-07-27-ai-news

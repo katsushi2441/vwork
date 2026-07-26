@@ -23,6 +23,27 @@ VWorkは、それらのうち特定プロジェクトに依存しない部分を
 5. `WORKFLOW.md` — 案件固有の手順が固まってきたら作る
 6. `BUSINESS.md` / `SERVERS.md` / `TASKS.md` / `WORKLOG.md` — 必要になった案件でだけ使う任意ファイル
 
+## 秘密情報の扱い（設計として最初から組み込み済み）
+
+VWorkは、**秘密情報をGitに入れない運用が最初から成立する**ように作ってあります。
+
+| ファイル | 何を書くか | Git管理 |
+|---|---|---|
+| `.env` | APIキー、パスワード、トークンなど**漏れると困る実値** | ❌ `.gitignore`済み |
+| `.env.sample` | 変数名と説明**だけ**（値は空） | ✅ する |
+| `config.yml` | 公開URL、出力先、件数など環境ごとに違う設定 | ❌ `.gitignore`済み |
+| `config.yml.sample` | 何を設定すべきかの雛形 | ✅ する |
+| `SERVERS.md` | 「`.env` のどこに何があるか」**場所と変数名だけ** | ✅ する |
+
+`project-template` には `.env.sample` / `config.yml.sample` / `.gitignore` が最初から入っています。導入直後に次を実行するだけで、秘密を共有しない状態で作業を始められます。
+
+```bash
+cp .env.sample .env          # 実値は .env にだけ書く
+cp config.yml.sample config.yml
+```
+
+AIエージェント側にも同じ基準を入れてあります（`RULES.md` の「秘密情報の扱い」）。**実値をチャット・コミット・ドキュメントに書かない**、必要なときは場所だけを参照する、という作法をAIが毎回確認します。
+
 ## VWorkの位置づけ
 
 ```text
