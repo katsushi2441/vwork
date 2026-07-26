@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [URLAIトークノミクスの設計 — 1枚0.01円・時価総額10億円を目指す「実需」の作り方](2026-07-26-urlai-tokenomics-design.md)
 - [AIの力を、独占ではなく分かち合う — Bittensorに学び、URLAIとKurageで育てるトークノミクスの全体像](2026-07-24-urlai-kurage-decentralized-tokenomics-vision.md)
 - [「使ってくれてありがとう」をオンチェーンで返す：URL2Pubに10,000 URLAI利用特典を実装しました](2026-07-23-url2pub-urlai-user-reward.md)
 - [AI投資委員会「KAIC」を開発しました - 投資情報からAI自動取引、x402 AI Agentへ](2026-07-19-kaic-ai-investment-committee.md)
