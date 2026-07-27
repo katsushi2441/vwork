@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [PGSimCityで読む：Hugging FaceとOpenAIを巡る透明性の議論とオープンソースAIへの規制動向 07-27](2026-07-27-ai-news-3.html)
 - [OpenAI、Anthropic、Hugging Faceの動向から見るAI規制とセキュリティの最前線 07-27](2026-07-27-ai-news-2.html)
 - [OpenAIとAnthropicのロビー活動とHugging FaceCEOが突きつけるセキュリティへの提言 07-27](2026-07-27-ai-news.html)
 - [EuropeとUseで読む：Googleが推進するオープンウェイトモデルへの支持とAIデータセンターのインフラ課題 07-26](2026-07-26-ai-news-4.html)
