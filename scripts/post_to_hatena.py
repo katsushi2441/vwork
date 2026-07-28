@@ -63,6 +63,29 @@ def body_to_html(body: str) -> str:
     return markdown.markdown(body, extensions=["extra"])
 
 
+ARTICLE_BASE_URL = "https://katsushi2441.github.io/vwork/articles"
+
+
+def satellite_body(title: str, body: str, slug: str) -> str:
+    """はてな/Blogger転載ルール(衛星): 全文転載は禁止。冒頭の要約＋元記事リンクだけを送る。
+    (2026-07-28 全文転載事故の再発防止。元記事=AI OSS技術解説への送客が目的)"""
+    paras = [p.strip() for p in body.split("\n\n") if p.strip()]
+    lead: list[str] = []
+    total = 0
+    for p in paras:
+        if p.startswith("#") or p.startswith("```") or p.startswith("|"):
+            continue  # 見出し・コード・表は要約に含めない(本文リード段落だけ)
+        lead.append(p)
+        total += len(p)
+        if total >= 400 or len(lead) >= 3:
+            break
+    url = f"{ARTICLE_BASE_URL}/{slug}.html"
+    summary = "\n\n".join(lead) if lead else title
+    return (f"{summary}\n\n---\n\n"
+            f"この記事は要約版です。続き（実装の詳細・コード・落とし穴）は元記事でどうぞ:\n\n"
+            f"[{title}]({url})")
+
+
 def send_mail(title: str, body: str, to_override: str = ""):
     smtp_host = os.environ.get("SMTP_HOST", "mail18.heteml.jp")
     smtp_port = int(os.environ.get("SMTP_PORT", 465))
@@ -108,13 +131,15 @@ def main():
             print(f"  skip (unpublished): {src.name}")
             continue
 
-        send_mail(title, body)
+        # 衛星ルール: はてな/Bloggerへは要約版+元記事リンクのみ(全文転載禁止)
+        sat = satellite_body(title, body, src.stem)
+        send_mail(title, sat)
         if blogger:
-            send_mail(title, body, to_override=blogger)
+            send_mail(title, sat, to_override=blogger)
             mark_blogger_posted(src.stem)
-            print(f"  blogger: {title}")
+            print(f"  blogger(衛星): {title}")
         mark_posted(src.stem)
-        print(f"  hatena: {title}")
+        print(f"  hatena(衛星): {title}")
         time.sleep(3)
 
     print("done.")
