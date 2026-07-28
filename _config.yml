@@ -18,3 +18,9 @@ defaults:
       path: ""
     values:
       layout: default
+  # VWork Blogの全記事はblog専用OGP画像(記事frontmatterのimage:が無い場合の既定)。
+  # publish.pyのテンプレートは配信に使われておらず(Jekyllが生成)、ここが実際に効く場所。
+  - scope:
+      path: "blog"
+    values:
+      image: "https://exbridge.jp/images/vwork-blog-ogp.png"
