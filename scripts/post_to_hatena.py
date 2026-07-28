@@ -68,21 +68,38 @@ ARTICLE_BASE_URL = "https://katsushi2441.github.io/vwork/articles"
 
 def satellite_body(title: str, body: str, slug: str) -> str:
     """はてな/Blogger転載ルール(衛星): 全文転載は禁止。冒頭の要約＋元記事リンクだけを送る。
-    (2026-07-28 全文転載事故の再発防止。元記事=AI OSS技術解説への送客が目的)"""
-    paras = [p.strip() for p in body.split("\n\n") if p.strip()]
-    lead: list[str] = []
-    total = 0
-    for p in paras:
-        if p.startswith("#") or p.startswith("```") or p.startswith("|"):
-            continue  # 見出し・コード・表は要約に含めない(本文リード段落だけ)
-        lead.append(p)
-        total += len(p)
-        if total >= 400 or len(lead) >= 3:
+    (2026-07-28 全文転載事故の再発防止。元記事=AI OSS技術解説への送客が目的)
+
+    抽出は行単位: 見出し(#)・引用(>)・コード・表・画像・水平線の「行」だけを落とし、
+    本文テキストは見出しと同じ段落ブロックにあっても拾う(段落単位でブロックごと捨てると
+    「## 見出し\\n本文」形式の記事で本文が全滅し、リンクだけの投稿になる。2026-07-29事故)。"""
+    import re as _re
+    lines: list[str] = []
+    in_fence = False
+    for raw in body.split("\n"):
+        line = raw.strip()
+        if line.startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence or not line:
+            continue
+        if line.startswith(("#", ">", "|", "![")) or _re.fullmatch(r"[-*_]{3,}", line):
+            continue  # 見出し・引用(定型注記)・表・画像・水平線の行だけ除外
+        # markdownリンクは表示テキストだけ残す(リンク羅列にしない)
+        line = _re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", line)
+        lines.append(line)
+        if sum(len(x) for x in lines) >= 700:
             break
+    text = "\n\n".join(lines)
+    # 500字前後の文境界(。)で切る
+    if len(text) > 500:
+        cut = text[:500]
+        pos = cut.rfind("。")
+        text = (cut[:pos + 1] if pos > 200 else cut + "…")
     url = f"{ARTICLE_BASE_URL}/{slug}.html"
-    summary = "\n\n".join(lead) if lead else title
-    return (f"{summary}\n\n---\n\n"
-            f"この記事は要約版です。続き（実装の詳細・コード・落とし穴）は元記事でどうぞ:\n\n"
+    summary = text if text.strip() else title
+    return (f"{summary}\n\n"
+            f"この記事は要約版です。続き（残りの話題・実装の詳細）は元記事でどうぞ:\n\n"
             f"[{title}]({url})")
 
 
