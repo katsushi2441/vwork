@@ -10,7 +10,7 @@ URLAIトークンに、初めての「使い道」が実装されました。も
 
 ## ✅ いま使える
 
-### Kurageブログの有料記事（kurage.exbridge.jp/blog/）
+### [Kurageブログ](https://kurage.exbridge.jp/blog/)の有料記事（kurage.exbridge.jp/blog/）
 
 AI自動取引システムKurageの実運用から得たトレードノウハウ記事に、「途中まで無料・続きから有料」のペイウォールが実装されました。有料パートは次の2通りで解錠できます。
 
@@ -24,18 +24,18 @@ AI自動取引システムKurageの実運用から得たトレードノウハウ
 
 ## 🎁 もらえる
 
-### kurl2earn（kurl2earn.exbridge.jp）
+### [kurl2earn](https://kurl2earn.exbridge.jp/)（kurl2earn.exbridge.jp）
 
 Kurageシリーズのページを、あなたのXやブログで紹介してURLを提出すると、**1人1回・10,000 URLAI**を受け取れます（Bankrウォレットへ配布・本番稼働中）。ドメイングループごとに先着1,000人。協賛企業が増えると枠も増える設計です。
 
-### url2pub の利用特典
+### [url2pub](https://url2ai.exbridge.jp/url2pub.php) の利用特典
 
 AIエージェント向けパブリッシングAPI「url2pub」には、利用者への**10,000 URLAI特典**があります。使ってくれた人に、オンチェーンで「ありがとう」を返す仕組みです。
 
 ## 🔜 準備中（これから使えるようになる）
 
-- **tajp.exbridge.jp** — URLAIトークンでの支払いに対応予定（準備中）
-- **url2pub の外部リンク機能** — 200円 または 20,000 URLAI で購入できる有料機能として準備中
+- **[tajp.exbridge.jp](https://tajp.exbridge.jp/)** — URLAIトークンでの支払いに対応予定（準備中）
+- **[url2pub](https://url2ai.exbridge.jp/url2pub.php) の外部リンク機能** — 200円 または 20,000 URLAI で購入できる有料機能として準備中
 
 対応レートはいずれもKurageブログと同じ「200円 = 20,000 URLAI」に統一します。
 
