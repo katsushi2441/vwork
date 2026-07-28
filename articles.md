@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [open-weightで読む：Microsoftのサイバーセキュリティ新モデルとSatya Nadellaが警鐘を鳴らすAI活用の多角化 07-28](2026-07-28-ai-news-4.html)
 - [Securityで読む：Microsoftのサイバーセキュリティ革新とOpenAI、Hugging Faceを巡る安全性への課題 07-28](2026-07-28-ai-news-3.html)
 - [MicrosoftのサイバーセキュリティモデルとOpenAIを巡る安全性の議論：KIMI K3の公開を含む最新動向 07-28](2026-07-28-ai-news-2.html)
 - [Ilya Sutskever（イリヤ・サトスケヴァー）とNVIDIAによる超知能研究への戦略的提携 07-28](2026-07-28-ai-news.html)
