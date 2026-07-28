@@ -274,3 +274,4 @@ url2pub-i18n-hatena-summary
 2026-07-28-ai-news-4
 2026-07-28-bludit-paywall-paypal-onchain
 2026-07-29-ai-news
+2026-07-29-urlai-where-to-use

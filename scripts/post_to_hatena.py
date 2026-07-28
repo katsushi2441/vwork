@@ -63,10 +63,10 @@ def body_to_html(body: str) -> str:
     return markdown.markdown(body, extensions=["extra"])
 
 
-ARTICLE_BASE_URL = "https://katsushi2441.github.io/vwork/articles"
+SITE_BASE_URL = "https://katsushi2441.github.io/vwork"  # blog/とarticles/でパスが違うのでdirごとに組む
 
 
-def satellite_body(title: str, body: str, slug: str) -> str:
+def satellite_body(title: str, body: str, slug: str, section: str = "articles") -> str:
     """はてな/Blogger転載ルール(衛星): 全文転載は禁止。冒頭の要約＋元記事リンクだけを送る。
     (2026-07-28 全文転載事故の再発防止。元記事=AI OSS技術解説への送客が目的)
 
@@ -96,7 +96,7 @@ def satellite_body(title: str, body: str, slug: str) -> str:
         cut = text[:500]
         pos = cut.rfind("。")
         text = (cut[:pos + 1] if pos > 200 else cut + "…")
-    url = f"{ARTICLE_BASE_URL}/{slug}.html"
+    url = f"{SITE_BASE_URL}/{section}/{slug}.html"
     summary = text if text.strip() else title
     return (f"{summary}\n\n"
             f"この記事は要約版です。続き（残りの話題・実装の詳細）は元記事でどうぞ:\n\n"
@@ -149,7 +149,7 @@ def main():
             continue
 
         # 衛星ルール: はてな/Bloggerへは要約版+元記事リンクのみ(全文転載禁止)
-        sat = satellite_body(title, body, src.stem)
+        sat = satellite_body(title, body, src.stem, section=src.parent.name)
         send_mail(title, sat)
         if blogger:
             send_mail(title, sat, to_override=blogger)
