@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Hyperliquidで読む：LiquidAIのLFM2.5によるCPU推論効率化とFish Audioの巨額資金調達ニュース 07-29](2026-07-29-ai-news.html)
 - [PHPブログに「途中まで無料」の有料記事を自作する — PayPal APIとオンチェーン検証の二刀流 07-28](2026-07-28-bludit-paywall-paypal-onchain.html)
 - [open-weightで読む：Microsoftのサイバーセキュリティ新モデルとSatya Nadellaが警鐘を鳴らすAI活用の多角化 07-28](2026-07-28-ai-news-4.html)
 - [Securityで読む：Microsoftのサイバーセキュリティ革新とOpenAI、Hugging Faceを巡る安全性への課題 07-28](2026-07-28-ai-news-3.html)
