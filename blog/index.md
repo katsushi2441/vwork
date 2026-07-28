@@ -7,6 +7,7 @@ description: バイブコーディングを企業内に導入するための考�
 
 VWork Blogは、バイブコーディングを企業内に導入するための考え方、実践知、営業・導入で得た気づきを蓄積する場所です。
 
+- [URLAIトークンが「使える場所」ができました — 対応サイト一覧（2026年7月）](2026-07-29-urlai-where-to-use.html)
 - [URLAIトークノミクスの設計 — 1枚0.01円・時価総額10億円を目指す「実需」の作り方](2026-07-26-urlai-tokenomics-design.html)
 - [AIの力を、独占ではなく分かち合う — Bittensorに学び、URLAIとKurageで育てるトークノミクスの全体像](2026-07-24-urlai-kurage-decentralized-tokenomics-vision.html)
 - [「使ってくれてありがとう」をオンチェーンで返す：URL2Pubに10,000 URLAI利用特典を実装しました](2026-07-23-url2pub-urlai-user-reward.html)
