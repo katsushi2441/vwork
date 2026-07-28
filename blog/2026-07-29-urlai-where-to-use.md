@@ -75,4 +75,16 @@ AIエージェント向けパブリッシングAPI「url2pub」には、利用�
 
 「もらえる場所」で受け取ったURLAIを、「使える場所」で実際に使う——このループが回り始めました。対応サイトが増え次第、この記事を更新していきます。
 
+## URLAIのいまの価格チャート
+
+Baseチェーン上の URLAI / WETH プールのライブチャートです（GeckoTerminal提供）。売買は bankr.bot のターミナルからどうぞ。
+
+<div style="border:1px solid #d0d7de;border-radius:12px;overflow:hidden;margin:16px 0">
+  <iframe title="URLAI/WETH チャート (GeckoTerminal)" loading="lazy"
+    src="https://www.geckoterminal.com/ja/base/pools/0x00c095292fc46f39280ec6a6cdd6cd0969f571308c242c576fcc13c99933c9bd?embed=1&info=0&swaps=0"
+    style="display:block;width:100%;height:480px;border:0" allow="clipboard-write" allowfullscreen></iframe>
+</div>
+
+<p><a href="https://bankr.bot/terminal/trade?in=0x4200000000000000000000000000000000000006&out=0xdaecdda6ad112f0e1e4097fb735dd01d9c33cba3&chain=base" target="_blank" rel="noopener" style="display:inline-block;padding:12px 24px;border-radius:999px;background:linear-gradient(90deg,#f5b53a,#f7894a);color:#fff;font-weight:700;text-decoration:none">🏦 bankr.bot でURLAIを取引する</a></p>
+
 ※本記事は投資助言ではありません。URLAIの取得・利用はご自身の判断でお願いします。
