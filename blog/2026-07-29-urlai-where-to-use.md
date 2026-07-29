@@ -22,6 +22,15 @@ AI自動取引システムKurageの実運用から得たトレードノウハウ
 
 「法定通貨なら200円、URLAIなら20,000枚」——これがURLAIの実需の基準レートです（1枚=0.01円）。
 
+### [Kurage Architect](https://kurage.exbridge.jp/karchitect.php) — AIと作るシステム設計書
+
+AIと対話しながら要件・構成図つきのシステム設計書を作る設計スタジオでも、URLAIが使えます（1枚=0.01円の統一レート）。
+
+- **設計プロジェクトの追加**: 1個目は無料、2個目から 1個 500円 または **50,000 URLAI**
+- **設計書の出力**（Markdown / PDF / JSON / Mermaid）: 1回目は無料、2回目から都度 100円 または **10,000 URLAI**
+
+支払いはBaseチェーンでの送金をオンチェーンで自動確認。ウォレットだけで完結します。
+
 ## 🎁 もらえる
 
 ### [kurl2earn](https://kurl2earn.exbridge.jp/)（kurl2earn.exbridge.jp）
