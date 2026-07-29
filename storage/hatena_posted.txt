@@ -277,3 +277,5 @@ url2pub-i18n-hatena-summary
 2026-07-29-urlai-where-to-use
 2026-07-29-ai-news-2
 2026-07-29-karchitect-for-executives
+2026-07-29-ai-news-3
+2026-07-29-vibeaitrade-book-amazon
