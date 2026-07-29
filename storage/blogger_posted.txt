@@ -132,3 +132,5 @@ kfreqai-entry-threshold-explained
 2026-07-28-bludit-paywall-paypal-onchain
 2026-07-29-ai-news
 2026-07-29-urlai-where-to-use
+2026-07-29-ai-news-2
+2026-07-29-karchitect-for-executives
