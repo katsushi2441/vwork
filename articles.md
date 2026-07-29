@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Agentsで読む：Encore AIの資金調達とBentoが示す、実用的なAIエージェントとローカルLLMの動向 07-30](2026-07-30-ai-news.html)
 - [GGUFで読む：CyeraによるOasis Securityの買収とOlmoEarthが拓く地球規模の地理空間推論 07-29](2026-07-29-ai-news-4.html)
 - [CyeraがOasis Securityを10億ドルで買収、Claudeによる暗号解析とOpenAIのツール公開から見るAI安全性の最前線 07-29](2026-07-29-ai-news-3.html)
 - [Flashで読む：DeepSeek V4やGeminiの最新動向とAIエージェントのセキュリティ課題 07-29](2026-07-29-ai-news-2.html)
