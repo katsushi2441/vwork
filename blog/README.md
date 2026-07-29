@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [「欲しいシステムはあるのに、頼み方がわからない」経営者へ — AIと対話して設計書を作るKurage Architectを公開しました](2026-07-29-karchitect-for-executives.md)
 - [URLAIトークンが「使える場所」ができました — 対応サイト一覧（2026年7月）](2026-07-29-urlai-where-to-use.md)
 - [URLAIトークノミクスの設計 — 1枚0.01円・時価総額10億円を目指す「実需」の作り方](2026-07-26-urlai-tokenomics-design.md)
 - [AIの力を、独占ではなく分かち合う — Bittensorに学び、URLAIとKurageで育てるトークノミクスの全体像](2026-07-24-urlai-kurage-decentralized-tokenomics-vision.md)
