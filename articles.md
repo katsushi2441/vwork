@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [OpenAlice-JPをx402対応AIエージェントにする — Kurage Brain判断ツールをHTTP 402従量課金で組み込んだ話](2026-07-30-openalice-kurage-brain-x402.html)
 - [OpenAlice-JPを公開：AIトレーディングOSSを日本語既定・Docker・HTTPSで安全にセルフホストする](2026-07-30-openalice-jp-japanese-self-hosted.html)
 - [Kimi K3-256kの登場とGemma 4をMacで動かす技術：AIインフラとセキュリティの最前線 07-30](2026-07-30-ai-news-2.html)
 - [Agentsで読む：Encore AIの資金調達とBentoが示す、実用的なAIエージェントとローカルLLMの動向 07-30](2026-07-30-ai-news.html)
