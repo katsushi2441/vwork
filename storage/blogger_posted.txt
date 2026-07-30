@@ -136,3 +136,4 @@ kfreqai-entry-threshold-explained
 2026-07-29-karchitect-for-executives
 2026-07-29-ai-news-3
 2026-07-29-vibeaitrade-book-amazon
+2026-07-30-openalice-jp-japanese-self-hosted
