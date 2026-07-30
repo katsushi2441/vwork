@@ -124,6 +124,7 @@ def send_mail(title: str, body: str, to_override: str = ""):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("files", nargs="*", help="Specific blog markdown files to post")
+    parser.add_argument("--footer-md", default="", help="要約の後に付ける追記markdown(書籍紹介など。衛星ルールの要約+リンク形式は維持)")
     args = parser.parse_args()
 
     posted = load_posted()
@@ -150,6 +151,8 @@ def main():
 
         # 衛星ルール: はてな/Bloggerへは要約版+元記事リンクのみ(全文転載禁止)
         sat = satellite_body(title, body, src.stem, section=src.parent.name)
+        if args.footer_md:
+            sat += "\n\n---\n\n" + args.footer_md
         send_mail(title, sat)
         if blogger:
             send_mail(title, sat, to_override=blogger)
