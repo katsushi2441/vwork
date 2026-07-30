@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [バイブコーディングで「バイブトレーディング」— AIに戦略を相談して自動売買を作れるツール総まとめ](2026-07-31-vibe-trading-tools-guide.md)
 - [書籍『AIと作る自動取引ボット入門』をAmazonで出版しました — バイブコーディング×バイブトレーディングの実践書](2026-07-29-vibeaitrade-book-amazon.md)
 - [「欲しいシステムはあるのに、頼み方がわからない」経営者へ — AIと対話して設計書を作るKurage Architectを公開しました](2026-07-29-karchitect-for-executives.md)
 - [URLAIトークンが「使える場所」ができました — 対応サイト一覧（2026年7月）](2026-07-29-urlai-where-to-use.md)
