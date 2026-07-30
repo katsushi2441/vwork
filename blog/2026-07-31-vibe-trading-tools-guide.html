@@ -1,0 +1,78 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>バイブコーディングで「バイブトレーディング」— AIに戦略を相談して自動売買を作れるツール総まとめ | VWork バイブコーディングフレームワーク</title><meta name="description" content="Codex/Claude Codeに日本語で戦略を相談し、非エンジニアでも取引戦略コードを実装できる時代の実践ガイド。kfreqai・NOFX日本語版・OpenAlice-JPの3つのOSSと、判断API（kcbrain/kfxbrain/ksbrain）、実運用ブログ、書籍まで一気に紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-07-31-vibe-trading-tools-guide.html"><meta property="og:type" content="article"><meta property="og:title" content="バイブコーディングで「バイブトレーディング」— AIに戦略を相談して自動売買を作れるツール総まとめ"><meta property="og:description" content="Codex/Claude Codeに日本語で戦略を相談し、非エンジニアでも取引戦略コードを実装できる時代の実践ガイド。kfreqai・NOFX日本語版・OpenAlice-JPの3つのOSSと、判断API（kcbrain/kfxbrain/ksbrain）、実運用ブログ、書籍まで一気に紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-07-31-vibe-trading-tools-guide.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="バイブコーディングで「バイブトレーディング」— AIに戦略を相談して自動売買を作れるツール総まとめ"><meta name="twitter:description" content="Codex/Claude Codeに日本語で戦略を相談し、非エンジニアでも取引戦略コードを実装できる時代の実践ガイド。kfreqai・NOFX日本語版・OpenAlice-JPの3つのOSSと、判断API（kcbrain/kfxbrain/ksbrain）、実運用ブログ、書籍まで一気に紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "バイブコーディングで「バイブトレーディング」— AIに戦略を相談して自動売買を作れるツール総まとめ", "description": "Codex/Claude Codeに日本語で戦略を相談し、非エンジニアでも取引戦略コードを実装できる時代の実践ガイド。kfreqai・NOFX日本語版・OpenAlice-JPの3つのOSSと、判断API（kcbrain/kfxbrain/ksbrain）、実運用ブログ、書籍まで一気に紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-07-31-vibe-trading-tools-guide.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-07-31", "dateModified": "2026-07-31", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><p>「プログラミングはできない。でもAIで自動売買をやってみたい」——いま、この願いは現実的になりました。</p>
+<p>コードはAIに書かせる開発スタイルを<strong>バイブコーディング</strong>と呼びます。同じように、取引戦略のアイデアを日本語でAIに伝え、バックテストで検証しながら戦略を育てる運用スタイルを、私は<strong>バイブトレーディング</strong>と呼んでいます。</p>
+<p>やり方はシンプルです。CodexやClaude Codeのようなコーディングエージェントに、こう話しかけるだけです。</p>
+<blockquote>
+<p>「東京時間のレンジをブレイクしたら順張りで入る戦略を書いて。損切りはレンジ幅の半分で」
+「直近3ヶ月でバックテストして。勝率と最大ドローダウンを表にして」
+「下降トレンドの日はエントリーを止めるフィルターを足して」</p>
+</blockquote>
+<p>戦略の仮説を出すのは人間、コードに落とすのはAI、正しいかどうかを決めるのはバックテストの数字。この分業が回り始めると、戦略づくりは「プログラミングの苦行」ではなく「AIとの対話で仮説を検証していくゲーム」に変わります。本記事では、それを実際にできるツールを紹介します。</p>
+<h2>1. kfreqai — 暗号資産のAI自動取引（Freqtrade/FreqAIベース）</h2>
+<p><img alt="kfreqai" src="assets/kfreqai-ogp.png" /></p>
+<ul>
+<li>GitHub: <a href="https://github.com/katsushi2441/kfreqai">github.com/katsushi2441/kfreqai</a></li>
+<li>プロダクトサイト: <a href="https://kfreqai.exbridge.jp/">kfreqai.exbridge.jp</a></li>
+<li>稼働中ダッシュボード: <a href="https://kurage.exbridge.jp/kfreqai.php">kurage.exbridge.jp/kfreqai.php</a></li>
+</ul>
+<p>実績あるOSSの<a href="https://github.com/freqtrade/freqtrade">Freqtrade</a>とそのFreqAI（LightGBM予測）モジュールの上に、過熱フィルター・ペア別出禁・ボラティリティ連動のポジションサイズ・地合い連動の枠制御といった独自のリスク管理を重ねた、暗号資産の自動取引システムです。</p>
+<p>kfreqaiこそ、バイブトレーディングの実例そのものです。戦略のロジックも、リスク管理のルールも、そのほとんどが「AIに日本語で相談して、コードにしてもらい、バックテストで採否を決める」の繰り返しで作られています。ダッシュボードでは複数のAIエージェントが同条件で競い合う様子を公開しており、いま何を保有してどう判断したかを誰でも見られます。</p>
+<h2>2. NOFX 日本語版 — マルチAIトレーダーを走らせる取引OS</h2>
+<ul>
+<li>GitHub（日本語版）: <a href="https://github.com/katsushi2441/nofx">github.com/katsushi2441/nofx</a></li>
+<li>本家: <a href="https://github.com/NoFxAiOS/nofx">github.com/NoFxAiOS/nofx</a></li>
+</ul>
+<p>NOFXは、複数のAIトレーダーをWebダッシュボードから走らせて競わせられるオープンソースの取引OSです。日本語版forkでは、ヘッダーから「日本語」を選ぶだけでUIが日本語化されるのに加え、<strong>日本語戦略モード</strong>を追加しました。AIの思考・判断理由は自然な日本語で表示しつつ、JSONキーや売買アクションなどの機械向け識別子は原文のまま維持するので、翻訳による誤動作を防ぎながら「AIが今なぜそう判断したか」を日本語で追えます。</p>
+<p>「AIトレーダーの判断を日本語で読みながら、気になったところをAIに質問して戦略を直す」という体験は、一度やると戻れない面白さがあります。</p>
+<h2>3. OpenAlice-JP — 日本語ファーストのAIトレーディングエージェント</h2>
+<ul>
+<li>GitHub（日本語版）: <a href="https://github.com/katsushi2441/OpenAlice-JP">github.com/katsushi2441/OpenAlice-JP</a></li>
+<li>本家サイト: <a href="https://openalice.ai">openalice.ai</a></li>
+</ul>
+<p>OpenAliceは対話しながら市場分析・取引を進めるAIエージェントのOSSです。OpenAlice-JPはその日本語ファーストforkで、UIロケールは標準で日本語、エージェントの人格も「自然な日本語で答える。ただしティッカーやAPI名・JSONキー・CLIコマンドは翻訳しない」よう調整済み。自己ホスト用のDocker Compose（TLS対応）を同梱し、<strong>取引は読み取り専用モード・自動発注は既定で無効</strong>という安全側の初期設定にしてあります。</p>
+<p>まず眺めて、話しかけて、仕組みが分かってから権限を開けていく——非エンジニアの入り口として、この順番で触れるのが日本語版の狙いです。</p>
+<h2>戦略づくりの頭脳を借りる — 判断API 3兄弟</h2>
+<p>自分でボットを組むほどではないけれど「AIの売買判断」だけ使いたい。そういう用途のために、判断部分だけを切り出したAPIも公開しています。いずれも実際のOSSエージェント（TradingAgents、FinGPT、AI Hedge Fundなど）を固定バージョンで組み込み、判断を構造化JSONで返します。</p>
+<p><img alt="kcbrain" src="assets/kcbrain-banner.png" /></p>
+<p><strong>kcbrain（Kurage Crypto Brain）</strong> — 暗号資産の判断API。<a href="https://kcbrain.exbridge.jp/">kcbrain.exbridge.jp</a> ／ <a href="https://kurage.exbridge.jp/kcbrain.php">公開テストコンソール</a></p>
+<p><img alt="kfxbrain" src="assets/kfxbrain-banner.png" /></p>
+<p><strong>kfxbrain（Kurage FX Brain）</strong> — FXの判断API。<a href="https://kfxbrain.exbridge.jp/">kfxbrain.exbridge.jp</a> ／ <a href="https://kurage.exbridge.jp/kfxbrain.php">公開テストコンソール</a></p>
+<p><img alt="ksbrain" src="assets/ksbrain-ogp.png" /></p>
+<p><strong>ksbrain（Kurage Stock Brain）</strong> — 日本株のインテリジェンスAPI。根拠IDを追跡できる構造化評価を返します。<a href="https://ksbrain.exbridge.jp/">ksbrain.exbridge.jp</a> ／ 参照アプリ: <a href="https://tajp.exbridge.jp/">TradingAgents-JP（tajp.exbridge.jp）</a></p>
+<p>自作ボットの判断部分にこれらを組み込めば、「戦略はAIに相談して作り、判断はAIのAPIに聞く」という構成が最初から実現できます。</p>
+<h2>毎日の実践はブログで公開しています</h2>
+<p>ここで紹介した内容は理屈ではなく、毎日動いているシステムの話です。kfreqaiの検証結果、うまくいかなかった戦略、地合いが変わって崩れた話とその立て直し——実運用の記録はすべて <strong><a href="https://kurage.exbridge.jp/blog/">Kurageトレードブログ（kurage.exbridge.jp/blog/）</a></strong> で公開しています。バイブトレーディングが実際どんな日々なのか、雰囲気を掴むには一番早いはずです。</p>
+<h2>体系的に学ぶなら（書籍）</h2>
+<p>この一連の実践を、VPS契約とAI環境の導入から、ボット構築、バックテスト、過学習の防ぎ方、運用監視まで全49章に分解した入門書を出版しました。</p>
+<p><strong><a href="https://www.amazon.co.jp/dp/B0HC27BLHG">『AIと作る自動取引ボット入門 — バイブコーディング×バイブトレーディングで暗号資産・FX戦略を育てる』（小嶋 篤・Kindle）</a></strong></p>
+<p>Kindle Unlimitedなら追加料金なしで読み放題です。「画面通りに進めば動く」粒度で書いたので、本記事のツールを触る前後のガイドとしても使えます。</p>
+<h2>まとめ</h2>
+<ul>
+<li>戦略のアイデアを日本語で話す → AIがコードにする → バックテストが答えを出す。この繰り返しが<strong>バイブトレーディング</strong></li>
+<li>まず触るなら: 暗号資産は <strong>kfreqai</strong>、マルチAIトレーダーの観戦と操作は <strong>NOFX日本語版</strong>、対話型エージェントは <strong>OpenAlice-JP</strong></li>
+<li>判断だけ借りるなら <strong>kcbrain / kfxbrain / ksbrain</strong></li>
+<li>日々の実践は <a href="https://kurage.exbridge.jp/blog/">Kurageトレードブログ</a>、体系的な入門は<a href="https://www.amazon.co.jp/dp/B0HC27BLHG">書籍</a>で</li>
+</ul>
+<p>※投資は自己責任です。紹介したシステムは検証・ペーパートレードでの運用を基本とし、実資金の投入は仕組みとリスクを理解してから、少額で判断してください。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
