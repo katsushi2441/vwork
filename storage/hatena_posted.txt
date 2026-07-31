@@ -287,3 +287,4 @@ url2pub-i18n-hatena-summary
 2026-07-31-ai-news
 2026-07-31-ai-news-2
 2026-07-31-finrobot-japanese-kbrain-x402
+2026-07-31-ai-news-3
