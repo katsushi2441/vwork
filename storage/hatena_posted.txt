@@ -285,3 +285,4 @@ kfreqai-entry-threshold-explained
 url2pub-i18n-hatena-summary
 2026-07-30-openalice-kurage-brain-x402
 2026-07-31-ai-news
+2026-07-31-ai-news-2
