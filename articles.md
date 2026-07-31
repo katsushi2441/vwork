@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [FinRobotを日本語ファーストにforkして、Kurage判断API(x402従量課金)を繋いだ — Kurage FinanalystというSaaSになるまで](2026-07-31-finrobot-japanese-kbrain-x402.html)
 - [GoogleのGemini Robotics 2やLGのK-EXAONEなど、最先端AIと金融・開発の革新 07-31](2026-07-31-ai-news-2.html)
 - [TheとHugging Faceで読む：Gemma 4とApple Siliconで進化するローカルAI環境の最前線 07-31](2026-07-31-ai-news.html)
 - [OpenAlice-JPをx402対応AIエージェントにする — Kurage Brain判断ツールをHTTP 402従量課金で組み込んだ話](2026-07-30-openalice-kurage-brain-x402.html)
