@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Theで読む：GPT-5.6の進化とDeepSeek、Anthropicが示すAIインフラとセキュリティの最前線 07-31](2026-07-31-ai-news-4.html)
 - [個人用の日本株AI分析を、マルチユーザーSaaSにした — TradingAgents-JPがKurage TradingAgentsになるまで](2026-07-31-kurage-tradingagents-multiuser-kbrain.html)
 - [OpenAIのGPT-5.6価格改定とAnthropicのセキュリティ問題、BISによるトークン化決済の進展 07-31](2026-07-31-ai-news-3.html)
 - [FinRobotを日本語ファーストにforkして、Kurage判断API(x402従量課金)を繋いだ — Kurage FinanalystというSaaSになるまで](2026-07-31-finrobot-japanese-kbrain-x402.html)
