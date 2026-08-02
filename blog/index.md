@@ -7,6 +7,7 @@ description: バイブコーディングを企業内に導入するための考�
 
 VWork Blogは、バイブコーディングを企業内に導入するための考え方、実践知、営業・導入で得た気づきを蓄積する場所です。
 
+- [バイブトレーディングとは何か？ AIとの対話を、検証可能な取引戦略に変える方法](2026-08-03-what-is-vibe-trading.html)
 - [Kurage GEOで自社サイトを38点から90点へ改善 — exbridge.jpのGEO・日本語AEO診断記録](2026-08-03-kgeo-exbridge-geo-improvement.html)
 - [バイブコーディングで「バイブトレーディング」— AIに戦略を相談して自動売買を作れるツール総まとめ](2026-07-31-vibe-trading-tools-guide.html)
 - [書籍『AIと作る自動取引ボット入門』をAmazonで出版しました — バイブコーディング×バイブトレーディングの実践書](2026-07-29-vibeaitrade-book-amazon.html)
