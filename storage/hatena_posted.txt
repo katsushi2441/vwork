@@ -289,3 +289,7 @@ url2pub-i18n-hatena-summary
 2026-07-31-finrobot-japanese-kbrain-x402
 2026-07-31-ai-news-3
 2026-07-31-kurage-tradingagents-multiuser-kbrain
+2026-07-31-ai-news-4
+2026-08-01-ai-news
+2026-08-01-ai-news-2
+2026-08-03-kgeo-geo-audit-workspace
