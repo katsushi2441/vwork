@@ -1,12 +1,12 @@
 ---
 title: "URLAIトークンが「使える場所」ができました — 対応サイト一覧（2026年7月）"
-description: "URLAIはもう「持っているだけ」のトークンではありません。Kurageブログ、Kurage Architect、Kurage Montageなど、URLAIがもらえる場所・使える場所を一覧で紹介します。"
+description: "URLAIはもう「持っているだけ」のトークンではありません。Kurageブログ、Kurage Architect、Kurage Montage、Kurage GEOなど、URLAIがもらえる場所・使える場所を一覧で紹介します。"
 date: 2026-07-29
 layout: default
 permalink: /blog/2026-07-29-urlai-where-to-use.html
 ---
 
-URLAIトークンに、初めての「使い道」が実装されました。もう「持っているだけ」のトークンではありません。この記事では、URLAIが**もらえる場所・使える場所・これから使えるようになる場所**を一覧で紹介します（2026年8月2日更新）。
+URLAIトークンに、初めての「使い道」が実装されました。もう「持っているだけ」のトークンではありません。この記事では、URLAIが**もらえる場所・使える場所・これから使えるようになる場所**を一覧で紹介します（2026年8月3日更新）。
 
 ## ✅ いま使える
 
@@ -39,6 +39,15 @@ X投稿、YouTube、ブログ記事、PDFのURLを貼ると、内容を読み取
 - **2本目以降**: 1本 500円 または **50,000 URLAI**
 
 URLAIはBaseチェーンの指定受取先へ送金します。サービスが未使用の受領額をオンチェーンで確認し、動画生成クレジットとして反映します。
+
+### [Kurage GEO](https://kurage.exbridge.jp/kgeo.php) — AI検索対応(GEO)を日本語で診断
+
+あなたのサイトがChatGPTやAI検索に理解・引用されやすいかを診断するワークスペースです。GEO技術監査（robots.txt / llms.txt / 構造化データなど）、日本語AEO採点、対象ページを根拠にしたLLM回答シミュレーションを提供します。Xの共通ログイン後、最初の1回は無料で試せます。
+
+- **1回目**: 無料
+- **2回目以降**: 1診断 200円 または **20,000 URLAI**
+
+支払いはPayPalまたはBaseチェーンでのURLAI送金。オンチェーンで自動確認し、成功した診断だけクレジットを消費します。サービス紹介は [kgeo.exbridge.jp](https://kgeo.exbridge.jp/kgeo.html) へ。
 
 ## 🎁 もらえる
 
