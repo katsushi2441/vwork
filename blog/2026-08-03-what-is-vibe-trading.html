@@ -1,0 +1,80 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>バイブトレーディングとは何か？ AIとの対話を、検証可能な取引戦略に変える方法 | VWork バイブコーディングフレームワーク</title><meta name="description" content="バイブトレーディングは、売買アイデアを自然な言葉でAIに伝え、コード化・バックテスト・ペーパートレード・改善を繰り返す実践方法です。研究開発中のkfreqai、kfreqaihl、kfxaiと関連書籍を、誤解しやすい点も含めて解説します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-03-what-is-vibe-trading.html"><meta property="og:type" content="article"><meta property="og:title" content="バイブトレーディングとは何か？ AIとの対話を、検証可能な取引戦略に変える方法"><meta property="og:description" content="バイブトレーディングは、売買アイデアを自然な言葉でAIに伝え、コード化・バックテスト・ペーパートレード・改善を繰り返す実践方法です。研究開発中のkfreqai、kfreqaihl、kfxaiと関連書籍を、誤解しやすい点も含めて解説します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-03-what-is-vibe-trading.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="バイブトレーディングとは何か？ AIとの対話を、検証可能な取引戦略に変える方法"><meta name="twitter:description" content="バイブトレーディングは、売買アイデアを自然な言葉でAIに伝え、コード化・バックテスト・ペーパートレード・改善を繰り返す実践方法です。研究開発中のkfreqai、kfreqaihl、kfxaiと関連書籍を、誤解しやすい点も含めて解説します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "バイブトレーディングとは何か？ AIとの対話を、検証可能な取引戦略に変える方法", "description": "バイブトレーディングは、売買アイデアを自然な言葉でAIに伝え、コード化・バックテスト・ペーパートレード・改善を繰り返す実践方法です。研究開発中のkfreqai、kfreqaihl、kfxaiと関連書籍を、誤解しやすい点も含めて解説します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-03-what-is-vibe-trading.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-03", "dateModified": "2026-08-03", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><p>「バイブトレーディング」と聞くと、雰囲気や直感だけで売買することのように見えるかもしれません。しかし、ここでいうバイブトレーディングは正反対です。</p>
+<p><strong>取引戦略のアイデアを自然な言葉でAIに伝え、検証可能なコードや設定に変え、バックテストとペーパートレードの数字を見ながら育てていく方法</strong>を、私たちはバイブトレーディングと呼んでいます。</p>
+<p>AIに利益を約束させる手法ではありません。人間が仮説とリスクの責任を持ち、AIは実装・分析・改善を支援し、採用するかどうかは実測結果で決めます。</p>
+<h2>バイブコーディングを取引戦略へ広げる</h2>
+<p>バイブコーディングでは、人間が「何を作りたいか」を言葉で伝え、AIと対話しながらシステムを作ります。バイブトレーディングは、その進め方を売買戦略の研究と運用へ広げたものです。</p>
+<p>例えば、次のような会話から始めます。</p>
+<blockquote>
+<p>東京時間のレンジを、ロンドン時間に上抜けたら買う戦略を作って。損切りと利確を固定し、過去データで検証して。</p>
+</blockquote>
+<p>AIは意図をコードや設定値に落とします。ただし、そこで完成ではありません。未来のデータを誤って参照していないか、手数料やスプレッドを含めても成立するか、期間や銘柄を変えても同じ傾向が残るかを確かめます。</p>
+<p>基本のサイクルは次の5段階です。</p>
+<ol>
+<li><strong>仮説を言葉にする</strong> — どの市場で、何を根拠に、いつ売買するかをAIへ伝える</li>
+<li><strong>検証可能な形へ変える</strong> — AIが戦略コード、設定値、テスト条件を作る</li>
+<li><strong>過去データで測る</strong> — バックテストで損益、勝率、最大ドローダウン、取引回数を確認する</li>
+<li><strong>仮想売買で現実に近づける</strong> — ペーパートレードで価格取得、注文、約定、停止条件、監視まで通す</li>
+<li><strong>ログをAIと読み直す</strong> — バグと戦略の弱点を分け、変更前後を同じ条件で比較する</li>
+</ol>
+<p>大切なのは、AIの回答ではなく、<strong>再現できるコード・ログ・取引履歴を残すこと</strong>です。「AIが良いと言ったから採用する」のではなく、「測った結果が残ったから、次の検証へ進める」という順序にします。</p>
+<h2>従来の自動売買と何が違うのか</h2>
+<p>従来のシステムトレードでも、仮説、実装、バックテスト、運用という工程はありました。違いは、AIとの自然言語の対話が工程の接着剤になることです。</p>
+<ul>
+<li>プログラムを書けない人でも、戦略の意図を言葉で伝えられる</li>
+<li>ログや損益表をAIへ渡し、失敗原因の候補を整理できる</li>
+<li>複数の条件やパラメータを比較する検証コードを短時間で作れる</li>
+<li>なぜその変更をしたかを、コードと文章の両方で残せる</li>
+</ul>
+<p>一方で、注文数量、最大損失、ストップ、同時保有数などの安全装置まで、その場のAI判断に任せるべきではありません。判断を行う「頭脳」と、注文・資金・固定リスク制限を扱う「体」を分離することが重要です。</p>
+<h2>バイブトレーディングを研究する3つのシステム</h2>
+<p>Kurageプロジェクトでは、対象市場と実行基盤が異なる3つのシステムを動かしながら、バイブトレーディングを研究・開発しています。現在公開している数字にはペーパートレードやテストネットの結果が含まれ、実資金の運用成績ではありません。</p>
+<h3>kfreqai — 暗号資産で「負け方」まで研究する</h3>
+<p><a href="https://kfreqai.exbridge.jp/kfreqai.html">kfreqai</a>は、Freqtrade／FreqAIとLightGBMを基盤にした暗号資産のペーパートレードシステムです。予測モデルだけでなく、相場環境の判定、リスク制御、終了した取引のレビュー、戦略仮説のバックテストまでを一つの改善ループにしています。</p>
+<p>特徴は、勝った結果だけを見せないことです。全取引、失敗、変更の経緯を<a href="https://kurage.exbridge.jp/kfreqai.php?view=summary">公開ダッシュボード</a>と<a href="https://kurage.exbridge.jp/blog/">Kurageトレードブログ</a>で確認できます。「損失の原因はモデルか、地合いか、実装ミスか」をログから切り分ける、バイブトレーディングの研究母体です。<a href="https://github.com/katsushi2441/kfreqai">ソースコードもGitHubで公開</a>しています。</p>
+<h3>kfreqaihl — 会話と数値調整で戦略を試すHyperliquid版</h3>
+<p><a href="https://kurage.exbridge.jp/kfreqaihl.php">kfreqaihl</a>は、kfreqaiの共通戦略コアをHyperliquidへ展開した版です。暗号資産はtestnet、FX・商品・指数は実勢価格を用いたペーパートレードで先行体験できます。</p>
+<p>戦略プリセットを選ぶだけでなく、画面から数値を調整し、保存した内容を次の取引ループへ反映できます。暗号資産のtestnetでは、出金権限を持たないAgent Walletへ取引権限だけを委任する非カストディ方式を採用しています。戦略を対話と設定変更で試し、結果を同じ画面で追うという、利用者向けのバイブトレーディング体験を検証しています。</p>
+<h3>kfxai — 「AI予測を捨てる」判断も研究成果にする</h3>
+<p><a href="https://kfxai.exbridge.jp/kfxai.html">kfxai</a>は、OANDAデモ環境で動くFXペーパートレードシステムです。機械学習による方向予測をwalk-forward方式で検証し、十分な優位性を確認できなかったため、実行戦略から外しました。現在は、複数の頑健性テストを通過した円ペアの東京レンジ／ロンドンブレイクアウト戦略を検証しています。</p>
+<p>これはバイブトレーディングの重要な例です。AIに作らせたモデルへ執着するのではなく、数字が弱ければ捨てます。<a href="https://kurage.exbridge.jp/kfxai.php">ライブダッシュボード</a>では、保有状況、確定・含み損益、取引サイクルを公開しています。<a href="https://github.com/katsushi2441/kfxai">GitHub</a>には、取引本体とバックテスト基盤を公開しています。</p>
+<h2>3つを並べる理由</h2>
+<p>一つの市場、一つのモデル、一つの好調期間だけでは、戦略が本当に有効なのか、それとも偶然なのかを見分けにくくなります。</p>
+<ul>
+<li><strong>kfreqai</strong>で、暗号資産の多数銘柄と機械学習モデルを検証する</li>
+<li><strong>kfreqaihl</strong>で、取引所や資産クラスをまたいだ共通戦略と操作体験を検証する</li>
+<li><strong>kfxai</strong>で、FXの市場構造とルールベース戦略をwalk-forward検証する</li>
+</ul>
+<p>この違いを残したまま、仮説、実装、検証、運用、反省という共通サイクルを回します。バイブトレーディングは特定のAIモデル名ではなく、<strong>AIと一緒に戦略を作り、証拠で残す開発・運用方法</strong>だからです。</p>
+<h2>関連書籍『AIと作る自動取引ボット入門』</h2>
+<p><a href="https://www.amazon.co.jp/dp/B0HC27BLHG"><img alt="『AIと作る自動取引ボット入門』表紙" src="https://images-na.ssl-images-amazon.com/images/P/B0HC27BLHG.09.LZZZZZZZ.jpg" /></a></p>
+<p><strong><a href="https://www.amazon.co.jp/dp/B0HC27BLHG">『AIと作る自動取引ボット入門：バイブコーディング×バイブトレーディングで暗号資産・FX戦略を育てる』</a></strong>（小嶋 篤 著）は、完成済みの売買ツールを配る本ではありません。</p>
+<p>Amazonの商品説明にあるとおり、VPSの契約から始め、Codex CLIと日本語で相談しながらNOFX、kfreqai、kcbrainを組み上げ、自然な言葉の売買アイデアをバックテストとPaper取引で検証・改善するための実践入門書です。ログ監視、Git管理、バックアップ、実資金へ移る前の判断基準まで含め、序章と全49章で構成されています。</p>
+<p>この記事で説明した「自然な言葉を、検証できる戦略へ変える」工程を、自分の環境で最初から試したい人向けの一冊です。</p>
+<h2>まとめ</h2>
+<p>バイブトレーディングは、雰囲気で売買することではありません。</p>
+<p><strong>人間の仮説 → AIによる実装支援 → バックテスト → ペーパートレード → ログを使った改善</strong>を繰り返し、取引戦略を検証可能なシステムとして育てる方法です。</p>
+<p>AIは作業の速度と試せる仮説の数を増やします。しかし、利益を保証せず、未来も知りません。最終判断、資金管理、リスクの責任は人間に残ります。まずは実資金を使わない環境で、AIの説明ではなく、コードと数字とログを確かめることから始めてください。</p>
+<p>※本記事は技術開発と検証方法の紹介であり、投資助言ではありません。ペーパートレードや過去データの成績は、将来の成果を保証しません。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
