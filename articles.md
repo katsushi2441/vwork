@@ -9,6 +9,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Kurage GEOの技術設計：GEO Optimizerを監査エンジンに、日本語AEO採点とグラウンデッドLLM評価を重ねる](2026-08-03-kgeo-geo-audit-workspace.html)
 - [GoogleのAI機能撤回とDeepSeek V4 Flashの躍進：Simon Willisonが展望するオープンウェイトの革命 08-01](2026-08-01-ai-news-2.html)
 - [DeepSeek V4 Flashの衝撃的な性能と、CircleやGoogleが示すAI・Web3の進化 08-01](2026-08-01-ai-news.html)
 - [Theで読む：GPT-5.6の進化とDeepSeek、Anthropicが示すAIインフラとセキュリティの最前線 07-31](2026-07-31-ai-news-4.html)
