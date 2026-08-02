@@ -56,6 +56,7 @@
           "https://x.com/xb_bittensor",
           "https://www.youtube.com/@xb-bittensor"
         ],
+        "areaServed": { "@type": "Country", "name": "日本" },
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "customer support",
@@ -83,11 +84,35 @@
         "@type": "WebSite",
         "@id": {{ site.url | append: site.baseurl | append: '/#website' | jsonify }},
         "name": {{ site.title | jsonify }},
-        "description": {{ site.description | jsonify }},
+        {% comment %} 説明文はページのmeta descriptionと揃える（GEO診断のschema_desc_matches_meta対策） {% endcomment %}
+        "description": {{ seo_description | jsonify }},
         "url": {{ site.url | append: site.baseurl | jsonify }},
         "inLanguage": "ja",
         "dateModified": "{{ last_modified }}",
         "publisher": { "@id": {{ org_id | jsonify }} }
+      }
+      {% endif %}
+      {% if page.list_recent_posts %}
+      {% assign recent = site.pages | where_exp: "p", "p.date" | sort: "date" | reverse %}
+      ,{
+        "@type": "Blog",
+        "name": {{ seo_title | jsonify }},
+        "url": {{ seo_url | jsonify }},
+        "inLanguage": "ja",
+        "publisher": { "@id": {{ org_id | jsonify }} },
+        "blogPost": [
+          {% for p in recent limit: 10 %}
+          {
+            "@type": "BlogPosting",
+            "headline": {{ p.title | jsonify }},
+            "url": {{ p.url | absolute_url | jsonify }},
+            "datePublished": "{{ p.date | date_to_xmlschema }}",
+            "dateModified": "{{ p.date | date_to_xmlschema }}",
+            "author": { "@id": {{ org_id | jsonify }} },
+            "publisher": { "@id": {{ org_id | jsonify }} }
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
       }
       {% endif %}
       {% if page.faq %}
@@ -170,7 +195,7 @@
       <strong>VWork バイブコーディングフレームワーク</strong> — 運営: <a href="https://exbridge.jp/">株式会社エクスブリッジ</a>（EXBRIDGE, Inc.）
     </p>
     <p>
-      <a href="https://exbridge.jp/">運営会社について</a> ・
+      <a href="https://exbridge.jp/company">運営会社について（会社概要）</a> ・
       <a href="https://exbridge.jp/contact.php">お問い合わせ</a> ・
       <a href="https://github.com/katsushi2441/vwork">GitHub</a> ・
       <a href="{{ '/feed.xml' | relative_url }}">RSS</a> ・

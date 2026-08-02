@@ -1,6 +1,7 @@
 ---
 title: VWork Blog
 description: VWork Blogは、バイブコーディングとバイブトレーディングを企業内に導入するための考え方・実践知・営業導入で得た気づきを、実際に運用しているシステムの記録に基づいて公開するブログです。
+list_recent_posts: true
 faq:
   - q: VWorkは誰向けのフレームワークですか？
     a: 社内にエンジニアが少ない、あるいはいない状態でシステムを内製化したい企業向けです。手入力業務の自動化やホームページの内製化など、小さく始められる範囲から扱っています。
@@ -42,7 +43,28 @@ faq:
 
 ### 運営元はどこですか？
 
-株式会社エクスブリッジ（EXBRIDGE, Inc.）です。会社情報は [exbridge.jp](https://exbridge.jp/)、ご連絡は [お問い合わせフォーム](https://exbridge.jp/contact.php) からお願いします。
+株式会社エクスブリッジ（EXBRIDGE, Inc.）です。会社情報は [会社概要](https://exbridge.jp/company)、ご連絡は [お問い合わせフォーム](https://exbridge.jp/contact.php) からお願いします。
+
+## この記事で使う用語の定義
+
+**VWorkとは、社内にエンジニアが少ない企業がAIを使ってシステムを内製化するための作業基盤と実践知をまとめたフレームワークを指します。** ソースコードは [GitHub](https://github.com/katsushi2441/vwork) で公開しています。
+
+**GEOとは、生成AIやAI検索が内容を理解・引用しやすいように、サイトの技術構成と情報表現を整える取り組みを指します。** Generative Engine Optimizationの略です。
+
+**AEOとは、利用者の質問に対してページが直接答えられる状態を目指す最適化を指します。** Answer Engine Optimizationの略で、結論を先に書く・定義文を置く・質問を見出しにする、といった書き方が中心になります。
+
+**x402とは、HTTPステータス「402 Payment Required」を使い、AIエージェントがAPIを1回ずつ従量課金で購入できるようにする決済の仕組みを指します。**
+
+## 根拠と参照元
+
+このブログの記述は、次の一次情報に基づいています。
+
+- **稼働中システムの実測値**: 暗号資産の [kfreqai ダッシュボード](https://kurage.exbridge.jp/kfreqai.php)、FXの [kfxai ダッシュボード](https://kurage.exbridge.jp/kfxai.php)（いずれもdry-run／ペーパートレードの数値。実資金は動かしていません）
+- **GEO診断の結果**: 本ブログ自身を [Kurage GEO](https://kgeo.exbridge.jp/kgeo.html) で監査した記録。2026年8月3日時点の再診断で、総合スコアは29点から改善しています（診断ツールの採点基準に基づく値です）
+- **ソースコード**: [github.com/katsushi2441/vwork](https://github.com/katsushi2441/vwork) ほか、各記事で紹介しているリポジトリ
+- **検証済みの取引戦略**: kfxaiでは方向予測モデルを約1万取引のwalk-forward検証にかけ、優位性が確認できなかったため棄却しました（詳細は該当記事に記載）
+
+数値や比較を引用される場合は、更新日（このページ下部に記載）とあわせてご確認ください。将来の成果を保証するものではなく、投資助言でもありません。
 
 ## 記事一覧
 
