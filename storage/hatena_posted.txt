@@ -293,3 +293,4 @@ url2pub-i18n-hatena-summary
 2026-08-01-ai-news
 2026-08-01-ai-news-2
 2026-08-03-kgeo-geo-audit-workspace
+2026-08-03-kgeo-exbridge-geo-improvement
