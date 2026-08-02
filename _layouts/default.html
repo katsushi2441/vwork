@@ -9,8 +9,11 @@
   {% assign seo_url = page.url | absolute_url %}
   <title>{% if page.title %}{{ seo_title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ seo_description | escape }}">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="canonical" href="{{ seo_url }}">
+  <link rel="alternate" hreflang="ja" href="{{ seo_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ seo_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
   <meta property="og:title" content="{{ seo_title | escape }}">
   <meta property="og:description" content="{{ seo_description | escape }}">
@@ -24,33 +27,86 @@
   <meta name="twitter:title" content="{{ seo_title | escape }}">
   <meta name="twitter:description" content="{{ seo_description | escape }}">
   <meta name="twitter:image" content="{{ seo_image }}">
-  {% if page.date %}
+  {% comment %}
+    発行元(Organization)は全ページ共通で1つだけ定義し、記事/サイトからは@idで参照する。
+    kgeoのGEO診断で schema.has_organization / brand_entity の欠落として指摘された箇所。
+  {% endcomment %}
+  {% assign org_id = site.url | append: site.baseurl | append: '/#organization' %}
+  {% assign last_modified = site.time | date_to_xmlschema %}
+  {% if page.date %}{% assign last_modified = page.date | date_to_xmlschema %}{% endif %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": {{ seo_title | jsonify }},
-    "description": {{ seo_description | jsonify }},
-    "url": {{ seo_url | jsonify }},
-    "image": {{ seo_image | jsonify }},
-    "datePublished": "{{ page.date | date_to_xmlschema }}",
-    "dateModified": "{{ page.date | date_to_xmlschema }}",
-    "author": {"@type": "Organization", "name": "{{ site.author }}"},
-    "publisher": {"@type": "Organization", "name": "{{ site.author }}"}
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": {{ org_id | jsonify }},
+        "name": {{ site.author | jsonify }},
+        "alternateName": "EXBRIDGE, Inc.",
+        "url": "https://exbridge.jp/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ site.seo_image | jsonify }},
+          "width": 1200,
+          "height": 630
+        },
+        "sameAs": [
+          "https://exbridge.jp/",
+          "https://github.com/katsushi2441",
+          "https://x.com/xb_bittensor",
+          "https://www.youtube.com/@xb-bittensor"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "url": "https://exbridge.jp/contact.php",
+          "availableLanguage": ["ja"]
+        }
+      },
+      {% if page.date %}
+      {
+        "@type": "Article",
+        "headline": {{ seo_title | jsonify }},
+        "description": {{ seo_description | jsonify }},
+        "url": {{ seo_url | jsonify }},
+        "image": {{ seo_image | jsonify }},
+        "inLanguage": "ja",
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "dateModified": "{{ last_modified }}",
+        "author": { "@id": {{ org_id | jsonify }} },
+        "publisher": { "@id": {{ org_id | jsonify }} },
+        "mainEntityOfPage": {{ seo_url | jsonify }},
+        "isPartOf": { "@id": {{ site.url | append: site.baseurl | append: '/#website' | jsonify }} }
+      }
+      {% else %}
+      {
+        "@type": "WebSite",
+        "@id": {{ site.url | append: site.baseurl | append: '/#website' | jsonify }},
+        "name": {{ site.title | jsonify }},
+        "description": {{ site.description | jsonify }},
+        "url": {{ site.url | append: site.baseurl | jsonify }},
+        "inLanguage": "ja",
+        "dateModified": "{{ last_modified }}",
+        "publisher": { "@id": {{ org_id | jsonify }} }
+      }
+      {% endif %}
+      {% if page.faq %}
+      ,{
+        "@type": "FAQPage",
+        "mainEntity": [
+          {% for qa in page.faq %}
+          {
+            "@type": "Question",
+            "name": {{ qa.q | jsonify }},
+            "acceptedAnswer": { "@type": "Answer", "text": {{ qa.a | jsonify }} }
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      }
+      {% endif %}
+    ]
   }
   </script>
-  {% else %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": {{ site.title | jsonify }},
-    "description": {{ site.description | jsonify }},
-    "url": {{ site.url | append: site.baseurl | jsonify }},
-    "publisher": {"@type": "Organization", "name": "{{ site.author }}"}
-  }
-  </script>
-  {% endif %}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -109,6 +165,18 @@
       {{ content }}
     </article>
   </main>
-  <footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer>
+  <footer>
+    <p>
+      <strong>VWork バイブコーディングフレームワーク</strong> — 運営: <a href="https://exbridge.jp/">株式会社エクスブリッジ</a>（EXBRIDGE, Inc.）
+    </p>
+    <p>
+      <a href="https://exbridge.jp/">運営会社について</a> ・
+      <a href="https://exbridge.jp/contact.php">お問い合わせ</a> ・
+      <a href="https://github.com/katsushi2441/vwork">GitHub</a> ・
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a> ・
+      <a href="{{ '/llms.txt' | relative_url }}">llms.txt</a>
+    </p>
+    <p>最終更新: {{ site.time | date: "%Y年%-m月%-d日" }}（日本時間）</p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,36 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# VWork バイブコーディングフレームワーク
+
+> VWorkは、バイブコーディング（コードをAIに書かせる開発スタイル）を企業内に導入するための作業基盤・実践知・ブログです。運営は株式会社エクスブリッジ（EXBRIDGE, Inc.）。掲載内容は実際に運用しているシステムの記録に基づいています。
+
+このサイトで使う用語の定義:
+
+- **バイブコーディング**とは、コードをAIに書かせ、人間は要件と検証に集中する開発スタイルを指します。
+- **バイブトレーディング**とは、取引戦略のアイデアを日本語でAIに伝えてコードに落とし、バックテストの数字で検証しながら戦略を育てていく運用スタイルを指します。
+
+## 主要ページ
+
+- [VWork Blog]({{ '/blog/' | absolute_url }}): バイブコーディングの企業導入、実践知、営業・導入で得た気づき
+- [AI OSS技術解説]({{ '/articles/' | absolute_url }}): OSS・AIエージェント・自動化の実装寄りの技術解説
+- [VWorkとは]({{ '/' | absolute_url }}): フレームワークの全体像
+
+## よく読まれている記事
+
+{% assign feed_pages = site.pages | where_exp: "p", "p.date" | sort: "date" | reverse %}
+{% for p in feed_pages limit: 15 %}- [{{ p.title }}]({{ p.url | absolute_url }}){% if p.description %}: {{ p.description }}{% endif %}
+{% endfor %}
+
+## 運営元
+
+- 運営会社: 株式会社エクスブリッジ（EXBRIDGE, Inc.） https://exbridge.jp/
+- お問い合わせ: https://exbridge.jp/contact.php
+- ソースコード: https://github.com/katsushi2441/vwork
+- RSS: {{ '/feed.xml' | absolute_url }}
+
+## Optional
+
+- [Kurageプロジェクト](https://kurage.exbridge.jp/): 記事で扱っているAIプロダクト群の稼働サイト
+- [Kurage GEO](https://kgeo.exbridge.jp/kgeo.html): このサイトのGEO診断に使っているツール
