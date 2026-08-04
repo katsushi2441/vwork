@@ -68,6 +68,7 @@ faq:
 
 ## 記事一覧
 
+- [設計書から動くプロトタイプを1営業日で — Kurage バイブプロトタイプ制作サービスを始めました](2026-08-06-vibe-prototype-service.html)
 - [バイブトレーディングとは何か？ AIとの対話を、検証可能な取引戦略に変える方法](2026-08-03-what-is-vibe-trading.html)
 - [Kurage GEOで自社サイトを38点から90点へ改善 — exbridge.jpのGEO・日本語AEO診断記録](2026-08-03-kgeo-exbridge-geo-improvement.html)
 - [バイブコーディングで「バイブトレーディング」— AIに戦略を相談して自動売買を作れるツール総まとめ](2026-07-31-vibe-trading-tools-guide.html)
