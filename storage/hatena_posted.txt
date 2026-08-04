@@ -295,3 +295,4 @@ url2pub-i18n-hatena-summary
 2026-08-03-kgeo-geo-audit-workspace
 2026-08-03-kgeo-exbridge-geo-improvement
 2026-08-03-what-is-vibe-trading
+2026-08-06-vibe-prototype-service
