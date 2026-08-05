@@ -1,0 +1,73 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>自社で実際に使っている注文ページを、そのまま商品にしました — kpaylink | VWork バイブコーディングフレームワーク</title><meta name="description" content="決まった商品・決まった金額の注文ページを、設定ファイル1枚で立ち上げるkpaylinkを公開しました。お客様が注文すると請求書PDFが自動発行され、銀行振込・PayPalで支払えます。ログイン不要・DB不要。実運用中の受注ページの製品化です。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-06-kpaylink-order-page.html"><meta property="og:type" content="article"><meta property="og:title" content="自社で実際に使っている注文ページを、そのまま商品にしました — kpaylink"><meta property="og:description" content="決まった商品・決まった金額の注文ページを、設定ファイル1枚で立ち上げるkpaylinkを公開しました。お客様が注文すると請求書PDFが自動発行され、銀行振込・PayPalで支払えます。ログイン不要・DB不要。実運用中の受注ページの製品化です。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-06-kpaylink-order-page.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="自社で実際に使っている注文ページを、そのまま商品にしました — kpaylink"><meta name="twitter:description" content="決まった商品・決まった金額の注文ページを、設定ファイル1枚で立ち上げるkpaylinkを公開しました。お客様が注文すると請求書PDFが自動発行され、銀行振込・PayPalで支払えます。ログイン不要・DB不要。実運用中の受注ページの製品化です。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "自社で実際に使っている注文ページを、そのまま商品にしました — kpaylink", "description": "決まった商品・決まった金額の注文ページを、設定ファイル1枚で立ち上げるkpaylinkを公開しました。お客様が注文すると請求書PDFが自動発行され、銀行振込・PayPalで支払えます。ログイン不要・DB不要。実運用中の受注ページの製品化です。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-06-kpaylink-order-page.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-06", "dateModified": "2026-08-06", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>自社で実際に使っている注文ページを、そのまま商品にしました — kpaylink</h1><p class="meta">2026-08-06</p><p>今朝、<a href="https://katsushi2441.github.io/vwork/blog/2026-08-06-vibe-prototype-service.html">バイブプロトタイプ制作サービス</a>の記事を公開しました。その注文ページ——お客様が請求先を登録すると請求書PDFが発行され、銀行振込かPayPalで支払える、あのページです。</p>
+<p><strong>あのページそのものを、誰でも使える商品にしました。</strong></p>
+<p><strong><a href="https://github.com/katsushi2441/kpaylink">kpaylink</a></strong> — コードは MIT License で無償公開しています。
+デモも触れます（<a href="https://proto.exbridge.jp/kpaylink/">https://proto.exbridge.jp/kpaylink/</a>・ログイン不要）。</p>
+<h2>何ができるか</h2>
+<p>「価格の決まった商品・サービス」の注文ページを、<strong>設定ファイル1枚</strong>で立ち上げます。</p>
+<pre><code>お客様がデモ・紹介ページを見て発注を決める
+   ↓
+注文ページで請求先を登録（ログイン不要）
+   ↓
+その注文に対して請求書PDFが発行される（番号を自動採番）
+   ↓
+銀行振込 または PayPal（カード可）で支払う
+   ↓
+入金確認後、あなたが商品・サービスを提供する
+</code></pre>
+<p>制作サービス、プロトタイプ開発、スポットコンサル。<strong>1件いくらの決まった商売</strong>なら、そのまま使えます。</p>
+<h2>コードを変える必要がありません</h2>
+<p>商品名・説明・金額・税率・社名・住所・登録番号・振込先・申し込みの流れの文面・確認事項・各リンク・ロゴ——<strong>すべて設定ファイルです。</strong></p>
+<pre><code class="language-php">define('KPAY_PRODUCT_NAME', 'ホームページ制作パック');
+define('KPAY_AMOUNT', 200000);          // 税抜。税額は自動計算
+define('KPAY_BANK', '◯◯銀行 ◯◯支店');
+</code></pre>
+<p>これを書き換えるだけで、自分の商品の注文ページになります。商品が複数あるなら、ディレクトリを分けて設定を変えれば、<strong>同じコードのまま何ページでも</strong>並べられます。</p>
+<p>逆に言うと、<strong>設定するまで振込先はどこにも出ません。</strong>コードに口座を書いていないからです。これは配る側の責任だと考えています。口座が直書きされたコードを配れば、使った人の請求書に他人の口座が載ります。</p>
+<h2>お客様にログインさせない</h2>
+<p>注文ごとに、推測困難なURL（16桁）が発行されます。<strong>そのURLがそのまま注文の控え</strong>です。会員登録もSNSログインも、お客様には求めません。</p>
+<p>支払うために、まずアカウントを作ってください——は通りません。<strong>支払いを止める理由を、こちらから作ってはいけない。</strong>実際に受注ページを運用して身につけた設計です。</p>
+<h2>決済の完了通知を信じない</h2>
+<p>PayPalのボタンはブラウザの中で動くので、「支払いました」という通知は偽造できます。</p>
+<p>kpaylink はPayPalのAPIに直接照会し、<strong>決済の確定・通貨・金額・注文IDの一致</strong>をすべて確かめてから入金として記録します。偽の決済12パターンを弾くテストを同梱しています。secretを設定しない限り、決済ボタン自体を出しません。<strong>確認できない決済は受け付けない</strong>、という方針です。</p>
+<h2>実運用から来た製品です</h2>
+<p>kpaylink は、机上で設計した商品ではありません。<strong>当社が実際にお金を受け取っている受注ページ</strong>を、誰の商品にも差し替えられる形に整えたものです。</p>
+<p>動く土台があって、それを自分で少しずつ変えていく。<a href="https://katsushi2441.github.io/vwork/blog/2026-08-05-kinvoice-foundation.html">kinvoice</a> のときに書いた考えと同じです。今回は「注文を受けてお金をいただく」という、商売のいちばん大事な入口を土台にしました。</p>
+<h2>入手方法</h2>
+<ul>
+<li><strong>コード</strong>: <a href="https://github.com/katsushi2441/kpaylink">GitHub</a>（MIT・無償）</li>
+<li><strong>デモ</strong>: <a href="https://proto.exbridge.jp/kpaylink/">https://proto.exbridge.jp/kpaylink/</a>（ログイン不要・決済は行われません）</li>
+<li><strong>有償パッケージ</strong>: <strong><a href="https://kappstore.exbridge.jp/">Kurage App Store</a></strong> で 55,000円（税込）</li>
+</ul>
+<p>有償版には、AIに渡すだけで設置が進む手順書（CLAUDE.md / AGENTS.md / INSTALL.md）、設計判断の解説、商品差し替え・複数商品展開・管理画面追加の練習問題、そしてAIと仕事を進める作法をまとめた <strong>VWorkフレームワーク</strong>一式を同梱しています。設置の所要は15分ほどです。</p>
+<p>同日公開の姉妹品 <a href="https://katsushi2441.github.io/vwork/blog/2026-08-06-kbilling-invoice-collect.html">kbilling（請求書発行・集金システム）</a>と合わせると、<strong>受注も請求も</strong>この形で揃います。</p>
+<h2>関連書籍『AIと作る自動取引ボット入門』</h2>
+<p><a href="https://www.amazon.co.jp/dp/B0HC27BLHG"><img alt="『AIと作る自動取引ボット入門』表紙" src="https://images-na.ssl-images-amazon.com/images/P/B0HC27BLHG.09.LZZZZZZZ.jpg" /></a></p>
+<p><strong><a href="https://www.amazon.co.jp/dp/B0HC27BLHG">『AIと作る自動取引ボット入門：バイブコーディング×バイブトレーディングで暗号資産・FX戦略を育てる』</a></strong>（小嶋 篤 著・Kindle）は、非エンジニアがAIと対話しながらシステムを組み上げ、運用するまでを、実際の失敗と学びから全49章にまとめた実践書です。</p>
+<p>実運用しているものを、育てられる形で人に渡す。この記事で書いたやり方の原点は、この本に記録した経験にあります。<strong>Kindle Unlimitedなら追加料金なしで読み放題</strong>です。</p>
+<h2>まとめ</h2>
+<p>商売の入口は、注文を受けてお金をいただく仕組みです。そこを外注すると、変えたいときに動けなくなります。</p>
+<p><strong>自分で持てる大きさの、実運用済みの土台。</strong>まずはデモを触ってみてください。</p>
+<p><a href="https://proto.exbridge.jp/kpaylink/">https://proto.exbridge.jp/kpaylink/</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
