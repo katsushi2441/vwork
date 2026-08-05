@@ -1,0 +1,103 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>バイブプロトタイピングとは何か？ 設計書から、動くものを1営業日で | VWork バイブコーディングフレームワーク</title><meta name="description" content="バイブプロトタイピングは、エンジニアが設計したアーキテクチャの上に、AIとの対話で実装を進めてプロトタイプを短期間で立ち上げる方法です。バイブコーディング、バイブトレーディングに続く3つめの実践として、なぜ土台の設計だけは人がやるのか、なぜ触ってから発注するのかを説明します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-05-what-is-vibe-prototyping.html"><meta property="og:type" content="article"><meta property="og:title" content="バイブプロトタイピングとは何か？ 設計書から、動くものを1営業日で"><meta property="og:description" content="バイブプロトタイピングは、エンジニアが設計したアーキテクチャの上に、AIとの対話で実装を進めてプロトタイプを短期間で立ち上げる方法です。バイブコーディング、バイブトレーディングに続く3つめの実践として、なぜ土台の設計だけは人がやるのか、なぜ触ってから発注するのかを説明します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-05-what-is-vibe-prototyping.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="バイブプロトタイピングとは何か？ 設計書から、動くものを1営業日で"><meta name="twitter:description" content="バイブプロトタイピングは、エンジニアが設計したアーキテクチャの上に、AIとの対話で実装を進めてプロトタイプを短期間で立ち上げる方法です。バイブコーディング、バイブトレーディングに続く3つめの実践として、なぜ土台の設計だけは人がやるのか、なぜ触ってから発注するのかを説明します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "バイブプロトタイピングとは何か？ 設計書から、動くものを1営業日で", "description": "バイブプロトタイピングは、エンジニアが設計したアーキテクチャの上に、AIとの対話で実装を進めてプロトタイプを短期間で立ち上げる方法です。バイブコーディング、バイブトレーディングに続く3つめの実践として、なぜ土台の設計だけは人がやるのか、なぜ触ってから発注するのかを説明します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-05-what-is-vibe-prototyping.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-05", "dateModified": "2026-08-05", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><p>「バイブプロトタイピング」と聞くと、雰囲気で適当に作ることのように見えるかもしれません。ここでいうバイブプロトタイピングは、その逆です。</p>
+<p><strong>設計書という土台を先に固め、その上でAIとの対話によって実装を一気に進め、動くものを触りながら要件を確かめていく方法</strong>を、私たちはバイブプロトタイピングと呼んでいます。</p>
+<p>バイブコーディング、バイブトレーディングに続く、エクスブリッジの3つめの実践です。</p>
+<h2>何が問題だったのか</h2>
+<p>システム開発の相談で、いちばんよく聞く言葉があります。</p>
+<blockquote>
+<p>「要件はまとまった。でも、これで本当に業務が回るのか、動かしてみないと分からない」</p>
+</blockquote>
+<p>そのとおりです。仕様書を100ページ読んでも、画面を10秒触ったときに分かることには勝てません。にもかかわらず、従来はこの確認のために数百万円と数か月が必要でした。動くものを見た時点で「思っていたのと違う」と気づいても、もう引き返せない。</p>
+<p>手戻りが一番高くつくのは、作り込んだ後です。</p>
+<h2>バイブコーディングだけでは足りない</h2>
+<p>では、AIに全部書かせればいいのか。実際にやってみると、そう単純ではありません。</p>
+<p>AIに一から書かせれば、<strong>動くものはできます</strong>。ただし、<strong>あとから手が入れられる作りになるとは限りません。</strong></p>
+<ul>
+<li>データの持ち方が場当たりで、項目を1つ増やすだけで複数箇所が壊れる</li>
+<li>画面と処理が絡まっていて、片方だけ差し替えられない</li>
+<li>同じ処理が3箇所に散らばっていて、直したつもりが直っていない</li>
+</ul>
+<p>こうなると、次の一手で詰まります。プロトタイプとしては動いているのに、育てられない。これは「AIが悪い」のではなく、<strong>土台の設計を誰もやっていない</strong>という状態です。</p>
+<h2>バイブプロトタイピングの3つの原則</h2>
+<h3>1. 土台の設計だけは人がやる</h3>
+<p>データ構造とアーキテクチャは、エンジニアが決めます。何をどう持つか、どこで境界を切るか。ここは判断であって、生成ではありません。</p>
+<p>その上で、実装をAIとの対話で進めます。<strong>設計された土台の上でなら、AIコーディングは的を外しにくくなります。</strong>指示の解釈がぶれる余地が減るからです。</p>
+<p>これは納品後にも効きます。お客様がご自身でバイブコーディングを続けるとき、土台があるかないかで結果が変わります。</p>
+<h3>2. 触ってから決める</h3>
+<p>先に費用を払って、あとから「違った」と気づく順番をやめます。</p>
+<p>デモ環境を先に用意し、実際に触っていただいてから発注を決めていただく。<strong>「これは違う」と早く分かること自体が価値</strong>です。10万円で違いが分かるなら、それは失敗ではありません。</p>
+<h3>3. 公開できる範囲で作る</h3>
+<p>私たちは、生成された設計書もプロトタイプのコードも、<strong>オープンソースと同じ扱い</strong>にしています。納品コードは MIT License で提供し、お客様は商用利用・再販・改変・再配布を自由に行えます。当社も同じものを利用します。</p>
+<p>この形にしている以上、<strong>秘匿しておきたい独自のアイデアは、この進め方には向きません。</strong>その場合は秘密保持契約を結んだうえでの提供を、有償のオプションとして承っています。速さと引き換えに何を差し出しているのかは、隠さず書いておきます。</p>
+<h2>「他社に発注するため」に使ってもいい</h2>
+<p>このやり方は、本開発を私たちに発注していただくことを前提にしていません。</p>
+<p>動くプロトタイプがあると、システム会社との認識のズレが大幅に減ります。「この画面のこの動き」と実物で話せるからです。見積もりの根拠にもなり、結果として<strong>他社への発注も含めた全体のコストが下がります</strong>。</p>
+<p>ソースはお客様のGitHubに入るので、どこにでも引き継げます。社内の稟議や経営層への説明でも、動く画面は資料より伝わります。</p>
+<h2>3つの「バイブ」の関係</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>対象</th>
+<th>人がやること</th>
+<th>AIがやること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>バイブコーディング</td>
+<td>ソフトウェア全般</td>
+<td>何を作るかの判断</td>
+<td>実装</td>
+</tr>
+<tr>
+<td>バイブトレーディング</td>
+<td>取引戦略</td>
+<td>仮説と資金管理の判断</td>
+<td>コード化と検証</td>
+</tr>
+<tr>
+<td><strong>バイブプロトタイピング</strong></td>
+<td><strong>システムの土台</strong></td>
+<td><strong>アーキテクチャの設計</strong></td>
+<td><strong>実装</strong></td>
+</tr>
+</tbody>
+</table>
+<p>共通しているのは、<strong>AIに任せる範囲と、人が持つ判断を分けている</strong>ことです。全部任せると速いが育たない。全部自分でやると遅い。その境界をどこに引くかが、それぞれの実践の中身です。</p>
+<h2>関連書籍『AIと作る自動取引ボット入門』</h2>
+<p><a href="https://www.amazon.co.jp/dp/B0HC27BLHG"><img alt="『AIと作る自動取引ボット入門』表紙" src="https://images-na.ssl-images-amazon.com/images/P/B0HC27BLHG.09.LZZZZZZZ.jpg" /></a></p>
+<p><strong><a href="https://www.amazon.co.jp/dp/B0HC27BLHG">『AIと作る自動取引ボット入門：バイブコーディング×バイブトレーディングで暗号資産・FX戦略を育てる』</a></strong>（小嶋 篤 著・Kindle）は、非エンジニアがAIと対話しながらシステムを組み上げ、運用するまでを、実際の失敗と学びから全49章にまとめた実践書です。</p>
+<p>VPSの契約とAI環境の導入から、構築、バックテスト、過学習の防ぎ方、運用監視まで「画面通りに進めば動く」粒度で書いています。<strong>Kindle Unlimitedなら追加料金なしで読み放題</strong>です。</p>
+<p>この記事で書いた「土台の設計だけは人がやる」という結論は、この本に記録した実運用での経験そのものから来ています。ご自身で手を動かしたい方は、こちらから始めてください。</p>
+<h2>サービスとして試す</h2>
+<p>バイブプロトタイピングを、そのままサービスにしました。</p>
+<p><strong><a href="https://kurage.exbridge.jp/vibe-prototype.html">Kurage バイブプロトタイプ制作サービス</a></strong> は、設計書をお預かりして最短1営業日（繁忙期・長期休暇でなければ1週間以内）でデモを構築し、触っていただいてから発注いただく形です。1回10万円（税別）、納品はお客様のGitHubリポジトリです。</p>
+<p>設計書は <a href="https://kurage.exbridge.jp/karchitect.php">Kurage Architect</a> でAIと対話しながら作れます。すでにお持ちの設計書でも、記述レベルが同程度であれば承ります。</p>
+<h2>まとめ</h2>
+<p>バイブプロトタイピングは、雰囲気で作ることではありません。</p>
+<p><strong>人が土台を設計する → AIが実装する → 動かして確かめる → 手元で育てられる形で残す</strong>。この順番を守ることが中身です。</p>
+<p>AIは実装の速度を上げます。しかし、何をどう持つかという判断は代わってくれません。そこを人が引き受けるからこそ、出来上がったものが「動くけれど育たないもの」にならずに済みます。</p>
+<p>まずは、動くものを1つ手に入れるところから始めてください。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
