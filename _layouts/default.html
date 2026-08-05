@@ -187,6 +187,13 @@
   </header>
   <main>
     <article>
+      {% comment %}
+        ページ内に見出しが無いとSEO・アクセシビリティの両方で不利になる。
+        <title> だけでなく本文の先頭に h1 を出す（本文側の「# タイトル」は
+        重複するので各mdから外してある）。
+      {% endcomment %}
+      {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+      {% if page.date %}<p class="meta">{{ page.date | date: "%Y年%-m月%-d日" }}</p>{% endif %}
       {{ content }}
     </article>
   </main>

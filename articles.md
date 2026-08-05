@@ -4,7 +4,6 @@ description: Codex、Claude、Ollama、AIエージェント、OSS、自動化、
 permalink: /articles/
 ---
 
-# AI OSS技術解説
 
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。

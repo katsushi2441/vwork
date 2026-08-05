@@ -58,7 +58,7 @@ HTML_TEMPLATE = """\
     .meta {{ margin:-8px 0 22px; color:var(--muted); font-size:13px; }}
     footer {{ max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }}
     @media (max-width:720px) {{ .bar {{ align-items:flex-start; flex-direction:column; }} article {{ padding:22px; }} h1 {{ font-size:27px; }} }}
-</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article>{body}</article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>{title}</h1><p class="meta">{date_label}</p>{body}</article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
 """
 
 
@@ -68,6 +68,21 @@ def git(args, cwd=None):
         print(f"[git error] {r.stderr.strip()}", file=sys.stderr)
         sys.exit(1)
     return r.stdout.strip()
+
+
+def git_commit_if_changed(message, cwd):
+    """差分が無ければコミットを飛ばす。
+
+    既存記事のHTMLを作り直すとき、mdが変わっていないと main 側に差分が出ず、
+    git commit が終了コード1を返してスクリプトごと止まっていた（テンプレート
+    修正の再生成ができない）。
+    """
+    r = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=cwd)
+    if r.returncode == 0:
+        print(f"  差分なし: {cwd} のコミットをスキップ")
+        return False
+    git(["commit", "-m", message], cwd=cwd)
+    return True
 
 
 def find_ssh_sock():
@@ -115,10 +130,13 @@ def make_article_html(fm: dict, body_html: str, article_url: str) -> str:
         "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"},
         "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"},
     }
+    # 本文が「# タイトル」で始まる古い記事は、h1が二重になるので落とす
+    body_html = re.sub(r"^\s*<h1[^>]*>.*?</h1>", "", body_html, count=1, flags=re.S)
     return HTML_TEMPLATE.format(
         title=title,
         description=description,
         url=article_url,
+        date_label=date_str,
         ld_json=json.dumps(ld, ensure_ascii=False),
         body=body_html,
     )
@@ -290,16 +308,16 @@ def main():
 
     # main
     git(["add", "blog/"], cwd=REPO_ROOT)
-    git(["commit", "-m", f"Add blog: {title}"], cwd=REPO_ROOT)
+    if git_commit_if_changed(f"Add blog: {title}", REPO_ROOT):
+        subprocess.run(["git", "push", REMOTE, "main"], cwd=REPO_ROOT, env=env, check=True)
+        print("  main: push完了")
     main_sha = git(["rev-parse", "HEAD"], cwd=REPO_ROOT)
-    subprocess.run(["git", "push", REMOTE, "main"], cwd=REPO_ROOT, env=env, check=True)
-    print("  main: push完了")
 
     # gh-pages
     git(["add", "blog/", "index.html"], cwd=GH_PAGES_DIR)
-    git(["commit", "-m", f"Publish: {title}"], cwd=GH_PAGES_DIR)
-    subprocess.run(["git", "push", REMOTE, "HEAD:gh-pages"], cwd=GH_PAGES_DIR, env=env, check=True)
-    print("  gh-pages: push完了")
+    if git_commit_if_changed(f"Publish: {title}", GH_PAGES_DIR):
+        subprocess.run(["git", "push", REMOTE, "HEAD:gh-pages"], cwd=GH_PAGES_DIR, env=env, check=True)
+        print("  gh-pages: push完了")
 
     print(f"[5/6] GitHub Pages公開確認")
     ensure_pages_workflow(main_sha)
