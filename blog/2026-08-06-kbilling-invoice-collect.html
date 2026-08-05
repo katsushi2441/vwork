@@ -1,0 +1,90 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>請求書を発行して送り、そのまま支払ってもらう — kbilling を公開しました | VWork バイブコーディングフレームワーク</title><meta name="description" content="請求書PDFを発行し、お客様専用URLをメールで送って、銀行振込・PayPalで回収するkbillingを公開しました。明細12行・インボイス対応・値引き行対応。PayPalの入金はサーバー側で裏取りしてから記録します。DB不要・PHPのみ・MIT License。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-06-kbilling-invoice-collect.html"><meta property="og:type" content="article"><meta property="og:title" content="請求書を発行して送り、そのまま支払ってもらう — kbilling を公開しました"><meta property="og:description" content="請求書PDFを発行し、お客様専用URLをメールで送って、銀行振込・PayPalで回収するkbillingを公開しました。明細12行・インボイス対応・値引き行対応。PayPalの入金はサーバー側で裏取りしてから記録します。DB不要・PHPのみ・MIT License。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-06-kbilling-invoice-collect.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="請求書を発行して送り、そのまま支払ってもらう — kbilling を公開しました"><meta name="twitter:description" content="請求書PDFを発行し、お客様専用URLをメールで送って、銀行振込・PayPalで回収するkbillingを公開しました。明細12行・インボイス対応・値引き行対応。PayPalの入金はサーバー側で裏取りしてから記録します。DB不要・PHPのみ・MIT License。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "請求書を発行して送り、そのまま支払ってもらう — kbilling を公開しました", "description": "請求書PDFを発行し、お客様専用URLをメールで送って、銀行振込・PayPalで回収するkbillingを公開しました。明細12行・インボイス対応・値引き行対応。PayPalの入金はサーバー側で裏取りしてから記録します。DB不要・PHPのみ・MIT License。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-06-kbilling-invoice-collect.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-06", "dateModified": "2026-08-06", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>請求書を発行して送り、そのまま支払ってもらう — kbilling を公開しました</h1><p class="meta">2026-08-06</p><p>請求書まわりのシステムを、もう1本公開しました。</p>
+<p><strong><a href="https://github.com/katsushi2441/kbilling">kbilling</a></strong> — 請求書をPDFで発行し、お客様専用のURLをメールで送って、<strong>銀行振込またはPayPal（カード可）で支払ってもらう</strong>システムです。コードは MIT License で無償公開しています。デモも触れます（<a href="https://proto.exbridge.jp/kbilling/">https://proto.exbridge.jp/kbilling/</a>・パスワード <code>demo2026</code>）。</p>
+<p><a href="https://katsushi2441.github.io/vwork/blog/2026-08-05-kinvoice-foundation.html">昨日公開した kinvoice</a> が入金<strong>後</strong>の領収書なら、kbilling は入金<strong>前</strong>の請求と回収。並べると一周つながります。</p>
+<pre><code>kpaylink  注文を受ける（決まった商品・決まった金額）
+kbilling  請求書を送って回収する（案件ごとの明細・金額）
+kinvoice  入金後に領収書を送る
+</code></pre>
+<h2>請求書として、ちゃんとしています</h2>
+<ul>
+<li><strong>明細は最大12行。</strong>数量×単価、値引き行（マイナス単価）も書けます</li>
+<li><strong>消費税は10%・8%・0%。</strong>税率ごとに1回だけ端数処理するので、行ごとの計算で起きる<strong>1円ズレがありません</strong>（999円+999円を行ごとに課税すると198円、正しくは199円。1円ずれた請求書は経理で止まります）</li>
+<li><strong>適格請求書（インボイス）対応。</strong>登録番号は設定したときだけ印字します。架空の番号を書く必要がありません</li>
+<li>一覧では<strong>未入金・期限超過・入金済</strong>が一目で分かります</li>
+</ul>
+<p>お客様の側はメールで届いたURLを開くだけ。<strong>ログイン不要</strong>です。請求書を受け取る取引先に、こちらのアカウントを作らせる運用は成り立ちません。</p>
+<h2>PayPalの入金を「信じない」</h2>
+<p>このシステムでいちばん力を入れた部分です。</p>
+<p>決済ボタンはブラウザの中で動きます。決済が終わると、JavaScriptが「支払いました」とサーバーへ知らせてくる——<strong>この知らせは、開発者ツールから同じリクエストを送るだけで偽造できます。</strong>素直に信じると、1円も払わずに入金済みにできてしまう。</p>
+<p>kbilling はPayPalの Orders API に直接照会し、次の<strong>4つ全部</strong>が揃ったときだけ入金として記録します。</p>
+<table>
+<thead>
+<tr>
+<th>確かめること</th>
+<th>弾ける攻撃</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>決済が確定している（COMPLETED）</td>
+<td>承認だけして確定していない決済</td>
+</tr>
+<tr>
+<td>通貨が JPY</td>
+<td>462,000<strong>ドル</strong>のつもりの462,000<strong>円</strong></td>
+</tr>
+<tr>
+<td>金額が請求額と一致</td>
+<td>1円だけ払って全額分にする</td>
+</tr>
+<tr>
+<td>請求書IDが一致</td>
+<td><strong>他の請求書で本当に払った決済IDの使い回し</strong></td>
+</tr>
+</tbody>
+</table>
+<p>4つ目が要点です。金額と状態だけ見ていると、同じ金額の別の決済が通ります。<strong>偽の決済16パターンを弾くテスト</strong>を同梱しました。</p>
+<p>そして secret を設定しない限り、決済ボタン自体を出しません。照合できない決済は受け付けない、という方針です。</p>
+<h2>口座はコードに書いてありません</h2>
+<p>発行元・住所・登録番号・振込先は、すべて設定ファイルから読みます。設定するまで請求書にも画面にも何も出ません。</p>
+<p>それだけでなく、<strong>ソースに口座らしき文字列が現れるとテストが落ちる</strong>ようにしてあります。「銀行＋支店」「普通＋6桁以上の数字」を検出します。コピー元から持ち込む事故は、動作テストでは気づけないからです。</p>
+<p>——実は、この検査を作っている最中に、<strong>「口座番号を書くな」と教える文書に実物の口座番号を書いていた</strong>のを、この検査自身に止められました。その顛末も教材にそのまま残してあります。</p>
+<h2>入手方法</h2>
+<ul>
+<li><strong>コード</strong>: <a href="https://github.com/katsushi2441/kbilling">GitHub</a>（MIT・無償）</li>
+<li><strong>デモ</strong>: <a href="https://proto.exbridge.jp/kbilling/">https://proto.exbridge.jp/kbilling/</a>（パスワード <code>demo2026</code>・メールは送信されません）</li>
+<li><strong>有償パッケージ</strong>: <strong><a href="https://kappstore.exbridge.jp/">Kurage App Store</a></strong> で 55,000円（税込）</li>
+</ul>
+<p>有償版には、AIに渡すだけで設置が進む手順書（CLAUDE.md / AGENTS.md / INSTALL.md）、実際に踏んだ罠の記録（「拒否できた」と読み違えた話・上の口座番号の話など6本）、見積書へ改造する練習問題、そして <strong>VWorkフレームワーク</strong>一式を同梱しています。</p>
+<p>姉妹品の <a href="https://katsushi2441.github.io/vwork/blog/2026-08-06-kpaylink-order-page.html">kpaylink（注文ページ）</a>も同日公開です。</p>
+<h2>関連書籍『AIと作る自動取引ボット入門』</h2>
+<p><a href="https://www.amazon.co.jp/dp/B0HC27BLHG"><img alt="『AIと作る自動取引ボット入門』表紙" src="https://images-na.ssl-images-amazon.com/images/P/B0HC27BLHG.09.LZZZZZZZ.jpg" /></a></p>
+<p><strong><a href="https://www.amazon.co.jp/dp/B0HC27BLHG">『AIと作る自動取引ボット入門：バイブコーディング×バイブトレーディングで暗号資産・FX戦略を育てる』</a></strong>（小嶋 篤 著・Kindle）は、非エンジニアがAIと対話しながらシステムを組み上げ、運用するまでを、実際の失敗と学びから全49章にまとめた実践書です。</p>
+<p>「決済を信じない」「口座をコードに書かない」——お金が絡むシステムの作法は、この本に記録した自動取引の実運用で身につけたものです。<strong>Kindle Unlimitedなら追加料金なしで読み放題</strong>です。</p>
+<h2>まとめ</h2>
+<p>請求と回収は、面倒だから後回しになり、後回しにするから資金繰りが苦しくなります。</p>
+<p><strong>発行して、送って、支払ってもらうまでを1本で。</strong>まずはデモを触ってみてください。</p>
+<p><a href="https://proto.exbridge.jp/kbilling/">https://proto.exbridge.jp/kbilling/</a>（パスワード <code>demo2026</code>）</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
