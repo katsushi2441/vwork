@@ -73,7 +73,7 @@ SOLを足しただけで **-62.6 → +330.1(Δ+392.7 USDT)**。赤字が黒字�
 検証が2窓で通ったので、本番(dry-run)に採用した。
 
 ```python
-# config.json の変更点
+## config.json の変更点
 "include_corr_pairlist": ["BTC/USDT", "ETH/USDT", "SOL/USDT"]  # SOL追加
 "identifier": "kfreqai-lgbm-v4-corr3"  # 特徴集合が変わるので新identifier必須
 ```

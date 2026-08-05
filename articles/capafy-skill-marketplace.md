@@ -40,7 +40,7 @@ https://capafy.ai/
 Anthropicが提供する`skill-creator`を使うと、SKILL.mdの雛形を自動生成できます。
 
 ```bash
-# skill-creatorをインストールして実行
+## skill-creatorをインストールして実行
 claude /skill-creator
 ```
 

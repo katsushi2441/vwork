@@ -81,15 +81,15 @@ GSCのsearchAnalytics APIは25,000行/リクエストの上限があるため、
 サーバーのアクセスログには、Apache Combined Log形式とsimpletrack独自形式の2種類があります。
 
 ```python
-# Apache Combined Log
+## Apache Combined Log
 LOG_RE = re.compile(
     r'(?P<ip>\S+) \S+ \S+ \[(?P<time>[^\]]+)\] '
     r'"(?P<method>\S+) (?P<path>[^"]*?) (?P<proto>[^"]*)" '
     r'(?P<status>\d{3}) (?P<bytes>\S+) "(?P<referer>[^"]*)" "(?P<ua>[^"]*)"'
 )
 
-# simpletrack形式（パイプ区切り）
-# 2026-01-01 12:00:00|1.2.3.4|https://example.com/path|https://referer.com|UA文字列
+## simpletrack形式（パイプ区切り）
+## 2026-01-01 12:00:00|1.2.3.4|https://example.com/path|https://referer.com|UA文字列
 if "|" in line and line[:4].isdigit():
     parts = line.rstrip("\n").split("|", 4)
 ```
@@ -141,11 +141,11 @@ def expected_ctr(pos: float) -> float:
     if pos <= 10: return 0.025
     return 0.005
 
-# 検索順位10位以内で、期待CTRの50%未満ならタイトル改善候補
+## 検索順位10位以内で、期待CTRの50%未満ならタイトル改善候補
 if entry["pos"] <= 10 and entry["imp"] >= title_min and entry["ctr"] < expected_ctr(entry["pos"]) * 0.5:
     title_fixes.append(...)
 
-# 11〜30位で表示回数があれば、コンテンツ強化候補
+## 11〜30位で表示回数があれば、コンテンツ強化候補
 if 10 < entry["pos"] <= 30 and entry["imp"] >= boost_min:
     boost_queries.append(...)
 ```

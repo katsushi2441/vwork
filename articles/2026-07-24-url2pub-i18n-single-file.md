@@ -102,7 +102,7 @@ UIを英語にしても、**Kurage（=[url2brain](https://github.com/katsushi244
 
 ```python
 _LANGUAGE_NAME = {"ja": "Japanese", "en": "English"}
-# 生成プロンプト内:
+## 生成プロンプト内:
 f"Write in {lang_name}. Tone: {tone}. Ground every claim in the supplied evidence only …"
 ```
 

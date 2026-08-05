@@ -293,10 +293,10 @@ Threadsの投稿完了後にホーム/フィードへ戻る場合があるため
 `ksnsposter` は、デフォルトでは最終投稿ボタンを押さない設計です。
 
 ```bash
-# 下書きまで
+## 下書きまで
 ./scripts/ksnsposter post --platform threads --text-file /tmp/post.txt --headful
 
-# 実際に投稿
+## 実際に投稿
 ./scripts/ksnsposter post --platform threads --text-file /tmp/post.txt --confirm-post --headful
 ```
 

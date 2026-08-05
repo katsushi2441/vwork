@@ -63,7 +63,7 @@ llm = ChatOllama(model="gemma4:12b-it-qat", host="http://127.0.0.1:11434", timeo
 ```python
 await send("Page.enable")
 await send("Page.startScreencast", {"format": "jpeg", "quality": 80, "everyNthFrame": 1})
-# ...受信ループ...
+## ...受信ループ...
 if d.get("method") == "Page.screencastFrame":
     p = d["params"]
     (frames_dir / f"f{n:06d}.jpg").write_bytes(base64.b64decode(p["data"]))
@@ -76,14 +76,14 @@ if d.get("method") == "Page.screencastFrame":
 screencastで録るページと、browser-useが操作するページを一致させる必要があります。やり方はシンプルで、**remote-debugging付きでChromeを起動し、browser-useをそのChromeに `cdp_url` で接続させる**だけです。
 
 ```python
-# 1) Chrome を remote debugging 付きで起動
+## 1) Chrome を remote debugging 付きで起動
 chrome = subprocess.Popen([
     "/usr/bin/google-chrome", "--headless=new",
     "--remote-debugging-port=9224", "--remote-debugging-address=127.0.0.1",
     "--no-sandbox", "--disable-gpu", "about:blank",
 ])
 
-# 2) browser-use は同じChromeに相乗り
+## 2) browser-use は同じChromeに相乗り
 profile = BrowserProfile(cdp_url="http://127.0.0.1:9224", headless=True)
 agent = Agent(task=task, llm=llm, browser_profile=profile)
 ```
@@ -112,7 +112,7 @@ await send("Network.setCookie", {
 screencastのフレームは等間隔では届きません（ページが静止している間はフレームが来ない）。そこで各フレームの実時刻を記録し、ffmpegの **concat demuxer** に `duration` 付きで渡して、実時間に忠実な動画を作ります。libx264は幅・高さが偶数でないと失敗するので、スケールフィルタで偶数化もします。
 
 ```python
-# frames/list.txt : file 'fNNNNNN.jpg' / duration 0.137 ... の繰り返し
+## frames/list.txt : file 'fNNNNNN.jpg' / duration 0.137 ... の繰り返し
 subprocess.run([
     "ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", "frames/list.txt",
     "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2",

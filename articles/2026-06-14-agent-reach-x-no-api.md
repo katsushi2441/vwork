@@ -47,7 +47,7 @@ export TWITTER_CT0=（ct0の値）
 永続化するなら `.env` ファイルに保存して `source` で読み込む：
 
 ```bash
-# .env ファイル（パーミッション600推奨）
+## .env ファイル（パーミッション600推奨）
 TWITTER_AUTH_TOKEN=xxxxxxxxxxxx
 TWITTER_CT0=xxxxxxxxxxxx
 ```
@@ -129,7 +129,7 @@ Claude CodeなどのAIエージェントが `twitter` コマンドを実行で�
 Agent Reachをインストールしておくと、`agent-reach doctor` でX連携の状態確認ができ、SKILL.mdがエージェントのスキルディレクトリに登録される。エージェントは「Xを検索して」と言われたとき自動的に `twitter -c search` を呼ぶようになる。
 
 ```bash
-# Agent Reachのインストール（スキル登録まで行われる）
+## Agent Reachのインストール（スキル登録まで行われる）
 pip install agent-reach
 agent-reach doctor
 ```

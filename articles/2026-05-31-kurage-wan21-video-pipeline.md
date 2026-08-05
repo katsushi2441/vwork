@@ -99,19 +99,19 @@ per_scene = total_dur / num_scenes                  # → 4.83s/scene
 Wan2.1の生成動画（約3秒）をナレーション尺（約5秒）に合わせて引き伸ばす。
 
 ```bash
-# 最終フレームをフリーズして尺を延長
+## 最終フレームをフリーズして尺を延長
 ffmpeg -i scene.mp4 -vf "tpad=stop_mode=clone:stop_duration=2.0" \
        -c:v libx264 extended.mp4
 
-# 連結
+## 連結
 ffmpeg -f concat -safe 0 -i concat.txt -c:v libx264 concat_only.mp4
 
-# ASS字幕を焼き込み（タイトル + ナレーション）
+## ASS字幕を焼き込み（タイトル + ナレーション）
 ffmpeg -i concat_only.mp4 \
        -vf "subtitles='subtitles.ass':fontsdir=/usr/share/fonts/opentype/noto" \
        -c:v libx264 subtitled.mp4
 
-# 音声ミックス
+## 音声ミックス
 ffmpeg -i subtitled.mp4 -i narration.mp3 \
        -c:v copy -c:a aac -shortest output.mp4
 ```

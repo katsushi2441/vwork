@@ -29,7 +29,7 @@ freqtrade は強力ですが **1プロセス1口座**の前提です。50人ぶ�
 50人×10銘柄でも破綻させない肝は、**ローソク足の取得を「銘柄ごとに1回」に畳む**ことです。
 
 ```
-# 1サイクル
+## 1サイクル
 cache = fetch_candles_once_per_coin(universe)   # 50人×10銘柄=500回ではなく、10回
 for tenant in active_tenants:
     indicators = compute(cache, tenant.params)  # pandasなのでミリ秒
