@@ -21,7 +21,7 @@ Node.js:
 ```text
 data/      入力データ。Excel、CSV、URL一覧、サンプルファイル
 src/       スクリプトや小さなWebツール
-output/    生成結果。CSV、Markdown、HTML、ログ
+outputs/   生成結果。CSV、Markdown、HTML、ログ
 docs/      補足資料
 AGENTS.md
 WORK_PROTOCOL.md
