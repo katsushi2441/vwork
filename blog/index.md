@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [領収書をメールで送るシステムを、あえて1,180行で作った理由 — 非エンジニアが育てられる土台として](2026-08-05-kinvoice-foundation.html)
 - [業務システムの「土台」を売る店を作りました — Kurage App Store](2026-08-05-kappstore-open.html)
 - [AIと領収書システムを1日で作って、6回つまずいた記録 — VWork教材パッケージを公開しました](2026-08-05-kinvoice-vwork-learning-package.html)
 - [AIシステムを、あなたの商材に。Kurage 販売代理店・再販パートナーを募集します](2026-08-05-kurage-reseller-program.html)
