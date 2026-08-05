@@ -18,7 +18,7 @@ VWorkは、それらのうち特定プロジェクトに依存しない部分を
 
 必須（AIが毎回参照する）:
 
-1. `AGENTS.md` — AIエージェントが最初に読む共通の入口
+1. `AGENTS.md` / `CLAUDE.md` — AIエージェントが最初に読む共通の入口（**2枚は同じ内容**。Codexは AGENTS.md、Claude Code は CLAUDE.md を自動で読む）
 2. `WORK_PROTOCOL.md` — 目的・成果物・確認・記録の共通フロー
 3. `RULES.md` — 禁止事項、確認が必要な操作、秘密情報の扱い
 4. `VERIFICATION.md` — 「できました」と言う前の確認手順
@@ -28,7 +28,7 @@ VWorkは、それらのうち特定プロジェクトに依存しない部分を
 
 6. `DESIGN.md` — 見た目の品質が価値に直結する案件（HP・LP・UI・資料）
 7. `WORKFLOW.md` — 同じ作業を2回以上頼むようになったら手順を残す
-8. `CLAUDE.md` — Claude Codeを併用するときの差分メモ
+
 
 **テンプレートには実運用で本当に使うものだけを入れてあります。**使わないファイルを無理に埋める必要はありません。
 
@@ -163,8 +163,7 @@ vwork/
 そのためVWorkの `project-template/` には、最初から次の入口を入れます。
 
 - `WORK_PROTOCOL.md`: 目的、実行、検証、記録、完了条件
-- `AGENTS.md`: CodexなどのAIエージェント向けルール
-- `CLAUDE.md`: Claude Code向けルール
+- `AGENTS.md` / `CLAUDE.md`: AIエージェントが最初に読む入口。**Codexは AGENTS.md、Claude Code は CLAUDE.md を自動で読むため、2枚は同じ内容にする**
 
 これにより、どのAIで作業しても「確認せず完了と言わない」「外部送信や本番反映は事前確認する」「実行結果をWORKLOGに残す」という同じ基準で進められます。
 
@@ -191,7 +190,6 @@ project-template:
 - `SERVERS.md`: 環境チェック結果、PC、サーバー、API、`.env`、公開先
 - `DESIGN.md`: 見た目の品質が価値に直結する案件で使う
 - `WORKFLOW.md`: 繰り返す作業の手順
-- `CLAUDE.md`: Claude Code併用時の差分
 
 ## 最初に作りやすいもの
 

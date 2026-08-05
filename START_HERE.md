@@ -53,8 +53,7 @@ cd ../customer-work
 
 - `BUSINESS.md`: 経営課題、目的、期待する効果
 - `WORK_PROTOCOL.md`: AIと人間が共通で守る作業プロトコル
-- `AGENTS.md`: CodexなどのAIエージェントが最初に読むルール
-- `CLAUDE.md`: Claude Code向けの入口
+- `AGENTS.md` / `CLAUDE.md`: AIエージェントが最初に読む入口。**2枚は同じ内容**（Codexは AGENTS.md、Claude Code は CLAUDE.md を自動で読む）
 - `RULES.md`: Codex/Claudeが守る作業ルール
 - `SERVERS.md`: PC、サーバー、API、`.env`、公開先
 - `TASKS.md`: 今やること、次にやること、まだやらないこと
