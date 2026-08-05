@@ -55,7 +55,6 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 - [バイブコーディングとは？非エンジニアがAIで仕事を自動化する新しい方法](2026-06-11-vibe-coding-for-non-engineers.md)
 - [海外の動画を日本語に自動翻訳・吹き替えする：Kurage Voice-Proが変えるコンテンツ活用](2026-06-11-kurage-voice-pro-for-business.md)
 - [スマホからサーバーのAIに指示する：Kurage Agent Deck（kdeck）でできること](2026-06-10-kdeck-smartphone-server-control.md)
-- [kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン](2026-06-10-kgrowth-gsc-accesslog-pipeline.md)
 - [ジョブを時間で動かすのではなく、目標達成まで動かす](2026-06-08-kdeck-goal-based-job-operations.md)
 - [外出先からスマホだけでサーバ障害を復旧できた日](2026-06-06-smartphone-incident-response-kurage-agent-deck.md)
 - [メール処理もバイブコーディングで変えられる](2026-06-04-vibe-mail-order-analysis.md)
