@@ -301,3 +301,5 @@ url2pub-i18n-hatena-summary
 2026-08-05-kinvoice-vwork-learning-package
 2026-08-05-kappstore-open
 2026-08-05-kinvoice-foundation
+2026-08-06-kpaylink-order-page
+2026-08-06-kbilling-invoice-collect
