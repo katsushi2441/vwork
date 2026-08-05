@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [AIシステムを、あなたの商材に。Kurage 販売代理店・再販パートナーを募集します](2026-08-05-kurage-reseller-program.html)
 - [バイブプロトタイピングとは何か？ 設計書から、動くものを1営業日で](2026-08-05-what-is-vibe-prototyping.html)
 - [設計書から動くプロトタイプを1営業日で — Kurage バイブプロトタイプ制作サービスを始めました](2026-08-06-vibe-prototype-service.html)
 - [バイブトレーディングとは何か？ AIとの対話を、検証可能な取引戦略に変える方法](2026-08-03-what-is-vibe-trading.html)
