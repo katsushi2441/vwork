@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [経営者こそ見るべき、AIが毎日作るニュース動画「Horizon-AI生成ニュース動画」](2026-05-29-horizonv-for-business.md)
 - [バイブプロトタイピングとは何か？ 設計書から、動くものを1営業日で](2026-08-05-what-is-vibe-prototyping.md)
 - [設計書から動くプロトタイプを1営業日で — Kurage バイブプロトタイプ制作サービスを始めました](2026-08-06-vibe-prototype-service.md)
 - [バイブトレーディングとは何か？ AIとの対話を、検証可能な取引戦略に変える方法](2026-08-03-what-is-vibe-trading.md)
