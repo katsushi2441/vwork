@@ -1,0 +1,132 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AIと領収書システムを1日で作って、6回つまずいた記録 — VWork教材パッケージを公開しました | VWork バイブコーディングフレームワーク</title><meta name="description" content="領収書をPDFで発行してメールで送るシステムを、AIと対話しながら1日で作りました。その過程で踏んだ6つの罠（メールが送信済なのに届かない、設定が効かない、動くのに売り物にならない…）を、動くコードごと教材として公開します。VWorkフレームワークを同梱したパッケージです。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-05-kinvoice-vwork-learning-package.html"><meta property="og:type" content="article"><meta property="og:title" content="AIと領収書システムを1日で作って、6回つまずいた記録 — VWork教材パッケージを公開しました"><meta property="og:description" content="領収書をPDFで発行してメールで送るシステムを、AIと対話しながら1日で作りました。その過程で踏んだ6つの罠（メールが送信済なのに届かない、設定が効かない、動くのに売り物にならない…）を、動くコードごと教材として公開します。VWorkフレームワークを同梱したパッケージです。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-05-kinvoice-vwork-learning-package.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AIと領収書システムを1日で作って、6回つまずいた記録 — VWork教材パッケージを公開しました"><meta name="twitter:description" content="領収書をPDFで発行してメールで送るシステムを、AIと対話しながら1日で作りました。その過程で踏んだ6つの罠（メールが送信済なのに届かない、設定が効かない、動くのに売り物にならない…）を、動くコードごと教材として公開します。VWorkフレームワークを同梱したパッケージです。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AIと領収書システムを1日で作って、6回つまずいた記録 — VWork教材パッケージを公開しました", "description": "領収書をPDFで発行してメールで送るシステムを、AIと対話しながら1日で作りました。その過程で踏んだ6つの罠（メールが送信済なのに届かない、設定が効かない、動くのに売り物にならない…）を、動くコードごと教材として公開します。VWorkフレームワークを同梱したパッケージです。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-05-kinvoice-vwork-learning-package.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-05", "dateModified": "2026-08-05", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>AIと領収書システムを1日で作って、6回つまずいた記録 — VWork教材パッケージを公開しました</h1><p class="meta">2026-08-05</p><p>領収書をPDFで発行して、ダウンロードURLをメールで送るシステムを作りました。1日です。</p>
+<p>そして<strong>6回つまずきました。</strong></p>
+<p>その記録を、動くコードと VWork フレームワークごとパッケージにして公開しました。</p>
+<p><strong><a href="https://github.com/katsushi2441/kinvoice">kinvoice — 領収書メール送信システム ＋ VWork 教材パッケージ</a></strong>（MIT License・無償）</p>
+<h2>なぜ「失敗の記録」を売り物にするのか</h2>
+<p>バイブコーディングの解説は「AIに頼んだらこう出てきました」で終わりがちです。でも実際にやると、そこは問題になりません。</p>
+<p><strong>本当に難しいのは、「動いたように見えて動いていない」を見抜くことです。</strong></p>
+<p>AIは指示すればコードを書きます。速いです。そして<strong>平気で「できました」と言います。</strong>その判定が正しいかどうかを確かめるのは、いまのところ人の仕事です。</p>
+<p>今回踏んだ6つは、全部そこでした。</p>
+<h2>罠1: メールが「送信済」なのに届いていない</h2>
+<p>画面に「送信しました」と出て、送信履歴も「送信済」。台帳にも <code>mail_ok: true</code>。</p>
+<p><strong>でも受信箱には来ていませんでした。</strong></p>
+<p>PHPの <code>mail()</code> は、サーバーが受け付けた時点で <code>true</code> を返します。届いたかどうかは分かりません。</p>
+<p>原因はSPFでした。</p>
+<pre><code>From: info@exdirect.net   SPF: redirect=_spf.ocnk.net   → このサーバーは許可されていない
+From: info@exbridge.jp    SPF: include:_spf.heteml.jp   → 許可されている
+</code></pre>
+<p>送信サーバーがSPFに入っていないドメインを差出人にすると、<strong>受信側が黙って捨てます。</strong>エラーも返りません。</p>
+<p><strong>成功の表示は、成功の証明ではない。</strong>これが1つめです。</p>
+<h2>罠2: 設定ファイルを置いたのに、値が効かない</h2>
+<p>会社名を設定ファイルに書いたのに、まったく反映されませんでした。ファイルの場所も中身も合っています。</p>
+<p>PHPの <code>define()</code> は<strong>先勝ち</strong>でした。読み込み順がこうなっていたのです。</p>
+<pre><code class="language-php">require_once 'kinvoice_lib.php';     // ← ここで既定値を define してしまう
+require_once 'kinvoice_config.php';  // ← もう遅い
+</code></pre>
+<p><strong>「設定したのに効かない」は、たいてい値ではなく順番の問題です。</strong></p>
+<h2>罠3: 動いているのに、売り物にならなかった</h2>
+<p>システムは完成し、本番でも動いていました。しかし<strong>他人が使うことはできませんでした。</strong></p>
+<p>会社名も住所もコードに直接書いてあり、ログインは自社専用の認証基盤に固定。クローンした人の画面に、こちらの会社名が出る状態でした。</p>
+<p><strong>「動く」と「他人が使える」は別です。</strong>自分の環境だけで検証していると、この差に気づけません。</p>
+<p>確かめる方法は1つ。<strong>設定を消した状態で、まっさらな場所に置いて動かしてみる</strong>ことです。</p>
+<h2>罠4: サーバーの設定を、古い版で上書きしかけた</h2>
+<p><code>.htaccess</code> に1行足そうとして、手元のリポジトリの版を上げようとしました。</p>
+<p>直前にサーバーの現物を落として比べたら、<strong>手元は6行足りませんでした。</strong>別システムのルーティングと文字化け対策が入っていたのです。</p>
+<p>そのまま上げていたら、<strong>関係ないシステムが2つ壊れていました。</strong></p>
+<p><strong>手元にあるものが最新とは限りません。</strong>誰かが直接サーバーを触っているかもしれない。</p>
+<h2>罠5: 画像が汚い原因が、直感と逆だった</h2>
+<p>ヘッダーのアイコンが潰れて見えました。「解像度不足だろう」と考えるところです。</p>
+<p><strong>逆でした。大きすぎたのです。</strong></p>
+<pre><code>使っていた画像: 760×1133（1.4MB）
+表示サイズ    : 38×38 の丸
+</code></pre>
+<p>20倍に縮小したうえ、頭の部分だけ切り抜いていました。表示サイズに合った192pxを作り直したら、<strong>1.4MB → 13.7KB</strong>で、しかも鮮明になりました。</p>
+<p><strong>症状から原因を推測しない。実物を測る。</strong></p>
+<h2>罠6: 数字を読み違えて、結論を間違えた</h2>
+<p>アクセスログを集計して「6,942PV」と報告しました。間違いでした。</p>
+<p>ログの列を取り違えていて、実際は「そのページ<strong>から出ていった</strong>クリック数」。正しくは13,911。しかも最初は<strong>ボットを除外していませんでした</strong>（生ログの72%がクローラー）。</p>
+<p>気づいたきっかけは、集計結果に <code>https://www.google.com/</code> が「ページ」として出てきたことでした。Googleは自社のページではありません。</p>
+<p><strong>集計スクリプトは何を渡しても動きます。エラーは出ません。</strong></p>
+<h2>6つに共通していること</h2>
+<table>
+<thead>
+<tr>
+<th>罠</th>
+<th>共通点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>メール</td>
+<td>成功の表示が、成功の証明ではない</td>
+</tr>
+<tr>
+<td>設定</td>
+<td>値ではなく順番</td>
+</tr>
+<tr>
+<td>売り物</td>
+<td>自分の環境でしか試していない</td>
+</tr>
+<tr>
+<td>.htaccess</td>
+<td>手元が最新とは限らない</td>
+</tr>
+<tr>
+<td>画像</td>
+<td>症状から原因を推測した</td>
+</tr>
+<tr>
+<td>数字</td>
+<td>出どころを確かめずに集計した</td>
+</tr>
+</tbody>
+</table>
+<p>すべて<strong>「確認したつもり」</strong>です。</p>
+<p>VWork には <code>VERIFICATION.md</code>（「できました」と言う前の確認手順）という文書があります。抽象的だと思っていましたが、<strong>6つ全部がここに書いてあることでした。</strong>守っていれば、もっと早く気づけたものばかりです。</p>
+<h2>パッケージの中身</h2>
+<ul>
+<li><strong>動くシステム</strong> — 領収書PDFの発行とメール送信。DB不要・外部ライブラリ不要・約1,180行で全部読めます</li>
+<li><strong><code>AGENTS.md</code></strong> — AIエージェントに渡すと、設置と初期設定を各段階の確認つきで進めます</li>
+<li><strong><code>docs/02-failures.md</code></strong> — 上の6つの詳細</li>
+<li><strong><code>docs/03-exercises.md</code></strong> — 請求書・見積書への改造練習</li>
+<li><strong><code>vwork/</code></strong> — VWork の作法一式</li>
+</ul>
+<p>改造練習を入れたのは、<strong>読むだけでは身につかない</strong>からです。領収書 → 請求書 → 見積書 は、非エンジニアが自分で試して、自分で結果を確認できる良い題材です。</p>
+<h2>仕組みで1つだけ</h2>
+<p><strong>PDFをメールに添付していません。</strong></p>
+<p>添付にすると、宛先を1文字間違えた瞬間に領収書が他人の手元に残ります。取り消せません。</p>
+<p>なので、推測困難なURL（32桁）を送り、開いたら<strong>宛先メールアドレスの入力</strong>を求めます。2つ揃わないと開きません。認証前の画面には顧客名も金額も出しません。</p>
+<p>こういう判断の理由も、全部 <code>docs/01-overview.md</code> に書いてあります。</p>
+<h2>関連書籍『AIと作る自動取引ボット入門』</h2>
+<p><a href="https://www.amazon.co.jp/dp/B0HC27BLHG"><img alt="『AIと作る自動取引ボット入門』表紙" src="https://images-na.ssl-images-amazon.com/images/P/B0HC27BLHG.09.LZZZZZZZ.jpg" /></a></p>
+<p><strong><a href="https://www.amazon.co.jp/dp/B0HC27BLHG">『AIと作る自動取引ボット入門：バイブコーディング×バイブトレーディングで暗号資産・FX戦略を育てる』</a></strong>（小嶋 篤 著・Kindle）は、非エンジニアがAIと対話しながらシステムを組み上げ、運用するまでを、実際の失敗と学びから全49章にまとめた実践書です。</p>
+<p>この記事と同じ姿勢で書いています。<strong>うまくいった話ではなく、つまずいた話</strong>を残しました。<strong>Kindle Unlimitedなら追加料金なしで読み放題</strong>です。</p>
+<h2>まとめ</h2>
+<p>コードは <a href="https://github.com/katsushi2441/kinvoice">GitHub</a> にMITで置いてあります。誰でも取得できます。</p>
+<p><strong>私たちが提供しているのは、コードへのアクセスではありません。</strong>どう作って、どこでつまずいて、どう気づいたかです。</p>
+<p>AIを使えば、動くものは速く出てきます。そのあとに残る仕事は「本当に動いたのか」を確かめることで、そこには手順があります。それが <a href="https://exbridge.jp/vwork.html">VWork</a> です。</p>
+<p>まずは <code>docs/02-failures.md</code> を読んでみてください。同じ罠に、たぶん当たります。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
