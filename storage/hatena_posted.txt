@@ -300,3 +300,4 @@ url2pub-i18n-hatena-summary
 2026-08-05-kurage-reseller-program
 2026-08-05-kinvoice-vwork-learning-package
 2026-08-05-kappstore-open
+2026-08-05-kinvoice-foundation
