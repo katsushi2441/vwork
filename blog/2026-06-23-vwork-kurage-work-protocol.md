@@ -7,8 +7,6 @@ permalink: /blog/2026-06-23-vwork-kurage-work-protocol.html
 status: published
 ---
 
-# AIに仕事を任せる前に、仕事の進め方を入れる。VWorkにKurage Work Protocolを組み込みました
-
 AIで業務改善を進めるとき、多くの人が最初に考えるのは「どのAIを使うか」です。
 
 Codexを使うのか。Claude Codeを使うのか。ChatGPTを使うのか。あるいは、自社専用のAIエージェントを作るのか。

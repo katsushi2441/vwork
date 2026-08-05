@@ -6,8 +6,6 @@ topics: [生成ai, claude, codex, 個人開発, web3]
 published: true
 ---
 
-# 海外で伸びるAI収益化動画を読む：How I Vibe Coded a $400K/mo App with Claude Code (Fu
-
 ## 海外で話題の「Vibe Coding」手法：Claude Codeを活用した高速アプリ開発の技術的考察
 
 海外のテックコミュニティでは、現在**「Vibe Coding」**という言葉が大きな注目を集めています。これは、詳細な設計書を完璧に書き込むのではなく、AIに対して抽象的な意図（Vibe）を伝えながら対話的にアプリケーションを構築していく手法を指します。

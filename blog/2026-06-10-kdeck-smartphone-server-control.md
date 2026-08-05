@@ -6,8 +6,6 @@ layout: default
 permalink: /blog/2026-06-10-kdeck-smartphone-server-control.html
 ---
 
-# スマホからサーバーのAIに指示する：Kurage Agent Deck（kdeck）でできること
-
 出先でも、スマホから自社のLinuxサーバーにあるAIエージェント（CodexやClaude）に指示を出して、コーディング・リサーチ・ブログ投稿・動画生成・YouTube投稿まで実行させることができる。
 
 これが「Kurage Agent Deck（kdeck）」が実現したことです。

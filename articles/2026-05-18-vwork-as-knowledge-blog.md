@@ -6,8 +6,6 @@ topics: [個人開発, github, 生成ai, openai, ポエム]
 published: true
 ---
 
-# VWorkリポジトリを知識置き場兼ブログにする
-
 [VWork](https://exbridge.jp/vwork.html)のリポジトリは、単なるテンプレート置き場ではなく、バイブコーディングの知識置き場兼ブログとして育てていく価値があります。
 
 VWorkは、経営者のPCにVS CodeとCodexを導入するためだけのものではありません。[エクスブリッジ](https://exbridge.jp/)が実際のAI駆動開発で蓄積してきた作業ルール、判断基準、プロンプト、運用手順を、お客様の業務環境に合わせて移植するための仕組みです。

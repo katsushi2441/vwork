@@ -7,8 +7,6 @@ permalink: /blog/2026-07-09-kfreqai-market-wide-selloff-relative-strength.html
 status: published
 ---
 
-# 「全然取引しない」AIトレードボットに、市場全体が下げる日でも機会を拾えるロジックを追加しました
-
 エクスブリッジでは、[Kurageプロジェクト](https://kurage.exbridge.jp/)の一環として、AIトレードボット「kfreqai」を紙上取引(dry-run、実資金は動いていません)で運用しています。
 
 FreqAI(LightGBM)による価格予測に加えて、ローカルLLM(gemma4)が1時間ごとに市場の地合いを判定し、Claudeが1日3回リスク方針を判断する、二重のアドバイザリー層を持たせているのが特徴です。派手なリターンを狙うより先に、「暴走しないAI」を作ることを優先した設計です。

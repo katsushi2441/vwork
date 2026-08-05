@@ -6,8 +6,6 @@ layout: default
 permalink: /blog/2026-07-02-first-game-dev-with-claude-code.html
 ---
 
-# 人生で初めてゲームを作って公開したら、知らない人がランキングに入っていた
-
 先日、人生で初めてゲームを開発して、インターネットに公開しました。
 
 [Kurageちゃん触手クライミング](https://kurage.exbridge.jp/kclimbing.html) という、クラゲの女の子が触手を伸ばして海面を目指す、ちょっと歯ごたえのあるブラウザゲームです。スマホでもPCでも、インストールなしですぐ遊べます。

@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-18-what-is-vwork.html
 ---
 
-# VWorkとは？
-
 [VWork](https://exbridge.jp/vwork.html)は、経営者のPCに導入して使うバイブコーディング作業基盤です。
 
 完成したシステムを外注して受け取るのではなく、経営者自身の課題をCodexと一緒に整理し、小さなコード、資料、Webページ、業務ツールへ変えていくためのフレームワークです。

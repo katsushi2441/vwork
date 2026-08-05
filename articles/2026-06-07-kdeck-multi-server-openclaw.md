@@ -6,8 +6,6 @@ topics: ["aiagent", "codex", "claude", "openclaw", "automation"]
 published: true
 ---
 
-# Kurage Agent Deckをマルチサーバ対応にした：OpenClaw経由でCodex/Claudeを各サーバへ届ける
-
 スマホからAIエージェントに作業を頼むだけなら、ブラウザからローカルのCodex CLIを呼べば十分に見えます。
 
 しかし実運用では、作業対象のサーバが1台とは限りません。

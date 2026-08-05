@@ -6,8 +6,6 @@ layout: default
 permalink: /blog/2026-07-19-kaic-ai-investment-committee.html
 ---
 
-# AI投資委員会「KAIC」を開発しました
-
 株式会社エクスブリッジは、AIが暗号資産・FX・Polymarketの情報を毎日調査し、三つの市場について投資判断を公開する**Kurage AI Investment Committee（KAIC）**を開発しました。
 
 コンセプトは、**Three Markets. One Decision. Seven Days to Prove It.**

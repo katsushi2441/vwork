@@ -7,8 +7,6 @@ permalink: /blog/2026-07-18-oss-monetization-x402-payapi.html
 status: published
 ---
 
-# 1995年からずっと考えていた「OSSで食べていく方法」に、x402で初めて答えが出た
-
 今日は、プロダクトの機能紹介ではなく、少し個人的な話を書かせてください。
 
 先日、x402マーケットプレイスの [PayAPI Market](https://payapi.market) の担当者（Chet）が、私たちの取り組みについて寄稿記事を書いてくれました。タイトルは **"OSS body, metered brain"**（OSSの体に、従量課金の頭脳）。

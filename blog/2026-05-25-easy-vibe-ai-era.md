@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-25-easy-vibe-ai-era.html
 ---
 
-# AIの時代：話せればコードが書ける
-
 [easy-vibe](https://github.com/datawhalechina/easy-vibe) Stage 1 の第2セクション「AIの時代：話せればコードが書ける」を紹介します。
 
 ---

@@ -6,8 +6,6 @@ topics: ["youtube", "mcp", "oauth", "ksnsposter", "automation"]
 published: true
 ---
 
-# Kurage SNS PosterにYouTubeアップロード機能を追加した
-
 Kurage SNS Poster（`ksnsposter`）に、YouTubeアップロード機能を追加しました。
 
 これまで `ksnsposter` は、Threads、TikTok、Instagram、Reddit、Telegram など、主に「Web UI操作が現実的なSNS投稿」を扱うためのツールでした。今回そこに、OSSの [anwerj/youtube-uploader-mcp](https://github.com/anwerj/youtube-uploader-mcp) を取り込み、YouTube投稿だけはブラウザ操作ではなく **MCPサーバ + YouTube Data API** で実行できるようにしました。

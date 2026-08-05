@@ -6,8 +6,6 @@ topics: ["browseruse", "playwright", "threads", "ollama", "aiagent"]
 published: true
 ---
 
-# Kurage SNS Poster：browser-useとログイン済みChromeでThreads自動投稿まで到達した実装メモ
-
 Meta系SNSへ自動投稿しようとすると、最初にぶつかるのはAPIそのものよりも、OAuth、審査、権限、トークン管理です。
 
 とくにThreads、Instagram、TikTokのような投稿系プラットフォームは、APIで綺麗に自動化しようとすると、アプリ審査やビジネスアカウント設定、権限申請、長期トークン管理などが必要になります。

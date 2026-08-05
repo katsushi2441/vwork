@@ -6,8 +6,6 @@ topics: ["python", "googleanalytics", "seo", "自動化", "oss"]
 published: true
 ---
 
-# kgrowth：GSCとアクセスログを統合した週次グロース自動化パイプライン
-
 kgrowthは、Google Search Console（GSC）とWebサーバーのアクセスログを統合し、検索流入の分析から改善ジョブの提案・実行まで自動化するPythonパイプラインです。AIxEC / AIxSNS / AIxTubeなどのコンテンツサービスのグロースを自動化するために開発しました。
 
 コードは約1,300行のPythonで書かれており、外部ライブラリへの依存を最小限に抑えた設計になっています。

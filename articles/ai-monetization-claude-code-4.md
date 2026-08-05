@@ -6,8 +6,6 @@ topics: [生成ai, claude, codex, 個人開発, web3]
 published: true
 ---
 
-# 海外で伸びるAI収益化動画を読む：CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)
-
 ## 海外で話題の4時間超えClaude Code完全ガイド：技術的要点と実用的なワークフロー
 
 エンジニアの間で急速に注目を集めている「Claude Code」ですが、単なるCLIツールとしての域を超え、いかにビジネスプロセスを自動化し、人的生産性を最大化するかという実戦的な活用法が話題になっています。

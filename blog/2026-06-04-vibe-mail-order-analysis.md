@@ -7,8 +7,6 @@ permalink: /blog/2026-06-04-vibe-mail-order-analysis.html
 status: published
 ---
 
-# メール処理もバイブコーディングで変えられる
-
 今回、Kurage Mail という小さなメール処理環境を作りました。
 
 heteml上にOSSのWebメールであるRoundcubeを導入し、そこに少しカスタマイズを加えて、Codexからもメールを扱えるようにしたものです。

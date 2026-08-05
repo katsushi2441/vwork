@@ -6,8 +6,6 @@ topics: ["aiagent", "twitter", "cli", "claudecode", "oss"]
 published: true
 ---
 
-# X APIを使わずにAIエージェントからXを検索・投稿する方法
-
 X（旧Twitter）のAPIは2023年の有料化以降、基本プランでも月$100〜と一般的な個人開発・小規模運用には重い価格帯になった。一方で「AIエージェントにXを検索させたい」「投稿を自動化したい」というニーズは増えている。
 
 この記事では、**X APIを一切使わず**、ブラウザのCookieを使った認証で無料でX検索・投稿を実現する方法を紹介する。Agent Reachというインフラ層とtwitter-cliの組み合わせで、Claude CodeなどのAIエージェントからそのまま使える。

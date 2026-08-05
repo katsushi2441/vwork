@@ -7,8 +7,6 @@ permalink: /blog/2026-07-04-kurage-knowledge-library-business.html
 status: published
 ---
 
-# 動画を作って終わりにしない。Kurage動画をテーマ別の知識ライブラリに育てる機能を追加しました
-
 AIで動画を作れる時代になりました。
 
 しかし、企業にとって本当に重要なのは「動画を何本作ったか」ではありません。

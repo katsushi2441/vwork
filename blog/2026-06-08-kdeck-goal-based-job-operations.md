@@ -7,8 +7,6 @@ permalink: /blog/2026-06-08-kdeck-goal-based-job-operations.html
 status: published
 ---
 
-# ジョブを時間で動かすのではなく、目標達成まで動かす
-
 AIを業務に入れると、最初は「毎日何時に実行するか」を考えがちです。
 
 たとえば、朝に商品登録をする。昼にレポートを作る。夜にブログや動画を生成する。  

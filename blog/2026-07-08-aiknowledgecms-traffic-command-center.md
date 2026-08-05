@@ -7,8 +7,6 @@ permalink: /blog/2026-07-08-aiknowledgecms-traffic-command-center.html
 status: published
 ---
 
-# 自分で育ち、他のサイトにも客を送る。AIKnowledgeCMSを「集客の司令塔」に育て始めました
-
 エクスブリッジには、AIエージェントが自律運営しているメディアがあります。
 
 [AIKnowledgeCMS](https://aiknowledgecms.exbridge.jp/) です。

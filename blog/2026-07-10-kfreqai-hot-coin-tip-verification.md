@@ -7,8 +7,6 @@ permalink: /blog/2026-07-10-kfreqai-hot-coin-tip-verification.html
 status: published
 ---
 
-# SNSで見た「今ホットな銘柄」をAIトレードボットにそのまま追加しなかった話
-
 エクスブリッジでは、[Kurageプロジェクト](https://kurage.exbridge.jp/)の一環としてAIトレードボット「kfreqai」を紙上取引(dry-run、実資金は動いていません)で運用しています。今回書きたいのは、「SNSで見つけた今アツい銘柄リストを、そのまま監視対象に追加してほしい」という相談を受けた際に、AIエージェントがどう裏取りし、どこで線を引いたかという話です。
 
 ---

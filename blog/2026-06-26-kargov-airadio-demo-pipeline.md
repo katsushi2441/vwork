@@ -7,8 +7,6 @@ permalink: /blog/2026-06-26-kargov-airadio-demo-pipeline.html
 status: published
 ---
 
-# AIラジオの実画面を、AIがデモ動画にして公開する — Kurage Argo VideoとAIRadioの連携
-
 株式会社エクスブリッジでは、AIを「文章を書く道具」としてだけではなく、実際の業務画面を動かし、録画し、動画として公開するところまでを一つのパイプラインとして開発しています。
 
 今回、**Kurage Argo Video** を使って、**Kurage AI VTuber Radio（AIRadio）** の実画面を録画し、機能解説付きのデモ動画として **Kurage** に公開しました。

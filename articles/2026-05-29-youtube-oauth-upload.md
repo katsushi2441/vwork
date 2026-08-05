@@ -6,8 +6,6 @@ topics: [youtube, oauth, python, codex, automation]
 published: true
 ---
 
-# Codex/ClaudeからYouTubeへ動画投稿するOAuthアップロードの仕組み
-
 Kurageで生成したショート動画を、YouTubeにも投稿できるようにした。
 
 今回作ったのは、YouTube Data APIを使って、CodexやClaudeがPythonから動画をアップロードできる仕組みだ。  

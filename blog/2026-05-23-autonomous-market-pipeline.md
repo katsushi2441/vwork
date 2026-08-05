@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-23-autonomous-market-pipeline.html
 ---
 
-# Hermes + OpenClaw + Claude + Ollama で商品登録を全自動化した
-
 [AIxEC](https://aixec.exbridge.jp/) の商品登録を、AIエージェントが完全に自律して動かす仕組みをバイブコーディングで構築した。
 
 今日、その仕組みが実際に動き始めた。

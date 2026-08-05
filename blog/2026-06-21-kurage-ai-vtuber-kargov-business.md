@@ -7,8 +7,6 @@ permalink: /blog/2026-06-21-kurage-ai-vtuber-kargov-business.html
 status: published
 ---
 
-# AI VTuberがライブ配信し、AIがデモ動画まで作る時代へ — Kurage AI VTuberとKurage Argo Videoが完成しました
-
 株式会社エクスブリッジでは、AIを「便利な相談相手」として使うだけでなく、実際に業務を動かす仕組みとして開発しています。
 
 今回、2つのプロダクトが大きく前進しました。

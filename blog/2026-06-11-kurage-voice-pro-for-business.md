@@ -6,8 +6,6 @@ layout: default
 permalink: /blog/2026-06-11-kurage-voice-pro-for-business.html
 ---
 
-# 海外の動画を日本語に自動翻訳・吹き替えする：Kurage Voice-Proが変えるコンテンツ活用
-
 海外の動画を日本語で見たい。字幕をつけてSNSで発信したい。そう思っても、翻訳・吹き替えには専門家への依頼とそれなりのコストがかかるのが当たり前でした。
 
 Kurage Voice-Proは、それを自動でやります。

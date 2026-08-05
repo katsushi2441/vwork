@@ -6,8 +6,6 @@ topics: ["aiagent", "python", "dashboard", "automation", "oss"]
 published: true
 ---
 
-# Hermes Dashboard と RQDB4AI — AIワーカー運用を共通result仕様で安定させる
-
 AIエージェントや自動化ワーカーを複数運用していると、最初に破綻しやすいのは「実行できたかどうか」の判定です。
 
 今回、Hermes Dashboard と RQDB4AI の連携を見直し、workerごとの例外処理ではなく、すべてのjobが同じresult形式で結果を返す設計に整理しました。

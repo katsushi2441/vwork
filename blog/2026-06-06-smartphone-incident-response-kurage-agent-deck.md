@@ -7,8 +7,6 @@ permalink: /blog/2026-06-06-smartphone-incident-response-kurage-agent-deck.html
 status: published
 ---
 
-# 外出先からスマホだけでサーバ障害を復旧できた日
-
 今日、AIxECのAPIサーバが重くなりました。
 
 外出先でした。手元にPCはありません。スマホだけです。

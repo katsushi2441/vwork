@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-18-input-automation-and-vwork.html
 ---
 
-# 手入力をなくすことは、システム内製化の入口
-
 「まだ、手入力してるんですか？」
 
 これは単に、事務作業を減らしたいという話ではありません。

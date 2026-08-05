@@ -7,8 +7,6 @@ permalink: /blog/2026-07-14-kfreqai-japan-competitive-advantage.html
 status: published
 ---
 
-# 国内の暗号資産AI自動取引を比較して見えた、Kurage FreqAI Tradeの明確な違い
-
 暗号資産のAI自動取引は、すでに国内にも複数のサービスがあります。ただし、同じ「AI自動取引」という言葉を使っていても、中身は大きく異なります。
 
 - AIが売買シグナルを出すサービス

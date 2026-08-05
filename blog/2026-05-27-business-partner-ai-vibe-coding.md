@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-27-business-partner-ai-vibe-coding.html
 ---
 
-# 愛知・名古屋で、AI事業を一緒に作るビジネスパートナーを募集します
-
 [ビジネスパートナー募集ページ](https://exbridge.jp/business-partner.html)を作りました。
 
 対象は、愛知県・名古屋市の企業、経営者、事業責任者です。

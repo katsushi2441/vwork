@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-23-hermes-openclaw-roles.html
 ---
 
-# Hermes と OpenClaw の役割分担 — orchestration と capability を分離する
-
 [Autonomous Market Pipeline](/blog/2026-05-23-autonomous-market-pipeline.html) を構成する中で、Hermes と OpenClaw の役割分担はかなり重要だと感じている。
 
 この2つを混ぜてしまうと、AIエージェント構成はすぐ破綻する。

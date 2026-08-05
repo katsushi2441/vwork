@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-26-sales-partner-recruit.html
 ---
 
-# AI革命の今、バイブコーディングを愛知の経営者に届けたい
-
 ## 今、本当にAI革命が起きている
 
 ChatGPTが出た2022年末から、AIは「便利なツール」という段階をとっくに超えました。

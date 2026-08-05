@@ -6,8 +6,6 @@ layout: default
 permalink: /blog/2026-06-19-kurage-vtuber-explainer-mode.html
 ---
 
-# ブログ記事がVTuber解説動画になる：Kurageに「VTuber解説モード」を追加しました
-
 企業の情報発信は、文章だけでは届きにくくなっています。
 
 ブログ、ニュース、商品説明、導入事例。これらを読んでもらうには時間がかかります。一方で、SNSやYouTube Shortsでは、短い縦型動画が入口になります。

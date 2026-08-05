@@ -6,8 +6,6 @@ layout: default
 permalink: /blog/2026-06-15-exbridge-service-story.html
 ---
 
-# 「AIを入れたい」から「AIで動かしている」まで、エクスブリッジが伴走します
-
 「うちもAIを使わないといけないとは思っている」
 
 そう言う経営者は増えた。でも、その言葉の後に続くのは大抵こういうことだ。

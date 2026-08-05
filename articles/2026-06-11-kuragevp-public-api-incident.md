@@ -6,8 +6,6 @@ topics: ["ai", "fastapi", "security", "oss", "automation"]
 published: true
 ---
 
-# Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI OSS運用のセキュリティ
-
 AI OSSや自作AIツールを実運用していると、「便利に公開すること」と「勝手に使われないように守ること」の境界が難しくなります。
 
 今回、Kurage Voice-Proで、こちらが意図していない動画翻訳ジョブが生成されているように見える事象がありました。

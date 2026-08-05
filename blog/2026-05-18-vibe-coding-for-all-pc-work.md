@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-18-vibe-coding-for-all-pc-work.html
 ---
 
-# バイブコーディングは、すべてのPC作業に使える
-
 バイブコーディングは、システム開発だけのものではありません。
 
 Excelを更新する。PowerPointを作る。Word文書を整える。Webページを直す。SNS投稿を作る。営業資料を作る。議事録から提案書を作る。

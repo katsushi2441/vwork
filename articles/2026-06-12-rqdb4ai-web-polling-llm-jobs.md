@@ -6,8 +6,6 @@ topics: ["aiagent", "llm", "queue", "php", "automation"]
 published: true
 ---
 
-# LLMの重い処理はキューに逃がす：RQDB4AIとWebポーリングで作る実運用向けAIジョブ基盤
-
 LLMを使うWeb機能を作るとき、最初はフォーム送信の中でそのままAI APIやローカルLLMを呼びたくなります。
 
 たとえば、URLを入力してAIに要約させる。X投稿を読み込んで考察ブログを作る。OSSリポジトリを分析して紹介文を生成する。処理自体はシンプルですが、実運用ではすぐに問題が出ます。

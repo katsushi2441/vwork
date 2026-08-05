@@ -6,8 +6,6 @@ layout: default
 permalink: /blog/2026-07-23-url2pub-urlai-user-reward.html
 ---
 
-# 「使ってくれてありがとう」をオンチェーンで返す
-
 株式会社エクスブリッジは、URLを入力するとAIが内容を読み、告知文とブログ記事を生成して複数メディアへ配信する**Kurage URL2AI Publisher（URL2Pub）**に、利用者向けのURLAI特典を追加しました。
 
 現在、URL2Pubを利用し、XアカウントとBaseウォレットを接続した方へ、**1人1回10,000 URLAIを先着1,000人に自動配布**します。

@@ -7,8 +7,6 @@ permalink: /blog/2026-06-21-kvtuber-kdeck-agent-blog-demo.html
 status: published
 ---
 
-# kvtuberにブログ投稿を頼み、kdeck経由でAI Agentが記事化するデモ
-
 今回は、Kurage AI VTuberの業務チャットから、実際にVWork blogの記事投稿を依頼してみました。
 
 依頼内容はシンプルです。

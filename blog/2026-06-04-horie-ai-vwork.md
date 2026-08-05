@@ -7,8 +7,6 @@ permalink: /blog/2026-06-04-horie-ai-vwork.html
 status: published
 ---
 
-# ホリエモンがバイブコーディングでゲームを作った日
-
 堀江貴文さんのYouTubeチャンネルで、かなり象徴的な動画が公開されていました。
 
 [誰でもAIでコーディングができる時代…！？ナル先生と一緒にバイブコーディングでゲームを作ってみた](https://www.youtube.com/watch?v=7wTPFSyMwV0)

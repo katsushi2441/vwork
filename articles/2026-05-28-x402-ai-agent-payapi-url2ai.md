@@ -6,8 +6,6 @@ topics: [生成ai, 個人開発, api, llm, web3]
 published: true
 ---
 
-# URL2AI / OSS2API を x402 AI Agent として PayAPI Market に公開した
-
 URL2AI / OSS2API の x402 AI Agent が、PayAPI Market の審査を通過して公開された。
 
 Provider profile:

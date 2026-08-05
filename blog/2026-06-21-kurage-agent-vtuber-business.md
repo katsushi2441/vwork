@@ -7,8 +7,6 @@ permalink: /blog/2026-06-21-kurage-agent-vtuber-business.html
 status: published
 ---
 
-# AI VTuberは“話すキャラクター”から“仕事を進めるAI Agent”へ — Kurage VTuberが示す新しい企業発信
-
 AI VTuberという言葉を聞くと、多くの人は「AIが話すアバター」「コメントに反応する配信者」「Live2Dで動くキャラクター」を想像します。
 
 それは間違いではありません。むしろ、AI VTuberの本質はそこからさらに進みつつあります。

@@ -6,8 +6,6 @@ layout: default
 permalink: /blog/2026-06-19-kurage-argo-video-business.html
 ---
 
-# 「やってみせる動画」をAIが自動で作る — Kurage Argo Video と、エクスブリッジのAI×OSS内製力
-
 「この操作、口で説明するより画面を見せたほうが早いんだけど、動画を作る時間がない」
 「研修用に手順動画を作ったが、システムの画面が変わって、もう作り直し」
 「外注すると1本あたりの費用が高く、本数を増やせない」

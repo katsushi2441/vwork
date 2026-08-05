@@ -6,8 +6,6 @@ topics: ["php", "roundcube", "imap", "smtp", "codex"]
 published: true
 ---
 
-# Kurage Mail — Roundcubeをhetemlに導入し、Codexからメール処理できる入口を作る
-
 Kurage Mail は、heteml上にRoundcubeを配置し、既存メールアカウントをWebから読めるようにしたうえで、Codexからもメール処理を実行できるようにするための実験です。
 
 目的は、単なるWebメールではありません。

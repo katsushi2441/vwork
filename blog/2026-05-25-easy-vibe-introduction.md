@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-25-easy-vibe-introduction.html
 ---
 
-# バイブコーディングを体系的に学ぶ：easy-vibe 教材を紹介する
-
 [easy-vibe](https://github.com/datawhalechina/easy-vibe) は、中国のOSS教育コミュニティ **datawhalechina** が公開したバイブコーディングの学習教材です。
 
 入門から上級まで3ステージ・80以上のトピックが体系的に整理されています。中国語メインですが、構成を見るだけでも学習ロードマップとして参考になります。

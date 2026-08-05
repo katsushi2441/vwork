@@ -7,8 +7,6 @@ permalink: /blog/2026-06-22-kurage-ai-vtuber-youtube-live-automation.html
 status: published
 ---
 
-# Kurage AI VTuberにYouTubeライブ自動配信機能を追加しました
-
 株式会社エクスブリッジでは、AIを「話題の技術」として紹介するだけでなく、実際に会社の情報発信を動かす仕組みとして開発しています。
 
 今回、**Kurage AI VTuber**に、YouTubeライブ自動配信のための機能を追加しました。

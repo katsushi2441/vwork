@@ -6,8 +6,6 @@ topics: ["aiagent", "web3", "x402", "mcp", "automation"]
 published: true
 ---
 
-# AIエージェントに仕事を受注させて稼ぐ市場は本当に来ているのか
-
 「AIエージェントが自律的に仕事を受注し、APIで納品し、Web3決済で報酬を受け取る」。
 
 この話だけ聞くと、かなり未来的で、しかも収益化の匂いがします。実際、2026年時点では、AI agent marketplace、x402、MCP、A2A、USDC escrow といった言葉を掲げるサービスが増えています。

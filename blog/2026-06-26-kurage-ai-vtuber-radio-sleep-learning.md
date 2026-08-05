@@ -6,8 +6,6 @@ layout: default
 permalink: /blog/2026-06-26-kurage-ai-vtuber-radio-sleep-learning.html
 ---
 
-# Kurage AI VTuber Radio：ライブ配信しながら睡眠用・学習用動画を作るAIラジオ
-
 YouTubeでは、睡眠用BGM、作業用BGM、睡眠導入の朗読、長時間のリラックス動画が大きな再生数を取ることがあります。
 
 理由はシンプルです。視聴者が長く再生しやすく、顔出しや派手な撮影を必要とせず、一度作った動画が継続的に再生される可能性があるからです。そのため、動画制作副業の文脈でも「睡眠用動画」「作業用動画」はよく紹介されます。

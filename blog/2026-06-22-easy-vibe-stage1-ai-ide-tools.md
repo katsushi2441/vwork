@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-06-22-easy-vibe-stage1-ai-ide-tools.html
 ---
 
-# 初級二：AI プログラミングツールを学ぶ — easy-vibe Stage 1
-
 [easy-vibe](https://github.com/datawhalechina/easy-vibe) Stage 1 の続きとして、今回は **「初級二：AI プログラミングツールを学ぶ」** をVWork向けに日本語で紹介します。
 
 この記事は、公式教材の内容をもとに、バイブコーディングを仕事やプロダクト開発に使う視点で読みやすく整理したものです。

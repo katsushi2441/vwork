@@ -6,8 +6,6 @@ topics: [aiagent, claudecode, claude, 個人開発, oss]
 published: true
 ---
 
-# Capafy — AIスキルをクローズドで販売できるマーケットプレイスが登場
-
 https://capafy.ai/
 
 ## Capafyとは

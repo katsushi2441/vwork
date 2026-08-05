@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-25-easy-vibe-learning-map.html
 ---
 
-# バイブコーディング学習ロードマップ：easy-vibe Stage 1 学習マップ
-
 [easy-vibe](https://github.com/datawhalechina/easy-vibe) の Stage 1 最初のセクション「学習マップ」の内容を紹介します。
 
 ---

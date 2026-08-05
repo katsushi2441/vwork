@@ -8,8 +8,6 @@ layout: default
 permalink: /blog/2026-05-28-payapi-x402-ai-agent-business.html
 ---
 
-# URL2AI / OSS2API が PayAPI Market の審査を通過しました
-
 URL2AI / OSS2API の x402 AI Agent が、PayAPI Market の審査を通過しました。
 
 PayAPI Provider Profile:

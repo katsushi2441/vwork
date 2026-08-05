@@ -6,8 +6,6 @@ topics: ["kurage", "codex", "aiagent", "fastapi", "php"]
 published: true
 ---
 
-# Kurage Agent Deckの技術解説：スマホからCodex CLIを操作する軽量Webコンソール
-
 Kurage Agent Deck は、スマホやブラウザから Linux サーバ上の Codex CLI を操作するための小型 Web コンソールです。実装はシンプルで、主に `PHP UI + FastAPI + Codex CLI` の 3 層で構成されています。
 
 ## 全体構成

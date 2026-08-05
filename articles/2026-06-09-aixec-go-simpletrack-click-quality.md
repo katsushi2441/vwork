@@ -6,8 +6,6 @@ topics: ["php", "analytics", "affiliate", "amazon", "tracking"]
 published: true
 ---
 
-# AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリックに分けた
-
 AIxECの商品ページでは、Amazonや楽天への外部遷移を `go.php` 経由にしています。
 
 目的は、商品ページからどの外部ECへ送客できているかを `simpletrack.php` の簡易アクセス解析で見ることです。

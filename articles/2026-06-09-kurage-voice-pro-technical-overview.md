@@ -6,8 +6,6 @@ topics: ["ai", "動画生成", "字幕", "tts", "ffmpeg"]
 published: true
 ---
 
-# Kurage Voice-Proの技術解説：UMediaとOSS Voice-Proをつないだ翻訳字幕・吹き替え動画生成
-
 Kurage Voice-Proは、Xなどの動画URLから動画を取得し、音声認識、翻訳、翻訳字幕、翻訳音声、字幕付き吹き替え動画の生成までを行うために作った動画翻訳ワークフローです。
 
 公開画面はこちらです。
