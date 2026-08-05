@@ -107,13 +107,16 @@ require_once 'kinvoice_config.php';  // ← もう遅い
 </table>
 <p>すべて<strong>「確認したつもり」</strong>です。</p>
 <p>VWork には <code>VERIFICATION.md</code>（「できました」と言う前の確認手順）という文書があります。抽象的だと思っていましたが、<strong>6つ全部がここに書いてあることでした。</strong>守っていれば、もっと早く気づけたものばかりです。</p>
-<h2>パッケージの中身</h2>
+<h2>中身</h2>
+<p><strong>動くシステムは <a href="https://github.com/katsushi2441/kinvoice">GitHub</a> にMITで公開しています。</strong>
+領収書PDFの発行とメール送信。DB不要・外部ライブラリ不要・約1,180行で全部読めます。
+デモも触れます（<a href="https://proto.exbridge.jp/kinvoice/">https://proto.exbridge.jp/kinvoice/</a>・パスワード <code>demo2026</code>）。</p>
+<p><strong>教材版</strong>には、それに加えて次が入ります。</p>
 <ul>
-<li><strong>動くシステム</strong> — 領収書PDFの発行とメール送信。DB不要・外部ライブラリ不要・約1,180行で全部読めます</li>
-<li><strong><code>AGENTS.md</code></strong> — AIエージェントに渡すと、設置と初期設定を各段階の確認つきで進めます</li>
 <li><strong><code>docs/02-failures.md</code></strong> — 上の6つの詳細</li>
 <li><strong><code>docs/03-exercises.md</code></strong> — 請求書・見積書への改造練習</li>
-<li><strong><code>vwork/</code></strong> — VWork の作法一式</li>
+<li><strong><code>AGENTS.md</code> / <code>INSTALL.md</code></strong> — AIエージェントに渡すと、設置と初期設定を各段階の確認つきで進める手順書</li>
+<li><strong>VWork 一式</strong> — AIと仕事を進めるための作法</li>
 </ul>
 <p>改造練習を入れたのは、<strong>読むだけでは身につかない</strong>からです。領収書 → 請求書 → 見積書 は、非エンジニアが自分で試して、自分で結果を確認できる良い題材です。</p>
 <h2>仕組みで1つだけ</h2>
@@ -127,6 +130,6 @@ require_once 'kinvoice_config.php';  // ← もう遅い
 <p>この記事と同じ姿勢で書いています。<strong>うまくいった話ではなく、つまずいた話</strong>を残しました。<strong>Kindle Unlimitedなら追加料金なしで読み放題</strong>です。</p>
 <h2>まとめ</h2>
 <p>コードは <a href="https://github.com/katsushi2441/kinvoice">GitHub</a> にMITで置いてあります。誰でも取得できます。</p>
-<p><strong>私たちが提供しているのは、コードへのアクセスではありません。</strong>どう作って、どこでつまずいて、どう気づいたかです。</p>
-<p>AIを使えば、動くものは速く出てきます。そのあとに残る仕事は「本当に動いたのか」を確かめることで、そこには手順があります。それが <a href="https://exbridge.jp/vwork.html">VWork</a> です。</p>
+<p><strong>有償で提供しているのは、コードへのアクセスではありません。</strong>どう作って、どこでつまずいて、どう気づいたか。そして、それを<strong>あなたのPCでできる状態にするところまで</strong>です。</p>
+<p><a href="https://exbridge.jp/vwork.html">VWork</a> は、VS Code とAIエージェントの作業環境をお客様のPCに構築し、<strong>最初の小さな実用ツールを一緒に作るところまで</strong>を含みます。この kinvoice は、その「最初の小さな実用ツール」がどんなものになるかの実例です。</p>
 <p>まずは <code>docs/02-failures.md</code> を読んでみてください。同じ罠に、たぶん当たります。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
