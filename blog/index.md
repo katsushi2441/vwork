@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [請求書を発行して送り、そのまま支払ってもらう — kbilling を公開しました](2026-08-06-kbilling-invoice-collect.html)
 - [自社で実際に使っている注文ページを、そのまま商品にしました — kpaylink](2026-08-06-kpaylink-order-page.html)
 - [領収書をメールで送るシステムを、あえて1,180行で作った理由 — 非エンジニアが育てられる土台として](2026-08-05-kinvoice-foundation.html)
 - [業務システムの「土台」を売る店を作りました — Kurage App Store](2026-08-05-kappstore-open.html)
