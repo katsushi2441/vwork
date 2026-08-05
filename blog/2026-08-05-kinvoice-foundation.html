@@ -1,0 +1,122 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>領収書をメールで送るシステムを、あえて1,180行で作った理由 — 非エンジニアが育てられる土台として | VWork バイブコーディングフレームワーク</title><meta name="description" content="領収書をPDFで発行してメールで送るシステムを公開しました。DB不要・外部ライブラリ不要・全部読めるサイズ。完成品ではなく、非エンジニアがAIと一緒に育てられる土台として設計しています。VWorkフレームワークを同梱した理由も書きました。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-05-kinvoice-foundation.html"><meta property="og:type" content="article"><meta property="og:title" content="領収書をメールで送るシステムを、あえて1,180行で作った理由 — 非エンジニアが育てられる土台として"><meta property="og:description" content="領収書をPDFで発行してメールで送るシステムを公開しました。DB不要・外部ライブラリ不要・全部読めるサイズ。完成品ではなく、非エンジニアがAIと一緒に育てられる土台として設計しています。VWorkフレームワークを同梱した理由も書きました。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-05-kinvoice-foundation.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="領収書をメールで送るシステムを、あえて1,180行で作った理由 — 非エンジニアが育てられる土台として"><meta name="twitter:description" content="領収書をPDFで発行してメールで送るシステムを公開しました。DB不要・外部ライブラリ不要・全部読めるサイズ。完成品ではなく、非エンジニアがAIと一緒に育てられる土台として設計しています。VWorkフレームワークを同梱した理由も書きました。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "領収書をメールで送るシステムを、あえて1,180行で作った理由 — 非エンジニアが育てられる土台として", "description": "領収書をPDFで発行してメールで送るシステムを公開しました。DB不要・外部ライブラリ不要・全部読めるサイズ。完成品ではなく、非エンジニアがAIと一緒に育てられる土台として設計しています。VWorkフレームワークを同梱した理由も書きました。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-05-kinvoice-foundation.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-05", "dateModified": "2026-08-05", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>領収書をメールで送るシステムを、あえて1,180行で作った理由 — 非エンジニアが育てられる土台として</h1><p class="meta">2026-08-05</p><p>領収書をPDFで発行して、ダウンロードURLをお客様へメールで送るシステムを公開しました。</p>
+<p><strong><a href="https://github.com/katsushi2441/kinvoice">kinvoice</a></strong> — コードは MIT License で無償公開しています。
+デモも触れます（<a href="https://proto.exbridge.jp/kinvoice/">https://proto.exbridge.jp/kinvoice/</a>・パスワード <code>demo2026</code>）。</p>
+<p>作るときに決めたことがひとつあります。<strong>完成品にしないこと</strong>です。</p>
+<h2>1,180行に収めた理由</h2>
+<p>このシステムは、全部で約1,180行です。ファイルは5つ。</p>
+<table>
+<thead>
+<tr>
+<th>ファイル</th>
+<th>行数</th>
+<th>中身</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>kinvoice.php</code></td>
+<td>約390</td>
+<td>管理画面</td>
+</tr>
+<tr>
+<td><code>kinvoice_dl.php</code></td>
+<td>約135</td>
+<td>お客様のダウンロードページ</td>
+</tr>
+<tr>
+<td><code>kinvoice_auth.php</code></td>
+<td>約160</td>
+<td>ログイン</td>
+</tr>
+<tr>
+<td><code>kinvoice_lib.php</code></td>
+<td>約270</td>
+<td>台帳・税計算・メール送信</td>
+</tr>
+<tr>
+<td><code>kinvoice_pdf.php</code></td>
+<td>約225</td>
+<td>PDF生成</td>
+</tr>
+</tbody>
+</table>
+<p><strong>この大きさは、意図してこうしています。</strong></p>
+<p>これ以上減らすと、本番で必要なもの（認証・排他制御・CSRF・レート制限）が抜け落ちます。おもちゃになる。</p>
+<p>これ以上増やすと、<strong>買った人が最後まで読めなくなります。</strong>読めないコードは、改変できません。改変できないものは、完成品と同じで、渡された瞬間から劣化していきます。</p>
+<p><strong>「全部読めるサイズ」が、育てられるかどうかの境目</strong>だと考えました。</p>
+<h2>データベースも外部ライブラリも使いません</h2>
+<p>顧客名・金額・メールアドレスは、JSONファイルに <code>flock</code> で書いています。PDFは、仕様を直接書いて生成しています。TCPDF も Composer も使いません。</p>
+<p>理由は<strong>設置できる場所を増やすため</strong>です。</p>
+<p>日本の小さな会社が持っているのは、たいていPHPが動く共有レンタルサーバーです。そこに MySQL の設定から始めさせると、多くの人がそこで止まります。Composer が無いサーバーで数十MBの <code>vendor/</code> をFTPで上げるのも現実的ではありません。</p>
+<p><strong>FTPで上げるだけで動く。</strong>そこまで下げないと、届く相手が減ります。</p>
+<h2>PDFをメールに添付しない</h2>
+<p>設計でいちばん悩んだところです。</p>
+<p>添付にすると、<strong>宛先を1文字間違えた瞬間に、領収書が他人の手元に残ります。</strong>取り消せません。相手の受信箱にあるものは消せないからです。</p>
+<p>なので、こうしました。</p>
+<pre><code>メールに送るのは、推測困難なURL（32桁）だけ
+   ↓ 開く
+宛先メールアドレスの入力を求められる
+   ↓ 一致
+PDFがダウンロードされる
+</code></pre>
+<p>URLだけが漏れても開けません。宛先を間違えても、その人のアドレスとは一致しないので開けません。認証前の画面には、顧客名も金額も領収書番号も出しません。</p>
+<p><strong>便利さより、取り返しのつかなさを避けることを優先しました。</strong></p>
+<h2>VWork を同梱した理由</h2>
+<p>このパッケージには、<strong>VWork</strong> というドキュメント一式を入れています。AIと仕事を進めるための作法です。目的と成果物の決め方、禁止事項、そして「できました」と言う前の確認手順。</p>
+<p>正直に書くと、<strong>VWork は単体では価値が伝わりにくいものでした。</strong></p>
+<p>マークダウンの束です。書いてあることは実運用から出てきたものばかりで中身には自信がありますが、それだけ見せられても「で、どう使うの」で終わります。</p>
+<p><strong>動くものに載せて、初めて意味が出ると思いました。</strong></p>
+<p>このシステムを1日で作る間に、私たちは6回つまずいています。メールが「送信済」なのに届かない、設定を置いても効かない、動いているのに売り物にならなかった。全部その記録を同梱しました。</p>
+<p>そして<strong>その6つは、すべてVWorkの確認手順を守っていれば早く気づけたもの</strong>でした。</p>
+<p>抽象的な作法と、具体的な失敗が1対1で対応している。この形なら、読んだ人が「なるほど、この手順はこういう事故を防ぐためにあるのか」と分かります。</p>
+<p>（失敗の詳細は <a href="https://katsushi2441.github.io/vwork/blog/2026-08-05-kinvoice-vwork-learning-package.html">こちらの記事</a> に書きました）</p>
+<h2>非エンジニアの土台になってほしい</h2>
+<p>このシステムを作った本当の目的は、<strong>領収書を送ることではありません。</strong></p>
+<p>非エンジニアの方がバイブコーディングを始めるとき、いちばん困るのは「最初の1つ」です。白紙からは重い。かといって、完成品を渡されても学びになりません。</p>
+<p><strong>動く土台があって、それを自分で少しずつ変えていく。</strong>これが一番現実的な入り口だと考えています。</p>
+<p>なので、改造の練習問題も同梱しました。</p>
+<pre><code>領収書 → 請求書 → 見積書 → 発注書
+</code></pre>
+<p>領収書と請求書の違いは、実はそれほど多くありません。「上記正に領収いたしました」が「下記のとおりご請求申し上げます」になり、お支払期限と振込先が増える。<strong>それだけです。</strong></p>
+<p>AIに「請求書も出せるようにして」と頼めば、出てきます。<strong>そして自分でPDFを開いて、期限が入っているか確かめられます。</strong>小さく変えて、結果を自分の目で確認できる。教材としてこれ以上の題材はないと思っています。</p>
+<p>見積書まで行くと、明細が複数行になるのでデータの持ち方を決める必要が出てきます。そこが<strong>「AIに頼む前に、自分で決める」を体験する場所</strong>になります。</p>
+<h2>何が有償なのか</h2>
+<p>コードは GitHub で無償公開しています。<strong>有償で提供しているのは、それをどう作ったかの記録と、作法です。</strong></p>
+<ul>
+<li><code>docs/02-failures.md</code> — 実際に踏んだ6つの罠と、その気づき方</li>
+<li><code>docs/03-exercises.md</code> — 請求書・見積書への改造練習</li>
+<li><code>AGENTS.md</code> / <code>CLAUDE.md</code> / <code>INSTALL.md</code> — AIに渡せば設置が進む手順書</li>
+<li><code>vwork/</code> — AIと仕事を進めるための作法</li>
+</ul>
+<p><strong><a href="https://kappstore.exbridge.jp/">Kurage App Store</a></strong> で 55,000円（税込）です。ダウンロード販売のため、設置作業と伴走支援は含まれません。設置代行や改造代行は、有償のサポートとして別途承ります。</p>
+<h2>関連書籍『AIと作る自動取引ボット入門』</h2>
+<p><a href="https://www.amazon.co.jp/dp/B0HC27BLHG"><img alt="『AIと作る自動取引ボット入門』表紙" src="https://images-na.ssl-images-amazon.com/images/P/B0HC27BLHG.09.LZZZZZZZ.jpg" /></a></p>
+<p><strong><a href="https://www.amazon.co.jp/dp/B0HC27BLHG">『AIと作る自動取引ボット入門：バイブコーディング×バイブトレーディングで暗号資産・FX戦略を育てる』</a></strong>（小嶋 篤 著・Kindle）は、非エンジニアがAIと対話しながらシステムを組み上げ、運用するまでを、実際の失敗と学びから全49章にまとめた実践書です。</p>
+<p>この記事で書いた「読めるサイズにする」「自分で育てられる形で残す」という判断は、この本に記録した実運用の経験から来ています。<strong>Kindle Unlimitedなら追加料金なしで読み放題</strong>です。</p>
+<h2>まとめ</h2>
+<p>完成品は、渡された瞬間から劣化します。変えられないからです。</p>
+<p><strong>変えられる大きさで、変えられるライセンスで、変え方の作法まで付けて渡す。</strong>それが、非エンジニアの方にとって一番長く役に立つ形だと考えました。</p>
+<p>まずはデモを触ってみてください。<a href="https://proto.exbridge.jp/kinvoice/">https://proto.exbridge.jp/kinvoice/</a>（パスワード <code>demo2026</code>）</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
