@@ -154,3 +154,4 @@ kfreqai-entry-threshold-explained
 2026-08-03-what-is-vibe-trading
 2026-08-06-vibe-prototype-service
 2026-08-05-what-is-vibe-prototyping
+2026-08-05-kurage-reseller-program
