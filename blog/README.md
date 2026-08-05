@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [AIと領収書システムを1日で作って、6回つまずいた記録 — VWork教材パッケージを公開しました](2026-08-05-kinvoice-vwork-learning-package.md)
 - [AIシステムを、あなたの商材に。Kurage 販売代理店・再販パートナーを募集します](2026-08-05-kurage-reseller-program.md)
 - [経営者こそ見るべき、AIが毎日作るニュース動画「Horizon-AI生成ニュース動画」](2026-05-29-horizonv-for-business.md)
 - [バイブプロトタイピングとは何か？ 設計書から、動くものを1営業日で](2026-08-05-what-is-vibe-prototyping.md)
