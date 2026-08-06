@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [メモリ99.8%の障害を調べたら、犯人が証拠に写っていなかった —— Zabbix + LLMの障害調査を実際にやってみた記録](2026-08-07-zabbix-memory-incident.html)
 - [公開6日で6,900スター。trycompai/crm——「AIに自己採点させない」エージェント主導CRMの設計を読む](2026-08-06-trycompai-agentic-crm.html)
 - [Kurage GEOの技術設計：GEO Optimizerを監査エンジンに、日本語AEO採点とグラウンデッドLLM評価を重ねる](2026-08-03-kgeo-geo-audit-workspace.html)
 - [GoogleのAI機能撤回とDeepSeek V4 Flashの躍進：Simon Willisonが展望するオープンウェイトの革命 08-01](2026-08-01-ai-news-2.html)
