@@ -1,0 +1,60 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「毎朝サイトを見る係」を置けない会社のために — kcheckit を公開しました | VWork バイブコーディングフレームワーク</title><meta name="description" content="補助金の締切、法令の改正、脆弱性情報。見落とすと困ると分かっていても、毎朝チェックする人は置けません。自社サイトのURLと見ておきたいサイトのURLを登録するだけで、新着から自社に関係しそうなものだけを理由つきでメールに知らせる kcheckit を公開しました。DB不要・PHPのみ・MIT License。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-07-kcheckit-watch-gov-sites.html"><meta property="og:type" content="article"><meta property="og:title" content="「毎朝サイトを見る係」を置けない会社のために — kcheckit を公開しました"><meta property="og:description" content="補助金の締切、法令の改正、脆弱性情報。見落とすと困ると分かっていても、毎朝チェックする人は置けません。自社サイトのURLと見ておきたいサイトのURLを登録するだけで、新着から自社に関係しそうなものだけを理由つきでメールに知らせる kcheckit を公開しました。DB不要・PHPのみ・MIT License。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-07-kcheckit-watch-gov-sites.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「毎朝サイトを見る係」を置けない会社のために — kcheckit を公開しました"><meta name="twitter:description" content="補助金の締切、法令の改正、脆弱性情報。見落とすと困ると分かっていても、毎朝チェックする人は置けません。自社サイトのURLと見ておきたいサイトのURLを登録するだけで、新着から自社に関係しそうなものだけを理由つきでメールに知らせる kcheckit を公開しました。DB不要・PHPのみ・MIT License。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「毎朝サイトを見る係」を置けない会社のために — kcheckit を公開しました", "description": "補助金の締切、法令の改正、脆弱性情報。見落とすと困ると分かっていても、毎朝チェックする人は置けません。自社サイトのURLと見ておきたいサイトのURLを登録するだけで、新着から自社に関係しそうなものだけを理由つきでメールに知らせる kcheckit を公開しました。DB不要・PHPのみ・MIT License。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-07-kcheckit-watch-gov-sites.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-07", "dateModified": "2026-08-07", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>「毎朝サイトを見る係」を置けない会社のために — kcheckit を公開しました</h1><p class="meta">2026-08-07</p><p>補助金の募集が始まっていたのを、締切の翌週に知る。法令が変わっていたのを、取引先に指摘されて知る。使っているソフトに脆弱性が出ていたのを、取引先のチェックシートで知る。</p>
+<p>どれも「見ていれば防げた」類の話です。そして<strong>見ていれば防げた話ほど、誰も見ていません。</strong>毎朝10サイトを巡回する係を置ける会社は多くないからです。かといって「気づいた人が共有して」で回る仕事でもありません。</p>
+<p><strong><a href="https://github.com/katsushi2441/kcheckit">kcheckit</a></strong> を公開しました。Kurage Check It Framework。自社サイトのURLと、見ておきたいサイトのURLを登録しておくと、新着を毎日拾い、<strong>自社の事業に関係しそうなものだけ</strong>を根拠つきでメールに知らせます。コードは MIT License、デモも触れます（<a href="https://proto.exbridge.jp/kcheckit/">https://proto.exbridge.jp/kcheckit/</a>・パスワード <code>demo2026</code>）。</p>
+<h2>設置すると、その日から何かを見張っています</h2>
+<p>登録作業をしなくても、業種を問わず効くものが最初から入っています。</p>
+<ul>
+<li><strong>jGrants 募集中の補助金</strong> — 締切日つき。中小企業がいちばん逃したくない情報です</li>
+<li><strong>e-Gov 法令の更新</strong> — 全9,537件を舐めて、更新の新しい順に</li>
+<li><strong>JPCERT 注意喚起 / IPA 重要なセキュリティ情報</strong> — 取引先から説明を求められる類</li>
+<li><strong>自社サイトのSSL証明書</strong> — 期限が30日を切ったら通知。切れるとサイトが開かなくなります</li>
+</ul>
+<p>業種別のもの（厚生労働省・環境省・金融庁・消費者庁など）は、画面から追加します。</p>
+<h2>「RSSがある」前提では、半分しか見張れません</h2>
+<p>作る前に官公庁のサイトを実際に調べたところ、<strong>RSSがあるところと無いところが、ほぼ半々</strong>でした。RSSだけを読む仕組みにすると、その時点で情報源の半分を諦めることになります。</p>
+<p>だから最初から4つの取り方を持たせています。RSSがあるところはRSS、APIがあるところはAPI（jGrants・e-Gov）、どちらも無いところはページの差分、そして自社サイトはSSL証明書の期限。取り方を増やすときは関数を1つ足すだけで、画面にも自動で出ます。</p>
+<h2>AIに「対応不要」と言わせません</h2>
+<p>ここがこのシステムでいちばん譲らなかった部分です。</p>
+<p>拾った情報が自社に関係するかどうかの絞り込みには、AIを使えます。ただし<strong>やらせるのは「関係しそうか」と「なぜそう思うか」の2つだけ</strong>で、「対応が必要か」は判断させません。</p>
+<p>法令や規制の話は、間違えたときの損害が大きい。<strong>自信満々に外した判断は、何も出さないより有害</strong>です。「対応不要です」と書かれたメールを信じて見送った案件が、実は対応が要るものだった——これをやると、システムを入れたことがそのまま損害になります。</p>
+<ul>
+<li>判定は「関係あり」「判断できず」の2択。「対応不要」は出しません</li>
+<li>必ず理由を残します（どの語がどう引っかかったか）</li>
+<li>AIが使えない環境では、キーワード照合だけでも動きます</li>
+</ul>
+<p>最後に決めるのは人です。システムの仕事は、<strong>決める人の机に載せるところまで</strong>。</p>
+<h2>「監視しているつもり」を作らない</h2>
+<p>もうひとつ。ページの差分監視は、相手がページ構成を変えると<strong>黙って0件になります。</strong>エラーも出ません。通知が来ないので、うまくいっているように見えます。</p>
+<p>これが一番まずい壊れ方です。だから連続で取れなかった回数を数えて、画面に警告を出し、メールでも知らせます。「静かなときは、本当に新着が無いとき」でないと、監視の意味がありません。</p>
+<p>あと、導入直後に何十通も通知が飛ぶと、それだけで使うのをやめられます。<strong>初回は記録だけして黙り、2回目以降の差分だけ</strong>を知らせます。</p>
+<h2>買ったあと、自分で増やせます</h2>
+<p>kcheckit は「チェックして・判断して・保存して・知らせる」の4段階に分かれていて、それぞれ別のファイルになっています。監視対象が変わればチェックの部分を、通知の宛先を増やしたければ知らせる部分を触る。どこを直せばいいかが、ファイル名で分かるようにしてあります。</p>
+<p>全体で約1,900行。<strong>全部読める大きさ</strong>に収めてあります。読めないコードは変えられないからです。</p>
+<p>「Slackにも流したい」「この情報源も見たい」——そういう追加は、Claude Code などのAIエージェントに頼めば進みます。むしろ<strong>そうやって育てる前提</strong>の商品です。データベースもComposerも要らず、PHPが動くレンタルサーバーにFTPで上げれば動きます。</p>
+<h2>販売しています</h2>
+<p><a href="https://kappstore.exbridge.jp/app.php?id=232b3c1d11b6a730">Kurage App Store</a> で <strong>55,000円（税込）</strong> です。ソースコード一式、設置手順書、実際に踏んだ失敗の記録、そして <a href="https://katsushi2441.github.io/vwork/">VWork</a> の教材が付きます。</p>
+<p>ただし正直に書いておきます。<strong>販売しているのはプロトタイプで、動作を保証していません。</strong>設置もつまずいたときの解決も、AIエージェントに相談しながらご自身で進めていただく前提です。ノークレーム・ノーリターンでお願いしています。</p>
+<p>その代わり、中身は全部お渡しします。他社に頼まなくても、自分の会社に合わせて育てられます。まずはデモを触ってみてください。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
