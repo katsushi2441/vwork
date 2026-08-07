@@ -1,0 +1,103 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>自社の業務効率化のために作ったものを、そのまま売れるようにしました — 制作サービスとKurage App Storeがつながります | VWork バイブコーディングフレームワーク</title><meta name="description" content="10万円で業務効率化のプロトタイプを作り、自社で使い、同じ困りごとを持つ会社へ販売する。Kurage App Store への出品手数料は販売価格の10％＋40,000円（税別）で初期費用なし、売れたときだけ発生します。開発投資を回収し、そのあとは上乗せになる仕組みができました。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-07-prototype-to-product-loop.html"><meta property="og:type" content="article"><meta property="og:title" content="自社の業務効率化のために作ったものを、そのまま売れるようにしました — 制作サービスとKurage App Storeがつながります"><meta property="og:description" content="10万円で業務効率化のプロトタイプを作り、自社で使い、同じ困りごとを持つ会社へ販売する。Kurage App Store への出品手数料は販売価格の10％＋40,000円（税別）で初期費用なし、売れたときだけ発生します。開発投資を回収し、そのあとは上乗せになる仕組みができました。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-07-prototype-to-product-loop.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="自社の業務効率化のために作ったものを、そのまま売れるようにしました — 制作サービスとKurage App Storeがつながります"><meta name="twitter:description" content="10万円で業務効率化のプロトタイプを作り、自社で使い、同じ困りごとを持つ会社へ販売する。Kurage App Store への出品手数料は販売価格の10％＋40,000円（税別）で初期費用なし、売れたときだけ発生します。開発投資を回収し、そのあとは上乗せになる仕組みができました。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "自社の業務効率化のために作ったものを、そのまま売れるようにしました — 制作サービスとKurage App Storeがつながります", "description": "10万円で業務効率化のプロトタイプを作り、自社で使い、同じ困りごとを持つ会社へ販売する。Kurage App Store への出品手数料は販売価格の10％＋40,000円（税別）で初期費用なし、売れたときだけ発生します。開発投資を回収し、そのあとは上乗せになる仕組みができました。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-07-prototype-to-product-loop.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-07", "dateModified": "2026-08-07", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>自社の業務効率化のために作ったものを、そのまま売れるようにしました — 制作サービスとKurage App Storeがつながります</h1><p class="meta">2026-08-07</p><p>自社の業務を効率化するために作ったシステムは、たいてい自社の中で眠ります。同じ困りごとを持つ会社は世の中にたくさんあるのに、売る手段が無いからです。</p>
+<p>パッケージにして、マニュアルを書いて、デモを用意して、決済を通して、販売ページを作る——<strong>そこまでやる体力があるなら、最初からソフトウェア会社をやっています。</strong></p>
+<p>その部分をこちらで引き受ける仕組みを用意しました。<a href="https://kurage.exbridge.jp/vibe-prototype.php">バイブプロトタイプ制作サービス</a>で作ったプロトタイプを、<a href="https://kappstore.exbridge.jp/">Kurage App Store</a> で販売できます。</p>
+<h2>1本のプロトタイプが、2回働きます</h2>
+<pre><code>① 10万円（税別）で作る    自社の業務効率化・自動化のために
+② 自社で使う              ここで開発費の元は取れています
+③ Kurage App Store で売る 同じ困りごとを持つ会社へ
+</code></pre>
+<p>②で終わっても投資としては成立しています。③は、<strong>そのあとに乗る話</strong>です。ここが大事なところで、売れなかったときに失うものがありません。</p>
+<p>出品にあたって初期費用はいただきません。デモサイトの構築、導入・設定マニュアルを同梱したパッケージング、出品登録——<strong>売るために必要な作業はこちらで行い、費用は売れたときだけ</strong>いただきます。</p>
+<h2>手数料は「販売価格の10％＋40,000円」（税別）</h2>
+<p>固定の40,000円が入っているので、価格が上がるほど実質の手数料率は下がります。</p>
+<table>
+<thead>
+<tr>
+<th>販売価格（税抜）</th>
+<th>出品手数料</th>
+<th>実質手数料率</th>
+<th>お受け取り</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100,000円</td>
+<td>50,000円</td>
+<td>50.0%</td>
+<td>50,000円</td>
+</tr>
+<tr>
+<td>150,000円</td>
+<td>55,000円</td>
+<td>36.7%</td>
+<td>95,000円</td>
+</tr>
+<tr>
+<td>200,000円</td>
+<td>60,000円</td>
+<td>30.0%</td>
+<td>140,000円</td>
+</tr>
+<tr>
+<td>300,000円</td>
+<td>70,000円</td>
+<td>23.3%</td>
+<td>230,000円</td>
+</tr>
+</tbody>
+</table>
+<p>100,000円で売ると、<strong>2本で開発費10万円を回収し、3本目からは利益</strong>です。200,000円で売るなら1本で回収して、なお40,000円が残ります。</p>
+<p>固定費が入っているのは、1本あたりにこちらが行う作業（デモ構築・パッケージング・出品登録）が価格に比例しないからです。安い商品ほど率が高く見えるのはそのためで、<strong>販売価格は100,000円（税別）から</strong>とさせていただいています。</p>
+<p>出品後も、ご自身での利用・改変は自由です。売ったからといって使えなくなるものではありません。</p>
+<h2>売れたら、支払明細書が出ます</h2>
+<p>売上は、出品手数料を差し引いてお振り込みします。そのとき <strong>支払明細書（兼 適格請求書）</strong> をPDFで発行します。</p>
+<ul>
+<li>どの商品がいつ売れて、いくらだったか</li>
+<li>出品手数料はいくらで、消費税はいくらか</li>
+<li>差し引きいくらをお振り込みしたか</li>
+</ul>
+<p>出品手数料は当社からお客様への役務提供にあたるため、<strong>手数料ぶんの仕入税額控除を受けられる形</strong>で発行しています。経理にそのまま回せます。ご自身の売上・未払残・お支払い履歴は、<a href="https://kappstore.exbridge.jp/">Kurage App Store</a> にログインすればいつでも確認できます。</p>
+<h2>買う側から見ると、何が違うのか</h2>
+<p>Kurage App Store で扱っているのは、<strong>買ったあとに自分で改変・拡張できるプロトタイプ</strong>です。完成品のパッケージソフトではありません。</p>
+<ul>
+<li>ソースコード一式がそのまま手元に残ります</li>
+<li>1,000〜2,000行程度に収めてあります（<strong>読めないコードは変えられない</strong>ので、意図的な上限です）</li>
+<li>データベースもComposerも要らず、PHPが動くレンタルサーバーにFTPで上げれば動きます</li>
+<li>Claude Code などのAIエージェントに渡せば、設置も改造も進みます</li>
+</ul>
+<p>現時点で並んでいるのは、<a href="https://kappstore.exbridge.jp/">領収書をメールで送る kinvoice</a>、<a href="https://kappstore.exbridge.jp/">請求書を発行して回収する kbilling</a>、<a href="https://kappstore.exbridge.jp/">注文から決済までの kpaylink</a>、<a href="https://kappstore.exbridge.jp/">官公庁サイトを監視する kcheckit</a> の4本です。いずれも当社が自社の業務のために作り、実際に使っているものです。<strong>自分で使っていないものを売っていません。</strong></p>
+<h2>正直に書いておきます</h2>
+<p>売る側にも買う側にも関わることなので、はっきり書きます。</p>
+<p><strong>扱っているのはプロトタイプで、動作を保証していません。</strong>買った方の環境によっては、そのままでは動かない可能性があります。設置も、つまずいたときの解決も、Claude Code や Codex などのAIエージェントに相談しながらご自身で進めていただく前提の商品です。お問い合わせへの対応はお約束できず、購入代金にサポートは含まれていません。ノークレーム・ノーリターンでお願いしています。</p>
+<p>出品される方にも、この条件のまま販売していただきます。<strong>「動かないかもしれないものを売る」ことに納得できない場合は、出品なさらないでください。</strong>逆に言えば、この前提があるからこそ、非エンジニアの方でも気軽に出品できる形になっています。完璧に動作保証された商品を個人が売るのは、現実的ではありません。</p>
+<h2>まずは作るところから</h2>
+<p>出品は義務ではありません。<strong>自社の業務効率化のためにプロトタイプを1本作る</strong>——そこから始めていただくのがいちばん自然だと思います。使ってみて、これは他社にも効きそうだと感じたときに、販売をご検討ください。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/vibe-prototype.php">バイブプロトタイプ制作サービス</a> — 110,000円（税込・1回の開発）</li>
+<li><a href="https://kappstore.exbridge.jp/">Kurage App Store</a> — 販売中の商品とデモ</li>
+<li><a href="https://kappstore.exbridge.jp/sellers.php">販売店として登録する</a></li>
+</ul>
+<p>作ったものが自社で働き、そのあと他社でも働いて、収益になる。<strong>そこまで含めて「投資」と呼べる形</strong>にしたつもりです。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
