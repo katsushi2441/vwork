@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [自社の業務効率化のために作ったものを、そのまま売れるようにしました — 制作サービスとKurage App Storeがつながります](2026-08-07-prototype-to-product-loop.html)
 - [「毎朝サイトを見る係」を置けない会社のために — kcheckit を公開しました](2026-08-07-kcheckit-watch-gov-sites.html)
 - [請求書を発行して送り、そのまま支払ってもらう — kbilling を公開しました](2026-08-06-kbilling-invoice-collect.html)
 - [自社で実際に使っている注文ページを、そのまま商品にしました — kpaylink](2026-08-06-kpaylink-order-page.html)
