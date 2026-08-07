@@ -1,0 +1,85 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>自社サイトのアクセスログを調べたら、AIが1件も記録されていなかった — ktrackgeo を公開しました | VWork バイブコーディングフレームワーク</title><meta name="description" content="Google Analytics はボットを除外するため、GPTBot や ClaudeBot が自社サイトをどれだけ読んでいるかが見えません。本番ログ11,035行を調べたところAIクローラーの記録は0件でした。原因と対処、そして「AIに読まれる状態か」の診断と「実際に来たか」の実測を1つにした ktrackgeo を公開しました。55,000円・MIT License。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-07-ai-crawler-invisible-in-ga4.html"><meta property="og:type" content="article"><meta property="og:title" content="自社サイトのアクセスログを調べたら、AIが1件も記録されていなかった — ktrackgeo を公開しました"><meta property="og:description" content="Google Analytics はボットを除外するため、GPTBot や ClaudeBot が自社サイトをどれだけ読んでいるかが見えません。本番ログ11,035行を調べたところAIクローラーの記録は0件でした。原因と対処、そして「AIに読まれる状態か」の診断と「実際に来たか」の実測を1つにした ktrackgeo を公開しました。55,000円・MIT License。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-07-ai-crawler-invisible-in-ga4.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="自社サイトのアクセスログを調べたら、AIが1件も記録されていなかった — ktrackgeo を公開しました"><meta name="twitter:description" content="Google Analytics はボットを除外するため、GPTBot や ClaudeBot が自社サイトをどれだけ読んでいるかが見えません。本番ログ11,035行を調べたところAIクローラーの記録は0件でした。原因と対処、そして「AIに読まれる状態か」の診断と「実際に来たか」の実測を1つにした ktrackgeo を公開しました。55,000円・MIT License。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "自社サイトのアクセスログを調べたら、AIが1件も記録されていなかった — ktrackgeo を公開しました", "description": "Google Analytics はボットを除外するため、GPTBot や ClaudeBot が自社サイトをどれだけ読んでいるかが見えません。本番ログ11,035行を調べたところAIクローラーの記録は0件でした。原因と対処、そして「AIに読まれる状態か」の診断と「実際に来たか」の実測を1つにした ktrackgeo を公開しました。55,000円・MIT License。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-07-ai-crawler-invisible-in-ga4.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-07", "dateModified": "2026-08-07", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>自社サイトのアクセスログを調べたら、AIが1件も記録されていなかった — ktrackgeo を公開しました</h1><p class="meta">2026-08-07</p><p>AI検索から自社サイトがどれくらい参照されているか、気にしている経営者は増えました。ところが<strong>測る方法を聞かれると、答えに詰まります。</strong></p>
+<p>先日、自社サイトのアクセスログを調べてみました。過去2か月ぶん、11,035行。GPTBot・ClaudeBot・PerplexityBot で検索した結果は——<strong>0件</strong>でした。</p>
+<p>読まれていなかったのではありません。<strong>記録していなかった</strong>のです。</p>
+<h2>理由は2つあり、どちらも根が深い</h2>
+<h3>① 解析ツールはボットを捨てる</h3>
+<p>Google Analytics はボットを除外します。これ自体は正しい設計です。人の行動を見たいのに、クローラーの巡回が混ざったら数字が歪みます。</p>
+<p>ただしその結果、<strong>GPTBot や ClaudeBot が自社サイトを何回読んだかは、GA4 では原理的に見えません。</strong>Search Console も Google検索の実績だけなので、AI検索の動向は分かりません。</p>
+<p>自社のログも同じでした。書き込む前にボットを弾いていたので、2か月ぶん1件も残っていなかった。</p>
+<h3>② タグを貼るだけでは、そもそも届かない</h3>
+<p>ボットを記録するように直しても、まだ0件でした。理由は単純です。</p>
+<p><strong>アクセス解析のタグは JavaScript です。クローラーは JavaScript を実行しません。</strong></p>
+<p>つまりタグ方式では、どう設定を変えてもクローラーは拾えない。サーバー側で記録する仕組みが要ります。PHPのページなら、ファイルの先頭に1行入れるだけです。</p>
+<p>入れた直後から記録が始まりました。<strong>GPTBot 17回、ClaudeBot 1回。</strong>それまで完全に見えていなかったものです。</p>
+<h2>数字が食い違うのには理由があります</h2>
+<p>ついでに、GA4・Search Console・自社ログの3つを突き合わせてみました。当然のように食い違います。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>過去30日</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GA4</td>
+<td>セッション 6,137</td>
+</tr>
+<tr>
+<td>Search Console</td>
+<td>クリック 270</td>
+</tr>
+<tr>
+<td>自社ログ</td>
+<td>訪問回数 8,772</td>
+</tr>
+</tbody>
+</table>
+<p><strong>この差そのものが情報</strong>でした。</p>
+<p><strong>Search Console のクリックより、自社ログの「Google経由」のほうがずっと多い。</strong>調べると、Google は参照元として <code>https://www.google.com/</code> という<strong>ドメインだけ</strong>を渡してきます。実際に738件すべてパスが <code>/</code> でした。自然検索・Discover・ニュース・広告の区別は<strong>原理的につきません</strong>。だから「Google検索から◯件」と書いてはいけない。正しくは「Google経由で◯件」です。</p>
+<p><strong>GA4より自社ログのほうが多い。</strong>主因は広告ブロッカーです。GA4 は外部ドメインを読むのでブロックされますが、自社ドメインの計測は残ります。差の割合が、そのままブロック率の目安になります。</p>
+<p>この手の落とし穴を知らないと、素朴に数字を比べて誤った結論を出します。恥ずかしながら、私たちも一度やりました。</p>
+<h2>直す → 測る → 確かめる</h2>
+<p>もうひとつ分かったことがあります。<strong>実測だけでは足りません。</strong></p>
+<p>「AIが来ていない」ことは分かっても、<strong>何を直せばいいかが分かりません。</strong>逆に診断だけでは、直した効果があったのか確かめられません。</p>
+<p>そこで診断も足しました。robots.txt でAIクローラーを拒否していないか、<code>llms.txt</code> があるか、構造化データが揃っているか——8つの観点で点を付けます。</p>
+<p>実際に自社の1サイトを診断したら74点でした。指摘どおり <code>llms.txt</code> と構造化データを足したところ、<strong>94点</strong>に。診断→修正→再測定が1つの画面で回ります。</p>
+<p>この診断には<strong>生成AIを使っていません。</strong>判定は事実の確認だけで済みますし、生成AIを挟むと結果が実行ごとにぶれて「直したのに点が下がった」が起きます。<strong>診断は決定的であるべき</strong>だと考えています。</p>
+<h2>ktrackgeo として公開しました</h2>
+<p><a href="https://kappstore.exbridge.jp/">Kurage App Store</a> で <strong>55,000円（税込）</strong>、MIT License です。デモも触れます（<a href="https://proto.exbridge.jp/ktrackgeo/">https://proto.exbridge.jp/ktrackgeo/</a>）。</p>
+<ul>
+<li><strong>診断</strong> — AIに読まれる状態か（8観点・生成AI不使用）</li>
+<li><strong>実測</strong> — 実際にAIが来たか（GPTBot / ClaudeBot / PerplexityBot などを個別に判別）</li>
+<li><strong>解析</strong> — 人のアクセス、流入元、よく見られたページ</li>
+</ul>
+<p>データベース不要・外部ライブラリ不要・外部API不要。PHPが動くレンタルサーバーにFTPで置くだけで、<strong>アクセスの記録が外部の事業者に渡りません</strong>。IPも保存しません（訪問者の区別はハッシュ）。</p>
+<p>AIエージェント向けのスキルを2つ同梱しています。ひとつは設置用。もうひとつは<strong>GA4・Search Console と突き合わせて食い違いの理由を説明する</strong>もので、上に書いた読み方がそのまま入っています。</p>
+<h2>正直に書いておきます</h2>
+<p><strong>AIクローラーを測るには、PHPページの先頭に1行入れる必要があります。</strong>タグを貼るだけでは原理的に拾えないので、<strong>静的HTMLだけのサイトでは、AIクローラーは測れません。</strong>人のアクセスと診断はそのまま使えます。</p>
+<p>そして、販売しているのは<strong>プロトタイプで動作を保証していません。</strong>設置もつまずいたときの解決も、Claude Code などのAIエージェントに相談しながらご自身で進めていただく前提です。ノークレーム・ノーリターンでお願いしています。</p>
+<p>その代わり中身は全部お渡しします。約1,300行、全部読める大きさです。読めないコードは変えられませんから。</p>
+<hr />
+<p>AI検索経由の流入を気にしているなら、まず<strong>自社のログにAIが記録されているか</strong>を確かめてみてください。0件だったとして、それは「読まれていない」のか「記録していない」のか。私たちは後者でした。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
