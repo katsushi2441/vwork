@@ -315,3 +315,4 @@ url2pub-i18n-hatena-summary
 2026-08-10-kreserve
 2026-08-10-kcaldav
 2026-08-10-kcaldav-web
+2026-08-10-system-free-cycle
