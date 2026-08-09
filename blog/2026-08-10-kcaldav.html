@@ -1,0 +1,55 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>カレンダー同期に、巨大なフレームワークはいらなかった — 1ファイルのCalDAVサーバー kcaldav を作って発売しました | VWork バイブコーディングフレームワーク</title><meta name="description" content="Thunderbirdの予定を出先のスマホから読み書きしたい。それだけのために Nextcloud や sabre/dav を立てるのは重すぎます。CalDAVで本当に必要な処理だけを素のPHPで約450行、1ファイルに書いたCalDAVサーバー kcaldav を作り、Kurage App Storeで発売しました。PHPのみ・DB不要・レンタルサーバーに置くだけ。税込55,000円・MIT・デモあり。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-10-kcaldav.html"><meta property="og:type" content="article"><meta property="og:title" content="カレンダー同期に、巨大なフレームワークはいらなかった — 1ファイルのCalDAVサーバー kcaldav を作って発売しました"><meta property="og:description" content="Thunderbirdの予定を出先のスマホから読み書きしたい。それだけのために Nextcloud や sabre/dav を立てるのは重すぎます。CalDAVで本当に必要な処理だけを素のPHPで約450行、1ファイルに書いたCalDAVサーバー kcaldav を作り、Kurage App Storeで発売しました。PHPのみ・DB不要・レンタルサーバーに置くだけ。税込55,000円・MIT・デモあり。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-10-kcaldav.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="カレンダー同期に、巨大なフレームワークはいらなかった — 1ファイルのCalDAVサーバー kcaldav を作って発売しました"><meta name="twitter:description" content="Thunderbirdの予定を出先のスマホから読み書きしたい。それだけのために Nextcloud や sabre/dav を立てるのは重すぎます。CalDAVで本当に必要な処理だけを素のPHPで約450行、1ファイルに書いたCalDAVサーバー kcaldav を作り、Kurage App Storeで発売しました。PHPのみ・DB不要・レンタルサーバーに置くだけ。税込55,000円・MIT・デモあり。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "カレンダー同期に、巨大なフレームワークはいらなかった — 1ファイルのCalDAVサーバー kcaldav を作って発売しました", "description": "Thunderbirdの予定を出先のスマホから読み書きしたい。それだけのために Nextcloud や sabre/dav を立てるのは重すぎます。CalDAVで本当に必要な処理だけを素のPHPで約450行、1ファイルに書いたCalDAVサーバー kcaldav を作り、Kurage App Storeで発売しました。PHPのみ・DB不要・レンタルサーバーに置くだけ。税込55,000円・MIT・デモあり。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-10-kcaldav.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-10", "dateModified": "2026-08-10", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>カレンダー同期に、巨大なフレームワークはいらなかった — 1ファイルのCalDAVサーバー kcaldav を作って発売しました</h1><p class="meta">2026-08-10</p><p>「PCのThunderbirdに入れている予定を、出先のスマホからも見て、書き込みたい」。やりたいことはこれだけなのに、調べると出てくるのは Nextcloud や sabre/dav、Baïkal といった大掛かりなシステムばかりでした。</p>
+<p>実際に Baïkal を立ててみて、痛感しました。<strong>カレンダーを1個同期したいだけなのに、1000ファイル超のフレームワークと、不格好なURLと、壊れやすい管理画面がついてくる。</strong> これは道具立てが重すぎる。</p>
+<p>そこで、逆に振り切ったものを作りました。<strong>1ファイルのCalDAVサーバー kcaldav</strong> です。</p>
+<p>▶ <a href="https://proto.exbridge.jp/kcaldav/kcaldav.php">デモを触る</a> ／ <a href="https://kappstore.exbridge.jp/app.php?id=43950141618ddb02">kappstoreで見る（税込55,000円）</a> ／ <a href="https://github.com/katsushi2441/kcaldav">GitHub（MIT）</a></p>
+<h2>そもそもCalDAVとは</h2>
+<p>Thunderbird・iPhoneの標準カレンダー・Android(DAVx5)は、いずれも <strong>CalDAV</strong> という標準プロトコルに対応しています。カレンダーの実体をCalDAVサーバーに置けば、どの端末から予定を足しても、他の端末に反映されます。サーバーが唯一の正、という形です。</p>
+<p>.ics ファイルのURL購読は「読み取り専用」なので、出先から書き込みたいなら CalDAV が必要です。問題は、そのサーバーが軒並み重いことでした。</p>
+<h2>フレームワークを捨てた</h2>
+<p>CalDAVは仕様としては大きいですが、<strong>カレンダーを1個同期するのに実際に使う処理はごくわずか</strong>です。kcaldav が実装しているのはこれだけです。</p>
+<ul>
+<li>OPTIONS（自分がCalDAV対応だと名乗る）</li>
+<li>PROPFIND（カレンダーと予定の一覧・更新検知）</li>
+<li>REPORT（予定データの取得）</li>
+<li>GET / PUT / DELETE（予定1件の取得・保存・削除）</li>
+</ul>
+<p>これで Thunderbird も iPhone も Android も、読み書き同期が成立します。差分同期（sync-collection）のような重い仕組みは持たず、「カレンダーの状態ハッシュ（getctag）が変わったら一覧を取り直す」方式にしました。個人〜家族の規模なら、これで軽くて十分です。</p>
+<p>結果、<strong>本体は約450行の1ファイル</strong>。データベースサーバーもいりません（予定はSQLite1ファイルに貯まる）。PHPが動くレンタルサーバーにFTPで置くだけで動きます。</p>
+<h2>「全部読めるサイズ」だからAIに直せる</h2>
+<p>Kurage App Store の全商品と同じ思想です。<strong>読めないコードは直せない</strong>ので、全部読めるサイズに収めました。ユーザー・カレンダー・パスワードは設定ファイル1枚で宣言し、宣言していない相手は一切さわれません。</p>
+<p>「仕事用のカレンダーを増やして」「家族の分もアカウントを作って」——同梱のClaude Code向け設計マニュアルを読ませたAIに、そのまま頼めます。連絡先（CardDAV）対応や、読み取り専用の公開カレンダーといった、コードを触る拡張のレシピも付けました。</p>
+<h2>安全に振り切る</h2>
+<ul>
+<li>設定で宣言したユーザー・カレンダーだけが使える。宣言外は403</li>
+<li>URLの先頭が認証ユーザーと一致しないアクセスは拒否（他人の予定は見えない）</li>
+<li>Basic認証（HTTPS）、パスワードはハッシュ保存、全SQLはプレースホルダ</li>
+<li>予定データ（SQLite）はWebから直接読めないよう保護</li>
+</ul>
+<p>OPTIONS/認証/PROPFIND/REPORT/PUT/GET/更新/削除/権限分離の<strong>18項目の自動チェック</strong>を同梱しています。レンタルサーバー（heteml）の実機で、Basic認証の通過とThunderbird/iPhoneの接続シーケンスまで確認済みです。</p>
+<h2>まずデモを</h2>
+<p><a href="https://proto.exbridge.jp/kcaldav/kcaldav.php">デモ</a>をブラウザで開くと、サーバーが稼働していること（説明ページ）が見えます。実際の同期は、その接続URLをThunderbirdやiPhoneに登録して試せます（デモのユーザー: demo / demo）。買い切り・ソース渡し・MITライセンス。</p>
+<p>やりたいことが小さいなら、道具も小さくていい。そう考えて作りました。</p>
+<p>▶ <a href="https://kappstore.exbridge.jp/app.php?id=43950141618ddb02">kappstoreで見る（税込55,000円）</a> ／ <a href="https://kappstore.exbridge.jp/">Kurage App Store</a> — AIエージェントが見つけて、導入し、AIエージェントで育てる業務システムのお店</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
