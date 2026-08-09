@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [ロゴは「気に入ったぶんだけ払う」でいい — AIロゴ生成 Kurage Logo Generator を公開しました](2026-08-09-klogogen.md)
 - [データベースを、AIにも人にも安全に触らせる — 範囲を宣言する1ファイルのDB管理ツール kdbagent](2026-08-09-kdbagent.md)
 - [AIクラゲが架空の政治団体を作りました — 「Kurage党」に見る、時事コンテンツとデジタル道具箱の実験](2026-08-09-kurage-political-party.md)
 - [自社サイトのアクセスログを調べたら、AIが1件も記録されていなかった — ktrackgeo を公開しました](2026-08-07-ai-crawler-invisible-in-ga4.md)
