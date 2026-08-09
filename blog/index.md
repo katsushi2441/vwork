@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [ホットペッパーに頼らない予約ページを、自分の店に置く — 予約・受付システム kreserve を発売しました](2026-08-10-kreserve.html)
 - [AIエージェントが見つけて、導入し、AIエージェントで育てる — Kurage App Storeを「AIが探せる店」にした作業の全記録](2026-08-09-kappstore-ai-agent-store.html)
 - [ロゴは「気に入ったぶんだけ払う」でいい — AIロゴ生成 Kurage Logo Generator を公開しました](2026-08-09-klogogen.html)
 - [データベースを、AIにも人にも安全に触らせる — 範囲を宣言する1ファイルのDB管理ツール kdbagent](2026-08-09-kdbagent.html)

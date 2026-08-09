@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [ホットペッパーに頼らない予約ページを、自分の店に置く — 予約・受付システム kreserve を発売しました](2026-08-10-kreserve.md)
 - [AIエージェントが見つけて、導入し、AIエージェントで育てる — Kurage App Storeを「AIが探せる店」にした作業の全記録](2026-08-09-kappstore-ai-agent-store.md)
 - [ロゴは「気に入ったぶんだけ払う」でいい — AIロゴ生成 Kurage Logo Generator を公開しました](2026-08-09-klogogen.md)
 - [データベースを、AIにも人にも安全に触らせる — 範囲を宣言する1ファイルのDB管理ツール kdbagent](2026-08-09-kdbagent.md)
