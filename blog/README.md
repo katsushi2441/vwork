@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [AIクラゲが架空の政治団体を作りました — 「Kurage党」に見る、時事コンテンツとデジタル道具箱の実験](2026-08-09-kurage-political-party.md)
 - [自社サイトのアクセスログを調べたら、AIが1件も記録されていなかった — ktrackgeo を公開しました](2026-08-07-ai-crawler-invisible-in-ga4.md)
 - [自社の業務効率化のために作ったものを、そのまま売れるようにしました — 制作サービスとKurage App Storeがつながります](2026-08-07-prototype-to-product-loop.md)
 - [「毎朝サイトを見る係」を置けない会社のために — kcheckit を公開しました](2026-08-07-kcheckit-watch-gov-sites.md)
