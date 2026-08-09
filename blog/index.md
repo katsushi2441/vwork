@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [データベースを、AIにも人にも安全に触らせる — 範囲を宣言する1ファイルのDB管理ツール kdbagent](2026-08-09-kdbagent.html)
 - [AIクラゲが架空の政治団体を作りました — 「Kurage党」に見る、時事コンテンツとデジタル道具箱の実験](2026-08-09-kurage-political-party.html)
 - [自社サイトのアクセスログを調べたら、AIが1件も記録されていなかった — ktrackgeo を公開しました](2026-08-07-ai-crawler-invisible-in-ga4.html)
 - [自社の業務効率化のために作ったものを、そのまま売れるようにしました — 制作サービスとKurage App Storeがつながります](2026-08-07-prototype-to-product-loop.html)
