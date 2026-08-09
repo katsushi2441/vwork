@@ -1,0 +1,57 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ロゴは「気に入ったぶんだけ払う」でいい — AIロゴ生成 Kurage Logo Generator を公開しました | VWork バイブコーディングフレームワーク</title><meta name="description" content="社名と業種を入れてスタイルと色を選ぶだけ。AIが約30秒でフラットデザインのロゴを描き、気に入ったものだけベクターSVG・透過PNG・PDFでダウンロードできるサービスを公開しました。2回無料、400円で10回生成+1ダウンロード。生成はKurage自前のローカルGPU(ERNIE)で、外部の画像生成APIは使っていません。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-09-klogogen.html"><meta property="og:type" content="article"><meta property="og:title" content="ロゴは「気に入ったぶんだけ払う」でいい — AIロゴ生成 Kurage Logo Generator を公開しました"><meta property="og:description" content="社名と業種を入れてスタイルと色を選ぶだけ。AIが約30秒でフラットデザインのロゴを描き、気に入ったものだけベクターSVG・透過PNG・PDFでダウンロードできるサービスを公開しました。2回無料、400円で10回生成+1ダウンロード。生成はKurage自前のローカルGPU(ERNIE)で、外部の画像生成APIは使っていません。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-09-klogogen.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ロゴは「気に入ったぶんだけ払う」でいい — AIロゴ生成 Kurage Logo Generator を公開しました"><meta name="twitter:description" content="社名と業種を入れてスタイルと色を選ぶだけ。AIが約30秒でフラットデザインのロゴを描き、気に入ったものだけベクターSVG・透過PNG・PDFでダウンロードできるサービスを公開しました。2回無料、400円で10回生成+1ダウンロード。生成はKurage自前のローカルGPU(ERNIE)で、外部の画像生成APIは使っていません。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ロゴは「気に入ったぶんだけ払う」でいい — AIロゴ生成 Kurage Logo Generator を公開しました", "description": "社名と業種を入れてスタイルと色を選ぶだけ。AIが約30秒でフラットデザインのロゴを描き、気に入ったものだけベクターSVG・透過PNG・PDFでダウンロードできるサービスを公開しました。2回無料、400円で10回生成+1ダウンロード。生成はKurage自前のローカルGPU(ERNIE)で、外部の画像生成APIは使っていません。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-09-klogogen.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-09", "dateModified": "2026-08-09", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>ロゴは「気に入ったぶんだけ払う」でいい — AIロゴ生成 Kurage Logo Generator を公開しました</h1><p class="meta">2026-08-09</p><p>ロゴがほしい。でもデザイナーに頼むほどの予算はないし、生成AIのサブスクに入るほど頻繁には使わない——そんな「ちょうどいいロゴのもらい方」を形にした <strong>Kurage Logo Generator（klogogen）</strong> を公開しました。</p>
+<p>▶ <a href="https://klogogen.exbridge.jp/klogogen.html">サービスを見る</a> ／ <a href="https://kurage.exbridge.jp/klogogen.php">今すぐ試す（2回無料・Xログインのみ）</a></p>
+<h2>気に入らなければ、1円も払わなくていい</h2>
+<p>生成AIでロゴを作るサービスはたくさんあります。でも多くは「生成する前に課金」か「サブスク」です。生成AIは当たり外れがあるものなのに、外れでもお金が減るのは、順序が逆だと思っていました。</p>
+<p>klogogen は逆にしました。</p>
+<ul>
+<li><strong>生成は2回まで無料</strong>。結果は透かし入りプレビューで全部見られます</li>
+<li>気に入ったら <strong>ロゴパック400円</strong>（10回生成+1ダウンロード）</li>
+<li>もっとほしければ <strong>追加ダウンロード1個200円</strong>（3個まとめて+400円、生成した全部で+600円）</li>
+<li>支払いは PayPal か、Base上の URLAI トークン</li>
+</ul>
+<p>ダウンロードしたロゴは、拡大しても崩れない<strong>ベクターSVG・背景透過PNG・PDF</strong>の3形式。名刺からWEB、看板までそのまま使えます。商用利用OKです。</p>
+<h2>30秒でこの品質が出ます</h2>
+<p>入力は4つだけ。社名・業種(モチーフ)・スタイル(ミニマル/ジオメトリック/オーガニック/ポップ/エンブレム/エレガント)・色。それでこういうロゴが約30秒で上がってきます。</p>
+<p>実際にこのサービスで生成したサンプル：コーヒーショップのシンボル、麦と文字が入ったベーカリーのロゴ、山のエンブレム。いずれも1回の生成でこの品質です（<a href="https://klogogen.exbridge.jp/klogogen.html">LPに実物を載せています</a>）。</p>
+<p>短い英字なら「Sakura Bakery」のような<strong>文字入りワードマーク</strong>も綺麗に綴れます。</p>
+<h2>技術の中身：ローカルGPU生成+本物のSVG化</h2>
+<p>外部の画像生成APIは使っていません。Kurage自前のローカルGPUで画像モデル <strong>ERNIE-Image-Turbo</strong> を動かし、GPUジョブキュー(rqdb4ai)で動画生成などの本番ジョブと直列化しています。だから限界費用は電気代だけ（1枚≈0.06円）。「2回無料」を気前よく出せるのは、この自前インフラのおかげです。</p>
+<p>もうひとつのこだわりが<strong>SVG納品</strong>です。生成画像をSVGタグで包んだだけの「なんちゃってSVG」ではなく、</p>
+<ol>
+<li>背景を検出して平坦化・透過</li>
+<li>前景の色を主要色にスナップ（アンチエイリアスの縁が数百の微小パスに割れるのを防ぐ）</li>
+<li>ベクター化エンジン vtracer でパスに変換</li>
+</ol>
+<p>という後処理を通して、<strong>1パスの綺麗なベクターSVG</strong>に仕上げます。開発中、この縁の処理を入れる前はSVGが11MBに膨らんでいました。処理後は同じロゴが28KB・1パスです。</p>
+<h2>使い方は3ステップ</h2>
+<ol>
+<li><strong>Xでログイン</strong>（登録フォームなし。ロゴと残回数はXアカウントに紐づきます）</li>
+<li><strong>入力して生成</strong>（1枚約30秒。透かし入りプレビューで確認）</li>
+<li><strong>気に入ったものだけDL枠で入手</strong>（SVG・透過PNG・PDFを何度でも）</li>
+</ol>
+<p>URLAIトークンは <a href="https://kurl2earn.exbridge.jp/">kurl2earn</a> で無料配布中なので、実質無料で1パック試すこともできます。</p>
+<p>まずは2回、無料で回してみてください。</p>
+<p>▶ <a href="https://kurage.exbridge.jp/klogogen.php">Kurage Logo Generator を試す</a> ／ <a href="https://klogogen.exbridge.jp/klogogen.html">サービス紹介（日本語）</a> ／ <a href="https://klogogen.exbridge.jp/">English</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
