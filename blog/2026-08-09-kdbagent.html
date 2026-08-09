@@ -1,0 +1,55 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>データベースを、AIにも人にも安全に触らせる — 範囲を宣言する1ファイルのDB管理ツール kdbagent | VWork バイブコーディングフレームワーク</title><meta name="description" content="phpMyAdminのような万能ツールは、Webに置くと全データを晒す踏み台になりかねません。設定で宣言した表・列・操作だけを触らせるDB管理ツール Kurage DB Agent を作りました。ブラウザ・コマンド・HTTP APIの3つの入口が同じ制限を通り、Claude Code などのAIエージェントにDB作業を任せても範囲より外は壊せません。買い切り55,000円、MITライセンス。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-09-kdbagent.html"><meta property="og:type" content="article"><meta property="og:title" content="データベースを、AIにも人にも安全に触らせる — 範囲を宣言する1ファイルのDB管理ツール kdbagent"><meta property="og:description" content="phpMyAdminのような万能ツールは、Webに置くと全データを晒す踏み台になりかねません。設定で宣言した表・列・操作だけを触らせるDB管理ツール Kurage DB Agent を作りました。ブラウザ・コマンド・HTTP APIの3つの入口が同じ制限を通り、Claude Code などのAIエージェントにDB作業を任せても範囲より外は壊せません。買い切り55,000円、MITライセンス。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-09-kdbagent.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="データベースを、AIにも人にも安全に触らせる — 範囲を宣言する1ファイルのDB管理ツール kdbagent"><meta name="twitter:description" content="phpMyAdminのような万能ツールは、Webに置くと全データを晒す踏み台になりかねません。設定で宣言した表・列・操作だけを触らせるDB管理ツール Kurage DB Agent を作りました。ブラウザ・コマンド・HTTP APIの3つの入口が同じ制限を通り、Claude Code などのAIエージェントにDB作業を任せても範囲より外は壊せません。買い切り55,000円、MITライセンス。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "データベースを、AIにも人にも安全に触らせる — 範囲を宣言する1ファイルのDB管理ツール kdbagent", "description": "phpMyAdminのような万能ツールは、Webに置くと全データを晒す踏み台になりかねません。設定で宣言した表・列・操作だけを触らせるDB管理ツール Kurage DB Agent を作りました。ブラウザ・コマンド・HTTP APIの3つの入口が同じ制限を通り、Claude Code などのAIエージェントにDB作業を任せても範囲より外は壊せません。買い切り55,000円、MITライセンス。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-09-kdbagent.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-09", "dateModified": "2026-08-09", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>データベースを、AIにも人にも安全に触らせる — 範囲を宣言する1ファイルのDB管理ツール kdbagent</h1><p class="meta">2026-08-09</p><p>在庫表や顧客名簿を、担当者が時々直したい。でもデータベース全体を触らせるのは怖い——この「ちょうどいい範囲だけ触らせたい」に応える1ファイルのツール <strong>Kurage DB Agent（kdbagent）</strong> を作りました。</p>
+<p>▶ <a href="https://kappstore.exbridge.jp/app.php?id=719429354f079793">kappstore で見る（税込55,000円）</a> ／ <a href="https://proto.exbridge.jp/kdbagent/">デモを触る</a> ／ <a href="https://github.com/katsushi2441/kdbagent">GitHub（MIT）</a></p>
+<h2>万能ツールは、便利さと危険が背中合わせ</h2>
+<p>phpMyAdmin や Adminer は強力です。でも「任意のSQLを打てる」ということは、Webに置けば<strong>全データを晒す踏み台</strong>にもなり得ます。非エンジニアの担当者に渡すには危なく、AIエージェントに任せるのはもっと怖い。</p>
+<p>kdbagent は逆の発想です。<strong>設定で「見せる表・列・操作」を宣言し、宣言外はどの入口からも触れない</strong>ようにします。</p>
+<pre><code class="language-php">'customers' =&gt; array(
+    'columns'    =&gt; array('id','name','email','phone','note'), // これ以外の列は見えない
+    'editable'   =&gt; array('name','email','phone','note'),       // これ以外は書き換え不可
+    'can_delete' =&gt; false,                                       // 削除は禁止
+),
+</code></pre>
+<p>宣言していない列（たとえばパスワードや原価）は、検索結果にも編集フォームにも出てきません。宣言していない表や、禁止した削除は、ブラウザからもコマンドからも実行できません。</p>
+<h2>同じ制限を、3つの入口が通る</h2>
+<p>1つの <code>kdbagent.php</code> が、3通りに使えます。どれも同じ「範囲を絞った」制限を通ります。</p>
+<ul>
+<li><strong>ブラウザ</strong>：ログイン・検索・編集・追加・削除の管理画面（CSRF・監査ログ付き）</li>
+<li><strong>コマンド</strong>：<code>php kdbagent.php select customers --search 田中</code>。JSONを返すので、<strong>Claude Code などのAIエージェントがそのまま叩けます</strong>（連携スキル同梱）</li>
+<li><strong>HTTP API</strong>：トークン付きのJSON API</li>
+</ul>
+<h2>AIにDB作業を任せられる理由</h2>
+<p>いま私たちは、社内の開発を Claude Code に任せています。そのとき一番怖いのが「AIがデータベースを直接いじって、想定外の行を壊す」ことでした。kdbagent を通せば、<strong>AIが触れるのは設定で宣言した範囲だけ</strong>です。「顧客の電話番号を直しておいて」と頼んでも、<code>editable</code> に <code>phone</code> しか入れていなければ、それ以外は直せません。</p>
+<p>つまり、AIに渡す前に<strong>設定で範囲を絞ること</strong>が、そのまま安全策になります。生SQLを書かせるより、この一枚を挟むほうが、はるかに安心して任せられます。</p>
+<h2>しくみと仕様</h2>
+<ul>
+<li>全SQLは PDO のプリペアドステートメント。値は必ずバインド（SQLインジェクション対策）。危険な文字列を検索欄に入れても「ただの検索語」として扱われ、DBは壊れません。</li>
+<li>表名・列名は、SQLに組み立てる前に必ず宣言済みリストと照合します。利用者の入力をそのまま識別子にしません。</li>
+<li>変更はすべて監査ログ（だれが・いつ・どの行を・どう変えたか）。</li>
+<li>MySQL / SQLite 両対応。依存ライブラリなし。一般的なレンタルサーバーで動きます。</li>
+<li>買い切り・ソースコードごとお渡し・MITライセンス。改変も商用利用も自由です。</li>
+</ul>
+<p>DBを直接いじる道具は、正直、作り方を間違えると危険です。だからこそ「範囲を宣言する」という一点に絞って作りました。デモで実際に触ってみてください。</p>
+<p>▶ <a href="https://proto.exbridge.jp/kdbagent/">デモ</a> ／ <a href="https://kappstore.exbridge.jp/app.php?id=719429354f079793">kappstore</a> ／ <a href="https://github.com/katsushi2441/kdbagent">GitHub</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
