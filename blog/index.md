@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [AIエージェントが見つけて、導入し、AIエージェントで育てる — Kurage App Storeを「AIが探せる店」にした作業の全記録](2026-08-09-kappstore-ai-agent-store.html)
 - [ロゴは「気に入ったぶんだけ払う」でいい — AIロゴ生成 Kurage Logo Generator を公開しました](2026-08-09-klogogen.html)
 - [データベースを、AIにも人にも安全に触らせる — 範囲を宣言する1ファイルのDB管理ツール kdbagent](2026-08-09-kdbagent.html)
 - [AIクラゲが架空の政治団体を作りました — 「Kurage党」に見る、時事コンテンツとデジタル道具箱の実験](2026-08-09-kurage-political-party.html)
