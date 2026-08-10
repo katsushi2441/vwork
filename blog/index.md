@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [Thunderbirdの予定をスマホで — Googleに預けず自分のサーバーで持つ『Kurage Capacitor Launcher』を作った](2026-08-10-kurage-capacitor-launcher.html)
 - [業務システムを、実質タダで手に入れる — 作って・直して・売って・紹介する4ステップ](2026-08-10-system-free-cycle.html)
 - [アプリを入れずに、ブラウザで予定を読み書き — 1ファイルのカレンダー kcaldav に WEB画面を付けました](2026-08-10-kcaldav-web.html)
 - [カレンダー同期に、巨大なフレームワークはいらなかった — 1ファイルのCalDAVサーバー kcaldav を作って発売しました](2026-08-10-kcaldav.html)
