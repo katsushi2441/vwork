@@ -1,58 +1,54 @@
 ---
-title: "Thunderbirdの予定をスマホで — Googleに預けず自分のサーバーで持つ『Kurage Capacitor Launcher』を作った"
-description: "PCのThunderbirdのカレンダーを、外出先のスマホから読み書きしたい。いちばん簡単な答えは『Googleカレンダーに全部移す』でしたが、予定表を丸ごとクラウドに預けるのは避けたい。そこでGoogleをハブにするのはあきらめ、1ファイルのCalDAVサーバー kcaldav と、ホーム画面から開くランチャー Kurage Capacitor Launcher を自作しました。Capacitorをベースに選んだ理由と、結局DAVx5でGoogleカレンダーとも同期できた話を紹介します。"
+title: "『Kurage Capacitor Launcher』を作った — ThunderbirdとGoogleカレンダーの連携でつまずき、将来のAndroidアプリの土台にCapacitorを選んだ"
+description: "PCのThunderbirdのカレンダーを、外出先のスマホから読み書きしたい。素直な道はThunderbirdとGoogleカレンダーの連携でしたが、これがすんなりいかず、結局1ファイルのCalDAVサーバー kcaldav を自作しました。あわせて『今後Androidアプリのニーズが出たらCapacitorで開発する』ための土台・技術検証として、Kurage Capacitor Launcher を作りました。Capacitorを土台に選んだ理由と、DAVx5でGoogleカレンダーとも同期できた話を紹介します。"
 date: 2026-08-10
 layout: default
 permalink: /blog/2026-08-10-kurage-capacitor-launcher.html
 ---
 
-PCの[Thunderbird](https://www.thunderbird.net/)でカレンダーを管理しています。困っていたのは「外出先のスマホから、その予定を見て・書きたい」こと。いちばん簡単な答えは「Googleカレンダーに全部移す」でした。でも——自分の予定表を丸ごとGoogleのクラウドに預けるのは避けたい。
+PCの[Thunderbird](https://www.thunderbird.net/)でカレンダーを管理しています。やりたかったのは「外出先のスマホから、その予定を見て・書きたい」こと。いちばん素直な道は「ThunderbirdとGoogleカレンダーを連携させて、スマホではGoogleカレンダーで見る」でした。ところが——**これがすんなりいかない**。
 
-そこでGoogleカレンダーを"ハブ"にするのはあきらめ、**自分のサーバーで持てる仕組み**を自作しました。それが1ファイルのCalDAVサーバー **kcaldav** と、スマホのホーム画面から開くランチャーアプリ **Kurage Capacitor Launcher（kclauncher）** です。
+その回り道の末にたどり着いたのが、1ファイルのCalDAVサーバー **kcaldav** と、将来のスマホアプリの土台として作った **Kurage Capacitor Launcher（kclauncher）** です。順番に紹介します。
 
-## 出発点：Thunderbirdの予定を、スマホから読み書きしたい
+## 発端：ThunderbirdとGoogleカレンダーが、素直に連携しなかった
 
-Thunderbirdのカレンダーは、iCalendar（CalDAV）で動いています。スマホからも同じ予定を読み書きするには、PCとスマホの"あいだ"に、常に正となるサーバーが1つ要ります。
+ThunderbirdからGoogleカレンダーへ双方向で同期するには、アドオン（Provider for Google Calendar など）や設定が必要で、思ったほど素直にいきませんでした。認証まわりや同期の挙動でつまずき、「PCとスマホで同じ予定を、確実に読み書きする」という当たり前のことが、意外と面倒だったのです。
 
-最初はBaïkalのような既存のCalDAVサーバーを立てようとしましたが、カレンダーを共有したいだけなのに、巨大なフレームワークと管理画面はやりすぎでした。そこで、CalDAVで実際に必要な処理（OPTIONS / PROPFIND / REPORT / GET / PUT / DELETE）だけを素のPHPで書いた、**約1ファイルのCalDAVサーバー kcaldav** を作りました。SQLite1ファイルで動き、データベースサーバーもいりません。PHPが動くレンタルサーバーにFTPで置くだけ。これで、Thunderbird・iPhoneの標準カレンダー・スマホのブラウザから、同じ予定を読み書きできるようになりました。
+そこで発想を変えました。GoogleカレンダーをPCとスマホの"あいだ"に置くのではなく、**自分のサーバーを1つ、正（せい）として置く**。CalDAVで実際に必要な処理（OPTIONS / PROPFIND / REPORT / GET / PUT / DELETE）だけを素のPHPで書いた、**約1ファイルのCalDAVサーバー kcaldav** を作りました。SQLite1ファイルで動き、データベースサーバーもいりません。PHPが動くレンタルサーバーにFTPで置くだけ。これで、Thunderbird・iPhoneの標準カレンダー・スマホのブラウザから、同じ予定を読み書きできるようになりました。
 
-## なぜGoogleカレンダーを"ハブ"にしなかったか
+## Kurage Capacitor Launcher：将来のAndroidアプリ開発の"土台"として
 
-Googleカレンダーに全部移せば、確かにスマホからはすぐ使えます。ただしその瞬間から、予定表の"正本"はGoogleのクラウドに移り、主導権も預けることになります。バックアップも、他サービスとの連携も、Googleの都合に乗る形です。
+カレンダーの問題とは別に、もうひとつ見据えていたことがあります。**今後、ユーザーからAndroidアプリのニーズが出てきたら、そのときはCapacitorをベースに開発していこう**、という方針です。
 
-やりたかったのは逆で、**サーバーは自分のもの、予定は自分の手元**。だからGoogleを中心に据えるのはやめました。（後述しますが、"Googleカレンダーのアプリで見たいだけ"なら、預けなくても両立できる、というのが最後のオチです。）
+スマホアプリ（ネイティブ）は、Webアプリよりメリットが大きい場面があります。ホーム画面のアイコン、全画面、プッシュ通知、オフライン、端末機能へのアクセス——「Webよりアプリの方がいい」と言われたときに、すぐ応えられる土台がほしい。
 
-## スマホから"アプリのように"開きたい → Capacitorでランチャーを作った
+そこで、その**技術検証（PoC）兼・再利用できるベース**として作ったのが Kurage Capacitor Launcher です。今日から使える実用的なランチャーであると同時に、**要望が来たら、これを土台にKurageの各サービスをネイティブアプリ化していく**ための足場です。
 
-kcaldavはブラウザでも使えます。でもスマホで日常的に使うなら、ホーム画面のアイコンから全画面で開けて、戻る導線もある"アプリ"の感触が欲しい。
+### なぜCapacitorを土台に選んだか
 
-Androidには [TWA（Trusted Web Activity）](https://developer.chrome.com/docs/android/trusted-web-activity) という手もありますが、TWAは**検証済みの1ドメインに固定**されてしまい、「自分のサーバーのURLを指したい」「URLで中身を切り替えたい」という今回の要件に合いません。
+- **1つのWeb実装から、Androidネイティブアプリと、iPhoneのPWAを両方出せる**（iOSはMacが必要でストア配信こそしないが、同じ画面がPWAとして動く）
+- **WebViewベースなので、Kurageの既存Webアプリ／任意URLをそのまま中で動かせる**。だから既存資産を短期間でアプリ化できる
+- 「**開くURLで中身が変わる**」汎用ランチャーにできる。タイルにURLを登録するだけで、カレンダーにも、動画にも、別サービスにもなる
+- **ネイティブの殻の恩恵**：ホーム画面アイコン、全画面、アプリ内ブラウザ（Custom Tabs）。この先、プッシュ通知・オフライン・端末APIを足していける
+- **Web技術の使い回しで、専用のネイティブ開発なしに、速く・安く**検証・開発できる
+- Androidの[TWA](https://developer.chrome.com/docs/android/trusted-web-activity)は**検証済みの1ドメインに固定**されるが、Capacitorは**任意のURLを指せる**——「自分のサーバーのkcaldavを指定して使う」がそのまま実現できる
 
-そこで選んだのが **[Capacitor](https://capacitorjs.com/)** です。Webアプリをネイティブの殻でくるむ、ハイブリッドアプリのフレームワークです。
+つまり Kurage Capacitor Launcher は、「Webよりアプリの方が有利で、ユーザーの要望がある」ときに、**そこから開発を始められる土台**として位置づけています。
 
-### Capacitorをベースにしたメリット
+## できること（今できること）
 
-- **1つのWeb実装から、Androidネイティブアプリと、iPhoneのPWAを両方出せる**。iOSはMacが必要でストア配信こそしませんが、同じ画面がPWA（ホーム画面に追加）としてそのまま動きます
-- **WebViewベースなので、どんなWebアプリ／URLでもそのまま中で開ける**。作り込みが不要
-- だから「**開くURLで中身が変わる**」汎用ランチャーにできる。タイルにURLを登録するだけで、カレンダーにも、動画にも、別のサービスにもなる
-- **ネイティブの殻の恩恵**：ホーム画面アイコン、全画面表示、アプリ内ブラウザ（Custom Tabs＝閉じるボタン付き）。将来プッシュ通知やオフラインを足す余地もある
-- **Web技術の使い回しで、専用のネイティブ開発なしに、速く・安く作れる**
-- TWAと違い**任意のURLを指せる**ので、「自分のサーバーのkcaldavを指定して使う」がそのまま実現できる
-
-## できること
-
-Kurage Capacitor Launcher は、タイルをタップしてサービスを開くだけのシンプルなランチャーです。
+土台といっても、今日から普通に使えるランチャーです。
 
 - 既定タイル：カレンダー（kcaldav）／動画／サンプルゲーム／アプリ新着
 - **自分のサーバーのカレンダーURLなど、任意のタイルを追加・編集・削除できる**
 - **iPhone**：Safariで「ホーム画面に追加」すればアプリ不要（PWA）
 - **Android**：署名済みAPKを配布
 
-## 結局、Googleカレンダーとも同期できる（預けはしない）
+## そして、Googleカレンダーとも同期できた（DAVx5）
 
-面白いのはここです。Googleを"ハブ"にするのはあきらめましたが、**Googleカレンダーの"アプリ"で見て・書く**ことは、預けずに実現できました。
+最初につまずいたGoogleカレンダーとの連携も、遠回りした結果きれいに解けました。
 
-Androidに **[DAVx5](https://www.davx5.com/)**（CalDAV同期アプリ。F-Droid版は無料）を入れて、kcaldavのURLとユーザー名・パスワードを設定すると、**Android標準＝Googleカレンダーのアプリ**に自分の予定が表示・編集できます。書いた予定はThunderbirdやiPhoneにも反映されます。しかも**予定はGoogleのクラウドではなく、自分のkcaldavサーバーに保存**されたまま。データの持ち主は自分、見る窓口はGoogleカレンダー、という良いとこ取りができました。
+kcaldavはCalDAVなので、Androidに **[DAVx5](https://www.davx5.com/)**（CalDAV同期アプリ。F-Droid版は無料）を入れて、kcaldavのURLとユーザー名・パスワードを設定すると、**Android標準＝Googleカレンダーのアプリ**に自分の予定が表示・編集できます。書いた予定はThunderbirdやiPhoneにも反映され、予定の実体はkcaldavサーバー側に保存されます。「スマホではGoogleカレンダーで見たい」という当初の望みは、自分のサーバー経由で叶いました。
 
 ## 入手
 
@@ -61,4 +57,4 @@ Androidに **[DAVx5](https://www.davx5.com/)**（CalDAV同期アプリ。F-Droid
 - 公式サイト（LP）：[https://kclauncher.exbridge.jp/](https://kclauncher.exbridge.jp/)
 - [Kurage App Store](https://kappstore.exbridge.jp/) にも無料で掲載しています
 
-「カレンダーくらい、巨大なサービスに預けなくても、1ファイルのサーバーと小さなランチャーで足りる」。Kurage Capacitor Launcher は、その手触りを確かめるための入口です。
+カレンダー1つのために始めた回り道が、「1ファイルのCalDAVサーバー」と「将来のアプリ開発の土台」という2つの成果になりました。Kurage Capacitor Launcher は、Kurageのサービスをネイティブアプリへ広げていくための、最初の一歩です。
