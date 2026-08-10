@@ -175,3 +175,4 @@ kfreqai-entry-threshold-explained
 2026-08-10-system-free-cycle
 2026-08-10-kurage-capacitor-launcher
 2026-08-11-openkb-gemma4-deepseek
+2026-08-11-auto-monetization
