@@ -174,3 +174,4 @@ kfreqai-entry-threshold-explained
 2026-08-10-kcaldav-web
 2026-08-10-system-free-cycle
 2026-08-10-kurage-capacitor-launcher
+2026-08-11-openkb-gemma4-deepseek
