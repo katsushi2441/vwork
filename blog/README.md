@@ -13,7 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
-- [Thunderbirdの予定をスマホで — Googleに預けず自分のサーバーで持つ『Kurage Capacitor Launcher』を作った](2026-08-10-kurage-capacitor-launcher.md)
+- [『Kurage Capacitor Launcher』を作った — ThunderbirdとGoogleカレンダーの連携でつまずき、将来のAndroidアプリの土台にCapacitorを選んだ](2026-08-10-kurage-capacitor-launcher.md)
 - [業務システムを、実質タダで手に入れる — 作って・直して・売って・紹介する4ステップ](2026-08-10-system-free-cycle.md)
 - [アプリを入れずに、ブラウザで予定を読み書き — 1ファイルのカレンダー kcaldav に WEB画面を付けました](2026-08-10-kcaldav-web.md)
 - [カレンダー同期に、巨大なフレームワークはいらなかった — 1ファイルのCalDAVサーバー kcaldav を作って発売しました](2026-08-10-kcaldav.md)
