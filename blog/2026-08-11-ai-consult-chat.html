@@ -1,0 +1,70 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>システム開発、AIに相談してみませんか — 声で話せる「Kurage.AI 相談チャット」ができるまで | VWork バイブコーディングフレームワーク</title><meta name="description" content="システム開発やバイブコーディングの相談相手になるAIチャット「Kurage.AI」を公開しました。Xログインだけで無料。何を作ればいいか・どのプロトタイプが近いか・代理店でどう稼ぐかを、その場で案内します。この記事では、ただのテキストチャットが『声で会話できる相棒』へと進化していった軌跡を、実際の改善の積み重ねとして紹介します。これ自体がバイブコーディング（作って・使って・直してを高速で回す開発）の実例です。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-11-ai-consult-chat.html"><meta property="og:type" content="article"><meta property="og:title" content="システム開発、AIに相談してみませんか — 声で話せる「Kurage.AI 相談チャット」ができるまで"><meta property="og:description" content="システム開発やバイブコーディングの相談相手になるAIチャット「Kurage.AI」を公開しました。Xログインだけで無料。何を作ればいいか・どのプロトタイプが近いか・代理店でどう稼ぐかを、その場で案内します。この記事では、ただのテキストチャットが『声で会話できる相棒』へと進化していった軌跡を、実際の改善の積み重ねとして紹介します。これ自体がバイブコーディング（作って・使って・直してを高速で回す開発）の実例です。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-11-ai-consult-chat.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="システム開発、AIに相談してみませんか — 声で話せる「Kurage.AI 相談チャット」ができるまで"><meta name="twitter:description" content="システム開発やバイブコーディングの相談相手になるAIチャット「Kurage.AI」を公開しました。Xログインだけで無料。何を作ればいいか・どのプロトタイプが近いか・代理店でどう稼ぐかを、その場で案内します。この記事では、ただのテキストチャットが『声で会話できる相棒』へと進化していった軌跡を、実際の改善の積み重ねとして紹介します。これ自体がバイブコーディング（作って・使って・直してを高速で回す開発）の実例です。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "システム開発、AIに相談してみませんか — 声で話せる「Kurage.AI 相談チャット」ができるまで", "description": "システム開発やバイブコーディングの相談相手になるAIチャット「Kurage.AI」を公開しました。Xログインだけで無料。何を作ればいいか・どのプロトタイプが近いか・代理店でどう稼ぐかを、その場で案内します。この記事では、ただのテキストチャットが『声で会話できる相棒』へと進化していった軌跡を、実際の改善の積み重ねとして紹介します。これ自体がバイブコーディング（作って・使って・直してを高速で回す開発）の実例です。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-11-ai-consult-chat.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-11", "dateModified": "2026-08-11", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>システム開発、AIに相談してみませんか — 声で話せる「Kurage.AI 相談チャット」ができるまで</h1><p class="meta">2026-08-11</p><p>「システムを作りたいけど、何から始めればいいか分からない」——多くの相談は、ここから始まります。</p>
+<p>そこで、<strong>システム開発・バイブコーディングの相談相手になるAIチャット</strong>を公開しました。Xログインだけで無料で使えます。</p>
+<p>👉 <strong><a href="https://kurage.exbridge.jp/chat.php">Kurage.AI システム開発相談チャットを使う</a></strong></p>
+<p>この記事では、このチャットが「ただのテキストチャット」から「声で会話できる相棒」へと進化していった軌跡を紹介します。<strong>これ自体が、作って・使って・その場で直す＝バイブコーディングの実例</strong>です。</p>
+<h2>Kurage.AI 相談チャットとは</h2>
+<p>システム開発とバイブコーディングに関する質問にお答えし、Kurageプロジェクトの説明・提案までするAI窓口です。</p>
+<ul>
+<li><strong>バイブコーディングで作りたい人へ</strong> — やりたい業務に近いプロトタイプ・商品はどれか、どう作って・どう育てるかを相談できます</li>
+<li><strong>代理店で収益化したい人へ</strong> — 目の前のお客様の悩みに、どの商品を・いくらで・どう勧めるか、紹介手数料まで、その場で組み立てます</li>
+<li>回答は<strong>Kurageの公開情報だけを根拠</strong>にし、商品・価格・デモURLを正確に案内します（憶測でURLを作らない設計）</li>
+</ul>
+<p>Xアカウントでログインするだけ。無料です。</p>
+<h2>進化の軌跡 — 1つのチャットが「話せる相棒」になるまで</h2>
+<p>このチャットは、一度に完成させたものではありません。<strong>使ってみて → 不満を見つけて → その場で直す</strong>、を短いサイクルで繰り返して育てました。その軌跡そのものが、いちばんの見どころです。</p>
+<h3>① まず「文字で相談できる」</h3>
+<p>最初は、テキストで質問すると、最適なKurage商品・LP・デモ・価格・代理店手数料をまとめて返す、シンプルなチャットでした。ポイントは、<strong>公開情報だけを根拠にして、URLやドメインを推測で作らない</strong>こと。分からないことは正直に「公式でご確認ください」と案内します。</p>
+<h3>② 次に「声で聞ける」</h3>
+<p>画面を見なくても内容が入るように、回答を<strong>Kurageのキャラクターのクローン音声（自社の音声合成）</strong>で読み上げられるようにしました。移動中でも耳で受け取れます。</p>
+<h3>③ そして「声で"会話"できる」</h3>
+<p>ここが大きな転換点です。<strong>全文をそのまま棒読みするのをやめました。</strong> 代わりに：</p>
+<ol>
+<li>質問した瞬間に「はい、お調べしますね」と<strong>すぐ相槌</strong>が返る</li>
+<li>画面には<strong>詳しい回答の全文</strong>を表示</li>
+<li>音声では<strong>要点だけを話し言葉に要約して</strong>返す</li>
+</ol>
+<p>つまり、人に相談したときのような感覚です。マイクで話しかけて、相槌が返り、要点が声で返ってくる——という会話のループになりました。</p>
+<h3>④ 「賢さ」と「速さ」を両立させる</h3>
+<p>相談の質はそのままに、<strong>待たされない</strong>ことにこだわりました。用途に応じて最適なAIモデル（Claude・DeepSeekなど）を使い分け、回答の作り方も見直した結果、<strong>一般の相談で実測2〜3秒</strong>という速さになっています。</p>
+<p>面白かったのは、「速くならない原因」を実際に計測して突き止めたことです。遅さの正体は入力データの量ではなく、<strong>使うモデルと、回答の長さ</strong>でした。数字で確かめながら、体感が変わるまで詰めていく——これもバイブコーディングの進め方です。</p>
+<h3>⑤ スマホでも軽快に</h3>
+<p>「スマホだと重い」という一点も、憶測で対処せず<strong>実際に通信量を計測</strong>して原因を特定し、日本語フォントと音声データを最適化して解消しました。</p>
+<h2>これは、あなたのシステムの作り方でもあります</h2>
+<p>ここまで読んで気づいた方もいるはずです。<strong>このチャットを育てたやり方こそ、私たちが提供している「バイブコーディング」そのもの</strong>です。</p>
+<ul>
+<li>完璧な仕様を先に固めるのではなく、<strong>動くものを速く作る</strong></li>
+<li>使ってみて、<strong>不満を計測して、その場で直す</strong></li>
+<li>AIと一緒に、<strong>短いサイクルで良くしていく</strong></li>
+</ul>
+<p>同じやり方で、あなたの業務システムも作れます。</p>
+<ul>
+<li><strong><a href="https://kurage.exbridge.jp/vibe-prototype.html">バイブプロトタイプ制作</a></strong> — 動くシステムを、安く・速く（最短1営業日）</li>
+<li><strong><a href="https://kappstore.exbridge.jp/">Kurage App Store</a></strong> — できたシステムを販売、ソースはMITで改変自由</li>
+<li><strong><a href="https://kurage.exbridge.jp/auto-monetization.html">AIで不労所得をつくるしくみ</a></strong> — 紹介するだけで継続手数料が積み上がる代理店制度</li>
+</ul>
+<h2>まずは、相談してみてください</h2>
+<p>「こんな業務を自動化したい」「この客に何を勧める？」——自然な言葉で書くだけで、答えと次の一歩が返ってきます。声でも、文字でも。</p>
+<p>👉 <strong><a href="https://kurage.exbridge.jp/chat.php">Kurage.AI システム開発相談チャットを開く</a></strong>（Xログインで無料）</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
