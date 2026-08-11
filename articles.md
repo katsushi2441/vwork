@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [NVIDIAのMagpie TTS公開とMuse Glimmerの登場：低遅延音声と次世代モデルの最前線 08-11](2026-08-11-ai-news-2.html)
 - [MetaのMuse GlimmerとNVIDIAのMagpie TTSが示すオープンAIへの潮流 08-11](2026-08-11-ai-news.html)
 - [OpenKBで自社ナレッジのAI相談窓口とWikiを作った —— gemma4 12bとDeepSeekは『コンパイル』と『回答』で効き方が違う](2026-08-11-openkb-gemma4-deepseek.html)
 - [メモリ99.8%の障害を調べたら、犯人が証拠に写っていなかった —— Zabbix + LLMの障害調査を実際にやってみた記録](2026-08-07-zabbix-memory-incident.html)
