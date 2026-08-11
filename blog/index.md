@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [システム開発、AIに相談してみませんか — 声で話せる「Kurage.AI 相談チャット」ができるまで](2026-08-11-ai-consult-chat.html)
 - [AIで不労所得をつくる — 作って・売って・紹介するだけ。継続30%が積み上がる自動収益化のしくみ](2026-08-11-auto-monetization.html)
 - [『Kurage Capacitor Launcher』を作った — ThunderbirdとGoogleカレンダーの連携でつまずき、将来のAndroidアプリの土台にCapacitorを選んだ](2026-08-10-kurage-capacitor-launcher.html)
 - [業務システムを、実質タダで手に入れる — 作って・直して・売って・紹介する4ステップ](2026-08-10-system-free-cycle.html)
