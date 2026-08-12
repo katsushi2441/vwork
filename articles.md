@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Hong Kong Dollarで読む：ClaudeやGPTの隠れた推論プロセスを解読：AI技術の核心とStandard Charte… 08-12](2026-08-12-ai-news-4.html)
 - [Compressionで読む：Unslothのデスクトップアプリ登場と、ClaudeやOpenAIが関わるAI透明性の新基準 08-12](2026-08-12-ai-news-3.html)
 - [AIエージェントに業務システムの改変を任せるなら「触ってよい範囲」を宣言する設計にする](2026-08-12-safe-agent-scope.html)
 - [ACEとTokenizationで読む：ModularのMojo 1.0リリースとAI効率化に向けた最新技術 08-12](2026-08-12-ai-news-2.html)
