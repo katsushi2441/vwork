@@ -326,3 +326,4 @@ url2pub-i18n-hatena-summary
 2026-08-12-ai-news
 2026-08-12-ai-news-2
 2026-08-12-make-buy-refer
+2026-08-12-safe-agent-scope
