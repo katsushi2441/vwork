@@ -1,0 +1,52 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「宣伝OK・リンクOK」の掲示板 Kurage BBS を作った理由 — 被リンク文化を取り戻したい | VWork バイブコーディングフレームワーク</title><meta name="description" content="被リンクはいまもSEOの土台なのに、URLを気軽に書き込める掲示板は激減しました。この矛盾を解消するため、宣伝を歓迎する1ファイルPHP掲示板『Kurage BBS（kbbs）』を開設・販売開始。X認証と同一ドメインメール確認でスパムを構造的に防ぎ、投稿されたURLにはSEO・GEO・AEOの改善提案もお返しします。買い切り55,000円でKurage App Storeにて販売中。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-12-kbbs-launch.html"><meta property="og:type" content="article"><meta property="og:title" content="「宣伝OK・リンクOK」の掲示板 Kurage BBS を作った理由 — 被リンク文化を取り戻したい"><meta property="og:description" content="被リンクはいまもSEOの土台なのに、URLを気軽に書き込める掲示板は激減しました。この矛盾を解消するため、宣伝を歓迎する1ファイルPHP掲示板『Kurage BBS（kbbs）』を開設・販売開始。X認証と同一ドメインメール確認でスパムを構造的に防ぎ、投稿されたURLにはSEO・GEO・AEOの改善提案もお返しします。買い切り55,000円でKurage App Storeにて販売中。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-12-kbbs-launch.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「宣伝OK・リンクOK」の掲示板 Kurage BBS を作った理由 — 被リンク文化を取り戻したい"><meta name="twitter:description" content="被リンクはいまもSEOの土台なのに、URLを気軽に書き込める掲示板は激減しました。この矛盾を解消するため、宣伝を歓迎する1ファイルPHP掲示板『Kurage BBS（kbbs）』を開設・販売開始。X認証と同一ドメインメール確認でスパムを構造的に防ぎ、投稿されたURLにはSEO・GEO・AEOの改善提案もお返しします。買い切り55,000円でKurage App Storeにて販売中。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「宣伝OK・リンクOK」の掲示板 Kurage BBS を作った理由 — 被リンク文化を取り戻したい", "description": "被リンクはいまもSEOの土台なのに、URLを気軽に書き込める掲示板は激減しました。この矛盾を解消するため、宣伝を歓迎する1ファイルPHP掲示板『Kurage BBS（kbbs）』を開設・販売開始。X認証と同一ドメインメール確認でスパムを構造的に防ぎ、投稿されたURLにはSEO・GEO・AEOの改善提案もお返しします。買い切り55,000円でKurage App Storeにて販売中。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-12-kbbs-launch.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-12", "dateModified": "2026-08-12", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>「宣伝OK・リンクOK」の掲示板 Kurage BBS を作った理由 — 被リンク文化を取り戻したい</h1><p class="meta">2026-08-12</p><p><strong><a href="https://kurage.exbridge.jp/kbbs.php">宣伝OK・リンクOKの掲示板「Kurage BBS」</a></strong> を開設しました。会社・お店・サービスのPRを、ホームページへのリンク付きで自由に投稿できる掲示板です（掲載無料）。</p>
+<p>なぜ今、掲示板なのか。開発への思いを書きます。</p>
+<h2>被リンクは、いまも検索順位の土台</h2>
+<p>Googleは「他のサイトからリンクされているサイト＝誰かに推薦されているサイト」を信頼します。どれだけ良いホームページを作っても、外部からのリンクがゼロのままでは、検索エンジンにとって「誰にも言及されていないお店」と同じ。<strong>外部サイトからの被リンクは、SEOの最重要シグナルのひとつ</strong>であり続けています。</p>
+<h2>なのに、URLを書ける場所が消えた</h2>
+<p>かつてのインターネットには、気軽に自社サイトを紹介できる掲示板やリンク集がたくさんあり、小さな会社でも自然に被リンクを育てられました。ところが今は「宣伝お断り」が当たり前。スパム業者が掲示板文化を荒らし尽くした結果、まじめな会社が自社サイトを紹介できる場所まで消えてしまいました。</p>
+<p><strong>「被リンクが大事」と言われるのに、リンクを張れる場所がない。</strong> この矛盾を少しでも解消したくて、逆張りの「宣伝を歓迎する掲示板」を自分で作ることにしました。</p>
+<h2>スパム問題は「設計」で解決する</h2>
+<p>宣伝OK掲示板が成立しなかった理由はスパムです。Kurage BBSはこれを2段の本人確認で構造的に防ぎます。</p>
+<p><strong>1. 𝕏（旧Twitter）ログイン必須</strong></p>
+<p>匿名の使い捨てアカウントでは投稿できません。𝕏アカウントは、フォロワー・投稿履歴・凍結歴まで含めて<strong>その人の「信用情報」として機能する時代</strong>になっています（実際、海外のサービス審査でも𝕏アカウントが信用評価に使われ始めています）。𝕏で身元を示せる人だけが投稿できる——これだけで荒らしの大半は消えます。</p>
+<p><strong>2. 宣伝するURLと同じドメインのメールアドレスが必須</strong></p>
+<p><code>https://example.jp</code> を宣伝するなら <code>〇〇@example.jp</code> のメールアドレスが必要です。つまり<strong>その会社のご本人しか投稿できません</strong>。無関係な代行業者や海外スパムは、仕組みの上で弾かれます。</p>
+<h2>投稿されたURLには、SEO・GEO・AEOの提案をお返ししたい</h2>
+<p>もうひとつ、この掲示板には続きがあります。投稿は「宣伝」であると同時に、「うちのサイトを見てほしい」という意思表示です。だから私たちは、投稿されたURLを<strong>SEO（検索エンジン最適化）・GEO（生成エンジン最適化＝AI検索にどう引用されるか）・AEO（アンサーエンジン最適化）の観点でチェック</strong>し、良くなる余地のある会社には、こちらから改善のご提案をお返ししていくつもりです。</p>
+<p>ChatGPTやAI検索があなたの会社を正しく認識しているか。llms.txtや構造化データは足りているか。被リンクの受け皿はあるか。——宣伝を1本投稿するだけで、そうした診断との接点が生まれる掲示板にしていきます。</p>
+<h2>経営者の皆さまへ:あなたのサイトにも、この掲示板を</h2>
+<p>こういう「荒れない宣伝板」がいろいろなサイトに増えるほど、被リンクを張り合える健全な場所がネットに戻ってきます。そこでKurage BBSは、<strong>設置できる商品</strong>としても販売を始めました。</p>
+<ul>
+<li><strong>1ファイルのPHP</strong>をFTPで置くだけ（データベース不要・レンタルサーバーでOK）</li>
+<li>管理画面には投稿した会社のURLと本人確認済みメールが一覧される＝<strong>設置するだけで見込み客との接点リストが育つ</strong></li>
+<li>ソースコード同梱・MITライセンスで改変自由。Claude Code / Codex 向けの設置・改変マニュアル（SETUP-AI.md）同梱</li>
+<li><strong>買い切り55,000円（税込）</strong></li>
+</ul>
+<p>👉 <strong><a href="https://kappstore.exbridge.jp/app.php?id=4bd9a6f3f99cdc05">Kurage App Store で見る</a></strong></p>
+<h2>まずは1本、宣伝を投稿してみてください</h2>
+<p>本番で稼働しているKurage BBSは、どなたでも無料で投稿できます。あなたの会社の被リンクを1本、ここから始めてください。</p>
+<p>👉 <strong><a href="https://kurage.exbridge.jp/kbbs.php">Kurage BBS に宣伝を投稿する（無料）</a></strong></p>
+<p>システムのご相談は <a href="https://kurage.exbridge.jp/chat.php">Kurage.AI 無料相談</a>、AI活用の情報交換は <a href="https://kurage.exbridge.jp/nagoya-ai-study.php">名古屋AI経営勉強会</a> へどうぞ。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
