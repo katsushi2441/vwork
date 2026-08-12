@@ -184,3 +184,5 @@ kfreqai-entry-threshold-explained
 2026-08-12-ai-news-2
 2026-08-12-make-buy-refer
 2026-08-12-safe-agent-scope
+2026-08-12-ai-news-3
+2026-08-12-nagoya-ai-study
