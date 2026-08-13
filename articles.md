@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [DeepSeekのV4-Pro発表とQwenの最新モデルへの期待：加速するLLM開発の最前線 08-14](2026-08-14-ai-news.html)
 - [TheとAmazonで読む：Qwen3.8やDeepSeek V4 Proなど、進化を続ける大規模言語モデルの最前線 08-13](2026-08-13-ai-news-4.html)
 - [SafetyとAmazonで読むAIニュース 08-13](2026-08-13-ai-news-3.html)
 - [Qwen3.8やDeepSeek V4 Proのリリースで加速する最新LLMとAI安全性の最前線 08-13](2026-08-13-ai-news-2.html)
