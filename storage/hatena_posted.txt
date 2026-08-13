@@ -330,3 +330,8 @@ url2pub-i18n-hatena-summary
 2026-08-12-ai-news-3
 2026-08-12-nagoya-ai-study
 2026-08-12-kbbs-launch
+2026-08-12-ai-news-4
+2026-08-13-ai-news
+2026-08-13-ai-news-2
+2026-08-13-ai-news-3
+2026-08-13-ai-eigyou-saiyo-shikin
