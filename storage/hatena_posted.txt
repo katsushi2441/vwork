@@ -335,3 +335,4 @@ url2pub-i18n-hatena-summary
 2026-08-13-ai-news-2
 2026-08-13-ai-news-3
 2026-08-13-ai-eigyou-saiyo-shikin
+2026-08-13-muryou-senden-keijiban
