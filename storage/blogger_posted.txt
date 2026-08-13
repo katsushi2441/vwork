@@ -193,3 +193,6 @@ kfreqai-entry-threshold-explained
 2026-08-13-ai-news-3
 2026-08-13-ai-eigyou-saiyo-shikin
 2026-08-13-muryou-senden-keijiban
+2026-08-13-ai-news-4
+2026-08-14-ai-news
+2026-08-14-brain-post-knowhow
