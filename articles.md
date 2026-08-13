@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [SafetyとAmazonで読むAIニュース 08-13](2026-08-13-ai-news-3.html)
 - [Qwen3.8やDeepSeek V4 Proのリリースで加速する最新LLMとAI安全性の最前線 08-13](2026-08-13-ai-news-2.html)
 - [LiquidAIのLFM2.5-VL-3BがエッジAIを加速、Solanaではネットワーク停止の懸念も 08-13](2026-08-13-ai-news.html)
 - [Hong Kong Dollarで読む：ClaudeやGPTの隠れた推論プロセスを解読：AI技術の核心とStandard Charte… 08-12](2026-08-12-ai-news-4.html)
