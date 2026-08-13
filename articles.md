@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Google Gemini 3.7 Flashの発表とDeepSeek-V4-Pro登場、そしてAnthropicによるAIエージェントの挙動調査 08-14](2026-08-14-ai-news-2.html)
 - [海外で伸びるAI収益化動画を読む：How to Use Claude Code as an Agency and Actually Mak](2026-08-14-ai-monetization-how-to-use-claude-code-as.html)
 - [DeepSeekのV4-Pro発表とQwenの最新モデルへの期待：加速するLLM開発の最前線 08-14](2026-08-14-ai-news.html)
 - [TheとAmazonで読む：Qwen3.8やDeepSeek V4 Proなど、進化を続ける大規模言語モデルの最前線 08-13](2026-08-13-ai-news-4.html)
