@@ -339,3 +339,8 @@ url2pub-i18n-hatena-summary
 2026-08-13-ai-news-4
 2026-08-14-ai-news
 2026-08-14-brain-post-knowhow
+2026-08-14-ai-news-2
+2026-08-14-ai-news-3
+2026-08-14-ai-news-4
+2026-08-15-ai-news
+2026-08-14-brain-star1-lesson
