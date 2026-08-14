@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [100円の記事に星1がついた——Brainで学んだ『期待値設計』の授業料](2026-08-14-brain-star1-lesson.html)
 - [Brainに記事を公開するまで——一度審査に落ちて学んだ『審査があるプラットフォーム』の書き方](2026-08-14-brain-post-knowhow.html)
 - [「無料で宣伝できる掲示板」が見つからない問題を、Kurage BBSで解決する](2026-08-13-muryou-senden-keijiban.html)
 - [会社の困りごとは『営業・採用・資金繰り』に集約される——3つのAI活用法をまとめました](2026-08-13-ai-eigyou-saiyo-shikin.html)
