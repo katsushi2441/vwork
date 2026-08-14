@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Qwen3.8の登場とMetaの「オープン」戦略：最新AIトレンドを紐解く 08-15](2026-08-15-ai-news-2.html)
 - [bitsandbytesの新量子化手法DS4 ProとKogによるGPU最適化、そしてAIインフラを揺るがすエネルギーコスト予測 08-15](2026-08-15-ai-news.html)
 - [GoogleのGemini 3.7 Flash登場とAnthropicが示すAIエージェントの覇権争い 08-14](2026-08-14-ai-news-4.html)
 - [GoogleのGemini 3.7 Flash登場とTetherによるUSDT監査完了の衝撃 08-14](2026-08-14-ai-news-3.html)
