@@ -1,0 +1,62 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AIチャットボットは高すぎる——だから55,000円買い切りの『Kurage Light ChatBot』を作りました（導入は3つの入口から） | VWork バイブコーディングフレームワーク</title><meta name="description" content="AIチャットボットの相場はSaaSで月額2〜5万円が永続、受託開発なら50〜200万円。高すぎて中小企業が手を出せない市場に、買い切り55,000円・月額なし・1ファイルPHPのナレッジチャットAI『Kurage Light ChatBot』を投入しました。sources/フォルダにMarkdownを置くだけでFAQ・AI接客・社内ChatGPTになり、LLM実費は1回答数円。完成品を買う/開発手順書で自作する/自社仕様に作ってもらう——すべてのニーズに対応する3つの入口つきで提供開始した経緯と設計判断を書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-16-klchatbot-launch.html"><meta property="og:type" content="article"><meta property="og:title" content="AIチャットボットは高すぎる——だから55,000円買い切りの『Kurage Light ChatBot』を作りました（導入は3つの入口から）"><meta property="og:description" content="AIチャットボットの相場はSaaSで月額2〜5万円が永続、受託開発なら50〜200万円。高すぎて中小企業が手を出せない市場に、買い切り55,000円・月額なし・1ファイルPHPのナレッジチャットAI『Kurage Light ChatBot』を投入しました。sources/フォルダにMarkdownを置くだけでFAQ・AI接客・社内ChatGPTになり、LLM実費は1回答数円。完成品を買う/開発手順書で自作する/自社仕様に作ってもらう——すべてのニーズに対応する3つの入口つきで提供開始した経緯と設計判断を書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-16-klchatbot-launch.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AIチャットボットは高すぎる——だから55,000円買い切りの『Kurage Light ChatBot』を作りました（導入は3つの入口から）"><meta name="twitter:description" content="AIチャットボットの相場はSaaSで月額2〜5万円が永続、受託開発なら50〜200万円。高すぎて中小企業が手を出せない市場に、買い切り55,000円・月額なし・1ファイルPHPのナレッジチャットAI『Kurage Light ChatBot』を投入しました。sources/フォルダにMarkdownを置くだけでFAQ・AI接客・社内ChatGPTになり、LLM実費は1回答数円。完成品を買う/開発手順書で自作する/自社仕様に作ってもらう——すべてのニーズに対応する3つの入口つきで提供開始した経緯と設計判断を書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AIチャットボットは高すぎる——だから55,000円買い切りの『Kurage Light ChatBot』を作りました（導入は3つの入口から）", "description": "AIチャットボットの相場はSaaSで月額2〜5万円が永続、受託開発なら50〜200万円。高すぎて中小企業が手を出せない市場に、買い切り55,000円・月額なし・1ファイルPHPのナレッジチャットAI『Kurage Light ChatBot』を投入しました。sources/フォルダにMarkdownを置くだけでFAQ・AI接客・社内ChatGPTになり、LLM実費は1回答数円。完成品を買う/開発手順書で自作する/自社仕様に作ってもらう——すべてのニーズに対応する3つの入口つきで提供開始した経緯と設計判断を書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-16-klchatbot-launch.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-16", "dateModified": "2026-08-16", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>AIチャットボットは高すぎる——だから55,000円買い切りの『Kurage Light ChatBot』を作りました（導入は3つの入口から）</h1><p class="meta">2026-08-16</p><p>AIチャットボットを入れたい。調べた会社が最初にぶつかるのは、機能ではなく<strong>値段</strong>です。</p>
+<ul>
+<li>SaaS型: 初期0〜30万円＋<strong>月額2〜5万円が使い続ける限り</strong>（年24〜60万円）</li>
+<li>カスタム開発: <strong>50〜200万円</strong></li>
+<li>フルスクラッチ: 300万円〜</li>
+</ul>
+<p>「営業時間を答える」「FAQに答える」がやりたいことの大半なのに、この価格帯しか選択肢がない。だから当社は、<strong>買い切り55,000円（税込）・月額なし</strong>のナレッジチャットAI「<strong><a href="https://kappstore.exbridge.jp/app.php?id=224e141f77bd07a8&amp;ref=vwork">Kurage Light ChatBot</a></strong>」を開発し、本日から提供を開始しました。</p>
+<h2>実物を先に触ってください</h2>
+<p><strong>デモ: <a href="https://proto.exbridge.jp/klchatbot/">https://proto.exbridge.jp/klchatbot/</a></strong></p>
+<p>当社の商品知識を学習した状態の実物です。「予約システムはいくら？」と聞くと、<strong>55,000円という価格も商品URLも一字一句正確に</strong>答えます。この「事実を正確に引用する」が、このジャンルの品質の芯です。</p>
+<h2>なぜ55,000円で成立するのか——3つの設計判断</h2>
+<p><strong>1. 「使う2割」だけに絞った。</strong> Open WebUIのような多機能OSSは立派ですが、中小企業のFAQ窓口に必要なのはチャット画面・知識の読み込み・利用制限くらいです。本体は<strong>PHP1ファイル（約550行）・DBサーバー不要</strong>。レンタルサーバーにFTPで上げるだけで動きます。</p>
+<p><strong>2. 知識は「フォルダにMarkdownを置くだけ」。</strong> sources/フォルダにFAQ・商品一覧・マニュアルを置くと、その内容に基づいて答えます。管理画面での登録作業はありません。知識は毎回同じ順序でAIに渡す設計にしてあり、<strong>LLM側のキャッシュが効いて2回目以降の実費が大きく下がります</strong>（直近のDeepSeek値上げを織り込んだ設計です）。</p>
+<p><strong>3. LLMは持たず、選べるようにした。</strong> OpenAI互換APIなら何でも使えます（既定はDeepSeek）。APIキーは購入者自身のもの——つまり<strong>月額のシステム利用料はゼロ、かかるのはLLM実費（1回答数円・キャッシュが効けば1円未満）だけ</strong>。お客様向けFAQ・AI接客モードと、合言葉制の社内ChatGPTモードは設定1行で切り替えられます。</p>
+<h2>「すべてのニーズ」に応えるため、入口を3つ用意しました</h2>
+<p>先日書いた<a href="https://katsushi2441.github.io/vwork/blog/2026-08-15-three-doors-model.html">『3つの入口』でシステムを売る実験</a>の第2弾実践です。同じゴールに、あなたに合う入口からどうぞ。</p>
+<ol>
+<li><strong>完成品を買う（55,000円税込）</strong> — すぐ使いたい方。即ダウンロード・ソースコード付き（MIT・改変再販自由）
+   → <a href="https://kappstore.exbridge.jp/app.php?id=224e141f77bd07a8&amp;ref=vwork">Kurage App Store</a></li>
+<li><strong>開発手順書を買って自分で作る（同価格55,000円）</strong> — 作る力を手に入れたい方。環境構築からデプロイまで、コピペで使う開発プロンプト11本付きの完全ガイド
+   → <a href="https://brain-market.com/u/bittensorman/a/b1EDNxYjMgoTZsNWa0JXY">klchatbot開発手順書（Brain）</a></li>
+<li><strong>自社仕様に作ってもらう（110,000円税込）</strong> — 業務システム連携や作り込みが必要な方。最短1営業日で動くデモ
+   → <a href="https://kurage.exbridge.jp/vibe-prototype.html?ref=vwork">バイブプロトタイピング</a></li>
+</ol>
+<p>手順書が完成品と同じ値段なのは意図的です。AIエージェント（Claude Code等）が手順書を実行できる時代になり、「作り方」には完成品と同じ価値が付くようになりました。どれを選ぶか迷ったら、<a href="https://kurage.exbridge.jp/chat.php?ref=vwork">無料のAI相談チャット</a>（これ自体が同系統の実物です）でどうぞ。</p>
+<h2>正直な注意書き</h2>
+<ul>
+<li>LLMのAPIキー取得（無料登録・従量課金）はご自身で行っていただきます。手順はdocsに書きました</li>
+<li>社内文書を扱う場合は「サーバーに置いてよい文書か」の判断が先です。出せない文書はローカルLLM構成の相談を</li>
+<li>デモには利用回数制限があります（1時間10回・API費用の防波堤です）</li>
+</ul>
+<h2>関連リンク</h2>
+<ul>
+<li>商品: <a href="https://kappstore.exbridge.jp/app.php?id=224e141f77bd07a8&amp;ref=vwork">Kurage Light ChatBot（55,000円税込）</a> ／ <a href="https://proto.exbridge.jp/klchatbot/">無料デモ</a></li>
+<li>費用相場から知りたい方: <a href="https://kurage.exbridge.jp/ai-chatbot-kaikiri.php?ref=vwork">AIチャットボット開発の費用相場と「買い切り11万円」という選択肢</a></li>
+<li>技術背景: <a href="https://katsushi2441.github.io/vwork/articles/2026-08-15-openkb-rag-chatai.html">OpenKB検証記事（ベクトルDB不要RAGの得意・不得意）</a></li>
+<li>経営×AIをゆるく学ぶ: <a href="https://kurage.exbridge.jp/nagoya-ai-study.php?ref=vwork">名古屋AI経営勉強会（無料・匿名OK）</a></li>
+<li>紹介して収益に: <a href="https://kurage.exbridge.jp/reseller.html?ref=vwork">販売代理店制度（最大30%）</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
