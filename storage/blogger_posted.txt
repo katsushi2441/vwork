@@ -208,3 +208,5 @@ kfreqai-entry-threshold-explained
 2026-08-15-ai-news-4
 2026-08-16-ai-news
 2026-08-16-klchatbot-launch
+2026-08-16-ai-news-2
+2026-08-16-brain-only-one
