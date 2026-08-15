@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Qwen 3.8 27Bの登場とMetaの「オープン」AI戦略：最新モデルからセキュリティまで 08-15](2026-08-15-ai-news-4.html)
 - [OpenKB——ベクトルDB不要のRAG「PageIndex」でナレッジチャットAIを作る（ローカルLLM/DeepSeek実測つき）](2026-08-15-openkb-rag-chatai.html)
 - [Qwen 3.8のリリースとMetaのAI戦略におけるトラブル：最新テック動向まとめ 08-15](2026-08-15-ai-news-3.html)
 - [Qwen3.8の登場とMetaの「オープン」戦略：最新AIトレンドを紐解く 08-15](2026-08-15-ai-news-2.html)
