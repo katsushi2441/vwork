@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [AnthropicのClaudeやSpaceXによるCursor買収、そしてGrokを巡る倫理的課題 08-16](2026-08-16-ai-news-3.html)
 - [Zabbix×ローカルLLM×Bluditで「調査済みの障害メール」が届く監視を作る——AIエージェントで実際に対応した実録つき](2026-08-16-zabbix-ai-incident-ops.html)
 - [BitcoinとUBSで読む：Qwen3.8-27Bのローカル実行能力とAIの「思考」の本質に関する考察 08-16](2026-08-16-ai-news-2.html)
 - [MetaのGlimmer公開とEthereum派によるWall Streetのブロックチェーン戦略への警鐘 08-16](2026-08-16-ai-news.html)
