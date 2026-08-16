@@ -353,3 +353,4 @@ url2pub-i18n-hatena-summary
 2026-08-16-klchatbot-launch
 2026-08-16-ai-news-2
 2026-08-16-brain-only-one
+2026-08-16-zabbix-ai-incident-ops
