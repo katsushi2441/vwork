@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Cryptoで読む：StripeがOpenRouterを70億ドルで買収か：AIインフラと暗号資産規制の最新動向 08-17](2026-08-17-ai-news-2.html)
 - [SafePalのデータ流出と強化学習（RL）を巡る計算効率の議論 08-17](2026-08-17-ai-news.html)
 - [海外で伸びるAI収益化動画を読む：How to Make $20,000/Month with Claude Code](2026-08-17-ai-monetization-how-to-make-20-000-month-w.html)
 - [AnthropicのClaudeやSpaceXによるCursor買収、そしてGrokを巡る倫理的課題 08-16](2026-08-16-ai-news-3.html)
