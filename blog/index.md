@@ -67,6 +67,7 @@ faq:
 
 ## 記事一覧
 
+- [「kintone」というキーワードで戦えるのか——作る前にキーワードプランナーで測った記録](2026-08-17-kintone-keyword-first.html)
 - [ジモティーは「カテゴリ」と「新着枠」で決まる——同じ勉強会に2本目を出して分かったこと](2026-08-16-jmty-category-newarrival.html)
 - [Brainに業務システムのエンジニアがいない——だから、そこで戦うことにした](2026-08-16-brain-only-one.html)
 - [AIチャットボットは高すぎる——だから55,000円買い切りの『Kurage Light ChatBot』を作りました（導入は3つの入口から）](2026-08-16-klchatbot-launch.html)
