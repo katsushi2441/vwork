@@ -1,0 +1,228 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「kintone」というキーワードで戦えるのか——作る前にキーワードプランナーで測った記録 | VWork バイブコーディングフレームワーク</title><meta name="description" content="サイボウズ・kintoneの代わりになる製品を作る前に、Google広告のキーワードプランナーで日本語の検索需要を実測しました。kintoneは月49,500回・競合「低」。一方でエクセル関連は月9,900回あるのに入札単価3円。検索数が多い＝売れる、ではありません。買い手を見分ける指標と、その結果どう作ったかを、全部の数字ごと公開します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-17-kintone-keyword-first.html"><meta property="og:type" content="article"><meta property="og:title" content="「kintone」というキーワードで戦えるのか——作る前にキーワードプランナーで測った記録"><meta property="og:description" content="サイボウズ・kintoneの代わりになる製品を作る前に、Google広告のキーワードプランナーで日本語の検索需要を実測しました。kintoneは月49,500回・競合「低」。一方でエクセル関連は月9,900回あるのに入札単価3円。検索数が多い＝売れる、ではありません。買い手を見分ける指標と、その結果どう作ったかを、全部の数字ごと公開します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-17-kintone-keyword-first.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「kintone」というキーワードで戦えるのか——作る前にキーワードプランナーで測った記録"><meta name="twitter:description" content="サイボウズ・kintoneの代わりになる製品を作る前に、Google広告のキーワードプランナーで日本語の検索需要を実測しました。kintoneは月49,500回・競合「低」。一方でエクセル関連は月9,900回あるのに入札単価3円。検索数が多い＝売れる、ではありません。買い手を見分ける指標と、その結果どう作ったかを、全部の数字ごと公開します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「kintone」というキーワードで戦えるのか——作る前にキーワードプランナーで測った記録", "description": "サイボウズ・kintoneの代わりになる製品を作る前に、Google広告のキーワードプランナーで日本語の検索需要を実測しました。kintoneは月49,500回・競合「低」。一方でエクセル関連は月9,900回あるのに入札単価3円。検索数が多い＝売れる、ではありません。買い手を見分ける指標と、その結果どう作ったかを、全部の数字ごと公開します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-17-kintone-keyword-first.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-17", "dateModified": "2026-08-17", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>「kintone」というキーワードで戦えるのか——作る前にキーワードプランナーで測った記録</h1><p class="meta">2026-08-17</p><p>製品を作ってから売り先を探すのを、今回はやめました。<strong>先に検索需要を測って、測った結果に合わせて作りました。</strong>Google広告のキーワードプランナーで実測した数字を、全部そのまま公開します。</p>
+<h2>きっかけは「officecliで検索してくる人は顧客じゃない」</h2>
+<p>うちは<a href="https://aiknowledgecms.exbridge.jp/">AI OSSの日本語解説サイト</a>を運営していて、そこに検索流入があります。Search Consoleで90日ぶんを数えたら、こうでした。</p>
+<ul>
+<li>サイト全体: <strong>44,605表示 / 1,052クリック</strong></li>
+<li>OSS解説ページ259本で <strong>37,011表示 / 683クリック</strong>（CTR 1.8%）</li>
+<li>一番強いのは OfficeCLI のページで <strong>1,077表示 / 54クリック（CTR 5.0%）</strong></li>
+</ul>
+<p>流入はある。ただ、ここで手が止まりました。<strong>OfficeCLIで検索する人は「自分で作る人」であって、業務システムを買う人ではありません。</strong>開発者向けの記事にいくら人が来ても、55,000円の製品は売れない。</p>
+<p>では、<strong>買う人はどんな言葉で検索しているのか。</strong>それを推測ではなく測ることにしました。</p>
+<h2>使った道具：Google広告のキーワードプランナー</h2>
+<p>Google広告のAPIから、日本語・日本国内の検索ボリュームと競合性、そして<strong>入札単価</strong>を取れます。うちは広告アカウントを持っているので、そこから引きました。</p>
+<p>最初に測ったのは、素直に「業務システムっぽい言葉」でした。</p>
+<table>
+<thead>
+<tr>
+<th>キーワード</th>
+<th>月間検索</th>
+<th>競合</th>
+<th>入札上限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>予約システム 無料</td>
+<td>1,900</td>
+<td>高</td>
+<td>1,835円</td>
+</tr>
+<tr>
+<td>請求書 作成 無料</td>
+<td>1,300</td>
+<td>中</td>
+<td>1,175円</td>
+</tr>
+<tr>
+<td>勤怠管理 無料（システム）</td>
+<td>880</td>
+<td>中</td>
+<td>1,556円</td>
+</tr>
+</tbody>
+</table>
+<p>悪くない。でも競合が高い。もっと空いている場所を探して、次に「エクセル自動化」を測りました。ここで最初の発見がありました。</p>
+<h2>発見1：検索数が多い＝売れる、ではない</h2>
+<table>
+<thead>
+<tr>
+<th>キーワード</th>
+<th>月間検索</th>
+<th>入札上限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>エクセル 日付 自動</td>
+<td><strong>9,900</strong></td>
+<td><strong>3円</strong></td>
+</tr>
+<tr>
+<td>エクセル 曜日 自動</td>
+<td>6,600</td>
+<td>5円</td>
+</tr>
+<tr>
+<td>エクセル 自動入力</td>
+<td>720</td>
+<td>391円</td>
+</tr>
+</tbody>
+</table>
+<p><code>エクセル 日付 自動</code> は月9,900回。さっきの「予約システム 無料」の5倍です。喜びかけて、<strong>入札単価が3円</strong>なのに気づきました。</p>
+<p><strong>広告主が1円も払わない言葉は、その先に買う人がいない言葉です。</strong>この人たちは関数の書き方を知りたいだけで、システムを買いに来ていません。</p>
+<p>ここで指標を切り替えました。<strong>ボリュームではなく入札単価で買い手を見分ける。</strong></p>
+<h2>発見2：kintoneクラスタが、まるごと空いていた</h2>
+<p>商用意図のある言葉を探して、競合製品の名前を測ってみました。</p>
+<table>
+<thead>
+<tr>
+<th>キーワード</th>
+<th>月間検索</th>
+<th>競合</th>
+<th>入札上限</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>kintone / キントーン</strong></td>
+<td><strong>49,500</strong></td>
+<td><strong>低</strong></td>
+<td>891円</td>
+</tr>
+<tr>
+<td>キントーン できること</td>
+<td>3,600</td>
+<td>中</td>
+<td>408円</td>
+</tr>
+<tr>
+<td>キントーン と は</td>
+<td>3,600</td>
+<td>低</td>
+<td>296円</td>
+</tr>
+<tr>
+<td>kintone とは</td>
+<td>2,900</td>
+<td>低</td>
+<td>374円</td>
+</tr>
+<tr>
+<td><strong>kintone 料金</strong></td>
+<td><strong>2,400</strong></td>
+<td><strong>低</strong></td>
+<td>469円</td>
+</tr>
+<tr>
+<td>キントーン 価格</td>
+<td>1,300</td>
+<td>低</td>
+<td>404円</td>
+</tr>
+<tr>
+<td>サイボウズ キントーン</td>
+<td>1,000</td>
+<td>低</td>
+<td>702円</td>
+</tr>
+<tr>
+<td>キントーン 料金</td>
+<td>880</td>
+<td>中</td>
+<td>522円</td>
+</tr>
+<tr>
+<td>kintone 料金 高い</td>
+<td>70</td>
+<td>低</td>
+<td>468円</td>
+</tr>
+<tr>
+<td>サイボウズ 料金</td>
+<td>260</td>
+<td>低</td>
+<td>543円</td>
+</tr>
+</tbody>
+</table>
+<p>合計で<strong>月6万回超</strong>。しかも<strong>ほぼ全部が競合「低」</strong>です。</p>
+<p>そして検索者の正体が読み取れます。「kintone<strong>とは</strong>」「<strong>できること</strong>」を調べている人は、<strong>まだ導入していない検討者</strong>です。技術者ではなく、業務担当や経営者。「料金」「価格」だけで月<strong>4,970回</strong>——これは予算を調べている、つまり購入直前の人たちです。</p>
+<p><strong>買う人が、月6万回、空いた場所で検索していました。</strong></p>
+<h2>発見3：「買い切り」という言葉は検索されない</h2>
+<p>自社の強み（月額ではなく買い切り）で検索されているかも測りました。</p>
+<ul>
+<li><code>業務システム 買い切り</code> → <strong>ほぼ検索結果が返らない</strong></li>
+<li><code>買い切り ソフト 業務</code> → 同上</li>
+</ul>
+<p><strong>「業務システムを買い切る」という概念が、世の中にまだ存在しません。</strong></p>
+<p>これは重要な制約でした。いくら「買い切りです」と叫んでも、その言葉で探している人はいない。<strong>相手が既に使っている言葉（kintone・料金・無料）で入って、記事の中で買い切りを教えるしかない。</strong></p>
+<p>ちなみに <code>脱エクセル</code> は月210回・入札1,482円。ボリュームは小さいのに単価が高い＝痛みを持った買い手がいる言葉です。これは拾いました。</p>
+<h2>測った結果、こう作りました</h2>
+<p>ここまでが調査です。以下が、この数字に合わせて実際に作ったものです。</p>
+<h3>1. 製品の範囲を、検索需要に合わせて決めた</h3>
+<p>「kintoneとは何か」を調べている人が欲しいのは、多機能なグループウェアではなく<strong>「ログインできて、見える範囲が人ごとに違う入れ物」</strong>です。だから製品の範囲を、<strong>認証・ユーザー管理・社員管理・共有スケジュール</strong>の4つに絞りました。日報や経費精算は入れていません。</p>
+<h3>2. 料金の比較を、公式の数字だけで組み立てた</h3>
+<p>kintone公式サイトの価格表をそのまま引くと、ライト1ユーザー月1,000円・スタンダード1,800円で、<strong>いずれも最低契約は10ユーザー</strong>（税抜）。5人の会社でも10ユーザー分を払うので、スタンダードなら<strong>年216,000円のうち108,000円が使っていない5人分</strong>になります。</p>
+<p>この1点が、比較の芯になりました。<strong>推測を混ぜず、公式の数字だけで成立する話</strong>にしたのは、後で撤回したくなかったからです。</p>
+<h3>3. LP・記事・製品を、同じキーワードで揃えた</h3>
+<ul>
+<li>LP: <a href="https://kurage.exbridge.jp/groupware-kaikiri.php?ref=vwork">サイボウズ・kintoneが無くてもグループウェアは持てる</a>（FAQ構造化データつき）</li>
+<li>製品: <a href="https://kappstore.exbridge.jp/app.php?id=c1864cba4ab726b0&amp;ref=vwork">社内グループウェア（買い切り55,000円税込）</a></li>
+<li>コード: <a href="https://github.com/katsushi2441/kvgwc">GitHub（MITライセンス・無料）</a></li>
+<li>手順書: <a href="https://brain-market.com/u/bittensorman/a/bzEjNxYjMgoTZsNWa0JXY">導入・運用手順書（Brain）</a></li>
+<li>デモ: <a href="https://proto.exbridge.jp/kvgwc/">実際に触れる公開デモ</a></li>
+</ul>
+<p>製品づくりの中身のほうは、<a href="https://note.com/tokoname/n/n6c80143170ab">noteに実録として書きました</a>。定義ファイル33〜39行のアプリを4本、AIに書かせて足した話です。</p>
+<h2>反省：ボリュームで選びかけた</h2>
+<p>正直に書くと、<code>エクセル 日付 自動</code> の9,900回を見たとき、一瞬「ここだ」と思いました。入札単価を見ていなければ、<strong>月1万回の検索がある言葉に向けて、誰も買わないページを作っていた</strong>はずです。</p>
+<p>キーワード調査でボリュームばかり見るのは、たぶん多くの人がやっている失敗です。<strong>入札単価は「その言葉にお金を払う企業がいるか」の投票結果</strong>なので、買い手の有無を測るには一番素直な指標でした。</p>
+<h2>正直に：ここからは仮説です</h2>
+<p>測ったのは<strong>検索需要</strong>であって、<strong>成約</strong>ではありません。</p>
+<ul>
+<li>kintoneの頭（月49,500回）で1位を取るのは現実的ではありません。狙うのは <code>kintone 料金</code> <code>キントーン できること</code> <code>脱エクセル</code> あたりの中位です</li>
+<li>「競合：低」は<strong>広告主が少ない</strong>という意味で、オーガニック検索が空いているとは限りません（比較サイトが強い領域です）</li>
+<li>他社のブランド名で集めるのは<strong>借りた需要</strong>です。事実を正確に書くことが最低条件で、そこを外したら終わりです</li>
+</ul>
+<p>数字が出たら、うまくいってもいかなくても、またここに書きます。</p>
+<h2>まとめ</h2>
+<ul>
+<li><strong>作る前に測る</strong>。うちはこれまで逆でした</li>
+<li><strong>ボリュームではなく入札単価で買い手を見分ける</strong>（9,900回で3円の罠）</li>
+<li><strong>競合製品の名前は、空いていることがある</strong>（kintoneクラスタは月6万回で競合「低」）</li>
+<li><strong>自社の強みの言葉は検索されないことがある</strong>（「買い切り」は概念自体が存在しない）</li>
+<li>だから<strong>相手の言葉で入って、中で自分の話をする</strong></li>
+</ul>
+<hr />
+<p><strong>関連リンク</strong></p>
+<ul>
+<li>今回作ったLP: <a href="https://kurage.exbridge.jp/groupware-kaikiri.php?ref=vwork">サイボウズ・kintoneが無くてもグループウェアは持てる</a></li>
+<li>製品づくりの実録: <a href="https://note.com/tokoname/n/n6c80143170ab">note｜サイボウズもkintoneも入れずに、社内グループウェアを持った話</a></li>
+<li>自社仕様で作る: <a href="https://kurage.exbridge.jp/vibe-prototype.html?ref=vwork">バイブプロトタイピング（110,000円税込〜・最短1営業日で動くデモ）</a></li>
+<li>一緒に売っていただける方へ: <a href="https://kurage.exbridge.jp/reseller.html?ref=vwork">販売代理店のご案内</a></li>
+<li>無料で相談できる場所: <a href="https://kurage.exbridge.jp/nagoya-ai-study.php?ref=vwork">名古屋AI経営勉強会（参加無料・匿名OK）</a> ／ <a href="https://kurage.exbridge.jp/chat.php?ref=vwork">Kurage.AIに相談する</a></li>
+<li>実験の全体像: <a href="https://kurage.exbridge.jp/media-mesh.php?ref=vwork">複数LP×他社メディア誘導の実証実験</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
