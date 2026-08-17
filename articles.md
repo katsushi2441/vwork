@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [StripeによるOpenRouter買収報道とBinanceのロシアへのデータ提供問題 08-17](2026-08-17-ai-news-4.html)
 - [SECとRISC-Vで読む：StripeによるOpenRouter買収報道とAI・仮想通貨を取り巻く最新動向 08-17](2026-08-17-ai-news-3.html)
 - [Cryptoで読む：StripeがOpenRouterを70億ドルで買収か：AIインフラと暗号資産規制の最新動向 08-17](2026-08-17-ai-news-2.html)
 - [SafePalのデータ流出と強化学習（RL）を巡る計算効率の議論 08-17](2026-08-17-ai-news.html)
