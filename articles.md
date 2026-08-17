@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [NvidiaによるOpenAI向けインフラ投資とQwenのベンチマーク躍進 08-18](2026-08-18-ai-news-2.html)
 - [米財務省のGENIUS法によるステーブルコイン規制と、Qwenを用いたローカルAIの最適化 08-18](2026-08-18-ai-news.html)
 - [StripeによるOpenRouter買収報道とBinanceのロシアへのデータ提供問題 08-17](2026-08-17-ai-news-4.html)
 - [SECとRISC-Vで読む：StripeによるOpenRouter買収報道とAI・仮想通貨を取り巻く最新動向 08-17](2026-08-17-ai-news-3.html)
