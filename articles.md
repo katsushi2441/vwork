@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Amazonで読む：Nvidiaの巨額投資とAnthropic、Qwenの躍進：AIインフラとモデル競争の最前線 08-18](2026-08-18-ai-news-4.html)
 - [DuckDBで読む：NvidiaとSoftBankの動向から見る、OpenAIを取り巻く次世代AIインフラ投資の最前線 08-18](2026-08-18-ai-news-3.html)
 - [NvidiaによるOpenAI向けインフラ投資とQwenのベンチマーク躍進 08-18](2026-08-18-ai-news-2.html)
 - [米財務省のGENIUS法によるステーブルコイン規制と、Qwenを用いたローカルAIの最適化 08-18](2026-08-18-ai-news.html)
