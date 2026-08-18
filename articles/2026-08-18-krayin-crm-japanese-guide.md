@@ -13,7 +13,7 @@ Salesforceの代替を探していて、オープンソースCRMを調べたら 
 ないなら作ればいい、ということで、当社（名古屋のAIシステム開発会社・エクスブリッジ）で言語ファイル一式（4パッケージ・**2,066キー**）を日本語化し、本家にプルリクエストを送りました。この記事はその翻訳の当て方と、Krayinを日本語で動かすまでの導入ガイドです。
 
 - 本家PR: [krayin/laravel-crm#2638 — feat: add Japanese (ja) locale](https://github.com/krayin/laravel-crm/pull/2638)
-- マージ前でも使えます（後述の方法で当てられます）
+- 日本語版リポジトリ: [katsushi2441/krayin-jp](https://github.com/katsushi2441/krayin-jp)（マージ前でもこちらで使えます）
 
 ![Krayin リードかんばん（日本語UI）](https://katsushi2441.github.io/vwork/articles/krayin-ja-leads.png)
 *日本語化したKrayinのリードかんばん。メニュー・ボタン・空状態まで日本語になる*
@@ -52,8 +52,8 @@ Krayinはインドの[Webkul](https://webkul.com/)社が主導するオープン
 実際にやった手順そのままです。今回はDockerで検証しました。
 
 ```bash
-# 1. 取得（本家マージ後は本家でOK。それまではPRブランチ）
-git clone -b feat/japanese-locale https://github.com/katsushi2441/laravel-crm.git krayin
+# 1. 取得（本家マージ後は本家でOK。それまでは日本語版リポジトリ）
+git clone -b jp https://github.com/katsushi2441/krayin-jp.git krayin
 cd krayin
 
 # 2. 依存インストール
@@ -83,7 +83,7 @@ Webサーバー（nginx+php-fpmやapache）を`public/`に向ければ完了。�
 - **初期データの言語はインストール時に決まる。** パイプラインのステージ名（New/Won/Lost…）は言語ファイルではなくDBにシードされるため、英語でインストールした後に日本語へ切り替えても英語のまま残ります（手で直せます）。最初から日本語で使うなら、インストーラーの言語選択で日本語を選ぶのが正解
 - **MySQL必須。** SQLiteでは動きません。軽く試すならDockerでMySQLを立てるのが早い
 - **PHP 8.3以上。** レンタルサーバーだと満たせない場合があります。VPS向きです
-- 本家マージまでは当社フォークのブランチ参照になります。マージされ次第、本家だけで完結します
+- 本家マージまでは日本語版リポジトリ（[krayin-jp](https://github.com/katsushi2441/krayin-jp)）の参照になります。マージされ次第、本家だけで完結します
 
 ## 用語対訳（抜粋）
 
