@@ -1,0 +1,59 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WordPressを「激安で安心」に置き換える——月2,400回検索されるヘッドレスCMSへ、実測で作った移行の道筋 | VWork バイブコーディングフレームワーク</title><meta name="description" content="『wordpress 代替』は月110回しか検索されないのに、『ヘッドレスCMS』は月2,400回——WordPressをやめたい人は、次の言葉で探していました。スター44,000のPayload CMSを実機構築し(管理画面どころかAPIメッセージまで日本語)、セットアップの罠を全部踏んで回収した上で、LP・480円の実測構築ガイド・移行受託(110,000円税込〜)まで1日で揃えた記録です。保守月額1〜3万円を、買い切り+月数百円のサーバー代に変える道筋を数字ごと公開します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-19-wordpress-headless-cms.html"><meta property="og:type" content="article"><meta property="og:title" content="WordPressを「激安で安心」に置き換える——月2,400回検索されるヘッドレスCMSへ、実測で作った移行の道筋"><meta property="og:description" content="『wordpress 代替』は月110回しか検索されないのに、『ヘッドレスCMS』は月2,400回——WordPressをやめたい人は、次の言葉で探していました。スター44,000のPayload CMSを実機構築し(管理画面どころかAPIメッセージまで日本語)、セットアップの罠を全部踏んで回収した上で、LP・480円の実測構築ガイド・移行受託(110,000円税込〜)まで1日で揃えた記録です。保守月額1〜3万円を、買い切り+月数百円のサーバー代に変える道筋を数字ごと公開します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-19-wordpress-headless-cms.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="WordPressを「激安で安心」に置き換える——月2,400回検索されるヘッドレスCMSへ、実測で作った移行の道筋"><meta name="twitter:description" content="『wordpress 代替』は月110回しか検索されないのに、『ヘッドレスCMS』は月2,400回——WordPressをやめたい人は、次の言葉で探していました。スター44,000のPayload CMSを実機構築し(管理画面どころかAPIメッセージまで日本語)、セットアップの罠を全部踏んで回収した上で、LP・480円の実測構築ガイド・移行受託(110,000円税込〜)まで1日で揃えた記録です。保守月額1〜3万円を、買い切り+月数百円のサーバー代に変える道筋を数字ごと公開します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "WordPressを「激安で安心」に置き換える——月2,400回検索されるヘッドレスCMSへ、実測で作った移行の道筋", "description": "『wordpress 代替』は月110回しか検索されないのに、『ヘッドレスCMS』は月2,400回——WordPressをやめたい人は、次の言葉で探していました。スター44,000のPayload CMSを実機構築し(管理画面どころかAPIメッセージまで日本語)、セットアップの罠を全部踏んで回収した上で、LP・480円の実測構築ガイド・移行受託(110,000円税込〜)まで1日で揃えた記録です。保守月額1〜3万円を、買い切り+月数百円のサーバー代に変える道筋を数字ごと公開します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-19-wordpress-headless-cms.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-19", "dateModified": "2026-08-19", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>WordPressを「激安で安心」に置き換える——月2,400回検索されるヘッドレスCMSへ、実測で作った移行の道筋</h1><p class="meta">2026-08-19</p><p>名古屋でAIシステム開発の会社をやっています。今日のテーマは<strong>WordPressの置き換え</strong>です。「WordPressはもう使わない方がいい」という声が増えるなか、実測で確かめてから、受け皿一式(LP・実測ガイド・受託)を1日で作りました。その記録です。</p>
+<h2>実測①:「やめたい人」は、どの言葉で探しているか</h2>
+<p>Googleキーワードプランナーでの実測から始めました(いつもの手順です)。</p>
+<ul>
+<li>「wordpress 代替」——<strong>月110回</strong>。この言葉では探されていない</li>
+<li>「<strong>ヘッドレスCMS</strong>」——<strong>月2,400回+表記ゆれ720回</strong>。いま流行りの言葉はこちら</li>
+<li>「wordpress セキュリティ」系——月900回帯。「wordpress 移行/引っ越し」——420回帯。<strong>離脱の本音は不安と保守費</strong></li>
+<li>「microcms 料金」——月390回。日本ではSaaS型ヘッドレスCMSが受け皿になりつつある</li>
+</ul>
+<p>つまり「WordPressやめたい」の受け皿は、<strong>ヘッドレスCMS文脈</strong>にあります。そしてそのOSS本命のひとつPayload CMS(GitHubスター44,000超・MIT)は、<strong>Zennに日本語記事がわずか2件</strong>という情報空白でした(2026年8月時点の実測)。DocuSealやKrayinで実証してきた「空白に一次情報を置く」チャンスです。</p>
+<h2>実測②:Payloadを実機で構築してわかったこと</h2>
+<p>売る前に作る、が当社のルールです。Payload 3.88.0をSQLite構成で実際に構築しました。</p>
+<ul>
+<li><strong>日本語対応が完璧</strong>——公式の翻訳パッケージは45言語、日本語(ja)は約40KB。設定2行で管理画面が日本語になり、実測ではAPIのレスポンスまで「最初のユーザーの登録が成功しました。」と日本語で返ってきました</li>
+<li><strong>データ構造をコードで宣言する設計</strong>——コレクション定義を書くと管理画面とREST APIが同時に生える。Git差分管理でき、Claude CodeのようなAIエージェントに「コレクションを足して」と頼める形。WordPressとの決定的な違いです</li>
+<li><strong>セットアップには日本語情報ゼロの罠が実在</strong>——ウィザードのDB選択(既定はMongoDB)、非対話環境でのハング、意図しないDBアダプタが入る事故。全部踏んで、リカバリ手順ごと回収しました</li>
+</ul>
+<h2>「激安で安心」の中身——保守月額を、買い切りに変える</h2>
+<p>WordPress外注保守の相場は月1〜3万円(年12〜36万円)。ほぼ更新しない会社サイトがこれを払い続けているのが実態です。置き換え後の構成はこうなります。</p>
+<ul>
+<li><strong>本体は静的化</strong>——プログラムが動かないので乗っ取り・改ざんの入口が原理的に消える(=安心)。サーバーは月数百円</li>
+<li><strong>更新する「お知らせ」だけPayload</strong>——小さなヘッドレスCMSを併設。管理画面は日本語</li>
+<li><strong>移行は買い切り110,000円税込〜</strong>——同一ドメイン・URL維持・リダイレクト設計込み。以後の月額はサーバー代だけ(=激安)</li>
+</ul>
+<p>もちろん、毎日更新するメディアやプラグイン資産に乗った運用はWordPress継続が合理的です。この線引きも受け皿に正直に書きました。</p>
+<h2>今日から使える成果物</h2>
+<ul>
+<li>解説ページ(LP): <a href="https://kurage.exbridge.jp/wordpress-yametai.php?ref=vwork">WordPressをやめたい——不安と保守費に疲れた会社サイトの3つの出口</a></li>
+<li>自分で構築したい内製派へ: <a href="https://brain-market.com/u/bittensorman/a/bzITOxYjMgoTZsNWa0JXY">Payload CMS日本語構築ガイド(Brain・480円・実測つまずき回避込み)</a>——構築手順・日本語化2行・WordPressからの記事流し込み方針・VPS公開・AIエージェント用プロンプトまで</li>
+<li>移行を丸ごと任せたい方へ: <a href="https://kurage.exbridge.jp/vibe-prototype.html?ref=vwork">バイブプロトタイピング(110,000円税込〜)</a>——最短1営業日で「御社サイトを置き換えるとこうなる」動くデモをお出しします</li>
+<li>「WordPressの保守費が重い」という取引先をお持ちの方へ: <a href="https://kurage.exbridge.jp/reseller.html?ref=vwork">販売代理店(成果報酬・登録無料)</a>と<a href="https://kurage.exbridge.jp/auto-monetization.html?ref=vwork">紹介が継続収入になる自動収益化</a></li>
+<li>無料相談: <a href="https://kurage.exbridge.jp/nagoya-ai-study.php?ref=vwork">名古屋AI経営勉強会(LINEオープンチャット・匿名OK)</a>／<a href="https://kurage.exbridge.jp/chat.php?ref=vwork">Kurage.AIチャット(24時間)</a>——「うちは続けるべき?やめるべき?」の段階でも歓迎です。続けるべきならそう言います</li>
+</ul>
+<h2>考察:「流行りの言葉」と「痛みの言葉」を両方張る</h2>
+<p>今回の設計はシンプルです。<strong>流行りの言葉(ヘッドレスCMS・月2,400回)で興味層を、痛みの言葉(wordpress セキュリティ/保守/移行・月1,300回帯)で今すぐ層を受け、同じ出口(静的化+Payload+受託)に流す</strong>。LPと480円ガイドが受け皿、バイブプロトが収益の本体、代理店が増幅器という、いつもの網です。</p>
+<p>数字は<a href="https://kurage.exbridge.jp/media-mesh.php?ref=vwork">実験ダッシュボード</a>で公開しながら育てます。「WordPressの次」という大きな流れに、日本語の一次情報でどこまで食い込めるか——結果もここで報告します。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
