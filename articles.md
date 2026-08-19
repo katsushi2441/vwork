@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [OpenRouterとStripeの提携からTerraPowerの原子力発電まで：加速するAIインフラと最新モデル動向 08-20](2026-08-20-ai-news-2.html)
 - [HSBC・Standard CharteredによるSwift新システム導入とQwen3.8の推論に関する最新動向 08-20](2026-08-20-ai-news.html)
 - [Cerebras CS-4とMojoのオープンソース化、Cursorによる開発環境の再定義 08-19](2026-08-19-ai-news-4.html)
 - [NewとU.Sで読む：Mojoのオープンソース化とAlibaba、Cursorによる次世代AI・開発基盤の進化 08-19](2026-08-19-ai-news-3.html)
