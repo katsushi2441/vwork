@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [NewとU.Sで読む：Mojoのオープンソース化とAlibaba、Cursorによる次世代AI・開発基盤の進化 08-19](2026-08-19-ai-news-3.html)
 - [SECの暗号資産規制案からDeepSeek・AlibabaのLLM最新動向まで 08-19](2026-08-19-ai-news-2.html)
 - [Bitcoinで読む：Sentence Transformersの高度な埋め込み技術とWarpによるAI開発インフラの新潮流 08-19](2026-08-19-ai-news.html)
 - [自社ホストの電子署名基盤「DocuSeal」日本語導入ガイド——Docker1行で立てて、署名する相手には日本語画面が届くことをコードで確認した 08-19](2026-08-19-docuseal-japanese-guide.html)
