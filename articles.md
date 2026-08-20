@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [TencentのHunyuan Hy4やMeta AIのMacアプリなど、加速するAI技術とプライバシーの最前線 08-21](2026-08-21-ai-news.html)
 - [Agentsで読む：Qwen3.8-27bが示すローカルLLMの「主体性」とOpenRouter・Stripeの提携 08-20](2026-08-20-ai-news-4.html)
 - [OpenAIとAnthropicで読むAIニュース 08-20](2026-08-20-ai-news-3.html)
 - [OpenRouterとStripeの提携からTerraPowerの原子力発電まで：加速するAIインフラと最新モデル動向 08-20](2026-08-20-ai-news-2.html)
