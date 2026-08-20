@@ -1,0 +1,186 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Frappe HRを参考に人事システムを作ろうとして、削り続けたら何も残らなかった話——テーブル10個が4個に、画面8つが4つに | VWork バイブコーディングフレームワーク</title><meta name="description" content="「職務・職責・目標」を職(ポジション)単位で管理するOSSを探すと、Frappe HR(8,610★)のような海外HRスイートしか見つかりません。参考にして設計したら10テーブル8画面になり、そこから『複雑すぎる』と削り続けた結果、Frappe HR由来の構造はコードも設計もゼロになりました。残ったのは4テーブル4画面と、たった1つの原則。削る過程で分かった『入力が面倒だと誰も使わない』への回答と、複雑化を防ぐために自己テストに入れた機械チェック、そしてBrain・Kurage App Store・バイブコーディングの3ルート公開までの記録です。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-21-khrpost-kezuru.html"><meta property="og:type" content="article"><meta property="og:title" content="Frappe HRを参考に人事システムを作ろうとして、削り続けたら何も残らなかった話——テーブル10個が4個に、画面8つが4つに"><meta property="og:description" content="「職務・職責・目標」を職(ポジション)単位で管理するOSSを探すと、Frappe HR(8,610★)のような海外HRスイートしか見つかりません。参考にして設計したら10テーブル8画面になり、そこから『複雑すぎる』と削り続けた結果、Frappe HR由来の構造はコードも設計もゼロになりました。残ったのは4テーブル4画面と、たった1つの原則。削る過程で分かった『入力が面倒だと誰も使わない』への回答と、複雑化を防ぐために自己テストに入れた機械チェック、そしてBrain・Kurage App Store・バイブコーディングの3ルート公開までの記録です。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-21-khrpost-kezuru.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Frappe HRを参考に人事システムを作ろうとして、削り続けたら何も残らなかった話——テーブル10個が4個に、画面8つが4つに"><meta name="twitter:description" content="「職務・職責・目標」を職(ポジション)単位で管理するOSSを探すと、Frappe HR(8,610★)のような海外HRスイートしか見つかりません。参考にして設計したら10テーブル8画面になり、そこから『複雑すぎる』と削り続けた結果、Frappe HR由来の構造はコードも設計もゼロになりました。残ったのは4テーブル4画面と、たった1つの原則。削る過程で分かった『入力が面倒だと誰も使わない』への回答と、複雑化を防ぐために自己テストに入れた機械チェック、そしてBrain・Kurage App Store・バイブコーディングの3ルート公開までの記録です。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Frappe HRを参考に人事システムを作ろうとして、削り続けたら何も残らなかった話——テーブル10個が4個に、画面8つが4つに", "description": "「職務・職責・目標」を職(ポジション)単位で管理するOSSを探すと、Frappe HR(8,610★)のような海外HRスイートしか見つかりません。参考にして設計したら10テーブル8画面になり、そこから『複雑すぎる』と削り続けた結果、Frappe HR由来の構造はコードも設計もゼロになりました。残ったのは4テーブル4画面と、たった1つの原則。削る過程で分かった『入力が面倒だと誰も使わない』への回答と、複雑化を防ぐために自己テストに入れた機械チェック、そしてBrain・Kurage App Store・バイブコーディングの3ルート公開までの記録です。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-21-khrpost-kezuru.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-21", "dateModified": "2026-08-21", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Frappe HRを参考に人事システムを作ろうとして、削り続けたら何も残らなかった話——テーブル10個が4個に、画面8つが4つに</h1><p class="meta">2026-08-21</p><p>名古屋でAIシステム開発の会社をやっています。今日のテーマは<strong>削ること</strong>です。既存OSSを参考に人事システムを設計し、そこから機能を削り続けたら、参考にしたものが何も残らなかった。その全記録です。</p>
+<h2>発端: 「職務・職責・目標」を管理するOSSが無い</h2>
+<p>きっかけは、ISOや個人情報保護で置いている「◯◯責任者」の管理でした。品質管理責任者、個人情報保護管理者、安全衛生推進者。担当者が代わると、<strong>その職が何をする職なのかが失われる</strong>。この一点だけを扱う道具が欲しかった。</p>
+<p>探した結果がこれです（★数・更新日は2026-08-21時点の実測）。</p>
+<ul>
+<li><strong>Frappe HR</strong> 8,610★／GPL-3.0／活発——ただし ERPNext(38,313★) 前提の巨大HRスイート</li>
+<li><strong>Horilla</strong> 1,332★／LGPL-2.1／活発——同じくフルスタックHR</li>
+<li><strong>OrangeHRM</strong> 1,115★／GPL-3.0／更新が2026-06で止まりぎみ</li>
+</ul>
+<p>どれも給与・採用・評価ワークフローを含む塊で、<strong>欲しい「職の記録を残す」一点だけを担う道具は実質不在</strong>でした。ライセンスもGPL系なので、買い切りで売る製品に持ち込みにくい。</p>
+<h2>第1稿: Frappe HRを参考にしたら、10テーブル8画面になった</h2>
+<p>そこでFrappe HRのデータモデルを参考に設計しました。できあがった設計書がこれです。</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>テーブル</th>
+<th>主な列</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>post 職</td>
+<td>目的・権限範囲・要件・根拠規程・法令必須区分・必要人数・親職</td>
+</tr>
+<tr>
+<td>2</td>
+<td>job 職務</td>
+<td>名称・詳細・頻度・根拠・<strong>重み(%)</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>responsibility 職責</td>
+<td>決裁できる範囲・期待水準・<strong>重み(%)</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>assignment 任命</td>
+<td>前任ID・任命者・期間</td>
+</tr>
+<tr>
+<td>5</td>
+<td>period 評価期間</td>
+<td>準備中→期中→評価中→確定のライフサイクル</td>
+</tr>
+<tr>
+<td>6</td>
+<td>goal 目標</td>
+<td>指標・目標値・単位・方向(up/down)・<strong>重み(%)</strong>・承認者</td>
+</tr>
+<tr>
+<td>7</td>
+<td>task 実施タスク</td>
+<td>実績値・所要分・証跡URL・状態</td>
+</tr>
+<tr>
+<td>8</td>
+<td>evaluation 評価</td>
+<td>自己評価→上長評価→確定</td>
+</tr>
+<tr>
+<td>9</td>
+<td>handover 引き継ぎ</td>
+<td>スナップショットJSON</td>
+</tr>
+<tr>
+<td>10</td>
+<td>audit 監査ログ</td>
+<td>変更前後のJSON</td>
+</tr>
+</tbody>
+</table>
+<p>画面は8つ。ロールは staff / chief（上長）/ admin / ai の4つ。重み付きの階層スコア計算まで実装しました。</p>
+<p><strong>動くものができて、見せた瞬間に返ってきた言葉が「複雑すぎる」でした。</strong></p>
+<h2>削る作業が始まった</h2>
+<p>ここから先は、機能を足す仕事ではなく<strong>削る仕事</strong>でした。順番に消えていったものを並べます。</p>
+<p><strong>重み付け（weight）</strong> — 職務・職責・目標それぞれに%の重みを持たせ、加重平均でスコアを出す設計でした。「重みもなくていい」。合計100%に調整する画面ごと消えて、単純平均になりました。</p>
+<p><strong>法令区分・根拠規程・要件（criticality / basis / qualification）</strong> — 「法令とかいらない。重要度もいらない」。ISO用途を意識して入れた項目が、まとめて消えました。</p>
+<p><strong>職務・職責・目標の3テーブル分割</strong> — Frappe HRの構造をそのまま踏襲していた部分です。「職務には職責があって、目標もあるけど、これは1:1:1」。1:1:1なら1行でいい。3テーブルが1テーブル（duties）になり、<strong>登録画面が3つから1つ</strong>になりました。</p>
+<p><strong>評価期間（period）</strong> — 上期・下期の6か月サイクル、準備中→期中→評価中→確定のロック。人事システムなら当然入るものです。「期を考えるな。どの期間に誰が任命されてたかだけの情報で、期がシステムの機能には影響しないでしょ」。確かに、任命の日付があれば期は不要でした。テーブルもライフサイクルも画面も全部消えました。</p>
+<p><strong>引き継ぎパッケージ（handover）</strong> — その時点のスナップショットを固めて保存し、職の取扱説明書を生成する機能。これが一番大きな削除でした。「引き継ぎってのは、任命された人が前任の情報を見れるだけで、引き継げる」。<strong>記録が職に紐づいていれば、後任は最初から前任の記録を読める。</strong> 引き継ぎ書を生成する機能は、そもそも要らなかった。</p>
+<p><strong>評価（evaluation）</strong> — 自己評価→上長評価→確定のワークフロー。上長ロール（chief）ごと消えました。</p>
+<p><strong>監査ログ（audit）</strong> — 誰がいつ何を変えたかの記録。「監査もいらない」。タスクに記録者が残るので、実務上はそれで足りていました。</p>
+<p><strong>社員マスタ（employees）</strong> — これは最後に消えたものです。「kvgwcがある前提だと社員マスタはそっちで登録できるよね？」。誰が在籍しているかは会社の情報で、職の管理システムが二重に抱えると必ずズレる。外部のJSONを読むだけにしました。</p>
+<h2>結果: Frappe HR由来のものは、コードも構造も残らなかった</h2>
+<p>削り終わった状態を機械チェックした結果です。</p>
+<table>
+<thead>
+<tr>
+<th>初版（Frappe HR参考）</th>
+<th>現在</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10テーブル</td>
+<td><strong>4テーブル</strong>（posts / assignments / duties / tasks）</td>
+</tr>
+<tr>
+<td>8画面</td>
+<td><strong>4画面</strong>（ホーム / 職 / タスク / 任命）</td>
+</tr>
+<tr>
+<td>4ロール</td>
+<td><strong>3ロール</strong>（担当者 / 管理者 / AI連携）</td>
+</tr>
+<tr>
+<td>重み・方向・承認者・法令区分・根拠規程・要件・階層・証跡URL・スナップショット</td>
+<td><strong>全部削除</strong></td>
+</tr>
+</tbody>
+</table>
+<p>リポジトリ全文を検索して、<code>frappe</code> / <code>erpnext</code> / <code>hrms</code> などの痕跡はゼロ。vendorもcomposer.jsonも無く、外部から読み込むのは自分の設定ファイル1つだけです。<strong>参考にしたはずのものが、1行も残っていない。</strong></p>
+<p>残ったのはコードではなく、たった1つの原則でした。</p>
+<blockquote>
+<p><strong>記録の主語を「人」ではなく「職」に置く。</strong></p>
+</blockquote>
+<p>日報も管理表も個人フォルダも「誰が書いたか」で整理されているから、その人が抜けた瞬間に記録の所属先ごと消えます。職に紐づけておけば、担当者が代わっても記録は職に残る。これだけが生き残りました。</p>
+<h2>削る過程で、逆に足したものが1つある</h2>
+<p>削ってばかりではありませんでした。削っている最中に突きつけられた指摘がこれです。</p>
+<blockquote>
+<p>「任命された人は前任の情報を見ながら登録したいの！入力が面倒だと誰も使わなくなるの」</p>
+</blockquote>
+<p>その通りで、この手の仕組みが死ぬ原因は機能不足ではなく、<strong>白紙のフォームに毎回ゼロから書かせる設計</strong>にあります。目標管理シートをExcelで配って期末に誰も更新していない、というのはどの会社にもある光景です。</p>
+<p>そこで登録フォームをタブにしました。「入力」タブと「これまでの記録からコピー」タブがあり、参照タブには<strong>前任を含む過去の記録が日付・記録者つきで並びます</strong>。「コピー」を押すと内容が入力欄に入って入力タブに戻る。定型のタスクも、前任が書いた職務・職責・目標も、引き写して違うところだけ直せば終わりです。</p>
+<p>削る作業で機能を減らし、<strong>減らして空いた分を「入力を減らす仕掛け」に使った</strong>。これが今回いちばんの学びでした。</p>
+<h2>学び: 削った状態を維持する仕組みが要る</h2>
+<p>削るのは一度きりの作業ではありません。放っておくと必ず戻ります。人事の人に見せれば「上期・下期で区切りたい」と言われ、期のテーブルが復活する。</p>
+<p>そこで<strong>自己テストに「構造の単純さ」の機械チェック</strong>を入れました。</p>
+<ul>
+<li><code>periods</code> / <code>handovers</code> / <code>audit</code> テーブルが存在しないこと</li>
+<li>社員テーブルを作らないこと、社員を書き込むSQLが無いこと</li>
+<li>テーブルは4つだけであること</li>
+<li><code>weight</code> 列が無いこと、画面が5つを超えないこと</li>
+</ul>
+<p>自己テストは全65件。誰かが後から機能を復活させると、テストが落ちてデプロイが止まります。<strong>「複雑にしない」を人の意志ではなくテストに担保させる</strong>——これは他の製品にも横展開する予定です。</p>
+<h2>できたもの: Kurage HR Post（職務・目標・引継ぎ管理）</h2>
+<p>まずデモをどうぞ: <a href="https://proto.exbridge.jp/khrpost/">https://proto.exbridge.jp/khrpost/</a>（管理者パスワード: demo2026）</p>
+<p>経理責任者のタスク画面で「これまでの記録からコピー」タブを押すと、前任・鈴木一郎さんの記録が並びます。後任が前任の記録を読む、という一点を実際に触って確かめてください。</p>
+<ul>
+<li>1ファイルPHP + SQLite。<strong>DBサーバー不要</strong>・常駐プロセスなし・レンタルサーバーに置くだけ</li>
+<li>達成率はコードが決定的に計算（実績÷目標値・上限120%）。<strong>AIに採点させない</strong></li>
+<li>権限判定は関門1か所。担当者は任命された自分の職しか触れない</li>
+<li>社員マスタは持たず、外部の <code>employees.json</code> を読むだけ</li>
+</ul>
+<h2>入手する3つの方法</h2>
+<p>どのルートも中身は同じ製品・価格は統一です。違いは「誰がどこまでやるか」。</p>
+<p><strong>方法1: Brainで導入手順書つきを買う（55,000円税込）</strong>
+記事形式の正規販売。有料部が丸ごと導入手順書で、設置手順に加えて<strong>職務・職責の書き分け方・目標値を件数に翻訳するコツ・社員マスタをCSVから作る実務・カスタマイズ用AIプロンプト4本・落とし穴5つ</strong>を収録しています。
+<a href="https://brain-market.com/u/bittensorman/a/bzUTMyYjMgoTZsNWa0JXY">職務・目標・引継ぎ管理「Kurage HR Post」正規販売（Brain）</a></p>
+<p><strong>方法2: Kurage App Storeで完成品を買う（55,000円税込）</strong>
+配布パッケージ一式（本体＋自己テスト65件＋Claude Code連携スキル）をダウンロード。ソースコードごと渡します（MIT）。
+<a href="https://kappstore.exbridge.jp/app.php?id=56bf3ddd46b5a457&amp;ref=vwork">職務・目標・引継ぎ管理（Kurage App Store）</a></p>
+<p><strong>方法3: バイブコーディングで自社仕様にして納品（110,000円税込〜）</strong>
+「うちの等級制度に合わせたい」「実績を件数でなく金額で測りたい」「部署別の一覧が要る」——自社仕様が必要なら、Kurage HR Postをベースに当社が拡張して納品します。最短1営業日で動くデモ。
+<a href="https://kurage.exbridge.jp/vibe-prototype.html?ref=vwork">バイブプロトタイピング</a></p>
+<p>全体像と、引き継ぎ書が機能しない理由の解説はこちら: <a href="https://kurage.exbridge.jp/gyomu-hikitsugi-zokujinka.php?ref=vwork">引き継ぎ書を書かせても、属人化は消えない</a></p>
+<h2>考察: 「参考にする」の正しい使い方</h2>
+<p>今回、Frappe HRから継承したものは何もありません。では参考にした意味が無かったかというと、逆でした。</p>
+<p><strong>巨大なOSSは「業務ドメインの全体像を無料で見せてくれる教科書」です。</strong> 職・職務・職責・任命・評価期間・引き継ぎ——人事という領域に何が存在するのかを、Frappe HRのデータモデルが教えてくれました。その全体像を知った上で、<strong>自分たちの顧客に要るものだけを選び直す</strong>。この「知ってから削る」順序が重要で、最初から4テーブルを思いつくことはできませんでした。</p>
+<p>そして削り切った結果、ライセンスの制約も、フレームワークの重さも、改造の難しさも全部消えて、<strong>1ファイルのPHPで買い切り55,000円</strong>という形になりました。参考にしたOSSの痕跡がゼロであることは、失敗ではなく到達点です。</p>
+<p>数字はいつもの<a href="https://kurage.exbridge.jp/media-mesh.php?ref=vwork">実験ダッシュボード</a>で公開しながら育てます。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
