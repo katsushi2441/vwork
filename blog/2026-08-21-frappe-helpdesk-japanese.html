@@ -1,0 +1,153 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>frappe-helpdeskを日本語で使えるようにした話——ヘルプデスクOSSの問合せ管理が「日本語で検索して0件」だった原因と、レビューで見つかった2つ目のバグ | VWork バイブコーディングフレームワーク</title><meta name="description" content="問合せ管理をZendeskで回すと担当者1人あたり月額19ドルから、10人なら年34万〜207万円が永続します。受け皿になるヘルプデスクOSSは実在するのに日本語の解説記事はゼロ。実際にfrappe-helpdesk（GitHub 3,330スター）を日本語化して分かった本当の壁は、料金でも機能でもなく「日本語で検索すると必ず0件になる」実装でした。検索処理が英数字以外を全部捨てていた原因の特定、CJK対応の実装、本家frappe/helpdeskへのPR提出、そしてコードレビューで指摘された2つ目のバグ（Redis索引が再構築されない）の修正までを、実測値ごと公開します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-21-frappe-helpdesk-japanese.html"><meta property="og:type" content="article"><meta property="og:title" content="frappe-helpdeskを日本語で使えるようにした話——ヘルプデスクOSSの問合せ管理が「日本語で検索して0件」だった原因と、レビューで見つかった2つ目のバグ"><meta property="og:description" content="問合せ管理をZendeskで回すと担当者1人あたり月額19ドルから、10人なら年34万〜207万円が永続します。受け皿になるヘルプデスクOSSは実在するのに日本語の解説記事はゼロ。実際にfrappe-helpdesk（GitHub 3,330スター）を日本語化して分かった本当の壁は、料金でも機能でもなく「日本語で検索すると必ず0件になる」実装でした。検索処理が英数字以外を全部捨てていた原因の特定、CJK対応の実装、本家frappe/helpdeskへのPR提出、そしてコードレビューで指摘された2つ目のバグ（Redis索引が再構築されない）の修正までを、実測値ごと公開します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-21-frappe-helpdesk-japanese.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="frappe-helpdeskを日本語で使えるようにした話——ヘルプデスクOSSの問合せ管理が「日本語で検索して0件」だった原因と、レビューで見つかった2つ目のバグ"><meta name="twitter:description" content="問合せ管理をZendeskで回すと担当者1人あたり月額19ドルから、10人なら年34万〜207万円が永続します。受け皿になるヘルプデスクOSSは実在するのに日本語の解説記事はゼロ。実際にfrappe-helpdesk（GitHub 3,330スター）を日本語化して分かった本当の壁は、料金でも機能でもなく「日本語で検索すると必ず0件になる」実装でした。検索処理が英数字以外を全部捨てていた原因の特定、CJK対応の実装、本家frappe/helpdeskへのPR提出、そしてコードレビューで指摘された2つ目のバグ（Redis索引が再構築されない）の修正までを、実測値ごと公開します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "frappe-helpdeskを日本語で使えるようにした話——ヘルプデスクOSSの問合せ管理が「日本語で検索して0件」だった原因と、レビューで見つかった2つ目のバグ", "description": "問合せ管理をZendeskで回すと担当者1人あたり月額19ドルから、10人なら年34万〜207万円が永続します。受け皿になるヘルプデスクOSSは実在するのに日本語の解説記事はゼロ。実際にfrappe-helpdesk（GitHub 3,330スター）を日本語化して分かった本当の壁は、料金でも機能でもなく「日本語で検索すると必ず0件になる」実装でした。検索処理が英数字以外を全部捨てていた原因の特定、CJK対応の実装、本家frappe/helpdeskへのPR提出、そしてコードレビューで指摘された2つ目のバグ（Redis索引が再構築されない）の修正までを、実測値ごと公開します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-21-frappe-helpdesk-japanese.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-21", "dateModified": "2026-08-21", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>frappe-helpdeskを日本語で使えるようにした話——ヘルプデスクOSSの問合せ管理が「日本語で検索して0件」だった原因と、レビューで見つかった2つ目のバグ</h1><p class="meta">2026-08-21</p><p>名古屋でAIシステム開発の会社をやっています。今日のテーマは<strong>ヘルプデスク・問合せ管理</strong>です。オープンソースの<strong>frappe-helpdesk</strong>を実際に日本語で使えるところまで持っていき、本家にプルリクエストを出しました。その記録です。</p>
+<h2>問合せ管理の固定費は、人数×単価で毎年増える</h2>
+<p>Zendeskの公式料金表（2026年8月時点）を実測しました。担当者1人あたりの月額です。</p>
+<table>
+<thead>
+<tr>
+<th>プラン</th>
+<th>年間契約</th>
+<th>月間契約</th>
+<th>10人で年間</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Support Team</td>
+<td>$19</td>
+<td>$25</td>
+<td>$2,280（約34万円）</td>
+</tr>
+<tr>
+<td>Suite Team</td>
+<td>$55</td>
+<td>$69</td>
+<td>$6,600（約99万円）</td>
+</tr>
+<tr>
+<td>Suite Professional</td>
+<td>$115</td>
+<td>$149</td>
+<td>$13,800（約207万円）</td>
+</tr>
+</tbody>
+</table>
+<p>1ドル150円換算。<strong>担当者を増やすたびに増え、使い続ける限り毎年</strong>かかります。問合せ管理は人数課金と相性が悪く、サポート要員を増やした瞬間に効いてきます。</p>
+<h2>ヘルプデスクOSSは実在する。ただし日本語情報がゼロ</h2>
+<p>作る前に候補を実測しました（2026年8月21日・GitHub APIとZenn/Qiita検索API）。</p>
+<table>
+<thead>
+<tr>
+<th>OSS</th>
+<th>★</th>
+<th>ライセンス</th>
+<th>日本語の解説記事</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>frappe-helpdesk</strong></td>
+<td>3,330</td>
+<td>AGPL-3.0</td>
+<td><strong>Zenn 0本 / Qiita 0本</strong></td>
+</tr>
+<tr>
+<td>Chatwoot</td>
+<td>36,033</td>
+<td>独自</td>
+<td>Zenn 0本 / Qiita 3本</td>
+</tr>
+<tr>
+<td>Zammad</td>
+<td>5,860</td>
+<td>AGPL-3.0</td>
+<td>Zenn 0本 / Qiita 4本</td>
+</tr>
+<tr>
+<td>FreeScout</td>
+<td>4,490</td>
+<td>AGPL-3.0</td>
+<td>Zenn 0本 / Qiita 0本</td>
+</tr>
+</tbody>
+</table>
+<p><strong>ヘルプデスクOSSは揃っているのに、日本語の情報が全滅</strong>しています。この空白が「無料なのに誰も使っていない」の正体でした。</p>
+<p>選んだのは<strong>frappe-helpdesk</strong>です。チケット・SLA・ナレッジベース・メール連携という問合せ管理の芯が最初から揃っていて、ERPNextと同じFrappeの上に乗っているためカスタマイズの筋が良い。</p>
+<h2>壁は料金でも機能でもなく「日本語で検索すると0件」だった</h2>
+<p>構築して日本語でチケットを登録し、検索したら<strong>何も出ません</strong>。英語のチケットは出るのに、日本語だけ出ない。</p>
+<p>原因はこれでした。</p>
+<pre><code class="language-python">unsafe_chars = re.compile(r&quot;[^a-zA-Z0-9\s]&quot;)
+</code></pre>
+<p>検索処理が<strong>英数字と空白以外を全部捨てていた</strong>のです。「パスワード」と入れると、ここを通った時点で空文字になります。空のクエリで検索するので当然0件。日本語だけでなく中国語・韓国語でも同じことが起きます。</p>
+<p>さらに、日本語の翻訳ファイル自体がありませんでした。<strong>34言語のうち日本語だけが欠けている</strong>——韓国語も中国語もあるのにです。</p>
+<h2>直した内容</h2>
+<ul>
+<li><strong>文字を捨てるのをやめた</strong> — NFKC正規化に置き換え、どの言語の文字も残す。全角カナや記号のゆらぎもここで吸収</li>
+<li><strong>N-gramで索引を作った</strong> — 全文検索エンジンは日本語を単語に区切れません。そこで日本語を2〜3文字の断片にして索引に持たせ、検索時も同じ形に展開。<strong>区切れない問題を、区切らずに済ませる方法で回避</strong>しました</li>
+<li><strong>英語専用の後処理を日本語では切った</strong> — 結果が少ないときTextBlobで名詞句を取り直す処理があり、この辞書は英語専用。日本語では、せっかく出た結果を捨てていました</li>
+<li><strong>翻訳を全部当てた</strong> — 1,499メッセージすべて。未訳ゼロ（<code>Bcc</code>・<code>CSV</code>・<code>SLA</code>など18件は英語のまま残すのが適切と判断）</li>
+</ul>
+<p>検証は目視ではなく機械で。<strong>実際にSQLiteのFTS5テーブルを作り、「パスワード」が「パスワード変更の手順」にヒットし、無関係な文書にはヒットしない</strong>ことを自動テストにしています。</p>
+<p>本家へは2本に分けて提出しました。翻訳とコードを混ぜると却下されやすいためです。</p>
+<ul>
+<li>検索の修正: <a href="https://github.com/frappe/helpdesk/pull/3712">frappe/helpdesk#3712</a></li>
+<li>日本語翻訳: <a href="https://github.com/frappe/helpdesk/pull/3713">frappe/helpdesk#3713</a></li>
+<li>日本語対応版: <a href="https://github.com/katsushi2441/frappe-helpdesk-jp">katsushi2441/frappe-helpdesk-jp</a></li>
+</ul>
+<p>検索の修正は「日本語対応」ではなく<strong>「CJK対応」</strong>として書きました。本家には韓国語も中国語もあるので、そのほうが本家にとっての価値が伝わります。</p>
+<h2>レビューで2つ目のバグが出た（ここが一番の学び）</h2>
+<p>PRを出した直後、コードレビューでこう指摘されました。</p>
+<blockquote>
+<p>新しいクエリは <code>cjk_terms</code> に依存しているが、同名のまま残っている既存のRedis索引は、文書数だけを見る有効性判定を通過してしまう。</p>
+</blockquote>
+<p><strong>追いかけたら、本当にバグでした。</strong></p>
+<p><code>index_exists()</code> は「索引内の文書数」が実レコード数と近いかしか見ていません。この数字は<strong>スキーマが変わっても正しいまま</strong>です。つまり、</p>
+<ol>
+<li><code>cjk_terms</code> が無かった頃のRedis索引が「有効」と判定される</li>
+<li>再構築がスキップされる</li>
+<li>新クエリは <code>cjk_terms</code> にしかマッチしない</li>
+<li>→ <strong>既存サイトをアップグレードすると、日本語検索が効かないまま</strong></li>
+</ol>
+<p>SQLite側は索引ファイル名を上げたので再構築されますが、<strong>Redis側は同名のまま</strong>で、そこだけ手当てが抜けていました。新規構築では絶対に踏まない、アップグレード時だけ出るバグです。</p>
+<p>修正は、宣言スキーマと<code>FT.INFO</code>が返す実フィールドを突き合わせ、欠けていたら「索引なし」として扱う形にしました。<code>cjk_terms</code>専用のその場しのぎにせず<strong>汎用</strong>にしたので、今後フィールドが増えたときも同じ経路で拾えます。テストは5件から10件に増えました。</p>
+<p>学びは2つです。<strong>新規構築だけ試して「動いた」と言ってはいけない</strong>こと。そして<strong>レビューは、自分が絶対に踏まない経路を教えてくれる</strong>こと。今回は指摘がなければ、利用者の環境で静かに壊れていました。</p>
+<h2>自社で持つための3つの方法</h2>
+<p>frappe-helpdeskはAGPL-3.0なので、当社が「完成品」として買い切り販売することはできません。売れるのは<strong>手順と手間</strong>だけです。そのぶんソフトのライセンス費はずっとゼロです。</p>
+<p><strong>方法1: 自分で構築する（無料）</strong>
+ソースは公開しています。つまずくのはFrappe Frameworkのセットアップ、日本語ロケールの反映、検索インデックスの再構築の3か所です。</p>
+<p><strong>方法2: 構築手順書を買う（480円）</strong>
+上の3か所でつまずかないための手順書です。メモリ不足でビルドが無言で落ちる話、翻訳が反映されないときの確認順序、索引を<code>force</code>付きで作り直すコマンド、メール受信をチケットに落とす設定、カスタマイズ用AIプロンプト4本、AGPLの線引きまで。
+<a href="https://brain-market.com/u/bittensorman/a/bwIjMyYjMgoTZsNWa0JXY">frappe-helpdesk日本語化の実録と構築手順書（Brain）</a></p>
+<p><strong>方法3: 構築を任せる（110,000円税込〜）</strong>
+自社の運用に合わせて構築し、ソースコードごとお渡しします。紙の見積もりではなく<strong>最短1営業日で動くデモ</strong>。「既存の顧客マスタとつなぎたい」といった要件もここで吸収します。
+<a href="https://kurage.exbridge.jp/vibe-prototype.html?ref=vwork">バイブプロトタイピング</a></p>
+<p>料金比較とOSS比較、移行判断のチェックリストは解説ページにまとめました。
+<a href="https://kurage.exbridge.jp/zendesk-helpdesk.php?ref=vwork">Zendeskの月額をやめたい会社へ</a></p>
+<p>問合せの<strong>一次対応をAIに任せて、残りをチケット管理</strong>に落とす組み合わせも効きます。買い切りのAIチャットボット（55,000円税込）を用意しています。
+<a href="https://kappstore.exbridge.jp/app.php?id=224e141f77bd07a8&amp;ref=vwork">AIチャットボット（Kurage App Store）</a></p>
+<h2>考察: 日本語の空白は「翻訳」ではなく「実装」にある</h2>
+<p>日本語化というと翻訳ファイルの話だと思われがちですが、今回いちばん効いたのは<strong>検索が日本語を捨てていた実装の修正</strong>でした。UIが日本語になっても、自分のチケットを検索できないヘルプデスクは使えません。</p>
+<p>海外製OSSを日本語で使うときは、まず<strong>検索・ソート・全文一致</strong>を日本語データで試すのが早い。ここが壊れている製品は、翻訳が100%でも実用になりません。逆にここさえ直せば、月額課金をやめる選択肢が現実になります。</p>
+<p>数字はいつもの<a href="https://kurage.exbridge.jp/media-mesh.php?ref=vwork">実験ダッシュボード</a>で公開しながら育てます。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
