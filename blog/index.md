@@ -22,6 +22,7 @@ faq:
 
 ## 記事一覧
 
+- [OSSをバイブコーディングでカスタマイズする。GitHub資産を企業の業務システムへ変えるVibe OSS](2026-08-22-oss-vibe-coding-customization-business.html)
 - [Backlog代替にPlaneを選び、日本向け導入キットと480円の構築手順書を作った。AEO・GEOの失敗も公開します](2026-08-21-plane-jp-aeo-geo.html)
 - [frappe-helpdeskを日本語で使えるようにした話——ヘルプデスクOSSの問合せ管理が「日本語で検索して0件」だった原因と、レビューで見つかった2つ目のバグ](2026-08-21-frappe-helpdesk-japanese.html)
 - [Frappe HRを参考に人事システムを作ろうとして、削り続けたら何も残らなかった話——テーブル10個が4個に、画面8つが4つに](2026-08-21-khrpost-kezuru.html)
