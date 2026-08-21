@@ -388,3 +388,5 @@ url2pub-i18n-hatena-summary
 2026-08-21-plane-jp-aeo-geo
 2026-08-21-ai-news-4
 2026-08-21-kproofread-chemical-report-review
+2026-08-22-ai-news
+2026-08-22-oss-vibe-coding-customization-business
