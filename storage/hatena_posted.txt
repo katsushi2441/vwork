@@ -390,3 +390,4 @@ url2pub-i18n-hatena-summary
 2026-08-21-kproofread-chemical-report-review
 2026-08-22-ai-news
 2026-08-22-oss-vibe-coding-customization-business
+2026-08-22-payload-cms-oss-catalog-seo-aeo-geo
