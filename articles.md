@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Qwen 3.8とChatGPTの進化：LLMエージェントと検索機能の最前線 08-21](2026-08-21-ai-news-3.html)
 - [LiquidAIの高速推論技術とGoogleによるAI検索への対応策 08-21](2026-08-21-ai-news-2.html)
 - [TencentのHunyuan Hy4やMeta AIのMacアプリなど、加速するAI技術とプライバシーの最前線 08-21](2026-08-21-ai-news.html)
 - [Agentsで読む：Qwen3.8-27bが示すローカルLLMの「主体性」とOpenRouter・Stripeの提携 08-20](2026-08-20-ai-news-4.html)
