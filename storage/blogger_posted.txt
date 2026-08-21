@@ -240,3 +240,5 @@ kfreqai-entry-threshold-explained
 2026-08-21-ai-news
 2026-08-21-ai-news-2
 2026-08-21-khrpost-kezuru
+2026-08-21-ai-news-3
+2026-08-21-frappe-helpdesk-japanese
