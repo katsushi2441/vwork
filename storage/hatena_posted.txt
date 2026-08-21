@@ -386,3 +386,4 @@ url2pub-i18n-hatena-summary
 2026-08-21-ai-news-3
 2026-08-21-frappe-helpdesk-japanese
 2026-08-21-plane-jp-aeo-geo
+2026-08-21-ai-news-4
