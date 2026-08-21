@@ -1,0 +1,121 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Backlog代替にPlaneを選び、日本向け導入キットと480円の構築手順書を作った。AEO・GEOの失敗も公開します | VWork バイブコーディングフレームワーク</title><meta name="description" content="オープンソースのプロジェクト管理システムPlaneを日本企業が自社サーバーで使うためのPlane JP Deployment Kitを公開しました。Planeはすでに日本語UIを持つため、翻訳ではなく公式配布物の検証、秘密値生成、HTTPS、バックアップ、更新を整備。LP制作でFAQを構造化データにだけ入れて本文へ表示しなかったAEO・GEOの失敗と、GEO 100点・AEO goodまで改善した記録、GitHub、Brain手順書、カスタマイズ、代理店制度まで紹介します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-21-plane-jp-aeo-geo.html"><meta property="og:type" content="article"><meta property="og:title" content="Backlog代替にPlaneを選び、日本向け導入キットと480円の構築手順書を作った。AEO・GEOの失敗も公開します"><meta property="og:description" content="オープンソースのプロジェクト管理システムPlaneを日本企業が自社サーバーで使うためのPlane JP Deployment Kitを公開しました。Planeはすでに日本語UIを持つため、翻訳ではなく公式配布物の検証、秘密値生成、HTTPS、バックアップ、更新を整備。LP制作でFAQを構造化データにだけ入れて本文へ表示しなかったAEO・GEOの失敗と、GEO 100点・AEO goodまで改善した記録、GitHub、Brain手順書、カスタマイズ、代理店制度まで紹介します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-21-plane-jp-aeo-geo.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Backlog代替にPlaneを選び、日本向け導入キットと480円の構築手順書を作った。AEO・GEOの失敗も公開します"><meta name="twitter:description" content="オープンソースのプロジェクト管理システムPlaneを日本企業が自社サーバーで使うためのPlane JP Deployment Kitを公開しました。Planeはすでに日本語UIを持つため、翻訳ではなく公式配布物の検証、秘密値生成、HTTPS、バックアップ、更新を整備。LP制作でFAQを構造化データにだけ入れて本文へ表示しなかったAEO・GEOの失敗と、GEO 100点・AEO goodまで改善した記録、GitHub、Brain手順書、カスタマイズ、代理店制度まで紹介します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Backlog代替にPlaneを選び、日本向け導入キットと480円の構築手順書を作った。AEO・GEOの失敗も公開します", "description": "オープンソースのプロジェクト管理システムPlaneを日本企業が自社サーバーで使うためのPlane JP Deployment Kitを公開しました。Planeはすでに日本語UIを持つため、翻訳ではなく公式配布物の検証、秘密値生成、HTTPS、バックアップ、更新を整備。LP制作でFAQを構造化データにだけ入れて本文へ表示しなかったAEO・GEOの失敗と、GEO 100点・AEO goodまで改善した記録、GitHub、Brain手順書、カスタマイズ、代理店制度まで紹介します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-21-plane-jp-aeo-geo.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-21", "dateModified": "2026-08-21", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Backlog代替にPlaneを選び、日本向け導入キットと480円の構築手順書を作った。AEO・GEOの失敗も公開します</h1><p class="meta">2026-08-21</p><p>Backlogの代替候補として、オープンソースのプロジェクト管理システム <strong>Plane</strong> を日本企業が自社サーバーへ導入するための <strong><a href="https://github.com/katsushi2441/plane-jp">Plane JP Deployment Kit</a></strong> を公開しました。</p>
+<p>今回作ったのは「Planeの日本語翻訳版」ではありません。Plane v1.4.1には、英語版と同じ28ファイルの日本語辞書がすでに収録されています。足りなかったのは翻訳ではなく、<strong>日本の会社が導入し、バックアップし、壊さず更新し続けるための道具と日本語の手順</strong>でした。</p>
+<h2>なぜBacklog代替としてPlaneを調べたのか</h2>
+<p>Backlogは日本のチームにとって使いやすく、サーバー管理や障害対応もサービス側へ任せられます。一方、利用者やプロジェクトが増えると、月額料金とデータの保管場所を見直したい会社も出てきます。</p>
+<p>そこで選択肢になるのが、AGPL-3.0で公開されているPlane Community Editionです。課題、サイクル、モジュール、ドキュメント、受信箱を備え、2026年8月21日時点でGitHub 5.6万スターを超えています。</p>
+<p>ただし、OSSだから置くだけで終わりではありません。PlaneはWeb、API、PostgreSQL、Valkey、RabbitMQ、MinIOなど複数のコンテナで動きます。共有レンタルサーバーではなくDockerが動くVPSが必要で、秘密値、独自ドメイン、HTTPS、バックアップ、更新手順も運用側で持たなければなりません。</p>
+<p>この「ソフトはあるが、日本の会社が安全に使い始めるまでが遠い」という空白を埋めるために、Plane JP Deployment Kitを作りました。</p>
+<h2>Plane JP Deployment Kitで整えたこと</h2>
+<p>無料公開した導入キットでは、次の作業を一つのCLIへまとめています。</p>
+<ul>
+<li>Plane公式v1.4.1のセットアップ、Compose、環境テンプレートを固定取得</li>
+<li>GitHub Releaseに記載されたSHA-256との照合</li>
+<li>PostgreSQL、RabbitMQ、MinIO、Django、Live Serverの秘密値を自動生成</li>
+<li>独自ドメイン、Let's Encrypt HTTPS、CORS、公開ポートの設定</li>
+<li>Docker Compose設定と危険な初期値が残っていないことの検査</li>
+<li>開始、停止、ログ、バックアップ、更新操作の共通化</li>
+</ul>
+<p>「インストールできた」で終わらず、<strong>翌月も運用できる状態</strong>を目標にしています。</p>
+<ul>
+<li>無料の導入キット: <a href="https://github.com/katsushi2441/plane-jp">katsushi2441/plane-jp（GitHub）</a></li>
+<li>比較と導入判断: <a href="https://kurage.exbridge.jp/backlog-plane.php?ref=vwork-plane">Backlogの代替を自社サーバーに。Plane日本向け導入キット</a></li>
+</ul>
+<h2>LPは作れた。しかしAEO・GEOはできていなかった</h2>
+<p>Planeの説明LPには、最初から次を入れていました。</p>
+<ul>
+<li>sitemap.xmlへの登録</li>
+<li>1200×630のOGP画像</li>
+<li>title、description、canonical</li>
+<li>GA4</li>
+<li>simpletrack.phpによるアクセス計測</li>
+<li>FAQPageのJSON-LD</li>
+</ul>
+<p>ここまで見て、最初は「SEO、AEO、GEOまでできている」と考えていました。しかし、実際に確認すると不十分でした。</p>
+<p>一番大きな失敗は、<strong>6件のFAQをJSON-LDへ入れたのに、同じ質問と回答を本文へ表示していなかったこと</strong>です。検索エンジンやAI向けの構造化データだけに答えがあり、読者には見えない。これはAEO以前に、ページとして整合していません。</p>
+<p>ほかにも、次の不足がありました。</p>
+<ul>
+<li><code>llms.txt</code>と<code>llms-full.txt</code>にPlaneのLPが載っていない</li>
+<li>FAQPageはあるがArticleとWebSiteの構造化データがない</li>
+<li>運営会社、同一主体を示す<code>sameAs</code>、問い合わせ先が弱い</li>
+<li>「Planeとは何か」の定義文がなく、質問見出しの直後に簡潔な答えが来ていない</li>
+</ul>
+<p>タグが並んでいることと、AIが答えを引用しやすいことは別でした。</p>
+<h2>失敗を数字で直す</h2>
+<p>思い込みで「対応済み」と言うのをやめ、公開URLを決定論的な監査コードで測りました。</p>
+<p>最初の実監査は <strong>GEO 90点</strong>。日本語AEOは <strong>56点（foundation）</strong> でした。</p>
+<p>そこで、次を修正しました。</p>
+<ol>
+<li>FAQの質問と回答を本文にも表示し、JSON-LDと一致させる</li>
+<li>FAQを見出し＋直後の回答にして、そのまま引用しやすくする</li>
+<li>「Planeとは」の定義文を追加する</li>
+<li>WebSite、Article、Organization、SoftwareApplication、SoftwareSourceCodeを構造化する</li>
+<li><code>llms.txt</code>と<code>llms-full.txt</code>へPlane LP、GitHub、Brainを登録する</li>
+<li>運営会社、GitHub、X、会社概要、問い合わせ先を結びつける</li>
+</ol>
+<p>修正後の公開URLは、<strong>GEO 100点・推奨修正0件</strong>、日本語AEOは <strong>72点（good）・推奨修正0件</strong> になりました。AEOを100点にするために全見出しを不自然な定義文へ変えることはしていません。点数より、読者が読みやすく、AIが根拠と一緒に引用できることを優先しました。</p>
+<p>この失敗から学んだのは、<strong>OGPやメタタグを置いただけでAEO・GEO対応と言ってはいけない</strong>ということです。本文、構造化データ、AI向けサイト案内、運営主体が同じ内容を示し、最後に公開URLを測って初めて確認できます。</p>
+<h2>自分で構築するための手順書をBrainで公開</h2>
+<p>Plane JP Deployment Kit自体はGitHubから無料で利用できます。</p>
+<p>さらに、VPS準備、DNS、Docker、HTTPS、日本語と日本時間、Backlogの項目対応、バックアップ、更新、障害時の確認順序、AIエージェントへカスタマイズを依頼するときのプロンプトまで、作業順にまとめた手順書をBrainで公開しました。</p>
+<p>👉 <strong><a href="https://brain-market.com/u/bittensorman/a/b0MjMyYjMgoTZsNWa0JXY">Backlog代替を自社サーバーに構築する Plane日本向け導入・運用完全ガイド（Brain・480円）</a></strong></p>
+<p>ソフトにお金を払うのではなく、<strong>調査と失敗を繰り返す時間を480円で短縮する</strong>ための手順書です。</p>
+<h2>自社仕様にしたい場合は、バイブプロトタイプでカスタマイズ</h2>
+<p>PlaneはBacklogと同じ画面やデータ構造ではありません。Backlogの種別、カテゴリー、マイルストーンを、PlaneのWork item type、Label、Cycle、Moduleのどこへ割り当てるかは、会社ごとに決める必要があります。</p>
+<p>既存の顧客マスタと連携したい、承認フローを追加したい、代表プロジェクトを試験移行したい場合は、<strong><a href="https://kurage.exbridge.jp/vibe-prototype.html?ref=vwork-plane">バイブプロトタイピング</a></strong>で動く試験環境を作ってから判断できます。</p>
+<p>自社ホストが向かない会社にはBacklogを続ける選択もあります。OSSを売るために置き換えるのではなく、データ管理、連携自由度、保守体制を見て選ぶことが大切です。</p>
+<h2>作ったシステムを紹介する人も募集しています</h2>
+<p>株式会社エクスブリッジでは、Planeの導入支援を含むAI・業務システムを紹介する<strong>販売代理店・再販パートナー</strong>を募集しています。</p>
+<p>登録無料、仕入れ・在庫・ノルマなし。見込み客をつなぐ取次型と、自分で提案する販売代理型があり、成約時は税別受注額の30%を販売手数料としてお支払いします。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/reseller.html?ref=vwork-plane">Kurage 販売代理店・再販パートナー募集</a></li>
+<li><a href="https://kurage.exbridge.jp/auto-monetization.html?ref=vwork-plane">紹介を継続収益へつなげる自動収益化の仕組み</a></li>
+</ul>
+<p>AIやOSSに詳しくなくても、「この会社はBacklogの料金や運用で困っている」「この業務はシステム化できそう」と気づければ入口になります。商談、デモ、見積もりは弊社側で対応できます。</p>
+<h2>一緒に学ぶ場所と、すぐ相談できるAI窓口</h2>
+<p>今回のようなOSS導入、バイブコーディング、AIエージェントの使い方を学びたい方には、無料の<strong>名古屋AI経営勉強会</strong>があります。LINEオープンチャットで、初心者の質問や実運用の失敗談を共有しています。</p>
+<p>👉 <a href="https://kurage.exbridge.jp/nagoya-ai-study.php?ref=vwork-plane">名古屋AI経営勉強会に参加する（無料・匿名OK）</a></p>
+<p>個別に「自社ではPlaneが合うのか」「何を作ればいいのか」と相談したい場合は、Kurage.AIへ自然な言葉で質問できます。</p>
+<p>👉 <a href="https://kurage.exbridge.jp/chat.php?ref=vwork-plane">Kurage.AI システム開発相談チャット（無料）</a></p>
+<h2>作る、売る、直すまでを一つの実践にする</h2>
+<p>今回の流れは、VWorkで続けているバイブコーディングの実践そのものです。</p>
+<ol>
+<li>人気のあるOSSを調べる</li>
+<li>日本の利用者が止まる場所を見つける</li>
+<li>導入・運用キットを作ってGitHubで無料公開する</li>
+<li>判断材料をLPにまとめる</li>
+<li>失敗も含めてAEO・GEOを測り直す</li>
+<li>自分で進めたい人にはBrain手順書を用意する</li>
+<li>自社仕様が必要な人には動く試験環境を作る</li>
+<li>代理店、勉強会、AI相談を通じて利用者を増やす</li>
+</ol>
+<p>最初から正解だったわけではありません。公開して、足りないところを指摘され、測って直したから、次に使える型になりました。</p>
+<p>Planeを自社サーバーで試したい方は、まず無料のGitHubキットかLPからご覧ください。</p>
+<ul>
+<li><a href="https://github.com/katsushi2441/plane-jp">Plane JP Deployment Kit（GitHub・無料）</a></li>
+<li><a href="https://kurage.exbridge.jp/backlog-plane.php?ref=vwork-plane">Backlog代替・Plane日本向け導入LP</a></li>
+<li><a href="https://brain-market.com/u/bittensorman/a/b0MjMyYjMgoTZsNWa0JXY">Plane日本向け導入・運用完全ガイド（Brain・480円）</a></li>
+<li><a href="https://kurage.exbridge.jp/vibe-prototype.html?ref=vwork-plane">自社仕様の試験環境を作る</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
