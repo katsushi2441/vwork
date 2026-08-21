@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [Payload CMSを業務OSSカタログにした――Kurage Payload CMSのSEO・AEO・GEO設計](2026-08-22-payload-cms-oss-catalog-seo-aeo-geo.html)
 - [Qwen3.8の高速化とNVIDIA AVOのベンチマーク突破で進むAI進化 08-22](2026-08-22-ai-news.html)
 - [化学試験報告書の「数値を変えない」AI校正・照査を作った――FastAPI、Pandera、Pint、textlint、Gemma 4の役割分担](2026-08-21-kproofread-chemical-report-review.html)
 - [The August 17で読む：GitHubのシステム障害とLFM2.5-DSparkによる推論加速、そしてOpenAIの躍進 08-21](2026-08-21-ai-news-4.html)
