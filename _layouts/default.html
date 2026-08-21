@@ -168,11 +168,52 @@
     pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
     pre code { padding:0; background:transparent; color:inherit; }
     .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    .oss-promo-top { max-width:960px; margin:22px auto 0; padding:0 22px; }
+    .oss-promos { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+    .oss-promo { min-height:142px; display:flex; align-items:center; overflow:hidden; border:1px solid #cfe7e4; border-radius:17px; color:#15343b; text-decoration:none; background-color:#f7fffd; background-image:linear-gradient(90deg,rgba(255,255,255,.99) 0%,rgba(255,255,255,.96) 42%,rgba(255,255,255,.34) 72%,rgba(255,255,255,.04) 100%),var(--promo-image); background-position:center; background-size:cover; box-shadow:0 10px 26px rgba(28,91,96,.10); transition:transform .18s ease,box-shadow .18s ease; }
+    .oss-promo:hover { color:#15343b; transform:translateY(-2px); box-shadow:0 15px 32px rgba(28,91,96,.16); }
+    .oss-promo-catalog { --promo-image:url('{{ '/assets/kurage-oss-catalog-banner.jpg' | relative_url }}'); }
+    .oss-promo-customize { --promo-image:url('{{ '/assets/kurage-vibe-oss-banner.jpg' | relative_url }}'); border-color:#eadfc3; }
+    .oss-promo-copy { width:70%; padding:15px 0 15px 17px; }
+    .oss-promo-kicker { display:block; margin-bottom:5px; color:#087e79; font-size:8px; font-weight:800; letter-spacing:.11em; }
+    .oss-promo strong { display:block; margin-bottom:4px; color:#12323b; font-size:16px; line-height:1.4; }
+    .oss-promo-desc { display:block; color:#526a70; font-size:10px; line-height:1.5; }
+    .oss-promo-cta { display:inline-block; margin-top:6px; color:#087e79; font-size:10px; font-weight:800; }
+    main.listing-main { max-width:1180px; display:grid; grid-template-columns:minmax(0,1fr) 330px; align-items:start; gap:18px; }
+    .listing-main article { min-width:0; }
+    .oss-promo-sidebar { position:sticky; top:18px; }
+    .oss-promo-sidebar .oss-promos { grid-template-columns:1fr; }
+    .oss-promo-sidebar .oss-promo { min-height:148px; }
     footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
-    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+    @media (max-width:920px) {
+      main.listing-main { display:flex; flex-direction:column; max-width:960px; }
+      .listing-main article { width:100%; }
+      .oss-promo-sidebar { position:static; order:-1; width:100%; overflow:hidden; }
+      .oss-promo-sidebar .oss-promos { grid-template-columns:repeat(2,minmax(235px,1fr)); overflow-x:auto; padding-bottom:4px; }
+      .oss-promo-sidebar .oss-promo { min-height:98px; }
+      .oss-promo-sidebar .oss-promo-desc { display:none; }
+      .oss-promo-sidebar .oss-promo strong { font-size:13px; }
+    }
+    @media (max-width:720px) {
+      .bar { align-items:flex-start; flex-direction:column; }
+      main { padding-top:16px; }
+      article { padding:22px; }
+      h1 { font-size:27px; }
+      .oss-promo-top { margin-top:14px; padding:0 14px; overflow:hidden; }
+      .oss-promo-top .oss-promos { grid-template-columns:repeat(2,minmax(250px,1fr)); overflow-x:auto; padding-bottom:4px; }
+      .oss-promo-top .oss-promo { min-height:112px; }
+      .oss-promo-copy { width:72%; padding-left:13px; }
+      .oss-promo strong { font-size:14px; }
+      .oss-promo-desc { display:none; }
+    }
+    @media print { .oss-promo-top,.oss-promo-sidebar { display:none !important; } }
   </style>
 </head>
 <body>
+  {% assign is_blog_area = false %}
+  {% if page.url contains '/blog/' or page.url contains '/articles/' %}{% assign is_blog_area = true %}{% endif %}
+  {% assign is_blog_listing = false %}
+  {% if page.url == '/blog/' or page.url == '/articles/' %}{% assign is_blog_listing = true %}{% endif %}
   <header>
     <div class="bar">
       <a class="brand" href="{{ '/' | relative_url }}">VWork バイブコーディングフレームワーク</a>
@@ -185,7 +226,10 @@
       </nav>
     </div>
   </header>
-  <main>
+  {% if is_blog_area and is_blog_listing == false %}
+  <div class="oss-promo-top">{% include oss-promos.html %}</div>
+  {% endif %}
+  <main{% if is_blog_listing %} class="listing-main"{% endif %}>
     <article>
       {% comment %}
         ページ内に見出しが無いとSEO・アクセシビリティの両方で不利になる。
@@ -196,6 +240,9 @@
       {% if page.date %}<p class="meta">{{ page.date | date: "%Y年%-m月%-d日" }}</p>{% endif %}
       {{ content }}
     </article>
+    {% if is_blog_listing %}
+    <aside class="oss-promo-sidebar">{% include oss-promos.html %}</aside>
+    {% endif %}
   </main>
   <footer>
     <p>

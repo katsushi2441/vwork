@@ -1,0 +1,23 @@
+{% if page.url contains '/articles/' %}
+  {% assign oss_promo_ref = 'ai-oss-blog' %}
+{% else %}
+  {% assign oss_promo_ref = 'vwork-blog' %}
+{% endif %}
+<nav class="oss-promos" aria-label="Kurage OSS関連サービス">
+  <a class="oss-promo oss-promo-catalog" href="https://kurage.exbridge.jp/oss/?ref={{ oss_promo_ref }}">
+    <span class="oss-promo-copy">
+      <span class="oss-promo-kicker">KURAGE OSS CATALOG</span>
+      <strong>業務で使えるOSSを、<br>日本語の導入情報から選ぶ。</strong>
+      <span class="oss-promo-desc">用途・ライセンス・日本語対応から比較</span>
+      <span class="oss-promo-cta">OSS一覧を見る →</span>
+    </span>
+  </a>
+  <a class="oss-promo oss-promo-customize" href="https://kurage.exbridge.jp/vibe-oss.html?ref={{ oss_promo_ref }}">
+    <span class="oss-promo-copy">
+      <span class="oss-promo-kicker">VIBE OSS CUSTOMIZATION</span>
+      <strong>OSSを、御社で<br>使える状態へ。</strong>
+      <span class="oss-promo-desc">日本語化・カスタマイズ・サーバー導入</span>
+      <span class="oss-promo-cta">サービスを見る →</span>
+    </span>
+  </a>
+</nav>
