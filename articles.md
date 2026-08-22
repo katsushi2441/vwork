@@ -8,6 +8,7 @@ permalink: /articles/
 AI OSS技術解説は、Zenn連携を前提にした技術情報ブログです。
 Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用など、実装寄りの知識を蓄積します。
 
+- [InherentのFaradayがOpenAIやAnthropicを凌駕：Linus Torvaldsの体験から見るAIの実用性と安全性の課題 08-23](2026-08-23-ai-news-2.html)
 - [Nvidiaのデータセンター戦略とQwen 3.8の躍進、そしてWeb3のセキュリティ課題 08-23](2026-08-23-ai-news.html)
 - [RustとThisで読む：NVIDIAのAIインフラ戦略とQwen 3.8の躍進：次世代技術の最前線 08-22](2026-08-22-ai-news-4.html)
 - [NvidiaとQwen3.8から見る、AIエージェントの実用化に向けたインフラとフレームワークの進化 08-22](2026-08-22-ai-news-3.html)
