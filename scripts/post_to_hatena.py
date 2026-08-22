@@ -153,11 +153,15 @@ def main():
         sat = satellite_body(title, body, src.stem, section=src.parent.name)
         if args.footer_md:
             sat += "\n\n---\n\n" + args.footer_md
-        send_mail(title, sat)
+        # 媒体ごとに主題を変えるルール。frontmatterに title_hatena / title_blogger が
+        # あればそれを使う。無ければ従来どおり title（既存記事を壊さない）。
+        hatena_title = fm.get("title_hatena") or title
+        blogger_title = fm.get("title_blogger") or title
+        send_mail(hatena_title, sat)
         if blogger:
-            send_mail(title, sat, to_override=blogger)
+            send_mail(blogger_title, sat, to_override=blogger)
             mark_blogger_posted(src.stem)
-            print(f"  blogger(衛星): {title}")
+            print(f"  blogger(衛星): {blogger_title}")
         mark_posted(src.stem)
         print(f"  hatena(衛星): {title}")
         time.sleep(3)

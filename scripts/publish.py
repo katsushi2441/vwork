@@ -327,7 +327,9 @@ def main():
     if args.no_sns:
         print("  --no-sns のためスキップ")
     else:
-        post_aixsns(title, article_url)
+        # 媒体ごとに主題を変えるルール（同一タイトルの並列はスパム化する）。
+        # frontmatter に title_aixsns があればそれを使い、無ければ従来どおり title。
+        post_aixsns(fm.get("title_aixsns") or title, article_url)
 
     print(f"\n完了: {article_url}")
 
