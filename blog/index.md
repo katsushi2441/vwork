@@ -22,6 +22,7 @@ faq:
 
 ## 記事一覧
 
+- [AIエージェントを中小企業に入れる試験導入を、15時間15万円で設計した理由——初日無料、開発は顧客のPCで](2026-08-22-nagoya-ai-otameshi-donyu.html)
 - [OSSをバイブコーディングでカスタマイズする。GitHub資産を企業の業務システムへ変えるVibe OSS](2026-08-22-oss-vibe-coding-customization-business.html)
 - [Backlog代替にPlaneを選び、日本向け導入キットと480円の構築手順書を作った。AEO・GEOの失敗も公開します](2026-08-21-plane-jp-aeo-geo.html)
 - [frappe-helpdeskを日本語で使えるようにした話——ヘルプデスクOSSの問合せ管理が「日本語で検索して0件」だった原因と、レビューで見つかった2つ目のバグ](2026-08-21-frappe-helpdesk-japanese.html)
