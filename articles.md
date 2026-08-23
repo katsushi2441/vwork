@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [AgentsとCryptoで読む：Kimi K3のB300 GPU運用とWeb3におけるAIエージェントの台頭 08-24](2026-08-24-ai-news.html)
 - [InherentがAnthropicやOpenAIを凌駕か？Qwenの新モデル登場とAI安全性を巡る動き 08-23](2026-08-23-ai-news-4.html)
 - [OpenAIとSafetyで読むAIニュース 08-23](2026-08-23-ai-news-3.html)
 - [InherentのFaradayがOpenAIやAnthropicを凌駕：Linus Torvaldsの体験から見るAIの実用性と安全性の課題 08-23](2026-08-23-ai-news-2.html)
