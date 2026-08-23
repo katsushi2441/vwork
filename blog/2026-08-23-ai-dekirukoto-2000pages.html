@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OSSカタログを1,120件作っても、経営者には届かなかった——「AIで何ができるか」から引けるページを1,216枚、別ドメインに作った話 | VWork バイブコーディングフレームワーク</title><meta name="description" content="業務OSSのカタログを1,120件作りました。しかし経営者は製品名で検索しません。キーワードプランナーで実測すると『ai でできること』は月880回、『ai 何ができる』は月480回、いずれも競合は低。一方『名古屋 AI 導入』は月100回に届かず拾えませんでした。そこで、同じ1,120件のOSSを『AIで何ができるか』の側から引けるページとして exbridge.jp/ai-system/ に作り直しました。111分類の作り方、Ghostが『メール配信』に分類されてしまった失敗と直し方、kgeoでの実測スコア61→83まで、全部公開します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-23-ai-dekirukoto-2000pages.html"><meta property="og:type" content="article"><meta property="og:title" content="OSSカタログを1,120件作っても、経営者には届かなかった——「AIで何ができるか」から引けるページを1,216枚、別ドメインに作った話"><meta property="og:description" content="業務OSSのカタログを1,120件作りました。しかし経営者は製品名で検索しません。キーワードプランナーで実測すると『ai でできること』は月880回、『ai 何ができる』は月480回、いずれも競合は低。一方『名古屋 AI 導入』は月100回に届かず拾えませんでした。そこで、同じ1,120件のOSSを『AIで何ができるか』の側から引けるページとして exbridge.jp/ai-system/ に作り直しました。111分類の作り方、Ghostが『メール配信』に分類されてしまった失敗と直し方、kgeoでの実測スコア61→83まで、全部公開します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-23-ai-dekirukoto-2000pages.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="OSSカタログを1,120件作っても、経営者には届かなかった——「AIで何ができるか」から引けるページを1,216枚、別ドメインに作った話"><meta name="twitter:description" content="業務OSSのカタログを1,120件作りました。しかし経営者は製品名で検索しません。キーワードプランナーで実測すると『ai でできること』は月880回、『ai 何ができる』は月480回、いずれも競合は低。一方『名古屋 AI 導入』は月100回に届かず拾えませんでした。そこで、同じ1,120件のOSSを『AIで何ができるか』の側から引けるページとして exbridge.jp/ai-system/ に作り直しました。111分類の作り方、Ghostが『メール配信』に分類されてしまった失敗と直し方、kgeoでの実測スコア61→83まで、全部公開します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "OSSカタログを1,120件作っても、経営者には届かなかった——「AIで何ができるか」から引けるページを1,216枚、別ドメインに作った話", "description": "業務OSSのカタログを1,120件作りました。しかし経営者は製品名で検索しません。キーワードプランナーで実測すると『ai でできること』は月880回、『ai 何ができる』は月480回、いずれも競合は低。一方『名古屋 AI 導入』は月100回に届かず拾えませんでした。そこで、同じ1,120件のOSSを『AIで何ができるか』の側から引けるページとして exbridge.jp/ai-system/ に作り直しました。111分類の作り方、Ghostが『メール配信』に分類されてしまった失敗と直し方、kgeoでの実測スコア61→83まで、全部公開します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-23-ai-dekirukoto-2000pages.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-23", "dateModified": "2026-08-23", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>業務OSSカタログに、もう1つ入口を足した——同じOSSを「名前から」と「AIでできることから」の両方で引けるようにした話 | VWork バイブコーディングフレームワーク</title><meta name="description" content="業務OSSカタログを育てています。ただしOSSの名前を知らない人はカタログを引けません。キーワードプランナーで実測すると『ai でできること』は月880回、『ai 何ができる』は月480回、いずれも競合は低。一方『名古屋 AI 導入』は月100回に届かず拾えませんでした。そこでカタログはそのまま伸ばしつつ、同じOSSを『AIで何ができるか』の側から引ける入口を exbridge.jp/ai-system/ に足しました。111分類の作り方、Ghostが『メール配信』に分類されてしまった失敗と直し方、kgeoでの実測スコア61→83まで、全部公開します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-23-ai-dekirukoto-2000pages.html"><meta property="og:type" content="article"><meta property="og:title" content="業務OSSカタログに、もう1つ入口を足した——同じOSSを「名前から」と「AIでできることから」の両方で引けるようにした話"><meta property="og:description" content="業務OSSカタログを育てています。ただしOSSの名前を知らない人はカタログを引けません。キーワードプランナーで実測すると『ai でできること』は月880回、『ai 何ができる』は月480回、いずれも競合は低。一方『名古屋 AI 導入』は月100回に届かず拾えませんでした。そこでカタログはそのまま伸ばしつつ、同じOSSを『AIで何ができるか』の側から引ける入口を exbridge.jp/ai-system/ に足しました。111分類の作り方、Ghostが『メール配信』に分類されてしまった失敗と直し方、kgeoでの実測スコア61→83まで、全部公開します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-23-ai-dekirukoto-2000pages.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="業務OSSカタログに、もう1つ入口を足した——同じOSSを「名前から」と「AIでできることから」の両方で引けるようにした話"><meta name="twitter:description" content="業務OSSカタログを育てています。ただしOSSの名前を知らない人はカタログを引けません。キーワードプランナーで実測すると『ai でできること』は月880回、『ai 何ができる』は月480回、いずれも競合は低。一方『名古屋 AI 導入』は月100回に届かず拾えませんでした。そこでカタログはそのまま伸ばしつつ、同じOSSを『AIで何ができるか』の側から引ける入口を exbridge.jp/ai-system/ に足しました。111分類の作り方、Ghostが『メール配信』に分類されてしまった失敗と直し方、kgeoでの実測スコア61→83まで、全部公開します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "業務OSSカタログに、もう1つ入口を足した——同じOSSを「名前から」と「AIでできることから」の両方で引けるようにした話", "description": "業務OSSカタログを育てています。ただしOSSの名前を知らない人はカタログを引けません。キーワードプランナーで実測すると『ai でできること』は月880回、『ai 何ができる』は月480回、いずれも競合は低。一方『名古屋 AI 導入』は月100回に届かず拾えませんでした。そこでカタログはそのまま伸ばしつつ、同じOSSを『AIで何ができるか』の側から引ける入口を exbridge.jp/ai-system/ に足しました。111分類の作り方、Ghostが『メール配信』に分類されてしまった失敗と直し方、kgeoでの実測スコア61→83まで、全部公開します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-23-ai-dekirukoto-2000pages.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-23", "dateModified": "2026-08-23", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
 :root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
     * { box-sizing:border-box; }
     body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
@@ -21,12 +21,12 @@
     .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
     footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
     @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
-</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>OSSカタログを1,120件作っても、経営者には届かなかった——「AIで何ができるか」から引けるページを1,216枚、別ドメインに作った話</h1><p class="meta">2026-08-23</p><p>名古屋でAIシステム開発の会社をやっています。今日は、<strong>作ったものが届かなかったので、同じ中身を別の入口から作り直した</strong>話です。</p>
-<p>結論から書くと、<a href="https://exbridge.jp/ai-system/">AIでできること一覧</a>というページ群を1,216枚作りました。中身は既存の業務OSSカタログと同じですが、<strong>引き方だけが違います</strong>。</p>
-<h2>発端: OSSカタログを1,120件作ったが、手応えがなかった</h2>
-<p>もともと<a href="https://kurage.exbridge.jp/oss/">業務OSSカタログ</a>を運用しています。世界中で使われている業務用オープンソースを、用途・ライセンス・日本語対応の実測つきで並べたものです。47件から始めて、いまは1,124ページあります。</p>
-<p>作りとしては悪くないと思っていました。1件1ページで、ライセンスも日本語ロケールの実ファイル数も実際に数えている。薄いページではありません。</p>
-<p>ただ、これは<strong>「OSSの名前を知っている人」しか辿り着けない</strong>構造でした。</p>
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>業務OSSカタログに、もう1つ入口を足した——同じOSSを「名前から」と「AIでできることから」の両方で引けるようにした話</h1><p class="meta">2026-08-23</p><p>名古屋でAIシステム開発の会社をやっています。今日は、<strong>同じ中身に、入口をもう1つ足した</strong>話です。</p>
+<p>結論から書くと、<a href="https://exbridge.jp/ai-system/">AIでできること一覧</a>というページ群を1,216枚作りました。中身は既存の業務OSSカタログと同じOSSですが、<strong>引き方だけが違います</strong>。カタログを畳んだわけではなく、いまも件数を増やしている最中です。</p>
+<h2>発端: OSSの名前を知らない人は、カタログを引けない</h2>
+<p>もともと<a href="https://kurage.exbridge.jp/oss/">業務OSSカタログ</a>を運用しています。世界中で使われている業務用オープンソースを、用途・ライセンス・日本語対応の実測つきで並べたものです。47件から始めて、いまは1,123ページ。生成は現在も進行中で、対象1,929件のうち1,535件まで来ています。</p>
+<p>このカタログ自体は手応えがあります。1件1ページで、ライセンスも日本語ロケールの実ファイル数も実際に数えている。薄いページではありません。これは今後も伸ばします。</p>
+<p>ただ、構造上どうしても<strong>「OSSの名前を知っている人」が入口になります</strong>。</p>
 <ul>
 <li>Ghost</li>
 <li>Metabase</li>
@@ -34,6 +34,7 @@
 <li>Krayin</li>
 </ul>
 <p>これらは、知っていれば強力な選択肢です。しかし中小企業の経営者が「Ghost」で検索するでしょうか。しません。<strong>そもそもGhostという名前を知らないから困っている</strong>わけです。</p>
+<p>カタログが悪いのではなく、<strong>入口が1つしかないのが惜しい</strong>。そう考えました。</p>
 <h2>実測: 経営者は何と入力しているのか</h2>
 <p>推測で作らないために、Google広告のキーワードプランナーで日本の実検索数を取りました。以下は実測値です。</p>
 <table>
@@ -104,8 +105,8 @@
 </ul>
 <p>つまり、<strong>地域名を付けた語にはそもそも需要がなく</strong>、需要がある語は「AIで何ができるのか」「メリットとデメリットは何か」という、まだ何も決めていない段階の問いでした。</p>
 <p>そして重要なのは、<strong>この帯の競合がほぼ「低」だった</strong>ことです。事例紹介やニュース記事は大量にありますが、「で、うちの会社の何が解決するのか」に具体物で答えているページは少ない。ここは空いていました。</p>
-<h2>だから、同じ中身を別の入口から作り直した</h2>
-<p>やったことは単純です。1,120件のOSSを、<strong>「そのOSSは何か」ではなく「その業務をどうやるか」</strong>の側から並べ直しました。</p>
+<h2>だから、入口をもう1つ足した</h2>
+<p>やったことは単純です。カタログはそのまま伸ばしながら、同じOSSを<strong>「そのOSSは何か」ではなく「その業務をどうやるか」</strong>の側からも引けるようにしました。どちらかに寄せるのではなく、両方持つという判断です。</p>
 <table>
 <thead>
 <tr>
@@ -137,7 +138,7 @@
 </tr>
 </tbody>
 </table>
-<p>同じOSSを扱いますが、H1もタイトルも見出しも本文も誘導先も全部違います。重複コンテンツにならないよう、ここは意識的に分けました。</p>
+<p>同じOSSを扱いますが、H1もタイトルも見出しも本文も誘導先も全部違います。重複コンテンツにならないよう、ここは意識的に分けました。<strong>片方が育てばもう片方にも人が流れる</strong>ように、相互にリンクしています。</p>
 <p>構成は次のとおりです。</p>
 <ul>
 <li>詳細ページ <strong>1,120枚</strong>（OSS 1件 = 1ページ）</li>
@@ -266,7 +267,7 @@
 </ul>
 <h2>まとめ</h2>
 <ul>
-<li><strong>中身が良くても、入口が合っていなければ届かない。</strong> 同じ1,120件を、名前からではなく「できること」から引けるようにした</li>
+<li><strong>入口は1つに絞らなくていい。</strong> 同じOSSを、名前からと「できること」からの両方で引けるようにした。カタログは今も生成中で、増えた分は自動で両方に載る</li>
 <li><strong>キーワードは実測してから決める。</strong> 「名古屋 AI 導入」は月100回に届かず、「ai 何ができる」は月480回・競合低だった</li>
 <li><strong>分類は機械に任せきらない。</strong> Ghostが「メール配信」になった。独立した別の情報（category・keywords）を加点に使って直した</li>
 <li><strong>量産ページこそ、発信元を機械が確認できる状態にする。</strong> Organization構造化データと実測値を入れて、60点が79点になった</li>
