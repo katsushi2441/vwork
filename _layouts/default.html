@@ -157,6 +157,14 @@
     .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
     .brand { font-weight:800; color:var(--ink); }
     nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    .svcbar { background:#f2fbfa; border-top:1px solid var(--line); }
+    .svcbar-inner { max-width:960px; margin:0 auto; padding:9px 22px; display:flex; align-items:center; gap:14px; flex-wrap:wrap; font-size:12.5px; font-weight:700; }
+    .svcbar-label { color:#6b8189; font-weight:800; font-size:10.5px; letter-spacing:.06em; }
+    .svcbar a { color:#0a726b; text-decoration:none; }
+    .svcbar a:hover { text-decoration:underline; }
+    .svcbar a.svcbar-main { background:#0a726b; color:#fff; border-radius:999px; padding:4px 12px; }
+    .svcbar a.svcbar-main:hover { background:#12a99f; text-decoration:none; }
+    @media (max-width:640px) { .svcbar-inner { gap:10px; padding:8px 18px; font-size:12px; } .svcbar-label { display:none; } }
     main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
     article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
     h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
@@ -221,9 +229,23 @@
         <a href="{{ '/blog/' | relative_url }}">VWork Blog</a>
         <a href="{{ '/articles/' | relative_url }}">AI OSS技術解説</a>
         <a href="{{ '/episodes/' | relative_url }}">AIエピソード</a>
-        <a href="https://exbridge.jp/vwork.html">Service</a>
         <a href="https://github.com/katsushi2441/vwork">GitHub</a>
       </nav>
+    </div>
+    {%- comment -%}
+      サービス導線。ここが無かったとき、ブログから自社サイトへ出た人は
+      3か月で3人だけだった（2026-08-23 実測。記事末のリンクしか無く、
+      最後まで読まれないと踏まれない）。全ページの上部に常設する。
+    {%- endcomment -%}
+    <div class="svcbar">
+      <div class="svcbar-inner">
+        <span class="svcbar-label">株式会社エクスブリッジ</span>
+        <a href="https://exbridge.jp/ai-system/?ref=vwork-head">AIでできること</a>
+        <a href="https://kurage.exbridge.jp/oss/?ref=vwork-head">業務OSSカタログ</a>
+        <a href="https://kurage.exbridge.jp/vibe-oss.html?ref=vwork-head">OSSカスタマイズ</a>
+        <a class="svcbar-main" href="https://exbridge.jp/nagoya-system-development.html?ref=vwork-head">AI導入お試し 15万円</a>
+        <a href="https://exbridge.jp/contact.php?ref=vwork-head">相談する</a>
+      </div>
     </div>
   </header>
   {% if is_blog_area and is_blog_listing == false %}
