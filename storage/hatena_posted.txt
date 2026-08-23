@@ -391,3 +391,12 @@ url2pub-i18n-hatena-summary
 2026-08-22-ai-news
 2026-08-22-oss-vibe-coding-customization-business
 2026-08-22-payload-cms-oss-catalog-seo-aeo-geo
+2026-08-22-ai-news-2
+2026-08-22-ai-news-3
+2026-08-22-nagoya-ai-otameshi-donyu
+2026-08-22-ai-news-4
+2026-08-23-ai-news
+2026-08-23-ai-news-2
+2026-08-23-ai-news-3
+2026-08-23-ai-news-4
+2026-08-23-ai-dekirukoto-2000pages

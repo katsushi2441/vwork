@@ -163,7 +163,7 @@ def main():
             mark_blogger_posted(src.stem)
             print(f"  blogger(衛星): {blogger_title}")
         mark_posted(src.stem)
-        print(f"  hatena(衛星): {title}")
+        print(f"  hatena(衛星): {hatena_title}")
         time.sleep(3)
 
     print("done.")
