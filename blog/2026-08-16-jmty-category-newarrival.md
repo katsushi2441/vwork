@@ -106,4 +106,4 @@ permalink: /blog/2026-08-16-jmty-category-newarrival.html
 - 今回の投稿: AIエージェントでAI駆動経営を一緒に勉強しませんか（ジモティー・**カテゴリ違いで削除済み**）／生きている1本目: [名古屋AI経営勉強会](https://jmty.jp/aichi/com-etc/article-1r3tym)
 - 誘導先: [名古屋AI経営勉強会（参加無料・匿名OK）](https://kurage.exbridge.jp/nagoya-ai-study.php?ref=vwork)
 - 宣伝・求人を無料掲載できる掲示板: [Kurage BBS](https://kurage.exbridge.jp/kbbs.php?ref=vwork)
-- 実験の全体像とダッシュボード: [複数LP×他社メディア誘導の実証実験](https://kurage.exbridge.jp/media-mesh.php?ref=vwork)
+- 実験の全体像とダッシュボード: [複数LP×他社メディア誘導の実証実験](https://katsushi2441.github.io/vwork/blog/2026-08-15-multi-lp-media-mesh.html)

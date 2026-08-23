@@ -6,7 +6,7 @@ layout: default
 permalink: /blog/2026-08-18-trend-vs-jitsuwa.html
 ---
 
-名古屋でAIシステム開発の会社をやっています。8月は「複数の媒体 → 複数のLP → 6つのゴール」という導線の網（メッシュ）を張り、**全部の数字を公開しながら**実測しています。数字の置き場はこちらです：[マーケティング実証実験ダッシュボード](https://kurage.exbridge.jp/media-mesh.php?ref=vwork)。
+名古屋でAIシステム開発の会社をやっています。8月は「複数の媒体 → 複数のLP → 6つのゴール」という導線の網（メッシュ）を張り、**全部の数字を公開しながら**実測しています。数字の置き場はこちらです：[マーケティング実証実験ダッシュボード](https://katsushi2441.github.io/vwork/blog/2026-08-15-multi-lp-media-mesh.html)。
 
 今日はその途中経過から、この1週間ではっきり割れた3つの考察を書きます。
 
@@ -69,7 +69,7 @@ Muse Glimmerはnoteの急上昇キーワードで、記事は409本ありまし�
 2. **ジモティーは刻んで出し続ける**。1本の完成度より投稿の回転
 3. **媒体追加は一旦停止し、ゴールページを磨く**。流入は作れることが分かったので、次は受け皿
 
-数字は今後もダッシュボードで全部公開します：[マーケティング実証実験](https://kurage.exbridge.jp/media-mesh.php?ref=vwork)
+数字は今後もこのブログで報告します：[複数LP×他社メディア誘導の実証実験](https://katsushi2441.github.io/vwork/blog/2026-08-15-multi-lp-media-mesh.html)
 
 ---
 

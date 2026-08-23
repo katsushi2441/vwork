@@ -141,4 +141,4 @@ kintone公式サイトの価格表をそのまま引くと、ライト1ユーザ
 - 自社仕様で作る: [バイブプロトタイピング（110,000円税込〜・最短1営業日で動くデモ）](https://kurage.exbridge.jp/vibe-prototype.html?ref=vwork)
 - 一緒に売っていただける方へ: [販売代理店のご案内](https://kurage.exbridge.jp/reseller.html?ref=vwork)
 - 無料で相談できる場所: [名古屋AI経営勉強会（参加無料・匿名OK）](https://kurage.exbridge.jp/nagoya-ai-study.php?ref=vwork) ／ [Kurage.AIに相談する](https://kurage.exbridge.jp/chat.php?ref=vwork)
-- 実験の全体像: [複数LP×他社メディア誘導の実証実験](https://kurage.exbridge.jp/media-mesh.php?ref=vwork)
+- 実験の全体像: [複数LP×他社メディア誘導の実証実験](https://katsushi2441.github.io/vwork/blog/2026-08-15-multi-lp-media-mesh.html)

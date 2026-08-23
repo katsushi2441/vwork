@@ -55,4 +55,4 @@ AIの起票(下書き)は6件——新規会社2・新規商談2・活動2。「
 - ソースの設計を読む: [github.com/katsushi2441/kcrmagent](https://github.com/katsushi2441/kcrmagent)
 - 御社仕様化(メール転送・LINE配線・項目カスタム): [バイブプロトタイピング](https://kurage.exbridge.jp/vibe-prototype.html?ref=vwork)
 
-数字は例によって[実験ダッシュボード](https://kurage.exbridge.jp/media-mesh.php?ref=vwork)で公開しながら育てます。「キーワードを先に測る→痛みの言葉で受け皿を作る→デモを触らせる」の型が、CRMの入力問題にどこまで効くか——結果もここで報告します。
+数字は実測しながら、このブログで報告していきます。「キーワードを先に測る→痛みの言葉で受け皿を作る→デモを触らせる」の型が、CRMの入力問題にどこまで効くか——結果もここで報告します。
