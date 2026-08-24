@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [その月額、いつまで払いますか——SaaSとパッケージのライセンス費を、OSS × AI開発でゼロにする話](2026-08-24-saas-oss-replacement.md)
 - [OSSカタログを1,120件作っても、経営者には届かなかった——「AIで何ができるか」から引けるページを1,216枚、別ドメインに作った話](2026-08-23-ai-dekirukoto-2000pages.md)
 - [AIエージェントを中小企業に入れる試験導入を、15時間15万円で設計した理由——初日無料、開発は顧客のPCで](2026-08-22-nagoya-ai-otameshi-donyu.md)
 - [OSSをバイブコーディングでカスタマイズする。GitHub資産を企業の業務システムへ変えるVibe OSS](2026-08-22-oss-vibe-coding-customization-business.md)
