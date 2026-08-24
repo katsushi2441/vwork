@@ -1,0 +1,137 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VPSを持っていない会社は、無料CRMに移れない——共有レンタルサーバーにEspoCRMを立てて、500エラーの原因3つを手順書にした話 | VWork バイブコーディングフレームワーク</title><meta name="description" content="kintoneやSalesforceの月額をやめたい。同じことができる無料のオープンソースCRMは実在する。それでも移れないのは、公式の手順書が全部VPSとDocker前提で書かれているからです。中小企業が実際に持っているのは月数百円の共有レンタルサーバーです。そこにEspoCRMを日本語で立てたところ、同梱の.htaccessをそのまま置くだけで500エラーになりました。原因3つと、動いた設定の全文を公開します。公式の日本語訳でLeadが「鉛」になっていた話も。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-24-espocrm-shared-server.html"><meta property="og:type" content="article"><meta property="og:title" content="VPSを持っていない会社は、無料CRMに移れない——共有レンタルサーバーにEspoCRMを立てて、500エラーの原因3つを手順書にした話"><meta property="og:description" content="kintoneやSalesforceの月額をやめたい。同じことができる無料のオープンソースCRMは実在する。それでも移れないのは、公式の手順書が全部VPSとDocker前提で書かれているからです。中小企業が実際に持っているのは月数百円の共有レンタルサーバーです。そこにEspoCRMを日本語で立てたところ、同梱の.htaccessをそのまま置くだけで500エラーになりました。原因3つと、動いた設定の全文を公開します。公式の日本語訳でLeadが「鉛」になっていた話も。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-24-espocrm-shared-server.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="VPSを持っていない会社は、無料CRMに移れない——共有レンタルサーバーにEspoCRMを立てて、500エラーの原因3つを手順書にした話"><meta name="twitter:description" content="kintoneやSalesforceの月額をやめたい。同じことができる無料のオープンソースCRMは実在する。それでも移れないのは、公式の手順書が全部VPSとDocker前提で書かれているからです。中小企業が実際に持っているのは月数百円の共有レンタルサーバーです。そこにEspoCRMを日本語で立てたところ、同梱の.htaccessをそのまま置くだけで500エラーになりました。原因3つと、動いた設定の全文を公開します。公式の日本語訳でLeadが「鉛」になっていた話も。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "VPSを持っていない会社は、無料CRMに移れない——共有レンタルサーバーにEspoCRMを立てて、500エラーの原因3つを手順書にした話", "description": "kintoneやSalesforceの月額をやめたい。同じことができる無料のオープンソースCRMは実在する。それでも移れないのは、公式の手順書が全部VPSとDocker前提で書かれているからです。中小企業が実際に持っているのは月数百円の共有レンタルサーバーです。そこにEspoCRMを日本語で立てたところ、同梱の.htaccessをそのまま置くだけで500エラーになりました。原因3つと、動いた設定の全文を公開します。公式の日本語訳でLeadが「鉛」になっていた話も。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-24-espocrm-shared-server.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-24", "dateModified": "2026-08-24", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>VPSを持っていない会社は、無料CRMに移れない——共有レンタルサーバーにEspoCRMを立てて、500エラーの原因3つを手順書にした話</h1><p class="meta">2026-08-24</p><p>名古屋でAIシステム開発の会社をやっています。今日は<strong>「その手順書、うちの環境では使えない」</strong>という話です。</p>
+<p>kintoneやSalesforceの月額をやめたい、という相談をよく受けます。同じことができる無料のオープンソースCRMは実在します。ライセンス費はゼロです。それでも移れない理由が、料金でも機能でもないところにありました。</p>
+<p><strong>公式の手順書が、全部VPSとDocker前提で書かれている。</strong></p>
+<p>中小企業が実際に持っているのは、月数百円の共有レンタルサーバーです。ホームページを置いてある、あれです。VPSを新しく借りて、Dockerを覚えて、というのは「無料のソフトを使うため」の負担としては重すぎます。</p>
+<p>なので、共有レンタルサーバーに立ててみました。</p>
+<h2>なぜEspoCRMを選んだか</h2>
+<p>日本語で使おうとすると、無料CRMの候補は急に減ります。実測しました（2026年8月）。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>スター</th>
+<th>ライセンス</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>EspoCRM</td>
+<td>3,286</td>
+<td>AGPL-3.0</td>
+<td><strong>公式配布に日本語UIを同梱</strong></td>
+</tr>
+<tr>
+<td>Krayin CRM</td>
+<td>23,704</td>
+<td>MIT</td>
+<td>本家に日本語ロケールなし</td>
+</tr>
+<tr>
+<td>SuiteCRM</td>
+<td>老舗</td>
+<td>AGPL-3.0</td>
+<td>有志ベース</td>
+</tr>
+</tbody>
+</table>
+<p>星の数ならKrayinが圧倒的ですが、<strong>日本語ファイルが本家に入っていません</strong>（当社が全訳してプルリクエストを出していますが、まだマージされていません）。EspoCRMは展開した時点で日本語です。36言語のうちの一つとして入っています。これは相当に珍しい。</p>
+<p>そしてもう一つ、テレアポや訪問営業をやっている会社には決定的な違いがあります。<strong>EspoCRMは「通話」が標準のエンティティとして最初から入っています。</strong>架電の予定、結果、次回の予定、誰が何分話したか。kintoneでこれを作ろうとするとアプリ設計から始まりますが、EspoCRMは最初から持っています。</p>
+<h2>置いた瞬間、500エラー</h2>
+<p>展開して、同梱の.htaccessをそのまま置いて、ブラウザで開いたら<strong>500 Internal Server Error</strong>。切り分けたら原因は3つでした。</p>
+<p><strong>1つ目。<code>Options</code> が許可されていない。</strong> 標準の.htaccessは冒頭で <code>Options +FollowSymLinks</code> を指定します。共有レンタルサーバーの多くはこれを許していません。許可されていないディレクティブが1行あるだけで、ディレクトリ全体が500になります。</p>
+<p><strong>2つ目。動的なベースパス解決。</strong> 標準はサブディレクトリに置かれても自動で動くよう、環境変数でベースパスを組み立てます。この書き方は通らないことがあります。パスを直書きしたほうが確実です。</p>
+<p><strong>3つ目。これが一番わかりにくい。</strong> EspoCRM 10 は公開ディレクトリが <code>public/</code> に分離されました。<strong>ルート直下の index.php は「public を公開ディレクトリに設定してください」という案内を出すだけのファイル</strong>です。500が直った後、今度はこの案内画面が出続けて、また止まりました。</p>
+<p>どれも公式ドキュメントには書かれていません。</p>
+<h2>FTPしか使えない環境で、さらに2つ</h2>
+<p><strong>空のディレクトリが転送されません。</strong> 多くのFTPクライアントは中身の無いディレクトリを送りません。EspoCRMには空のディレクトリが含まれていて、これが無いままインストーラを走らせると書き込みエラーで止まります。手で作る必要があります。</p>
+<p><strong>インストーラが作った設定ファイルは、後から書き換えられません。</strong> <code>data/config.php</code> はウェブサーバーのユーザー所有になります。FTPのログインユーザーとは別人なので Permission denied です。書き換えるだけのPHPを1枚置いて実行し、直後に消す、という回避が要ります。</p>
+<h2>動いた環境</h2>
+<p>意外に思われるかもしれませんが、<strong>いまどきの共有レンタルサーバーはEspoCRMの要求を満たします。</strong></p>
+<ul>
+<li>PHP 8.3.33</li>
+<li>pdo_mysql / mbstring / gd / zip / curl / exif / intl … すべて有効</li>
+<li>memory_limit 300M、MySQL 8.4.8</li>
+<li>展開後のディスク使用量 173MB</li>
+</ul>
+<p>足りなかったのはドキュメントだけでした。</p>
+<h2>ついでに見つけた、日本語訳の問題</h2>
+<p>動いたので中身を見ていったら、公式の日本語がところどころ機械翻訳のままでした。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>公式の訳</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lead（単数）</td>
+<td><strong>鉛</strong></td>
+</tr>
+<tr>
+<td>Case（単数）</td>
+<td><strong>場合</strong></td>
+</tr>
+<tr>
+<td>Contact（単数）</td>
+<td><strong>接触</strong></td>
+</tr>
+<tr>
+<td>Contact の「役職」欄</td>
+<td><strong>アカウント名</strong></td>
+</tr>
+<tr>
+<td>Case の「完了にする」ボタン</td>
+<td><strong>近い</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Lead が「鉛」です。金属のほうに訳されています。Case の Close が「近い」になっているのは、形容詞の close と取り違えたのでしょう。</p>
+<p>これは直しました。<code>custom/</code> に上書きを置く形なので、EspoCRM本体を更新しても消えません。取引先・連絡先・リード・商談・打ち合わせ・通話・問い合わせ、という普通の日本語になっています。</p>
+<h2>触れます</h2>
+<p>実際に動いているものを、<strong>ログイン情報つきで公開しています。</strong></p>
+<p><a href="https://proto.exbridge.jp/?ref=vwork-espo#espocrm">proto.exbridge.jp</a> — ID <code>demo</code> / パスワード <code>demo2026</code></p>
+<p>架電の予定と結果、取引先、商談のサンプルを入れてあります。左メニューの「通話」を開くと、今日と明日の架電予定が並びます。<strong>問い合わせも資料請求も要りません。</strong></p>
+<h2>手順書を480円で出しました</h2>
+<p>ここまでの全部を、構築手順書としてBrainに出しました。</p>
+<p><a href="https://brain-market.com/u/bittensorman/a/byMjNyYjMgoTZsNWa0JXY">kintoneの顧客管理を月額ゼロに——無料CRM「EspoCRM」をVPSなしの共有レンタルサーバーへ</a></p>
+<p>無料部で原因3つを明かしています。有料部（480円）に、動いた.htaccessの全文、設定ファイルの書き換え方、テレアポ向けの設定、権限を絞った利用者の作り方、カスタマイズ用のAIプロンプト、落とし穴10個を入れました。</p>
+<p><strong>ソフト本体は無料です。</strong>値段が付いているのは「共有レンタルサーバーで日本語で動くところまで確実に届く手順」と「実際にぶつかった壁の記録」に対してです。</p>
+<p>ツールごと欲しい方は<a href="https://kappstore.exbridge.jp/?ref=vwork-espo">kappstore</a>にキットとして置いてあります（税込5,500円）。環境チェック用のPHP、設定書き換え用のPHP、利用者作成スクリプト、日本語訳の修正ファイルが入っていて、フォルダごとClaude Codeに渡せば構築まで進みます。</p>
+<h2>正直に書いておくこと</h2>
+<p>EspoCRMは <strong>AGPL-3.0</strong> です。自社の業務で使う分に制約はありませんが、2点あります。</p>
+<p>改変した状態でネットワーク越しに第三者へサービス提供する場合、改変部分のソース公開義務が生じます。そして、EspoCRMはAGPL第7条(b)により<strong>画面から「EspoCRM」の表記を消すことを禁じています</strong>。自社ブランドに丸ごと置き換えて売る、という使い方はできません。</p>
+<p>自社で使う分には、どちらも問題になりません。</p>
+<h2>まとめ</h2>
+<ul>
+<li>無料CRMに移れない理由は、料金でも機能でもなく<strong>手順書がVPS前提</strong>なこと</li>
+<li>共有レンタルサーバーでも動く。足りないのはドキュメントだけだった</li>
+<li>標準の.htaccessは500になる。原因は3つ</li>
+<li>公式の日本語は Lead が「鉛」。直せる</li>
+<li>デモはログイン情報ごと公開しています</li>
+</ul>
+<p>構築ごと任せたい場合は、カスタマイズしてから御社のサーバーへ導入するところまで承ります（<a href="https://kurage.exbridge.jp/vibe-oss.html?ref=vwork-espo">Vibe OSS</a>・110,000円税込〜）。どれを土台にするか決まっていない段階なら、<a href="https://kurage.exbridge.jp/chat.php?ref=vwork-espo">Kurage.AIに相談</a>から聞いてください。名古屋市内であれば伺います。初日3時間のヒアリングと提案は無料です。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
