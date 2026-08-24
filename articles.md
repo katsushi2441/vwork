@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Anthropicの苦戦とQwenシリーズの技術革新：AIモデルの普及と実用化の最前線 08-24](2026-08-24-ai-news-3.html)
 - [Qwen 3.8のコーディング能力と量子化検証、そしてAnthropicを取り巻くAI市場の競争 08-24](2026-08-24-ai-news-2.html)
 - [AgentsとCryptoで読む：Kimi K3のB300 GPU運用とWeb3におけるAIエージェントの台頭 08-24](2026-08-24-ai-news.html)
 - [InherentがAnthropicやOpenAIを凌駕か？Qwenの新モデル登場とAI安全性を巡る動き 08-23](2026-08-23-ai-news-4.html)
