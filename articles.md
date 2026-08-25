@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [AppleのM6チップとOpenAIのJalapeño、そしてLayerZeroが拓く次世代インフラ 08-26](2026-08-26-ai-news-2.html)
 - [OpenAIの独自チップとApple M5シリーズが牽引する次世代AIハードウェアの進化 08-26](2026-08-26-ai-news.html)
 - [General Intuitionへの巨額投資とXiaomiによるApple対抗のCPU進化 08-25](2026-08-25-ai-news-4.html)
 - [XiaomiのCPU進化とApple、Anthropicを巡る最新技術動向 08-25](2026-08-25-ai-news-3.html)
