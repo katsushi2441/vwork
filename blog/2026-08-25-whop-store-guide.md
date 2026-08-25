@@ -97,4 +97,4 @@ Whopの集客はアフィリエイトが軸です。3種類あります。
 
 海外に売り物を持っている、あるいは持ちたい会社にとって、「英語圏の棚」を1日で確保できるのは悪くない選択肢です。
 
-出品まわりの構築ごと任せたい場合は、カスタマイズしてから御社のサーバーへ導入するところまで承ります（[Vibe OSS](https://kurage.exbridge.jp/vibe-oss.html?ref=vwork-whop)・110,000円税込〜）。何から始めるか決まっていない段階なら、[Kurage.AIに相談](https://kurage.exbridge.jp/chat.php?ref=vwork-whop)からどうぞ。名古屋市内であれば伺います。
+出品まわりの構築ごと任せたい場合は、カスタマイズしてから御社のサーバーへ導入するところまで承ります（[Vibe OSS](https://kurage.exbridge.jp/vibe-oss.html?ref=vwork-whop)・110,000円税込〜）。何から始めるか決まっていない段階なら、[Kurage.AIに相談](https://kurage.exbridge.jp/chat.php?ref=vwork-whop)からどうぞ。[名古屋のシステム開発](https://exbridge.jp/nagoya-system-development.html?ref=vwork)も承ります。名古屋市内であれば伺います。

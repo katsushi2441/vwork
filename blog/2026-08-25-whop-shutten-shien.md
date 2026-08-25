@@ -64,4 +64,4 @@ Whop内を日本語で検索して見つかる日本の出店者は、調べた�
 - 納品物はAIが実行できる手順書（Markdown / SKILL.md）。2商材目からは御社のAIが出品できる
 - バイブコーディング開発・kappstore商材の海外展開にそのまま接続できる
 
-詳細と申し込みは **[whop.exbridge.jp](https://whop.exbridge.jp/)** へ。まだ売る物が決まっていない段階のご相談は、[Kurage.AIチャット](https://kurage.exbridge.jp/chat.php?ref=vwork-whoplp)からどうぞ。名古屋市内であれば伺います。
+詳細と申し込みは **[whop.exbridge.jp](https://whop.exbridge.jp/)** へ。まだ売る物が決まっていない段階のご相談は、[Kurage.AIチャット](https://kurage.exbridge.jp/chat.php?ref=vwork-whoplp)からどうぞ。[名古屋のシステム開発](https://exbridge.jp/nagoya-system-development.html?ref=vwork)も承ります。名古屋市内であれば伺います。
