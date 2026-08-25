@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [XiaomiのCPU進化とApple、Anthropicを巡る最新技術動向 08-25](2026-08-25-ai-news-3.html)
 - [OpenAIのAIエージェント戦略とCoinbaseによる株式トークン化の最前線 08-25](2026-08-25-ai-news-2.html)
 - [ToMoEによるモデル最適化からOpenAIのAIエージェント戦略まで：最新AI動向 08-25](2026-08-25-ai-news.html)
 - [Anthropicの苦戦とQwenシリーズの技術革新：AIモデルの普及と実用化の最前線 08-24](2026-08-24-ai-news-3.html)
