@@ -22,6 +22,7 @@ faq:
 
 ## 記事一覧
 
+- [月額ゼロの問い合わせ管理を手に入れる4つの方法——FreeScout日本語導入キットを出しました](2026-08-26-freescout-kit.html)
 - [AI議事録システム「Kurage AI MOM」公開——入手と構築、5つの選択肢（無料〜11万円）](2026-08-26-kaimom-guide.html)
 - [Whop出店支援を始めました——海外マーケットへの出店を10時間で、納品物は「AIが読める手順書」](2026-08-25-whop-shutten-shien.html)
 - [海外版BOOTHみたいなWhopに、日本から出品してみた——アカウント作成から審査通過まで1日、しかも全部CLI](2026-08-25-whop-store-guide.html)
