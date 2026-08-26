@@ -1,0 +1,102 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI議事録システム「Kurage AI MOM」公開——入手と構築、5つの選択肢（無料〜11万円） | VWork バイブコーディングフレームワーク</title><meta name="description" content="音声をサーバーの外に出さないWhisperベースの買い切り議事録システム「Kurage AI MOM」を公開しました。GitHubで無料、kappstoreで完成品55,000円、Brainで導入手順書つき55,000円、バイブプロトタイピング/バイブOSSで受託構築11万円〜。どれを選ぶべきかを、自分で作った立場から正直に仕分けします。検索リサーチの裏話はnoteに書きました。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-26-kaimom-guide.html"><meta property="og:type" content="article"><meta property="og:title" content="AI議事録システム「Kurage AI MOM」公開——入手と構築、5つの選択肢（無料〜11万円）"><meta property="og:description" content="音声をサーバーの外に出さないWhisperベースの買い切り議事録システム「Kurage AI MOM」を公開しました。GitHubで無料、kappstoreで完成品55,000円、Brainで導入手順書つき55,000円、バイブプロトタイピング/バイブOSSで受託構築11万円〜。どれを選ぶべきかを、自分で作った立場から正直に仕分けします。検索リサーチの裏話はnoteに書きました。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-26-kaimom-guide.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AI議事録システム「Kurage AI MOM」公開——入手と構築、5つの選択肢（無料〜11万円）"><meta name="twitter:description" content="音声をサーバーの外に出さないWhisperベースの買い切り議事録システム「Kurage AI MOM」を公開しました。GitHubで無料、kappstoreで完成品55,000円、Brainで導入手順書つき55,000円、バイブプロトタイピング/バイブOSSで受託構築11万円〜。どれを選ぶべきかを、自分で作った立場から正直に仕分けします。検索リサーチの裏話はnoteに書きました。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "AI議事録システム「Kurage AI MOM」公開——入手と構築、5つの選択肢（無料〜11万円）", "description": "音声をサーバーの外に出さないWhisperベースの買い切り議事録システム「Kurage AI MOM」を公開しました。GitHubで無料、kappstoreで完成品55,000円、Brainで導入手順書つき55,000円、バイブプロトタイピング/バイブOSSで受託構築11万円〜。どれを選ぶべきかを、自分で作った立場から正直に仕分けします。検索リサーチの裏話はnoteに書きました。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-26-kaimom-guide.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-26", "dateModified": "2026-08-26", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>AI議事録システム「Kurage AI MOM」公開——入手と構築、5つの選択肢（無料〜11万円）</h1><p class="meta">2026-08-26</p><p>名古屋でAIシステム開発の会社をやっています。<strong>音声をサーバーの外に出さないAI議事録システム「Kurage AI MOM」</strong>を公開しました。録音（wav/mp3/m4a）をアップすると、自社サーバー内のWhisper（whisper.cpp）が文字起こしし、AIが議事録の下書き（概要・決定事項・ToDo・課題・次回）を作り、<strong>人が承認したものだけが確定議事録になる</strong>、1ファイルPHP+SQLiteの買い切りシステムです。</p>
+<p>なぜ作ったのか——「議事録AIはみんなCopilotでやるのでは？」という仮説を検索データで検証したら逆だった、というリサーチの一部始終は<strong>noteに書きました</strong>。「ボイスレコーダー 文字起こし」月9,900回という空白を見つけるまでの話です。</p>
+<ul>
+<li><a href="https://note.com/tokoname/n/nf005302f8d01">議事録AIは「みんなCopilotでやる」と思ったら、検索データは逆だった（note）</a></li>
+</ul>
+<p>この記事では、<strong>入手と構築の選択肢を全部並べて、どれを選ぶべきかを作った本人が仕分けします</strong>。</p>
+<h2>まず触る（無料・3分）</h2>
+<p>デモ環境に録音をアップすると、文字起こしとAI下書きの品質をそのまま確かめられます。</p>
+<ul>
+<li>デモ: <a href="https://proto.exbridge.jp/kaimom/">https://proto.exbridge.jp/kaimom/</a></li>
+</ul>
+<p>実測値だけ先に書いておくと、8コアCPUのサーバー（GPUなし）で<strong>24秒の録音を約11秒で文字起こし</strong>。決定事項・金額・日付・人名まで正しく認識し、誤りは同音異義語1か所でした。</p>
+<h2>選択肢1: GitHub — 無料（自力で構築できる人向け）</h2>
+<p>ソースコードはMITライセンスで公開しています。</p>
+<ul>
+<li><a href="https://github.com/katsushi2441/kaimom">https://github.com/katsushi2441/kaimom</a></li>
+</ul>
+<p>READMEに設置手順があります。whisper.cppのビルドとPHPの設定が自力でできる方なら、これで十分です。<strong>エンジニアがいる会社はここで止めるのが正直おすすめ</strong>——かかるのはVPS代（月1,000円前後）だけです。</p>
+<h2>選択肢2: Kurage App Store — 完成品zip・買い切り55,000円（税込）</h2>
+<p>完成品のzipと商品ページ。動作確認済みの一式をそのまま落とせます。</p>
+<ul>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=cd1eda3248c87920">商品ページ</a></li>
+</ul>
+<p>GitHubと中身は同じです。差は「動く状態の確認済みパッケージを、対価を払って正規入手する」こと。会社の経費で買って、改造して社内配布しても構いません（MIT）。</p>
+<h2>選択肢3: Brain — 導入手順書つき・55,000円（税込）</h2>
+<p><strong>サーバー構築の全手順書＋本体</strong>のセットです。本体と同一価格なので、実質「手順書がおまけに付く買い方」です。</p>
+<ul>
+<li><a href="https://brain-market.com/a/bxkDOyYjMgoTZsNWa0JXY">Brainの記事</a></li>
+</ul>
+<p>有料部に書いたもの: VPSの選び方（共用レンタルサーバーで動かない理由）、whisper.cppのビルドコマンド全部、構築中に実際に踏んだphp.iniの罠、workerのsystemdユニットの実物、要約AI3択（自社Ollama/OpenAI互換/なし）の設定、トラブルシューティング一覧、カスタマイズのAI用プロンプト集、そして<strong>Claude Codeに設置作業そのものを任せるSKILL.md全文</strong>。メールでの導入質問3か月つき。</p>
+<p><strong>「エンジニアはいないが、AIツール（Claude Code等）は使える」という会社はこれが最短</strong>です。SKILL.mdを渡せばAIが設置します。</p>
+<h2>選択肢4: バイブプロトタイピング — 自社仕様に作り込む・税込110,000円〜</h2>
+<p>「うちの会議テンプレの項目に合わせたい」「承認フローを2段にしたい」「基幹システムに繋ぎたい」——既製品では足りない場合の受託開発です。最短1営業日で動くデモを作ってから話を進めます。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/vibe-prototype.html">バイブプロトタイピング</a></li>
+</ul>
+<h2>選択肢5: バイブOSSカスタマイズ — 構築ごと任せる・税込110,000円〜</h2>
+<p>サーバーの用意からwhisper.cppの構築、本体設置、運用設計（承認ルール・バックアップ）までを当社が代行します。kaimomに限らず、OSSの選定・日本語化・自社サーバー構築全般の入口です。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/vibe-oss.html">バイブOSSカスタマイズ</a></li>
+</ul>
+<h2>仕分けの早見表</h2>
+<table>
+<thead>
+<tr>
+<th>あなたの状況</th>
+<th>選ぶべき経路</th>
+<th>費用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>エンジニアがいる</td>
+<td>GitHub</td>
+<td>無料</td>
+</tr>
+<tr>
+<td>会社として正規入手したい</td>
+<td>kappstore</td>
+<td>55,000円</td>
+</tr>
+<tr>
+<td>エンジニア不在・AIツールは使える</td>
+<td>Brain（手順書+SKILL.md）</td>
+<td>55,000円</td>
+</tr>
+<tr>
+<td>自社仕様に改造したい</td>
+<td>バイブプロトタイピング</td>
+<td>110,000円〜</td>
+</tr>
+<tr>
+<td>構築ごと丸投げしたい</td>
+<td>バイブOSS</td>
+<td>110,000円〜</td>
+</tr>
+</tbody>
+</table>
+<p>Whisperそのものの解説（無料で文字起こしする方法、クラウドSaaSとの使い分け）は<a href="https://exbridge.jp/whisper-mojiokoshi.php">解説ページ</a>にまとめました。「録音を外部クラウドに上げられない」規定のある会社の方は、まずデモからどうぞ。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
