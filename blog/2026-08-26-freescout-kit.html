@@ -1,0 +1,84 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>月額ゼロの問い合わせ管理を手に入れる4つの方法——FreeScout日本語導入キットを出しました | VWork バイブコーディングフレームワーク</title><meta name="description" content="support@のメールをチームのチケットにするオープンソース・ヘルプデスク「FreeScout」を、共有レンタルサーバーに日本語で立てる導入キットを公開しました。無料のGitHub、5,500円の導入キット(kappstore/Brain)、11万円の構築代行——4つの入手経路をどう選ぶかを、実際に構築して罠を10個踏んだ本人が仕分けします。選定の裏側(検索データの話)はnoteに書きました。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-26-freescout-kit.html"><meta property="og:type" content="article"><meta property="og:title" content="月額ゼロの問い合わせ管理を手に入れる4つの方法——FreeScout日本語導入キットを出しました"><meta property="og:description" content="support@のメールをチームのチケットにするオープンソース・ヘルプデスク「FreeScout」を、共有レンタルサーバーに日本語で立てる導入キットを公開しました。無料のGitHub、5,500円の導入キット(kappstore/Brain)、11万円の構築代行——4つの入手経路をどう選ぶかを、実際に構築して罠を10個踏んだ本人が仕分けします。選定の裏側(検索データの話)はnoteに書きました。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-26-freescout-kit.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="月額ゼロの問い合わせ管理を手に入れる4つの方法——FreeScout日本語導入キットを出しました"><meta name="twitter:description" content="support@のメールをチームのチケットにするオープンソース・ヘルプデスク「FreeScout」を、共有レンタルサーバーに日本語で立てる導入キットを公開しました。無料のGitHub、5,500円の導入キット(kappstore/Brain)、11万円の構築代行——4つの入手経路をどう選ぶかを、実際に構築して罠を10個踏んだ本人が仕分けします。選定の裏側(検索データの話)はnoteに書きました。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "月額ゼロの問い合わせ管理を手に入れる4つの方法——FreeScout日本語導入キットを出しました", "description": "support@のメールをチームのチケットにするオープンソース・ヘルプデスク「FreeScout」を、共有レンタルサーバーに日本語で立てる導入キットを公開しました。無料のGitHub、5,500円の導入キット(kappstore/Brain)、11万円の構築代行——4つの入手経路をどう選ぶかを、実際に構築して罠を10個踏んだ本人が仕分けします。選定の裏側(検索データの話)はnoteに書きました。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-26-freescout-kit.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-26", "dateModified": "2026-08-26", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>月額ゼロの問い合わせ管理を手に入れる4つの方法——FreeScout日本語導入キットを出しました</h1><p class="meta">2026-08-26</p><p>名古屋でAIシステム開発の会社をやっています。<strong>support@やinfo@に届くメールをチームのチケットにする、オープンソースのヘルプデスク「FreeScout」の日本語導入キット（共有レンタルサーバー編）</strong>を公開しました。</p>
+<p>FreeScoutはGitHubスター4,500超のZendesk・Help Scout代替です。日本語UIが公式配布に同梱されていて、ユーザー数無制限・人数課金なし。当社が実際に<strong>月数百円クラスの共有レンタルサーバー</strong>へ構築し、実在のメールボックスからメールを受信してチケット画面に日本語で表示されるところまで実測しました。</p>
+<p>なぜ数あるOSSからFreeScoutを選んだのか——自社サイトの検索データから「日本語情報の空白」を見つけた経緯は<strong>noteに書きました</strong>。</p>
+<ul>
+<li><a href="https://note.com/tokoname/n/n794626f7ed9e">アクセス解析が次の商品を教えてくれた（note）</a></li>
+</ul>
+<p>この記事では、<strong>入手と導入の4つの経路</strong>を、構築で罠を10個踏んだ本人が仕分けします。</p>
+<h2>経路1: GitHub — 無料（エンジニアがいる会社）</h2>
+<p>FreeScout本体は<a href="https://github.com/freescout-help-desk/freescout">GitHub</a>から無料で入手できます（AGPL-3.0）。VPSやDockerに慣れたエンジニアがいるなら、公式手順でどうぞ。かかるのはサーバー代だけです。</p>
+<p>ただし正直に言うと、<strong>共有レンタルサーバーに置く場合は公式手順どおりに進みません</strong>。当社の実測では、Webインストーラーが動かない（同梱ライブラリの欠品で500）、画面が真っ白の500（Web実行ユーザーの権限問題）、CSSだけ403でデザイン崩壊（自動生成ファイルの所有者問題）——など、公式ドキュメントに無い落とし穴が10か所ありました。</p>
+<h2>経路2: 導入キット — 税込5,500円（kappstore）</h2>
+<p>その10個の落とし穴を先回りして回避する順番で書いた<strong>構築手順書</strong>に、サーバー要件チェックツール・403修正スクリプト・カスタマイズ指示文集を付けたのが導入キットです。</p>
+<ul>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=6d0e2c491e4170da">FreeScout 日本語導入キット（共有レンタルサーバー編）</a></li>
+</ul>
+<p>目玉は<strong>AI用指示書（AI-START-HERE.md）</strong>です。Claude Code等のAIエージェントに渡すと、要件確認からメール受信の実測確認まで、設置作業そのものを任せられます。メール質問3か月つき。</p>
+<h2>経路3: Brain版 — 同一内容・同一価格</h2>
+<p>同じ手順書を、Brainの記事として全文読める形でも出しています。マーケットのポイントやクーポンを使いたい方はこちらでも同じものが手に入ります。</p>
+<ul>
+<li><a href="https://brain-market.com/a/bzITOyYjMgoTZsNWa0JXY">Zendeskの月額をやめる——FreeScout導入手順書（Brain）</a></li>
+</ul>
+<h2>経路4: 構築代行 — 税込110,000円〜</h2>
+<p>「手順書を読む時間も惜しい」「サーバー選定から任せたい」場合は、当社が構築から運用設計（メールボックス設定・バックアップ・cron）までを代行します。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/vibe-oss.html">バイブOSSカスタマイズ</a></li>
+</ul>
+<h2>仕分けの早見表</h2>
+<table>
+<thead>
+<tr>
+<th>あなたの状況</th>
+<th>経路</th>
+<th>費用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VPSに慣れたエンジニアがいる</td>
+<td>GitHub＋公式手順</td>
+<td>無料</td>
+</tr>
+<tr>
+<td>共有レンタルサーバーしかない</td>
+<td>導入キット（kappstore）</td>
+<td>5,500円</td>
+</tr>
+<tr>
+<td>Brainで買いたい</td>
+<td>Brain版（同一内容）</td>
+<td>5,500円</td>
+</tr>
+<tr>
+<td>丸ごと任せたい</td>
+<td>バイブOSSカスタマイズ</td>
+<td>110,000円〜</td>
+</tr>
+</tbody>
+</table>
+<h2>SaaSと迷っている方へ</h2>
+<p>電話・チャット込みのオムニチャネルや高度なレポートが必要ならZendesk等のSaaSが向きます。<strong>メール中心の問い合わせを2〜10人で共有する</strong>なら、FreeScoutで十分なことが多く、人数課金がないぶん増員に強い。判断の物差しは「月額×人数×3年分」を計算してみることです。それがFreeScout構築に払える上限額になります。</p>
+<p>問い合わせ管理そのものの考え方（Excel台帳の何が問題か）は<a href="https://exbridge.jp/toiawase-kanri.php">解説ページ</a>にまとめました。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
