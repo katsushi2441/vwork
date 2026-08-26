@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Qwen3.8-Flash-Nextによるコスト効率化とEthereumの量子耐性強化に向けた最新動向 08-27](2026-08-27-ai-news.html)
 - [AppleのM6チップとQwen3.8-Flash-Nextが牽引する次世代AI・ハードウェアの最前線 08-26](2026-08-26-ai-news-4.html)
 - [OpenAIの独自チップ「Jalapeño」とAppleのM6チップが牽引する次世代AIインフラの動向 08-26](2026-08-26-ai-news-3.html)
 - [AppleのM6チップとOpenAIのJalapeño、そしてLayerZeroが拓く次世代インフラ 08-26](2026-08-26-ai-news-2.html)
