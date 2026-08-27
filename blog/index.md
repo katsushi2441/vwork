@@ -22,6 +22,7 @@ faq:
 
 ## 記事一覧
 
+- [メール配信の月額をゼロにする4つの方法——BillionMail日本語導入キットを出しました](2026-08-27-billionmail-kit.html)
 - [業種別に「置き換えられない業務」から仕分ける——/solution/ 24ページを公開しました](2026-08-27-solution-guide.html)
 - [月額ゼロの問い合わせ管理を手に入れる4つの方法——FreeScout日本語導入キットを出しました](2026-08-26-freescout-kit.html)
 - [AI議事録システム「Kurage AI MOM」公開——入手と構築、5つの選択肢（無料〜11万円）](2026-08-26-kaimom-guide.html)
