@@ -22,6 +22,7 @@ faq:
 
 ## 記事一覧
 
+- [phpMyAdminを社内に置かない——見せる表・列・操作を宣言するDB管理ツールと、その入手経路4つ](2026-08-28-kdbagent-declare.html)
 - [自社の業務システムをMCP対応にする——AIエージェントに全権限を渡さずにDBを操作させる4つの経路](2026-08-28-mcp-own-product.html)
 - [Decap CMSで自社サイトを1時間で公開した実例——xb4g.comの構築記録と、同じものを手に入れる4つの経路](2026-08-27-decap-xb4g-case.html)
 - [WordPressの保守から卒業する4つの方法——Decap CMS日本語導入キットを出しました](2026-08-27-decap-kit.html)
