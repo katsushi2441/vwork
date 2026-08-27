@@ -1,0 +1,72 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>自社の業務システムをMCP対応にする——AIエージェントに全権限を渡さずにDBを操作させる4つの経路 | VWork バイブコーディングフレームワーク</title><meta name="description" content="「mcp サーバー」月14,800回検索の波に、他人のOSSを担ぐのではなく自社製品のMCP対応で乗りました。MCPサーバーをPHP1枚で自作し、買い切り製品2つに同梱、さらに社内で運用中の本番DBにClaude CodeとCodexを繋いで実データを取得。安全設計3原則、踏んだ罠2つ、そして無料のGitHub・5,500円の手順書(Brain)・55,000円の製品・11万円の開発代行という4つの経路を仕分けします。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-28-mcp-own-product.html"><meta property="og:type" content="article"><meta property="og:title" content="自社の業務システムをMCP対応にする——AIエージェントに全権限を渡さずにDBを操作させる4つの経路"><meta property="og:description" content="「mcp サーバー」月14,800回検索の波に、他人のOSSを担ぐのではなく自社製品のMCP対応で乗りました。MCPサーバーをPHP1枚で自作し、買い切り製品2つに同梱、さらに社内で運用中の本番DBにClaude CodeとCodexを繋いで実データを取得。安全設計3原則、踏んだ罠2つ、そして無料のGitHub・5,500円の手順書(Brain)・55,000円の製品・11万円の開発代行という4つの経路を仕分けします。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-28-mcp-own-product.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="自社の業務システムをMCP対応にする——AIエージェントに全権限を渡さずにDBを操作させる4つの経路"><meta name="twitter:description" content="「mcp サーバー」月14,800回検索の波に、他人のOSSを担ぐのではなく自社製品のMCP対応で乗りました。MCPサーバーをPHP1枚で自作し、買い切り製品2つに同梱、さらに社内で運用中の本番DBにClaude CodeとCodexを繋いで実データを取得。安全設計3原則、踏んだ罠2つ、そして無料のGitHub・5,500円の手順書(Brain)・55,000円の製品・11万円の開発代行という4つの経路を仕分けします。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "自社の業務システムをMCP対応にする——AIエージェントに全権限を渡さずにDBを操作させる4つの経路", "description": "「mcp サーバー」月14,800回検索の波に、他人のOSSを担ぐのではなく自社製品のMCP対応で乗りました。MCPサーバーをPHP1枚で自作し、買い切り製品2つに同梱、さらに社内で運用中の本番DBにClaude CodeとCodexを繋いで実データを取得。安全設計3原則、踏んだ罠2つ、そして無料のGitHub・5,500円の手順書(Brain)・55,000円の製品・11万円の開発代行という4つの経路を仕分けします。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-28-mcp-own-product.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-28", "dateModified": "2026-08-28", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>自社の業務システムをMCP対応にする——AIエージェントに全権限を渡さずにDBを操作させる4つの経路</h1><p class="meta">2026-08-28</p><p>名古屋でAIシステム開発の会社をやっています。<strong>自社の買い切り業務システム2製品にMCPサーバーを自作して同梱し、さらに社内で運用中の本番データベースにClaude CodeとCodexの両方を繋ぎました。</strong></p>
+<p>MCP（Model Context Protocol）は、AIエージェントに外部の道具を使わせる仕組みです。日本語の解説の多くは「公開されているMCPサーバーを繋いでみた」で止まっていますが、<strong>本当に価値があるのは自社のシステムを繋げること</strong>だと考えて実装しました。制作の経緯と技術的な裏話は<a href="https://note.com/tokoname/n/nbede497c426a">noteに書きました</a>。</p>
+<p>この記事では、同じことを実現する<strong>4つの経路</strong>を仕分けします。</p>
+<h2>先に結論——何ができるようになったか</h2>
+<p>社内の見積データベースに対して、Claude CodeやCodexにこう頼めます。</p>
+<blockquote>
+<p>「コードにKUSNを含む見積を2件探して、品名を教えて」</p>
+</blockquote>
+<p>AIが本番データから答えます。SQLは1行も書いていませんし、ブラウザで管理画面も開いていません。</p>
+<p>そして重要なのは、<strong>AIに全権限を渡していないこと</strong>です。設定で宣言した表・列・操作しか通らないので、AIが別のテーブルを覗こうとすれば「その表は許可されていません」と拒否され、削除禁止の表への削除も通りません。実測で確認済みです。</p>
+<h2>安全設計で外せない3原則</h2>
+<p>自社システムをAIに繋ぐとき、これだけは守るべきだと考えています。</p>
+<ol>
+<li><strong>新しい権限の経路を作らない</strong> — MCPサーバーは既存の制限を通す薄い橋にする。判定は今までどおり本体にやらせる</li>
+<li><strong>生SQLを渡す口を作らない</strong> — 「好きなSQLを実行する」道具を1つ用意すれば実装は楽だが、それはAIに全権を渡すのと同じ</li>
+<li><strong>読み取り専用モードを用意する</strong> — 参照だけでいい相手には、書き込みの道具をそもそも見せない</li>
+</ol>
+<p>「AIに業務システムを触らせるのは怖い」という抵抗は、この3つで実際に下がります。</p>
+<h2>経路1: 自分で書く（無料・エンジニア向け）</h2>
+<p>MCPの仕様は公開されています。中身は「標準入出力で1行1メッセージのJSON-RPCを喋る」だけで、答えるべき問い合わせは実質4種類（初期化・疎通確認・道具の一覧・道具の実行）。PHPでもPythonでも書けます。</p>
+<p>当社のDB管理ツールは<a href="https://github.com/katsushi2441/kdbagent">GitHubで公開</a>しており、同梱のMCPサーバー（PHP1枚）もそのまま読めます。</p>
+<h2>経路2: 作り方の手順書 5,500円（Brain）</h2>
+<p>実装の全手順を記事にしました。PHPのソース全文、既存システムへの2つの接続方式、サーバー運用中のシステムに後付けするリモートブリッジ、Claude Code / Codex / Claude Desktop それぞれの登録手順、そして<strong>実際に踏んだ罠7つの逆引き表</strong>が入っています。</p>
+<ul>
+<li><a href="https://brain-market.com/u/bittensorman/a/bwUTMzYjMgoTZsNWa0JXY">Claude Code×MCPで業務自動化する構築手順（Brain・5,500円）</a></li>
+</ul>
+<p>罠の例を1つ出しておくと、Codexの非対話実行（<code>codex exec</code>）ではMCP呼び出しが <code>user cancelled MCP tool call</code> で勝手にキャンセルされます。承認設定を変えても直りません（対話モードなら動きます）。私はこれを自作サーバーのバグだと思って探しましたが、サーバー側は0.2秒で正常応答していました。こういう「動かしてみないと分からないこと」が一番時間を食います。</p>
+<h2>経路3: MCP対応済みの製品を買う 55,000円</h2>
+<p>自分で書かず、最初からMCPサーバーが同梱された業務システムを使う経路です。</p>
+<ul>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=719429354f079793">Kurage DB Agent（DB管理ツール・買い切り55,000円）</a> — 宣言した表・列・操作だけを、人にもAIにも触らせる</li>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=cd1eda3248c87920">Kurage AI MOM（AI議事録・買い切り）</a> — 確定済みの議事録をAIの調べもの先にする（未承認の下書きは出さない設計）</li>
+</ul>
+<p>製品そのものの考え方は<a href="https://brain-market.com/u/bittensorman/a/byUTMzYjMgoTZsNWa0JXY">Brainの正規販売記事</a>に詳しく書きました。</p>
+<h2>経路4: 自社システムに合わせて作ってもらう 110,000円〜</h2>
+<p>「うちの基幹システムをAIから操作したい」「既存の社内ツールに後付けしたい」という場合は当社が開発します。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/vibe-prototype.html">バイブプロトタイピング（最短1営業日・税込110,000円〜）</a></li>
+<li><a href="https://kurage.exbridge.jp/vibe-oss.html">バイブOSSカスタマイズ（税込110,000円〜）</a></li>
+</ul>
+<p>すでに運用中のシステムには、手元のPCからHTTPS経由で繋ぐブリッジ方式が使えます（手元にDB接続情報を置かずに済みます）。当社は自社の本番システムをこの方法で繋ぎました。</p>
+<h2>どれを選ぶべきか</h2>
+<ul>
+<li>MCPの仕組みを理解していて自分で書ける → <strong>経路1（無料）</strong></li>
+<li>自分で（またはAIと）実装したいが、罠を踏んで時間を溶かしたくない → <strong>経路2（5,500円）</strong></li>
+<li>実装せずにMCP対応の業務システムが欲しい → <strong>経路3（55,000円）</strong></li>
+<li>既存の自社システムを対応させたい → <strong>経路4（開発代行）</strong></li>
+</ul>
+<p>「全部できる道具」を渡して事故を祈るより、「これだけできる道具」を渡す。人にもAIにも、そのほうが安全です。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
