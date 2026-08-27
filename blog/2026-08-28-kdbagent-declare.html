@@ -1,0 +1,110 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>phpMyAdminを社内に置かない——見せる表・列・操作を宣言するDB管理ツールと、その入手経路4つ | VWork バイブコーディングフレームワーク</title><meta name="description" content="「担当者にDBを直させたいがphpMyAdminは渡せない」「AIエージェントにDBを触らせたいが全権限は渡したくない」は同じ問題です。万能な道具に制限をかけるのではなく、最初から宣言した範囲だけの道具にしました。ブラウザ・コマンド・API・MCPの4つの入口が同じ宣言を通る設計と、無料のGitHub・5,500円の手順書・55,000円の買い切り製品・11万円の開発代行という入手経路を仕分けします。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-28-kdbagent-declare.html"><meta property="og:type" content="article"><meta property="og:title" content="phpMyAdminを社内に置かない——見せる表・列・操作を宣言するDB管理ツールと、その入手経路4つ"><meta property="og:description" content="「担当者にDBを直させたいがphpMyAdminは渡せない」「AIエージェントにDBを触らせたいが全権限は渡したくない」は同じ問題です。万能な道具に制限をかけるのではなく、最初から宣言した範囲だけの道具にしました。ブラウザ・コマンド・API・MCPの4つの入口が同じ宣言を通る設計と、無料のGitHub・5,500円の手順書・55,000円の買い切り製品・11万円の開発代行という入手経路を仕分けします。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-28-kdbagent-declare.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="phpMyAdminを社内に置かない——見せる表・列・操作を宣言するDB管理ツールと、その入手経路4つ"><meta name="twitter:description" content="「担当者にDBを直させたいがphpMyAdminは渡せない」「AIエージェントにDBを触らせたいが全権限は渡したくない」は同じ問題です。万能な道具に制限をかけるのではなく、最初から宣言した範囲だけの道具にしました。ブラウザ・コマンド・API・MCPの4つの入口が同じ宣言を通る設計と、無料のGitHub・5,500円の手順書・55,000円の買い切り製品・11万円の開発代行という入手経路を仕分けします。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "phpMyAdminを社内に置かない——見せる表・列・操作を宣言するDB管理ツールと、その入手経路4つ", "description": "「担当者にDBを直させたいがphpMyAdminは渡せない」「AIエージェントにDBを触らせたいが全権限は渡したくない」は同じ問題です。万能な道具に制限をかけるのではなく、最初から宣言した範囲だけの道具にしました。ブラウザ・コマンド・API・MCPの4つの入口が同じ宣言を通る設計と、無料のGitHub・5,500円の手順書・55,000円の買い切り製品・11万円の開発代行という入手経路を仕分けします。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-28-kdbagent-declare.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-28", "dateModified": "2026-08-28", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>phpMyAdminを社内に置かない——見せる表・列・操作を宣言するDB管理ツールと、その入手経路4つ</h1><p class="meta">2026-08-28</p><p>名古屋でAIシステム開発の会社をやっています。<strong>Kurage DB Agent（kdbagent）</strong>という買い切りのデータベース管理ツールを作っています。この記事はその設計思想と入手経路の話です。制作の背景は<a href="https://note.com/tokoname/n/nd4458559f720">noteに書きました</a>。</p>
+<h2>解いている問題</h2>
+<p>昔からある相談と、最近増えた相談が、実は同じ問題でした。</p>
+<ul>
+<li><strong>昔から</strong>: 「事務の担当者にDBの中身を直させたい。でもphpMyAdminは渡せない」</li>
+<li><strong>最近</strong>: 「AIエージェントにDBを触らせたい。でも全権限は渡したくない」</li>
+</ul>
+<p>phpMyAdminやAdminerはDB管理者のための万能ツールで、任意のSQLが実行できます。「顧客の電話番号を1件直したいだけ」の相手に渡すと、全テーブルを削除できる権限も一緒に渡すことになります。AIエージェントに対しても構図はまったく同じです。</p>
+<h2>考え方を逆にした</h2>
+<p>万能な道具に制限をかけるのではなく、<strong>最初から「宣言した範囲だけ」の道具にしました。</strong></p>
+<pre><code class="language-php">'customers' =&gt; array(
+    'columns'    =&gt; array('id','name','email','phone','note'),  // これ以外の列は見えない
+    'search'     =&gt; array('name','email','phone'),
+    'editable'   =&gt; array('name','email','phone','note'),        // これ以外は書き換えられない
+    'can_delete' =&gt; false,                                        // 削除は禁止
+),
+</code></pre>
+<p>宣言していない表・列・操作は実行できません。原価や内部フラグのように「見せたくない列」は、書かなければ存在しないのと同じです。</p>
+<h2>4つの入口が、同じ宣言を通る</h2>
+<table>
+<thead>
+<tr>
+<th>入口</th>
+<th>使う人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ブラウザ</td>
+<td>非エンジニアの担当者（パスワードでログインして検索・編集）</td>
+</tr>
+<tr>
+<td>コマンド</td>
+<td>自動処理（全部JSONを返す）</td>
+</tr>
+<tr>
+<td>HTTP API</td>
+<td>外部システム連携（トークン必須）</td>
+</tr>
+<tr>
+<td><strong>MCPサーバー</strong></td>
+<td><strong>Claude Code / Codex / Claude Desktop</strong></td>
+</tr>
+</tbody>
+</table>
+<p>2026年8月にMCPサーバーを同梱しました。1行登録すると、AIに日本語で「コードにKUSNを含む見積を2件探して」と頼めます。当社は自社で運用している見積データベースでこれを実測しました。</p>
+<p><strong>それでいてAIは範囲外を壊せません。</strong> 宣言外のテーブルを覗こうとすれば「その表は許可されていません」、削除禁止の表への削除も拒否されます。参照だけ許したい相手には読み取り専用モードがあり、書き込みの道具がそもそもAIから見えなくなります。</p>
+<p>すでにサーバーで運用している場合も、手元のPCからHTTPS経由で繋ぐブリッジを同梱しているので後付けできます（手元にDB接続情報を置かずに済みます）。</p>
+<h2>動作環境</h2>
+<ul>
+<li>PHPが動けば動く。<strong>依存ライブラリなし</strong>（Composer・npm・Node.js不要）</li>
+<li>MySQL / SQLite 両対応</li>
+<li><strong>MCPサーバーもPHP1枚</strong>。AI連携のための追加インストールも不要</li>
+<li>FTPで上げるだけ。共有レンタルサーバーで動く</li>
+</ul>
+<p>SQLは全てプリペアドステートメント、表名・列名は使用前に必ず宣言と照合、管理画面はパスワード＋CSRF、変更は全て監査ログ（誰が・いつ・どの表のどの行を・どう変えたか）。</p>
+<h2>入手経路4つ</h2>
+<h3>経路1: 無料（GitHub・MIT）</h3>
+<p>コード本体は公開しています。設定を自分で書ける方はこれで十分です。</p>
+<ul>
+<li><a href="https://github.com/katsushi2441/kdbagent">kdbagent（GitHub）</a></li>
+</ul>
+<h3>経路2: 手順書 5,500円</h3>
+<p>MCPサーバーの作り方そのものを知りたい方向けの教材です（PHPソース全文・登録手順・罠の逆引き）。</p>
+<ul>
+<li><a href="https://brain-market.com/u/bittensorman/a/bwUTMzYjMgoTZsNWa0JXY">Claude Code×MCPで業務自動化する構築手順（Brain・5,500円）</a></li>
+</ul>
+<h3>経路3: 製品として買う 55,000円（買い切り）</h3>
+<p>手順書・AI用指示書・MCPサーバー同梱のzipが届きます。月額はありません。MITなので改変・商用利用・再販も自由です。</p>
+<ul>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=719429354f079793">Kurage DB Agent（Kurage App Store・55,000円）</a></li>
+<li><a href="https://brain-market.com/u/bittensorman/a/byUTMzYjMgoTZsNWa0JXY">設置と権限設計の全手順（Brain・正規販売記事）</a></li>
+</ul>
+<h3>経路4: 自社の要件に合わせて作ってもらう 110,000円〜</h3>
+<ul>
+<li><a href="https://kurage.exbridge.jp/vibe-prototype.html">バイブプロトタイピング（最短1営業日・税込110,000円〜）</a></li>
+<li><a href="https://kurage.exbridge.jp/vibe-oss.html">バイブOSSカスタマイズ（税込110,000円〜）</a></li>
+</ul>
+<h2>権限設計のコツ（有償の手順書にも書いていること）</h2>
+<ul>
+<li><strong>実テーブル名を画面に出さない</strong>（<code>table</code> と <code>label</code> を分ける）</li>
+<li><strong><code>editable</code> は <code>columns</code> より狭くする</strong>（見えるが編集できない列を作る）</li>
+<li><strong><code>can_delete</code> は原則 false</strong>。削除が必要な運用は「無効にする」で代替できないか先に考える</li>
+<li><strong><code>limit</code> を必ず入れる</strong>。AIが全件取得を試みても上限で止まる</li>
+<li><strong>まず読み取り専用で配る</strong>。人にもAIにも、必要になってから編集を開ける</li>
+</ul>
+<p>「AIに触らせるのが不安」という相談を受けたときの正解は、AIの側で制御しようとすることではなく、<strong>宣言を狭めること</strong>です。設定が最終的な防波堤になります。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
