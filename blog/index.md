@@ -22,6 +22,7 @@ faq:
 
 ## 記事一覧
 
+- [Decap CMSで自社サイトを1時間で公開した実例——xb4g.comの構築記録と、同じものを手に入れる4つの経路](2026-08-27-decap-xb4g-case.html)
 - [WordPressの保守から卒業する4つの方法——Decap CMS日本語導入キットを出しました](2026-08-27-decap-kit.html)
 - [メール配信の月額をゼロにする4つの方法——BillionMail日本語導入キットを出しました](2026-08-27-billionmail-kit.html)
 - [業種別に「置き換えられない業務」から仕分ける——/solution/ 24ページを公開しました](2026-08-27-solution-guide.html)
