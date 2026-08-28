@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [MicronのHBM供給課題とAnthropicの法的勝利、Googleへの人材流動など最新テック動向 08-29](2026-08-29-ai-news.html)
 - [A49Bで読む：Claude Code Opus 5の自動化とNVIDIAによるllama.cpp買収：加速するAIインフラとモデル開… 08-28](2026-08-28-ai-news-4.html)
 - [Claude Code Opus 5やNVIDIAによるllama.cpp買収など、AI技術の進化と安全性の最前線 08-28](2026-08-28-ai-news-3.html)
 - [Apodex 1.1のAgentic AI進化とNvidiaによるllama.cpp買収の噂を追う 08-28](2026-08-28-ai-news-2.html)
