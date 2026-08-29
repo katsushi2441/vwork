@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Securityで読む：Anthropicの自己改善AI研究とGLM-5.3公開など、加速するAI技術の最前線 08-29](2026-08-29-ai-news-3.html)
 - [GLM-5.3の登場とROCm 10.0への期待：次世代AIインフラとモデルの進化 08-29](2026-08-29-ai-news-2.html)
 - [MicronのHBM供給課題とAnthropicの法的勝利、Googleへの人材流動など最新テック動向 08-29](2026-08-29-ai-news.html)
 - [A49Bで読む：Claude Code Opus 5の自動化とNVIDIAによるllama.cpp買収：加速するAIインフラとモデル開… 08-28](2026-08-28-ai-news-4.html)
