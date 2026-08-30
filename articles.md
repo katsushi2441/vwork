@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [GPUで読む：Hy4のプレビュー公開とTencentによる圧縮技術、そしてNvidiaが描く次世代AIインフラ 08-30](2026-08-30-ai-news-3.html)
 - [Tencentのモデル圧縮技術とNvidiaの次世代AIインフラ戦略：最新ニュースまとめ 08-30](2026-08-30-ai-news-2.html)
 - [Nvidiaのシステム効率競争とQwen 3.8による高性能なローカルLLM実行 08-30](2026-08-30-ai-news.html)
 - [VirtualとVirtualizationで読む：Anthropicの自己改善AIと次世代インフラを巡る最新動向 08-29](2026-08-29-ai-news-4.html)
