@@ -1,0 +1,95 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>英語基準のSEOツールは日本語サイトを誤判定する——タイトルを全角で数える診断ツールと、その入手経路4つ | VWork バイブコーディングフレームワーク</title><meta name="description" content="多くのSEOチェックツールはタイトルを半角60文字で判定します。日本語を同じ物差しで測ると、検索結果で切れているのに「問題なし」と出ます。全角を1文字・半角を0.5文字として数える診断ツールを作り、自社サイトを測ったら、公開したばかりのLPのタイトルが全角65文字で切れていました。判定にAIを使わない理由、自分で出した誤検知2件、そして無料のGitHub・月3回の無料診断・55,000円の買い切り・110,000円〜の開発代行という入手経路を仕分けします。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-31-kseo-japanese-seo.html"><meta property="og:type" content="article"><meta property="og:title" content="英語基準のSEOツールは日本語サイトを誤判定する——タイトルを全角で数える診断ツールと、その入手経路4つ"><meta property="og:description" content="多くのSEOチェックツールはタイトルを半角60文字で判定します。日本語を同じ物差しで測ると、検索結果で切れているのに「問題なし」と出ます。全角を1文字・半角を0.5文字として数える診断ツールを作り、自社サイトを測ったら、公開したばかりのLPのタイトルが全角65文字で切れていました。判定にAIを使わない理由、自分で出した誤検知2件、そして無料のGitHub・月3回の無料診断・55,000円の買い切り・110,000円〜の開発代行という入手経路を仕分けします。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-31-kseo-japanese-seo.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="英語基準のSEOツールは日本語サイトを誤判定する——タイトルを全角で数える診断ツールと、その入手経路4つ"><meta name="twitter:description" content="多くのSEOチェックツールはタイトルを半角60文字で判定します。日本語を同じ物差しで測ると、検索結果で切れているのに「問題なし」と出ます。全角を1文字・半角を0.5文字として数える診断ツールを作り、自社サイトを測ったら、公開したばかりのLPのタイトルが全角65文字で切れていました。判定にAIを使わない理由、自分で出した誤検知2件、そして無料のGitHub・月3回の無料診断・55,000円の買い切り・110,000円〜の開発代行という入手経路を仕分けします。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "英語基準のSEOツールは日本語サイトを誤判定する——タイトルを全角で数える診断ツールと、その入手経路4つ", "description": "多くのSEOチェックツールはタイトルを半角60文字で判定します。日本語を同じ物差しで測ると、検索結果で切れているのに「問題なし」と出ます。全角を1文字・半角を0.5文字として数える診断ツールを作り、自社サイトを測ったら、公開したばかりのLPのタイトルが全角65文字で切れていました。判定にAIを使わない理由、自分で出した誤検知2件、そして無料のGitHub・月3回の無料診断・55,000円の買い切り・110,000円〜の開発代行という入手経路を仕分けします。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-31-kseo-japanese-seo.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-31", "dateModified": "2026-08-31", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>英語基準のSEOツールは日本語サイトを誤判定する——タイトルを全角で数える診断ツールと、その入手経路4つ</h1><p class="meta">2026-08-31</p><p>名古屋でAIシステム開発の会社をやっています。<strong>Kurage SEO（kseo）</strong>という日本語サイト向けの技術SEO診断ツールを作りました。この記事は設計判断と入手経路の話です。</p>
+<h2>解いている問題</h2>
+<p>一般的なSEOチェックツールは、タイトルを「60文字以内」で判定します。これは半角英数字の基準です。</p>
+<p>日本語のタイトルを同じ物差しで測ると、<strong>実際には検索結果で切れているのに「問題なし」と出ます。</strong> 日本語は全角で数えないと合いません。</p>
+<p>自作ツールで自社サイトを測って、公開したばかりのページで見つけました。</p>
+<pre><code>名古屋のAI-IT顧問契約｜エンジニアを雇わずに情報システム部門を持つ（月15時間・税別15万円・名古屋市内限定） | 株式会社エクスブリッジ
+→ 全角換算65文字
+</code></pre>
+<p>検索結果では「…情報システム部門を…」で切れます。いちばん伝えたい「月15時間・税別15万円」は、誰にも見えていませんでした。英語基準のツールでは、これは警告になりません。</p>
+<h2>数え方を変えた</h2>
+<p>全角を1文字、半角を0.5文字として数え、切り上げます。</p>
+<pre><code class="language-python">def visible_length(text):   # 全角=1.0、半角=0.5
+TITLE_MAX = 32              # 日本語のタイトルはこのあたりで切れ始める
+DESC_MAX = 120
+</code></pre>
+<p>「AI活用」は3文字（A+I=1.0、活+用=2.0）。英数字混じりの日本語タイトルを、半角基準でも全角基準でも誤らずに測るための近似です。</p>
+<h2>日本語サイトでだけ起きる問題</h2>
+<p>数え方以外にも、英語圏のツールが見ない項目があります。</p>
+<ul>
+<li><strong>lang属性の不一致</strong> — 本文は日本語なのに <code>&lt;html lang="en"&gt;</code>。海外テンプレート由来のサイトで起きます</li>
+<li><strong>文字コード宣言</strong> — <code>&lt;meta charset&gt;</code> と <code>http-equiv="Content-Type"</code> は両方とも正しい書き方です</li>
+<li><strong>文字化け</strong> — 宣言と実体の食い違い</li>
+<li><strong>タイトルの全角英数字</strong> — 「ＡＩ活用」は半角で検索する人と一致しにくくなります</li>
+</ul>
+<h2>判定にAIを使わない</h2>
+<p>同じページを2回見て違う答えが出る道具は、監査として使えません。「直したのに点が下がった」が起きるからです。</p>
+<p>判定はすべて閾値との比較で、入力が同じなら出力も同じになります。言語モデルを使うのは<strong>改善案の文章を書くところだけ</strong>で、そこにも実測済みの指摘しか渡していません。</p>
+<p>順位・検索ボリューム・被リンクは<strong>出しません</strong>。他社のインデックスを買わないと取れないので、扱わない範囲だと決めました。持っていないデータをそれらしく見せないためです。</p>
+<h2>自分で出した誤検知2件</h2>
+<p>作った道具で自社サイトを測って、間違った警告を2回出しました。</p>
+<p><strong>①「charset宣言なし」</strong> — <code>&lt;meta charset="utf-8"&gt;</code> の形しか見ておらず、<code>http-equiv="Content-Type"</code> 形式を見落としていました。古いサイトほどこちらが多いので、軒並み誤検知になります。</p>
+<p><strong>②「canonicalが別ページを指している」</strong> — <code>/index.html</code> から <code>/</code> へのcanonicalは正しい作法です。URLの文字列だけを比べたのが間違いでした。</p>
+<p><strong>誤検知がなぜまずいか。正しく作られているものを「直せ」と言うからです。</strong> 言われた側は正しいものを壊しに行きます。踏んだ誤検知は全部テストに残す運用にしました。</p>
+<h2>2つの実装を、同じ点数に揃える</h2>
+<p>常時稼働のPython版と、レンタルサーバー用の1ファイルPHP版（1,483行）があります。規則ID・閾値・採点式を揃えてあり、同じURLで同じ点が出ます。</p>
+<p>突き合わせたら、実際に食い違いが1件出ました。<strong>PHPの<code>round(98.5)</code>は99、Pythonは銀行家丸めで98。</strong> Python側を切り上げに統一し、実サイト4件（自社2件・外部2件）で総合点・カテゴリ別・検出規則まで一致することを確認しています。</p>
+<h2>動作環境</h2>
+<p>PHP版はPHP 8.0以上が動くレンタルサーバー。<strong>データベース・Composer・npmは不要</strong>です。Python版はPython 3.10以上。</p>
+<h2>入手経路4つ</h2>
+<h3>経路1: 無料（GitHub・MIT）</h3>
+<p>コードは公開しています。どの数字をどう測って何点になるのかを、買う前に確かめられます。</p>
+<ul>
+<li><a href="https://github.com/katsushi2441/kseo">kseo（GitHub）</a></li>
+</ul>
+<h3>経路2: Webで試す（月3回まで無料）</h3>
+<p>Xでログインすれば、登録も支払いもなしで診断できます。まず自社サイトを1回測ってみてください。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/kseo.php">Kurage SEO（月3回無料）</a></li>
+<li><a href="https://kseo.exbridge.jp/kseo.html">サービス紹介</a></li>
+</ul>
+<h3>経路3: 製品として買う 55,000円（買い切り）</h3>
+<p>自社サーバーで動かすので、回数もページ数も制限がありません。制作会社の方が、お客様のサイトを何度でも診断して診断書を出す使い方です。月額はありません。</p>
+<ul>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=c8ffa66502f7d905">SEO診断を買い切りで（Kurage App Store・55,000円）</a></li>
+<li><a href="https://brain-market.com/u/bittensorman/a/b3gTNzYjMgoTZsNWa0JXY">AIクローラー計測とあわせた構築手順書（Brain）</a></li>
+</ul>
+<h3>経路4: 自社の要件に合わせて作ってもらう 110,000円〜</h3>
+<ul>
+<li><a href="https://kurage.exbridge.jp/vibe-prototype.html">バイブプロトタイピング（最短1営業日・税込110,000円〜）</a></li>
+<li><a href="https://kurage.exbridge.jp/vibe-oss.html">バイブOSSカスタマイズ（税込110,000円〜）</a></li>
+</ul>
+<h2>もう一方の検索も測る</h2>
+<p>検索はGoogleと生成AIの2つに割れました。自社ログを42日分数えたら、<strong>16回に1回はAIクローラーが読みに来ていました</strong>（118,867リクエスト中6.3%）。Google Analyticsはボットを除外するので、この分は1件も出てきません。</p>
+<p>意外だったのは内訳です。meta-externalagentが4,482回、ClaudeBotが2,020回に対し、<strong>いちばん話題になるGPTBotは66回</strong>でした。GPTBotだけを見てrobots.txtを決めると、実際に最も読んでいる相手を見落とします。</p>
+<p>こちらは <a href="https://github.com/katsushi2441/ktrackgeo">ktrackgeo</a> で測っています。両方の手順を1本にまとめた構築手順書が、上の経路3のBrain記事です。</p>
+<h2>まとめ</h2>
+<ul>
+<li>日本語のタイトルは<strong>全角32文字</strong>で切れ始める。半角60文字の基準を当てると誤判定する</li>
+<li>判定にAIを使わない。同じページで違う答えが出る道具は監査にならない</li>
+<li>持っていないデータ（順位・ボリューム・被リンク）は出さない</li>
+<li>誤検知は「正しいものを壊させる」ので、踏んだら必ずテストに残す</li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
