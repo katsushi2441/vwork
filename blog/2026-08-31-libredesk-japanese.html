@@ -1,0 +1,146 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>翻訳率99.7%でも画面は壊れていた——OSSの日本語化で25か所のプレースホルダ崩れを見つけて本家へPRを出した記録 | VWork バイブコーディングフレームワーク</title><meta name="description" content="ヘルプデスクOSS「LibreDesk」を日本語化しました。翻訳ファイルは1,536項目のうち未訳ゼロ。ところが実際に動かすと、画面に {name} や {provider} がそのまま表示されます。英語では Add の一語なのに日本語が「{name} を追加」になっており、呼び出し側は引数を渡していませんでした。25か所を直して本家へPRを出すまでの記録と、公式イメージでは日本語が使えない理由（翻訳がバイナリに埋め込まれている）を実測で書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-08-31-libredesk-japanese.html"><meta property="og:type" content="article"><meta property="og:title" content="翻訳率99.7%でも画面は壊れていた——OSSの日本語化で25か所のプレースホルダ崩れを見つけて本家へPRを出した記録"><meta property="og:description" content="ヘルプデスクOSS「LibreDesk」を日本語化しました。翻訳ファイルは1,536項目のうち未訳ゼロ。ところが実際に動かすと、画面に {name} や {provider} がそのまま表示されます。英語では Add の一語なのに日本語が「{name} を追加」になっており、呼び出し側は引数を渡していませんでした。25か所を直して本家へPRを出すまでの記録と、公式イメージでは日本語が使えない理由（翻訳がバイナリに埋め込まれている）を実測で書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-08-31-libredesk-japanese.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="翻訳率99.7%でも画面は壊れていた——OSSの日本語化で25か所のプレースホルダ崩れを見つけて本家へPRを出した記録"><meta name="twitter:description" content="ヘルプデスクOSS「LibreDesk」を日本語化しました。翻訳ファイルは1,536項目のうち未訳ゼロ。ところが実際に動かすと、画面に {name} や {provider} がそのまま表示されます。英語では Add の一語なのに日本語が「{name} を追加」になっており、呼び出し側は引数を渡していませんでした。25か所を直して本家へPRを出すまでの記録と、公式イメージでは日本語が使えない理由（翻訳がバイナリに埋め込まれている）を実測で書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "翻訳率99.7%でも画面は壊れていた——OSSの日本語化で25か所のプレースホルダ崩れを見つけて本家へPRを出した記録", "description": "ヘルプデスクOSS「LibreDesk」を日本語化しました。翻訳ファイルは1,536項目のうち未訳ゼロ。ところが実際に動かすと、画面に {name} や {provider} がそのまま表示されます。英語では Add の一語なのに日本語が「{name} を追加」になっており、呼び出し側は引数を渡していませんでした。25か所を直して本家へPRを出すまでの記録と、公式イメージでは日本語が使えない理由（翻訳がバイナリに埋め込まれている）を実測で書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-08-31-libredesk-japanese.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-08-31", "dateModified": "2026-08-31", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>翻訳率99.7%でも画面は壊れていた——OSSの日本語化で25か所のプレースホルダ崩れを見つけて本家へPRを出した記録</h1><p class="meta">2026-08-31</p><p>名古屋でAIシステム開発の会社をやっています。ヘルプデスクOSS <strong>LibreDesk</strong>（GitHubスター2,861・Go製・AGPL v3）を日本語化しました。この記事は、その過程で見つけた<strong>翻訳の落とし穴</strong>の話です。</p>
+<h2>翻訳は「完成」していた</h2>
+<p>翻訳ファイルは1,536項目。未訳ゼロ。英語のまま残っていたのは13項目だけで、それも <code>google</code> <code>github</code> <code>linkedin</code> のような固有名詞——訳すべきでないものでした。</p>
+<p><strong>翻訳率99.7%。</strong> 数字の上では完成しています。</p>
+<h2>それでも画面は壊れていた</h2>
+<p>本家へPRを出す前に、1項目ずつ英語と突き合わせました。すると、<strong>日本語だけに存在するプレースホルダ</strong>が25か所見つかりました。</p>
+<table>
+<thead>
+<tr>
+<th>キー</th>
+<th>英語</th>
+<th>日本語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>globals.messages.add</code></td>
+<td><code>Add</code></td>
+<td><code>{name} を追加</code></td>
+</tr>
+<tr>
+<td><code>globals.messages.delete</code></td>
+<td><code>Delete</code></td>
+<td><code>削除 {name}</code></td>
+</tr>
+<tr>
+<td><code>ai.apiKeyNotSet</code></td>
+<td><code>The AI provider API key is not set…</code></td>
+<td><code>{provider} の API キーが…</code></td>
+</tr>
+</tbody>
+</table>
+<p>一見すると、日本語のほうが親切に見えます。「追加」より「顧客を追加」のほうが分かりやすい。</p>
+<p><strong>問題は、呼び出し側が引数を渡していないことでした。</strong></p>
+<pre><code>frontend/.../HelpCenterForm.vue:  t('globals.messages.add')
+internal/ai/ai.go:               m.i18n.T(&quot;ai.apiKeyNotSet&quot;)
+</code></pre>
+<p>どちらも引数なしです。英語では <code>Add</code> がそのまま出るので問題になりませんが、日本語では画面に <strong><code>{name} を追加</code></strong> と表示されます。</p>
+<p>翻訳した人は画面を全部は開いていない。開発者は日本語を読まない。<strong>だから誰も気づかないまま残っていました。</strong></p>
+<h2>翻訳率は品質を保証しない</h2>
+<p>この経験から、OSSを日本語化するときの確認項目が1つ増えました。</p>
+<p><strong>未訳の数ではなく、プレースホルダの一致を見る。</strong></p>
+<pre><code class="language-python">pe = set(re.findall(r'\{[^}]+\}', en[key]))
+pj = set(re.findall(r'\{[^}]+\}', ja[key]))
+if pe != pj:   # ← ここが壊れていると画面に生の {name} が出る
+</code></pre>
+<p>たった数行ですが、翻訳率100%のファイルから25か所の不良を見つけました。日本語化を請ける立場としては、<strong>納品前に必ず通すべき検査</strong>だと考えています。</p>
+<p>なお、意図的に違ってよい場合もあります。今回は2か所残しました。テンプレート構文の<strong>使用例</strong>を見せている文字列で、例そのものを日本語にしたほうが読み手に伝わるためです。機械的に全部揃えると、かえって分かりにくくなります。</p>
+<h2>公式イメージでは日本語が使えない</h2>
+<p>もう1つ、動かして初めて分かったことがあります。</p>
+<p>LibreDesk は翻訳ファイルを <strong>stuffbin でバイナリに埋め込みます</strong>。<code>cmd/init.go</code> の <code>initFS()</code> が外部ファイルでの上書きを許すのは <code>static</code> ディレクトリだけで、<strong><code>i18n</code> は差し替えられません。</strong></p>
+<p>つまり、公式イメージに日本語ファイルをマウントしても効きません。<strong>自分でビルドする必要があります。</strong></p>
+<pre><code>docker compose -f docker-compose.jp.yml up -d --build
+</code></pre>
+<p>実際にビルドして起動し、配信される翻訳をAPIで確認しました。</p>
+<pre><code>$ curl -s http://127.0.0.1:18355/api/v1/lang/ja-JP
+1,536キー
+  globals.messages.add = 追加      ← 修正前は「{name} を追加」
+  globals.terms.read   = 既読
+</code></pre>
+<p><strong>画面を見る前にAPIで判別できる</strong>ので、日本語版が本当に動いているかの確認はこれが確実です。</p>
+<h2>本家へPRを出しました</h2>
+<p>修正した翻訳を <a href="https://github.com/abhinavxd/libredesk/pull/550">abhinavxd/libredesk#550</a> として送りました。翻訳ファイル1つだけの変更です。</p>
+<p>PRには、既定言語を日本語に変える変更は<strong>入れていません</strong>。自社フォークでは正しくても、本家に入れると世界中の利用者の既定が日本語になるためです。日本語化のPRを出すときに混ざりやすいので、分けて考える必要があります。</p>
+<p><strong>マージされれば、公式イメージのままで日本語が使えるようになります。</strong> 自前ビルドが要らなくなるので、導入の手間が一段下がります。</p>
+<h2>使いどころ</h2>
+<p>正直に書くと、LibreDesk は誰にでも勧められるものではありません。</p>
+<p>「single binary」を名乗っていますが、<strong>PostgreSQL と Redis が別途必要</strong>です。共有レンタルサーバーでは動きません。<strong>VPSが前提</strong>です。</p>
+<p>当社は既に FreeScout の日本語導入キットを出していますが、こちらは共有レンタルサーバーで動きます。分かれ方はこうです。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>FreeScout</th>
+<th>LibreDesk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>動く場所</td>
+<td><strong>共有レンタルサーバー可</strong></td>
+<td>VPS必須</td>
+</tr>
+<tr>
+<td>必要なもの</td>
+<td>PHP + MySQL</td>
+<td>Go + PostgreSQL + Redis</td>
+</tr>
+<tr>
+<td>日本語</td>
+<td>公式同梱</td>
+<td>当社が全訳（本家PR提出済み）</td>
+</tr>
+<tr>
+<td>ライセンス</td>
+<td>AGPL v3</td>
+<td>AGPL v3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>月数百円で始めたいならFreeScout、VPSを既に持っているならLibreDesk</strong>です。</p>
+<h2>入手経路3つ</h2>
+<h3>経路1: 無料（GitHub・AGPL v3）</h3>
+<p>日本語版のソースを公開しています。翻訳の中身は買う前に確認できます。</p>
+<ul>
+<li><a href="https://github.com/katsushi2441/LibreDesk-JP">LibreDesk-JP（GitHub）</a></li>
+</ul>
+<h3>経路2: 導入キット 5,500円</h3>
+<p>構築して踏んだ落とし穴を手順書にしました。ポート衝突の回避、日本語が出ているかの確認方法、ライブチャットが動かなくなるnginx設定など、<strong>動く状態にするまでの時間</strong>を買っていただく形です。ソフト本体は含みません（OSSなので無料で入手できます）。</p>
+<ul>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=104c05db7779a709">ヘルプデスクを自社サーバーで持つ（Kurage App Store・5,500円）</a></li>
+</ul>
+<h3>経路3: 構築を任せる 110,000円〜</h3>
+<ul>
+<li><a href="https://kurage.exbridge.jp/vibe-oss.html">バイブOSSカスタマイズ（税込110,000円〜）</a></li>
+</ul>
+<h2>まとめ</h2>
+<ul>
+<li><strong>翻訳率は品質を保証しない。</strong> 未訳ゼロでも、プレースホルダが崩れていれば画面は壊れる</li>
+<li>検査はプレースホルダの集合比較で足りる。数行で25か所の不良が出た</li>
+<li>日本語化のPRに、既定言語の変更を混ぜない</li>
+<li>動いているかは画面ではなくAPIで確かめる</li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
