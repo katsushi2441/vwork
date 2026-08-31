@@ -1,0 +1,93 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>広聴AIをOpenAIキーなしで動かした——意見データを一切外に出さない完全ローカル構成の実測（デモ・導入キットつき） | VWork バイブコーディングフレームワーク</title><meta name="description" content="大量の意見をAIで構造化するオープンソース「広聴AI」（デジタル民主主義2030）を、OpenAI APIなし・完全ローカルで動かしました。公式手順はAPIキー前提ですが、ソースにはローカルLLM（Ollama+ELYZA-JP-8B）とローカル埋め込みの経路が実装されています。意見48件の分析が2分33秒・API費用0円（RTX3090実測）。支援者の声や住民意見など外部クラウドに置けないデータを扱う政治団体・自治体・労組向けの構成です。生成したデモレポートを公開し、踏んだ罠11個を導入キット（5,500円）にまとめました。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-01-kouchou-ai-local.html"><meta property="og:type" content="article"><meta property="og:title" content="広聴AIをOpenAIキーなしで動かした——意見データを一切外に出さない完全ローカル構成の実測（デモ・導入キットつき）"><meta property="og:description" content="大量の意見をAIで構造化するオープンソース「広聴AI」（デジタル民主主義2030）を、OpenAI APIなし・完全ローカルで動かしました。公式手順はAPIキー前提ですが、ソースにはローカルLLM（Ollama+ELYZA-JP-8B）とローカル埋め込みの経路が実装されています。意見48件の分析が2分33秒・API費用0円（RTX3090実測）。支援者の声や住民意見など外部クラウドに置けないデータを扱う政治団体・自治体・労組向けの構成です。生成したデモレポートを公開し、踏んだ罠11個を導入キット（5,500円）にまとめました。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-01-kouchou-ai-local.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="広聴AIをOpenAIキーなしで動かした——意見データを一切外に出さない完全ローカル構成の実測（デモ・導入キットつき）"><meta name="twitter:description" content="大量の意見をAIで構造化するオープンソース「広聴AI」（デジタル民主主義2030）を、OpenAI APIなし・完全ローカルで動かしました。公式手順はAPIキー前提ですが、ソースにはローカルLLM（Ollama+ELYZA-JP-8B）とローカル埋め込みの経路が実装されています。意見48件の分析が2分33秒・API費用0円（RTX3090実測）。支援者の声や住民意見など外部クラウドに置けないデータを扱う政治団体・自治体・労組向けの構成です。生成したデモレポートを公開し、踏んだ罠11個を導入キット（5,500円）にまとめました。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "広聴AIをOpenAIキーなしで動かした——意見データを一切外に出さない完全ローカル構成の実測（デモ・導入キットつき）", "description": "大量の意見をAIで構造化するオープンソース「広聴AI」（デジタル民主主義2030）を、OpenAI APIなし・完全ローカルで動かしました。公式手順はAPIキー前提ですが、ソースにはローカルLLM（Ollama+ELYZA-JP-8B）とローカル埋め込みの経路が実装されています。意見48件の分析が2分33秒・API費用0円（RTX3090実測）。支援者の声や住民意見など外部クラウドに置けないデータを扱う政治団体・自治体・労組向けの構成です。生成したデモレポートを公開し、踏んだ罠11個を導入キット（5,500円）にまとめました。", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-01-kouchou-ai-local.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-01", "dateModified": "2026-09-01", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>広聴AIをOpenAIキーなしで動かした——意見データを一切外に出さない完全ローカル構成の実測（デモ・導入キットつき）</h1><p class="meta">2026-09-01</p><p>名古屋でAIシステム開発の会社をやっています。政治団体・自治体・労組のように「集めた意見を外部のクラウドに送れない」組織でも使える意見分析の仕組みを探して、<strong>広聴AI（kouchou-ai）</strong>を完全ローカルで動かしました。この記事はその実測記録です。</p>
+<h2>広聴AIとは</h2>
+<p><strong>大量の意見をAIがグループ分けして、「どんな意見が、どれくらいあるか」を1枚のマップにする</strong>オープンソースです（デジタル民主主義2030プロジェクト・AGPL-3.0）。アンケートの自由記述、パブリックコメント、支援者や住民の声——読み切れない量のテキストを、抽出→埋め込み→クラスタリング→ラベリングのパイプラインで構造化します。</p>
+<h2>生成したレポートを公開しています</h2>
+<p>架空のまちづくり意見48件を投入して、実際に生成したレポートです。</p>
+<p><strong><a href="https://kurage.exbridge.jp/kouchou-demo/nagoya-machizukuri-sample/">デモレポートを見る</a></strong></p>
+<p>48件の意見が「都市のインフラと公共サービスの改善」「市民の生活利便性向上と行政サービスの改善」「地域の安全性と子どもの遊び場の充実」の3グループ・12クラスタに自動整理され、日本語の概観文まで付きました。</p>
+<h2>本題：OpenAIキーなしで動かせます</h2>
+<p>公式のセットアップ手順はOpenAI APIキーが前提です。しかしソースコードを読むと、<strong>2つのローカル経路が実装されています</strong>。</p>
+<ol>
+<li><strong>provider=local</strong> —— チャットLLMをOllama等のOpenAI互換サーバーに向けられる</li>
+<li><strong>is_embedded_at_local</strong> —— 埋め込み（ベクトル化）をSentenceTransformerでプロセス内実行できる</li>
+</ol>
+<p>この2つを組み合わせると、LLM呼び出しも埋め込みも全部サーバー内で完結します。<strong>意見データが1バイトも外部に出ません</strong>。</p>
+<p>構成はこうです。</p>
+<ul>
+<li>チャットLLM: 付属のOllamaコンテナ ＋ <strong>ELYZA-JP-8B</strong>（日本語特化・4.9GB）</li>
+<li>埋め込み: ローカル実行（SentenceTransformer）</li>
+<li>GPU: NVIDIA RTX 3090（dockerのNVIDIA Container Toolkit経由）</li>
+</ul>
+<h2>実測結果</h2>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>実測値</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>意見48件の全パイプライン</td>
+<td><strong>2分33秒</strong>（抽出→埋め込み→クラスタリング→ラベリング→概観生成）</td>
+</tr>
+<tr>
+<td>API費用</td>
+<td><strong>0円</strong></td>
+</tr>
+<tr>
+<td>生成結果</td>
+<td>論点52件・2階層12クラスタ・日本語概観文</td>
+</tr>
+<tr>
+<td>GPUメモリ使用</td>
+<td>約21.5GB（ELYZAロード後）</td>
+</tr>
+</tbody>
+</table>
+<p>処理速度は意見の件数にほぼ比例します。数百件規模でも実用の範囲です。</p>
+<h2>踏んだ罠は11個ありました</h2>
+<p>構築は一発では通りません。当社が実際に踏んだ順で言うと——ホストに既存のOllamaがあると付属コンテナがポート衝突で起動しない、compose.override.yamlの<code>!reset</code>が効かず直接編集が必要、<code>NEXT_PUBLIC_*</code>環境変数はビルド時にイメージへ埋め込まれるので.env変更後は<code>--build</code>必須、.envの一括置換で別のキーまで書き換わる、思考型モデル（gemma系）を使うとJSON解析が壊れる、など。</p>
+<p>とくに重要なのが<strong>静的書き出しの3つの罠</strong>です。広聴AIは生成済みレポートを静的サイトとして書き出せて（当社実測7.4MB）、生成環境を公開せずレポートだけを共有レンタルサーバーに置けます。ただしアセットがルート絶対パスなのでサブディレクトリ公開では壊れる、ビルド時の内部URLがJSに残る、インラインCSSの<code>url()</code>参照は置換から漏れる——の3点を処理する必要があります。上のデモはこの処理を済ませて静的公開したものです。</p>
+<p>この11個の回避手順と検証スクリプト・日本語サンプル意見48件を、導入キットにまとめました。</p>
+<ul>
+<li><strong><a href="https://kappstore.exbridge.jp/app.php?id=53493d74a09cfd8c">広聴AI 完全ローカル導入キット（Kurage App Store・5,500円）</a></strong></li>
+</ul>
+<p>ソフト本体は無料で入手できます。買っていただくのは動く状態にたどり着くまでの時間です。</p>
+<h2>誰に向くか（正直に）</h2>
+<ul>
+<li><strong>意見データを外部に送れない組織</strong>——政治団体の支援者の声、自治体の住民意見、労組・業界団体のアンケート、社内の従業員サーベイ</li>
+<li>GPU付きのサーバーかワークステーションが1台あること（実測は24GB機。8〜12GB級では量子化の検討が必要です）</li>
+<li>単発で数十件を読むだけなら、正直、人が読んだほうが早いです。効くのは<strong>数百件以上を定期的に</strong>処理する場合です</li>
+</ul>
+<p>なお、公職選挙法や政治資金規正法に関わる運用の可否はツールの外の話です。当社は「意見を集めて読む事務」を支援する範囲でお手伝いします。</p>
+<h2>まとめ</h2>
+<ul>
+<li>広聴AIはOpenAIキーなし・完全ローカルで動く（ソース実装済みの経路を組み合わせる）</li>
+<li>意見48件→2分33秒・12クラスタ・API費用0円（RTX 3090実測）</li>
+<li><a href="https://kurage.exbridge.jp/kouchou-demo/nagoya-machizukuri-sample/">動くデモ</a>と<a href="https://kappstore.exbridge.jp/app.php?id=53493d74a09cfd8c">導入キット5,500円</a>を公開</li>
+<li>サーバー準備から初回レポートまで任せたい場合は<a href="https://kurage.exbridge.jp/vibe-oss.html">構築代行（税込110,000円〜）</a>で承ります</li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
