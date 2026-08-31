@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [DronesとChinaで読む：OpenAIのChatGPT Workの実態と米中ロボット技術の覇権争い 08-31](2026-08-31-ai-news-2.html)
 - [Elon Muskのエネルギー戦略とCaterpillarが挑む産業AIの実装 08-31](2026-08-31-ai-news.html)
 - [Nvidiaの次世代戦略とSwift vs ブロックチェーンの覇権を巡る最新動向 08-30](2026-08-30-ai-news-4.html)
 - [GPUで読む：Hy4のプレビュー公開とTencentによる圧縮技術、そしてNvidiaが描く次世代AIインフラ 08-30](2026-08-30-ai-news-3.html)
