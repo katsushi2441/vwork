@@ -445,3 +445,4 @@ url2pub-i18n-hatena-summary
 2026-08-30-ai-it-komon
 2026-08-30-it-komon-similar-services
 2026-08-31-kseo-japanese-seo
+2026-08-31-ai-news
