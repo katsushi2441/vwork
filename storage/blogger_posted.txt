@@ -301,3 +301,8 @@ kfreqai-entry-threshold-explained
 2026-08-31-ai-news
 2026-08-31-ai-news-2
 2026-08-31-libredesk-japanese
+2026-08-31-libredesk-intro
+2026-08-31-ai-news-3
+2026-09-01-ai-news
+2026-09-01-twenty-crm-japanese-demo
+2026-09-01-shoken-bunseki-qgis-free
