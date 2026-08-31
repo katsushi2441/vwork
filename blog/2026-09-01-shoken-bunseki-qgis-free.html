@@ -1,0 +1,145 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>商圏分析は無料でできる——QGISと国の統計データだけで出店エリアの人口・競合を出す方法 | VWork バイブコーディングフレームワーク</title><meta name="description" content="出店判断や営業テリトリー設計に使う商圏分析は、有料の専門サービスを契約しなくてもできます。無料GISソフトのQGIS（日本語UI・オープンソース）と、国が無償公開している国勢調査の500mメッシュ人口・経済センサスの事業所データを重ねれば、店舗を中心にした商圏の人口・年齢構成・競合数まで手元で出せます。Webシステム化に使うオープンソースの部品表（実測スター数・ライセンスつき）と、総務省の無料ツールjSTAT MAPとの使い分けまで、全部まとめます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-01-shoken-bunseki-qgis-free.html"><meta property="og:type" content="article"><meta property="og:title" content="商圏分析は無料でできる——QGISと国の統計データだけで出店エリアの人口・競合を出す方法"><meta property="og:description" content="出店判断や営業テリトリー設計に使う商圏分析は、有料の専門サービスを契約しなくてもできます。無料GISソフトのQGIS（日本語UI・オープンソース）と、国が無償公開している国勢調査の500mメッシュ人口・経済センサスの事業所データを重ねれば、店舗を中心にした商圏の人口・年齢構成・競合数まで手元で出せます。Webシステム化に使うオープンソースの部品表（実測スター数・ライセンスつき）と、総務省の無料ツールjSTAT MAPとの使い分けまで、全部まとめます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-01-shoken-bunseki-qgis-free.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="商圏分析は無料でできる——QGISと国の統計データだけで出店エリアの人口・競合を出す方法"><meta name="twitter:description" content="出店判断や営業テリトリー設計に使う商圏分析は、有料の専門サービスを契約しなくてもできます。無料GISソフトのQGIS（日本語UI・オープンソース）と、国が無償公開している国勢調査の500mメッシュ人口・経済センサスの事業所データを重ねれば、店舗を中心にした商圏の人口・年齢構成・競合数まで手元で出せます。Webシステム化に使うオープンソースの部品表（実測スター数・ライセンスつき）と、総務省の無料ツールjSTAT MAPとの使い分けまで、全部まとめます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "商圏分析は無料でできる——QGISと国の統計データだけで出店エリアの人口・競合を出す方法", "description": "出店判断や営業テリトリー設計に使う商圏分析は、有料の専門サービスを契約しなくてもできます。無料GISソフトのQGIS（日本語UI・オープンソース）と、国が無償公開している国勢調査の500mメッシュ人口・経済センサスの事業所データを重ねれば、店舗を中心にした商圏の人口・年齢構成・競合数まで手元で出せます。Webシステム化に使うオープンソースの部品表（実測スター数・ライセンスつき）と、総務省の無料ツールjSTAT MAPとの使い分けまで、全部まとめます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-01-shoken-bunseki-qgis-free.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-01", "dateModified": "2026-09-01", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>商圏分析は無料でできる——QGISと国の統計データだけで出店エリアの人口・競合を出す方法</h1><p class="meta">2026-09-01</p><p>名古屋でAIシステム開発の会社をやっています。先日「商圏分析に使えるGISのオープンソースはあるか」と調べる機会があり、<strong>知られていないだけで、無料で相当なところまでできる</strong>と分かったのでまとめます。</p>
+<p>先に前提をひとつ。GitHubで「商圏」を検索すると、商圏分析の<strong>専用</strong>オープンソースは事実上存在しません（個人の小さなツールが数件あるだけです）。この分野は<strong>部品を組み合わせて作る</strong>領域で、その部品と、もっと重要な<strong>データ</strong>が、どちらも無料で手に入ります。</p>
+<h2>商圏分析とは何を出すことか</h2>
+<p>出店判断・FC本部のエリア設計・士業の開業地選び・営業テリトリー分けで使う分析は、分解するとこの3つです。</p>
+<ol>
+<li><strong>到達圏</strong>——店舗から徒歩10分・車15分で来られる範囲（円ではなく道路に沿った形）</li>
+<li><strong>その範囲の人口・世帯・年齢構成</strong>——何人住んでいるか、高齢者が多いのか子育て世帯か</li>
+<li><strong>競合</strong>——同じ範囲に同業が何軒あるか</li>
+</ol>
+<p>「ソフトが高いからできない」と思われがちですが、実際に高いのはソフトではありません。そして<strong>データは国が無償公開しています</strong>。</p>
+<h2>結論：QGIS単体＋無料データで始められます</h2>
+<p><strong><a href="https://qgis.org/">QGIS</a></strong> は世界標準の無料GISソフトです（オープンソース・GPL・GitHubスター14,310）。<strong>メニューまで公式に日本語化</strong>されています。WindowsでもMacでも動きます。</p>
+<p>やることの流れはこうです。</p>
+<ol>
+<li>QGISをインストールする（無料）</li>
+<li><strong>e-Stat「統計GIS（地図で見る統計）」</strong>から、国勢調査の<strong>500mメッシュ人口</strong>（年齢構成・世帯まで入っています）と境界データをダウンロードする（無料・出典明記で利用可）</li>
+<li>QGISに読み込み、背景地図（OpenStreetMap）を敷く</li>
+<li>自店・出店候補地の住所をポイントで置き、半径1km等のバッファ（円商圏）を描く</li>
+<li>バッファ内のメッシュを集計する——<strong>これで商圏人口・年齢構成が出ます</strong></li>
+</ol>
+<p>競合は、<strong>経済センサス</strong>の事業所数メッシュ（これもe-Statにあります）や、業種によっては国土数値情報のデータを同じ地図に重ねれば見えます。</p>
+<h2>無料で取れるデータの一覧</h2>
+<table>
+<thead>
+<tr>
+<th>データ</th>
+<th>入手先</th>
+<th>中身</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人口・世帯・年齢構成（250m/500mメッシュ）</td>
+<td>e-Stat 統計GIS</td>
+<td>国勢調査。商圏人口の本体</td>
+</tr>
+<tr>
+<td>事業所数・従業者数（メッシュ）</td>
+<td>e-Stat 統計GIS</td>
+<td>経済センサス。競合密度に</td>
+</tr>
+<tr>
+<td>駅・バス停・用途地域・商業地域</td>
+<td>国土数値情報</td>
+<td>立地条件の重ね合わせに</td>
+</tr>
+<tr>
+<td>道路網・背景地図</td>
+<td>OpenStreetMap</td>
+<td>徒歩圏・車圏の計算に</td>
+</tr>
+</tbody>
+</table>
+<p>いずれも出典を明記すれば事業利用できます（各データの利用規約はダウンロード時に確認してください）。</p>
+<h2>Webシステムに組み込む場合の部品表</h2>
+<p>「住所を入れると商圏レポートが出る」Webツールを自社で持ちたい場合の部品です。スター数とライセンスは当社が2026年9月1日に実測した値です。</p>
+<table>
+<thead>
+<tr>
+<th>役割</th>
+<th>OSS</th>
+<th>GitHub★</th>
+<th>ライセンス</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>到達圏の計算（徒歩/車N分）</td>
+<td>Valhalla / OSRM / OpenRouteService</td>
+<td>6,138 / 8,027 / 1,962</td>
+<td>MIT / BSD / GPL</td>
+</tr>
+<tr>
+<td>空間データベース（メッシュ集計）</td>
+<td>PostGIS ＋ pgRouting</td>
+<td>2,216 ＋ 1,427</td>
+<td>GPL-2.0</td>
+</tr>
+<tr>
+<td>Web地図の表示</td>
+<td>MapLibre GL JS</td>
+<td>11,498</td>
+<td>BSD系</td>
+</tr>
+<tr>
+<td>ヒートマップ等の可視化</td>
+<td>kepler.gl</td>
+<td>11,994</td>
+<td>MIT</td>
+</tr>
+<tr>
+<td>分析スクリプト</td>
+<td>geopandas / h3 / turf.js</td>
+<td>5,237 / 6,509 / 10,462</td>
+<td>BSD / Apache / MIT</td>
+</tr>
+<tr>
+<td>道路網から徒歩圏を作る</td>
+<td>osmnx</td>
+<td>5,833</td>
+<td>MIT</td>
+</tr>
+</tbody>
+</table>
+<p>型としては <strong>MapLibre（地図）＋ Valhalla（到達圏）＋ PostGIS（メッシュ集計）</strong> の3点が芯です。ユーザー数に応じた月額課金はどれにもありません。</p>
+<h2>正直な注記：jSTAT MAPで足りる場合があります</h2>
+<p>総務省統計局の <strong>jSTAT MAP</strong> は、無料の公式Webツールで、円商圏・到達圏のレポート作成までできます。<strong>単発で数か所を調べるだけなら、これが最短です。</strong></p>
+<p>QGISやOSSで組む意味が出るのは、次のどれかに当てはまるときです。</p>
+<ul>
+<li>店舗候補が多く、<strong>一括で機械的に処理したい</strong>（全国の候補100か所を同じ基準で採点する等）</li>
+<li><strong>自社データと重ねたい</strong>（会員の住所分布、配達実績、営業履歴）</li>
+<li>レポートの形式を自社の意思決定の型に合わせたい</li>
+<li>分析ロジックを社内に残し、担当者が代わっても回るようにしたい</li>
+</ul>
+<h2>まとめ</h2>
+<ul>
+<li>商圏分析の専用オープンソースは無い。しかし<strong>部品とデータが全部無料で揃っている</strong></li>
+<li>まずは <strong>QGIS（日本語・無料）＋ e-Statの500mメッシュ</strong>。ソフト代0円で商圏人口・年齢構成・競合密度まで出せる</li>
+<li>単発なら総務省の<strong>jSTAT MAP</strong>が最短</li>
+<li>自動化・自社データ結合・大量処理をしたくなったら、MapLibre＋Valhalla＋PostGISでWeb化する</li>
+</ul>
+<p>「うちの店舗リストで一括処理したい」「会員データと重ねた商圏レポートを自動で出したい」といった仕組み化は、<a href="https://kurage.exbridge.jp/vibe-prototype.html">バイブプロトタイピング（税込110,000円〜）</a>で承っています。どのデータをどう重ねるべきかの相談だけでも構いません。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
