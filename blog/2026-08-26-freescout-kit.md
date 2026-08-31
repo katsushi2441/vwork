@@ -54,6 +54,27 @@ FreeScout本体は[GitHub](https://github.com/freescout-help-desk/freescout)か�
 | Brainで買いたい | Brain版（同一内容） | 5,500円 |
 | 丸ごと任せたい | バイブOSSカスタマイズ | 110,000円〜 |
 
+## VPSがあるなら、もう1つ選択肢があります（追記 2026-08-31）
+
+**LibreDesk** というヘルプデスクOSSも日本語化しました。GitHubスター2,861、Go製、AGPL v3です。
+
+FreeScoutとの違いは1点だけです。**FreeScoutは共有レンタルサーバーで動きますが、LibreDeskは動きません。**
+
+「single binary」を名乗っていますが、実際には**PostgreSQLとRedisが別途必要**です（`docker-compose.yml` で実測）。つまりVPSが要ります。逆にVPSがあるなら、PHPの環境を整えずにバイナリ1つで立ちます。
+
+日本語化して分かったことも書いておきます。翻訳ファイルは1,536項目あり、**そのうち25か所が画面で壊れていました**。英語では `Add` なのに日本語が `{name} を追加` になっていて、呼び出し側は引数を渡していないため、日本語UIに `{name}` がそのまま表示される状態でした。直して[本家へPRを出しています](https://github.com/abhinavxd/libredesk/pull/550)。
+
+日本語版は [katsushi2441/LibreDesk-JP](https://github.com/katsushi2441/LibreDesk-JP) に置いてあります。
+
+| | FreeScout | LibreDesk |
+|---|---|---|
+| 動く場所 | **共有レンタルサーバー可** | VPS必須 |
+| 必要なもの | PHP + MySQL | Go + PostgreSQL + Redis |
+| ライセンス | AGPL v3 | AGPL v3 |
+| 日本語 | 公式同梱 | 当社が全訳（本家PR提出済み） |
+
+**月数百円で始めたいならFreeScout、VPSを既に持っているならLibreDesk**、という分かれ方です。
+
 ## SaaSと迷っている方へ
 
 電話・チャット込みのオムニチャネルや高度なレポートが必要ならZendesk等のSaaSが向きます。**メール中心の問い合わせを2〜10人で共有する**なら、FreeScoutで十分なことが多く、人数課金がないぶん増員に強い。判断の物差しは「月額×人数×3年分」を計算してみることです。それがFreeScout構築に払える上限額になります。
