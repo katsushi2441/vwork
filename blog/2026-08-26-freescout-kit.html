@@ -79,6 +79,44 @@
 </tr>
 </tbody>
 </table>
+<h2>VPSがあるなら、もう1つ選択肢があります（追記 2026-08-31）</h2>
+<p><strong>LibreDesk</strong> というヘルプデスクOSSも日本語化しました。GitHubスター2,861、Go製、AGPL v3です。</p>
+<p>FreeScoutとの違いは1点だけです。<strong>FreeScoutは共有レンタルサーバーで動きますが、LibreDeskは動きません。</strong></p>
+<p>「single binary」を名乗っていますが、実際には<strong>PostgreSQLとRedisが別途必要</strong>です（<code>docker-compose.yml</code> で実測）。つまりVPSが要ります。逆にVPSがあるなら、PHPの環境を整えずにバイナリ1つで立ちます。</p>
+<p>日本語化して分かったことも書いておきます。翻訳ファイルは1,536項目あり、<strong>そのうち25か所が画面で壊れていました</strong>。英語では <code>Add</code> なのに日本語が <code>{name} を追加</code> になっていて、呼び出し側は引数を渡していないため、日本語UIに <code>{name}</code> がそのまま表示される状態でした。直して<a href="https://github.com/abhinavxd/libredesk/pull/550">本家へPRを出しています</a>。</p>
+<p>日本語版は <a href="https://github.com/katsushi2441/LibreDesk-JP">katsushi2441/LibreDesk-JP</a> に置いてあります。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>FreeScout</th>
+<th>LibreDesk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>動く場所</td>
+<td><strong>共有レンタルサーバー可</strong></td>
+<td>VPS必須</td>
+</tr>
+<tr>
+<td>必要なもの</td>
+<td>PHP + MySQL</td>
+<td>Go + PostgreSQL + Redis</td>
+</tr>
+<tr>
+<td>ライセンス</td>
+<td>AGPL v3</td>
+<td>AGPL v3</td>
+</tr>
+<tr>
+<td>日本語</td>
+<td>公式同梱</td>
+<td>当社が全訳（本家PR提出済み）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>月数百円で始めたいならFreeScout、VPSを既に持っているならLibreDesk</strong>、という分かれ方です。</p>
 <h2>SaaSと迷っている方へ</h2>
 <p>電話・チャット込みのオムニチャネルや高度なレポートが必要ならZendesk等のSaaSが向きます。<strong>メール中心の問い合わせを2〜10人で共有する</strong>なら、FreeScoutで十分なことが多く、人数課金がないぶん増員に強い。判断の物差しは「月額×人数×3年分」を計算してみることです。それがFreeScout構築に払える上限額になります。</p>
 <p>問い合わせ管理そのものの考え方（Excel台帳の何が問題か）は<a href="https://exbridge.jp/toiawase-kanri.php">解説ページ</a>にまとめました。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
