@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [ペンタゴン独自のChatGPT導入やNVIDIAの価格問題、AppleによるOpenAI関連のデータ流出訴訟の動向 09-01](2026-09-01-ai-news-3.html)
 - [NvidiaのMediaTek戦略と国防総省によるChatGPT・Grok導入の最前線 09-01](2026-09-01-ai-news-2.html)
 - [スター5.5万のSalesforce代替CRM「Twenty」は日本語で使えるか——日本語検索の穴と触れるデモ 09-01](2026-09-01-twenty-crm-japanese-demo.html)
 - [NvidiaがMediaTekに巨額投資：Big Techへの対抗策と次世代AI・Web3の最前線 09-01](2026-09-01-ai-news.html)
