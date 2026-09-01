@@ -1,0 +1,49 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>製品PVを仕様ファイル1枚から自動生成する「kpvgen」を作りました——実画面キャプチャ×AIナレーション×機械検証 | VWork バイブコーディングフレームワーク</title><meta name="description" content="自社製品の30秒PV動画を、シーン構成と台詞を書いたJSON1枚から自動生成するツールkpvgenを作り、GitHubで公開しました。製品の実画面をヘッドレスブラウザで撮影し、TTSでナレーションを生成し、HyperFramesで合成。完成品は尺・解像度の実測とWhisperの聴き取りで機械検証し、ナレーションが価格を言う瞬間に画面表示を同期させるsync_to機能も実装。第1号として商圏分析ツールの30秒PVを作り、実際に商品ページで使っています。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-02-kpvgen-launch.html"><meta property="og:type" content="article"><meta property="og:title" content="製品PVを仕様ファイル1枚から自動生成する「kpvgen」を作りました——実画面キャプチャ×AIナレーション×機械検証"><meta property="og:description" content="自社製品の30秒PV動画を、シーン構成と台詞を書いたJSON1枚から自動生成するツールkpvgenを作り、GitHubで公開しました。製品の実画面をヘッドレスブラウザで撮影し、TTSでナレーションを生成し、HyperFramesで合成。完成品は尺・解像度の実測とWhisperの聴き取りで機械検証し、ナレーションが価格を言う瞬間に画面表示を同期させるsync_to機能も実装。第1号として商圏分析ツールの30秒PVを作り、実際に商品ページで使っています。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-02-kpvgen-launch.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="製品PVを仕様ファイル1枚から自動生成する「kpvgen」を作りました——実画面キャプチャ×AIナレーション×機械検証"><meta name="twitter:description" content="自社製品の30秒PV動画を、シーン構成と台詞を書いたJSON1枚から自動生成するツールkpvgenを作り、GitHubで公開しました。製品の実画面をヘッドレスブラウザで撮影し、TTSでナレーションを生成し、HyperFramesで合成。完成品は尺・解像度の実測とWhisperの聴き取りで機械検証し、ナレーションが価格を言う瞬間に画面表示を同期させるsync_to機能も実装。第1号として商圏分析ツールの30秒PVを作り、実際に商品ページで使っています。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "製品PVを仕様ファイル1枚から自動生成する「kpvgen」を作りました——実画面キャプチャ×AIナレーション×機械検証", "description": "自社製品の30秒PV動画を、シーン構成と台詞を書いたJSON1枚から自動生成するツールkpvgenを作り、GitHubで公開しました。製品の実画面をヘッドレスブラウザで撮影し、TTSでナレーションを生成し、HyperFramesで合成。完成品は尺・解像度の実測とWhisperの聴き取りで機械検証し、ナレーションが価格を言う瞬間に画面表示を同期させるsync_to機能も実装。第1号として商圏分析ツールの30秒PVを作り、実際に商品ページで使っています。", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-02-kpvgen-launch.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-02", "dateModified": "2026-09-02", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>製品PVを仕様ファイル1枚から自動生成する「kpvgen」を作りました——実画面キャプチャ×AIナレーション×機械検証</h1><p class="meta">2026-09-02</p><p>名古屋でAIシステム開発の会社をやっています。自社製品が増えてくると、製品ごとの紹介動画(PV)を作る・直すという作業が積み上がります。動画編集ソフトでの手作業は、価格や実測値が変わるたびに作り直しで、続きません。そこで、<strong>PVそのものをコードにしました</strong>。</p>
+<ul>
+<li>コード(公開): <a href="https://github.com/katsushi2441/kpvgen">github.com/katsushi2441/kpvgen</a></li>
+<li>第1号の成果物(30秒PV): <a href="https://kurage.exbridge.jp/pv/kshoken-pv-30s.mp4">Kurage 商圏分析 PV</a></li>
+</ul>
+<h2>仕様ファイル1枚で何が起きるか</h2>
+<p>シーンの並びと言わせたい台詞をJSONに書いて、コマンドを1回実行します。あとは5工程が自動で流れます。</p>
+<ol>
+<li><strong>capture</strong> — 製品の実画面をヘッドレスブラウザで撮影。地図など読み込みの遅い画面は白画面を検出して待ち直します</li>
+<li><strong>narration</strong> — 自社TTSでナレーション生成。数字は読み方をカナで確定させてから渡します(TTSは「9634」を桁バラバラに読みます)</li>
+<li><strong>compose</strong> — HTML+GSAPのアニメーションとして組み立て。実写クリップ、実画面のズーム、数字のカウントアップ、エンドカードの4種のシーン型があります</li>
+<li><strong>render</strong> — HyperFramesでmp4に書き出し</li>
+<li><strong>verify</strong> — 完成品の尺・解像度を実測し、音声をWhisperで聴き取って「言うべき台詞・数字・価格が本当に言えているか」を機械判定。不合格なら出力を捨てます</li>
+</ol>
+<h2>「言った瞬間に画面に出る」を実測で合わせる</h2>
+<p>一番気に入っている機能が <code>sync_to</code> です。ナレーションが「買い切り5万5000円」と言う瞬間に、画面に価格が表示されてほしい。これを、Whisperのタイムスタンプで発話時刻を実測し、シーンの開始時刻を自動で一致させる形にしました。仕様ファイルに同期させたい語を1行書くだけで、前のシーン群の尺は比例配分で自動調整されます。</p>
+<h2>実例: 商圏分析ツールの30秒PV</h2>
+<p>第1号として、<a href="https://kurage.exbridge.jp/kshoken.php/">Kurage 商圏分析</a>(住所を入れると徒歩10分圏の人口が出るツール)の30秒PVを作りました。実写のオープニング、実画面での住所入力、名古屋駅徒歩10分圏の人口9,634人へ増えていくカウントアップ、到達圏の地図、価格のエンドカード——全部で6シーンです。完成品はそのまま<a href="https://kappstore.exbridge.jp/app.php?id=a5ac4b9f1fdb6d19">商品ページ</a>で使っています。</p>
+<h2>作ってみて学んだこと</h2>
+<p>順調に完成したわけではありません。3回のビルドのうち2回は失敗でした。</p>
+<ul>
+<li><strong>描画エンジンには「駆動契約」がある。</strong> HyperFramesは一時停止したタイムラインをフレーム単位で進めて撮影する方式で、時間差で自走するアニメーション指定は一切実行されません。動画後半が真っ白になった原因はこれで、答えは社内で既に動いている別システムのコードに最初から書いてありました</li>
+<li><strong>検証コードにもバグは入る。</strong> Whisper聴き取り検証が「5万5000円」(台本)と「55,000円」(聴き取り結果)の表記ゆれで、正しいナレーションを不合格にしていました。数字を正規化して比較するように修正しました</li>
+</ul>
+<p>それでも完成に辿りつけたのは、「完成しました」を人間の感覚ではなく機械に言わせる設計にしていたからです。失敗が「気づかないまま公開」ではなく「ビルドが落ちる」という安全な形で現れました。</p>
+<p>PVを作りたい製品が増えても、これからは仕様ファイルを1枚書くだけです。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
