@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [HuggingFaceとWebGPUが拓くブラウザ上でのローカルAI実行の新時代 09-02](2026-09-02-ai-news.html)
 - [AppleとOpenAIを巡るデータ流出問題とシンガポールのステーブルコイン規制動向 09-01](2026-09-01-ai-news-4.html)
 - [ペンタゴン独自のChatGPT導入やNVIDIAの価格問題、AppleによるOpenAI関連のデータ流出訴訟の動向 09-01](2026-09-01-ai-news-3.html)
 - [NvidiaのMediaTek戦略と国防総省によるChatGPT・Grok導入の最前線 09-01](2026-09-01-ai-news-2.html)
