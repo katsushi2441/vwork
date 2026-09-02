@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Google、高速・高性能な「Gemini 3.8 Flash」を発表・OpenAIの新技術「再帰的深度」がAI安全の専門家を警戒させる 09-03](2026-09-03-ai-news-2.html)
 - [ヘルプデスクOSS「Zammad」の日本語は23%しかなかった——全訳して本家Weblateを100%にするまでと今すぐ日本語化する手順](2026-09-03-zammad-japanese-guide.html)
 - [CrowdStrikeによるロシア製マルウェア摘発とH3-Worldが拓く「言語による世界制御」の最前線 09-03](2026-09-03-ai-news.html)
 - [OpenAIのAstraモデルとGoogleの新ツールが導く、AIデザインとセキュリティの最前線 09-02](2026-09-02-ai-news-4.html)
