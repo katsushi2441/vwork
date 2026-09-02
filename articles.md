@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIのAstraモデルが示すサイバーセキュリティへの脅威とGoogleのクリエイティブ戦略 09-02](2026-09-02-ai-news-3.html)
 - [Hugging FaceのWebGPU対応からOpenAI・Googleの最新動向まで：加速するAIインフラと実用化 09-02](2026-09-02-ai-news-2.html)
 - [HuggingFaceとWebGPUが拓くブラウザ上でのローカルAI実行の新時代 09-02](2026-09-02-ai-news.html)
 - [AppleとOpenAIを巡るデータ流出問題とシンガポールのステーブルコイン規制動向 09-01](2026-09-01-ai-news-4.html)
