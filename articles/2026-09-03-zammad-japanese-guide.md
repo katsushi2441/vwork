@@ -4,6 +4,8 @@ emoji: "🎫"
 type: "tech"
 topics: ["zammad", "helpdesk", "oss", "翻訳", "weblate"]
 published: true
+title_hatena: "OSSの「日本語対応」は当てにならない——Zammad実測23%を100%へ、Weblate投入の技術メモ"
+title_blogger: "Zendesk代替のZammadを完全日本語で使う方法(poファイル配布と本家投入の報告)"
 ---
 
 Zendeskの代替を探すと必ず候補に挙がるオープンソースヘルプデスク [Zammad](https://github.com/zammad/zammad)（Ruby on Rails製・AGPL-3.0・GitHubスター5,800超）。メール・電話・チャットの問い合わせをチケットとして一元管理でき、セルフホストで月額ゼロ運用ができます。

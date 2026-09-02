@@ -465,3 +465,5 @@ url2pub-i18n-hatena-summary
 2026-09-02-ai-news-3
 2026-09-02-ai-news-4
 2026-09-02-krayin-japanese-merged
+2026-09-03-ai-news
+2026-09-03-zammad-japanese-guide
