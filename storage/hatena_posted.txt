@@ -460,3 +460,5 @@ url2pub-i18n-hatena-summary
 2026-09-01-ai-news-4
 2026-09-02-ai-news
 2026-09-02-kpvgen-launch
+2026-09-02-ai-news-2
+2026-09-02-h3-selfhost-kpvgen
