@@ -22,6 +22,7 @@ faq:
 
 ## 記事一覧
 
+- [オープンソースCRM「Krayin」が日本語対応に——当社の2,066キー全訳が本家v2.2へ正式マージされました](2026-09-02-krayin-japanese-merged.html)
 - [製品PVの実写カットを自社GPUで内製化——MiniMax H3のセルフホストをkpvgenに組み込みました](2026-09-02-h3-selfhost-kpvgen.html)
 - [製品PVを仕様ファイル1枚から自動生成する「kpvgen」を作りました——実画面キャプチャ×AIナレーション×機械検証](2026-09-02-kpvgen-launch.html)
 - [広聴AIをOpenAIキーなしで動かした——意見データを一切外に出さない完全ローカル構成の実測（デモ・導入キットつき）](2026-09-01-kouchou-ai-local.html)
