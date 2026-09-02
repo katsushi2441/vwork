@@ -1,0 +1,66 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>製品PVの実写カットを自社GPUで内製化——MiniMax H3のセルフホストをkpvgenに組み込みました | VWork バイブコーディングフレームワーク</title><meta name="description" content="仕様ファイル1枚から製品PVを自動生成するkpvgenに、実写風カットの生成をローカルで行う仕組みを足しました。オープンウェイトの動画生成モデルMiniMax H3(33B)をRTX 3090で動かし、8秒×2本の継ぎ生成で15秒級の実写カットを作成。API課金ゼロ・透かしなし・商用可(クレジット表記)で、商圏分析ツールの商品ページで実際に公開中の30秒PVに組み込みました。24GB GPUでの実測値(2.3秒2分・8秒28分・アクティベーションOOMの限界)も掲載します。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-02-h3-selfhost-kpvgen.html"><meta property="og:type" content="article"><meta property="og:title" content="製品PVの実写カットを自社GPUで内製化——MiniMax H3のセルフホストをkpvgenに組み込みました"><meta property="og:description" content="仕様ファイル1枚から製品PVを自動生成するkpvgenに、実写風カットの生成をローカルで行う仕組みを足しました。オープンウェイトの動画生成モデルMiniMax H3(33B)をRTX 3090で動かし、8秒×2本の継ぎ生成で15秒級の実写カットを作成。API課金ゼロ・透かしなし・商用可(クレジット表記)で、商圏分析ツールの商品ページで実際に公開中の30秒PVに組み込みました。24GB GPUでの実測値(2.3秒2分・8秒28分・アクティベーションOOMの限界)も掲載します。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-02-h3-selfhost-kpvgen.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="製品PVの実写カットを自社GPUで内製化——MiniMax H3のセルフホストをkpvgenに組み込みました"><meta name="twitter:description" content="仕様ファイル1枚から製品PVを自動生成するkpvgenに、実写風カットの生成をローカルで行う仕組みを足しました。オープンウェイトの動画生成モデルMiniMax H3(33B)をRTX 3090で動かし、8秒×2本の継ぎ生成で15秒級の実写カットを作成。API課金ゼロ・透かしなし・商用可(クレジット表記)で、商圏分析ツールの商品ページで実際に公開中の30秒PVに組み込みました。24GB GPUでの実測値(2.3秒2分・8秒28分・アクティベーションOOMの限界)も掲載します。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "製品PVの実写カットを自社GPUで内製化——MiniMax H3のセルフホストをkpvgenに組み込みました", "description": "仕様ファイル1枚から製品PVを自動生成するkpvgenに、実写風カットの生成をローカルで行う仕組みを足しました。オープンウェイトの動画生成モデルMiniMax H3(33B)をRTX 3090で動かし、8秒×2本の継ぎ生成で15秒級の実写カットを作成。API課金ゼロ・透かしなし・商用可(クレジット表記)で、商圏分析ツールの商品ページで実際に公開中の30秒PVに組み込みました。24GB GPUでの実測値(2.3秒2分・8秒28分・アクティベーションOOMの限界)も掲載します。", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-02-h3-selfhost-kpvgen.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-02", "dateModified": "2026-09-02", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>製品PVの実写カットを自社GPUで内製化——MiniMax H3のセルフホストをkpvgenに組み込みました</h1><p class="meta">2026-09-02</p><p>名古屋でAIシステム開発の会社をやっています。<a href="2026-09-02-kpvgen-launch.html">前回の記事</a>で、仕様ファイル1枚から製品PVを自動生成する「kpvgen」を紹介しました。今回はその続きで、<strong>PVの実写風カットまで自社サーバーで作れるようにした</strong>話です。</p>
+<ul>
+<li>完成した30秒PV(商品ページで公開中): <a href="https://kurage.exbridge.jp/pv/kshoken-pv-30s.mp4">Kurage 商圏分析 PV</a></li>
+<li>商品ページ: <a href="https://kappstore.exbridge.jp/app.php?id=a5ac4b9f1fdb6d19">Kurage 商圏分析(買い切り55,000円)</a></li>
+<li>kpvgen(公開): <a href="https://github.com/katsushi2441/kpvgen">github.com/katsushi2441/kpvgen</a></li>
+</ul>
+<h2>何が変わったか</h2>
+<p>これまで実写風カットはクラウドの動画生成サービス頼みでした。無料枠は商用利用不可、APIは従量課金。そこで、モデルの重みが公開されているMiniMax H3(33B)をRTX 3090(24GB)のマシンに導入しました。ライセンス上、年商2,000万ドル未満なら「MiniMax H3」のクレジット表記だけで商用利用でき、日本は対象地域です。表記はPVのエンドカードに入れています。</p>
+<h2>24GB GPUでの実測値</h2>
+<table>
+<thead>
+<tr>
+<th>生成</th>
+<th>解像度</th>
+<th>時間</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>テスト2.3秒</td>
+<td>608×352</td>
+<td>約2分</td>
+</tr>
+<tr>
+<td>本番8秒</td>
+<td>1344×768(公式768p)</td>
+<td>約28分</td>
+</tr>
+<tr>
+<td>12〜15秒一発</td>
+<td>1344×768</td>
+<td><strong>不可</strong>(メモリ不足)</td>
+</tr>
+</tbody>
+</table>
+<p>15秒を一発で作ろうとするとOOMになります。原因はモデルの重みではなく計算途中のアクティベーションで、オフロード設定では回避できませんでした。答えは<strong>継ぎ生成</strong>です。前半8秒の最終フレームを、後半8秒の開始フレームとして渡すと、絵がつながった16秒が作れます。H3が開始・終了フレーム指定(FL2VA)に対応しているのでできる芸当です。</p>
+<h2>30秒PVはこうなった</h2>
+<p>朝の商店街でシャッターの下りた空き店舗を前に経営者がラップトップを開く実写カット(8秒×2の継ぎ)から、製品の実画面、名古屋駅徒歩10分圏9,634人へのカウントアップ、価格のエンドカードまで、kpvgenの仕様ファイル1枚で30秒に組み上がります。ナレーションの「買い切り5万5000円」の発話タイミングに価格表示が同期し、完成品は尺・解像度・Whisperの聴き取りで機械検証してから出荷されます。</p>
+<p>導入でハマった話(CUDAビルドの3連鎖、OOMの実測、レンダラが音量指定を無視する罠)は、noteに実録として書きました。</p>
+<ul>
+<li>note: <a href="https://note.com/tokoname/n/n706d63c1a431">月額APIを借りずに、33Bの動画生成AIを自社のRTX 3090で動かした</a></li>
+</ul>
+<p>クラウドの課金を待つのではなく、公開された重みとライセンスの精読で内製化する。中小企業のAI活用として、再現性のある型だと思います。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
