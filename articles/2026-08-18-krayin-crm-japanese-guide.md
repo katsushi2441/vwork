@@ -13,6 +13,8 @@ Salesforceの代替を探していて、オープンソースCRMを調べたら 
 ないなら作ればいい、ということで、当社（名古屋のAIシステム開発会社・エクスブリッジ）で言語ファイル一式（4パッケージ・**2,066キー**）を日本語化し、本家にプルリクエストを送りました。この記事はその翻訳の当て方と、Krayinを日本語で動かすまでの導入ガイドです。
 
 - 本家PR: [krayin/laravel-crm#2638 — feat: add Japanese (ja) locale](https://github.com/krayin/laravel-crm/pull/2638)
+
+> **追記（2026-09-02）**: このPRは**2026-09-01に本家の2.2ブランチへマージされました**。本家のv2.2以降では公式に日本語ロケールが同梱されます。それより前のバージョンで日本語を使う場合は、引き続き本記事の手順（krayin-jpのjpブランチ）が使えます。
 - 日本語版リポジトリ: [katsushi2441/krayin-jp](https://github.com/katsushi2441/krayin-jp)（マージ前でもこちらで使えます）
 
 ![Krayin リードかんばん（日本語UI）](https://katsushi2441.github.io/vwork/articles/krayin-ja-leads.png)
