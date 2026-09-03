@@ -24,3 +24,9 @@ defaults:
       path: "blog"
     values:
       image: "https://exbridge.jp/images/vwork-blog-ogp.png"
+  # AI OSS技術解説(articles/)は専用OGP。無いとサイト既定のvwork-banner(VWorkフレームワーク画像)に
+  # フォールバックし、記事の中身(OSS日本語化・本家貢献・セルフホスト)と合わない(2026-09-03修正)。
+  - scope:
+      path: "articles"
+    values:
+      image: "https://exbridge.jp/images/oss-articles-ogp.png"
