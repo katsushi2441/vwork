@@ -90,7 +90,7 @@ de =
 - 翻訳ファイルではなくソースコード（Elm）に言葉が埋まっているため、1,056語を訳して158ファイルにコードを自動生成し、本家と同じビルドで型検査を通しました
 - 「日本語が無いOSSを訳して本家に返す」取り組みは、Krayin（本家マージ済み）、Zammad、Vikunja、Planka に続いて、これが最も重い1本です。翻訳ファイルが無くても、生成で日本語化できることが分かりました
 
-導入から社内展開までを、当社の手順書（メール取り込み設計・OCR 言語・バックアップ・共有ルール）にまとめた導入キットも用意しています。詳しくは [Docspell の紹介ページ](https://kurage.exbridge.jp/oss/docspell/) をご覧ください。
+導入から社内展開までを、当社の手順書（メール取り込み設計・OCR 言語・バックアップ・共有ルール）にまとめた導入キットも用意しています。その一式は **[Docspell 日本語導入・運用キット（税込5,500円・買い切り）](https://kappstore.exbridge.jp/app.php?id=7f9481c10a09b560&ref=vwork-docspell)** として Kurage App Store で販売しています。OSS そのものの解説は [Docspell の紹介ページ](https://kurage.exbridge.jp/oss/docspell/) にまとめています。
 
 ## 参考
 

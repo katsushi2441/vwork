@@ -131,7 +131,7 @@ volumes: { docmost: {}, db_data: {}, redis_data: {} }
 - ただし日本語の全文検索は複合語を拾えないことがあります。タイトルに空白を入れる・キーワード行を置く・階層で辿れるようにする、の3点で実用になります
 - 移行は Notion からなら無料版で完結。Confluence からは有料版か手作業の変換です
 
-導入から社内展開までを、当社の手順書とテンプレート（スペース設計・議事録／手順書テンプレ・検索を効かせる書き方・移行手順・バックアップ）にまとめた導入キットも用意しています。詳しくは [Docmost の紹介ページ](https://kurage.exbridge.jp/oss/docmost/) をご覧ください。
+導入から社内展開までを、当社の手順書とテンプレート（スペース設計・議事録／手順書テンプレ・検索を効かせる書き方・移行手順・バックアップ）にまとめた導入キットも用意しています。その一式は **[Docmost 日本語導入・運用キット（税込5,500円・買い切り）](https://kappstore.exbridge.jp/app.php?id=7495b31ca104b483&ref=vwork-docmost)** として Kurage App Store で販売しています。OSS そのものの解説は [Docmost の紹介ページ](https://kurage.exbridge.jp/oss/docmost/) にまとめています。
 
 ## 参考
 
