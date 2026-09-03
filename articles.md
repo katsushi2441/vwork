@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Trelloの代替を自社サーバーに——カンバンOSS「Planka」を日本語で立てて分かった、翻訳の穴56キーと「第三者向けホスティングは有料」というライセンスの線引き](2026-09-04-planka-japanese-guide.html)
 - [NvidiaがHugging Faceを買収へ：QwenやK2-Horizonなど最新AIモデルの動向まとめ 09-04](2026-09-04-ai-news.html)
 - [Notion・Confluenceの代替を自社サーバーに——社内WikiOSS「Docmost」を日本語で立てて分かった、翻訳100%でも「日本語検索に穴がある」話と対策](2026-09-03-docmost-japanese-guide.html)
 - [Todoist・Trelloの代替を自社サーバーに——タスク管理OSS「Vikunja」を5分で立てて日本語で使うまで。翻訳の穴9%を埋めて本家に返した記録](2026-09-03-vikunja-japanese-guide.html)
