@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Todoist・Trelloの代替を自社サーバーに——タスク管理OSS「Vikunja」を5分で立てて日本語で使うまで。翻訳の穴9%を埋めて本家に返した記録](2026-09-03-vikunja-japanese-guide.html)
 - [GoogleのGemini 3.8 Flash登場とOpenAIによる新推論技術への警鐘 09-03](2026-09-03-ai-news-4.html)
 - [GoogleのGemini 3.8 Flash登場とOpenAIの新推論技術が話題に 09-03](2026-09-03-ai-news-3.html)
 - [CodeAlmanacとは？AIエージェントにコードに書けない文脈を持たせるYC発OSS——Linux対応を本家に送った話](2026-09-03-codealmanac-linux-guide.html)

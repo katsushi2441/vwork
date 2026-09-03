@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 03 Sep 2026 02:06:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 10:23:59 +0000</lastBuildDate>
     <item>
       <title>ヘルプデスクOSS「Zammad」の日本語は23%しかなかった——5,123エントリを全訳して本家Weblateを100%にするまでと、今すぐ日本語化する手順</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-zammad-japanese-guide.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-zammad-japanese-guide.html</guid>
       <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
       <description>Zendeskの代替を探すと必ず候補に挙がるオープンソースヘルプデスク Zammadhttps://github.com/zammad/zammad（Ruby on Rails製・AGPL-3.0・GitHubスター5,800超）。メール・電話・チャットの問い合わせをチケットとして一元管理でき、セルフホストで月額ゼロ運用ができます。</description>
+    </item>
+    <item>
+      <title>GoogleのGemini 3.8 Flash登場とOpenAIによる新推論技術への警鐘 09-03</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-4.html</guid>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
     <item>
       <title>CrowdStrikeによるロシア製マルウェア摘発とH3-Worldが拓く「言語による世界制御」の最前線 09-03</title>
@@ -27,6 +34,20 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-codealmanac-linux-guide.html</guid>
       <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
       <description>Claude CodeやCodexでコードを書いていると、必ずぶつかる問題があります。エージェントは「なぜこの設計になっているか」「過去に何が壊れたか」を知らない。コードには現在の形しか書かれていないからです。</description>
+    </item>
+    <item>
+      <title>Todoist・Trelloの代替を自社サーバーに——タスク管理OSS「Vikunja」を5分で立てて日本語で使うまで。翻訳の穴9%（135キー）を埋めて本家に返した記録</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-vikunja-japanese-guide.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-vikunja-japanese-guide.html</guid>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
+      <description>Todoist や Trello、Microsoft To-Do を「便利だけど社外にタスクを置くのが気になる」「人数課金が積み上がる」と感じている会社向けに、自社サーバーで動くタスク管理OSS「Vikunja（ヴィクーニャ）」を実際に立てて、日本語で使えるところまで確かめました。</description>
+    </item>
+    <item>
+      <title>GoogleのGemini 3.8 Flash登場とOpenAIの新推論技術が話題に 09-03</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-3.html</guid>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
     <item>
       <title>Google、高速・高性能な「Gemini 3.8 Flash」を発表・OpenAIの新技術「再帰的深度」がAI安全の専門家を警戒させる 09-03</title>
@@ -263,27 +284,6 @@
       <title>OpenAIのAIエージェント戦略とCoinbaseによる株式トークン化の最前線 08-25</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-2.html</guid>
-      <pubDate>Tue, 25 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>ToMoEによるモデル最適化からOpenAIのAIエージェント戦略まで：最新AI動向 08-25</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news.html</guid>
-      <pubDate>Tue, 25 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>General Intuitionへの巨額投資とXiaomiによるApple対抗のCPU進化 08-25</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-4.html</guid>
-      <pubDate>Tue, 25 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>XiaomiのCPU進化とApple、Anthropicを巡る最新技術動向 08-25</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-3.html</guid>
       <pubDate>Tue, 25 Aug 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
