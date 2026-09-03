@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 03 Sep 2026 10:23:59 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 10:36:25 +0000</lastBuildDate>
     <item>
       <title>ヘルプデスクOSS「Zammad」の日本語は23%しかなかった——5,123エントリを全訳して本家Weblateを100%にするまでと、今すぐ日本語化する手順</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-zammad-japanese-guide.html</link>
@@ -55,6 +55,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-2.html</guid>
       <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Notion・Confluenceの代替を自社サーバーに——社内WikiOSS「Docmost」を日本語で立てて分かった、翻訳100%でも「日本語検索に穴がある」話と対策</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-docmost-japanese-guide.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-docmost-japanese-guide.html</guid>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
+      <description>社内の手順書・議事録・顧客メモを Notion や Confluence に置いている会社は多いと思います。「人数課金が積み上がる」「社外のクラウドに社内文書を置きたくない」という声に対して、自社サーバーで動く社内Wiki OSS「Docmost（ドックモスト）」を実際に立てて、日本語で使えるところまで確かめました。</description>
     </item>
     <item>
       <title>OpenAIのAstraモデルとGoogleの新ツールが導く、AIデザインとセキュリティの最前線 09-02</title>
@@ -278,13 +285,6 @@
       <link>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news.html</guid>
       <pubDate>Wed, 26 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>OpenAIのAIエージェント戦略とCoinbaseによる株式トークン化の最前線 08-25</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-2.html</guid>
-      <pubDate>Tue, 25 Aug 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
   </channel>
