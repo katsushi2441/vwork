@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI OSS技術解説 — VWork</title>
+    <link>https://katsushi2441.github.io/vwork/articles/</link>
+    <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
+    <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>ja</language>
+    <lastBuildDate>Thu, 03 Sep 2026 02:06:01 +0000</lastBuildDate>
+    <item>
+      <title>ヘルプデスクOSS「Zammad」の日本語は23%しかなかった——5,123エントリを全訳して本家Weblateを100%にするまでと、今すぐ日本語化する手順</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-zammad-japanese-guide.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-zammad-japanese-guide.html</guid>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
+      <description>Zendeskの代替を探すと必ず候補に挙がるオープンソースヘルプデスク Zammadhttps://github.com/zammad/zammad（Ruby on Rails製・AGPL-3.0・GitHubスター5,800超）。メール・電話・チャットの問い合わせをチケットとして一元管理でき、セルフホストで月額ゼロ運用ができます。</description>
+    </item>
+    <item>
+      <title>CrowdStrikeによるロシア製マルウェア摘発とH3-Worldが拓く「言語による世界制御」の最前線 09-03</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news.html</guid>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>CodeAlmanacとは？AIエージェントに「コードに書けない文脈」を持たせるYC発OSS——使い方と、macOS専用だったのでLinux対応を本家に送った話</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-codealmanac-linux-guide.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-codealmanac-linux-guide.html</guid>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
+      <description>Claude CodeやCodexでコードを書いていると、必ずぶつかる問題があります。エージェントは「なぜこの設計になっているか」「過去に何が壊れたか」を知らない。コードには現在の形しか書かれていないからです。</description>
+    </item>
+    <item>
+      <title>Google、高速・高性能な「Gemini 3.8 Flash」を発表・OpenAIの新技術「再帰的深度」がAI安全の専門家を警戒させる 09-03</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-2.html</guid>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>OpenAIのAstraモデルとGoogleの新ツールが導く、AIデザインとセキュリティの最前線 09-02</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-4.html</guid>
+      <pubDate>Wed, 02 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>OpenAIのAstraモデルが示すサイバーセキュリティへの脅威とGoogleのクリエイティブ戦略 09-02</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-3.html</guid>
+      <pubDate>Wed, 02 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Hugging FaceのWebGPU対応からOpenAI・Googleの最新動向まで：加速するAIインフラと実用化 09-02</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-2.html</guid>
+      <pubDate>Wed, 02 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>HuggingFaceとWebGPUが拓くブラウザ上でのローカルAI実行の新時代 09-02</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news.html</guid>
+      <pubDate>Wed, 02 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>NvidiaのMediaTek戦略と国防総省によるChatGPT・Grok導入の最前線 09-01</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-2.html</guid>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>AppleとOpenAIを巡るデータ流出問題とシンガポールのステーブルコイン規制動向 09-01</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-4.html</guid>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>NvidiaがMediaTekに巨額投資：Big Techへの対抗策と次世代AI・Web3の最前線 09-01</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news.html</guid>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>スター5.5万のSalesforce代替CRM「Twenty」は日本語で使えるか——構築して分かった日本語検索の穴と、触れるデモ</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-01-twenty-crm-japanese-demo.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-twenty-crm-japanese-demo.html</guid>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
+      <description>Salesforce代替のオープンソースCRMとして今いちばん勢いがあるのが Twentyhttps://github.com/twentyhq/twenty（TypeScript製・AGPL-3.0・GitHubスター55,000超・Y Combinator S23）です。「日本語で使えるのか」を確かめるために実際に構築したところ、翻訳は本家が100%完了</description>
+    </item>
+    <item>
+      <title>ペンタゴン独自のChatGPT導入やNVIDIAの価格問題、AppleによるOpenAI関連のデータ流出訴訟の動向 09-01</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-3.html</guid>
+      <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>DronesとChinaで読む：OpenAIのChatGPT Workの実態と米中ロボット技術の覇権争い 08-31</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news-2.html</guid>
+      <pubDate>Mon, 31 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Elon Muskのエネルギー戦略とCaterpillarが挑む産業AIの実装 08-31</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news.html</guid>
+      <pubDate>Mon, 31 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Elon Muskのガス・タービン戦略と米中ドローン技術競争の最前線 08-31</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news-3.html</guid>
+      <pubDate>Mon, 31 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Nvidiaの次世代戦略とSwift vs ブロックチェーンの覇権を巡る最新動向 08-30</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-4.html</guid>
+      <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Tencentのモデル圧縮技術とNvidiaの次世代AIインフラ戦略：最新ニュースまとめ 08-30</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-2.html</guid>
+      <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>GPUで読む：Hy4のプレビュー公開とTencentによる圧縮技術、そしてNvidiaが描く次世代AIインフラ 08-30</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-3.html</guid>
+      <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Nvidiaのシステム効率競争とQwen 3.8による高性能なローカルLLM実行 08-30</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news.html</guid>
+      <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>GLM-5.3の登場とROCm 10.0への期待：次世代AIインフラとモデルの進化 08-29</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-2.html</guid>
+      <pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Securityで読む：Anthropicの自己改善AI研究とGLM-5.3公開など、加速するAI技術の最前線 08-29</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-3.html</guid>
+      <pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>VirtualとVirtualizationで読む：Anthropicの自己改善AIと次世代インフラを巡る最新動向 08-29</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-4.html</guid>
+      <pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>MicronのHBM供給課題とAnthropicの法的勝利、Googleへの人材流動など最新テック動向 08-29</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news.html</guid>
+      <pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Claude Code Opus 5やNVIDIAによるllama.cpp買収など、AI技術の進化と安全性の最前線 08-28</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-3.html</guid>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Apodex 1.1のAgentic AI進化とNvidiaによるllama.cpp買収の噂を追う 08-28</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-2.html</guid>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>A49Bで読む：Claude Code Opus 5の自動化とNVIDIAによるllama.cpp買収：加速するAIインフラとモデル開… 08-28</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-4.html</guid>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>GoogleがAndroidアプリに課すメモリ制約とAIインフラの影響 08-28</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news.html</guid>
+      <pubDate>Fri, 28 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>NvidiaによるHugging Face買収とGLM・Qwenら最新モデルの台頭 08-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-4.html</guid>
+      <pubDate>Thu, 27 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Qwen3.8-Flash-Nextによるコスト効率化とEthereumの量子耐性強化に向けた最新動向 08-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news.html</guid>
+      <pubDate>Thu, 27 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>GLM-5.3-FlashのリリースとOpenAIが公表したHugging Face侵害に関する報告 08-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-2.html</guid>
+      <pubDate>Thu, 27 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>NvidiaがHugging Faceを130億ドルで買収へ：AmazonのGPU大量発注とAIインフラ競争の激化 08-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-3.html</guid>
+      <pubDate>Thu, 27 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>AppleのM6チップとQwen3.8-Flash-Nextが牽引する次世代AI・ハードウェアの最前線 08-26</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-4.html</guid>
+      <pubDate>Wed, 26 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>AppleのM6チップとOpenAIのJalapeño、そしてLayerZeroが拓く次世代インフラ 08-26</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-2.html</guid>
+      <pubDate>Wed, 26 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>OpenAIの独自チップ「Jalapeño」とAppleのM6チップが牽引する次世代AIインフラの動向 08-26</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-3.html</guid>
+      <pubDate>Wed, 26 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>OpenAIの独自チップとApple M5シリーズが牽引する次世代AIハードウェアの進化 08-26</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news.html</guid>
+      <pubDate>Wed, 26 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>OpenAIのAIエージェント戦略とCoinbaseによる株式トークン化の最前線 08-25</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-2.html</guid>
+      <pubDate>Tue, 25 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>ToMoEによるモデル最適化からOpenAIのAIエージェント戦略まで：最新AI動向 08-25</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news.html</guid>
+      <pubDate>Tue, 25 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>General Intuitionへの巨額投資とXiaomiによるApple対抗のCPU進化 08-25</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-4.html</guid>
+      <pubDate>Tue, 25 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>XiaomiのCPU進化とApple、Anthropicを巡る最新技術動向 08-25</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-25-ai-news-3.html</guid>
+      <pubDate>Tue, 25 Aug 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+  </channel>
+</rss>
