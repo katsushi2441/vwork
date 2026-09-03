@@ -4,6 +4,8 @@ emoji: "📚"
 type: "tech"
 topics: ["codealmanac", "claudecode", "codex", "oss", "systemd"]
 published: true
+title_hatena: "macOS専用のYC発OSS「CodeAlmanac」をLinuxで動かす——systemd対応を実装して本家PRを送った"
+title_blogger: "AIエージェントにコードの文脈を記憶させるCodeAlmanacを、Linuxで使えるようにした"
 ---
 
 Claude CodeやCodexでコードを書いていると、必ずぶつかる問題があります。**エージェントは「なぜこの設計になっているか」「過去に何が壊れたか」を知らない**。コードには現在の形しか書かれていないからです。
