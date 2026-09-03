@@ -1,0 +1,95 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数万件の技術資料PDFと過去の見積・報告書を「聞けば答える」ナレッジにした——買い切りのAIチャットボット×全文検索OSS「Namazu」×AI の組み合わせで成功した開発実績 | VWork バイブコーディングフレームワーク</title><meta name="description" content="科学系の技術専門雑誌数年分・数万ファイルのPDFを全文検索OSSのNamazuで索引し、当社の買い切り製品Kurage Light ChatBotを土台にしたAIチャットが、検索で当たった技術情報に基づいて回答する仕組みを開発しました。営業部門向けには過去の見積と報告書もナレッジ化し、類似案件の引き合いに過去事例と見積を添えて答えます。ベクトルDBもGPUも使わず、製品×OSS×AIの組み合わせで短期間に実用化した経緯と、成功の条件を書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-04-namazu-ai-chat-knowledge.html"><meta property="og:type" content="article"><meta property="og:title" content="数万件の技術資料PDFと過去の見積・報告書を「聞けば答える」ナレッジにした——買い切りのAIチャットボット×全文検索OSS「Namazu」×AI の組み合わせで成功した開発実績"><meta property="og:description" content="科学系の技術専門雑誌数年分・数万ファイルのPDFを全文検索OSSのNamazuで索引し、当社の買い切り製品Kurage Light ChatBotを土台にしたAIチャットが、検索で当たった技術情報に基づいて回答する仕組みを開発しました。営業部門向けには過去の見積と報告書もナレッジ化し、類似案件の引き合いに過去事例と見積を添えて答えます。ベクトルDBもGPUも使わず、製品×OSS×AIの組み合わせで短期間に実用化した経緯と、成功の条件を書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-04-namazu-ai-chat-knowledge.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="数万件の技術資料PDFと過去の見積・報告書を「聞けば答える」ナレッジにした——買い切りのAIチャットボット×全文検索OSS「Namazu」×AI の組み合わせで成功した開発実績"><meta name="twitter:description" content="科学系の技術専門雑誌数年分・数万ファイルのPDFを全文検索OSSのNamazuで索引し、当社の買い切り製品Kurage Light ChatBotを土台にしたAIチャットが、検索で当たった技術情報に基づいて回答する仕組みを開発しました。営業部門向けには過去の見積と報告書もナレッジ化し、類似案件の引き合いに過去事例と見積を添えて答えます。ベクトルDBもGPUも使わず、製品×OSS×AIの組み合わせで短期間に実用化した経緯と、成功の条件を書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "数万件の技術資料PDFと過去の見積・報告書を「聞けば答える」ナレッジにした——買い切りのAIチャットボット×全文検索OSS「Namazu」×AI の組み合わせで成功した開発実績", "description": "科学系の技術専門雑誌数年分・数万ファイルのPDFを全文検索OSSのNamazuで索引し、当社の買い切り製品Kurage Light ChatBotを土台にしたAIチャットが、検索で当たった技術情報に基づいて回答する仕組みを開発しました。営業部門向けには過去の見積と報告書もナレッジ化し、類似案件の引き合いに過去事例と見積を添えて答えます。ベクトルDBもGPUも使わず、製品×OSS×AIの組み合わせで短期間に実用化した経緯と、成功の条件を書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-04-namazu-ai-chat-knowledge.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-04", "dateModified": "2026-09-04", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>数万件の技術資料PDFと過去の見積・報告書を「聞けば答える」ナレッジにした——買い切りのAIチャットボット×全文検索OSS「Namazu」×AI の組み合わせで成功した開発実績</h1><p class="meta">2026-09-04</p><p>名古屋でAIシステム開発の会社をやっています。今回は、<strong>自社の買い切り製品と、枯れたオープンソースと、AI</strong>の3つを組み合わせて短期間で実用になった開発実績を1つ書きます。全部を自作もせず、全部をSaaSに預けもしない。この「組み合わせ方」そのものが成果だと思っているので、構成の考え方を中心にまとめます。</p>
+<ul>
+<li>土台にした製品: <a href="https://kappstore.exbridge.jp/app.php?id=224e141f77bd07a8&amp;ref=vwork-namazu">Kurage Light ChatBot（買い切り・kappstore）</a></li>
+<li>検索役にしたOSS: <a href="https://www.namazu.org/">Namazu</a>（日本語全文検索システム）</li>
+</ul>
+<h2>何を作ったか</h2>
+<p>対象は、<strong>科学系の技術専門雑誌の数年分・数万ファイルのPDF</strong>です。これまでは「あの号のあの記事に書いてあったはず」を人が探していました。</p>
+<p>作ったのは、次の2段構えです。</p>
+<ol>
+<li><strong>Namazu が全文検索の役</strong>——数万PDFの本文を索引し、キーワードで該当箇所を返す</li>
+<li><strong>AIチャットが回答の役</strong>——質問から検索語を組み立てて Namazu に問い合わせ、当たった技術情報だけを根拠に日本語で答える</li>
+</ol>
+<p>利用者は検索語を考えなくてよく、「◯◯の条件で△△が起きる理由は？」と聞けば、該当記事の内容に基づいた答えと出典が返ります。「探す」が「聞く」に変わりました。</p>
+<h2>なぜベクトルDBではなくNamazuなのか</h2>
+<p>いま流行りの RAG はベクトルDBで意味検索をしますが、この案件では <strong>Namazu のほうが合っていました</strong>。理由は3つです。</p>
+<ul>
+<li><strong>専門用語・型番・規格番号はキーワード検索のほうが確実に当たる</strong>。技術資料の質問はまさにそういう語で来ます。意味検索は「近い文書」を返しますが、「その語が書いてある文書」を外すことがあります</li>
+<li><strong>説明できる</strong>。どの語がどのページに当たったかが人にも見える。ベクトル検索は「なぜこれが出たか」を説明できません</li>
+<li><strong>軽い</strong>。埋め込みモデルもGPUも要らず、数万PDFでも普通のサーバーで索引と検索が回ります。完全に社内で閉じられるので、外に出せない技術資料でも使えます</li>
+</ul>
+<p>つまり「検索は枯れた技術に任せ、AIは読んで答える役に限定する」構成です。AIの得意不得意をそのまま役割分担にしました。</p>
+<h2>成功の条件は「テキストのPDF」だった</h2>
+<p>正直に書くと、この構成が成功したのは<strong>対象が本文テキストのPDFだったから</strong>です。専門用語の本文が文字として入っていて、画像だけのページや手書きが無い。だから Namazu の索引に本文がそのまま入り、検索で当たったページをそのままAIに渡せました。</p>
+<p>逆に言えば、スキャンしただけのPDFや手書きの図面が混ざる資料では、先にOCRの工程が要ります。「全文検索×AI」を検討するときは、まず資料がテキストとして読めるかを確かめるのが最初の分かれ道です。</p>
+<h2>営業部門向け——過去の見積と報告書もナレッジにした</h2>
+<p>技術資料だけでなく、<strong>営業部門向けには過去の見積と、成果物である報告書</strong>も Namazu で索引しました。</p>
+<p>やりたかったのは、類似案件の引き合いが来たときに「前に似た案件をやっていないか」「そのときいくらで見積もったか」「成果物はどういう内容だったか」を、担当者の記憶に頼らず引き出すことです。引き合いの内容を入力すると、過去の類似案件を報告書の内容とともに提示し、<strong>当時の見積も含めて回答します</strong>。</p>
+<p>見積の根拠が過去の実績から出てくるので、担当者が変わっても提案の速さと精度が落ちません。技術資料の「探すを聞くに変える」と同じ仕組みが、営業のナレッジにもそのまま効きました。</p>
+<h2>土台にした製品——Kurage Light ChatBot</h2>
+<p>AIチャット部分は、当社が kappstore で販売している買い切りの <a href="https://kappstore.exbridge.jp/app.php?id=224e141f77bd07a8&amp;ref=vwork-namazu">Kurage Light ChatBot</a> を土台にしています。PHP1ファイルで動き、知識を固定の順序で注入して価格や数値を正確に引用する設計、公開モードと合言葉モードの切替、ストリーミング表示、レート制限、質問ログといった「チャットボットに必ず要る部分」が最初から揃っています。</p>
+<p>今回はその知識の取り込み口を「フォルダのMarkdown」から「Namazu の検索結果」に差し替えました。土台があるので、開発の中心は Namazu との接続と、質問から検索語を組み立てる部分、根拠の出典をつける部分に絞れました。<strong>製品を土台にすると、案件ごとに作るのは差分だけ</strong>になります。</p>
+<h2>製品×OSS×AI、それぞれの役割</h2>
+<table>
+<thead>
+<tr>
+<th>役割</th>
+<th>担当</th>
+<th>選んだ理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>会話の入口・ログ・制限・表示</td>
+<td>自社製品（Kurage Light ChatBot）</td>
+<td>買い切りで揃っている。案件ごとに作り直さない</td>
+</tr>
+<tr>
+<td>数万PDFの索引と検索</td>
+<td>OSS（Namazu）</td>
+<td>専門用語に強く、説明でき、軽い。社内で閉じる</td>
+</tr>
+<tr>
+<td>質問の理解と日本語での回答</td>
+<td>AI（OpenAI互換API）</td>
+<td>検索結果を読んで答える役に限定。根拠なしで書かせない</td>
+</tr>
+</tbody>
+</table>
+<p>どれか1つで全部をやろうとすると、費用か精度か期間のどれかが破綻します。組み合わせると、それぞれの得意なところだけを使えます。</p>
+<h2>同じ構成が向いている会社</h2>
+<ul>
+<li>技術資料・仕様書・論文・社内報告書が<strong>テキストのPDFで数千〜数万件</strong>あり、探すのに時間がかかっている</li>
+<li>資料を<strong>外部のクラウドに置けない</strong></li>
+<li>過去の<strong>見積・提案書・報告書</strong>が担当者ごとに散らばっていて、類似案件のたびに探している</li>
+<li>ベクトルDBやGPUのために新しいサーバー基盤を増やしたくない</li>
+</ul>
+<p>土台になる製品は kappstore で買い切りで提供しています。Namazu との接続や自社資料への合わせ込みは、名古屋市内なら <a href="https://exbridge.jp/nagoya-system-development.html?ref=vwork-namazu">AI導入お試し実験（初日3時間は無料）</a> で、実際の資料を使って動くところまで試せます。</p>
+<ul>
+<li>製品ページ: <a href="https://kappstore.exbridge.jp/app.php?id=224e141f77bd07a8&amp;ref=vwork-namazu">AIチャットボットを買い切りで（Kurage Light ChatBot）</a></li>
+<li>製品の紹介: <a href="https://kurage.exbridge.jp/ai-chatbot-kaikiri.php?ref=vwork-namazu">AIチャットボットを買い切りで持つ</a></li>
+<li>Namazu 公式: <a href="https://www.namazu.org/">namazu.org</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
