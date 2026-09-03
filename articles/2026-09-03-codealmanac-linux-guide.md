@@ -65,3 +65,5 @@ codealmanac automation status   # systemdユーザータイマーとして登録
 当社はこの型で、8月にCRMの[Krayin日本語化(2,066キー・本家マージ済み)](2026-08-18-krayin-crm-japanese-guide.html)、今週ヘルプデスクの[Zammad日本語化(5,123エントリ・本家Weblate 100%)](2026-09-03-zammad-japanese-guide.html)を本家に還元してきました。今回は翻訳ではなく**機能実装での貢献**です。OSSの「日本の会社が使えない理由」を実測で特定し、直して本家に返す——保守は本家に引き継がれ、日本のユーザー全員が使えるようになります。
 
 AIエージェントに社内の判断・文脈を記憶させる運用（CLAUDE.mdやメモリの書式設計）は当社が日々実践している領域です。導入や運用設計の相談は[こちら](https://kurage.exbridge.jp/)からどうぞ。
+
+導入から社内運用（systemd タイマーでの自動更新・CLAUDE.md の書式・引き継ぎ）までの手順書とテンプレート一式は **[CodeAlmanac 日本語導入・運用キット（税込5,500円・買い切り）](https://kappstore.exbridge.jp/app.php?id=b81d730eb535b454&ref=vwork-codealmanac)** として Kurage App Store で販売しています。OSS そのものの解説は [CodeAlmanac の紹介ページ](https://kurage.exbridge.jp/oss/codealmanac/) にまとめています。
