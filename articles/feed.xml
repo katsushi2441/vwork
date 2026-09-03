@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 03 Sep 2026 20:06:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 20:25:38 +0000</lastBuildDate>
     <item>
       <title>Trelloの代替を自社サーバーに——カンバンOSS「Planka」を日本語で立てて分かった、翻訳の穴56キーと「第三者向けホスティングは有料」というライセンスの線引き</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-planka-japanese-guide.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-planka-japanese-guide.html</guid>
       <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
       <description>Trello の月額をやめて、同じ使い勝手のカンバンを自社サーバーに置きたい。その候補として名前がよく挙がる Planka（プランカ） を、実際に立てて日本語で使えるところまで確かめました。結論を先に書きます。</description>
+    </item>
+    <item>
+      <title>日本語が一切ないOSSを、日本語にする——書類管理OSS「Docspell」の画面1,056語を訳してElmで実装し、コンパイルを通すまでの全記録</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-docspell-japanese-guide.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-docspell-japanese-guide.html</guid>
+      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
+      <description>「日本語対応あり」と書いてある OSS の翻訳率を測る話をこれまで3本書きました（Vikunja 91%、Docmost 100%、Planka 88%）。今回は逆で、日本語が一切入っていない OSS を、ゼロから日本語にした記録です。対象は、スキャンした書類・メール添付・PDF を取り込んで整理する書類管理OSS「Docspell（ドックスペル）」。英語・</description>
     </item>
     <item>
       <title>NvidiaがHugging Faceを買収へ：QwenやK2-Horizonなど最新AIモデルの動向まとめ 09-04</title>
@@ -277,13 +284,6 @@
       <title>AppleのM6チップとQwen3.8-Flash-Nextが牽引する次世代AI・ハードウェアの最前線 08-26</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-4.html</guid>
-      <pubDate>Wed, 26 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>AppleのM6チップとOpenAIのJalapeño、そしてLayerZeroが拓く次世代インフラ 08-26</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-2.html</guid>
       <pubDate>Wed, 26 Aug 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
