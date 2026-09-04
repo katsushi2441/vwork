@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 03 Sep 2026 20:25:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 04:53:20 +0000</lastBuildDate>
     <item>
       <title>Trelloの代替を自社サーバーに——カンバンOSS「Planka」を日本語で立てて分かった、翻訳の穴56キーと「第三者向けホスティングは有料」というライセンスの線引き</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-planka-japanese-guide.html</link>
@@ -25,6 +25,27 @@
       <title>NvidiaがHugging Faceを買収へ：QwenやK2-Horizonなど最新AIモデルの動向まとめ 09-04</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news.html</guid>
+      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>whisper.cppで日本語の文字起こしを自社サーバーで動かす——使い方と実測（47秒の会議音声を27秒・文字誤り率2.7%）、AI議事録まで自動化する構成</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-whisper-cpp-japanese-transcription.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-whisper-cpp-japanese-transcription.html</guid>
+      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
+      <description>会議の録音を文字に起こしたい。ただし録音を外部のクラウドに送りたくない、分単位の課金も避けたい。そういう会社向けに、OpenAI の音声認識モデル Whisper を C++ に移植した whisper.cpp を自社サーバーで動かし、日本語の文字起こしがどのくらいの速さと精度で動くかを実測しました。当社の買い切り製品 Kurage AI MOMhttps:</description>
+    </item>
+    <item>
+      <title>OpenAIのGPT-6 Astraへの期待とMetaによるデータ収集戦略、そしてWeb3の新潮流 09-04</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-3.html</guid>
+      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Modelで読む：OpenAIのGPT-6 Astra発表とQwenモデルの高速化など、最新のAI・技術トレンド 09-04</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-2.html</guid>
       <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
@@ -264,27 +285,6 @@
       <link>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news.html</guid>
       <pubDate>Thu, 27 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>GLM-5.3-FlashのリリースとOpenAIが公表したHugging Face侵害に関する報告 08-27</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-2.html</guid>
-      <pubDate>Thu, 27 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>NvidiaがHugging Faceを130億ドルで買収へ：AmazonのGPU大量発注とAIインフラ競争の激化 08-27</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-3.html</guid>
-      <pubDate>Thu, 27 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>AppleのM6チップとQwen3.8-Flash-Nextが牽引する次世代AI・ハードウェアの最前線 08-26</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-26-ai-news-4.html</guid>
-      <pubDate>Wed, 26 Aug 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
   </channel>

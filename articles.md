@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [whisper.cppで日本語の文字起こしを自社サーバーで動かす——使い方と実測（47秒を27秒・誤り率2.7%）、AI議事録まで自動化する構成](2026-09-04-whisper-cpp-japanese-transcription.html)
 - [OpenAIのGPT-6 Astraへの期待とMetaによるデータ収集戦略、そしてWeb3の新潮流 09-04](2026-09-04-ai-news-3.html)
 - [Modelで読む：OpenAIのGPT-6 Astra発表とQwenモデルの高速化など、最新のAI・技術トレンド 09-04](2026-09-04-ai-news-2.html)
 - [日本語が一切ないOSSを、日本語にする——書類管理OSS「Docspell」の画面1,056語を訳してElmで実装し、コンパイルを通すまでの全記録](2026-09-04-docspell-japanese-guide.html)
