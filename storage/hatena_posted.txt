@@ -479,3 +479,4 @@ url2pub-i18n-hatena-summary
 2026-09-04-ai-news-2
 2026-09-04-ai-news-3
 2026-09-04-whisper-cpp-japanese-transcription
+2026-09-04-fess-fulltext-search-ai-chat
