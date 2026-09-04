@@ -82,3 +82,5 @@ QGISやOSSで組む意味が出るのは、次のどれかに当てはまると�
 - 自動化・自社データ結合・大量処理をしたくなったら、MapLibre＋Valhalla＋PostGISでWeb化する
 
 「うちの店舗リストで一括処理したい」「会員データと重ねた商圏レポートを自動で出したい」といった仕組み化は、[バイブプロトタイピング（税込110,000円〜）](https://kurage.exbridge.jp/vibe-prototype.html)で承っています。どのデータをどう重ねるべきかの相談だけでも構いません。
+
+QGIS の操作を省いて「住所と分数だけ」で同じ計算をしたい方向けに、当社は同じデータ（国勢調査500mメッシュ・経済センサス）と道路網ベースの到達圏で動く商圏分析ツールを公開しています。無料で試せます: [Kurage 商圏分析（住所ひとつで徒歩圏の人口・世帯・事業所）](https://kurage.exbridge.jp/kshoken.php/?ref=vwork-shoken)。自社サーバーに置く設置手順つきの買い切り版は [Kurage App Store（税込55,000円）](https://kappstore.exbridge.jp/app.php?id=a5ac4b9f1fdb6d19&ref=vwork-shoken) にあります。
