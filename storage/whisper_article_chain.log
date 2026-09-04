@@ -1,0 +1,13 @@
+public: HTTP 200 (try 5)
+一覧に表示: 1
+== hatena/blogger ==
+  blogger(衛星): 会議の録音を社外に出さずに文字起こしする。whisper.cppを自社サーバーで動かした記録
+  hatena(衛星): GPU無しの自社サーバーで日本語文字起こし——whisper.cppの使い方と実測（誤り率2.7%・実時間の0.57倍）
+done.
+markers: hatena=1 blogger=1
+== video ==
+[2026-09-04 13:54:56] 送信完了: job_id=0c8995cc548246d2
+[2026-09-04 13:54:56] 動画ページ: https://kurage.exbridge.jp/kuragev.php?id=0c8995cc548246d2
+== AIxSNS ==
+AIxSNS article: 12889
+CHAIN_DONE
