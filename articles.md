@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [英語PDFを社外に出さずに日本語で読む——PDFMathTranslateを自社サーバーに立てて15ページを3分・費用0円で翻訳した実測と、思考型モデルで5.8倍遅くなる罠](2026-09-04-pdf-translation-selfhosted.html)
 - [OpenAIのGPT-6 Astra登場とMetaのデータ戦略：次世代AI進化の最前線 09-04](2026-09-04-ai-news-4.html)
 - [NamazuからFessへ——日本発の全文検索OSS「Fess」をdockerで立てて45本のPDFを索引し、ローカルLLMで「聞けば答える」を10問で実測（検索10/10・回答9/10）](2026-09-04-fess-fulltext-search-ai-chat.html)
 - [whisper.cppで日本語の文字起こしを自社サーバーで動かす——使い方と実測（47秒を27秒・誤り率2.7%）、AI議事録まで自動化する構成](2026-09-04-whisper-cpp-japanese-transcription.html)

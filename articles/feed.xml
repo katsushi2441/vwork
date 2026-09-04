@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 04 Sep 2026 05:29:27 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 10:42:45 +0000</lastBuildDate>
     <item>
       <title>NamazuからFessへ——日本発の全文検索OSS「Fess」をdockerで立てて45本のPDFを索引し、ローカルLLMで「聞けば答える」を10問で実測（検索10/10・回答9/10）</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-fess-fulltext-search-ai-chat.html</link>
@@ -50,9 +50,23 @@
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
     <item>
+      <title>英語PDFを社外に出さずに日本語で読む——PDFMathTranslateを自社サーバーに立てて15ページを3分・費用0円で翻訳した実測と、思考型モデルで5.8倍遅くなる罠</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-pdf-translation-selfhosted.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-pdf-translation-selfhosted.html</guid>
+      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
+      <description>英語の仕様書や論文を日本語で読みたい。ただしその文書をクラウドの翻訳サービスに送りたくない。技術資料、未公開の仕様書、契約書を扱う会社では、これが導入の壁になります。</description>
+    </item>
+    <item>
       <title>Modelで読む：OpenAIのGPT-6 Astra発表とQwenモデルの高速化など、最新のAI・技術トレンド 09-04</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-2.html</guid>
+      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>OpenAIのGPT-6 Astra登場とMetaのデータ戦略：次世代AI進化の最前線 09-04</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-4.html</guid>
       <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
@@ -271,20 +285,6 @@
       <link>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-4.html</guid>
       <pubDate>Fri, 28 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>GoogleがAndroidアプリに課すメモリ制約とAIインフラの影響 08-28</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news.html</guid>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>NvidiaによるHugging Face買収とGLM・Qwenら最新モデルの台頭 08-27</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-27-ai-news-4.html</guid>
-      <pubDate>Thu, 27 Aug 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
   </channel>
