@@ -1,0 +1,165 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「いちばん近い避難所」を出すシステムは、危ない——避難所まで徒歩何分かを返すサービスを作って、災害種別で絞る設計にした話 | VWork バイブコーディングフレームワーク</title><meta name="description" content="住所から最寄りの指定緊急避難場所までの徒歩時間を返すサービスを公開しました。全国115,447件を収録しています。作りながら気づいたのは、単に最寄りを返すシステムは危ないということでした。指定緊急避難場所は災害種別ごとに指定されていて、地震で使える場所が洪水では使えないことがあります。崖のそばの広場は地震では安全でも土砂災害では危険です。前回のハザードマップと同じく、判定にはデータ時点を必ず添えました。市町村ごとに更新時期が違うためです。PostGISをやめてSQLiteにした理由も書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-05-krefuge-evacuation-map.html"><meta property="og:type" content="article"><meta property="og:title" content="「いちばん近い避難所」を出すシステムは、危ない——避難所まで徒歩何分かを返すサービスを作って、災害種別で絞る設計にした話"><meta property="og:description" content="住所から最寄りの指定緊急避難場所までの徒歩時間を返すサービスを公開しました。全国115,447件を収録しています。作りながら気づいたのは、単に最寄りを返すシステムは危ないということでした。指定緊急避難場所は災害種別ごとに指定されていて、地震で使える場所が洪水では使えないことがあります。崖のそばの広場は地震では安全でも土砂災害では危険です。前回のハザードマップと同じく、判定にはデータ時点を必ず添えました。市町村ごとに更新時期が違うためです。PostGISをやめてSQLiteにした理由も書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-05-krefuge-evacuation-map.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「いちばん近い避難所」を出すシステムは、危ない——避難所まで徒歩何分かを返すサービスを作って、災害種別で絞る設計にした話"><meta name="twitter:description" content="住所から最寄りの指定緊急避難場所までの徒歩時間を返すサービスを公開しました。全国115,447件を収録しています。作りながら気づいたのは、単に最寄りを返すシステムは危ないということでした。指定緊急避難場所は災害種別ごとに指定されていて、地震で使える場所が洪水では使えないことがあります。崖のそばの広場は地震では安全でも土砂災害では危険です。前回のハザードマップと同じく、判定にはデータ時点を必ず添えました。市町村ごとに更新時期が違うためです。PostGISをやめてSQLiteにした理由も書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「いちばん近い避難所」を出すシステムは、危ない——避難所まで徒歩何分かを返すサービスを作って、災害種別で絞る設計にした話", "description": "住所から最寄りの指定緊急避難場所までの徒歩時間を返すサービスを公開しました。全国115,447件を収録しています。作りながら気づいたのは、単に最寄りを返すシステムは危ないということでした。指定緊急避難場所は災害種別ごとに指定されていて、地震で使える場所が洪水では使えないことがあります。崖のそばの広場は地震では安全でも土砂災害では危険です。前回のハザードマップと同じく、判定にはデータ時点を必ず添えました。市町村ごとに更新時期が違うためです。PostGISをやめてSQLiteにした理由も書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-05-krefuge-evacuation-map.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-05", "dateModified": "2026-09-05", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>「いちばん近い避難所」を出すシステムは、危ない——避難所まで徒歩何分かを返すサービスを作って、災害種別で絞る設計にした話</h1><p class="meta">2026-09-05</p><p>名古屋でAIシステム開発の会社をやっています。</p>
+<p>住所を入れると、最寄りの避難所まで<strong>道路をたどって徒歩何分</strong>かを返すサービスを公開しました。全国47都道府県・<strong>115,447件</strong>を収録しています。</p>
+<p><a href="https://kurage.exbridge.jp/krefuge.php/">Kurage 避難所マップ</a>（無料で試せます）</p>
+<p>先日公開した<a href="https://kurage.exbridge.jp/khazard.php/">土砂災害ハザードマップ</a>の続編です。「その土地が警戒区域か」を調べたあとに来るのは「じゃあどこへ逃げるのか」なので、そこを埋めました。</p>
+<p>ただ、この記事で書きたいのは機能の話ではありません。<strong>作りながら気づいた、危ない設計</strong>の話です。</p>
+<h2>「いちばん近い避難所」を返すと、危ない</h2>
+<p>最初に考えていた仕様は単純でした。住所を点にして、いちばん近い避難所を返す。それだけです。</p>
+<p>データを見ていて、手が止まりました。</p>
+<p>国土地理院が配布している指定緊急避難場所のデータには、施設ごとにこういう列が並んでいます。</p>
+<table>
+<thead>
+<tr>
+<th>列</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flood</td>
+<td>洪水</td>
+</tr>
+<tr>
+<td>landslid</td>
+<td>崖崩れ・土石流・地すべり</td>
+</tr>
+<tr>
+<td>surge</td>
+<td>高潮</td>
+</tr>
+<tr>
+<td>quake</td>
+<td>地震</td>
+</tr>
+<tr>
+<td>tsunami</td>
+<td>津波</td>
+</tr>
+<tr>
+<td>bigfire</td>
+<td>大規模な火事</td>
+</tr>
+<tr>
+<td>inlflood</td>
+<td>内水氾濫</td>
+</tr>
+<tr>
+<td>volcano</td>
+<td>火山現象</td>
+</tr>
+</tbody>
+</table>
+<p><strong>指定緊急避難場所は、災害種別ごとに指定されています。</strong> 全部の災害に使えるわけではありません。</p>
+<p>言われてみれば当たり前です。崖のそばの広場は、地震のときには倒れてくる建物がないので安全です。しかし土砂災害のときは、まさにそこが危険です。川沿いの公園は地震では使えても、洪水では使えません。</p>
+<p>収録件数を数えると、こうでした。</p>
+<table>
+<thead>
+<tr>
+<th>災害種別</th>
+<th>件数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>地震</td>
+<td>88,177</td>
+</tr>
+<tr>
+<td>洪水</td>
+<td>71,783</td>
+</tr>
+<tr>
+<td>崖崩れ・土石流・地すべり</td>
+<td>67,289</td>
+</tr>
+<tr>
+<td>大規模な火事</td>
+<td>43,105</td>
+</tr>
+<tr>
+<td>津波</td>
+<td>40,393</td>
+</tr>
+<tr>
+<td>内水氾濫</td>
+<td>38,621</td>
+</tr>
+<tr>
+<td>高潮</td>
+<td>25,157</td>
+</tr>
+<tr>
+<td>火山現象</td>
+<td>10,723</td>
+</tr>
+</tbody>
+</table>
+<p>全体は115,447件です。<strong>地震で使えるのは76%、津波で使えるのは35%</strong>しかありません。</p>
+<p>つまり「いちばん近い避難所はここです」と返すシステムは、<strong>その災害では使えない場所へ人を誘導する</strong>可能性があります。平時に使う分には気づきません。危ないのは、実際に災害が起きたときです。</p>
+<p>そこで、災害種別を選ぶと<strong>その災害に対して指定されている場所だけ</strong>を対象にする設計にしました。地図アプリの「近くの施設」とは別物にしたかった、というのが正直なところです。</p>
+<h2>実際に試すと、差が出ます</h2>
+<p>前回のハザードマップの記事で書いた住所（土砂災害警戒区域の縁から14mの場所）で試してみます。</p>
+<p><strong>土砂災害</strong>で絞ると、こうなりました。</p>
+<pre><code>旭支所（豊田市小渡町船戸）      徒歩49分・4,174m
+串原福祉センター（恵那市串原）   徒歩66分・5,643m
+</code></pre>
+<p><strong>徒歩49分</strong>です。2件目は県境を越えて岐阜県に入っています。</p>
+<p>山間部ではこうなります。都市部だとまったく違って、名古屋駅なら徒歩6分・521mでした。この差自体が、知っておく価値のある情報だと思っています。</p>
+<h2>徒歩時間は直線距離では出せない</h2>
+<p>「何分」を出すのに直線距離を使うと嘘になります。川や線路や高速道路があると、実際には大きく迂回するからです。</p>
+<p>道路網をたどった歩行経路で計算しています。オープンソースの経路探索エンジン <strong>Valhalla</strong> に、1地点から複数目的地への所要時間をまとめて問い合わせています。候補は先に20件へ絞ってから投げるので、応答は1秒前後です。</p>
+<p>ここでひとつ決めたことがあります。<strong>Valhalla を使わない構成でも動くようにした</strong>上で、その場合は直線距離×徒歩80m/分で計算し、<strong>「直線距離で計算しました」と結果に明記する</strong>ようにしました。</p>
+<p>どちらで計算したか分からないまま数字だけ出すのは、精度を黙って落とすのと同じです。買い切り版を自社サーバーに置く方が Valhalla まで用意するとは限らないので、ここは譲れませんでした。</p>
+<h2>データの時点は、市町村ごとに違う</h2>
+<p>前回のハザードマップで「判定にはデータ時点を必ず添える」という原則を立てました。今回も同じですが、事情が少し違います。</p>
+<p>このデータは<strong>市町村ごとに更新時期がバラバラ</strong>です。国土地理院が市町村別の公開日・最終更新日を1,747件分公開しているので、それを取り込んで、判定結果にその市町村の時点を出しています。</p>
+<pre><code>豊田市   → 2025-11-22
+名古屋市 → 2026-03-09
+</code></pre>
+<p>同じ画面でも、調べた住所によって表示される時点が変わります。全国一律で「2026-06-12のデータです」と出すほうが実装は簡単ですが、それだと<strong>その市町村の情報がいつのものか</strong>は分かりません。</p>
+<p>時点が確認できないデータでは判定しない、という方針も引き継いでいます。</p>
+<h2>PostGIS をやめました</h2>
+<p>前回のハザードマップは PostGIS を使っています。土砂災害警戒区域は<strong>面</strong>なので、点が面の中に入るかを判定する必要があったからです。</p>
+<p>今回、同じ構成にしようとして、やめました。<strong>避難所は点だからです。</strong></p>
+<p>必要なのは「近い順に並べる」だけで、面の包含判定は要りません。それなら SQLite の R-tree 索引で足ります。115,447点なら一瞬です。</p>
+<p>結果として、買い切り版に <strong>Docker も PostgreSQL も要らなくなりました。</strong> 必要なのは Python と GDAL だけです。取り込み後のデータは30MBほどです。</p>
+<p>技術的に高度なほうを選びたくなるのですが、<strong>要らないものを外すほうが製品としては強くなる</strong>、というのが今回の学びでした。設置でつまずく箇所が減ります。</p>
+<h2>つまずいた2点</h2>
+<p>同じことをやる方のために書いておきます。</p>
+<p><strong>1. <code>.cpg</code> が UTF-8 なのに変換指定を付けると壊れる</strong></p>
+<p>配布 Shapefile には <code>.cpg</code> ファイルが付いていて、UTF-8 と宣言されています。ここで <code>ogr2ogr</code> に <code>-lco ENCODING=UTF-8</code> を付けると、<strong>二重変換で日本語が全滅</strong>します。付けないのが正解でした。</p>
+<p><strong>2. 元データに、途中で切れた日本語がある</strong></p>
+<p>取り込みが <code>UnicodeDecodeError</code> で止まりました。調べると、ファイルの後ろのほうに <code>\xe3\x80</code> で終わっているバイト列がありました。「、」（<code>\xe3\x80\x81</code>）の3バイト目が欠けています。</p>
+<p>254バイトのフィールド長で打ち切られた結果、日本語1文字の途中で切れていました。備考欄なので、施設名・住所・災害種別フラグには影響しません。エラーで止めるのではなく、置換して読み進める方針にして、<strong>なぜそうしたかをコードにコメントで残しました</strong>。</p>
+<h2>使ってほしい場面</h2>
+<p>不動産・建設の方が、物件や施工地の避難経路を当たり付けするのが本来の想定です。総務・防災の担当者が、事業所から避難所までの所要時間を把握するのにも使えます。</p>
+<p>介護施設や保育園のように、<strong>自力で早く動けない人を預かっている施設</strong>では、徒歩何分かは避難計画そのものに関わります。</p>
+<p>もちろん、ご自宅や実家で試すのも無料です。</p>
+<h2>最後に</h2>
+<p>出典は国土地理院の指定緊急避難場所データで、CC BY 4.0 のもとで利用しています。</p>
+<p>本サービスの判定は参考情報で、公的な証明ではありません。このデータは<strong>最新でない場合や未掲載の場合があります</strong>。最終的な確認は必ず当該市町村の情報で行ってください。この注意書きは、国土地理院の利用規約でも第三者提供時に伝えるよう求められているものです。</p>
+<p>自社サーバーに置ける買い切り版も<a href="https://kappstore.exbridge.jp/app.php?id=162f155897390072">Kurage App Store</a>に出しました。ソースコードと設置手順書を同梱しています。</p>
+<p>同じような「要らないものを外す」判断が、御社のシステムにもあるかもしれません。ご相談は<a href="https://exbridge.jp/contact.php">お問い合わせ</a>からどうぞ。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
