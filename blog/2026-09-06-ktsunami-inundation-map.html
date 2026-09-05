@@ -1,0 +1,115 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「区域外です」と答えるシステムが、いちばん危ない——津波浸水想定マップを作って、東京都で手が止まった話 | VWork バイブコーディングフレームワーク</title><meta name="description" content="住所から津波で何メートル浸かる想定かを返すサービスを公開しました。全国3,795,197セル・35都道府県を収録しています。作っている途中、東京都の住所が「区域外」と表示されて手が止まりました。東京都は沿岸があるのに、国のオープンデータに津波浸水想定が登録されていなかったのです。データが無いことと安全なことは違います。「区域外」「未収録」「内陸で想定不要」の3つを区別する設計にした理由と、都道府県ごとに整備年度が最大6年違うという発見、ポリゴンが矩形グリッドである性質を利用してPostGISなしで作った話を書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-06-ktsunami-inundation-map.html"><meta property="og:type" content="article"><meta property="og:title" content="「区域外です」と答えるシステムが、いちばん危ない——津波浸水想定マップを作って、東京都で手が止まった話"><meta property="og:description" content="住所から津波で何メートル浸かる想定かを返すサービスを公開しました。全国3,795,197セル・35都道府県を収録しています。作っている途中、東京都の住所が「区域外」と表示されて手が止まりました。東京都は沿岸があるのに、国のオープンデータに津波浸水想定が登録されていなかったのです。データが無いことと安全なことは違います。「区域外」「未収録」「内陸で想定不要」の3つを区別する設計にした理由と、都道府県ごとに整備年度が最大6年違うという発見、ポリゴンが矩形グリッドである性質を利用してPostGISなしで作った話を書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-06-ktsunami-inundation-map.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「区域外です」と答えるシステムが、いちばん危ない——津波浸水想定マップを作って、東京都で手が止まった話"><meta name="twitter:description" content="住所から津波で何メートル浸かる想定かを返すサービスを公開しました。全国3,795,197セル・35都道府県を収録しています。作っている途中、東京都の住所が「区域外」と表示されて手が止まりました。東京都は沿岸があるのに、国のオープンデータに津波浸水想定が登録されていなかったのです。データが無いことと安全なことは違います。「区域外」「未収録」「内陸で想定不要」の3つを区別する設計にした理由と、都道府県ごとに整備年度が最大6年違うという発見、ポリゴンが矩形グリッドである性質を利用してPostGISなしで作った話を書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「区域外です」と答えるシステムが、いちばん危ない——津波浸水想定マップを作って、東京都で手が止まった話", "description": "住所から津波で何メートル浸かる想定かを返すサービスを公開しました。全国3,795,197セル・35都道府県を収録しています。作っている途中、東京都の住所が「区域外」と表示されて手が止まりました。東京都は沿岸があるのに、国のオープンデータに津波浸水想定が登録されていなかったのです。データが無いことと安全なことは違います。「区域外」「未収録」「内陸で想定不要」の3つを区別する設計にした理由と、都道府県ごとに整備年度が最大6年違うという発見、ポリゴンが矩形グリッドである性質を利用してPostGISなしで作った話を書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-06-ktsunami-inundation-map.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-06", "dateModified": "2026-09-06", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>「区域外です」と答えるシステムが、いちばん危ない——津波浸水想定マップを作って、東京都で手が止まった話</h1><p class="meta">2026-09-06</p><p>名古屋でAIシステム開発の会社をやっています。</p>
+<p>住所を入れると、その地点が<strong>津波で何メートル浸かる想定か</strong>を返すサービスを公開しました。全国<strong>3,795,197セル・35都道府県</strong>を収録しています。</p>
+<p><a href="https://kurage.exbridge.jp/ktsunami.php/">Kurage 津波浸水想定マップ</a>（無料で試せます）</p>
+<p><a href="https://kurage.exbridge.jp/khazard.php/">土砂災害ハザードマップ</a>、<a href="https://kurage.exbridge.jp/krefuge.php/">避難所マップ</a>に続く3本目です。これで「警戒区域か・何メートル浸かるか・どこへ逃げるか」が揃いました。</p>
+<p>この記事で書きたいのは、<strong>東京都で手が止まった話</strong>です。</p>
+<h2>○×で答えないと決めた</h2>
+<p>最初に決めた仕様は「浸水するか、しないか」ではありません。<strong>何メートル浸かる想定か</strong>です。</p>
+<p>0.3mと5mでは、取るべき行動がまったく違います。</p>
+<table>
+<thead>
+<tr>
+<th>浸水深</th>
+<th>何が起きるか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.3m〜1m</td>
+<td>床上浸水。徒歩での移動は困難</td>
+</tr>
+<tr>
+<td>1m〜2m</td>
+<td>1階の床上まで浸水。2階以上への垂直避難が最低限</td>
+</tr>
+<tr>
+<td>2m〜5m</td>
+<td>1階は水没。3階以上か高台へ</td>
+</tr>
+<tr>
+<td>5m以上</td>
+<td><strong>2階では足りない。</strong> 高台・津波避難ビルへ水平避難</td>
+</tr>
+</tbody>
+</table>
+<p>「浸水します」とだけ言われても、2階に上がればいいのか、いますぐ町を出るべきなのか分かりません。だから深さの区分と、それぞれの行動指針を返す設計にしました。</p>
+<p>実際に動かすと、こう返ってきます。</p>
+<pre><code>宮城県石巻市中央
+  浸水想定 5m以上 ～ 10m未満   海抜 1.5m
+  → 建物の2階では足りない可能性があります。
+     高台や津波避難ビルへの水平避難を前提にしてください。
+</code></pre>
+<p>海抜を併記しているのは、津波では<strong>「避難先が今いる場所より高いか」</strong>が判断の基準になるからです。</p>
+<h2>東京都で手が止まった</h2>
+<p>完成間近のテストで、東京都江東区豊洲を入れました。結果は「<strong>津波浸水想定区域には含まれていません</strong>」。</p>
+<p>おかしい。湾岸の埋立地です。</p>
+<p>調べて分かったのは、<strong>東京都は沿岸があるのに、国土数値情報の津波浸水想定データに登録が無い</strong>ということでした。都道府県が個別に公表するデータで、国のオープンデータにまだ載っていない県があるのです（実測では東京・福井・香川の3都県）。</p>
+<p>つまり私のシステムは、<strong>データが無いだけの場所を「区域外」と表示していた</strong>ことになります。</p>
+<p>これは危ない。「区域外」と「データが無い」は全然違います。前者は調べた結果で、後者は調べられていないだけです。混ぜて返すシステムは、<strong>安全だという誤解を作る装置</strong>になります。</p>
+<p>3つを必ず区別する設計に直しました。</p>
+<table>
+<thead>
+<tr>
+<th>状況</th>
+<th>返す内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>収録県で区域外</td>
+<td>「収録している想定区域には含まれていません」</td>
+</tr>
+<tr>
+<td><strong>未収録県（東京・福井・香川）</strong></td>
+<td>「<strong>本データに収録されていません。区域外という意味ではありません</strong>」</td>
+</tr>
+<tr>
+<td>内陸8県</td>
+<td>「海に面していないため、想定は作成されていません」</td>
+</tr>
+</tbody>
+</table>
+<p>内陸県まで分けたのは、長野県の人に「未収録です」と返すと、あるはずのデータが無いように読めるからです。長野に津波浸水想定はそもそも不要です。</p>
+<p>土砂災害ハザードマップのときに「時点を示さずに区域外と言わせない」という原則を立てましたが、今回はもう一段先がありました。<strong>「データが無い」ことを言えないシステムは、データがある顔をしてしまう。</strong></p>
+<h2>整備年度が、県によって6年違う</h2>
+<p>もう一つの発見です。取り込みを始めたら、<strong>35県のうち5県しか取れませんでした</strong>。</p>
+<p>原因は、この データの整備年度が<strong>都道府県ごとにバラバラ</strong>なことでした。愛知県は令和4年度にあるのに、静岡県と高知県は平成28年度のフォルダにしかありません。最大6年の開きがあります。</p>
+<p>取り込みスクリプトは年度を新しい順に自動探索し、<strong>見つかった年度をその県のデータ時点として記録</strong>するようにしました。判定結果には「この判定に使ったデータの時点: 2017-03-31（高知県）」のように、<strong>その県の</strong>時点が出ます。</p>
+<p>全国一律の日付で扱えば実装は楽ですが、それは嘘になります。</p>
+<h2>PostGISを使わずに済んだ理由</h2>
+<p>前作の土砂災害ハザードマップは、警戒区域が複雑な形の面なのでPostGISを使いました。今回も同じ構成を覚悟していたのですが、データを開いて手が止まりました（今日2回目）。</p>
+<p><strong>津波浸水想定のポリゴンは、約10m四方の軸に平行な矩形グリッド</strong>だったのです。愛知県だけで129,834個の小さな長方形です。</p>
+<p>矩形なら、R-tree索引の矩形判定が<strong>そのまま厳密な内外判定</strong>になります。ポリゴン演算が要りません。つまりSQLiteだけで動きます。</p>
+<p>結果、全国379万セルを290MBのSQLiteに収め、Docker も PostgreSQL も不要になりました。買い切り版の設置は Python と GDAL だけで済みます。</p>
+<p>データの「形」を先に見ると、アーキテクチャを一段軽くできることがあります。</p>
+<h2>使ってほしい場面</h2>
+<p>沿岸の物件・施工地を扱う不動産・建設の方の一次確認と、BCP（事業継続計画）で拠点のリスクを整理する総務・防災担当の方を想定しています。</p>
+<p>もちろん、ご自宅や実家を調べるのは無料です。「区域外」と出たときに、それが<strong>調べた結果なのか、データが無いだけなのか</strong>まで表示されるのが、このツールの価値だと思っています。</p>
+<h2>最後に</h2>
+<p>出典は国土交通省の国土数値情報「津波浸水想定データ」で、オープンデータ（商用利用可・再配信可）として提供されているものです。</p>
+<p>本サービスの判定は参考情報です。津波浸水想定は、<strong>想定を超える津波が起きないことを意味しません</strong>。最終的な確認は必ず当該自治体の最新の津波ハザードマップで行ってください。</p>
+<p>自社サーバーに置ける買い切り版も<a href="https://kappstore.exbridge.jp/app.php?id=86b85a63bc426575">Kurage App Store</a>に出しました。ソースコードと設置手順書を同梱しています。</p>
+<p>同じような「データが無いことを言えないシステム」が、御社にもあるかもしれません。ご相談は<a href="https://exbridge.jp/contact.php">お問い合わせ</a>からどうぞ。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
