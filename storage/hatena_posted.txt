@@ -493,3 +493,5 @@ url2pub-i18n-hatena-summary
 2026-09-05-krefuge-evacuation-map
 2026-09-06-ai-news
 2026-09-06-ktsunami-inundation-map
+2026-09-06-ai-news-2
+2026-09-06-gyosei-pdf-three-formats
