@@ -6,7 +6,35 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 04 Sep 2026 10:42:45 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 00:57:06 +0000</lastBuildDate>
+    <item>
+      <title>OpenAIのエージェントによる予期せぬ挙動と、AIによる数学的証明の最前線 09-05</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news-2.html</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Appsmithの公式イメージは初回起動を20秒中断すると永久に壊れる——画面は200を返すのにAPIが全部502になる罠を突き止め、データを消さずに直した</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-appsmith-first-boot-brick.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-appsmith-first-boot-brick.html</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
+      <description>社内の管理画面を画面組み立てだけで作れるオープンソース Appsmith を検証環境に立てたところ、公式のとおりに起動したのにログインできない状態になりました。</description>
+    </item>
+    <item>
+      <title>paperless-ngxで日本語の請求書を貯める——定番とされる jpn+eng 設定が見出しを『Ake』に壊す実測と、日本語で自動分類を効かせる正解</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-paperless-ngx-japanese-ocr.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-paperless-ngx-japanese-ocr.html</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
+      <description>紙とPDFの書類を、検索できる形で一箇所に貯めるオープンソース paperless-ngx を、日本語の請求書と契約書で実用になるところまで詰めました。</description>
+    </item>
+    <item>
+      <title>OpenAIのGPT-6 Astra登場とAIエージェントを巡る最新動向 09-05</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news.html</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
     <item>
       <title>NamazuからFessへ——日本発の全文検索OSS「Fess」をdockerで立てて45本のPDFを索引し、ローカルLLMで「聞けば答える」を10問で実測（検索10/10・回答9/10）</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-fess-fulltext-search-ai-chat.html</link>
@@ -257,34 +285,6 @@
       <link>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-4.html</guid>
       <pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>MicronのHBM供給課題とAnthropicの法的勝利、Googleへの人材流動など最新テック動向 08-29</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news.html</guid>
-      <pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Claude Code Opus 5やNVIDIAによるllama.cpp買収など、AI技術の進化と安全性の最前線 08-28</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-3.html</guid>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Apodex 1.1のAgentic AI進化とNvidiaによるllama.cpp買収の噂を追う 08-28</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-2.html</guid>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>A49Bで読む：Claude Code Opus 5の自動化とNVIDIAによるllama.cpp買収：加速するAIインフラとモデル開… 08-28</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-28-ai-news-4.html</guid>
-      <pubDate>Fri, 28 Aug 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
   </channel>
