@@ -23,6 +23,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      # sitemap.xml は静的ファイルなので、手で作り直さない限り古いままになる。
+      # 実際 2026-08-23 から更新が止まり、9月に出した90本が1本も載っていなかった。
+      # ビルドのたびに作り直して、載り忘れが構造的に起きないようにする。
+      - name: Rebuild sitemap
+        run: python3 scripts/build_sitemap.py
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:

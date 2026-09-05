@@ -484,3 +484,5 @@ url2pub-i18n-hatena-summary
 2026-09-04-pdf-translation-selfhosted
 2026-09-05-ai-news
 2026-09-05-ai-news-2
+2026-09-05-paperless-ngx-japanese-ocr
+2026-09-05-appsmith-first-boot-brick
