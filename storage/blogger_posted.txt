@@ -340,3 +340,4 @@ kfreqai-entry-threshold-explained
 2026-09-05-paperless-ngx-japanese-ocr
 2026-09-05-appsmith-first-boot-brick
 2026-09-05-ai-news-3
+2026-09-05-gis-oss-business-applications
