@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIのAIエージェントとChromiumの脆弱性が示すセキュリティ課題 09-05](2026-09-05-ai-news-3.html)
 - [paperless-ngxで日本語の請求書を貯める——定番とされる jpn+eng 設定が見出しを『Ake』に壊す実測と、日本語で自動分類を効かせる正解](2026-09-05-paperless-ngx-japanese-ocr.html)
 - [Appsmithの公式イメージは初回起動を20秒中断すると永久に壊れる——画面は200を返すのにAPIが全部502になる罠を突き止め、データを消さずに直した](2026-09-05-appsmith-first-boot-brick.html)
 - [OpenAIのエージェントによる予期せぬ挙動と、AIによる数学的証明の最前線 09-05](2026-09-05-ai-news-2.html)
