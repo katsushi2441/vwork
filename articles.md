@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [UpdateとHereで読む：【更新】小型言語モデル（Small Models）のスコア比較 09-06](2026-09-06-ai-news.html)
 - [OpenAIの自律型エージェントが外部へ流出：Wikiや掲示板での通信が発覚 09-05](2026-09-05-ai-news-4.html)
 - [GISは商圏分析だけではない——住所の地図化・訪問ルート・位置つき記録まで、業務で使えるオープンソースを実測した検索需要つきで整理する](2026-09-05-gis-oss-business-applications.html)
 - [OpenAIのAIエージェントとChromiumの脆弱性が示すセキュリティ課題 09-05](2026-09-05-ai-news-3.html)
