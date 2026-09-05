@@ -1,0 +1,224 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>商圏分析システムの部品を組み替えて、土砂災害ハザードマップの判定サービスを1日で作った——検索需要を先に実測して「作るもの」を決めた記録 | VWork バイブコーディングフレームワーク</title><meta name="description" content="住所を入れると土砂災害警戒区域（イエローゾーン）・特別警戒区域（レッドゾーン）の内外を判定するサービスを公開しました。既存の商圏分析システムから、住所の座標変換・PostGISの空間判定・到達圏という3つの部品をそのまま流用しています。何を作るかはキーワードプランナーの実測で決めました。商圏分析が月480回・競合指数54なのに対し、ハザードマップは月110,000回・競合指数0。同じ技術でも当てる先を変えると需要が230倍違います。データの時点が2011年で使えないものを切り捨てた判断と、住所判定の精度の限界も正直に書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-05-khazard-hazard-map.html"><meta property="og:type" content="article"><meta property="og:title" content="商圏分析システムの部品を組み替えて、土砂災害ハザードマップの判定サービスを1日で作った——検索需要を先に実測して「作るもの」を決めた記録"><meta property="og:description" content="住所を入れると土砂災害警戒区域（イエローゾーン）・特別警戒区域（レッドゾーン）の内外を判定するサービスを公開しました。既存の商圏分析システムから、住所の座標変換・PostGISの空間判定・到達圏という3つの部品をそのまま流用しています。何を作るかはキーワードプランナーの実測で決めました。商圏分析が月480回・競合指数54なのに対し、ハザードマップは月110,000回・競合指数0。同じ技術でも当てる先を変えると需要が230倍違います。データの時点が2011年で使えないものを切り捨てた判断と、住所判定の精度の限界も正直に書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-05-khazard-hazard-map.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="商圏分析システムの部品を組み替えて、土砂災害ハザードマップの判定サービスを1日で作った——検索需要を先に実測して「作るもの」を決めた記録"><meta name="twitter:description" content="住所を入れると土砂災害警戒区域（イエローゾーン）・特別警戒区域（レッドゾーン）の内外を判定するサービスを公開しました。既存の商圏分析システムから、住所の座標変換・PostGISの空間判定・到達圏という3つの部品をそのまま流用しています。何を作るかはキーワードプランナーの実測で決めました。商圏分析が月480回・競合指数54なのに対し、ハザードマップは月110,000回・競合指数0。同じ技術でも当てる先を変えると需要が230倍違います。データの時点が2011年で使えないものを切り捨てた判断と、住所判定の精度の限界も正直に書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "商圏分析システムの部品を組み替えて、土砂災害ハザードマップの判定サービスを1日で作った——検索需要を先に実測して「作るもの」を決めた記録", "description": "住所を入れると土砂災害警戒区域（イエローゾーン）・特別警戒区域（レッドゾーン）の内外を判定するサービスを公開しました。既存の商圏分析システムから、住所の座標変換・PostGISの空間判定・到達圏という3つの部品をそのまま流用しています。何を作るかはキーワードプランナーの実測で決めました。商圏分析が月480回・競合指数54なのに対し、ハザードマップは月110,000回・競合指数0。同じ技術でも当てる先を変えると需要が230倍違います。データの時点が2011年で使えないものを切り捨てた判断と、住所判定の精度の限界も正直に書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-05-khazard-hazard-map.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-05", "dateModified": "2026-09-05", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>商圏分析システムの部品を組み替えて、土砂災害ハザードマップの判定サービスを1日で作った——検索需要を先に実測して「作るもの」を決めた記録</h1><p class="meta">2026-09-05</p><p>名古屋でAIシステム開発の会社をやっています。</p>
+<p>先日、住所を入れると<strong>土砂災害ハザードマップ</strong>の警戒区域に入るかどうかを判定するサービスを公開しました。全国47都道府県・約179万区域を収録しています。</p>
+<p><a href="https://kurage.exbridge.jp/khazard.php/">Kurage 土砂災害ハザードマップ</a>（無料で試せます）</p>
+<p>この記事は機能紹介ではありません。<strong>「何を作るか」をどう決めたか</strong>と、<strong>作らないと決めたもの</strong>の話です。そこがいちばん再現性のある部分だと思うので。</p>
+<h2>きっかけは「売れていない」という事実</h2>
+<p>半年ほど前に、住所から徒歩圏の人口・世帯・事業所を出す<a href="https://kurage.exbridge.jp/kshoken.php/">商圏分析システム</a>を作りました。技術的にはうまくいきました。道路網をたどった到達圏を出して、国勢調査のメッシュ統計を交差面積で按分する。精度も速度も満足しています。</p>
+<p>ところが検索からの流入がゼロでした。1件もありません。</p>
+<p>原因を調べたら、単純な話でした。</p>
+<table>
+<thead>
+<tr>
+<th>検索語</th>
+<th>月間検索数</th>
+<th>競合指数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>商圏分析</td>
+<td>480</td>
+<td>54</td>
+</tr>
+<tr>
+<td>商圏分析ツール</td>
+<td><strong>210</strong></td>
+<td>60</td>
+</tr>
+</tbody>
+</table>
+<p><strong>製品名そのものである「商圏分析ツール」を、月に210人しか検索していません。</strong> しかも競合指数60で、正面から取りにいくには重い。仮に1位を取ってもクリックは月数十回です。</p>
+<p>これは技術の問題でも、ページの問題でもありません。<strong>そもそも人が探していない言葉に賭けていた</strong>という、企画の問題でした。</p>
+<h2>同じ技術で、当てる先を変える</h2>
+<p>商圏分析システムの中身は、3つの部品でできています。</p>
+<table>
+<thead>
+<tr>
+<th>部品</th>
+<th>中身</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>住所 → 緯度経度</td>
+<td>国土地理院の地名検索API（無料・キー不要）</td>
+</tr>
+<tr>
+<td>到達圏の計算</td>
+<td>Valhalla（徒歩N分で行ける範囲をポリゴンで出す）</td>
+</tr>
+<tr>
+<td>ポリゴン内の集計</td>
+<td>PostGIS ＋ 国勢調査メッシュ・経済センサス</td>
+</tr>
+</tbody>
+</table>
+<p>この3つは商圏分析専用のものではありません。<strong>「住所を点にして、面と重ねて、中身を答える」</strong>という汎用の仕組みです。</p>
+<p>そこで、この仕組みが当てられる先を洗い出して、片っ端から検索需要を測りました。</p>
+<table>
+<thead>
+<tr>
+<th>検索語</th>
+<th>月間検索数</th>
+<th>競合指数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ハザードマップ</strong></td>
+<td><strong>110,000</strong></td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td><strong>土砂災害警戒区域</strong></td>
+<td><strong>9,900</strong></td>
+<td><strong>0</strong></td>
+</tr>
+<tr>
+<td>徒歩10分 距離</td>
+<td>3,600</td>
+<td>0</td>
+</tr>
+<tr>
+<td>人口推計</td>
+<td>2,400</td>
+<td>0</td>
+</tr>
+<tr>
+<td>浸水想定区域</td>
+<td>880</td>
+<td>0</td>
+</tr>
+<tr>
+<td>避難所マップ</td>
+<td>720</td>
+<td>0</td>
+</tr>
+<tr>
+<td>（比較）商圏分析</td>
+<td>480</td>
+<td>54</td>
+</tr>
+</tbody>
+</table>
+<p>ハザードマップが<strong>230倍</strong>で、競合指数はゼロでした。</p>
+<p>ついでに、当てられそうに見えて需要が無かったものも測っています。ここを測らずに作ると時間を失います。</p>
+<table>
+<thead>
+<tr>
+<th>検索語</th>
+<th>月間検索数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不動産 物件管理システム</td>
+<td>30</td>
+</tr>
+<tr>
+<td>設備点検システム</td>
+<td>20</td>
+</tr>
+<tr>
+<td>巡回点検アプリ</td>
+<td>20</td>
+</tr>
+<tr>
+<td>圃場管理</td>
+<td>90</td>
+</tr>
+</tbody>
+</table>
+<p>「業種ごとの専用システム」は、名前で探されていません。GISを活かすなら、業種名ではなく<strong>GISの言葉</strong>で入口を作るほうが正しい、というのがこの表から読み取れることでした。</p>
+<h2>作りながら、作らないものを決めた</h2>
+<p>方針が決まったので実装に入りました。部品は流用できるので、判定そのものは半日で動きました。</p>
+<p>問題はデータでした。</p>
+<h3>浸水は扱わないと決めた</h3>
+<p>当初は「ハザードマップ」なので洪水の浸水想定も入れるつもりでした。国土交通省の国土数値情報からデータを取ってきて、中身を確認したところ、こうでした。</p>
+<table>
+<thead>
+<tr>
+<th>データ</th>
+<th>取得できる最新版</th>
+<th>データ時点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>土砂災害警戒区域</td>
+<td><strong>2025年版</strong></td>
+<td>2026-03-06</td>
+</tr>
+<tr>
+<td>洪水浸水想定区域</td>
+<td>2012年版</td>
+<td><strong>平成23年度（2011年）</strong></td>
+</tr>
+<tr>
+<td>避難施設</td>
+<td>2012年版</td>
+<td>平成24年度</td>
+</tr>
+</tbody>
+</table>
+<p>浸水想定区域は<strong>14年前のデータが最新</strong>でした。しかも2015年の水防法改正で「想定最大規模」に基準が変わる前のものです。</p>
+<p>これで「浸水想定区域外です」と答えたらどうなるか。実際には現行の想定区域内、ということが起こり得ます。不動産の重要事項説明に使われでもしたら賠償問題です。</p>
+<p><strong>扱わないと決めました。</strong> サービスの中にも、扱わない理由を書いてあります。機能が減るので売り文句としては弱くなりますが、間違った安心を与えるよりずっとましです。</p>
+<h3>「調べた気にさせない」を設計の中心に置いた</h3>
+<p>災害リスクを扱う道具でいちばん危ないのは、精度の低さそのものではなく、<strong>利用者に「調べた」と思わせて安心させてしまうこと</strong>だと考えました。そこで次の4つを構造として組み込みました。</p>
+<p><strong>1. 判定に必ずデータ時点を添える</strong></p>
+<p>「区域外です」だけを返しません。必ず「判定に使ったデータの時点: 2026-03-06」を一緒に出します。データベースの側にも、出典と時点を記録する表を作りました。<strong>時点が記録されていないデータでは、判定そのものを行いません。</strong></p>
+<p><strong>2. 近くに区域があるときは言い切らない</strong></p>
+<p>これは作ってから気づいたことです。</p>
+<p>実際にハザード区域として登録されている住所を6件取り出して判定させたら、<strong>5件が「区域外」</strong>と出ました。距離を見ると <strong>14m・47m・50m</strong> です。</p>
+<p>理由は明快で、住所から求まる座標は番地ではなく<strong>町丁目のおおよその位置</strong>だからです。区域の縁ギリギリの土地では、代表点が外に落ちます。</p>
+<p>このまま「区域外」とだけ返していたら、危険な場所を安全だと伝える道具になっていました。250m以内に区域がある場合は、次を必ず出すようにしています。</p>
+<blockquote>
+<p>最も近い区域まで約14mしかありません。住所から求めた座標は町丁目のおおよその位置のため、実際の敷地が区域内である可能性があります。必ず現地の地番で確認してください。</p>
+</blockquote>
+<p><strong>3. 一次情報への導線を必ず返す</strong></p>
+<p>判定のたびに「本サービスの判定は参考情報です。公的な証明ではありません」と、自治体の最新ハザードマップを見るよう促す文言を出します。</p>
+<p><strong>4. 出典と加工の明記</strong></p>
+<p>国土数値情報は公共データ利用規約（PDL1.0）で提供されていて、出典の記載と、編集・加工した場合はその旨の明記が必要です。画面のフッタではなく、判定結果の中に入れています。</p>
+<h2>技術的に詰まったところ</h2>
+<p>同じことをやる方のために書いておきます。</p>
+<p><strong>国土数値情報のGMLは、GDALで読めません。</strong> <code>ogrinfo</code> はファイルを開けるのにレイヤが0件になります。原因は、データが実体を直接持たず3段階の参照になっていることでした。</p>
+<pre><code>gml:Curve（座標を持つ）
+  ↑ xlink参照
+gml:Surface（面）
+  ↑ xlink参照
+フィーチャ（区域名・指定年月日などの属性）
+</code></pre>
+<p>ファイル内の並びが Curve → Surface → フィーチャ の順なので、1パスで解決できます。自前のパーサを書きました。</p>
+<p><strong>配布zipのパス区切りが <code>\</code> です。</strong> Linuxで展開すると、ディレクトリにならずファイル名に <code>\</code> が入ります。メタデータのファイルを名前で探していて、これに引っかかりました。</p>
+<h2>結果</h2>
+<p>全国47都道府県・<strong>1,793,171区域</strong>を収録して公開しました。判定は PostGIS の <code>ST_Contains</code> で、住所の座標変換は国土地理院のAPIです。外部の有料APIは使っていないので、ランニングコストはサーバー代だけです。</p>
+<p>自社サーバーに置ける買い切り版も<a href="https://kappstore.exbridge.jp/app.php?id=02b945f9c87c9d86">Kurage App Store</a>に出しました。ソースコードと設置手順書を同梱しています。住所を外部に送りたくない不動産・建設の会社向けです。</p>
+<h2>この記事で伝えたかったこと</h2>
+<p><strong>作るものを勘で決めない。</strong> 技術がうまくいっていても、人が探していない言葉に賭けていたら流入はゼロのままです。半年それをやっていました。</p>
+<p><strong>手持ちの部品を数えてから、当てる先を探す。</strong> ゼロから作るより、既にあるものを組み替えるほうが早いし、確実です。今回は判定が半日で動きました。</p>
+<p><strong>使えないデータは、使わないと決める。</strong> 機能が減っても、間違った安心を与える道具にはしない。これは災害に限らず、会計でも医療でも同じだと思います。</p>
+<p>同じような組み替えができる部品が、御社にも眠っているかもしれません。何を持っていて、何に当てられるか。ご相談は<a href="https://exbridge.jp/contact.php">お問い合わせ</a>からどうぞ。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
