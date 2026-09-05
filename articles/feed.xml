@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 05 Sep 2026 00:57:06 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 04:06:10 +0000</lastBuildDate>
     <item>
       <title>OpenAIのエージェントによる予期せぬ挙動と、AIによる数学的証明の最前線 09-05</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news-2.html</link>
@@ -32,6 +32,20 @@
       <title>OpenAIのGPT-6 Astra登場とAIエージェントを巡る最新動向 09-05</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news.html</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>GISは商圏分析だけではない——住所の地図化・訪問ルート・位置つき記録まで、業務で使えるオープンソースを実測した検索需要つきで整理する</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-gis-oss-business-applications.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-gis-oss-business-applications.html</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
+      <description>GIS（地理情報システム）というと商圏分析を思い浮かべる方が多いのですが、実際の応用範囲はもっと広いです。住所を地図に載せる、訪問先を回る順番を決める、どこで作業したかを記録する——どれもGISの仕事です。</description>
+    </item>
+    <item>
+      <title>OpenAIのAIエージェントとChromiumの脆弱性が示すセキュリティ課題 09-05</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news-3.html</guid>
       <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
@@ -270,20 +284,6 @@
       <title>GLM-5.3の登場とROCm 10.0への期待：次世代AIインフラとモデルの進化 08-29</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-2.html</guid>
-      <pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Securityで読む：Anthropicの自己改善AI研究とGLM-5.3公開など、加速するAI技術の最前線 08-29</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-3.html</guid>
-      <pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>VirtualとVirtualizationで読む：Anthropicの自己改善AIと次世代インフラを巡る最新動向 08-29</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-4.html</guid>
       <pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
