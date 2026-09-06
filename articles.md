@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Qwen 3.8の変異モデル評価とProgram-Benchが示すAIの高度なコーディング能力 09-07](2026-09-07-ai-news.html)
 - [TheとCloudで読む：GPT-6 Astraのリリースと、韓国銀行が警鐘を鳴らすステーブルコインの影響 09-06](2026-09-06-ai-news-4.html)
 - [OpenAIのGPT-6 Astra登場と、ステーブルコインが与える経済への影響 09-06](2026-09-06-ai-news-3.html)
 - [StablecoinsとBlenderで読む：韓国銀行の調査で判明したドル連動型ステーブルコインと現地通貨への影響 09-06](2026-09-06-ai-news-2.html)
