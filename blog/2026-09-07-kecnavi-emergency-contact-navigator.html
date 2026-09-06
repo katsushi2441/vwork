@@ -1,0 +1,135 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「通報アプリ」は検索されていなかった——名古屋市の通報窓口を1つの入口にまとめる『Kurage 通報先ナビ』を1日で作って出品するまで | VWork バイブコーディングフレームワーク</title><meta name="description" content="「不法投棄 通報」1,300/月、「◯◯区 土木事務所」各50〜260/月、いずれも競合ゼロ。人は通報の仕組みではなく『どこに言えばいいか』を探していました。名古屋市には公式LINE通報がありますが、写真と位置情報のみで不法投棄は対象外、窓口は道路・ごみ・国道・警察・水道に分散しています。この分散を困りごとと住所の2つの入口にまとめる『Kurage 通報先ナビ（kecnavi）』を、市の公式データと国のオープンデータだけで作り、公開・出品するまでの実録です。市サイトの本文が転載不可だったこと、施設カルテ（CC BY 4.0）から座標を取ったこと、他の自治体はJSON2ファイル差し替えで展開できる構造にしたことを書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-07-kecnavi-emergency-contact-navigator.html"><meta property="og:type" content="article"><meta property="og:title" content="「通報アプリ」は検索されていなかった——名古屋市の通報窓口を1つの入口にまとめる『Kurage 通報先ナビ』を1日で作って出品するまで"><meta property="og:description" content="「不法投棄 通報」1,300/月、「◯◯区 土木事務所」各50〜260/月、いずれも競合ゼロ。人は通報の仕組みではなく『どこに言えばいいか』を探していました。名古屋市には公式LINE通報がありますが、写真と位置情報のみで不法投棄は対象外、窓口は道路・ごみ・国道・警察・水道に分散しています。この分散を困りごとと住所の2つの入口にまとめる『Kurage 通報先ナビ（kecnavi）』を、市の公式データと国のオープンデータだけで作り、公開・出品するまでの実録です。市サイトの本文が転載不可だったこと、施設カルテ（CC BY 4.0）から座標を取ったこと、他の自治体はJSON2ファイル差し替えで展開できる構造にしたことを書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-07-kecnavi-emergency-contact-navigator.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="「通報アプリ」は検索されていなかった——名古屋市の通報窓口を1つの入口にまとめる『Kurage 通報先ナビ』を1日で作って出品するまで"><meta name="twitter:description" content="「不法投棄 通報」1,300/月、「◯◯区 土木事務所」各50〜260/月、いずれも競合ゼロ。人は通報の仕組みではなく『どこに言えばいいか』を探していました。名古屋市には公式LINE通報がありますが、写真と位置情報のみで不法投棄は対象外、窓口は道路・ごみ・国道・警察・水道に分散しています。この分散を困りごとと住所の2つの入口にまとめる『Kurage 通報先ナビ（kecnavi）』を、市の公式データと国のオープンデータだけで作り、公開・出品するまでの実録です。市サイトの本文が転載不可だったこと、施設カルテ（CC BY 4.0）から座標を取ったこと、他の自治体はJSON2ファイル差し替えで展開できる構造にしたことを書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "「通報アプリ」は検索されていなかった——名古屋市の通報窓口を1つの入口にまとめる『Kurage 通報先ナビ』を1日で作って出品するまで", "description": "「不法投棄 通報」1,300/月、「◯◯区 土木事務所」各50〜260/月、いずれも競合ゼロ。人は通報の仕組みではなく『どこに言えばいいか』を探していました。名古屋市には公式LINE通報がありますが、写真と位置情報のみで不法投棄は対象外、窓口は道路・ごみ・国道・警察・水道に分散しています。この分散を困りごとと住所の2つの入口にまとめる『Kurage 通報先ナビ（kecnavi）』を、市の公式データと国のオープンデータだけで作り、公開・出品するまでの実録です。市サイトの本文が転載不可だったこと、施設カルテ（CC BY 4.0）から座標を取ったこと、他の自治体はJSON2ファイル差し替えで展開できる構造にしたことを書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-07-kecnavi-emergency-contact-navigator.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>「通報アプリ」は検索されていなかった——名古屋市の通報窓口を1つの入口にまとめる『Kurage 通報先ナビ』を1日で作って出品するまで</h1><p class="meta">2026-09-07</p><p>名古屋でAIシステム開発の会社をやっています。</p>
+<p>昨日、名古屋市の通報先を案内するシステム『Kurage 通報先ナビ（kecnavi）』を作って公開し、今日、買い切り版を出品しました。作る前に測ったこと、作りながら見つけた制約、設計の判断を、順番に書きます。</p>
+<ul>
+<li>公開: <a href="https://kurage.exbridge.jp/kecnavi.php/">https://kurage.exbridge.jp/kecnavi.php/</a></li>
+<li>買い切り版: <a href="https://kappstore.exbridge.jp/app.php?id=32502ed71cea6bcf&amp;ref=vwork-kecnavi">Kurage App Store</a></li>
+<li>議員事務所4点セットとしての位置づけ: <a href="https://note.com/tokoname/n/ndf0db8e71853">note</a></li>
+</ul>
+<h2>1. 測ったら「通報アプリ」は検索されていなかった</h2>
+<p>FixMyStreet（英国発の住民通報OSS）を名古屋市向けに立てようと考えて、先に検索需要を測りました。</p>
+<table>
+<thead>
+<tr>
+<th>キーワード</th>
+<th>月間</th>
+<th>競合指数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>不法投棄 通報</td>
+<td>1,300</td>
+<td>0</td>
+</tr>
+<tr>
+<td>名古屋市 土木事務所</td>
+<td>260</td>
+<td>5</td>
+</tr>
+<tr>
+<td>◯◯区 土木事務所（天白・名東・中村…）</td>
+<td>各50</td>
+<td>0</td>
+</tr>
+<tr>
+<td>道路 陥没 通報</td>
+<td>110</td>
+<td>0</td>
+</tr>
+<tr>
+<td>道路 損傷 通報 アプリ</td>
+<td>50未満</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>人は通報の<strong>仕組み</strong>を探していません。「不法投棄はどこに通報するのか」「うちの区の土木事務所」を探しています。ここでFixMyStreetを市の代替として立てる案は捨てました。</p>
+<h2>2. 名古屋市は、すでにやっている</h2>
+<p>名古屋市には公式LINEの「道路・公園損傷通報」があります。道路の損傷・街路灯・街路樹・公園施設を写真と位置情報で通報でき、対応状況はWebで公開されます。ただし市自身が明記している制約があります。</p>
+<ul>
+<li>テキストを送れない（写真と位置情報のみ）</li>
+<li>職員の確認は平日8:45〜17:15、緊急は電話</li>
+<li>市から個別返信はしない</li>
+<li>不法投棄は対象外（専用FAX・環境事業所・別アプリに分散）</li>
+</ul>
+<p>つまり「市と同じ土俵で通報を受ける」のではなく、<strong>分散した窓口を1つの入口にまとめる</strong>のが勝ち筋でした。困りごと11種と、住所から区を判定して土木事務所・環境事業所・区役所を出す2つの入口にしました。</p>
+<h2>3. 市のサイトの文章は転載できなかった</h2>
+<p>データを集める段階で、名古屋市サイトの再利用規約を読みました。<strong>本文は改変不可・引用のみ</strong>。政府標準利用規約やCC BYは採用されていません。</p>
+<p>一方で、BODIK（CKAN）に出ている名古屋市のオープンデータ618件のうち199件はCC BY 4.0でした。そこで役割を分けました。</p>
+<table>
+<thead>
+<tr>
+<th>情報</th>
+<th>出どころ</th>
+<th>扱い</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>土木事務所16件の電話</td>
+<td>緑政土木局「連絡先一覧」</td>
+<td>番号という事実を転記し、出典リンク</td>
+</tr>
+<tr>
+<td>環境事業所16件の電話・住所・受付時間</td>
+<td>「各区の環境事業所」</td>
+<td>同上</td>
+</tr>
+<tr>
+<td>区役所・各事務所の所在地と座標</td>
+<td>オープンデータ「施設カルテ」（CC BY 4.0）</td>
+<td>加工して利用</td>
+</tr>
+<tr>
+<td>全国共通番号（#9910・#9110・188・189・上下水道局）</td>
+<td>各省庁・局の公式ページ</td>
+<td>事実を転記し、出典リンク</td>
+</tr>
+<tr>
+<td>説明文</td>
+<td>—</td>
+<td>すべて自前で書く</td>
+</tr>
+</tbody>
+</table>
+<p>電話番号・住所・受付時間は著作物ではないので転記できます。説明の文章は一行も写していません。同梱のSETUP.mdにも「自治体サイトの文章を転載しないこと」を明記しました。</p>
+<h2>4. 設計の判断</h2>
+<p><strong>緊急連絡先を最上段に固定。</strong> 110／119はどのページでも一番上に出し、「このナビは案内であって通報の代行ではない」と書いています。</p>
+<p><strong>住所→区の判定。</strong> 国土地理院の地名検索APIで住所を解決し、ラベルの「名古屋市◯◯区」を最優先で読みます。無ければ区役所の座標に最も近い区で補い、その旨を画面に出します。</p>
+<p><strong>プロキシ越しでも直アクセスでも動く。</strong> 公開はレンタルサーバーの透過プロキシ（/kecnavi.php/…）経由です。内部リンクとAPIのパスが1階層ずれるので、X-Forwarded-Host の有無で接頭辞を切り替えます。前日に津波マップの地域ページで同じ罠を踏んでいたので、今回は最初から入れました。</p>
+<p><strong>他の自治体はJSON2ファイル差し替え。</strong> <code>wards.json</code>（区ごとの窓口）と <code>contacts.json</code>（困りごと別の連絡順）だけを差し替えれば別の自治体で動きます。区の無い自治体は wards を1件にすれば市全体の窓口になります。</p>
+<p><strong>検索の受け皿としての構造。</strong> 困りごと別11ページ・区別16ページを個別URLで持ち、title・description・h1に検索語を置き、BreadcrumbList と FAQPage の構造化データ、GA4、OGPを全ページに入れました。sitemap登録・IndexNow送信・GSC再送信まで初日にやっています。</p>
+<h2>5. 出品まで</h2>
+<p>買い切り版（税込55,000円・ソース同梱・MIT）を Kurage App Store に出品しました。同梱物は本体・名古屋市の実データ2ファイル・透過プロキシ・systemdユニット・SETUP.md。データベース不要、外部の有料APIも不要なので追加費用は0円です。</p>
+<h2>6. 誰が使うのか</h2>
+<p>自治体に売るのはハードルが高い。代わりに、住民の相談を毎日受けている<strong>議員事務所・政党支部</strong>が「暮らしの困りごと案内」として事務所の名前で運用する形を想定しています。土砂災害・津波・避難所の3つと合わせて「議員事務所4点セット」にした経緯は、<a href="https://note.com/tokoname/n/ndf0db8e71853">noteに書きました</a>。公職選挙法の寄附禁止に触れないよう、「特定の人に渡すもの」ではなく「事務所が自らの情報発信として公開するページ」という形にしています。</p>
+<h2>7. 正直に</h2>
+<ul>
+<li>SEOの効果はまだ出ていません。公開が昨日なので、インデックスと順位が付くのは数日〜数週間後です。9月中旬に測り直します</li>
+<li>収録は名古屋市16区だけです。他の自治体は差し替えで動きますが、まだやっていません</li>
+<li>電話番号と受付時間は変わります。同梱データは2026-09-07時点で、画面にもその時点を出しています</li>
+</ul>
+<p>「どこに言えばいいか分からない」は、行政サービスの入口で最も多い困りごとの一つだと思っています。同じような「窓口が分散している情報」が御社や御地域にもあるかもしれません。ご相談は<a href="https://exbridge.jp/contact.php">お問い合わせ</a>からどうぞ。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
