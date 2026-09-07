@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 07 Sep 2026 05:44:01 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 05:55:48 +0000</lastBuildDate>
+    <item>
+      <title>情報公開請求を「出しっぱなし」にしない——請求と回答を公開するOSS「Alaveteli」（英国WhatDoTheyKnowの中身）を日本語化して動かし、本家にPRを出すまで</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-07-alaveteli-japanese-guide.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-07-alaveteli-japanese-guide.html</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 +0000</pubDate>
+      <description>日本の情報公開請求（行政文書の開示請求）はきちんと機能している制度ですが、「誰が何を請求して、何が開示されたか」が共有されません。同じ文書を別々の人が何度も請求し、開示された文書は請求者の手元で止まります。英国はこれを2008年に WhatDoTheyKnow というサイトで解きました。請求文も回答もサイト上で公開され、次の人はそれを読んでから請求する。その</description>
+    </item>
     <item>
       <title>ちばレポのような「道路の穴・不法投棄の通報システム」を無料OSSで自前に——FixMyStreetを日本語化して名古屋の地図で動かし、本家にPRを出すまで</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-07-fixmystreet-japanese-guide.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news.html</guid>
       <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>スター5.5万のSalesforce代替CRM「Twenty」は日本語で使えるか——構築して分かった日本語検索の穴と、触れるデモ</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-01-twenty-crm-japanese-demo.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-twenty-crm-japanese-demo.html</guid>
-      <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Salesforce代替のオープンソースCRMとして今いちばん勢いがあるのが Twentyhttps://github.com/twentyhq/twenty（TypeScript製・AGPL-3.0・GitHubスター55,000超・Y Combinator S23）です。「日本語で使えるのか」を確かめるために実際に構築したところ、翻訳は本家が100%完了</description>
     </item>
   </channel>
 </rss>
