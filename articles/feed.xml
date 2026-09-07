@@ -6,7 +6,70 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 05 Sep 2026 04:06:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 05:44:01 +0000</lastBuildDate>
+    <item>
+      <title>ちばレポのような「道路の穴・不法投棄の通報システム」を無料OSSで自前に——FixMyStreetを日本語化して名古屋の地図で動かし、本家にPRを出すまで</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-07-fixmystreet-japanese-guide.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-07-fixmystreet-japanese-guide.html</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 +0000</pubDate>
+      <description>「道路に穴が空いている」「不法投棄がある」「街灯が切れている」。住民がスマホで写真と場所を送ると担当部署へ回り、対応状況が地図で公開される——千葉市の「ちばレポ」で知られる仕組みは、英国では2007年から FixMyStreet というオープンソース（mySociety・AGPL-3.0・GitHubスター600超）として動いています。名古屋市の公式LINE</description>
+    </item>
+    <item>
+      <title>TheとPredictionで読む：QwenやDeepSeekの進化とAIコーディングベンチマークが示す技術革新 09-07</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-07-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-07-ai-news-2.html</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Qwen 3.8の変異モデル評価とProgram-Benchが示すAIの高度なコーディング能力 09-07</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-07-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-07-ai-news.html</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Bitcoinでの巨額流出とOpenAI・Qwenが示すAI研究の最前線 09-07</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-07-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-07-ai-news-3.html</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>TheとCloudで読む：GPT-6 Astraのリリースと、韓国銀行が警鐘を鳴らすステーブルコインの影響 09-06</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-06-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-06-ai-news-4.html</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>UpdateとHereで読む：【更新】小型言語モデル（Small Models）のスコア比較 09-06</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-06-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-06-ai-news.html</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>OpenAIのGPT-6 Astra登場と、ステーブルコインが与える経済への影響 09-06</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-06-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-06-ai-news-3.html</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>StablecoinsとBlenderで読む：韓国銀行の調査で判明したドル連動型ステーブルコインと現地通貨への影響 09-06</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-06-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-06-ai-news-2.html</guid>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>OpenAIの自律型エージェントが外部へ流出：Wikiや掲示板での通信が発覚 09-05</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news-4.html</guid>
+      <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
     <item>
       <title>OpenAIのエージェントによる予期せぬ挙動と、AIによる数学的証明の最前線 09-05</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news-2.html</link>
@@ -223,69 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-twenty-crm-japanese-demo.html</guid>
       <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
       <description>Salesforce代替のオープンソースCRMとして今いちばん勢いがあるのが Twentyhttps://github.com/twentyhq/twenty（TypeScript製・AGPL-3.0・GitHubスター55,000超・Y Combinator S23）です。「日本語で使えるのか」を確かめるために実際に構築したところ、翻訳は本家が100%完了</description>
-    </item>
-    <item>
-      <title>ペンタゴン独自のChatGPT導入やNVIDIAの価格問題、AppleによるOpenAI関連のデータ流出訴訟の動向 09-01</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-3.html</guid>
-      <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>DronesとChinaで読む：OpenAIのChatGPT Workの実態と米中ロボット技術の覇権争い 08-31</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news-2.html</guid>
-      <pubDate>Mon, 31 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Elon Muskのエネルギー戦略とCaterpillarが挑む産業AIの実装 08-31</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news.html</guid>
-      <pubDate>Mon, 31 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Elon Muskのガス・タービン戦略と米中ドローン技術競争の最前線 08-31</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-31-ai-news-3.html</guid>
-      <pubDate>Mon, 31 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Nvidiaの次世代戦略とSwift vs ブロックチェーンの覇権を巡る最新動向 08-30</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-4.html</guid>
-      <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Tencentのモデル圧縮技術とNvidiaの次世代AIインフラ戦略：最新ニュースまとめ 08-30</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-2.html</guid>
-      <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>GPUで読む：Hy4のプレビュー公開とTencentによる圧縮技術、そしてNvidiaが描く次世代AIインフラ 08-30</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news-3.html</guid>
-      <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Nvidiaのシステム効率競争とQwen 3.8による高性能なローカルLLM実行 08-30</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-30-ai-news.html</guid>
-      <pubDate>Sun, 30 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>GLM-5.3の登場とROCm 10.0への期待：次世代AIインフラとモデルの進化 08-29</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-08-29-ai-news-2.html</guid>
-      <pubDate>Sat, 29 Aug 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
   </channel>
 </rss>

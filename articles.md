@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [ちばレポのような「道路の穴・不法投棄の通報システム」を無料OSSで自前に——FixMyStreetを日本語化して名古屋の地図で動かし、本家にPRを出すまで](2026-09-07-fixmystreet-japanese-guide.html)
 - [Bitcoinでの巨額流出とOpenAI・Qwenが示すAI研究の最前線 09-07](2026-09-07-ai-news-3.html)
 - [TheとPredictionで読む：QwenやDeepSeekの進化とAIコーディングベンチマークが示す技術革新 09-07](2026-09-07-ai-news-2.html)
 - [Qwen 3.8の変異モデル評価とProgram-Benchが示すAIの高度なコーディング能力 09-07](2026-09-07-ai-news.html)
