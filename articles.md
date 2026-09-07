@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Theで読む：TencentのEVIEモデルによる視覚的文書検索の革新とOpenAIの内部動向 09-07](2026-09-07-ai-news-4.html)
 - [情報公開請求を「出しっぱなし」にしない——請求と回答を公開するOSS「Alaveteli」を日本語化して動かし、本家にPRを出すまで](2026-09-07-alaveteli-japanese-guide.html)
 - [ちばレポのような「道路の穴・不法投棄の通報システム」を無料OSSで自前に——FixMyStreetを日本語化して名古屋の地図で動かし、本家にPRを出すまで](2026-09-07-fixmystreet-japanese-guide.html)
 - [Bitcoinでの巨額流出とOpenAI・Qwenが示すAI研究の最前線 09-07](2026-09-07-ai-news-3.html)
