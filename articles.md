@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Bitcoinでの巨額流出とOpenAI・Qwenが示すAI研究の最前線 09-07](2026-09-07-ai-news-3.html)
 - [TheとPredictionで読む：QwenやDeepSeekの進化とAIコーディングベンチマークが示す技術革新 09-07](2026-09-07-ai-news-2.html)
 - [Qwen 3.8の変異モデル評価とProgram-Benchが示すAIの高度なコーディング能力 09-07](2026-09-07-ai-news.html)
 - [TheとCloudで読む：GPT-6 Astraのリリースと、韓国銀行が警鐘を鳴らすステーブルコインの影響 09-06](2026-09-06-ai-news-4.html)
