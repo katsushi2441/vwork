@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [APIで読む：Mistralの巨額資金調達とDeepSeek Flash 4.1公開など、加速するAI・Web3の最前線 09-09](2026-09-09-ai-news.html)
 - [Gemma4の音声対話からMistral AIの巨額調達まで：最新AI・Web3動向 09-08](2026-09-08-ai-news-4.html)
 - [Qwenの超軽量量子化技術とOpenAIによるGPT-6 Astraへの期待 09-08](2026-09-08-ai-news-3.html)
 - [MiniCPM5の登場とStablecoinが変える次世代の金融・AIインフラ 09-08](2026-09-08-ai-news-2.html)
