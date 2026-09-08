@@ -22,6 +22,7 @@
   python3 scripts/build_crossdomain_sitemap.py --deploy  # 生成してFTPで配置
 """
 import argparse
+import datetime
 import glob
 import os
 import re
@@ -50,13 +51,23 @@ def env():
 def collect():
     rows = []
     for sub in ('blog', 'articles'):
-        for p in glob.glob(os.path.join(REPO, sub, '2026-*.md')):
+        # 日付接頭辞の無い記事（articles/capafy-skill-marketplace.md 等）も拾う
+        for p in glob.glob(os.path.join(REPO, sub, '*.md')):
             text = open(p, encoding='utf-8').read()
-            fm = text.split('---')[1] if text.startswith('---') else ''
+            if not text.startswith('---'):
+                continue  # frontmatter の無いファイル（README 等）は記事ではない
+            fm = text.split('---')[1]
             if re.search(r'^published:\s*false', fm, re.M):
                 continue
             slug = os.path.basename(p)[:-3]
-            rows.append((f'{SITE}/{sub}/{slug}.html', slug[:10]))
+            if slug == 'index':
+                continue  # 一覧ページは ENTRIES で入れている
+            m = re.match(r'(\d{4}-\d{2}-\d{2})', slug) or re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M)
+            if m:
+                day = m.group(1)
+            else:
+                day = datetime.date.fromtimestamp(os.path.getmtime(p)).isoformat()
+            rows.append((f'{SITE}/{sub}/{slug}.html', day))
     rows.sort(key=lambda r: -int(r[1].replace('-', '')))
     return rows
 
