@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Qwenの超軽量量子化技術とOpenAIによるGPT-6 Astraへの期待 09-08](2026-09-08-ai-news-3.html)
 - [MiniCPM5の登場とStablecoinが変える次世代の金融・AIインフラ 09-08](2026-09-08-ai-news-2.html)
 - [Ethereumのガス代負担軽減とMiniCPM5-2Bなど最新AI・Web3動向 09-08](2026-09-08-ai-news.html)
 - [Theで読む：TencentのEVIEモデルによる視覚的文書検索の革新とOpenAIの内部動向 09-07](2026-09-07-ai-news-4.html)
