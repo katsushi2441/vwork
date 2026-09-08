@@ -331,6 +331,14 @@ def main():
         # frontmatter に title_aixsns があればそれを使い、無ければ従来どおり title。
         post_aixsns(fm.get("title_aixsns") or title, article_url)
 
+    # exbridge.jp 側のクロスドメインサイトマップを更新（GitHub Pages のサイトマップは Google が取得しないため）
+    try:
+        subprocess.run([sys.executable, str(REPO_ROOT / "scripts" / "build_crossdomain_sitemap.py"), "--deploy"],
+                       cwd=REPO_ROOT, check=True, timeout=300)
+        print("  vwork-blog-sitemap.xml を更新しました（exbridge.jp）")
+    except Exception as e:  # 失敗しても公開自体は完了している
+        print(f"  クロスドメインサイトマップ更新に失敗: {e}（手動: python3 scripts/build_crossdomain_sitemap.py --deploy）", file=sys.stderr)
+
     print(f"\n完了: {article_url}")
 
 
