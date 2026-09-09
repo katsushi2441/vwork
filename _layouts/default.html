@@ -172,6 +172,14 @@
     h3 { margin:26px 0 10px; font-size:18px; }
     p { margin:0 0 14px; }
     ul { padding-left:1.3em; }
+    /* 記事中の画像と表。画像は本文幅からはみ出させない（2026-09-09: 比較図が横にあふれた） */
+    article img { display:block; max-width:100%; height:auto; margin:10px auto 8px; border:1px solid var(--line); border-radius:6px; }
+    article p > img + em, article img + em { display:block; text-align:center; color:var(--muted); font-size:13px; font-style:normal; margin-bottom:18px; }
+    article table { width:100%; border-collapse:collapse; margin:8px 0 18px; font-size:14.5px; }
+    article th, article td { border:1px solid var(--line); padding:7px 10px; text-align:left; vertical-align:top; }
+    article th { background:#0a9a8f; color:#fff; font-weight:700; white-space:nowrap; }
+    article tbody tr:nth-child(even) { background:#f7fbfb; }
+    @media (max-width:720px) { article table { display:block; overflow-x:auto; white-space:nowrap; } }
     code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
     pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
     pre code { padding:0; background:transparent; color:inherit; }
