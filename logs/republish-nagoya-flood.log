@@ -1,0 +1,31 @@
+To https://github.com/katsushi2441/vwork.git
+   089b8e1..4cf23e9  main -> main
+To https://github.com/katsushi2441/vwork.git
+   0d94ca3..6294ab5  HEAD -> gh-pages
+https://github.com/katsushi2441/vwork/actions/runs/34280296608
+生成: /home/kojima/work/exbridge_jp/vwork-blog-sitemap.xml
+  576 URL（blog 145 / articles 428 / 入口 3）
+配置: https://exbridge.jp/vwork-blog-sitemap.xml
+  Search Console への再送信:
+    cd /home/kojima/work/googleads && python3 gsc_sitemap.py submit https://exbridge.jp/ https://exbridge.jp/vwork-blog-sitemap.xml
+[1/6] SSH agent を探す
+  使用: /tmp/ssh-XXXXXX8V3JLe/agent.3249940
+[2/6] gh-pages worktree を準備
+  gh-pages worktree をリセットしました
+[3/6] HTML生成・インデックス更新
+  /tmp/vwork-gh-pages/blog/2026-09-09-nagoya-flood-hazardmap-check.html を作成しました
+  index.html: すでに記載あり、スキップ
+  index.html: 更新しました
+  index.md: すでに記載あり、スキップ
+  README.md: すでに記載あり、スキップ
+[4/6] commit & push
+  main: push完了
+  gh-pages: push完了
+[5/6] GitHub Pages公開確認
+  Pages workflow: push起動がなかったため手動起動しました
+  公開確認: HTTP 200 (https://katsushi2441.github.io/vwork/blog/2026-09-09-nagoya-flood-hazardmap-check.html)
+[6/6] AIxSNS告知
+  --no-sns のためスキップ
+  vwork-blog-sitemap.xml を更新しました（exbridge.jp）
+
+完了: https://katsushi2441.github.io/vwork/blog/2026-09-09-nagoya-flood-hazardmap-check.html
