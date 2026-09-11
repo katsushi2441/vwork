@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Anthropicの「終末論」的警告とClaudeにおける安全基準の強化 09-12](2026-09-12-ai-news.html)
 - [Anthropicによる中国勢への警鐘とShopifyのネイティブ開発回帰 09-11](2026-09-11-ai-news.html)
 - [Qwenで読む：Navier-Stokes問題の数学的突破口とDeepSeek Flash 4.1、Meta Museが示すAIの現在地 09-09](2026-09-09-ai-news-2.html)
 - [APIで読む：Mistralの巨額資金調達とDeepSeek Flash 4.1公開など、加速するAI・Web3の最前線 09-09](2026-09-09-ai-news.html)
