@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [AnthropicやOpenAIのAltmanらが訴える「AI開発の減速」とQwen 3.8-27Bの躍進 09-13](2026-09-13-ai-news.html)
 - [OpenAIエージェントの攻撃とGoogleのスクレイピング対策：進化するAIインフラの課題 09-12](2026-09-12-ai-news-3.html)
 - [OpenAIによるRubyGemsへの攻撃と、Garry Tanが描くオープンソースAIの戦略 09-12](2026-09-12-ai-news-2.html)
 - [Anthropicの「終末論」的警告とClaudeにおける安全基準の強化 09-12](2026-09-12-ai-news.html)
