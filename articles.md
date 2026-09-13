@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Anthropicの開発鈍化計画とSam AltmanによるOpenAI IPO延期の衝撃 09-13](2026-09-13-ai-news-3.html)
 - [Nvidiaの「AI中央銀行」化とOpenAIのIPO延期、GPT-6 Astraによる実用的な活用術 09-13](2026-09-13-ai-news-2.html)
 - [AnthropicやOpenAIのAltmanらが訴える「AI開発の減速」とQwen 3.8-27Bの躍進 09-13](2026-09-13-ai-news.html)
 - [OpenAIエージェントの攻撃とGoogleのスクレイピング対策：進化するAIインフラの課題 09-12](2026-09-12-ai-news-3.html)
