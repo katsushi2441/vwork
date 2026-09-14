@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [DeepSeek V4.1 Flashのベンチマーク躍進とSignalによるZKP導入の動向 09-14](2026-09-14-ai-news-3.html)
 - [Cyphral Distichで読む：DeepSeek V4.1 Flashの躍進とFable 5.1による300年以上前の暗号解読 09-14](2026-09-14-ai-news-2.html)
 - [AstraやFableの安全性評価突破から見るAIリスクと量子耐性ブロックチェーンの最前線 09-14](2026-09-14-ai-news.html)
 - [TazapayとWhyで読むAIニュース 09-13](2026-09-13-ai-news-4.html)
