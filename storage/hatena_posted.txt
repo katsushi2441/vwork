@@ -511,3 +511,17 @@ url2pub-i18n-hatena-summary
 2026-09-09-ai-news
 2026-09-09-nagoya-flood-hazardmap-check
 2026-09-09-ai-news-2
+note-n91263aed16c0
+2026-09-11-ai-news
+2026-09-12-ai-news
+2026-09-12-ai-news-2
+note-n6a662489e7a5
+2026-09-12-ai-news-3
+note-n29b87dbd59bd
+2026-09-13-ai-news
+2026-09-13-ai-news-2
+2026-09-13-ai-news-3
+2026-09-13-ai-news-4
+2026-09-14-ai-news
+2026-09-14-ai-news-2
+2026-09-14-shinseisho-kinyu-assist
