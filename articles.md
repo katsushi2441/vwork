@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [UkisAIのSwift-QwenやOpenAIのセキュリティ動向から見る最新AIトレンド 09-15](2026-09-15-ai-news-2.html)
 - [SuperhumanによるFathom買収とk2 Horizonモデルが示すAI・生産性の最前線 09-15](2026-09-15-ai-news.html)
 - [DeepSeek V4.1 Flashのベンチマーク躍進とSignalによるZKP導入の動向 09-14](2026-09-14-ai-news-3.html)
 - [Cyphral Distichで読む：DeepSeek V4.1 Flashの躍進とFable 5.1による300年以上前の暗号解読 09-14](2026-09-14-ai-news-2.html)
