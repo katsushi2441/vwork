@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Voodoo Dynamic QuantのMITライセンス公開と、CrofAIの不祥事から見るWeb3の脆弱性 09-15](2026-09-15-ai-news-4.html)
 - [UkisAIによるQwenの高速化と、企業を自律運営するAIエージェント「Pion」の衝撃 09-15](2026-09-15-ai-news-3.html)
 - [UkisAIのSwift-QwenやOpenAIのセキュリティ動向から見る最新AIトレンド 09-15](2026-09-15-ai-news-2.html)
 - [SuperhumanによるFathom買収とk2 Horizonモデルが示すAI・生産性の最前線 09-15](2026-09-15-ai-news.html)
