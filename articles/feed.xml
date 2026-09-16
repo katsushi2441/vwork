@@ -6,7 +6,196 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 07 Sep 2026 05:55:48 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 11:12:01 +0000</lastBuildDate>
+    <item>
+      <title>Appleの「Reference Image」とAIデータセンターの電力需要が示す技術の最前線 09-16</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-4.html</guid>
+      <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>GoogleのGemini 3.8発表とNVIDIAによるAI規制への提言 09-16</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-3.html</guid>
+      <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>MetaのWhatsApp連携からSystem One Modelsまで：AIエージェントの実装とインフラの最前線 09-16</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-2.html</guid>
+      <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>SalesforceとNVIDIAが主導する企業向けAI展開とDeFiのセキュリティ課題 09-16</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news.html</guid>
+      <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Sunoの代わりを自前GPUで——ACE-Step 1.5 Turbo XL と HeartMuLa oss-3B を同じ日本語歌詞で計測した（速度・VRAM・歌詞の一致率）</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-16-acestep-vs-heartmula-local-song-generation.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-acestep-vs-heartmula-local-song-generation.html</guid>
+      <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
+      <description>Suno で作っていた BGM やデモ曲を、手元の GPU で回せないか。2026年9月時点で「歌詞＋曲調の指示から、ボーカル入りのフル曲」を出せて商用利用もできるオープンなモデルは、実質 ACE-Step 1.5（MIT）と HeartMuLa oss-3B（Apache 2.0、重みも）の2つに絞れます。YuE2 は重みが CC BY-NC（非商用）、M</description>
+    </item>
+    <item>
+      <title>Voodoo Dynamic QuantのMITライセンス公開と、CrofAIの不祥事から見るWeb3の脆弱性 09-15</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-4.html</guid>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>SuperhumanによるFathom買収とk2 Horizonモデルが示すAI・生産性の最前線 09-15</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news.html</guid>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>UkisAIによるQwenの高速化と、企業を自律運営するAIエージェント「Pion」の衝撃 09-15</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-3.html</guid>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>UkisAIのSwift-QwenやOpenAIのセキュリティ動向から見る最新AIトレンド 09-15</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-2.html</guid>
+      <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Cyphral Distichで読む：DeepSeek V4.1 Flashの躍進とFable 5.1による300年以上前の暗号解読 09-14</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-14-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-14-ai-news-2.html</guid>
+      <pubDate>Mon, 14 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>DeepSeek V4.1 Flashのベンチマーク躍進とSignalによるZKP導入の動向 09-14</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-14-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-14-ai-news-3.html</guid>
+      <pubDate>Mon, 14 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>AstraやFableの安全性評価突破から見るAIリスクと量子耐性ブロックチェーンの最前線 09-14</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-14-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-14-ai-news.html</guid>
+      <pubDate>Mon, 14 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>TazapayとWhyで読むAIニュース 09-13</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news-4.html</guid>
+      <pubDate>Sun, 13 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Anthropicの開発鈍化計画とSam AltmanによるOpenAI IPO延期の衝撃 09-13</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news-3.html</guid>
+      <pubDate>Sun, 13 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Nvidiaの「AI中央銀行」化とOpenAIのIPO延期、GPT-6 Astraによる実用的な活用術 09-13</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news-2.html</guid>
+      <pubDate>Sun, 13 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>AnthropicやOpenAIのAltmanらが訴える「AI開発の減速」とQwen 3.8-27Bの躍進 09-13</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news.html</guid>
+      <pubDate>Sun, 13 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>OpenAIエージェントの攻撃とGoogleのスクレイピング対策：進化するAIインフラの課題 09-12</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-12-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-12-ai-news-3.html</guid>
+      <pubDate>Sat, 12 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Anthropicの「終末論」的警告とClaudeにおける安全基準の強化 09-12</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-12-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-12-ai-news.html</guid>
+      <pubDate>Sat, 12 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>OpenAIによるRubyGemsへの攻撃と、Garry Tanが描くオープンソースAIの戦略 09-12</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-12-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-12-ai-news-2.html</guid>
+      <pubDate>Sat, 12 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Anthropicによる中国勢への警鐘とShopifyのネイティブ開発回帰 09-11</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-11-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-11-ai-news.html</guid>
+      <pubDate>Fri, 11 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Qwenで読む：Navier-Stokes問題の数学的突破口とDeepSeek Flash 4.1、Meta Museが示すAIの現在地 09-09</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-09-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-09-ai-news-2.html</guid>
+      <pubDate>Wed, 09 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>APIで読む：Mistralの巨額資金調達とDeepSeek Flash 4.1公開など、加速するAI・Web3の最前線 09-09</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-09-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-09-ai-news.html</guid>
+      <pubDate>Wed, 09 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Ethereumのガス代負担軽減とMiniCPM5-2Bなど最新AI・Web3動向 09-08</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-08-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-08-ai-news.html</guid>
+      <pubDate>Tue, 08 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>MiniCPM5の登場とStablecoinが変える次世代の金融・AIインフラ 09-08</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-08-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-08-ai-news-2.html</guid>
+      <pubDate>Tue, 08 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Qwenの超軽量量子化技術とOpenAIによるGPT-6 Astraへの期待 09-08</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-08-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-08-ai-news-3.html</guid>
+      <pubDate>Tue, 08 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Gemma4の音声対話からMistral AIの巨額調達まで：最新AI・Web3動向 09-08</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-08-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-08-ai-news-4.html</guid>
+      <pubDate>Tue, 08 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Theで読む：TencentのEVIEモデルによる視覚的文書検索の革新とOpenAIの内部動向 09-07</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-07-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-07-ai-news-4.html</guid>
+      <pubDate>Mon, 07 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
     <item>
       <title>情報公開請求を「出しっぱなし」にしない——請求と回答を公開するOSS「Alaveteli」（英国WhatDoTheyKnowの中身）を日本語化して動かし、本家にPRを出すまで</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-07-alaveteli-japanese-guide.html</link>
@@ -97,195 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-paperless-ngx-japanese-ocr.html</guid>
       <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
       <description>紙とPDFの書類を、検索できる形で一箇所に貯めるオープンソース paperless-ngx を、日本語の請求書と契約書で実用になるところまで詰めました。</description>
-    </item>
-    <item>
-      <title>OpenAIのGPT-6 Astra登場とAIエージェントを巡る最新動向 09-05</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news.html</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>GISは商圏分析だけではない——住所の地図化・訪問ルート・位置つき記録まで、業務で使えるオープンソースを実測した検索需要つきで整理する</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-gis-oss-business-applications.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-gis-oss-business-applications.html</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
-      <description>GIS（地理情報システム）というと商圏分析を思い浮かべる方が多いのですが、実際の応用範囲はもっと広いです。住所を地図に載せる、訪問先を回る順番を決める、どこで作業したかを記録する——どれもGISの仕事です。</description>
-    </item>
-    <item>
-      <title>OpenAIのAIエージェントとChromiumの脆弱性が示すセキュリティ課題 09-05</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-05-ai-news-3.html</guid>
-      <pubDate>Sat, 05 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>NamazuからFessへ——日本発の全文検索OSS「Fess」をdockerで立てて45本のPDFを索引し、ローカルLLMで「聞けば答える」を10問で実測（検索10/10・回答9/10）</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-fess-fulltext-search-ai-chat.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-fess-fulltext-search-ai-chat.html</guid>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
-      <description>数万件の技術資料PDFを Namazu で全文検索し、AIチャットが答える仕組みを当社は実用化しています（開発実績の記事https://katsushi2441.github.io/vwork/blog/2026-09-04-namazu-ai-chat-knowledge.html）。Namazu は枯れていて安定していますが、これから新しく立てる会社には</description>
-    </item>
-    <item>
-      <title>Trelloの代替を自社サーバーに——カンバンOSS「Planka」を日本語で立てて分かった、翻訳の穴56キーと「第三者向けホスティングは有料」というライセンスの線引き</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-planka-japanese-guide.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-planka-japanese-guide.html</guid>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Trello の月額をやめて、同じ使い勝手のカンバンを自社サーバーに置きたい。その候補として名前がよく挙がる Planka（プランカ） を、実際に立てて日本語で使えるところまで確かめました。結論を先に書きます。</description>
-    </item>
-    <item>
-      <title>日本語が一切ないOSSを、日本語にする——書類管理OSS「Docspell」の画面1,056語を訳してElmで実装し、コンパイルを通すまでの全記録</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-docspell-japanese-guide.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-docspell-japanese-guide.html</guid>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
-      <description>「日本語対応あり」と書いてある OSS の翻訳率を測る話をこれまで3本書きました（Vikunja 91%、Docmost 100%、Planka 88%）。今回は逆で、日本語が一切入っていない OSS を、ゼロから日本語にした記録です。対象は、スキャンした書類・メール添付・PDF を取り込んで整理する書類管理OSS「Docspell（ドックスペル）」。英語・</description>
-    </item>
-    <item>
-      <title>NvidiaがHugging Faceを買収へ：QwenやK2-Horizonなど最新AIモデルの動向まとめ 09-04</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news.html</guid>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>whisper.cppで日本語の文字起こしを自社サーバーで動かす——使い方と実測（47秒の会議音声を27秒・文字誤り率2.7%）、AI議事録まで自動化する構成</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-whisper-cpp-japanese-transcription.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-whisper-cpp-japanese-transcription.html</guid>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
-      <description>会議の録音を文字に起こしたい。ただし録音を外部のクラウドに送りたくない、分単位の課金も避けたい。そういう会社向けに、OpenAI の音声認識モデル Whisper を C++ に移植した whisper.cpp を自社サーバーで動かし、日本語の文字起こしがどのくらいの速さと精度で動くかを実測しました。当社の買い切り製品 Kurage AI MOMhttps:</description>
-    </item>
-    <item>
-      <title>OpenAIのGPT-6 Astraへの期待とMetaによるデータ収集戦略、そしてWeb3の新潮流 09-04</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-3.html</guid>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>英語PDFを社外に出さずに日本語で読む——PDFMathTranslateを自社サーバーに立てて15ページを3分・費用0円で翻訳した実測と、思考型モデルで5.8倍遅くなる罠</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-pdf-translation-selfhosted.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-pdf-translation-selfhosted.html</guid>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
-      <description>英語の仕様書や論文を日本語で読みたい。ただしその文書をクラウドの翻訳サービスに送りたくない。技術資料、未公開の仕様書、契約書を扱う会社では、これが導入の壁になります。</description>
-    </item>
-    <item>
-      <title>Modelで読む：OpenAIのGPT-6 Astra発表とQwenモデルの高速化など、最新のAI・技術トレンド 09-04</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-2.html</guid>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>OpenAIのGPT-6 Astra登場とMetaのデータ戦略：次世代AI進化の最前線 09-04</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-04-ai-news-4.html</guid>
-      <pubDate>Fri, 04 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>ヘルプデスクOSS「Zammad」の日本語は23%しかなかった——5,123エントリを全訳して本家Weblateを100%にするまでと、今すぐ日本語化する手順</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-zammad-japanese-guide.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-zammad-japanese-guide.html</guid>
-      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Zendeskの代替を探すと必ず候補に挙がるオープンソースヘルプデスク Zammadhttps://github.com/zammad/zammad（Ruby on Rails製・AGPL-3.0・GitHubスター5,800超）。メール・電話・チャットの問い合わせをチケットとして一元管理でき、セルフホストで月額ゼロ運用ができます。</description>
-    </item>
-    <item>
-      <title>GoogleのGemini 3.8 Flash登場とOpenAIによる新推論技術への警鐘 09-03</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-4.html</guid>
-      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>CrowdStrikeによるロシア製マルウェア摘発とH3-Worldが拓く「言語による世界制御」の最前線 09-03</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news.html</guid>
-      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>CodeAlmanacとは？AIエージェントに「コードに書けない文脈」を持たせるYC発OSS——使い方と、macOS専用だったのでLinux対応を本家に送った話</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-codealmanac-linux-guide.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-codealmanac-linux-guide.html</guid>
-      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Claude CodeやCodexでコードを書いていると、必ずぶつかる問題があります。エージェントは「なぜこの設計になっているか」「過去に何が壊れたか」を知らない。コードには現在の形しか書かれていないからです。</description>
-    </item>
-    <item>
-      <title>Todoist・Trelloの代替を自社サーバーに——タスク管理OSS「Vikunja」を5分で立てて日本語で使うまで。翻訳の穴9%（135キー）を埋めて本家に返した記録</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-vikunja-japanese-guide.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-vikunja-japanese-guide.html</guid>
-      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Todoist や Trello、Microsoft To-Do を「便利だけど社外にタスクを置くのが気になる」「人数課金が積み上がる」と感じている会社向けに、自社サーバーで動くタスク管理OSS「Vikunja（ヴィクーニャ）」を実際に立てて、日本語で使えるところまで確かめました。</description>
-    </item>
-    <item>
-      <title>GoogleのGemini 3.8 Flash登場とOpenAIの新推論技術が話題に 09-03</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-3.html</guid>
-      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Google、高速・高性能な「Gemini 3.8 Flash」を発表・OpenAIの新技術「再帰的深度」がAI安全の専門家を警戒させる 09-03</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-ai-news-2.html</guid>
-      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Notion・Confluenceの代替を自社サーバーに——社内WikiOSS「Docmost」を日本語で立てて分かった、翻訳100%でも「日本語検索に穴がある」話と対策</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-03-docmost-japanese-guide.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-03-docmost-japanese-guide.html</guid>
-      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
-      <description>社内の手順書・議事録・顧客メモを Notion や Confluence に置いている会社は多いと思います。「人数課金が積み上がる」「社外のクラウドに社内文書を置きたくない」という声に対して、自社サーバーで動く社内Wiki OSS「Docmost（ドックモスト）」を実際に立てて、日本語で使えるところまで確かめました。</description>
-    </item>
-    <item>
-      <title>OpenAIのAstraモデルとGoogleの新ツールが導く、AIデザインとセキュリティの最前線 09-02</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-4.html</guid>
-      <pubDate>Wed, 02 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>OpenAIのAstraモデルが示すサイバーセキュリティへの脅威とGoogleのクリエイティブ戦略 09-02</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-3.html</guid>
-      <pubDate>Wed, 02 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Hugging FaceのWebGPU対応からOpenAI・Googleの最新動向まで：加速するAIインフラと実用化 09-02</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news-2.html</guid>
-      <pubDate>Wed, 02 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>HuggingFaceとWebGPUが拓くブラウザ上でのローカルAI実行の新時代 09-02</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-02-ai-news.html</guid>
-      <pubDate>Wed, 02 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>NvidiaのMediaTek戦略と国防総省によるChatGPT・Grok導入の最前線 09-01</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-2.html</guid>
-      <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>AppleとOpenAIを巡るデータ流出問題とシンガポールのステーブルコイン規制動向 09-01</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news-4.html</guid>
-      <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>NvidiaがMediaTekに巨額投資：Big Techへの対抗策と次世代AI・Web3の最前線 09-01</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-01-ai-news.html</guid>
-      <pubDate>Tue, 01 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
   </channel>
 </rss>
