@@ -8,6 +8,7 @@ import subprocess
 import time
 import urllib.request
 import urllib.parse
+import os
 from pathlib import Path
 from datetime import date
 
@@ -15,7 +16,33 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "episodes"
 OUT_DIR.mkdir(exist_ok=True)
 
-CLAUDE_BIN = "/home/kojima/.vscode-server/extensions/anthropic.claude-code-2.1.145-linux-x64/resources/native-binary/claude"
+CLAUDE_BIN = ""  # 実体は _resolve_claude_bin() で探す（下）
+
+
+def _resolve_claude_bin(preset: str = "") -> str:
+    """claude の実体を探す。
+
+    VS Code 拡張のパスはバージョンを含むので、更新されると固定パスは消える。
+    2026-09-09 に 2.1.145/2.1.169 が消えて、これを固定で持っていた処理が
+    軒並み動かなくなった。固定で書かず、新しいものから順に拾う。
+    """
+    import glob as _glob
+    import shutil as _shutil
+    candidates = [preset] if preset else []
+    found = _shutil.which("claude")
+    if found:
+        candidates.append(found)
+    candidates.append("/home/kojima/.local/bin/claude")
+    candidates.extend(sorted(_glob.glob(
+        "/home/kojima/.vscode-server/extensions/anthropic.claude-code-*/resources/native-binary/claude"),
+        reverse=True))
+    for path in candidates:
+        if path and os.path.exists(path) and os.access(path, os.X_OK):
+            return path
+    return ""
+
+
+CLAUDE_BIN = _resolve_claude_bin()
 
 PEOPLE = [
     {"name": "孫正義",   "category": "経営者", "company": "ソフトバンク"},
