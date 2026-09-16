@@ -526,3 +526,13 @@ note-n29b87dbd59bd
 2026-09-14-ai-news-2
 2026-09-14-shinseisho-kinyu-assist
 2026-09-14-giin-hatsugen-log
+2026-09-14-ai-news-3
+2026-09-15-ai-news
+2026-09-15-ai-news-2
+2026-09-15-ai-news-3
+2026-09-15-ai-news-4
+2026-09-16-ai-news
+2026-09-16-ai-news-2
+2026-09-16-ai-news-3
+2026-09-16-ai-news-4
+2026-09-16-acestep-vs-heartmula-local-song-generation
