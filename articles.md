@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Willで読む：AnthropicとOpenAIの安全評価体制とAppleによるNvidia技術を活用したサーバー市場への再参入 09-17](2026-09-17-ai-news-2.html)
 - [SK HynixとIntelの提携、そしてAppleがNVIDIA技術でサーバー市場へ再参入か 09-17](2026-09-17-ai-news.html)
 - [Sunoの代わりを自前GPUで——ACE-Step 1.5 Turbo XL と HeartMuLa oss-3B を同じ日本語歌詞で計測した（速度・VRAM・歌詞の一致率）](2026-09-16-acestep-vs-heartmula-local-song-generation.html)
 - [Appleの「Reference Image」とAIデータセンターの電力需要が示す技術の最前線 09-16](2026-09-16-ai-news-4.html)
