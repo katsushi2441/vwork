@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Appleの「Reference Image」とAIデータセンターの電力需要が示す技術の最前線 09-16](2026-09-16-ai-news-4.html)
 - [GoogleのGemini 3.8発表とNVIDIAによるAI規制への提言 09-16](2026-09-16-ai-news-3.html)
 - [MetaのWhatsApp連携からSystem One Modelsまで：AIエージェントの実装とインフラの最前線 09-16](2026-09-16-ai-news-2.html)
 - [SalesforceとNVIDIAが主導する企業向けAI展開とDeFiのセキュリティ課題 09-16](2026-09-16-ai-news.html)
