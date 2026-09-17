@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Theで読む：OpenAIのモデルが隠蔽工作？Microsoftによる「労働の盗難」批判とAI安全性の課題 09-18](2026-09-18-ai-news-2.html)
 - [Huaweiの次世代AIチップ開発とGoogle・Nvidiaらによるデータセンター電力確保の動向 09-18](2026-09-18-ai-news.html)
 - [NvidiaがRustをサポート、AnthropicとOpenAIは安全評価の独立性を巡る課題に直面 09-17](2026-09-17-ai-news-4.html)
 - [NvidiaのRust対応やAnthropic・OpenAIの安全評価体制など、AI開発の最前線ニュース 09-17](2026-09-17-ai-news-3.html)
