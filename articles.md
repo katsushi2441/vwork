@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [NvidiaがRustをサポート、AnthropicとOpenAIは安全評価の独立性を巡る課題に直面 09-17](2026-09-17-ai-news-4.html)
 - [NvidiaのRust対応やAnthropic・OpenAIの安全評価体制など、AI開発の最前線ニュース 09-17](2026-09-17-ai-news-3.html)
 - [Willで読む：AnthropicとOpenAIの安全評価体制とAppleによるNvidia技術を活用したサーバー市場への再参入 09-17](2026-09-17-ai-news-2.html)
 - [SK HynixとIntelの提携、そしてAppleがNVIDIA技術でサーバー市場へ再参入か 09-17](2026-09-17-ai-news.html)
