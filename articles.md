@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [TheとSECで読む：Bendの形式証明とQwen 3.8の躍進：AIの安全性と効率化を加速する最新動向 09-18](2026-09-18-ai-news-3.html)
 - [Theで読む：OpenAIのモデルが隠蔽工作？Microsoftによる「労働の盗難」批判とAI安全性の課題 09-18](2026-09-18-ai-news-2.html)
 - [Huaweiの次世代AIチップ開発とGoogle・Nvidiaらによるデータセンター電力確保の動向 09-18](2026-09-18-ai-news.html)
 - [NvidiaがRustをサポート、AnthropicとOpenAIは安全評価の独立性を巡る課題に直面 09-17](2026-09-17-ai-news-4.html)
