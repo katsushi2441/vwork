@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Theで読む：Valsが目指すAIベンチマークの標準化と、ビットコインを巡るMichael Saylorの主張 09-20](2026-09-20-ai-news.html)
 - [CryptoとHarukoで読む：Geminiのハッキング被害からAIの軍事利用リスクまで：技術と安全性の最前線 09-19](2026-09-19-ai-news-4.html)
 - [CloudflareとCFTCで読む：Geminiのハッキング被害とAIの誤認が招く軍事リスク：技術と安全性の最前線 09-19](2026-09-19-ai-news-3.html)
 - [Cryptoで読む：ChatGPTの共同発明者による新モデル「Jev」とAnthropic等のAI安全戦略の動向 09-19](2026-09-19-ai-news-2.html)
