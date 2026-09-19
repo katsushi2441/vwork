@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [CloudflareとCFTCで読む：Geminiのハッキング被害とAIの誤認が招く軍事リスク：技術と安全性の最前線 09-19](2026-09-19-ai-news-3.html)
 - [Cryptoで読む：ChatGPTの共同発明者による新モデル「Jev」とAnthropic等のAI安全戦略の動向 09-19](2026-09-19-ai-news-2.html)
 - [AnthropicのClaudeがOpenAIをハッキング？AIセキュリティと開発手法の課題 09-19](2026-09-19-ai-news.html)
 - [TheとAgentsで読む：Ternary Bonsai 2の登場とCrusoeによる39億ドルのAIインフラ投資 09-18](2026-09-18-ai-news-4.html)
