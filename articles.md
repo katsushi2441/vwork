@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Qwen3.5を基盤としたKevの登場とGoogle Geminiによるハードウェア戦略 09-22](2026-09-22-ai-news.html)
 - [Worldで読む：GoogleのAX公開とSamsungのHBM4供給拡大など、AIインフラとモデル開発の最前線 09-21](2026-09-21-ai-news-4.html)
 - [SECで読む：Qwen-Image-2.1のリリースとGoogleによるAX公開など、AI技術の最前線ニュース 09-21](2026-09-21-ai-news-3.html)
 - [SamsungのHBM4供給拡大とQwen-Image-2.1の登場：加速するAIインフラとモデル競争 09-21](2026-09-21-ai-news-2.html)
