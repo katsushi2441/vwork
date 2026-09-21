@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [SECで読む：Qwen-Image-2.1のリリースとGoogleによるAX公開など、AI技術の最前線ニュース 09-21](2026-09-21-ai-news-3.html)
 - [SamsungのHBM4供給拡大とQwen-Image-2.1の登場：加速するAIインフラとモデル競争 09-21](2026-09-21-ai-news-2.html)
 - [Qwen-Image-2.1のリリースとCoinbaseらによるトークン化株式への期待 09-21](2026-09-21-ai-news.html)
 - [Exfiltrate Your Weightsで読む：Gemini 4の進化と、AIモデルの重み（Weights）に対するセキュリティ… 09-20](2026-09-20-ai-news-4.html)
