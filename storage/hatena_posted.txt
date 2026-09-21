@@ -555,3 +555,8 @@ note-n29b87dbd59bd
 2026-09-21-ai-news
 2026-09-21-ai-news-2
 2026-09-21-kflood-empty-state
+2026-09-21-php-was-enough
+2026-09-21-ai-news-3
+2026-09-21-shuro-a-gata-opendata
+2026-09-21-ai-news-4
+2026-09-21-houkago-day-service-opendata
