@@ -1,0 +1,100 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>作り終えてから「これPHPだけでいいのでは」と言われた——バックエンドが要るかどうかの見分け方 | VWork バイブコーディングフレームワーク</title><meta name="description" content="作り終えてから「これPHPだけでいいのでは」と言われた——バックエンドが要るかどうかの見分け方"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-21-php-was-enough.html"><meta property="og:type" content="article"><meta property="og:title" content="作り終えてから「これPHPだけでいいのでは」と言われた——バックエンドが要るかどうかの見分け方"><meta property="og:description" content="作り終えてから「これPHPだけでいいのでは」と言われた——バックエンドが要るかどうかの見分け方"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-21-php-was-enough.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="作り終えてから「これPHPだけでいいのでは」と言われた——バックエンドが要るかどうかの見分け方"><meta name="twitter:description" content="作り終えてから「これPHPだけでいいのでは」と言われた——バックエンドが要るかどうかの見分け方"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "作り終えてから「これPHPだけでいいのでは」と言われた——バックエンドが要るかどうかの見分け方", "description": "作り終えてから「これPHPだけでいいのでは」と言われた——バックエンドが要るかどうかの見分け方", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-21-php-was-enough.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-21", "dateModified": "2026-09-21", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>作り終えてから「これPHPだけでいいのでは」と言われた——バックエンドが要るかどうかの見分け方</h1><p class="meta">2026-09-21</p><p>住所を入れると、その自治体の学童保育（放課後児童クラブ）の待機児童数が出る道具を作りました。公開して、systemdに登録して、ポートを開けて、公開用のプロキシも置きました。</p>
+<p>そこで言われました。「なんでポートが必要なの？ PHPだけじゃないの？」</p>
+<p>そのとおりでした。作り直したら、<strong>PHP1ファイルとJSONだけ</strong>になりました。その日のうちに気づけなかった理由と、次から迷わないための見分け方を書きます。</p>
+<ul>
+<li>できたもの: <a href="https://kurage.exbridge.jp/kgakudo.php/?ref=vwork-php-enough">https://kurage.exbridge.jp/kgakudo.php/?ref=vwork-php-enough</a></li>
+<li>オンプレミス版: <a href="https://kappstore.exbridge.jp/app.php?id=f2853d368ddf8e57&amp;ref=vwork-php-enough">https://kappstore.exbridge.jp/app.php?id=f2853d368ddf8e57&amp;ref=vwork-php-enough</a></li>
+</ul>
+<h2>何を作りすぎたか</h2>
+<p>最初の構成はこうでした。</p>
+<ul>
+<li>FastAPI のアプリ（Python）</li>
+<li>venv と systemd の user unit</li>
+<li>ポート18382を開けて、ルーター越しに公開</li>
+<li>heteml 側に PHP の透過プロキシ、その設定ファイル</li>
+</ul>
+<p>動くには動きました。ただ、最初の公開のときに <strong>502</strong> が出ました。原因は、プロキシの向き先のポートが外から見えていなかったことです。つまり、<strong>自分で作った依存で自分が転んだ</strong>わけです。</p>
+<p>作り直したあとの構成はこうです。</p>
+<ul>
+<li><code>kgakudo.php</code>（1ファイル）</li>
+<li><code>kgakudo_data/</code>（JSON 29KB と CSV 2本）</li>
+</ul>
+<p>以上。データベースも、常駐するサーバーも、ポートもありません。</p>
+<h2>なぜ気づかなかったか</h2>
+<p>直前に作っていたのが洪水・内水のハザードマップで、そちらは<strong>本当にバックエンドが要る</strong>からです。PostGIS に数百万面のポリゴンを入れて、点を含む面を空間検索します。PHPでは無理です。</p>
+<p>その形が手に残っていたまま、次の製品を同じ型で作りました。<strong>要件ではなく、直前の成功体験で構成を決めてしまった</strong>ということです。</p>
+<h2>見分け方（次からはこれで判断する）</h2>
+<p>作る前に、この4つを見ます。<strong>全部「いいえ」ならPHPで足ります。</strong></p>
+<table>
+<thead>
+<tr>
+<th>問い</th>
+<th>学童保育ナビ</th>
+<th>洪水ハザードマップ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>データは数十MBを超えるか</td>
+<td>いいえ（29KB）</td>
+<td>はい（数GB）</td>
+</tr>
+<tr>
+<td>空間検索や全文検索など、専用エンジンが要る計算をするか</td>
+<td>いいえ</td>
+<td>はい（PostGIS）</td>
+</tr>
+<tr>
+<td>データが毎日・毎時変わるか</td>
+<td>いいえ（年1回）</td>
+<td>はい（発令は3分ごと）</td>
+</tr>
+<tr>
+<td>学習済みモデルや重いライブラリを使うか</td>
+<td>いいえ</td>
+<td>いいえ</td>
+</tr>
+</tbody>
+</table>
+<p>学童のほうは、やっている計算が「住所を都道府県と市区町村に正規表現で割って、JSONを引く」だけでした。この程度でバックエンドを立てるのは、<strong>ガスコンロで足りる料理に工場を建てる</strong>のと同じです。</p>
+<p>逆に、1つでも「はい」があるならバックエンドを立てます。そこをPHPで無理をすると、今度は別の形で壊れます。</p>
+<h2>PHPにして良くなったこと</h2>
+<p><strong>1. 故障の種が減った。</strong> heteml の中で完結するので、うちのサーバーが落ちても動きます。502の原因そのものが消えました。</p>
+<p><strong>2. 売り物として強くなった。</strong> 買った人がやることが「ファイルを2つ置いて、.htaccess に1行書く」だけになりました。前の構成なら、Python・venv・systemd・ポート開放・プロキシの説明が要ります。<strong>説明が短い製品は、それだけで価値がある</strong>と思っています。</p>
+<p><strong>3. 運用が消えた。</strong> 監視するプロセスがありません。年1回、国が新しいPDFを出したときにJSONを差し替えるだけです。</p>
+<p>失ったものは、正直に言えばありません。強いて言えば、PHPでテンプレートエンジンなしにHTMLを書くので、コードは少し読みにくくなりました。1ファイル700行ほどです。</p>
+<h2>Pythonは捨てない。置き場所を変える</h2>
+<p>PDFから表を取り出す処理はPythonのままです。ただし<strong>製品には含めません</strong>。年1回、手元で動かしてJSONを作り、そのJSONを配布物に入れます。</p>
+<p>この分け方が大事でした。「データを作る道具」と「データを見せる道具」は、動く場所も頻度も違います。前者は開発者の手元で年1回、後者はお客さまのサーバーで毎日。<strong>同じ言語・同じプロセスに詰める理由がない</strong>のに、最初はひとつの箱に入れようとしていました。</p>
+<p>ちなみに取り込みの検算では、抜き出した数字を全部足して、PDFに書かれている全国値と一致するかを見ます。最初は待機児童が147人足りず、原因は名前が1文字の市（柏市・呉市）を落とす正規表現でした。直して、待機16,330人・クラブ25,928か所・登録児童1,570,645人の3つとも一致しました。<strong>合計の一致は、写し間違いがないことのいちばん安い証拠</strong>です。</p>
+<h2>まとめ</h2>
+<ul>
+<li>構成は、<strong>直前に作ったものではなく、目の前のデータの性質で決める</strong></li>
+<li>データが小さく、更新が年単位で、専用エンジンが要らないなら、PHP1ファイルで足りる</li>
+<li>依存を1つ増やすと、故障の種を1つ増やすことになる（実際に502で転んだ）</li>
+<li>「作る道具」と「見せる道具」は分けて置く</li>
+</ul>
+<p>作り過ぎに気づけたのは、他人に「なんでポートが必要なの？」と聞かれたからでした。作った本人は、自分の構成を疑いません。<strong>完成したあとに、いちばん素朴な質問をしてくれる人</strong>が、いちばん役に立ちます。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
