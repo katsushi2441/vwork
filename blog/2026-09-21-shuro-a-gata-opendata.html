@@ -1,0 +1,126 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>就労継続支援A型は本当に減ったのか——公開データの「増えている」を信じずに数えた | VWork バイブコーディングフレームワーク</title><meta name="description" content="就労継続支援A型は本当に減ったのか——公開データの「増えている」を信じずに数えた"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-21-shuro-a-gata-opendata.html"><meta property="og:type" content="article"><meta property="og:title" content="就労継続支援A型は本当に減ったのか——公開データの「増えている」を信じずに数えた"><meta property="og:description" content="就労継続支援A型は本当に減ったのか——公開データの「増えている」を信じずに数えた"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-21-shuro-a-gata-opendata.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="就労継続支援A型は本当に減ったのか——公開データの「増えている」を信じずに数えた"><meta name="twitter:description" content="就労継続支援A型は本当に減ったのか——公開データの「増えている」を信じずに数えた"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "就労継続支援A型は本当に減ったのか——公開データの「増えている」を信じずに数えた", "description": "就労継続支援A型は本当に減ったのか——公開データの「増えている」を信じずに数えた", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-21-shuro-a-gata-opendata.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-21", "dateModified": "2026-09-21", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>就労継続支援A型は本当に減ったのか——公開データの「増えている」を信じずに数えた</h1><p class="meta">2026-09-21</p><p>就労継続支援A型・B型の事業所を、住所から探せる道具を作りました。作る途中で、データの読み方をひとつ間違えかけました。その話を書きます。</p>
+<ul>
+<li>できたもの: <a href="https://kurage.exbridge.jp/kshuro.php/?ref=vwork-shuro">https://kurage.exbridge.jp/kshuro.php/?ref=vwork-shuro</a></li>
+<li>消えた事業所のページ: <a href="https://kurage.exbridge.jp/kshuro.php/gone?ref=vwork-shuro">https://kurage.exbridge.jp/kshuro.php/gone?ref=vwork-shuro</a></li>
+<li>オンプレミス版: <a href="https://kappstore.exbridge.jp/app.php?id=790cee5b922df2e4&amp;ref=vwork-shuro">https://kappstore.exbridge.jp/app.php?id=790cee5b922df2e4&amp;ref=vwork-shuro</a></li>
+</ul>
+<h2>国は、全事業所を機械が読める形で出している</h2>
+<p>WAM NET（独立行政法人福祉医療機構）が、障害福祉サービス等情報公表システムのオープンデータを配っています。29のサービス種別ごとにCSVで、半年ごとに更新されます。<strong>営利・非営利を問わず二次利用できる</strong>と明記されています。</p>
+<p>就労系の4サービスだけで、2026年3月末時点の収録はこうです。</p>
+<table>
+<thead>
+<tr>
+<th>サービス</th>
+<th>事業所</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>就労継続支援B型</td>
+<td>20,783</td>
+</tr>
+<tr>
+<td>就労継続支援A型</td>
+<td>4,650</td>
+</tr>
+<tr>
+<td>就労移行支援</td>
+<td>3,396</td>
+</tr>
+<tr>
+<td>就労定着支援</td>
+<td>2,038</td>
+</tr>
+</tbody>
+</table>
+<p>住所・電話・営業時間・定員に加えて、<strong>緯度経度が全件入っています</strong>。これは大きくて、事業所側のジオコーディングが一切要りません。入力された住所だけ国土地理院で座標にすれば、あとは距離を計るだけです。</p>
+<h2>最初に間違えかけたこと</h2>
+<p>ダウンロードのリンクは <code>sfkopendata_202603_46.zip</code> のような名前で並んでいます。最新の時点を数えたら29本しかなく、しかも <code>_23</code>（愛知県のコード）がありません。<strong>「29都道府県ぶんしか公表されていない」と早合点しかけました。</strong></p>
+<p>中を開いたら違いました。<code>_46</code> は三重県ではなく、<strong>サービス種別の46＝就労継続支援B型</strong>でした。47都道府県が全部入った全国ファイルが、種別ごとに分かれていただけです。<code>_60</code>（就労移行支援）や <code>_70</code>（障害児相談支援）まであるのだから、都道府県コードでないことは並びを見れば分かったはずでした。</p>
+<p><strong>ファイル名の数字を、確かめずに意味づけしない。</strong> 中の1行を見れば5秒で分かることを、リンクの一覧だけ見て判断しかけました。</p>
+<p>もうひとつ。CSVは<strong>UTF-8のBOM付き</strong>でした。cp932 でも <code>decode</code> 自体は例外を出さずに通ってしまい、列名が化けたまま動きます。化けた列名は <code>KeyError</code> で気づけますが、気づかない列があれば静かに空になります。BOMを見て決めるようにしました。</p>
+<h2>公表件数は「増えている」</h2>
+<p>さて本題です。就労継続支援B型の公表件数を並べると、こうなります。</p>
+<ul>
+<li>2021年11月末 … 13,245</li>
+<li>2026年3月末 … 20,783</li>
+</ul>
+<p>4年半で <strong>+57%</strong>。A型も 3,682 → 4,650 で +26% です。</p>
+<p>この数字だけ見れば「就労支援の事業所は増え続けている」と書けます。書けますが、<strong>実態ではありません</strong>。B型の事業所が4年半で1.5倍になった事実はなく、増えているのは<strong>自治体が公表システムに登録した件数</strong>です。この制度は登録が進行中で、母数そのものが動いています。</p>
+<p>公開データの時系列は、しばしばこうなっています。<strong>増えたのは現象か、それとも観測か。</strong> ここを分けないと、グラフは簡単に嘘をつきます。</p>
+<p>だから作った画面では、全国の推移を「<strong>公表された件数</strong>」と書き、事業所数とは呼ばないことにしました。</p>
+<h2>では、何なら言えるのか</h2>
+<p>登録率の影響を受けにくい数え方があります。<strong>一度公表された事業所番号が、次の時点から載らなくなった数</strong>です。登録が進むほど母数は増えますが、「いったん載ったものが消える」のは別の出来事です。</p>
+<p>数えました。</p>
+<table>
+<thead>
+<tr>
+<th>最後に公表された時点</th>
+<th>消えたA型</th>
+<th>その定員の合計</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024年3月末より後</td>
+<td>889件</td>
+<td>13,450人分</td>
+</tr>
+<tr>
+<td>それ以前（2021年11月〜2023年9月の2年半）</td>
+<td>342件</td>
+<td>4,180人分</td>
+</tr>
+</tbody>
+</table>
+<p>障害福祉サービスの報酬改定は2024年4月でした。その前後で、<strong>消える事業所が2.6倍</strong>になっています。合計事業所数が増え続けているのは、新しく開設した事業所が相殺しているからで、<strong>出ていった側だけを数えると動きが見えます</strong>。</p>
+<p>都道府県別では、大阪府115件、北海道66件、愛知県62件。増え方が激しいのは岐阜県（改定前3件→改定後40件）と沖縄県（5件→42件）です。市区町村では大阪市72件、札幌市38件、名古屋市31件でした。</p>
+<h2>それでも「廃止した」とは書かない</h2>
+<p>ここが設計の分かれ目でした。</p>
+<p><strong>消えた理由は公表されていません。</strong> 廃止したのか、指定を取り消されたのか、法人が変わって番号が付け替わったのか、単に登録が更新されなかったのか、このデータからは区別できません。</p>
+<p>だから画面には「公表データから消えた」としか書いていません。「廃止」と書けば読みやすい見出しになりますが、それは分かっていないことを分かったように書くことです。定員も同じで、「13,450人分」とは書きますが「13,450人が職を失った」とは書きません。定員は最後に公表された枠であって、そこで働いていた人数ではありません。</p>
+<p>空き状況も出していません。公表データに入っていないからです。<strong>「定員」と「空き」を同じ画面に並べると、読む人は定員を空きとして読みます。</strong>だから定員の下に「いま空いている人数ではありません」と毎回書いています。</p>
+<p>この書き分けは、防災の道具で使ってきたものと同じです。「該当なし」「未収録」「取得できない」を混ぜない。分からない場所を、分かっている場所のように見せない。</p>
+<h2>設計でひとつ捨てたもの</h2>
+<p>最初は、全10時点の全レコードをそのままSQLiteに入れました。<strong>63MB</strong>になりました。共有サーバーに置いて、商品として配るには重すぎます。</p>
+<p>中身を見ると、履歴テーブルとそのインデックスで46MBでした。そこで、過去の生レコードを持つのをやめました。画面が必要としているのは2つだけです。</p>
+<ol>
+<li>時点 × 種別 × 市区町村の<strong>件数</strong>（推移のグラフ用）</li>
+<li>消えた事業所番号と、<strong>最後に載った時点</strong>（差分の一覧用）</li>
+</ol>
+<p>この2つに絞ったら<strong>22.8MB</strong>になりました。生データは手元の <code>/mnt/data</code> に置いたままで、製品には入れません。</p>
+<p>「データを作る道具」と「データを見せる道具」を分ける、という前にも書いた話の続きです。<strong>見せる側は、見せるために必要な形だけを持つ。</strong>履歴をそのまま持ち歩くのは、たいてい設計をしていないだけです。</p>
+<h2>中身</h2>
+<p>PHP 1ファイルとSQLite（22.8MB）。データベースサーバーも常駐プロセスもポートも要りません。</p>
+<ul>
+<li>住所から距離順（種別・範囲で絞り込み）</li>
+<li>都道府県47・市区町村1,505・区・事業所30,867のページ</li>
+<li>市区町村ごとの推移と、消えた事業所の一覧（事業所名と最後の定員つき）</li>
+<li>CSV、JSON API、sitemap、llms.txt</li>
+</ul>
+<p>議員事務所や自治体の方が「自分の市で何が起きたか」を事業所名まで示して説明できる形にしてあります。CSVはそのまま委員会の資料に使えます。</p>
+<hr />
+<p>この仕組みは、事務所・自治体・会社の名前で公開できるオンプレミス版としてソースコード同梱で出しています。データは国の公開データだけ、判定は置いた場所で完結し、外部のAPIには何も送っていません。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
