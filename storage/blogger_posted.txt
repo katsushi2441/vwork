@@ -410,3 +410,5 @@ kfreqai-entry-threshold-explained
 2026-09-21-shuro-a-gata-opendata
 2026-09-21-ai-news-4
 2026-09-21-houkago-day-service-opendata
+2026-09-22-ai-news
+2026-09-22-ai-news-2
