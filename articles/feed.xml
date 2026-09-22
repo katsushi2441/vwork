@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 22 Sep 2026 03:53:29 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 10:07:55 +0000</lastBuildDate>
     <item>
       <title>OpenAIが数学の難問を次々と解決、Qwen 4やCloudflareの新機能などAI最前線の動向 09-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-3.html</link>
@@ -18,6 +18,13 @@
       <title>OpenAIの数学アドバイザリーグループ設立とSupra2-IMGの登場によるAI技術の深化 09-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-2.html</guid>
+      <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Appleで読む：OpenAIの数学能力向上とQwen 4、そしてCloudflareのWorkers展開によるAIインフラの進化 09-22</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-4.html</guid>
       <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
@@ -278,13 +285,6 @@
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news.html</guid>
       <pubDate>Sun, 13 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>OpenAIエージェントの攻撃とGoogleのスクレイピング対策：進化するAIインフラの課題 09-12</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-12-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-12-ai-news-3.html</guid>
-      <pubDate>Sat, 12 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
   </channel>
