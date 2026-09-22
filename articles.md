@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIが数学の難問を次々と解決、Qwen 4やCloudflareの新機能などAI最前線の動向 09-22](2026-09-22-ai-news-3.html)
 - [OpenAIの数学アドバイザリーグループ設立とSupra2-IMGの登場によるAI技術の深化 09-22](2026-09-22-ai-news-2.html)
 - [Qwen3.5を基盤としたKevの登場とGoogle Geminiによるハードウェア戦略 09-22](2026-09-22-ai-news.html)
 - [Worldで読む：GoogleのAX公開とSamsungのHBM4供給拡大など、AIインフラとモデル開発の最前線 09-21](2026-09-21-ai-news-4.html)
