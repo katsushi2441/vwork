@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 22 Sep 2026 10:07:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 15:11:47 +0000</lastBuildDate>
+    <item>
+      <title>HuggingFaceのTransformers対応やAstroForgeによる宇宙探査AIなど、最新技術の動向まとめ 09-23</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news.html</guid>
+      <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
     <item>
       <title>OpenAIが数学の難問を次々と解決、Qwen 4やCloudflareの新機能などAI最前線の動向 09-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-3.html</link>
@@ -277,13 +284,6 @@
       <title>Nvidiaの「AI中央銀行」化とOpenAIのIPO延期、GPT-6 Astraによる実用的な活用術 09-13</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news-2.html</guid>
-      <pubDate>Sun, 13 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>AnthropicやOpenAIのAltmanらが訴える「AI開発の減速」とQwen 3.8-27Bの躍進 09-13</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news.html</guid>
       <pubDate>Sun, 13 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
