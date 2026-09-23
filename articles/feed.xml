@@ -6,11 +6,18 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 23 Sep 2026 15:13:03 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 21:27:24 +0000</lastBuildDate>
     <item>
       <title>NVIDIA Nemotron 3による話者分離とMiMo-V3の新アーキテクチャなど、最新AI技術動向 09-24</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news.html</guid>
+      <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>TheとJevで読む：Gemini 3.8のTTS公開とClaudeによるバイオ研究の新展開 09-24</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-2.html</guid>
       <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
@@ -278,13 +285,6 @@
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-2.html</guid>
       <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Cyphral Distichで読む：DeepSeek V4.1 Flashの躍進とFable 5.1による300年以上前の暗号解読 09-14</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-14-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-14-ai-news-2.html</guid>
-      <pubDate>Mon, 14 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
   </channel>
