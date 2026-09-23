@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIのGPT-6発表とClaude Opus 5.5が示すAI進化の最前線 09-23](2026-09-23-ai-news-3.html)
 - [OpenAIのGPT-6とAnthropicのClaude Opus 5.5が示す次世代AIの衝撃 09-23](2026-09-23-ai-news-2.html)
 - [HuggingFaceのTransformers対応やAstroForgeによる宇宙探査AIなど、最新技術の動向まとめ 09-23](2026-09-23-ai-news.html)
 - [Appleで読む：OpenAIの数学能力向上とQwen 4、そしてCloudflareのWorkers展開によるAIインフラの進化 09-22](2026-09-22-ai-news-4.html)
