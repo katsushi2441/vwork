@@ -6,11 +6,18 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 23 Sep 2026 03:37:49 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 09:51:36 +0000</lastBuildDate>
     <item>
       <title>HuggingFaceのTransformers対応やAstroForgeによる宇宙探査AIなど、最新技術の動向まとめ 09-23</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news.html</guid>
+      <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>Agentsで読む：Claude Opus 5.5の登場とBlackRockが予測するAIエージェントによるステーブルコイン決済の衝撃 09-23</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-4.html</guid>
       <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
@@ -278,13 +285,6 @@
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-14-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-14-ai-news.html</guid>
       <pubDate>Mon, 14 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>TazapayとWhyで読むAIニュース 09-13</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-13-ai-news-4.html</guid>
-      <pubDate>Sun, 13 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
   </channel>
