@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [英国の大手銀行がトークン化預金で初の相互取引を実現、QwenやAndoの最新動向も 09-25](2026-09-25-ai-news.html)
 - [Snapdragon X2へのLinux対応とMetaのカメラレスAIグラスなど、進化するハードウェアとセキュリティ動向 09-24](2026-09-24-ai-news-4.html)
 - [全国地方公共団体コードとe-Gov法令APIで、期限に条文が付く手続きナビを作る](2026-09-24-jichitai-code-egov-law-api.html)
 - [Snapdragon X2へのLinux対応とMetaのAIエージェントMuseなど最新動向 09-24](2026-09-24-ai-news-3.html)
