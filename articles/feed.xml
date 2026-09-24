@@ -6,11 +6,18 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 24 Sep 2026 15:26:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 21:56:07 +0000</lastBuildDate>
     <item>
       <title>英国の大手銀行がトークン化預金で初の相互取引を実現、QwenやAndoの最新動向も 09-25</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news.html</guid>
+      <pubDate>Fri, 25 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
+    <item>
+      <title>PrismMLとQualcommが推進するエッジAIとQwenの進化 09-25</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news-2.html</guid>
       <pubDate>Fri, 25 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news.html</guid>
       <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>Sunoの代わりを自前GPUで——ACE-Step 1.5 Turbo XL と HeartMuLa oss-3B を同じ日本語歌詞で計測した（速度・VRAM・歌詞の一致率）</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-16-acestep-vs-heartmula-local-song-generation.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-acestep-vs-heartmula-local-song-generation.html</guid>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Suno で作っていた BGM やデモ曲を、手元の GPU で回せないか。2026年9月時点で「歌詞＋曲調の指示から、ボーカル入りのフル曲」を出せて商用利用もできるオープンなモデルは、実質 ACE-Step 1.5（MIT）と HeartMuLa oss-3B（Apache 2.0、重みも）の2つに絞れます。YuE2 は重みが CC BY-NC（非商用）、M</description>
     </item>
   </channel>
 </rss>
