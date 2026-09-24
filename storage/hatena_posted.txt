@@ -573,3 +573,4 @@ note-n29b87dbd59bd
 2026-09-24-ai-news
 2026-09-24-ai-news-2
 2026-09-24-ai-news-3
+2026-09-24-jichitai-code-egov-law-api

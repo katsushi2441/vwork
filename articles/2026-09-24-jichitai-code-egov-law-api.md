@@ -3,6 +3,8 @@ title: "全国地方公共団体コードとe-Gov法令APIで、期限に条文�
 emoji: "⚖️"
 type: "tech"
 topics: ["python", "opendata", "api", "sqlite", "php"]
+title_hatena: "公開データは「取れた＝正しい」ではなかった｜法令APIとxlsxで踏んだ罠4つ"
+title_blogger: "死亡後の手続きナビを作った話｜期限を条文で裏取りする仕組み"
 published: true
 ---
 
