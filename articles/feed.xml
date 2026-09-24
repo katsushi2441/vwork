@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 23 Sep 2026 21:27:24 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 03:41:48 +0000</lastBuildDate>
+    <item>
+      <title>Snapdragon X2へのLinux対応とMetaのAIエージェントMuseなど最新動向 09-24</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-3.html</guid>
+      <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
     <item>
       <title>NVIDIA Nemotron 3による話者分離とMiMo-V3の新アーキテクチャなど、最新AI技術動向 09-24</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news.html</link>
@@ -277,13 +284,6 @@
       <title>UkisAIによるQwenの高速化と、企業を自律運営するAIエージェント「Pion」の衝撃 09-15</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-3.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-3.html</guid>
-      <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>UkisAIのSwift-QwenやOpenAIのセキュリティ動向から見る最新AIトレンド 09-15</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-2.html</guid>
       <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
