@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [全国地方公共団体コードとe-Gov法令APIで、期限に条文が付く手続きナビを作る](2026-09-24-jichitai-code-egov-law-api.html)
 - [Snapdragon X2へのLinux対応とMetaのAIエージェントMuseなど最新動向 09-24](2026-09-24-ai-news-3.html)
 - [TheとJevで読む：Gemini 3.8のTTS公開とClaudeによるバイオ研究の新展開 09-24](2026-09-24-ai-news-2.html)
 - [NVIDIA Nemotron 3による話者分離とMiMo-V3の新アーキテクチャなど、最新AI技術動向 09-24](2026-09-24-ai-news.html)

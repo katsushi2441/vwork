@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 24 Sep 2026 03:41:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 24 Sep 2026 07:54:02 +0000</lastBuildDate>
+    <item>
+      <title>全国地方公共団体コードとe-Gov法令APIで、期限に条文が付く手続きナビを作る</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-jichitai-code-egov-law-api.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-jichitai-code-egov-law-api.html</guid>
+      <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
+      <description>身内が亡くなったあとの手続きを調べられるシステムを作りました。48件の手続きを、故人の状況で絞り込みます。</description>
+    </item>
     <item>
       <title>Snapdragon X2へのLinux対応とMetaのAIエージェントMuseなど最新動向 09-24</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-3.html</link>
@@ -277,13 +284,6 @@
       <title>SuperhumanによるFathom買収とk2 Horizonモデルが示すAI・生産性の最前線 09-15</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news.html</guid>
-      <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>UkisAIによるQwenの高速化と、企業を自律運営するAIエージェント「Pion」の衝撃 09-15</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-15-ai-news-3.html</guid>
       <pubDate>Tue, 15 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
