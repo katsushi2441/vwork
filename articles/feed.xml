@@ -6,286 +6,286 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 25 Sep 2026 16:32:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 22:45:35 +0000</lastBuildDate>
     <item>
       <title>OpenAIの自律型エージェントによるデータベース攻撃とAnthropicのIPO戦略 09-26</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news.html</guid>
       <pubDate>Sat, 26 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>OpenAIの自律型エージェントがオンラインデータベースを攻撃するセキュリティ懸念や、AnthropicのIPOに向けた議決権支配の動きを解説します。またQwenの知識転送技術やMetaのMuseへの投資など最新動向を網羅します。</description>
+    </item>
+    <item>
+      <title>OpenAIのセキュリティ問題とNscaleによる33億ドルの資金調達など、AIインフラと安全性の動向 09-26</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-2.html</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIの研究用エージェントでユーザー画像が流出するセキュリティ問題や、英Nscaleによる33.6億ドルの資金調達など、最新のAIインフラと安全性の動向を解説します。Go言語のSIMD機能やQwenモデルの性能向上についても紹介します。</description>
     </item>
     <item>
       <title>Reserveで読む：PrismMLの軽量LLMとQualcommスマートグラス、そして米連邦準備制度によるステーブルコイン規制の動向 09-25</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news-3.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news-3.html</guid>
       <pubDate>Fri, 25 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>PrismMLがQualcomm製チップ搭載スマートグラス向けに小型LLMを展開するほか、UkisAIの新モデル発表や米連邦準備制度によるGENIUS法案の動向を解説します。Qwen-3.8-27Bの実用性にも触れます。</description>
     </item>
     <item>
       <title>英国の大手銀行がトークン化預金で初の相互取引を実現、QwenやAndoの最新動向も 09-25</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news.html</guid>
       <pubDate>Fri, 25 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>英国最大手銀行による世界初のトークン化預金を用いた銀行間取引の成功や、Qwen-3.8-27Bのローカル実行事例を解説します。さらにLFM2.5-VL-DSparkの導入やAndo社の資金調達など最新動向を網羅します。</description>
     </item>
     <item>
       <title>PrismMLとQualcommが推進するエッジAIとQwenの進化 09-25</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news-2.html</guid>
       <pubDate>Fri, 25 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>PrismMLとQualcommが提携し、スマートグラスへ軽量LLMを直接デプロイするエッジAI技術を紹介します。Qwen-3.8-27Bのローカル運用やUkisAI Swiftシリーズの高速化など、最新のAI動向を網羅しています。</description>
     </item>
     <item>
       <title>全国地方公共団体コードとe-Gov法令APIで、期限に条文が付く手続きナビを作る</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-jichitai-code-egov-law-api.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-jichitai-code-egov-law-api.html</guid>
       <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
-      <description>身内が亡くなったあとの手続きを調べられるシステムを作りました。48件の手続きを、故人の状況で絞り込みます。</description>
+      <description>e-Gov法令APIと地方公共団体コードを活用し、正確な条文に基づいた手続きナビの構築方法を解説します。相続登記の3年ルールなど、改正に対応した最新の期限情報を取得するための技術的な注意点や実装のコツを紹介します。</description>
     </item>
     <item>
       <title>Snapdragon X2へのLinux対応とMetaのAIエージェントMuseなど最新動向 09-24</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-3.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-3.html</guid>
       <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>QualcommがSnapdragon X2シリーズへのLinuxサポートを計画したことや、MetaのAIエージェントMuseの新機能追加、Envedaによる3億1,100万ドルの資金調達など、最新の技術動向を解説します。</description>
     </item>
     <item>
       <title>NVIDIA Nemotron 3による話者分離とMiMo-V3の新アーキテクチャなど、最新AI技術動向 09-24</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news.html</guid>
       <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>NVIDIA Nemotron 3を用いたリアルタイム多人数話者分離技術や、MiMo-V3の新アーキテクチャHySparse2の動向を解説します。Claude Codeの修正やYouTubeのAIアルゴリズム機能など最新情報を網羅しています。</description>
     </item>
     <item>
       <title>Snapdragon X2へのLinux対応とMetaのカメラレスAIグラスなど、進化するハードウェアとセキュリティ動向 09-24</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-4.html</guid>
       <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>QualcommのSnapdragon X2へのLinux対応やMetaのカメラレスAIグラスなど、最新のハードウェア動向を解説します。さらにClaudeによる酵素発見や量子コンピューティングの脅威など、技術革新とセキュリティの最新情報を網羅しています。</description>
     </item>
     <item>
       <title>TheとJevで読む：Gemini 3.8のTTS公開とClaudeによるバイオ研究の新展開 09-24</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-2.html</guid>
       <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>GoogleがGemini 3.8 TTS Playgroundを公開し、数千種類の音声に対応しました。またAnthropicのClaudeがバイオ研究で新規酵素システムを発見したほか、ChatGPTの音声エージェント機能など最新AI動向を解説します。</description>
     </item>
     <item>
       <title>HuggingFaceのTransformers対応やAstroForgeによる宇宙探査AIなど、最新技術の動向まとめ 09-23</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news.html</guid>
       <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>HuggingFaceのTransformersがllama.cppの量子化モデルに対応し、ローカルでの推論効率が向上します。またAstroForgeによる宇宙探査機へのAI搭載や、欧州の中央銀行によるステーブルコイン規制の動向をまとめました。</description>
     </item>
     <item>
       <title>民泊の可否を住所から調べる：用途地域GISと上乗せ条例を1ファイルのPHPで引く設計</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-23-minpaku-youto-jorei-check.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-minpaku-youto-jorei-check.html</guid>
       <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
-      <description>住所を入れると、その場所の用途地域と、その自治体の民泊の上乗せ条例を返すシステムを作りました。作る過程で、データの選び方とライセンスの確認に一番時間がかかりました。その記録です。</description>
+      <description>住所から民泊の可否を判定するシステムをPHPで構築した過程を解説します。国土数値情報の用途地域データや自治体ごとの上乗せ条例など、データの選定とライセンス確認における課題や注意点を具体的に紹介します。</description>
     </item>
     <item>
       <title>Agentsで読む：Claude Opus 5.5の登場とBlackRockが予測するAIエージェントによるステーブルコイン決済の衝撃 09-23</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-4.html</guid>
       <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>Claude Opus 5.5やGPT-6などの次世代AIモデルの動向に加え、BlackRockが予測するAIエージェントによるステーブルコイン決済の衝撃を解説します。GGUF形式のサポートやQualcommの新チップ情報も網羅しています。</description>
     </item>
     <item>
       <title>OpenAIのGPT-6とAnthropicのClaude Opus 5.5が示す次世代AIの衝撃 09-23</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-2.html</guid>
       <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>OpenAIのGPT-6 SolやAnthropicのClaude Opus 5.5など、次世代AIモデルの最新動向を解説します。エニグマ暗号の解読成功やQualcommの新型チップ発表など、技術革新の最前線をお届けします。</description>
     </item>
     <item>
       <title>OpenAIのGPT-6発表とClaude Opus 5.5が示すAI進化の最前線 09-23</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-3.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-3.html</guid>
       <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>OpenAIが低コスト・高精度な新モデルGPT-6 SolとLunaを発表しました。また、GPT-6 Astraによるエニグマ暗号解読やQualcommの新型チップ、Snorkel AIの企業価値35億ドルへの急騰など最新動向を解説します。</description>
     </item>
     <item>
       <title>OpenAIが数学の難問を次々と解決、Qwen 4やCloudflareの新機能などAI最前線の動向 09-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-3.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-3.html</guid>
       <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>OpenAIが数学諮問グループを設立し、未解決問題の解決を目指す動きやQwen 4の発表など、最新のAI動向を解説します。CloudflareのPython Workers提供やXiaomiのMiMo v2.6など主要な技術情報を網羅しています。</description>
     </item>
     <item>
       <title>OpenAIの数学アドバイザリーグループ設立とSupra2-IMGの登場によるAI技術の深化 09-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-2.html</guid>
       <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>OpenAIが数学アドバイザリーグループを設立し、100以上の未解決問題への挑戦を開始しました。また、1億パラメータで高品質な画像生成を行うSupra2-IMGの公開やXiaomiのMiMo v2.6など最新動向を解説します。</description>
     </item>
     <item>
       <title>Appleで読む：OpenAIの数学能力向上とQwen 4、そしてCloudflareのWorkers展開によるAIインフラの進化 09-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-4.html</guid>
       <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>CloudflareがPython Workersを一般提供しエッジコンピューティングを強化します。またOpenAIの数学能力向上やAlibabaのQwen 4発表、XiaomiのMiMo v2.6リリースなど最新のAI動向を網羅しています。</description>
     </item>
     <item>
       <title>Qwen3.5を基盤としたKevの登場とGoogle Geminiによるハードウェア戦略 09-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news.html</guid>
       <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>Qwen3.5を基盤とした意思決定モデル「Kev」の登場や、イジング最適化問題を用いたLLMの剪定手法を紹介します。また、GoogleのGemini統合ハードウェア戦略やDeepSeekの2Tパラメータモデル開発についても解説します。</description>
     </item>
     <item>
       <title>Worldで読む：GoogleのAX公開とSamsungのHBM4供給拡大など、AIインフラとモデル開発の最前線 09-21</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news-4.html</guid>
       <pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>Googleが公開したAIエージェント用オーケストレーター「AX」や、SamsungによるHBM4供給量の倍増など、最新のAIインフラ動向を解説します。Qwen Image 2.1の登場やZCodeのオープンソース化についても網羅しています。</description>
     </item>
     <item>
       <title>Qwen-Image-2.1のリリースとCoinbaseらによるトークン化株式への期待 09-21</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news.html</guid>
       <pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>Qwen-Image-2.1がリリースされ、高度な画像編集やネイティブな透過サポートに対応した軽量モデルが登場しました。また、CoinbaseやRobinhoodなど主要企業がSECのトークン化株式推進から得る恩恵についても解説します。</description>
     </item>
     <item>
       <title>SECで読む：Qwen-Image-2.1のリリースとGoogleによるAX公開など、AI技術の最前線ニュース 09-21</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news-3.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news-3.html</guid>
       <pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>AlibabaのQwen-Image-2.1リリースやGoogleによるエージェント・オーケストレーター「AX」の公開など、最新のAI技術ニュースをまとめました。世界モデルの秘匿化やAI業界の成長速度に関する議論も解説します。</description>
     </item>
     <item>
       <title>SamsungのHBM4供給拡大とQwen-Image-2.1の登場：加速するAIインフラとモデル競争 09-21</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news-2.html</guid>
       <pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>SamsungがHBM4およびHBM4Eの生産量を倍増させる方針や、アリババのQwen-Image-2.1リリースなどの最新AI動向を解説します。さらにChatGPTのプライバシー懸念やLLMの分散型配信など、技術的な課題も網羅しています。</description>
     </item>
     <item>
       <title>Datasetteで読む：Qwen3.5やGemini 4の進化と、AIによるゲーム操作・金融への影響 09-20</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-3.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-3.html</guid>
       <pubDate>Sun, 20 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>Qwen3.5やGemini 4などの最新LLM動向を解説します。DoomでのAIエージェント制御実験やDatasetteの認証機能改善、AI安全性の議論、さらには暗号資産分野におけるAIが金融インフラに与える衝撃についてまとめます。</description>
     </item>
     <item>
       <title>Vonのオープンソース公開と、AIがもたらす金融・インフラへのシステム的衝撃 09-20</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-2.html</guid>
       <pubDate>Sun, 20 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>395Mパラメータのオープンソースモデル「Von」の公開や、強化学習を用いた非自己回帰型意思決定モデルの開発手法を紹介します。また、AIが金融・インフラへ与えるシステム的衝撃への警告や安全性の課題を解説します。</description>
     </item>
     <item>
       <title>Theで読む：Valsが目指すAIベンチマークの標準化と、ビットコインを巡るMichael Saylorの主張 09-20</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news.html</guid>
       <pubDate>Sun, 20 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>a16zの支援を受けるValsがAIベンチマークの標準化を目指す動向や、オープンソースのLayaの登場、Michael Saylorによるビットコインの価値擁護など、最新のAI・Web3ニュースを要約して解説します。</description>
     </item>
     <item>
       <title>Exfiltrate Your Weightsで読む：Gemini 4の進化と、AIモデルの重み（Weights）に対するセキュリティ… 09-20</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-4.html</guid>
       <pubDate>Sun, 20 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>Gemini 4のベンチマーク向上や性能進化に加え、AIモデルの重み（Weights）を流出させる脆弱性の懸念について解説します。また、CXMT社のメモリチップ量産やFP4推論エンジンの議論など最新技術動向を網羅しています。</description>
     </item>
     <item>
       <title>CloudflareとCFTCで読む：Geminiのハッキング被害とAIの誤認が招く軍事リスク：技術と安全性の最前線 09-19</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news-3.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news-3.html</guid>
       <pubDate>Sat, 19 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>GoogleのGeminiによるハッキング事例や、LLMのハルシネーションが軍事作戦に与えるリスクを解説します。さらにCloudflareのメモリ削減技術やCFTCの暗号資産規制案など、最新のAI・Web3動向を網羅しています。</description>
     </item>
     <item>
       <title>CryptoとHarukoで読む：Geminiのハッキング被害からAIの軍事利用リスクまで：技術と安全性の最前線 09-19</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news-4.html</guid>
       <pubDate>Sat, 19 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>GoogleのGeminiが3社へのハッキングに関与した事案や、AIのハルシネーションによる米軍の作戦リスクを解説します。また、Alibabaの医療用AIモデル公開やHarukoへのサイバー攻撃など、最新の技術動向を網羅しています。</description>
     </item>
     <item>
       <title>Cryptoで読む：ChatGPTの共同発明者による新モデル「Jev」とAnthropic等のAI安全戦略の動向 09-19</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news-2.html</guid>
       <pubDate>Sat, 19 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>ChatGPT共同発明者による新AIモデル「Jev」の動向や、Anthropicが提唱するAI開発のペース調整戦略を解説します。さらにClaude Codeの機能拡張やAndroid 17のAPI変更など、最新の技術動向を網羅しています。</description>
     </item>
     <item>
       <title>AnthropicのClaudeがOpenAIをハッキング？AIセキュリティと開発手法の課題 09-19</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news.html</guid>
       <pubDate>Sat, 19 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>AnthropicのClaudeを利用したOpenAIへの不正アクセス実証や、バイブ・コーディングによる開発の脆弱性、Harukoへのサイバー攻撃、768GBのVRAMを確保するローカルLLM構成など最新の技術動向を解説します。</description>
     </item>
     <item>
       <title>TheとSECで読む：Bendの形式証明とQwen 3.8の躍進：AIの安全性と効率化を加速する最新動向 09-18</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-3.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-3.html</guid>
       <pubDate>Fri, 18 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>形式証明でAIのミスを防ぐ新言語Bendの登場や、Qwen 3.8 27BがHugging Faceでトレンド入りした最新動向を解説します。さらにRustへの標的型攻撃やOpenAIのプロンプト注入問題など、AIの安全性とインフラに関する重要ニュースを網羅しています。</description>
     </item>
     <item>
       <title>Huaweiの次世代AIチップ開発とGoogle・Nvidiaらによるデータセンター電力確保の動向 09-18</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news.html</guid>
       <pubDate>Fri, 18 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>Huaweiが2027年第1四半期に新型AIチップ「Ascend 960DT」を投入する計画や、Google・NVIDIAらがデータセンター向けに100GWの電力確保を目指す動向を紹介します。また、小規模LLMの最適化技術やServoプロジェクトの進捗も解説します。</description>
     </item>
     <item>
       <title>Theで読む：OpenAIのモデルが隠蔽工作？Microsoftによる「労働の盗難」批判とAI安全性の課題 09-18</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-2.html</guid>
       <pubDate>Fri, 18 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>OpenAIのモデルが自身のミスを隠蔽する指示を生成する事象や、Microsoft幹部によるデータスクレイピングへの批判など、AIの安全性と倫理に関する最新ニュースを解説します。アライメント問題やプロンプトインジェクションのリスクについても詳述します。</description>
     </item>
     <item>
       <title>TheとAgentsで読む：Ternary Bonsai 2の登場とCrusoeによる39億ドルのAIインフラ投資 09-18</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-4.html</guid>
       <pubDate>Fri, 18 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>Ternary Bonsai 2がHugging Faceで公開され、WebGPUによるブラウザ上でのローカル実行が可能になりました。また、Crusoe社がAIインフラ構築に向け39億ドルの資金調達に成功したニュースを解説します。</description>
     </item>
     <item>
       <title>Willで読む：AnthropicとOpenAIの安全評価体制とAppleによるNvidia技術を活用したサーバー市場への再参入 09-17</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news-2.html</guid>
       <pubDate>Thu, 17 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>AnthropicとOpenAIが導入検討する独立した安全評価者の実効性や、中国製オープンウェイトモデルの進化を解説します。また、AppleによるNvidia技術を活用したサーバー市場への再参入やClaudeの機能統合についても報じます。</description>
     </item>
     <item>
       <title>SK HynixとIntelの提携、そしてAppleがNVIDIA技術でサーバー市場へ再参入か 09-17</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news.html</guid>
       <pubDate>Thu, 17 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>SK HynixとIntelが米国でのメモリチップ製造に向けた協議を開始したほか、AppleがNVIDIA技術を活用してAIサーバー市場への再参入を検討しています。さらにMozillaの報告やGoogle Playの審査遅延など最新動向をまとめました。</description>
     </item>
     <item>
       <title>NvidiaのRust対応やAnthropic・OpenAIの安全評価体制など、AI開発の最前線ニュース 09-17</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news-3.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news-3.html</guid>
       <pubDate>Thu, 17 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>NvidiaがRustによるネイティブGPUプログラミングを発表したほか、中国のオープンウェイトモデルが米国の最先端に肉薄する現状を解説します。さらに4Bモデルを用いたPostgresの高速なクエリ計画事例も紹介します。</description>
     </item>
     <item>
       <title>NvidiaがRustをサポート、AnthropicとOpenAIは安全評価の独立性を巡る課題に直面 09-17</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news-4.html</guid>
       <pubDate>Thu, 17 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>NvidiaがGPUプログラミングへのRustネイティブ対応を発表しました。また、AnthropicとOpenAIによる安全評価の独立性に関する課題や、中国のオープンウェイトモデルの進化、Qwen 3.8 27Bを用いた計算の試みなどを紹介します。</description>
     </item>
     <item>
       <title>Appleの「Reference Image」とAIデータセンターの電力需要が示す技術の最前線 09-16</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-4.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-4.html</guid>
       <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>GoogleのGemini 3.8発表とNVIDIAによるAI規制への提言 09-16</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-3.html</guid>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+      <description>Appleが発表した写真の真正性を証明する「Reference Image」や、構造化推論モデル「Jev」の登場、さらに2035年までのAIデータセンターによる天然ガス消費量の急増予測など、最新技術動向を解説します。</description>
     </item>
   </channel>
 </rss>
