@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Reserveで読む：PrismMLの軽量LLMとQualcommスマートグラス、そして米連邦準備制度によるステーブルコイン規制の動向 09-25](2026-09-25-ai-news-3.html)
 - [PrismMLとQualcommが推進するエッジAIとQwenの進化 09-25](2026-09-25-ai-news-2.html)
 - [英国の大手銀行がトークン化預金で初の相互取引を実現、QwenやAndoの最新動向も 09-25](2026-09-25-ai-news.html)
 - [Snapdragon X2へのLinux対応とMetaのカメラレスAIグラスなど、進化するハードウェアとセキュリティ動向 09-24](2026-09-24-ai-news-4.html)

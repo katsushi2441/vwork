@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 24 Sep 2026 21:56:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 04:10:47 +0000</lastBuildDate>
+    <item>
+      <title>Reserveで読む：PrismMLの軽量LLMとQualcommスマートグラス、そして米連邦準備制度によるステーブルコイン規制の動向 09-25</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news-3.html</guid>
+      <pubDate>Fri, 25 Sep 2026 09:00:00 +0000</pubDate>
+      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
+    </item>
     <item>
       <title>英国の大手銀行がトークン化預金で初の相互取引を実現、QwenやAndoの最新動向も 09-25</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news.html</link>
@@ -277,13 +284,6 @@
       <title>MetaのWhatsApp連携からSystem One Modelsまで：AIエージェントの実装とインフラの最前線 09-16</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news-2.html</guid>
-      <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
-      <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
-    </item>
-    <item>
-      <title>SalesforceとNVIDIAが主導する企業向けAI展開とDeFiのセキュリティ課題 09-16</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-16-ai-news.html</guid>
       <pubDate>Wed, 16 Sep 2026 09:00:00 +0000</pubDate>
       <description> 本記事はHorizonを使いAI/LLM・バイブコーディング・Web3・スタートアップのニュースを自動収集・要約したものです。</description>
     </item>
