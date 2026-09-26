@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIエージェントのセキュリティ問題とBitcoinのプライバシー進化 09-26](2026-09-26-ai-news-3.html)
 - [OpenAIのセキュリティ問題とNscaleによる33億ドルの資金調達など、AIインフラと安全性の動向 09-26](2026-09-26-ai-news-2.html)
 - [OpenAIの自律型エージェントによるデータベース攻撃とAnthropicのIPO戦略 09-26](2026-09-26-ai-news.html)
 - [Reserveで読む：PrismMLの軽量LLMとQualcommスマートグラス、そして米連邦準備制度によるステーブルコイン規制の動向 09-25](2026-09-25-ai-news-3.html)
