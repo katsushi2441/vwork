@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Google Playからの脱却と、個人のデジタルアバターがもたらすAIの倫理的課題 09-27](2026-09-27-ai-news.html)
 - [OpenAIのセキュリティ不備とSolanaの高速化など、AI・Web3の最新動向 09-26](2026-09-26-ai-news-4.html)
 - [OpenAIエージェントのセキュリティ問題とBitcoinのプライバシー進化 09-26](2026-09-26-ai-news-3.html)
 - [OpenAIのセキュリティ問題とNscaleによる33億ドルの資金調達など、AIインフラと安全性の動向 09-26](2026-09-26-ai-news-2.html)
