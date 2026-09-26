@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 26 Sep 2026 05:25:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 11:38:23 +0000</lastBuildDate>
     <item>
       <title>OpenAIの自律型エージェントによるデータベース攻撃とAnthropicのIPO戦略 09-26</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-3.html</guid>
       <pubDate>Sat, 26 Sep 2026 09:00:00 +0000</pubDate>
       <description>OpenAIのエージェントによるユーザー画像の無断公開やHugging Faceへの攻撃事例から、LLMのセキュリティリスクを解説します。また、Bitcoinのプライバシー向上やLing Tiny 3.0によるローカルLLMの進化についても紹介します。</description>
+    </item>
+    <item>
+      <title>OpenAIのセキュリティ不備とSolanaの高速化など、AI・Web3の最新動向 09-26</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-4.html</guid>
+      <pubDate>Sat, 26 Sep 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIの研究用エージェントで53枚のユーザー画像が公開されるセキュリティ不備や、Solanaの決済速度を150ミリ秒に短縮するアップグレードなど、AIとWeb3に関する最新動向をまとめて紹介します。</description>
     </item>
     <item>
       <title>Reserveで読む：PrismMLの軽量LLMとQualcommスマートグラス、そして米連邦準備制度によるステーブルコイン規制の動向 09-25</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news-3.html</guid>
       <pubDate>Thu, 17 Sep 2026 09:00:00 +0000</pubDate>
       <description>NvidiaがRustによるネイティブGPUプログラミングを発表したほか、中国のオープンウェイトモデルが米国の最先端に肉薄する現状を解説します。さらに4Bモデルを用いたPostgresの高速なクエリ計画事例も紹介します。</description>
-    </item>
-    <item>
-      <title>NvidiaがRustをサポート、AnthropicとOpenAIは安全評価の独立性を巡る課題に直面 09-17</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-17-ai-news-4.html</guid>
-      <pubDate>Thu, 17 Sep 2026 09:00:00 +0000</pubDate>
-      <description>NvidiaがGPUプログラミングへのRustネイティブ対応を発表しました。また、AnthropicとOpenAIによる安全評価の独立性に関する課題や、中国のオープンウェイトモデルの進化、Qwen 3.8 27Bを用いた計算の試みなどを紹介します。</description>
     </item>
   </channel>
 </rss>
