@@ -4,6 +4,8 @@ description: "Google Analytics はボットを除外するため、GPTBot や Cl
 date: 2026-08-07
 layout: default
 permalink: /blog/2026-08-07-ai-crawler-invisible-in-ga4.html
+seo_title: "AI検索のアクセス解析方法｜GPTBotのログを計測するコツ"
+head_keyword: "AI検索 アクセス解析"
 ---
 
 AI検索から自社サイトがどれくらい参照されているか、気にしている経営者は増えました。ところが**測る方法を聞かれると、答えに詰まります。**

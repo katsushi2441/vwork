@@ -7,6 +7,8 @@ title_blogger: "業務システムのデモを、ログイン情報つきで公�
 date: 2026-08-24
 layout: default
 permalink: /blog/2026-08-24-demo-site-open.html
+seo_title: "業務システムとOSSのデモサイト公開事例"
+head_keyword: "CRM デモ"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日は**「試す前に止まってしまう」**という話です。

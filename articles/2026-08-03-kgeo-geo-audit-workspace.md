@@ -3,6 +3,9 @@ title: "Kurage GEOの技術設計：GEO Optimizerを監査エンジンに、日�
 emoji: "🔍"
 type: "tech"
 topics: [生成ai, seo, oss, python, fastapi]
+description: "Kurage GEOの開発における技術設計を解説します。GEO Optimizerによる決定論的監査、正規表現を用いた日本語AEO採点、そしてDeepSeek API等を用いたグラウンデッドLLM評価の3つのポイントを詳述します。"
+seo_title: "Kurage GEOの技術設計とGEO最適化手法"
+head_keyword: "GEO"
 published: true
 ---
 

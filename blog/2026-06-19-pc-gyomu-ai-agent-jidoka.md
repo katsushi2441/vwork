@@ -4,6 +4,8 @@ description: "新人教育のマニュアル作り、属人化した手順の引
 date: 2026-06-19
 layout: default
 permalink: /blog/2026-06-19-pc-gyomu-ai-agent-jidoka.html
+seo_title: "パソコン操作のAI自動化と業務マニュアル動画化"
+head_keyword: "AIエージェント"
 ---
 
 「この作業、できる人が一人しかいない」

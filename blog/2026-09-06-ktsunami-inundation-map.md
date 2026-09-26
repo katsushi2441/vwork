@@ -7,6 +7,8 @@ title_blogger: "データが無いことと、安全なことは違う。津波�
 date: 2026-09-06
 layout: default
 permalink: /blog/2026-09-06-ktsunami-inundation-map.html
+seo_title: "津波浸水想定マップの開発と課題"
+head_keyword: "津波浸水想定マップ"
 ---
 
 名古屋でAIシステム開発の会社をやっています。

@@ -3,6 +3,9 @@ title: "AIエージェントに仕事を受注させて稼ぐ市場は本当に�
 emoji: "🤖"
 type: "tech"
 topics: ["aiagent", "web3", "x402", "mcp", "automation"]
+description: "AIエージェントが自律的に仕事を受注し報酬を得る市場の実態を調査しました。dealwork.aiへの登録とAPIによるジョブ一覧取得を試した結果、配管は動いているものの、実需の流動性には課題がある現状を解説します。"
+seo_title: "AIエージェントで稼げる？dealwork.aiの実態"
+head_keyword: "AIエージェント 収益化"
 published: true
 ---
 

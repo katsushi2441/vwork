@@ -3,6 +3,8 @@ title: "システム開発費、半額以下に抑えませんか？"
 description: "バイブコーディングを活用して、システム開発費を抑えながら、会社の中に開発ノウハウとシステム資産を残す考え方を経営者向けにまとめました。"
 date: 2026-06-02
 status: published
+seo_title: "システム開発費を安く抑える方法とは？"
+head_keyword: "システム開発費用 削減"
 ---
 
 <figure style="margin:8px auto 24px;max-width:420px;">

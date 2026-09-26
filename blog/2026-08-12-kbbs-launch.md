@@ -4,6 +4,8 @@ description: "被リンクはいまもSEOの土台なのに、URLを気軽に書
 date: 2026-08-12
 layout: default
 permalink: /blog/2026-08-12-kbbs-launch.html
+seo_title: "Kurage BBS｜宣伝OK・リンクOKの掲示板"
+head_keyword: "被リンク獲得"
 ---
 
 **[宣伝OK・リンクOKの掲示板「Kurage BBS」](https://kurage.exbridge.jp/kbbs.php)** を開設しました。会社・お店・サービスのPRを、ホームページへのリンク付きで自由に投稿できる掲示板です（掲載無料）。

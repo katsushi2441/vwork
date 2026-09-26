@@ -6,6 +6,8 @@ layout: default
 tags: [VWork, バイブコーディング, AI活用, 業務自動化, 非エンジニア]
 status: published
 permalink: /blog/2026-06-11-vibe-coding-for-non-engineers.html
+seo_title: "バイブコーディングとは？非エンジニアがAIで仕事自動化する法"
+head_keyword: "バイブコーディング"
 ---
 
 「バイブコーディング」という言葉を聞いたことはありますか。

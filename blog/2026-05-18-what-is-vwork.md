@@ -6,6 +6,8 @@ tags: [VWork, バイブコーディング, Codex, AI駆動経営, 業務改善]
 status: published
 layout: default
 permalink: /blog/2026-05-18-what-is-vwork.html
+seo_title: "VWorkとは？AI駆動開発の作業基盤を解説"
+head_keyword: "VWork"
 ---
 
 [VWork](https://exbridge.jp/vwork.html)は、経営者のPCに導入して使うバイブコーディング作業基盤です。

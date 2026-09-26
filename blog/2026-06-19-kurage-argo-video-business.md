@@ -4,6 +4,8 @@ description: "操作マニュアル動画・デモ動画・研修動画は、撮
 date: 2026-06-19
 layout: default
 permalink: /blog/2026-06-19-kurage-argo-video-business.html
+seo_title: "Kurage Argo Videoで手順動画をAIが自動作成"
+head_keyword: "手順動画 自動作成"
 ---
 
 「この操作、口で説明するより画面を見せたほうが早いんだけど、動画を作る時間がない」

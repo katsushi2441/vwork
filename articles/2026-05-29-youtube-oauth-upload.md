@@ -3,6 +3,9 @@ title: "Codex/ClaudeからYouTubeへ動画投稿するOAuthアップロードの
 emoji: "🎬"
 type: "tech"
 topics: [youtube, oauth, python, codex, automation]
+description: "YouTube Data APIとPythonを用いて、CodexやClaudeから動画を自動投稿するOAuth認証の仕組みを解説します。初回のみの認証でrefresh tokenを活用し、token.jsonを更新する実装方法を紹介します。"
+seo_title: "YouTube API Python OAuth動画自動投稿"
+head_keyword: "YouTube Data API Python"
 published: true
 ---
 

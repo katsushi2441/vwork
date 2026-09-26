@@ -3,6 +3,9 @@ title: "1ファイルで多言語化：url2pub を日英対応にしたi18n実�
 emoji: "🌐"
 type: "tech"
 topics: ["php", "i18n", "oss", "ai", "web"]
+description: "OSSツールのurl2pubを日英対応にするためのi18n実装手法を解説します。ファイルを分けずに文字列レイヤーで多言語化する設計判断や、PHPの配列を用いたUI・生成AIの成果物への対応方法など、保守性を高める技術を公開します。"
+seo_title: "url2pubの多言語化（i18n）実装手法"
+head_keyword: "PHP 多言語化"
 published: true
 ---
 

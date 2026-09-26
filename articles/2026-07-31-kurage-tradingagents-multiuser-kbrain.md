@@ -3,6 +3,9 @@ title: "個人用の日本株AI分析を、マルチユーザーSaaSにした �
 emoji: "🧑‍⚖️"
 type: "tech"
 topics: ["oss", "llm", "x402", "python", "fintech"]
+description: "日本株AI分析OSS「TradingAgents-JP」をマルチユーザーSaaSへ移行した開発記録です。認証・課金・LLMの3つの課題に対し、DeepSeekの活用やPayPal連携など具体的にどう対応したかを解説します。"
+seo_title: "TradingAgents-JPをSaaS化する開発記録"
+head_keyword: "TradingAgents-JP"
 published: true
 ---
 

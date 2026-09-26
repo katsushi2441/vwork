@@ -3,6 +3,9 @@ title: "Markdownから「Web表示と完全一致する美しいPPTX」を作る
 emoji: "🖼️"
 type: "tech"
 topics: ["marp", "pptx", "生成ai", "個人開発", "バイブコーディング"]
+description: "pptxgenjsでの座標指定によるPPTX生成の限界と、Marpを用いた解決策を解説します。HTML/CSSでデザインしたWeb表示を画像化して配置する手法へ転換することで、ピクセル単位で一致する美しいスライド作成を実現します。"
+seo_title: "MarpでWebと同じ見た目のPPTXを作る方法"
+head_keyword: "pptxgenjs Marp"
 published: true
 ---
 

@@ -5,6 +5,8 @@ date: 2026-05-29
 layout: default
 permalink: /blog/2026-05-29-youtube-ai-video-publishing.html
 status: published
+seo_title: "Horizon AIニュース動画のYouTube自動投稿"
+head_keyword: "YouTube API 自動投稿"
 ---
 
 Horizonで生成したAIニュース記事を、Kurageでショート動画にして、さらにYouTubeへ投稿できるようになりました。

@@ -4,6 +4,8 @@ description: "キーワードプランナーで「sansan 名刺 管理 料金」
 date: 2026-08-19
 layout: default
 permalink: /blog/2026-08-19-kaima-ai-ocr-meishi.html
+seo_title: "AI名刺解析の開発記録と市場調査"
+head_keyword: "AI名刺解析"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日も新製品を1日で作って出品したので、意思決定の起点になった数字から全部書きます。製品は**AI名刺解析・名刺台帳「Kurage AI Meishi Analysis(kaima)」**——スマホで名刺を撮って投げると、AIが読み取って下書きに登録し、人が原本と見比べて承認した分だけ台帳に載るシステムです。

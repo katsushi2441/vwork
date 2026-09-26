@@ -3,6 +3,9 @@ title: "ヘルプデスクOSS「Zammad」の日本語は23%しかなかった—
 emoji: "🎫"
 type: "tech"
 topics: ["zammad", "helpdesk", "oss", "翻訳", "weblate"]
+description: "オープンソースのヘルプデスクOSS「Zammad」の日本語化手順を解説します。実測で23%だった翻訳率を、ローカルLLMを用いて5,123エントリ全て全訳し、本家のWeblateへ投入した過程と具体的な手法を紹介します。"
+seo_title: "Zammadの日本語化手順と全訳の記録"
+head_keyword: "Zammad 日本語化"
 published: true
 title_hatena: "OSSの「日本語対応」は当てにならない——Zammad実測23%を100%へ、Weblate投入の技術メモ"
 title_blogger: "Zendesk代替のZammadを完全日本語で使う方法(poファイル配布と本家投入の報告)"

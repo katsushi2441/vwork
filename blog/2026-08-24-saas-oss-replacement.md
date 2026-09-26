@@ -7,6 +7,8 @@ title_blogger: "使っているクラウドサービス、オープンソース�
 date: 2026-08-24
 layout: default
 permalink: /blog/2026-08-24-saas-oss-replacement.html
+seo_title: "SaaSのライセンス費用をOSS×AI開発で削減する方法"
+head_keyword: "SaaS 費用削減"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日は**払い続けている費用**の話です。

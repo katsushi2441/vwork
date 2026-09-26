@@ -4,6 +4,8 @@ description: "予約システムkreserveの販売に『①完成品を買う ②
 date: 2026-08-15
 layout: default
 permalink: /blog/2026-08-15-three-doors-model.html
+seo_title: "システム販売の戦略｜完成品と手順書の同時提供"
+head_keyword: "システム開発 売り方"
 ---
 
 今日から、当社の予約・受付システム [kreserve](https://kappstore.exbridge.jp/app.php?id=362c94ab4e1384f2&ref=vwork) の商品ページに、こういう表を置きました。

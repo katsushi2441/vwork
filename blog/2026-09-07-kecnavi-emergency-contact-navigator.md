@@ -7,6 +7,8 @@ title_blogger: "困りごとから「どこに言えばいいか」を一発で�
 date: 2026-09-07
 layout: default
 permalink: /blog/2026-09-07-kecnavi-emergency-contact-navigator.html
+seo_title: "名古屋市の通報窓口をまとめるKurage 通報先ナビの開発記"
+head_keyword: "名古屋市 通報 窓口"
 ---
 
 名古屋でAIシステム開発の会社をやっています。

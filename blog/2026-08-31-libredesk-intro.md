@@ -7,6 +7,8 @@ title_blogger: "Zendeskの代わりを自社サーバーで——LibreDeskの機
 date: 2026-08-31
 layout: default
 permalink: /blog/2026-08-31-libredesk-intro.html
+seo_title: "LibreDeskを日本語で使う方法と機能紹介"
+head_keyword: "LibreDesk"
 ---
 
 名古屋でAIシステム開発の会社をやっています。**LibreDesk** というオープンソースのヘルプデスクを日本語で使えるようにしたので、**何ができるソフトなのか**を紹介します。

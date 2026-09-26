@@ -3,6 +3,9 @@ title: "Kurage SNS PosterにYouTubeアップロード機能を追加した：you
 emoji: "🎬"
 type: "tech"
 topics: ["youtube", "mcp", "oauth", "ksnsposter", "automation"]
+description: "Kurage SNS PosterにYouTubeアップロード機能を追加しました。youtube-uploader-mcpを組み込み、ブラウザ操作ではなくAPIを活用することで安定した投稿を実現します。SNSごとの最適な運用方法の違いについても解説します。"
+seo_title: "Kurage SNS PosterにYouTube自動投稿機能を追加"
+head_keyword: "Kurage SNS Poster"
 published: true
 ---
 

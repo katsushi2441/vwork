@@ -4,6 +4,8 @@ description: "バイブトレーディングは、売買アイデアを自然な
 date: 2026-08-03
 layout: default
 permalink: /blog/2026-08-03-what-is-vibe-trading.html
+seo_title: "バイブトレーディングとは？AIを活用した取引戦略の作り方"
+head_keyword: "バイブトレーディング"
 ---
 
 「バイブトレーディング」と聞くと、雰囲気や直感だけで売買することのように見えるかもしれません。しかし、ここでいうバイブトレーディングは正反対です。

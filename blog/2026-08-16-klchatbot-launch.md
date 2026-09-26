@@ -4,6 +4,8 @@ description: "AIチャットボットの相場はSaaSで月額2〜5万円が永�
 date: 2026-08-16
 layout: default
 permalink: /blog/2026-08-16-klchatbot-launch.html
+seo_title: "AIチャットボットを安く導入するならKurage Light"
+head_keyword: "AIチャットボット 導入費用"
 ---
 
 AIチャットボットを入れたい。調べた会社が最初にぶつかるのは、機能ではなく**値段**です。

@@ -3,6 +3,9 @@ title: "「失敗動画がバズる」ブラウザゲームをPhaser 3 + Matter.
 emoji: "🪼"
 type: "tech"
 topics: ["phaser", "matterjs", "javascript", "sqlite", "game"]
+description: "Phaser 3とMatter.jsを用いて、失敗動画がバズるブラウザゲームを制作する技術を解説します。ばね1本の触手物理やMediaRecorderによる録画機能など、SNSシェアを最大化するための最小工数での設計方針を紹介します。"
+seo_title: "Phaser 3とMatter.jsで物理ゲームを作る方法"
+head_keyword: "Phaser 3 ゲーム制作"
 published: true
 ---
 

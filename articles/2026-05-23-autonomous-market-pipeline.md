@@ -3,6 +3,9 @@ title: "Hermes + OpenClaw + Claude + Ollama で商品登録を全自動化した
 emoji: "🛒"
 type: "tech"
 topics: [生成ai, 個人開発, llm]
+description: "Hermes、OpenClaw、Claude、Ollamaを連携させ、商品登録を全自動化する仕組みを構築しました。AIエージェントが市場分析から商品評価、SNS通知まで自律的に実行するバイブコーディングの技術解説です。"
+seo_title: "ClaudeとOllamaで商品登録を全自動化する方法"
+head_keyword: "AIエージェント 商品登録 自動化"
 published: true
 ---
 

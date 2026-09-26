@@ -3,6 +3,9 @@ title: "無名映画のショート動画が検索流入の5割を占めた — 
 emoji: "🎬"
 type: "tech"
 topics: [ollama, gemma, seo, llm, python]
+description: "無名映画のショート動画が検索流入の5割を占めた事例から、バズった固有名詞を活用したSEO戦略を解説します。ローカルLLMのgemmaやOllamaを用いて、情報の空白を突くメタデータの自動生成を仕組み化した過程を紹介します。"
+seo_title: "固有名詞SEOの自動化とローカルLLMの実装"
+head_keyword: "固有名詞SEO"
 published: true
 ---
 

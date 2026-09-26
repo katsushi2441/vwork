@@ -5,6 +5,8 @@ date: 2026-06-22
 layout: default
 permalink: /blog/2026-06-22-kurage-ai-vtuber-youtube-live-automation.html
 status: published
+seo_title: "Kurage AI VTuber YouTubeライブ自動配信"
+head_keyword: "VTuber ライブ配信 自動化"
 ---
 
 株式会社エクスブリッジでは、AIを「話題の技術」として紹介するだけでなく、実際に会社の情報発信を動かす仕組みとして開発しています。

@@ -3,6 +3,9 @@ title: "OpenAlice-JPを公開：AIトレーディングOSSを日本語既定・D
 emoji: "🇯🇵"
 type: "tech"
 topics: [openalice, aiagent, docker, nginx, fintech]
+description: "AIトレーディングOSS「OpenAlice」を日本語既定でセルフホストできるOpenAlice-JPを公開しました。DockerやHTTPS対応に加え、Claude Code等のエージェントを市場データや取引承認フローへ接続する環境を提供します。"
+seo_title: "OpenAlice-JP：AIトレーディングOSSの導入方法"
+head_keyword: "OpenAlice"
 published: true
 ---
 

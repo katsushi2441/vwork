@@ -5,6 +5,9 @@ tags: [AI, バイブコーディング, 経営, 内製化, EC, 動画生成]
 status: published
 layout: default
 permalink: /blog/2026-05-29-exbridge-for-business.html
+description: "株式会社エクスブリッジが実践するバイブコーディングによるシステム内製化の事例を紹介します。URLから動画を生成する「URL2AI」やEC運営を自動化する「AIxEC」、OSS公開中の「Kurageプロジェクト」など、AIで経営を変える具体策を解説します。"
+seo_title: "AI内製化とバイブコーディングの事例"
+head_keyword: "AIシステム内製化"
 ---
 
 「システム開発は外注するもの」という常識が、静かに崩れています。

@@ -3,11 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% assign seo_title = page.title | default: site.title %}
+  {% comment %}
+    <title> は検索結果で30字前後で切れるので、短い seo_title があればそれを使う。
+    見出し(h1)は page.title のままにして、記事の題はいじらない。
+    サイト名の付与も、記事ページでは字数を食うだけなのでやめた（2026-09-26）。
+  {% endcomment %}
+  {% assign seo_title = page.seo_title | default: page.title | default: site.title %}
+  {% assign head_title = page.title | default: site.title %}
   {% assign seo_description = page.description | default: site.description %}
   {% assign seo_image = page.image | default: site.seo_image %}
+  {% comment %}
+    VWork Blog（blog/）は 2026-09-26 に exbridge.jp/vibeblog/ へ移設し、あちらを正本にした。
+    同じ本文が2つのURLにあるので、こちら側の canonical を移設先へ向ける。
+    301 は使わない（このワークスペースの決まり）。canonical タグだけで正本を伝える。
+    AI OSS技術解説ブログ（articles/）は別媒体なので、これまでどおり自分自身を指す。
+  {% endcomment %}
   {% assign seo_url = page.url | absolute_url %}
-  <title>{% if page.title %}{{ seo_title }} | {% endif %}{{ site.title }}</title>
+  {% assign vibeblog = 'https://exbridge.jp/vibeblog/' %}
+  {% assign moved = false %}
+  {% if page.url contains '/blog/' %}
+    {% assign moved = true %}
+    {% assign blog_slug = page.url | split: '/blog/' | last %}
+    {% if blog_slug == '' or blog_slug == 'index.html' %}
+      {% assign seo_url = vibeblog %}
+    {% else %}
+      {% assign seo_url = vibeblog | append: blog_slug %}
+    {% endif %}
+  {% endif %}
+  <title>{% if page.title %}{{ seo_title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ seo_description | escape }}">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="canonical" href="{{ seo_url }}">
@@ -67,7 +90,7 @@
       {% if page.date %}
       {
         "@type": "Article",
-        "headline": {{ seo_title | jsonify }},
+        "headline": {{ head_title | jsonify }},
         "description": {{ seo_description | jsonify }},
         "url": {{ seo_url | jsonify }},
         "image": {{ seo_image | jsonify }},
@@ -96,7 +119,7 @@
       {% assign recent = site.pages | where_exp: "p", "p.date" | sort: "date" | reverse %}
       ,{
         "@type": "Blog",
-        "name": {{ seo_title | jsonify }},
+        "name": {{ head_title | jsonify }},
         "url": {{ seo_url | jsonify }},
         "inLanguage": "ja",
         "publisher": { "@id": {{ org_id | jsonify }} },
@@ -224,7 +247,10 @@
       .oss-promo-desc { display:none; }
     }
     @media print { .oss-promo-top,.oss-promo-sidebar { display:none !important; } }
-  </style>
+    .moved-note{background:#f3faf9;border:1px solid #dcebe9;border-radius:10px;
+    padding:12px 14px;font-size:14px;line-height:1.85;margin:0 0 20px}
+  .moved-note a{word-break:break-all}
+</style>
 </head>
 <body>
   {% assign is_blog_area = false %}
@@ -269,6 +295,14 @@
       {% endcomment %}
       {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
       {% if page.date %}<p class="meta">{{ page.date | date: "%Y年%-m月%-d日" }}</p>{% endif %}
+      {% comment %}
+        canonical だけ向けても、ここに来た人は移設先にたどり着けない。
+        読む人のために1行だけ案内を出す（301 は使わない決まり）。
+      {% endcomment %}
+      {% if moved %}
+      <p class="moved-note">この記事は <strong>バイブコーディング的仕事ブログ</strong>（VWork Blog）へ移りました。
+        最新版はこちらです → <a href="{{ seo_url }}">{{ seo_url }}</a></p>
+      {% endif %}
       {{ content }}
     </article>
     {% if is_blog_listing %}

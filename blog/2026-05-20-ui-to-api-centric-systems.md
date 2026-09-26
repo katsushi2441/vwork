@@ -4,6 +4,8 @@ description: クラサバからWebへの移行期に悩んだUI設計の経験�
 date: 2026-05-20
 layout: default
 permalink: /blog/2026-05-20-ui-to-api-centric-systems.html
+seo_title: "業務システムの設計はUIからAPI中心へ"
+head_keyword: "業務システム API設計"
 ---
 
 昔、業務システムのUIに強く悩んでいた時期があった。

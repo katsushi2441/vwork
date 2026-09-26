@@ -5,6 +5,8 @@ date: 2026-06-21
 layout: default
 permalink: /blog/2026-06-21-kvtuber-kdeck-agent-blog-demo.html
 status: published
+seo_title: "kdeckとAI Agentによるブログ記事投稿の自動化デモ"
+head_keyword: "AI Agent 業務自動化"
 ---
 
 今回は、Kurage AI VTuberの業務チャットから、実際にVWork blogの記事投稿を依頼してみました。

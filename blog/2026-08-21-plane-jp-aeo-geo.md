@@ -4,6 +4,8 @@ description: "オープンソースのプロジェクト管理システムPlane�
 date: 2026-08-21
 layout: default
 permalink: /blog/2026-08-21-plane-jp-aeo-geo.html
+seo_title: "PlaneをBacklogの代替として導入する手順"
+head_keyword: "Plane 導入方法"
 ---
 
 Backlogの代替候補として、オープンソースのプロジェクト管理システム **Plane** を日本企業が自社サーバーへ導入するための **[Plane JP Deployment Kit](https://github.com/katsushi2441/plane-jp)** を公開しました。

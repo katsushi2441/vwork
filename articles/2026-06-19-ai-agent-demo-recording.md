@@ -3,6 +3,9 @@ title: "AIエージェントに自社プロダクトを操作させて、デモ�
 emoji: "🎬"
 type: "tech"
 topics: [browseruse, ollama, ffmpeg, 生成ai, oss]
+description: "AIブラウザエージェントを用いて自社プロダクトの操作とデモ動画の自動録画を実現する方法を解説します。browser-useやOllama、Gemma 4を活用し、ローカル環境で外部API費用を抑えた構築手順を紹介します。"
+seo_title: "AIエージェントでデモ動画を自動録画する仕組み"
+head_keyword: "AIエージェント 動画自動録画"
 published: true
 ---
 

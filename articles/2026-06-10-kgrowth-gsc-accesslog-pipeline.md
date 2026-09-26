@@ -3,6 +3,9 @@ title: "kgrowth：GSCとアクセスログを統合した週次グロース自�
 emoji: "📈"
 type: "tech"
 topics: ["python", "googleanalytics", "seo", "自動化", "oss"]
+description: "kgrowthはGSCとアクセスログを統合し、検索流入分析から改善ジョブの提案まで自動化するPythonパイプラインです。約1,300行のコードで構成され、外部ライブラリへの依存を最小限に抑えた設計やJWT署名の独自実装が特徴です。"
+seo_title: "kgrowth：GSCとアクセスログを統合したグロース自動化"
+head_keyword: "kgrowth"
 published: true
 ---
 

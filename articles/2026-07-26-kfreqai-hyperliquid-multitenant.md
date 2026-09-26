@@ -3,6 +3,9 @@ title: "kfreqaiをHyperliquidに対応させた設計——非カストディ委
 emoji: "🪼"
 type: "tech"
 topics: [生成ai, python, fintech, hyperliquid, web3]
+description: "kfreqaiをHyperliquidに対応させるための設計思想を解説します。非カストディ委任による安全な鍵管理や、1プロセスで多テナント実行を行う執行レイヤの自作など、Webサービス化における技術的な判断と落とし穴を詳述します。"
+seo_title: "kfreqaiをHyperliquidに対応させる設計"
+head_keyword: "kfreqai"
 published: true
 ---
 

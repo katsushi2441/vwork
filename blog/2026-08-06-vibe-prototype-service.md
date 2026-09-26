@@ -4,6 +4,8 @@ description: "要件は固まったのに、動かしてみないと本当に欲
 date: 2026-08-06
 layout: default
 permalink: /blog/2026-08-06-vibe-prototype-service.html
+seo_title: "プロトタイプ制作｜設計書から最短1営業日で動くものを作る"
+head_keyword: "プロトタイプ制作"
 ---
 
 「要件はまとまった。でも、これで本当に業務が回るのか、動かしてみないと分からない」

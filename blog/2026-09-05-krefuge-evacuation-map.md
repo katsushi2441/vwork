@@ -7,6 +7,8 @@ title_blogger: "最寄りを返せばいい、ではなかった。避難所検�
 date: 2026-09-05
 layout: default
 permalink: /blog/2026-09-05-krefuge-evacuation-map.html
+seo_title: "避難所検索システムの設計と災害種別の重要性"
+head_keyword: "避難所 検索 システム"
 ---
 
 名古屋でAIシステム開発の会社をやっています。

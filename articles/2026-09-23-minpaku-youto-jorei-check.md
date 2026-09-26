@@ -3,6 +3,9 @@ title: "民泊の可否を住所から調べる：用途地域GISと上乗せ条
 emoji: "🏠"
 type: "tech"
 topics: [gis, opendata, php, sqlite, python]
+description: "住所から民泊の可否を判定するシステムをPHPで構築した過程を解説します。国土数値情報の用途地域データや自治体ごとの上乗せ条例など、データの選定とライセンス確認における課題や注意点を具体的に紹介します。"
+seo_title: "住所から民泊の可否を調べるシステムの設計と実装"
+head_keyword: "民泊 判定 システム"
 published: true
 ---
 

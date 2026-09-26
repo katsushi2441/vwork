@@ -3,6 +3,9 @@ title: "「勝率65%なのに負けている」暗号資産AI自動取引ボッ�
 emoji: "📉"
 type: "tech"
 topics: [生成ai, aiagent, machinelearning, oss, python]
+description: "FreqAIを用いた暗号資産自動売買ボットの運用で、勝率が高いのに取引が発生しない原因を検証します。entry_thresholdの設定とモデルの予測値の関係から、機械学習トレーディングにおける「勝率と期待値の違い」という罠を解説します。"
+seo_title: "FreqAI 暗号資産自動売買ボットの閾値検証"
+head_keyword: "暗号資産 AI自動取引"
 published: true
 ---
 

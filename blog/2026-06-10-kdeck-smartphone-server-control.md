@@ -4,6 +4,8 @@ description: "出先のスマホからLinuxサーバーのCodex・Claudeに指�
 date: 2026-06-10
 layout: default
 permalink: /blog/2026-06-10-kdeck-smartphone-server-control.html
+seo_title: "Kurage Agent DeckでスマホからAIを操作する方法"
+head_keyword: "Kurage Agent Deck"
 ---
 
 出先でも、スマホから自社のLinuxサーバーにあるAIエージェント（CodexやClaude）に指示を出して、コーディング・リサーチ・ブログ投稿・動画生成・YouTube投稿まで実行させることができる。

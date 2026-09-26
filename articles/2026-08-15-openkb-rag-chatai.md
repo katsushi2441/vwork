@@ -3,6 +3,9 @@ title: "OpenKB——ベクトルDB不要のRAG「PageIndex」でナレッジチ�
 emoji: "📚"
 type: "tech"
 topics: ["openkb", "rag", "llm", "ollama", "deepseek"]
+description: "ベクトルDB不要なRAG構築OSS「OpenKB」を徹底検証します。LLMがドキュメントをwiki形式に再編纂するPageIndexの仕組みや、Ollamaを用いたローカルLLM環境でのセットアップ時の注意点、DeepSeekの実測結果を紹介します。"
+seo_title: "OpenKBでベクトルDB不要なRAGを構築する方法"
+head_keyword: "OpenKB"
 published: true
 ---
 

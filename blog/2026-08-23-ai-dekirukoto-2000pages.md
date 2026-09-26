@@ -7,6 +7,8 @@ title_blogger: "製品名で探してくれる人はいない。だから「で�
 date: 2026-08-23
 layout: default
 permalink: /blog/2026-08-23-ai-dekirukoto-2000pages.html
+seo_title: "AI活用事例と業務OSSカタログの連携"
+head_keyword: "AI業務効率化"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日は、**同じ中身に、入口をもう1つ足した**話です。

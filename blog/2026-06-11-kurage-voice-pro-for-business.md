@@ -4,6 +4,8 @@ description: "URLを入力するだけで、海外動画を日本語字幕・吹
 date: 2026-06-11
 layout: default
 permalink: /blog/2026-06-11-kurage-voice-pro-for-business.html
+seo_title: "Kurage Voice-Proで海外動画を自動翻訳・吹き替え"
+head_keyword: "動画 自動翻訳 ツール"
 ---
 
 海外の動画を日本語で見たい。字幕をつけてSNSで発信したい。そう思っても、翻訳・吹き替えには専門家への依頼とそれなりのコストがかかるのが当たり前でした。

@@ -3,6 +3,9 @@ title: "Kurage Agent Deckの技術解説：スマホからCodex CLIを操作す�
 emoji: "🪼"
 type: "tech"
 topics: ["kurage", "codex", "aiagent", "fastapi", "php"]
+description: "Kurage Agent Deckの技術構成を解説します。PHP、FastAPI、Codex CLIの3層構造により、スマホからLinuxサーバ上の操作を可能にする軽量Webコンソールの仕組みや、セキュリティを考慮したAPIプロキシの実装について紹介します。"
+seo_title: "Kurage Agent Deckの技術解説と構成"
+head_keyword: "Kurage Agent Deck"
 published: true
 ---
 

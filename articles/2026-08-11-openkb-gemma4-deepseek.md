@@ -3,6 +3,9 @@ title: "OpenKBで自社ナレッジのAI相談窓口とWikiを作った —— g
 emoji: "🪼"
 type: "tech"
 topics: [openkb, rag, ollama, deepseek, llm]
+description: "OpenKBを用いて自社ナレッジからAI相談窓口とWikiを構築した事例を紹介します。gemma4 12bとDeepSeek V4 Flashを用い、RAGパイプラインにおける「コンパイル」と「回答」の工程でLLMの性能差がどう出るかを技術的に解説します。"
+seo_title: "OpenKBでAI相談窓口とWikiを構築する"
+head_keyword: "OpenKB"
 published: true
 ---
 

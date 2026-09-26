@@ -4,6 +4,8 @@ description: "バイブコーディングセミナー、手入力ゼロ化支援
 date: 2026-06-15
 layout: default
 permalink: /blog/2026-06-15-exbridge-service-story.html
+seo_title: "AI導入の進め方｜経営者のための伴走支援と事例"
+head_keyword: "AI導入 経営者"
 ---
 
 「うちもAIを使わないといけないとは思っている」

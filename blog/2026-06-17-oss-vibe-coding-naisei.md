@@ -4,6 +4,8 @@ description: "高い外注費、積み上がるSaaSの月額、ベンダーロ�
 date: 2026-06-17
 layout: default
 permalink: /blog/2026-06-17-oss-vibe-coding-naisei.html
+seo_title: "システム内製化のコストを抑えるOSS活用術"
+head_keyword: "システム内製化"
 ---
 
 「AIで業務を効率化したい」「自社に合ったシステムが欲しい」。

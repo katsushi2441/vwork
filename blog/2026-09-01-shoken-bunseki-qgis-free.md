@@ -7,6 +7,8 @@ title_blogger: "出店判断の商圏分析を0円で始める：QGIS＋e-Stat�
 date: 2026-09-01
 layout: default
 permalink: /blog/2026-09-01-shoken-bunseki-qgis-free.html
+seo_title: "QGISで商圏分析を無料で行う方法"
+head_keyword: "商圏分析 無料"
 ---
 
 名古屋でAIシステム開発の会社をやっています。先日「商圏分析に使えるGISのオープンソースはあるか」と調べる機会があり、**知られていないだけで、無料で相当なところまでできる**と分かったのでまとめます。

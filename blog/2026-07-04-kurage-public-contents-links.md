@@ -4,6 +4,8 @@ description: "バイブコーディングで作ってきたKurageプロジェク
 date: 2026-07-04
 layout: default
 permalink: /blog/2026-07-04-kurage-public-contents-links.html
+seo_title: "KurageプロジェクトのAIゲーム・動画一覧"
+head_keyword: "Kurage"
 ---
 
 このブログでは、AIとの対話だけで開発する「バイブコーディング」の実践を発信してきました。気づけば、遊べるゲーム、毎日増える動画ギャラリー、AIが自律運営するメディアまで、公開コンテンツがかなり増えています。

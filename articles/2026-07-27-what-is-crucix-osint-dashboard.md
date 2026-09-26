@@ -3,6 +3,9 @@ title: "Crucixとは？27のOSINT情報源を1画面に集約するローカル�
 emoji: "🛰️"
 type: "tech"
 topics: [oss, osint, nodejs, aiagent, dashboard]
+description: "OSINT情報源を27種類集約するインテリジェンスエンジン「Crucix」の導入方法を解説します。衛星火災検知や航空機トラッキング等のデータを15分ごとに取得し、ローカル環境でダッシュボードを構築する手順を紹介します。"
+seo_title: "Crucixとは？OSINT情報集約のダッシュボード構築術"
+head_keyword: "Crucix"
 published: true
 ---
 

@@ -3,6 +3,9 @@ title: "業務システムの本質は「UI中心」から「API中心」へ"
 emoji: "💡"
 type: "tech"
 topics: [api, アーキテクチャ, 個人開発]
+description: "AI駆動の開発が進む中で、業務システムの重要性がUI中心からAPI中心へと移行する背景を解説します。人間だけでなくAIエージェントが操作することを前提とした、商品登録や在庫取得などの業務機能のAPI化について詳しく述べます。"
+seo_title: "業務システムはUIからAPI中心へ移行する"
+head_keyword: "業務システム API設計"
 published: true
 ---
 

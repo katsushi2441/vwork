@@ -4,6 +4,8 @@ description: "10万円で業務効率化のプロトタイプを作り、自社�
 date: 2026-08-07
 layout: default
 permalink: /blog/2026-08-07-prototype-to-product-loop.html
+seo_title: "業務効率化ツールの販売方法とKurage App Store"
+head_keyword: "業務効率化ツール 販売"
 ---
 
 自社の業務を効率化するために作ったシステムは、たいてい自社の中で眠ります。同じ困りごとを持つ会社は世の中にたくさんあるのに、売る手段が無いからです。

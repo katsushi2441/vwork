@@ -3,6 +3,9 @@ title: "OpenAlice-JPをx402対応AIエージェントにする — Kurage Brain�
 emoji: "🧠"
 type: "tech"
 topics: ["openalice", "x402", "deepseek", "aiagent", "trading"]
+description: "OpenAlice-JPにKurage Brain判断ツールを組み込み、x402プロトコルを用いた従量課金システムを実装した過程を解説します。APIキー不要で1判断$0.001の低コストな設計や互換性の課題についても詳述します。"
+seo_title: "OpenAlice-JPにKurage Brainを組み込む方法"
+head_keyword: "OpenAlice-JP"
 published: true
 ---
 

@@ -5,6 +5,8 @@ date: 2026-06-04
 layout: default
 permalink: /blog/2026-06-04-horie-ai-vwork.html
 status: published
+seo_title: "バイブコーディングとは？堀江貴文氏の事例から学ぶ"
+head_keyword: "バイブコーディング"
 ---
 
 堀江貴文さんのYouTubeチャンネルで、かなり象徴的な動画が公開されていました。

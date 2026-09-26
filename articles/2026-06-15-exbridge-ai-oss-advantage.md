@@ -3,6 +3,9 @@ title: "AI導入支援企業が増える中、AI × OSSで戦うエクスブリ�
 emoji: "🔧"
 type: "tech"
 topics: ["aiagent", "oss", "生成ai", "個人開発", "バイブコーディング"]
+description: "AI導入支援市場において、エクスブリッジがOSS活用層で築く競争優位性を解説します。OpenAI等のAPI依存を抑え、Ollamaやffmpeg等のOSSを組み合わせた内製技術の蓄積が、いかに顧客への独自価値に繋がるかを整理します。"
+seo_title: "AI導入支援の競争優位性｜OSS活用で差別化する技術"
+head_keyword: "AI導入支援"
 published: true
 ---
 

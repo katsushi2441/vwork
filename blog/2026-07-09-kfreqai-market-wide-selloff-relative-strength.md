@@ -5,6 +5,8 @@ date: 2026-07-09
 layout: default
 permalink: /blog/2026-07-09-kfreqai-market-wide-selloff-relative-strength.html
 status: published
+seo_title: "AIトレードボットの取引機会を増やすロジック改善"
+head_keyword: "AIトレードボット 運用"
 ---
 
 エクスブリッジでは、[Kurageプロジェクト](https://kurage.exbridge.jp/)の一環として、AIトレードボット「kfreqai」を紙上取引(dry-run、実資金は動いていません)で運用しています。

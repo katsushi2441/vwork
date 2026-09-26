@@ -7,6 +7,8 @@ title_blogger: "1つの考察を3つの形に。noteと動画とエッセイを�
 date: 2026-09-06
 layout: default
 permalink: /blog/2026-09-06-gyosei-pdf-three-formats.html
+seo_title: "AIでコンテンツを多形態展開する方法"
+head_keyword: "コンテンツ制作 AI"
 ---
 
 名古屋でAIシステム開発の会社をやっています。

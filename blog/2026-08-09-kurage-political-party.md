@@ -4,6 +4,8 @@ description: "YouTubeの実測で、時事・政治ネタは技術解説の約10
 date: 2026-08-09
 layout: default
 permalink: /blog/2026-08-09-kurage-political-party.html
+seo_title: "AIによる時事コンテンツ制作と架空政治団体の実験"
+head_keyword: "AIコンテンツ制作"
 ---
 
 架空の政治団体を作りました。名前は**Kurage党**。党首はAIクラゲのKurageさん、事務所なし、職員なし、党本部はレンタルサーバーです。

@@ -4,6 +4,8 @@ description: "領収書をPDFで発行してメールで送るシステムを、
 date: 2026-08-05
 layout: default
 permalink: /blog/2026-08-05-kinvoice-vwork-learning-package.html
+seo_title: "AIで領収書システム開発！6つの失敗と解決策"
+head_keyword: "AI 開発 失敗事例"
 ---
 
 領収書をPDFで発行して、ダウンロードURLをメールで送るシステムを作りました。1日です。

@@ -7,6 +7,8 @@ title_blogger: "Zendeskの月額をやめる選択肢——FreeScout日本語導
 date: 2026-08-26
 layout: default
 permalink: /blog/2026-08-26-freescout-kit.html
+seo_title: "FreeScoutの日本語導入方法とおすすめの構築経路"
+head_keyword: "FreeScout 導入"
 ---
 
 名古屋でAIシステム開発の会社をやっています。**support@やinfo@に届くメールをチームのチケットにする、オープンソースのヘルプデスク「FreeScout」の日本語導入キット（共有レンタルサーバー編）**を公開しました。

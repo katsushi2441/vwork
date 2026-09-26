@@ -4,6 +4,8 @@ description: "コードを書いたことがない人でも、AIに言葉で伝�
 date: 2026-07-02
 layout: default
 permalink: /blog/2026-07-02-first-game-dev-with-claude-code.html
+seo_title: "Claude Codeでゲーム制作！非エンジニアのバイブコー"
+head_keyword: "Claude Code ゲーム制作"
 ---
 
 先日、人生で初めてゲームを開発して、インターネットに公開しました。

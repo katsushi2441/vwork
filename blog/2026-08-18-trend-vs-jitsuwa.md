@@ -4,6 +4,8 @@ description: "同じ週に「トレンドキーワードの実測記事」と「
 date: 2026-08-18
 layout: default
 permalink: /blog/2026-08-18-trend-vs-jitsuwa.html
+seo_title: "noteやジモティーの集客実測！トレンドと実話の差"
+head_keyword: "コンテンツマーケティング 実績"
 ---
 
 名古屋でAIシステム開発の会社をやっています。8月は「複数の媒体 → 複数のLP → 6つのゴール」という導線の網（メッシュ）を張り、**全部の数字を公開しながら**実測しています。数字の置き場はこちらです：[マーケティング実証実験ダッシュボード](https://katsushi2441.github.io/vwork/blog/2026-08-15-multi-lp-media-mesh.html)。

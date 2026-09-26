@@ -6,6 +6,8 @@ tags: [VWork, GitHub, バイブコーディング, Codex, ナレッジ移植, �
 status: published
 layout: default
 permalink: /blog/2026-05-18-vwork-as-knowledge-blog.html
+seo_title: "VWorkリポジトリを知識置き場兼ブログにする方法"
+head_keyword: "VWork"
 ---
 
 [VWork](https://exbridge.jp/vwork.html)のリポジトリは、単なるテンプレート置き場ではなく、バイブコーディングの知識置き場兼ブログとして育てていく価値があります。

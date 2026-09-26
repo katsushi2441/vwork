@@ -3,6 +3,9 @@ title: "Kurage Agent Deckをマルチサーバ対応にした：OpenClaw経由�
 emoji: "🕹️"
 type: "tech"
 topics: ["aiagent", "codex", "claude", "openclaw", "automation"]
+description: "Kurage Agent Deck（kdeck）をマルチサーバ対応へ拡張しました。OpenClaw gatewayを各サーバに配置することで、スマホから複数のCodexやClaudeに対し、特定の環境に合わせた指示を出す構成を実現しています。"
+seo_title: "Kurage Agent Deckをマルチサーバ対応にする方法"
+head_keyword: "Kurage Agent Deck"
 published: true
 ---
 

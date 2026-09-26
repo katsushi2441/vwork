@@ -3,6 +3,9 @@ title: "Kurage SNS Poster：browser-useとログイン済みChromeでThreads自�
 emoji: "🧵"
 type: "tech"
 topics: ["browseruse", "playwright", "threads", "ollama", "aiagent"]
+description: "ThreadsやInstagramへの自動投稿を実現するため、API審査を回避してログイン済みChromeプロファイルを再利用するKurage SNS Posterの実装方法を解説します。browser-useを活用したブラウザ自動化の技術メモです。"
+seo_title: "Threads自動投稿をbrowser-useで実装する方法"
+head_keyword: "Threads自動投稿"
 published: true
 ---
 

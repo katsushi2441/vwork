@@ -7,6 +7,8 @@ title_blogger: "御社のデジタル商材を海外マーケットへ——Whop
 date: 2026-08-25
 layout: default
 permalink: /blog/2026-08-25-whop-shutten-shien.html
+seo_title: "Whop出店支援｜海外向けデジタル商品販売の構築"
+head_keyword: "Whop出店"
 ---
 
 名古屋でAIシステム開発の会社をやっています。[昨日の記事](https://katsushi2441.github.io/vwork/blog/2026-08-25-whop-store-guide.html)で、海外デジタル商品マーケット「Whop」に日本から出店して、審査通過まで1日だったことを書きました。

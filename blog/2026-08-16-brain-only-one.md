@@ -4,6 +4,8 @@ description: "Brainで売れているのはWebマーケ・SNS運用・AI動画/�
 date: 2026-08-16
 layout: default
 permalink: /blog/2026-08-16-brain-only-one.html
+seo_title: "Brainで業務システムの実務ノウハウを売る方法"
+head_keyword: "Brainコンテンツ販売"
 ---
 
 コンテンツ販売プラットフォームのBrainを研究していて、はっきり気づいたことがあります。

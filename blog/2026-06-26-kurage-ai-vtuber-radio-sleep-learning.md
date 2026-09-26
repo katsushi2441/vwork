@@ -4,6 +4,8 @@ description: "Kurage AI VTuber Radioは、AI VTuberが話し続けるライブ�
 date: 2026-06-26
 layout: default
 permalink: /blog/2026-06-26-kurage-ai-vtuber-radio-sleep-learning.html
+seo_title: "Kurage AI VTuber Radioで睡眠・学習用動画を作る"
+head_keyword: "Kurage AI VTuber Radio"
 ---
 
 YouTubeでは、睡眠用BGM、作業用BGM、睡眠導入の朗読、長時間のリラックス動画が大きな再生数を取ることがあります。

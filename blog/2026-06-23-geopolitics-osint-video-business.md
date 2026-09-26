@@ -5,6 +5,8 @@ date: 2026-06-23
 layout: default
 permalink: /blog/2026-06-23-geopolitics-osint-video-business.html
 status: published
+seo_title: "地政学OSINT動画のAI生成とコンテンツ制作フロー"
+head_keyword: "OSINT動画生成"
 ---
 
 AIを使った動画ビジネスの世界では、顔出しなし、声出しなし、最小限の編集で大きな再生数を取る「faceless YouTube」の事例が増えています。

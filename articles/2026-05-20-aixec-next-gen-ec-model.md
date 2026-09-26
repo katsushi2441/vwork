@@ -3,6 +3,9 @@ title: "AIエージェントによる次世代ECモデルの実験 — AIxEC"
 emoji: "🛒"
 type: "tech"
 topics: [生成ai, aiagent]
+description: "AIxECでは、AIエージェントが商品登録や動画生成、SNS投稿までを自動で行う次世代ECモデルを実験しています。バイブコーディングを用いてシステム自体も開発し、AIによるコンテンツ生成から収益化までの循環を検証します。"
+seo_title: "AIエージェントによる次世代ECモデルの実験"
+head_keyword: "AIエージェント EC"
 published: true
 ---
 

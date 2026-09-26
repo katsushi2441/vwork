@@ -6,6 +6,8 @@ tags: [AIエージェント, Hermes, OpenClaw, 自動化, アーキテクチャ]
 status: published
 layout: default
 permalink: /blog/2026-05-23-hermes-openclaw-roles.html
+seo_title: "HermesとOpenClawの役割分担とAIエージェント設計"
+head_keyword: "AIエージェント 構成"
 ---
 
 [Autonomous Market Pipeline](/blog/2026-05-23-autonomous-market-pipeline.html) を構成する中で、Hermes と OpenClaw の役割分担はかなり重要だと感じている。

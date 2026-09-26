@@ -7,6 +7,8 @@ title_blogger: "AIエージェントで海外マーケットに出品する時�
 date: 2026-08-25
 layout: default
 permalink: /blog/2026-08-25-whop-store-guide.html
+seo_title: "Whopの日本からの出品方法とCLI操作手順"
+head_keyword: "Whop 出品方法"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日は**海外のデジタル商品マーケット「Whop」に日本から出品した記録**です。

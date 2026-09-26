@@ -4,6 +4,8 @@ description: "業務システムがほしいけど、外注は高い・SaaSは�
 date: 2026-08-12
 layout: default
 permalink: /blog/2026-08-12-make-buy-refer.html
+seo_title: "業務システム導入の選び方｜AIで作る・買う・紹介する"
+head_keyword: "業務システム 導入"
 ---
 
 「予約管理を楽にしたい」「請求書を自動化したい」「顧客リストをちゃんと管理したい」——

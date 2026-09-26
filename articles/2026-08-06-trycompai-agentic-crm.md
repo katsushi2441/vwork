@@ -3,6 +3,9 @@ title: "公開6日で6,900スター。trycompai/crm——「AIに自己採点さ
 emoji: "📇"
 type: "tech"
 topics: [生成ai, oss, typescript, agent, crm]
+description: "公開6日で6,900スターを獲得したtrycompai/crmの設計を解説します。AIに自己採点させない「agentic-first」な設計思想や、調査エージェントが自律的に動く仕組みなど、実務への組み込みの知見を紹介します。"
+seo_title: "trycompai/crmの設計とAIエージェントCRMの仕組み"
+head_keyword: "trycompai/crm"
 published: true
 ---
 

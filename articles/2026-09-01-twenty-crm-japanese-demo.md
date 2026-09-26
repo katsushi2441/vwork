@@ -3,6 +3,9 @@ title: "スター5.5万のSalesforce代替CRM「Twenty」は日本語で使え�
 emoji: "🔍"
 type: "tech"
 topics: ["crm", "twenty", "oss", "postgresql", "selfhosted"]
+description: "Salesforce代替のOSS CRM「Twenty」を実際に構築し、日本語対応の実態を検証しました。UIは6,160キー全て翻訳済みで即座に日本語化されますが、グローバル検索には一部課題があることも実測データで公開しています。"
+seo_title: "Twentyは日本語で使える？構築検証とデモ"
+head_keyword: "Twenty CRM 日本語"
 published: true
 ---
 

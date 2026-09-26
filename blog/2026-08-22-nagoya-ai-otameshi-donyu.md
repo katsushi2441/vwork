@@ -4,6 +4,8 @@ description: "AI導入をどこから始めるか決められない中小企業�
 date: 2026-08-22
 layout: default
 permalink: /blog/2026-08-22-nagoya-ai-otameshi-donyu.html
+seo_title: "AIエージェント導入の費用と中小企業向け試験設計"
+head_keyword: "AIエージェント 導入"
 ---
 
 「AIを入れたいが、自社のどの業務から手を付ければいいか分からない」

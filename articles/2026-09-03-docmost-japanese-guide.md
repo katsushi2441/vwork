@@ -3,6 +3,9 @@ title: "Notion・Confluenceの代替を自社サーバーに——社内WikiOSS�
 emoji: "📝"
 type: "tech"
 topics: ["docmost", "notion", "confluence", "oss", "wiki"]
+description: "NotionやConfluenceの代替として自社サーバーで動くOSS「Docmost」を検証しました。翻訳率100%の日本語UIやリアルタイム共同編集の利便性を確認しつつ、日本語全文検索の課題と具体的な運用対策を解説します。"
+seo_title: "Docmostの評判は？Notion代替の日本語検索の穴と対策"
+head_keyword: "Docmost"
 published: true
 title_hatena: "Notion・Confluence代替OSS「Docmost」を自社サーバーで——翻訳100%、ただし日本語検索には穴がある（実測と対策）"
 title_blogger: "社内Wikiを月額サービスから自社サーバーへ。OSS「Docmost」の導入と、日本語で使うときの注意点"

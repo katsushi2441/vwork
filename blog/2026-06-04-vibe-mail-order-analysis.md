@@ -5,6 +5,8 @@ date: 2026-06-04
 layout: default
 permalink: /blog/2026-06-04-vibe-mail-order-analysis.html
 status: published
+seo_title: "Kurage MailでメールをAI処理する仕組み"
+head_keyword: "メール自動化"
 ---
 
 今回、Kurage Mail という小さなメール処理環境を作りました。

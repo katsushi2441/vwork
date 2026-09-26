@@ -3,6 +3,9 @@ title: "URL2AI / OSS2API を x402 AI Agent として PayAPI Market に公開し�
 emoji: "⚡"
 type: "tech"
 topics: [生成ai, 個人開発, api, llm, web3]
+description: "URL2AI / OSS2API の x402 AI Agent が PayAPI Market に公開されました。OSSをラップした multi-skill gateway や、Gemma 4 を用いた OpenAI互換の推論APIなどの機能を提供します。"
+seo_title: "URL2AIとOSS2APIをPayAPI Marketに公開"
+head_keyword: "x402 AI Agent"
 published: true
 ---
 

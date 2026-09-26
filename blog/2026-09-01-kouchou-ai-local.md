@@ -7,6 +7,8 @@ title_blogger: "意見集約AIを自前サーバーだけで——広聴AIのロ
 date: 2026-09-01
 layout: default
 permalink: /blog/2026-09-01-kouchou-ai-local.html
+seo_title: "広聴AIを完全ローカルで動かす方法と実測"
+head_keyword: "広聴AI"
 ---
 
 名古屋でAIシステム開発の会社をやっています。政治団体・自治体・労組のように「集めた意見を外部のクラウドに送れない」組織でも使える意見分析の仕組みを探して、**広聴AI（kouchou-ai）**を完全ローカルで動かしました。この記事はその実測記録です。

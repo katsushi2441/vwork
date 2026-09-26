@@ -3,6 +3,9 @@ title: "AIエージェントに業務システムの改変を任せるなら「�
 emoji: "🔒"
 type: "tech"
 topics: ["ai", "claudecode", "vibecoding", "php", "設計"]
+description: "Claude CodeなどのAIエージェントに業務システムの改変を任せる際の安全性を確保する設計手法を解説します。プロンプトの工夫ではなく、allowlistを用いて操作範囲を物理的に制限する「最小権限の原則」の実装パターンを紹介します。"
+seo_title: "AIエージェントへの業務システム改変を安全に任せる設計"
+head_keyword: "AIエージェント 業務システム 改変"
 published: true
 ---
 

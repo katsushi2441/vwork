@@ -3,6 +3,9 @@ title: "AIxEC go.phpとsimpletrack.phpでAmazonクリックをrawと実クリッ
 emoji: "🧭"
 type: "tech"
 topics: ["php", "analytics", "affiliate", "amazon", "tracking"]
+description: "AIxECでAmazonアソシエイトのクリック数が実際の数と合わない問題を解決した事例を解説します。go.phpのログにある100件以上のアクセスに対し、実クリックが1件程度だった原因を分析し、rawと実クリックに分類する手法を紹介します。"
+seo_title: "Amazonアソシエイトのクリック数ズレを解消する方法"
+head_keyword: "Amazonアソシエイト クリック数 ズレ"
 published: true
 ---
 

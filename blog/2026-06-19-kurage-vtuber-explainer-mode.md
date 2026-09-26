@@ -4,6 +4,8 @@ description: "Kurage動画生成パイプラインに、PNGアバターが解説
 date: 2026-06-19
 layout: default
 permalink: /blog/2026-06-19-kurage-vtuber-explainer-mode.html
+seo_title: "KurageにVTuber解説モードを追加！ブログを動画化"
+head_keyword: "Kurage"
 ---
 
 企業の情報発信は、文章だけでは届きにくくなっています。

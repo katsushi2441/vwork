@@ -3,6 +3,9 @@ title: "Kurage Mail — Roundcubeをhetemlに導入し、Codexからメール処
 emoji: "📬"
 type: "tech"
 topics: ["php", "roundcube", "imap", "smtp", "codex"]
+description: "heteml上にRoundcubeを導入し、AIエージェントがメールを業務データとして処理できる環境を構築します。外部POPアカウントの統合やISO-2022-JPのUTF-8変換など、Codexから操作するためのカスタマイズ手法を解説します。"
+seo_title: "Roundcubeをhetemlに導入しAIでメール処理する"
+head_keyword: "Roundcube 導入方法"
 published: true
 ---
 

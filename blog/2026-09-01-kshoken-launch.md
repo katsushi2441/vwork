@@ -7,6 +7,8 @@ title_blogger: "出店判断のための商圏分析ツールを自社サーバ�
 date: 2026-09-01
 layout: default
 permalink: /blog/2026-09-01-kshoken-launch.html
+seo_title: "商圏分析システム Kurage 徒歩・車での到達圏人口を算出"
+head_keyword: "商圏分析"
 ---
 
 名古屋でAIシステム開発の会社をやっています。前回の記事で「商圏分析は無料のQGISと国の統計データでできる」と書きました。今回はその続きです。**QGISの操作を覚えなくても使えるように、Webシステムにして公開しました。**

@@ -4,6 +4,8 @@ description: "システム開発やバイブコーディングの相談相手に
 date: 2026-08-11
 layout: default
 permalink: /blog/2026-08-11-ai-consult-chat.html
+seo_title: "システム開発の相談AI Kurage.AIの開発秘話"
+head_keyword: "システム開発 AI相談"
 ---
 
 「システムを作りたいけど、何から始めればいいか分からない」——多くの相談は、ここから始まります。

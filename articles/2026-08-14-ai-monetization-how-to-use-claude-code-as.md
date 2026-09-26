@@ -3,6 +3,9 @@ title: "海外で伸びるAI収益化動画を読む：How to Use Claude Code as
 emoji: "💸"
 type: "tech"
 topics: [生成ai, claude, codex, 個人開発, web3]
+description: "Claude Codeを活用してAIエージェンシーを構築し、技術を収益に変える実践的な戦略を解説します。Mikey No Code氏の動画を基に、開発者トラップを回避しながら事業をスケールさせる具体的なワークフローを紹介します。"
+seo_title: "Claude CodeでAIエージェンシーを構築する手法"
+head_keyword: "Claude Code 収益化"
 published: true
 ---
 

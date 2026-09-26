@@ -4,6 +4,8 @@ description: "改変自由な業務システムのダウンロード販売を始
 date: 2026-08-05
 layout: default
 permalink: /blog/2026-08-05-kappstore-open.html
+seo_title: "業務システムを自社で改変・運用するための土台販売"
+head_keyword: "業務システム 開発"
 ---
 
 **[Kurage App Store](https://kappstore.exbridge.jp/)** を公開しました。業務システムのダウンロード販売です。

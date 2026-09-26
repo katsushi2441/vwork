@@ -3,6 +3,9 @@ title: "TradingAgents-JPを公開し、判断基盤ksbrainを独立APIにした�
 emoji: "🪼"
 type: "tech"
 topics: [生成ai, aiagent, python, fastapi, fintech]
+description: "日本株マルチエージェント分析画面「TradingAgents-JP」と判断基盤API「ksbrain」を公開しました。AI投資委員会の仕組みを用いてテクニカルや企業価値を多角的に評価し、強気・弱気材料を対比する設計の意図を解説します。"
+seo_title: "TradingAgents-JP 日本株AI分析の設計"
+head_keyword: "日本株 AI 投資 分析"
 published: true
 ---
 

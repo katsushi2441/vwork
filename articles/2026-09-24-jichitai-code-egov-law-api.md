@@ -5,6 +5,9 @@ type: "tech"
 topics: ["python", "opendata", "api", "sqlite", "php"]
 title_hatena: "公開データは「取れた＝正しい」ではなかった｜法令APIとxlsxで踏んだ罠4つ"
 title_blogger: "死亡後の手続きナビを作った話｜期限を条文で裏取りする仕組み"
+description: "e-Gov法令APIと地方公共団体コードを活用し、正確な条文に基づいた手続きナビの構築方法を解説します。相続登記の3年ルールなど、改正に対応した最新の期限情報を取得するための技術的な注意点や実装のコツを紹介します。"
+seo_title: "e-Gov法令APIで正確な手続きナビを作る方法"
+head_keyword: "e-Gov法令API"
 published: true
 ---
 

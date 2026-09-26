@@ -3,6 +3,9 @@ title: "スター2.3万のオープンソースCRM「Krayin」に日本語がな
 emoji: "🗾"
 type: "tech"
 topics: ["crm", "laravel", "oss", "krayin", "翻訳"]
+description: "GitHubスター2.3万超のオープンソースCRM「Krayin」を日本語化しました。全2,066キーの翻訳内容や本家へのプルリクエスト状況に加え、実際に日本語で動かすための導入ガイドまで詳しく解説します。"
+seo_title: "Krayinを日本語化する手順と導入ガイド"
+head_keyword: "Krayin 日本語化"
 published: true
 ---
 

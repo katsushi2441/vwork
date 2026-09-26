@@ -5,6 +5,8 @@ date: 2026-06-21
 layout: default
 permalink: /blog/2026-06-21-kurage-agent-vtuber-business.html
 status: published
+seo_title: "AI VTuberの進化と企業におけるAI Agent活用"
+head_keyword: "AI VTuber"
 ---
 
 AI VTuberという言葉を聞くと、多くの人は「AIが話すアバター」「コメントに反応する配信者」「Live2Dで動くキャラクター」を想像します。

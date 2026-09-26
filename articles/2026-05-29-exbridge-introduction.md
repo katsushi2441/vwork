@@ -3,6 +3,9 @@ title: "株式会社エクスブリッジの取り組み — URL2AI・AIxEC・Ku
 emoji: "🌉"
 type: "idea"
 topics: ["ai", "vibecoding", "ec", "動画生成", "スタートアップ"]
+description: "株式会社エクスブリッジが展開するAIプロジェクトを紹介します。URLから画像や動画を生成するURL2AIや、ECサイト運営を自動化するAIxECなど、プログラマー社長がバイブコーディングで構築したOSSや実サービスを公開しています。"
+seo_title: "URL2AIとAIxECの機能・特徴まとめ"
+head_keyword: "エクスブリッジ AI"
 published: true
 ---
 

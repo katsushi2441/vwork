@@ -5,6 +5,8 @@ date: 2026-07-18
 layout: default
 permalink: /blog/2026-07-18-oss-monetization-x402-payapi.html
 status: published
+seo_title: "OSSの収益化方法｜x402で導き出した答え"
+head_keyword: "OSSマネタイズ"
 ---
 
 今日は、プロダクトの機能紹介ではなく、少し個人的な話を書かせてください。

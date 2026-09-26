@@ -3,6 +3,9 @@ title: "情報公開請求を「出しっぱなし」にしない——請求と
 emoji: "📂"
 type: "tech"
 topics: ["alaveteli", "情報公開", "oss", "翻訳", "docker"]
+description: "情報公開請求のプロセスを可視化するOSS「Alaveteli」を日本語化した手順を紹介します。1,553文字列の翻訳やDocker環境での動作確認を行い、本家へのPull Requestまで完了した過程を詳しく解説します。"
+seo_title: "Alaveteliを日本語化して導入する方法"
+head_keyword: "Alaveteli 日本語化"
 published: true
 title_hatena: "情報公開請求の公開プラットフォームOSS「Alaveteli」を日本語化——翻訳1,467文字列を本家mySocietyにPR、Dockerで日本語表示まで"
 title_blogger: "請求と回答を公開する情報公開請求OSS「Alaveteli」の日本語化と導入の実録"

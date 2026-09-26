@@ -6,6 +6,8 @@ tags: [VWork, バイブコーディング, AI事業, 名古屋, ビジネスパ�
 status: published
 layout: default
 permalink: /blog/2026-05-27-business-partner-ai-vibe-coding.html
+seo_title: "愛知・名古屋でAI事業のビジネスパートナーを募集"
+head_keyword: "AI事業 提携"
 ---
 
 [ビジネスパートナー募集ページ](https://exbridge.jp/business-partner.html)を作りました。

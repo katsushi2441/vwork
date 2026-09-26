@@ -7,6 +7,8 @@ title_blogger: "Whopに日本のソフトを出品する実務——在庫23本�
 date: 2026-08-28
 layout: default
 permalink: /blog/2026-08-28-whop-english-launch.html
+seo_title: "Whopへのソフト出品と英語圏販売の実務"
+head_keyword: "海外向けソフト販売"
 ---
 
 名古屋でAIシステム開発の会社をやっています。英語圏のマーケットプレイス **[Whop](https://whop.com/)** に自社の買い切りツールを出品し、**マーケットプレイスの審査を通過**しました。この記事は、日本で作ったソフトを英語圏で売るときに実際に必要だった作業の記録です。制作の経緯は[noteに書きました](https://note.com/tokoname/n/nbf34bb9ce9ae)。

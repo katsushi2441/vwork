@@ -7,6 +7,8 @@ title_blogger: "情報システム部門をAIで請け負う——月15時間・
 date: 2026-08-30
 layout: default
 permalink: /blog/2026-08-30-ai-it-komon.html
+seo_title: "エンジニアを雇えない企業のIT相談とAI活用術"
+head_keyword: "IT顧問"
 ---
 
 名古屋でAIシステム開発の会社をやっています。**[AI-IT顧問契約](https://exbridge.jp/ai-it-komon.html)** という月次のサービスを作りました。月15時間・税別15万円で、ITでできることをひととおり引き受けるものです。

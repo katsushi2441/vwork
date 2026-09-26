@@ -4,6 +4,8 @@ description: バイブコーディングで手入力労働と過剰な外注費�
 date: 2026-05-19
 layout: default
 permalink: /blog/2026-05-19-message-to-business-owners.html
+seo_title: "バイブコーディングとは？経営者が知るべき生産性の革新"
+head_keyword: "バイブコーディング"
 ---
 
 自分がバイブコーディングで伝えたいのは、単にAIでコードを書くという話ではありません。

@@ -4,6 +4,8 @@ description: "OSSをバイブコーディングで企業独自仕様へカスタ
 date: 2026-08-22
 layout: default
 permalink: /blog/2026-08-22-oss-vibe-coding-customization-business.html
+seo_title: "OSSをバイブコーディングでカスタマイズする方法"
+head_keyword: "OSS カスタマイズ"
 ---
 
 株式会社エクスブリッジでは、これまでAI、業務システム、情報発信、動画、投資分析など、さまざまなシステムを開発し、ソースコードを[GitHub](https://github.com/katsushi2441?tab=repositories)でOSSとして公開してきました。

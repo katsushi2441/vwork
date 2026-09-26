@@ -3,6 +3,9 @@ title: "FreqAIボットに「自己反省・自己改良」のLLM3層を実装�
 emoji: "🧪"
 type: "tech"
 topics: [生成ai, aiagent, machinelearning, claude, python]
+description: "FreqAIとLLMを組み合わせた暗号資産トレードボットの設計を解説します。LightGBMによる数値予測と、gemma系やClaudeを用いた3層構造の自己反省・改良ループの実装手法や、JSONLでのジャーナル管理について紹介します。"
+seo_title: "FreqAIにLLMを組み込んだ自動トレードボットの設計"
+head_keyword: "FreqAI LLM 運用"
 published: true
 ---
 

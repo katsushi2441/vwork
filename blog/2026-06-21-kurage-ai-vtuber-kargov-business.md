@@ -5,6 +5,8 @@ date: 2026-06-21
 layout: default
 permalink: /blog/2026-06-21-kurage-ai-vtuber-kargov-business.html
 status: published
+seo_title: "Kurage AI VTuberでAIライブ配信を実現"
+head_keyword: "AI VTuber"
 ---
 
 株式会社エクスブリッジでは、AIを「便利な相談相手」として使うだけでなく、実際に業務を動かす仕組みとして開発しています。

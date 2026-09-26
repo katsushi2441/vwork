@@ -5,6 +5,8 @@ date: 2026-06-26
 layout: default
 permalink: /blog/2026-06-26-kargov-airadio-demo-pipeline.html
 status: published
+seo_title: "Kurage Argo VideoとAIRadioの連携"
+head_keyword: "AI動画生成"
 ---
 
 株式会社エクスブリッジでは、AIを「文章を書く道具」としてだけではなく、実際の業務画面を動かし、録画し、動画として公開するところまでを一つのパイプラインとして開発しています。

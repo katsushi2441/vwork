@@ -3,6 +3,9 @@ title: "Hermes AgentにGSC・Google Analyticsを監視させてSEO対策させ�
 emoji: "🔍"
 type: "tech"
 topics: ["seo", "hermes", "googlesearchconsole", "agent", "automation"]
+description: "Hermes AgentとMCPを用いてGoogle Search ConsoleやAnalyticsを接続し、SEO運用を自動化する手法を解説します。SOUL.mdでの役割設定やcronによる定期実行、モデルの使い分けなど具体的なノウハウをまとめました。"
+seo_title: "Hermes AgentでGSC・GAを連携しSEOを自動化する方法"
+head_keyword: "Hermes Agent SEO"
 published: true
 ---
 

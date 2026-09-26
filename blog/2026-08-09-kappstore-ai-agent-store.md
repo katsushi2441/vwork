@@ -4,6 +4,8 @@ description: "業務システムのダウンロードストア Kurage App Store 
 date: 2026-08-09
 layout: default
 permalink: /blog/2026-08-09-kappstore-ai-agent-store.html
+seo_title: "AIエージェント向けにWebサイトを最適化する手法"
+head_keyword: "llms.txt"
 ---
 
 「業務システムを探す」という仕事は、これから人間だけのものではなくなります。Claude CodeやCodexに「うちの業務に合う請求書システムを探して」と頼む——そのときAIに見つけてもらえない店は、存在しないのと同じです。

@@ -4,6 +4,8 @@ description: "Kurage URL2AI Publisherの利用者へ10,000 URLAIを自動配布�
 date: 2026-07-23
 layout: default
 permalink: /blog/2026-07-23-url2pub-urlai-user-reward.html
+seo_title: "URL2Pubで10,000 URLAIを配布"
+head_keyword: "URL2Pub"
 ---
 
 株式会社エクスブリッジは、URLを入力するとAIが内容を読み、告知文とブログ記事を生成して複数メディアへ配信する**Kurage URL2AI Publisher（URL2Pub）**に、利用者向けのURLAI特典を追加しました。

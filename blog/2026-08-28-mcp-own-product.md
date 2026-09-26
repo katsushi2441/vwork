@@ -7,6 +7,8 @@ title_blogger: "AIエージェントから業務システムを操作する—�
 date: 2026-08-28
 layout: default
 permalink: /blog/2026-08-28-mcp-own-product.html
+seo_title: "MCPで業務システムをAIと連携させる方法"
+head_keyword: "MCP 業務システム 連携"
 ---
 
 名古屋でAIシステム開発の会社をやっています。**自社の買い切り業務システム2製品にMCPサーバーを自作して同梱し、さらに社内で運用中の本番データベースにClaude CodeとCodexの両方を繋ぎました。**

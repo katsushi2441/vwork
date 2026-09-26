@@ -3,6 +3,9 @@ title: "Sora2に近い動画をOSSだけで無料生成：Wan2.1 + Ollama + ffmp
 emoji: "🎬"
 type: "tech"
 topics: ["ai", "wan21", "ollama", "ffmpeg", "vibecoding"]
+description: "Wan2.1やOllamaを活用し、XのURLから約30秒のAI動画を自動生成するOSSパイプラインを構築しました。ffmpegによる尺延長や字幕合成を組み合わせ、外部APIを使わずローカル環境で高品質な動画制作を実現する方法を紹介します。"
+seo_title: "Wan2.1とOllamaでAI動画を無料生成する手法"
+head_keyword: "AI動画生成"
 published: true
 ---
 

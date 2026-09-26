@@ -3,6 +3,9 @@ title: "NOFXは数値で売買するのか、AIが決めるのか？ペーパー
 emoji: "🤖"
 type: "tech"
 topics: ["nofx", "llm", "go", "oss", "trading"]
+description: "NOFXの売買判断はAIと数値設定のどちらで行われるのかを解説します。MEXCのペーパートレードを通じ、LLMによる売買案の生成とGo実行系によるリスク検証の仕組みや、AIが上書きできない制限の境界を明らかにします。"
+seo_title: "NOFXの売買判断はAIか数値か？動作の仕組みを解説"
+head_keyword: "NOFX"
 published: true
 ---
 

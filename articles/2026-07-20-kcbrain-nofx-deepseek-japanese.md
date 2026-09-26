@@ -3,6 +3,9 @@ title: "NOFXを日本語化し、kcbrainをDeepSeek V4 Flash対応にした：AI
 emoji: "🧠"
 type: "tech"
 topics: ["nofx", "deepseek", "llm", "python", "oss"]
+description: "AI自動取引OSS「NOFX」を日本語化し、知能API「kcbrain」との統合を実現しました。DeepSeek V4 FlashやGemma 4への対応に加え、OpenAI互換APIを用いて取引システムとLLMの境界を分離する構成を解説します。"
+seo_title: "NOFXを日本語化しkcbrainと統合"
+head_keyword: "NOFX"
 published: true
 ---
 

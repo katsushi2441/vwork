@@ -3,6 +3,9 @@ title: "Kurage Montageの技術設計：参照動画から日本語ショート�
 emoji: "🎞️"
 type: "tech"
 topics: [生成ai, aiagent, video, oss, python]
+description: "Kurage Montage（kmontage）の技術設計を解説します。XやYouTubeの動画から内容を解析し、LLMを用いて日本語のショート動画へ再構成するAI OSSパイプラインの実装方法を紹介します。"
+seo_title: "Kurage Montage：動画生成AIの技術設計"
+head_keyword: "Kurage Montage"
 published: true
 ---
 

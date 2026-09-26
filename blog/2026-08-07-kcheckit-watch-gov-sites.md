@@ -4,6 +4,8 @@ description: "補助金の締切、法令の改正、脆弱性情報。見落と
 date: 2026-08-07
 layout: default
 permalink: /blog/2026-08-07-kcheckit-watch-gov-sites.html
+seo_title: "kcheckit | 補助金や法令改正の自動監視ツール"
+head_keyword: "サイト巡回 自動化"
 ---
 
 補助金の募集が始まっていたのを、締切の翌週に知る。法令が変わっていたのを、取引先に指摘されて知る。使っているソフトに脆弱性が出ていたのを、取引先のチェックシートで知る。

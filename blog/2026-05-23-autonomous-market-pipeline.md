@@ -6,6 +6,8 @@ tags: [AIxEC, バイブコーディング, Hermes, Ollama, 自動化]
 status: published
 layout: default
 permalink: /blog/2026-05-23-autonomous-market-pipeline.html
+seo_title: "HermesとClaudeで商品登録を全自動化する方法"
+head_keyword: "AIエージェント 商品登録 自動化"
 ---
 
 [AIxEC](https://aixec.exbridge.jp/) の商品登録を、AIエージェントが完全に自律して動かす仕組みをバイブコーディングで構築した。

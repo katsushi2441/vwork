@@ -3,6 +3,9 @@ title: "勝てるbotは売らない ― コードはOSSで全公開、「判断�
 emoji: "🧠"
 type: "tech"
 topics: ["x402", "oss", "llm", "freqtrade", "web3"]
+description: "暗号資産自動売買botのkfreqaiにおける「OSS body, metered brain」設計を解説します。コードはGitHubで全公開しつつ、判断ロジックのみをx402で量り売りする仕組みや、LightGBMとLLMを組み合わせた実装を紹介します。"
+seo_title: "kfreqaiの自動売買bot設計とOSS戦略"
+head_keyword: "暗号資産 自動売買 bot"
 published: true
 ---
 

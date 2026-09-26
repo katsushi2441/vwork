@@ -4,6 +4,8 @@ description: "Kurage GEOでexbridge.jpを実際に診断し、llms.txt、JSON-LD
 date: 2026-08-03
 layout: default
 permalink: /blog/2026-08-03-kgeo-exbridge-geo-improvement.html
+seo_title: "GEO・AEO対策｜Kurage GEOでのサイト改善記録"
+head_keyword: "GEO対策"
 ---
 
 生成AIに自社を正しく説明してもらうには、何を直せばよいのでしょうか。

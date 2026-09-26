@@ -4,6 +4,8 @@ description: "問合せ管理をZendeskで回すと担当者1人あたり月額1
 date: 2026-08-21
 layout: default
 permalink: /blog/2026-08-21-frappe-helpdesk-japanese.html
+seo_title: "frappe-helpdeskを日本語対応させる開発記録"
+head_keyword: "frappe-helpdesk"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日のテーマは**ヘルプデスク・問合せ管理**です。オープンソースの**frappe-helpdesk**を実際に日本語で使えるところまで持っていき、本家にプルリクエストを出しました。その記録です。

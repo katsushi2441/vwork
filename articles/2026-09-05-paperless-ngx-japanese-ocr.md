@@ -3,6 +3,9 @@ title: "paperless-ngxで日本語の請求書を貯める——定番とされ�
 emoji: "🗂️"
 type: "tech"
 topics: ["paperless-ngx", "ocr", "tesseract", "oss", "文書管理"]
+description: "paperless-ngxで日本語の請求書を扱う際のOCR設定や自動分類の最適解を解説します。定番のjpn+eng設定による文字化けの実測結果や、PostgreSQL 18環境での起動エラーの解決策など、実用的なTipsを紹介します。"
+seo_title: "paperless-ngxで日本語請求書を扱う設定方法"
+head_keyword: "paperless-ngx 日本語"
 published: true
 title_hatena: "日本語の書類をpaperless-ngxで管理する——OCRの設定3か所と、タグが当たらない本当の理由"
 title_blogger: "『請求書』が『Ake』と読まれる。書類管理OSSの日本語設定を実測で詰めた"

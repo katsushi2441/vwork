@@ -4,6 +4,8 @@ description: "名古屋・愛知の経営者・個人事業主・副業の方向
 date: 2026-08-12
 layout: default
 permalink: /blog/2026-08-12-nagoya-ai-study.html
+seo_title: "名古屋AI経営勉強会｜AI活用を学ぶ無料コミュニティ"
+head_keyword: "AI経営"
 ---
 
 名古屋・愛知の経営者、個人事業主、副業・起業準備中の方向けに、**LINEオープンチャットの無料コミュニティ「名古屋AI経営勉強会」**を始めました。

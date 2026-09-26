@@ -3,6 +3,9 @@ title: "GISは商圏分析だけではない——住所の地図化・訪問ル
 emoji: "🗺️"
 type: "tech"
 topics: ["gis", "qgis", "postgis", "oss", "地図"]
+description: "GIS（地理情報システム）の活用範囲を商圏分析以外にも広げ、住所の地図化や訪問ルート作成などの業務への応用方法を解説します。QGIS等のオープンソースを活用し、検索需要に基づいた実用的な導入優先順位を整理します。"
+seo_title: "GISの活用事例とQGIS等のOSS活用術"
+head_keyword: "GIS 活用例"
 published: true
 title_hatena: "GISで何ができるか——住所を地図に載せる、訪問ルートを組む、位置つきで記録する"
 title_blogger: "地図の技術は商圏分析だけじゃない。業務で使えるオープンソースを整理した"

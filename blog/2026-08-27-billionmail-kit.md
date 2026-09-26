@@ -7,6 +7,8 @@ title_blogger: "ブラストメールの月額をやめる選択肢——Billion
 date: 2026-08-27
 layout: default
 permalink: /blog/2026-08-27-billionmail-kit.html
+seo_title: "BillionMail導入方法とメール配信コスト削減術"
+head_keyword: "メール配信システム自作"
 ---
 
 名古屋でAIシステム開発の会社をやっています。**メールサーバー＋メルマガ配信＋HTMLテンプレート＋開封/クリック解析が1つになったオープンソース「BillionMail」の日本語導入キット（VPS編）**を公開しました。

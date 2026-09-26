@@ -4,6 +4,8 @@ description: "暗号資産・FX・PolymarketをAIが毎日調査し、7日後に
 date: 2026-07-19
 layout: default
 permalink: /blog/2026-07-19-kaic-ai-investment-committee.html
+seo_title: "KAICとは？AIによる投資判断と自動取引の仕組み"
+head_keyword: "AI投資"
 ---
 
 株式会社エクスブリッジは、AIが暗号資産・FX・Polymarketの情報を毎日調査し、三つの市場について投資判断を公開する**Kurage AI Investment Committee（KAIC）**を開発しました。

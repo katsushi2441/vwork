@@ -6,6 +6,8 @@ tags: [VWork, バイブコーディング, AI駆動経営, Claude, AIエージ�
 status: published
 layout: default
 permalink: /blog/2026-05-25-easy-vibe-introduction.html
+seo_title: "easy-vibeとは？バイブコーディングの学習ロードマップ"
+head_keyword: "easy-vibe"
 ---
 
 [easy-vibe](https://github.com/datawhalechina/easy-vibe) は、中国のOSS教育コミュニティ **datawhalechina** が公開したバイブコーディングの学習教材です。

@@ -6,6 +6,8 @@ tags: [VWork, バイブコーディング, 手入力ゼロ化, 業務改善, シ
 status: published
 layout: default
 permalink: /blog/2026-05-18-input-automation-and-vwork.html
+seo_title: "手入力の自動化とシステム内製化の進め方"
+head_keyword: "業務自動化"
 ---
 
 「まだ、手入力してるんですか？」

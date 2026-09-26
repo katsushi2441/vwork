@@ -3,6 +3,9 @@ title: "AIが操作するデモ動画、台本までAIに書かせる — 自作
 emoji: "🎞️"
 type: "tech"
 topics: [browseruse, ollama, claude, ffmpeg, oss]
+description: "AIブラウザエージェントによる自律操作とOSSのArgoを融合させたデモ動画制作パイプラインを紹介します。browser-useやgemma4を活用し、ナレーション付きの字幕付き動画をローカル環境で自動生成する仕組みを解説します。"
+seo_title: "ArgoとAIエージェントでデモ動画を自動生成する方法"
+head_keyword: "AIデモ動画制作"
 published: true
 ---
 

@@ -3,6 +3,9 @@ title: "Sunoの代わりを自前GPUで——ACE-Step 1.5 Turbo XL と HeartMuLa
 emoji: "🎵"
 type: "tech"
 topics: ["acestep", "heartmula", "音楽生成", "oss", "rtx3090"]
+description: "Sunoの代替として自前GPUで動作するACE-Step 1.5 Turbo XLとHeartMuLa oss-3Bを比較しました。RTX 3090での生成速度、VRAM消費量、日本語歌詞の一致率など、実測データに基づいた検証結果を公開します。"
+seo_title: "Suno代替のACE-StepとHeartMuLaを比較"
+head_keyword: "AI楽曲生成"
 published: true
 title_hatena: "ローカル曲生成 ACE-Step 1.5 と HeartMuLa 3B を RTX 3090 で実測——60秒曲が54秒と81秒、VRAM 17.6GB と 14.1GB"
 title_blogger: "日本語の歌詞で歌う OSS 音楽モデル2つ（ACE-Step 1.5 XL / HeartMuLa 3B）を1台の GPU で並べて測った"

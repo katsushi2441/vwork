@@ -4,6 +4,8 @@ description: "パッケージが見つからない。開発会社への伝え方
 date: 2026-07-29
 layout: default
 permalink: /blog/2026-07-29-karchitect-for-executives.html
+seo_title: "システム開発の設計書をAIで作成するKurage Architect"
+head_keyword: "システム開発 設計書 作成"
 ---
 
 「こういうシステムが欲しい」——経営者なら誰でも、一度は思ったことがあるはずです。ところが、そこから先に進めない。私自身も含め、多くの経営者が同じ場所でつまずいています。

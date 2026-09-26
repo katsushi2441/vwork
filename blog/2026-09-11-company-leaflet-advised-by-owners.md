@@ -7,6 +7,8 @@ title_blogger: "「自社で使っています」では弱い。会社案内を�
 date: 2026-09-11
 layout: default
 permalink: /blog/2026-09-11-company-leaflet-advised-by-owners.html
+seo_title: "AIで作った会社案内が売れない理由と改善策"
+head_keyword: "会社案内 作成"
 ---
 
 名古屋でAIシステム開発の会社をやっています。会社案内のA4リーフレットを、AIエージェントに作らせました。事実は正確で、数字も実測値で、誇張もありません。

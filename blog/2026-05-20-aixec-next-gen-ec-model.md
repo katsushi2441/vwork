@@ -6,6 +6,8 @@ tags: [AIxEC, AIエージェント, バイブコーディング]
 status: published
 layout: default
 permalink: /blog/2026-05-20-aixec-next-gen-ec-model.html
+seo_title: "AIエージェントによる次世代ECモデルの実験"
+head_keyword: "AIエージェント EC"
 ---
 
 [AIxEC](https://aixec.exbridge.jp/)では、AIエージェントによる次世代ECモデルの実験を行っています。

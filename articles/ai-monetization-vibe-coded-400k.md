@@ -3,6 +3,9 @@ title: "海外で伸びるAI収益化動画を読む：How I Vibe Coded a $400K/
 emoji: "💸"
 type: "tech"
 topics: [生成ai, claude, codex, 個人開発, web3]
+description: "海外で話題のVibe Coding手法を解説します。Claude Codeを活用し、React NativeとExpoを用いて月商40万ドルのアプリを高速開発する技術的エッセンスや、市場調査から実装までのワークフローを具体的に紹介します。"
+seo_title: "Vibe Codingとは？Claude Codeでのアプリ開発術"
+head_keyword: "Vibe Coding"
 published: true
 ---
 

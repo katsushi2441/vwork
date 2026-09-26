@@ -3,6 +3,9 @@ title: "FinRobotを日本語ファーストにforkして、Kurage判断API(x402�
 emoji: "📊"
 type: "tech"
 topics: ["finrobot", "oss", "llm", "x402", "python"]
+description: "金融AIエージェントOSSのFinRobotをforkし、日本語対応やKurage判断APIの接続を経てマルチテナントSaaS「Kurage Finanalyst」へと展開した過程を解説します。商標ポリシーや実装上の落とし穴も記録しています。"
+seo_title: "FinRobotをフォークしてSaaS化する工程と技術解説"
+head_keyword: "FinRobot"
 published: true
 ---
 

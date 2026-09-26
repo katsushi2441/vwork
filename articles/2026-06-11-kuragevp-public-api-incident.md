@@ -3,6 +3,9 @@ title: "Kurage Voice-Proの公開APIが直接叩かれた事例から考えるAI
 emoji: "🛡️"
 type: "tech"
 topics: ["ai", "fastapi", "security", "oss", "automation"]
+description: "Kurage Voice-Proで発生した意図しない動画翻訳ジョブの事例から、AI OSS運用のセキュリティ対策を解説します。外部IPからのFastAPIへの直接アクセスによる影響や、原因の切り分け方法、具体的な防御策を技術メモとしてまとめます。"
+seo_title: "Kurage Voice-Proの公開APIとAI OSSの"
+head_keyword: "AI OSS セキュリティ"
 published: true
 ---
 

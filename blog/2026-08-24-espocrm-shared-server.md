@@ -7,6 +7,8 @@ title_blogger: "無料のCRMを、月数百円のレンタルサーバーで動�
 date: 2026-08-24
 layout: default
 permalink: /blog/2026-08-24-espocrm-shared-server.html
+seo_title: "EspoCRMを共有レンタルサーバーで動かす方法"
+head_keyword: "EspoCRM 導入"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日は**「その手順書、うちの環境では使えない」**という話です。

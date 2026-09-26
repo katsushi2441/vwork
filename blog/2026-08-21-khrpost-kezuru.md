@@ -4,6 +4,8 @@ description: "「職務・職責・目標」を職(ポジション)単位で管�
 date: 2026-08-21
 layout: default
 permalink: /blog/2026-08-21-khrpost-kezuru.html
+seo_title: "Frappe HRを参考に人事システムを最小構成で設計する"
+head_keyword: "人事システム 開発"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日のテーマは**削ること**です。既存OSSを参考に人事システムを設計し、そこから機能を削り続けたら、参考にしたものが何も残らなかった。その全記録です。

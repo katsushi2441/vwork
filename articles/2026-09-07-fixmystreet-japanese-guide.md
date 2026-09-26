@@ -3,6 +3,9 @@ title: "ちばレポのような「道路の穴・不法投棄の通報システ
 emoji: "🕳️"
 type: "tech"
 topics: ["fixmystreet", "oss", "自治体", "翻訳", "docker"]
+description: "道路の穴や不法投棄を通報するOSS「FixMyStreet」を日本語化し、名古屋市の地図上で動作させる手順を解説します。1,456文字列の翻訳やDockerでの構築、本家へのPull Request提出までの実録を公開しています。"
+seo_title: "FixMyStreetを日本語化して導入する方法"
+head_keyword: "FixMyStreet"
 published: true
 title_hatena: "通報システムOSS「FixMyStreet」を日本語化して名古屋の地図で動かした——翻訳1,409文字列を本家mySocietyにPR"
 title_blogger: "道路の穴・不法投棄の通報プラットフォームを自前で持つ。OSS「FixMyStreet」日本語化と導入の実録"

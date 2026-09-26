@@ -7,6 +7,8 @@ title_blogger: "製品の紹介動画を、クラウドに頼らず社内のGPU�
 date: 2026-09-02
 layout: default
 permalink: /blog/2026-09-02-h3-selfhost-kpvgen.html
+seo_title: "MiniMax H3を自社GPUで運用し製品PVを内製化する方法"
+head_keyword: "MiniMax H3 セルフホスト"
 ---
 
 名古屋でAIシステム開発の会社をやっています。[前回の記事](2026-09-02-kpvgen-launch.html)で、仕様ファイル1枚から製品PVを自動生成する「kpvgen」を紹介しました。今回はその続きで、**PVの実写風カットまで自社サーバーで作れるようにした**話です。

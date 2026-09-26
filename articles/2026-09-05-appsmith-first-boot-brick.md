@@ -3,6 +3,9 @@ title: "Appsmithの公式イメージは初回起動を20秒中断すると永�
 emoji: "🧱"
 type: "tech"
 topics: ["appsmith", "docker", "mongodb", "oss", "運用"]
+description: "Appsmithの公式イメージで初回起動時に20秒中断すると環境が壊れる問題を解説します。画面は200を返すがAPIが502になる罠の診断手順や、データを消さずに修復する具体的な方法を技術的な視点で紹介します。"
+seo_title: "Appsmithの起動エラーとデータ無損失での修復方法"
+head_keyword: "Appsmith 起動エラー"
 published: true
 title_hatena: "画面は開くのにログインできない——Appsmithが初回起動の中断で壊れる仕組みと、データを消さない復旧"
 title_blogger: "コンテナは動いているのに使えない。原因は起動時のたった20秒だった"

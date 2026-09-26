@@ -5,6 +5,8 @@ date: 2026-06-08
 layout: default
 permalink: /blog/2026-06-08-kdeck-goal-based-job-operations.html
 status: published
+seo_title: "AIジョブ運用を目標達成型にする方法"
+head_keyword: "AIジョブ運用"
 ---
 
 AIを業務に入れると、最初は「毎日何時に実行するか」を考えがちです。

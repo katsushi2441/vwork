@@ -4,6 +4,8 @@ description: "自社プロダクトを名前で探して辿り着く人はレア
 date: 2026-08-15
 layout: default
 permalink: /blog/2026-08-15-multi-lp-media-mesh.html
+seo_title: "予約管理システムの集客戦略｜複数LPと他社メディアの活用"
+head_keyword: "予約システム 集客"
 ---
 
 当社はAIで業務アプリを量産し、[Kurage App Store](https://kappstore.exbridge.jp/?ref=vwork)で販売しています。しかし作って並べるうちに、はっきり分かってきたことがあります。

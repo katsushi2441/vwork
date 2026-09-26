@@ -3,6 +3,9 @@ title: "「出口をいくら弄っても黒字にならない」ボットの本
 emoji: "📈"
 type: "tech"
 topics: ["freqai", "machinelearning", "lightgbm", "trading", "python"]
+description: "暗号資産ボットkfreqaiの運用で、勝率が高くても赤字になる問題を解決した検証記録です。決済やゲートの改善では限界があり、特徴量の追加が重要だと判明しました。BTC/ETH相関などの市場コンテキストを強化する手法を解説します。"
+seo_title: "kfreqai 損益改善 特徴量と相関の検証"
+head_keyword: "暗号資産 取引ボット 開発"
 published: true
 ---
 

@@ -5,6 +5,8 @@ date: 2026-06-06
 layout: default
 permalink: /blog/2026-06-06-smartphone-incident-response-kurage-agent-deck.html
 status: published
+seo_title: "Kurage Agent Deckでスマホからサーバ障害を復旧"
+head_keyword: "サーバ障害 復旧 AI"
 ---
 
 今日、AIxECのAPIサーバが重くなりました。

@@ -3,6 +3,9 @@ title: "kvtuberでYouTube Live配信まで到達した：PNGアバター、配�
 emoji: "🪼"
 type: "tech"
 topics: [youtube, ffmpeg, vite, aituber, oss]
+description: "kvtuberを用いてPNGアバターのVTuberくらげをYouTube Liveへ配信する技術構成を解説します。ffmpegやXvfbを用いた配信用viewerの構築方法や、黒画面・ビルド差などのトラブル解決策など、実装時の知見を整理しました。"
+seo_title: "kvtuberでYouTube Live配信を実現する技術メモ"
+head_keyword: "kvtuber 配信"
 published: true
 ---
 

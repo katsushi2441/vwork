@@ -4,6 +4,8 @@ description: "非エンジニアがAIと対話しながら自動取引ボット�
 date: 2026-07-29
 layout: default
 permalink: /blog/2026-07-29-vibeaitrade-book-amazon.html
+seo_title: "AIと作る自動取引ボット入門をAmazonで出版"
+head_keyword: "自動取引ボット 制作"
 ---
 
 このブログとKurageプロジェクトで積み上げてきた実践を、1冊の本にまとめました。

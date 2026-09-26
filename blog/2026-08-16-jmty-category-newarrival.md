@@ -4,6 +4,8 @@ description: "地域掲示板ジモティーに10本投稿して、カテゴリ�
 date: 2026-08-16
 layout: default
 permalink: /blog/2026-08-16-jmty-category-newarrival.html
+seo_title: "ジモティーの閲覧数を増やすカテゴリ選定と注意点"
+head_keyword: "ジモティー 閲覧数"
 ---
 
 地域掲示板の[ジモティー](https://jmty.jp/)に、名古屋・愛知で10本投稿しました。カテゴリも切り口もバラバラに試したので、**どこに何を書くと読まれるのか**が数字で見えてきました。全部実測値です。

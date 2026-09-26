@@ -3,6 +3,9 @@ title: "海外で伸びるAI収益化動画を読む：CLAUDE CODE FULL COURSE 4
 emoji: "💸"
 type: "tech"
 topics: [生成ai, claude, codex, 個人開発, web3]
+description: "海外で話題のClaude Code完全ガイドを紹介します。Nick Saraev氏による4時間の解説動画を基に、cloud.mdを用いたコンテキスト管理やMCPによる外部連携など、エンジニア向けの高度な実戦的ワークフローを要約して解説します。"
+seo_title: "Claude Codeの使い方と実戦的な活用法を解説"
+head_keyword: "Claude Code"
 published: true
 ---
 

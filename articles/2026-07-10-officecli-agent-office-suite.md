@@ -3,6 +3,9 @@ title: "OfficeCLIとは？AIエージェントにWord/Excel/PowerPointを操作�
 emoji: "📊"
 type: "tech"
 topics: [生成ai, aiagent, oss, claude, cli]
+description: "AIエージェント専用のOfficeスイート「OfficeCLI」を解説します。GitHubで急成長中のこのツールは、C言語で実装されたシングルバイナリのCLIです。HTMLレンダリングを用いた視覚的フィードバックなど、技術的な特徴を紹介します。"
+seo_title: "OfficeCLIとは？AIエージェント用Officeスイートを解説"
+head_keyword: "OfficeCLI"
 published: true
 ---
 

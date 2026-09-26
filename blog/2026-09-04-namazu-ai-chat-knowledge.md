@@ -7,6 +7,8 @@ title_blogger: "技術資料PDF数万件と過去の見積を、AIに聞ける�
 date: 2026-09-04
 layout: default
 permalink: /blog/2026-09-04-namazu-ai-chat-knowledge.html
+seo_title: "NamazuとAIで技術資料の全文検索・回答システムを構築"
+head_keyword: "RAG 開発事例"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今回は、**自社の買い切り製品と、枯れたオープンソースと、AI**の3つを組み合わせて短期間で実用になった開発実績を1つ書きます。全部を自作もせず、全部をSaaSに預けもしない。この「組み合わせ方」そのものが成果だと思っているので、構成の考え方を中心にまとめます。

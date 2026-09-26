@@ -3,6 +3,9 @@ title: "Hermes Dashboard と RQDB4AI — AIワーカー運用を共通result仕�
 emoji: "🧭"
 type: "tech"
 topics: ["aiagent", "python", "dashboard", "automation", "oss"]
+description: "Hermes DashboardとRQDB4AIを連携させ、複数のAIワーカーを共通のresult仕様で安定運用する設計手法を解説します。workerごとに異なる例外処理を排除し、共通契約を設けることで管理の複雑さを解消します。"
+seo_title: "Hermes DashboardとRQDB4AIの運用改善"
+head_keyword: "AIエージェント 運用"
 published: true
 ---
 

@@ -4,6 +4,8 @@ description: "領収書をPDFで発行してメールで送るシステムを公
 date: 2026-08-05
 layout: default
 permalink: /blog/2026-08-05-kinvoice-foundation.html
+seo_title: "kinvoice｜領収書発行システムを1,180行で開発した理由"
+head_keyword: "PHP 領収書システム 自作"
 ---
 
 領収書をPDFで発行して、ダウンロードURLをお客様へメールで送るシステムを公開しました。

@@ -3,6 +3,9 @@ title: "Payload CMSを業務OSSカタログにした――Kurage Payload CMSのS
 emoji: "🪼"
 type: "tech"
 topics: [payloadcms, cms, seo, oss, nextjs]
+description: "Payload CMSを活用して業務OSSカタログを構築した事例を紹介します。Next.jsとTypeScriptで構成されるフレームワークを選んだ理由や、SEO・AEO・GEOを同一データから生成する設計、静的公開の構成を解説します。"
+seo_title: "Payload CMSで業務OSSカタログを構築する設計"
+head_keyword: "Payload CMS"
 published: true
 ---
 

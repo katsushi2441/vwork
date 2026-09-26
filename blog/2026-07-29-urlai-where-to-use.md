@@ -4,6 +4,8 @@ description: "URLAIはもう「持っているだけ」のトークンではあ�
 date: 2026-07-29
 layout: default
 permalink: /blog/2026-07-29-urlai-where-to-use.html
+seo_title: "URLAIトークンの使い方と対応サイト一覧"
+head_keyword: "URLAI"
 ---
 
 URLAIトークンに、初めての「使い道」が実装されました。もう「持っているだけ」のトークンではありません。この記事では、URLAIが**もらえる場所・使える場所・これから使えるようになる場所**を一覧で紹介します（2026年8月3日更新）。

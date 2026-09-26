@@ -7,6 +7,8 @@ title_blogger: "Salesforceの代替になる無料CRMが、日本語で使える
 date: 2026-09-02
 layout: default
 permalink: /blog/2026-09-02-krayin-japanese-merged.html
+seo_title: "Krayin日本語対応 | 2,066キーの全訳を正式マージ"
+head_keyword: "Krayin 日本語化"
 ---
 
 名古屋でAIシステム開発の会社をやっています。[8月に公開した](2026-08-18-krayin-crm-japanese-guide.html)オープンソースCRM「Krayin」の日本語化に、続報があります。**当社が本家に送っていた日本語翻訳(2,066キー)のプルリクエストが、2026年9月1日、正式にマージされました。**

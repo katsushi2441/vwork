@@ -4,6 +4,8 @@ description: "コンテンツ販売プラットフォーム『Brain』に記事�
 date: 2026-08-14
 layout: default
 permalink: /blog/2026-08-14-brain-post-knowhow.html
+seo_title: "Brainの審査に合格する記事の書き方と注意点"
+head_keyword: "Brain 審査"
 ---
 
 コンテンツ販売プラットフォーム **[Brain](https://brain-market.com/)** に、記事を公開しました。

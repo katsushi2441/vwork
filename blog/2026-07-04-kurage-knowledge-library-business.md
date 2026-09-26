@@ -5,6 +5,8 @@ date: 2026-07-04
 layout: default
 permalink: /blog/2026-07-04-kurage-knowledge-library-business.html
 status: published
+seo_title: "Kurage動画を知識ライブラリに整理する新機能"
+head_keyword: "動画 知識管理"
 ---
 
 AIで動画を作れる時代になりました。

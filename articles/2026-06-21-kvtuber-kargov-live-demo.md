@@ -3,6 +3,9 @@ title: "Kurage AI VTuberとKurage Argo Videoで、AIがライブ配信してデ�
 emoji: "🪼"
 type: "tech"
 topics: [生成ai, aiagent, youtube, ffmpeg, oss]
+description: "Kurage AI VTuberとKurage Argo Videoを連携させ、AIによるライブ配信からデモ動画の自動生成までを実現しました。番組管理やTTS音声、口パク機能を含むブラウザベースの配信基盤の実装内容を紹介します。"
+seo_title: "Kurage AI VTuberでAIライブ配信と動画化を実現"
+head_keyword: "Kurage AI VTuber"
 published: true
 ---
 

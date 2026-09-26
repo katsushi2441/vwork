@@ -7,6 +7,8 @@ title_blogger: "作るものを勘で決めない。検索需要を測ってか�
 date: 2026-09-05
 layout: default
 permalink: /blog/2026-09-05-khazard-hazard-map.html
+seo_title: "商圏分析システムから土砂災害マップを作る開発手法"
+head_keyword: "商圏分析ツール 開発"
 ---
 
 名古屋でAIシステム開発の会社をやっています。

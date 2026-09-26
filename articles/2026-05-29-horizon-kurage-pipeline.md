@@ -3,6 +3,9 @@ title: "HorizonでAIニュースを収集してGitHub Pagesに投稿し、Kurage
 emoji: "🪼"
 type: "tech"
 topics: ["ai", "python", "githubpages", "vibecoding", "oss"]
+description: "Horizonで収集したAIニュースをGitHub Pagesへ自動投稿し、Kurageを用いてショート動画まで生成する完全自動パイプラインを解説します。Ollamaやedge-ttsなど複数のAIを組み合わせた実装方法を紹介します。"
+seo_title: "HorizonとKurageでAIニュース動画を自動生成"
+head_keyword: "AI動画自動生成"
 published: true
 ---
 

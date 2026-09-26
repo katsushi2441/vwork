@@ -5,6 +5,8 @@ date: 2026-07-08
 layout: default
 permalink: /blog/2026-07-08-aiknowledgecms-traffic-command-center.html
 status: published
+seo_title: "AIKnowledgeCMSで実現するAIエージェントによる集客戦略"
+head_keyword: "AIエージェント 集客"
 ---
 
 エクスブリッジには、AIエージェントが自律運営しているメディアがあります。

@@ -5,6 +5,8 @@ date: 2026-07-10
 layout: default
 permalink: /blog/2026-07-10-kfreqai-hot-coin-tip-verification.html
 status: published
+seo_title: "AIトレードボットへの銘柄追加と裏取りの注意点"
+head_keyword: "AIトレードボット"
 ---
 
 エクスブリッジでは、[Kurageプロジェクト](https://kurage.exbridge.jp/)の一環としてAIトレードボット「kfreqai」を紙上取引(dry-run、実資金は動いていません)で運用しています。今回書きたいのは、「SNSで見つけた今アツい銘柄リストを、そのまま監視対象に追加してほしい」という相談を受けた際に、AIエージェントがどう裏取りし、どこで線を引いたかという話です。

@@ -3,6 +3,9 @@ title: "バイブコーディングを体系的に学ぶ：easy-vibe 教材を�
 emoji: "🎵"
 type: "tech"
 topics: [個人開発, 生成ai, aiagent]
+description: "easy-vibeはdatawhalechinaが公開したバイブコーディングの学習教材です。入門から上級まで3ステージ・80以上のトピックを網羅しており、Claude CodeやMCPなど最新のAI開発スタックも体系的に学べます。"
+seo_title: "easy-vibeとは？バイブコーディングの学習ロードマップ"
+head_keyword: "easy-vibe"
 published: true
 ---
 

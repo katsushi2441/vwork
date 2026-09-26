@@ -3,6 +3,9 @@ title: "Hermes と OpenClaw の役割分担 — orchestration と capability を
 emoji: "🤖"
 type: "tech"
 topics: [aiagent, 個人開発, python, アーキテクチャ]
+description: "Autonomous Market PipelineにおけるHermesとOpenClawの役割分担を解説します。実行制御や時間管理を行うHermesと、スキルや能力を管理するOpenClawを分離することで、AIエージェント構成の破綻を防ぐ設計思想を紹介します。"
+seo_title: "HermesとOpenClawの役割分担とAIエージェント設計"
+head_keyword: "AIエージェント 構成"
 published: true
 ---
 

@@ -34,7 +34,11 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://katsushi2441.github.io/vwork'
 OUT_LOCAL = '/home/kojima/work/exbridge_jp/vwork-blog-sitemap.xml'
 REMOTE = '/web/exbridge_jp/vwork-blog-sitemap.xml'
-ENTRIES = [f'{SITE}/', f'{SITE}/blog/', f'{SITE}/articles/']
+# VWork Blog（blog/）は 2026-09-26 に exbridge.jp/vibeblog/ へ移設し、
+# あちらが自前のサイトマップを持つ。ここに残すと同じ記事を二重に申告するので外した。
+# ここが受け持つのは AI OSS技術解説ブログ（articles/）だけ。
+SUBS = ('articles',)
+ENTRIES = [f'{SITE}/', f'{SITE}/articles/']
 
 
 def env():
@@ -50,7 +54,7 @@ def env():
 
 def collect():
     rows = []
-    for sub in ('blog', 'articles'):
+    for sub in SUBS:
         # 日付接頭辞の無い記事（articles/capafy-skill-marketplace.md 等）も拾う
         for p in glob.glob(os.path.join(REPO, sub, '*.md')):
             text = open(p, encoding='utf-8').read()
@@ -83,7 +87,7 @@ def main():
 
     today = date.today().isoformat()
     out = ['<?xml version="1.0" encoding="UTF-8"?>',
-           '<!-- VWork Blog / AI OSS技術解説（GitHub Pages）のURL一覧。',
+           '<!-- AI OSS技術解説ブログ（GitHub Pages の /vwork/articles/）のURL一覧。',
            '     GitHub Pages 上のサイトマップは Google が取得しないため、',
            '     毎日取得されている exbridge.jp 側から配信する（クロスドメイン送信）。',
            '     katsushi2441.github.io/robots.txt に本ファイルを明記して所有を示す。',

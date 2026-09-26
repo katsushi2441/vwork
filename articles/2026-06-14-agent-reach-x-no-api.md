@@ -3,6 +3,9 @@ title: "X APIを使わずにAIエージェントからXを検索・投稿する�
 emoji: "🐦"
 type: "tech"
 topics: ["aiagent", "twitter", "cli", "claudecode", "oss"]
+description: "X APIの有料化に対応し、Agent Reachとtwitter-cliを組み合わせて無料でXの検索や投稿を行う方法を解説します。ブラウザのCookie認証を利用することで、APIキー不要でClaude CodeなどのAIエージェントから操作可能です。"
+seo_title: "X APIなしでAIエージェントからXを操作する方法"
+head_keyword: "X API 無料 連携"
 published: true
 ---
 

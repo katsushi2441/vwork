@@ -4,6 +4,8 @@ description: "決まった商品・決まった金額の注文ページを、設
 date: 2026-08-06
 layout: default
 permalink: /blog/2026-08-06-kpaylink-order-page.html
+seo_title: "kpaylink｜設定ファイル1枚で注文ページを構築するOSS"
+head_keyword: "注文システム OSS"
 ---
 
 今朝、[バイブプロトタイプ制作サービス](https://katsushi2441.github.io/vwork/blog/2026-08-06-vibe-prototype-service.html)の記事を公開しました。その注文ページ——お客様が請求先を登録すると請求書PDFが発行され、銀行振込かPayPalで支払える、あのページです。

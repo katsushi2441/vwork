@@ -3,6 +3,9 @@ title: "Trelloの代替を自社サーバーに——カンバンOSS「Planka」
 emoji: "🗂️"
 type: "tech"
 topics: ["planka", "trello", "kanban", "oss", "翻訳"]
+description: "Trelloの代替として注目されるカンバンOSS「Planka」を自社サーバーに構築した検証結果を公開します。翻訳率約88%の現状から未訳56キーを全訳したパッチや、第三者向けホスティングに関するライセンスの注意点を解説します。"
+seo_title: "Plankaの導入方法と日本語化・ライセンスの注意点"
+head_keyword: "Planka"
 published: true
 title_hatena: "Trello代替OSS「Planka」を自社サーバーで日本語運用——未訳56キーを全訳、ライセンスの線引きも実測"
 title_blogger: "カンバンを月額サービスから自社サーバーへ。OSS「Planka」の導入と日本語化、ライセンスの注意点"

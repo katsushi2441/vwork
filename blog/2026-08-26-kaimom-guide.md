@@ -7,6 +7,8 @@ title_blogger: "音声を外に出さないAI議事録システムを公開—�
 date: 2026-08-26
 layout: default
 permalink: /blog/2026-08-26-kaimom-guide.html
+seo_title: "Kurage AI MOM｜AI議事録システムの構築と入手方法"
+head_keyword: "AI議事録システム"
 ---
 
 名古屋でAIシステム開発の会社をやっています。**音声をサーバーの外に出さないAI議事録システム「Kurage AI MOM」**を公開しました。録音（wav/mp3/m4a）をアップすると、自社サーバー内のWhisper（whisper.cpp）が文字起こしし、AIが議事録の下書き（概要・決定事項・ToDo・課題・次回）を作り、**人が承認したものだけが確定議事録になる**、1ファイルPHP+SQLiteの買い切りシステムです。

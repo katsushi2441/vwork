@@ -3,6 +3,9 @@ title: "CodeAlmanacとは？AIエージェントに「コードに書けない�
 emoji: "📚"
 type: "tech"
 topics: ["codealmanac", "claudecode", "codex", "oss", "systemd"]
+description: "AIコーディングエージェント向けOSS「CodeAlmanac」の仕組みと使い方を解説します。設計判断や過去の障害などコードに書けない文脈をMarkdownで蓄積し、Claude Code等の会話から知識を自動収集する機能を詳しく紹介します。"
+seo_title: "CodeAlmanacとは？AIエージェント用OSSの機能と使い方"
+head_keyword: "CodeAlmanac"
 published: true
 title_hatena: "macOS専用のYC発OSS「CodeAlmanac」をLinuxで動かす——systemd対応を実装して本家PRを送った"
 title_blogger: "AIエージェントにコードの文脈を記憶させるCodeAlmanacを、Linuxで使えるようにした"

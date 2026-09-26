@@ -3,6 +3,9 @@ title: "PHPブログに「途中まで無料」の有料記事を自作する �
 emoji: "🔓"
 type: "tech"
 topics: ["php", "paypal", "blockchain", "oss", "bludit"]
+description: "PHPブログでnoteのような「途中まで無料」の有料記事機能を自作する方法を解説します。PayPalとERC20トークンの二刀流決済を、DBを使わずJSONファイルとPHPのみで実装する設計や注意点を紹介します。"
+seo_title: "PHPで有料記事機能を自作する手法"
+head_keyword: "PHP 有料記事 実装"
 published: true
 ---
 

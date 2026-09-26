@@ -5,6 +5,9 @@ tags: [AI, バイブコーディング, 経営, Web3, ニュース動画]
 status: published
 layout: default
 permalink: /blog/2026-05-29-horizonv-for-business.html
+description: "経営者がAIやWeb3の最新動向を効率的に把握するための「Horizon-AI生成ニュース動画」を紹介します。HackerNews等の主要ソースからAIが重要度を判定し、毎日2分の日本語字幕付き動画で自動配信します。"
+seo_title: "AIニュース動画 Horizon-AI生成ニュース動画"
+head_keyword: "AIニュース 効率的"
 ---
 
 AI・Web3・スタートアップの最前線情報を、毎日たった2分の動画でキャッチアップできるサービスを公開しました。

@@ -3,6 +3,9 @@ title: "NamazuからFessへ——日本発の全文検索OSS「Fess」をdocker�
 emoji: "🔎"
 type: "tech"
 topics: ["fess", "namazu", "全文検索", "rag", "oss"]
+description: "日本発の全文検索OSS「Fess」をDockerで構築し、技術資料PDF45本の索引を作成しました。ローカルLLM（gemma4）と連携させ、10問の実測で検索成功率10/10、回答正解率9/10を達成した検証結果と構築時の注意点を解説します。"
+seo_title: "FessのDocker構築とLLM連携によるPDF全文検索実測"
+head_keyword: "Fess Docker 構築"
 published: true
 title_hatena: "ベクトルDB無しで社内PDFに答えるAI——全文検索OSS Fess＋ローカルLLMを10問で実測した記録"
 title_blogger: "Namazuの後継にFessを立てて、AIチャットに接いでみた"

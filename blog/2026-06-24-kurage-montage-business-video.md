@@ -5,6 +5,8 @@ date: 2026-06-24
 layout: default
 permalink: /blog/2026-06-24-kurage-montage-business-video.html
 status: published
+seo_title: "AIショート動画生成｜海外動画を自社資産に変える方法"
+head_keyword: "AI動画生成"
 ---
 
 企業の情報発信で難しいのは、「何を発信するか」を毎回ゼロから考えることです。

@@ -6,6 +6,8 @@ tags: [VWork, バイブコーディング, easy-vibe, AI, 入門]
 status: published
 layout: default
 permalink: /blog/2026-06-22-easy-vibe-stage1-ai-ide-tools.html
+seo_title: "Traeの使い方とAIプログラミングツールの基本"
+head_keyword: "Trae 使い方"
 ---
 
 [easy-vibe](https://github.com/datawhalechina/easy-vibe) Stage 1 の続きとして、今回は **「初級二：AI プログラミングツールを学ぶ」** をVWork向けに日本語で紹介します。

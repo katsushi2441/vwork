@@ -7,6 +7,8 @@ title_blogger: "DBの全権限を渡さずに担当者とAIに編集させる—
 date: 2026-08-28
 layout: default
 permalink: /blog/2026-08-28-kdbagent-declare.html
+seo_title: "phpMyAdminを使わないDB管理ツールの設計思想"
+head_keyword: "データベース管理ツール"
 ---
 
 名古屋でAIシステム開発の会社をやっています。**Kurage DB Agent（kdbagent）**という買い切りのデータベース管理ツールを作っています。この記事はその設計思想と入手経路の話です。制作の背景は[noteに書きました](https://note.com/tokoname/n/nd4458559f720)。

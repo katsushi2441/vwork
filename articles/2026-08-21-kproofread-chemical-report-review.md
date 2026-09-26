@@ -3,6 +3,9 @@ title: "化学試験報告書の「数値を変えない」AI校正・照査を�
 emoji: "🧪"
 type: "tech"
 topics: [生成ai, 品質管理, oss, python, fastapi]
+description: "化学試験報告書のAI校正において、測定値や合否判定などの数値を勝手に書き換えない仕組みを解説します。FastAPIやGemma 4を活用し、決定論的なルールとLLMの役割を3層に分けることで安全な照査を実現しました。"
+seo_title: "化学試験報告書のAI校正と数値保護の技術解説"
+head_keyword: "化学試験報告書 AI校正"
 published: true
 ---
 

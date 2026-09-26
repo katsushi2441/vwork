@@ -3,6 +3,9 @@ title: "VWorkとは？"
 emoji: "🎵"
 type: "tech"
 topics: [個人開発, 生成ai, openai, 業務効率化]
+description: "VWorkは経営者のPCに導入するバイブコーディング作業基盤です。Codexと連携し、BUSINESS.mdやTASKS.mdなどの構造を用いて、経営課題を実用的なツールへ変えるためのフレームワークを提供します。"
+seo_title: "VWorkとは？AI駆動開発の作業基盤を解説"
+head_keyword: "VWork"
 published: true
 ---
 

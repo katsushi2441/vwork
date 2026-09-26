@@ -4,6 +4,8 @@ description: "中小企業の悩みの多くは、突きつめると営業（売
 date: 2026-08-13
 layout: default
 permalink: /blog/2026-08-13-ai-eigyou-saiyo-shikin.html
+seo_title: "中小企業の悩み解決！AI活用の実践ガイド"
+head_keyword: "中小企業 AI活用"
 ---
 
 中小企業の経営者と話していると、困りごとは突きつめると**3つ**に集約されます——**営業（売上が伸びない）／採用（人が採れない）／資金繰り（お金が回らない）**。

@@ -7,6 +7,8 @@ title_blogger: "OSSを日本語化するとき、翻訳率だけを見てはい�
 date: 2026-08-31
 layout: default
 permalink: /blog/2026-08-31-libredesk-japanese.html
+seo_title: "OSSの日本語化における翻訳とプレースホルダの注意点"
+head_keyword: "OSS 日本語化"
 ---
 
 名古屋でAIシステム開発の会社をやっています。ヘルプデスクOSS **LibreDesk**（GitHubスター2,861・Go製・AGPL v3）を日本語化しました。この記事は、その過程で見つけた**翻訳の落とし穴**の話です。

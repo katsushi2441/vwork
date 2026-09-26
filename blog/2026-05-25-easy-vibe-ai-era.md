@@ -6,6 +6,8 @@ tags: [VWork, バイブコーディング, easy-vibe, AI, 入門]
 status: published
 layout: default
 permalink: /blog/2026-05-25-easy-vibe-ai-era.html
+seo_title: "easy-vibeとバイブコーディングの基礎知識"
+head_keyword: "バイブコーディング"
 ---
 
 [easy-vibe](https://github.com/datawhalechina/easy-vibe) Stage 1 の第2セクション「AIの時代：話せればコードが書ける」を紹介します。

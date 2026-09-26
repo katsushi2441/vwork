@@ -3,6 +3,9 @@ title: "Todoist・Trelloの代替を自社サーバーに——タスク管理OS
 emoji: "🦙"
 type: "tech"
 topics: ["vikunja", "todoist", "trello", "oss", "翻訳"]
+description: "TodoistやTrelloの代替として自社サーバーで動くタスク管理OSS「Vikunja」を導入する方法を解説します。Dockerで5分で構築でき、日本語翻訳パッチの適用方法や実測データも公開しています。"
+seo_title: "Vikunjaの使い方と日本語化・導入手順"
+head_keyword: "Vikunja"
 published: true
 title_hatena: "Todoist・Trelloの代替OSS「Vikunja」を自社サーバーで日本語運用——翻訳の穴9%を埋めて本家Crowdinへ"
 title_blogger: "タスク管理を月額サービスから自社サーバーへ。OSS「Vikunja」の導入と日本語化の実録"

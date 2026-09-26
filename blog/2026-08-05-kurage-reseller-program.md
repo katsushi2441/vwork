@@ -4,6 +4,8 @@ description: "Kurage の販売代理店・再販パートナー制度を始め�
 date: 2026-08-05
 layout: default
 permalink: /blog/2026-08-05-kurage-reseller-program.html
+seo_title: "AIシステム販売代理店・再販パートナー募集"
+head_keyword: "AIシステム 販売代理店"
 ---
 
 システム開発の商材を探している方に向けて、**[Kurage 販売代理店・再販パートナー制度](https://kurage.exbridge.jp/reseller.html)** を始めました。

@@ -2,6 +2,9 @@
 title: "世界最速クラスのx402 AI Agent実装者として、PayAPIに取り上げられた"
 date: 2026-06-01
 status: published
+description: "x402プロトコルを活用したAI Agentの実装経験と、PayAPIへの掲載について紹介します。日本円ステーブルコイン対応のx402 AI Agentとして世界最速クラスの取り組みを実現した技術的な背景や開発の軌跡を解説します。"
+seo_title: "x402 AI Agent実装とPayAPI掲載の裏側"
+head_keyword: "x402プロトコル"
 ---
 
 x402プロトコルは2026年4月にLinux Foundationへ移管された。AIエージェント同士が自律的に決済を行うための仕組みであり、将来的には「人間がサービスへ支払う回数」よりも「AIがAIへ支払う回数」の方が多くなるとも言われている。

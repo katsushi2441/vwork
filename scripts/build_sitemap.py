@@ -57,10 +57,10 @@ def collect(folder: str, priority: str) -> list:
 
 
 urls = [(f"{BASE}/", date.today().isoformat(), "1.0"),
-        (f"{BASE}/blog/", date.today().isoformat(), "0.9"),
         (f"{BASE}/articles/", date.today().isoformat(), "0.9")]
+# blog/（VWork Blog）は 2026-09-26 に exbridge.jp/vibeblog/ へ移設して canonical を
+# そちらへ向けた。正本ではないURLをサイトマップで申告し続けると指示が食い違うので外す。
 urls += collect("articles", "0.8")
-urls += collect("blog", "0.8")
 
 lines = ['<?xml version="1.0" encoding="UTF-8"?>',
          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

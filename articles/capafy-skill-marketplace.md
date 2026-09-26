@@ -3,6 +3,9 @@ title: "Capafy — AIスキルをクローズドで販売できるマーケッ�
 emoji: "🛒"
 type: "tech"
 topics: [aiagent, claudecode, claude, 個人開発, oss]
+description: "AIエージェントSkillをクローズドな環境で売買できる新マーケットプレイスCapafyを紹介します。プロンプトやスクリプトを非公開にしたまま販売でき、Claude Code等のスキルを時間課金やサブスク形式で収益化できます。"
+seo_title: "Capafyとは？AIスキルのクローズド販売markt"
+head_keyword: "Capafy"
 published: true
 ---
 

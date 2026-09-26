@@ -5,6 +5,8 @@ date: 2026-07-14
 layout: default
 permalink: /blog/2026-07-14-kfreqai-japan-competitive-advantage.html
 status: published
+seo_title: "暗号資産AI自動取引比較！Kurage FreqAI Tra"
+head_keyword: "暗号資産 AI自動取引"
 ---
 
 暗号資産のAI自動取引は、すでに国内にも複数のサービスがあります。ただし、同じ「AI自動取引」という言葉を使っていても、中身は大きく異なります。

@@ -4,6 +4,8 @@ description: "AIを中央集権的な企業に独占させたくない。その�
 date: 2026-07-24
 layout: default
 permalink: /blog/2026-07-24-urlai-kurage-decentralized-tokenomics-vision.html
+seo_title: "Bittensorに学ぶAIトークノミクスの設計思想"
+head_keyword: "Bittensor"
 ---
 
 株式会社エクスブリッジがこれまで作ってきたAIプロダクトは、バラバラに生まれたものではありません。すべては一つの思想から始まり、一つのエコシステムに向かって進んでいます。

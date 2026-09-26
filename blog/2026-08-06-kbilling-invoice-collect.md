@@ -4,6 +4,8 @@ description: "請求書PDFを発行し、お客様専用URLをメールで送っ
 date: 2026-08-06
 layout: default
 permalink: /blog/2026-08-06-kbilling-invoice-collect.html
+seo_title: "kbilling | 請求書発行・回収システムを公開"
+head_keyword: "請求書発行システム"
 ---
 
 請求書まわりのシステムを、もう1本公開しました。

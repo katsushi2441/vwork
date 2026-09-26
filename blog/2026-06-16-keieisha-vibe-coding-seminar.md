@@ -4,6 +4,8 @@ description: "AI時代の経営者に必要なのは、プログラマーにな�
 date: 2026-06-16
 layout: default
 permalink: /blog/2026-06-16-keieisha-vibe-coding-seminar.html
+seo_title: "バイブコーディングとは？経営者が知るべきAI駆動経営"
+head_keyword: "バイブコーディング"
 ---
 
 「AIで業務を自動化したい。でも、うちにはエンジニアがいない」

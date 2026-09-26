@@ -7,6 +7,8 @@ title_blogger: "IT顧問契約の似たサービスを調べてみた。8つの�
 date: 2026-08-30
 layout: default
 permalink: /blog/2026-08-30-it-komon-similar-services.html
+seo_title: "IT顧問契約の費用と種類を比較｜情シス代行との違い"
+head_keyword: "IT顧問契約 費用"
 ---
 
 先日、[AI-IT顧問契約](https://exbridge.jp/ai-it-komon.html)という月次のサービスを作りました。作る前に、**世の中に似たサービスがどれだけあるのか**を調べたので、その記録を残します。

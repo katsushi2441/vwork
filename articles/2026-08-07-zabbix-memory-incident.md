@@ -3,6 +3,9 @@ title: "メモリ99.8%の障害を調べたら、犯人が証拠に写ってい�
 emoji: "🚨"
 type: "tech"
 topics: [zabbix, 監視, linux, 障害対応, oss]
+description: "Zabbixで検知したメモリ使用率99.8%の障害調査記録です。スワップなしによるスラッシングの挙動やPSIの数値を分析し、証拠収集システムの欠陥から原因特定に至らなかった実体験を詳しく解説します。"
+seo_title: "Zabbixメモリ不足の障害調査とスラッシングの解析"
+head_keyword: "Zabbix 障害調査"
 published: true
 ---
 

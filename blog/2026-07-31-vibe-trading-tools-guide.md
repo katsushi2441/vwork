@@ -4,6 +4,8 @@ description: "Codex/Claude Codeに日本語で戦略を相談し、非エンジ�
 date: 2026-07-31
 layout: default
 permalink: /blog/2026-07-31-vibe-trading-tools-guide.html
+seo_title: "AI自動売買ツールの総まとめ｜バイブトレーディングとは"
+head_keyword: "AI自動売買"
 ---
 
 「プログラミングはできない。でもAIで自動売買をやってみたい」——いま、この願いは現実的になりました。

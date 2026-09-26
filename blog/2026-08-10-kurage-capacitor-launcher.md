@@ -4,6 +4,8 @@ description: "PCのThunderbirdのカレンダーを、外出先のスマホか�
 date: 2026-08-10
 layout: default
 permalink: /blog/2026-08-10-kurage-capacitor-launcher.html
+seo_title: "Kurage Capacitor Launcherの開発背景"
+head_keyword: "Thunderbird Googleカレンダー同期"
 ---
 
 PCの[Thunderbird](https://www.thunderbird.net/)でカレンダーを管理しています。やりたかったのは「外出先のスマホから、その予定を見て・書きたい」こと。いちばん素直な道は「ThunderbirdとGoogleカレンダーを連携させて、スマホではGoogleカレンダーで見る」でした。ところが——**これがすんなりいかない**。

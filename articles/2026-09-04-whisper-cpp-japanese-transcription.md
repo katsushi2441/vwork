@@ -3,6 +3,9 @@ title: "whisper.cppで日本語の文字起こしを自社サーバーで動か�
 emoji: "🎙️"
 type: "tech"
 topics: ["whisper", "whispercpp", "文字起こし", "議事録", "oss"]
+description: "whisper.cppを用いて自社サーバーで日本語の文字起こしを行う方法と実測結果を解説します。CPUのみで47秒の音声を27秒で処理した実績や、large-v3-turboモデルでの文字誤り率2.7%といった精度についても詳しく紹介します。"
+seo_title: "whisper.cpp日本語文字起こしの実測と使い方"
+head_keyword: "whisper.cpp"
 published: true
 title_hatena: "GPU無しの自社サーバーで日本語文字起こし——whisper.cppの使い方と実測（誤り率2.7%・実時間の0.57倍）"
 title_blogger: "会議の録音を社外に出さずに文字起こしする。whisper.cppを自社サーバーで動かした記録"

@@ -5,6 +5,8 @@ date: 2026-06-23
 layout: default
 permalink: /blog/2026-06-23-vwork-kurage-work-protocol.html
 status: published
+seo_title: "AIへの仕事の任せ方とKurage Work Protocol"
+head_keyword: "AI業務改善"
 ---
 
 AIで業務改善を進めるとき、多くの人が最初に考えるのは「どのAIを使うか」です。

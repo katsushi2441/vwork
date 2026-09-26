@@ -4,6 +4,8 @@ description: "AI導入支援会社が増える中、エクスブリッジがな�
 date: 2026-06-15
 layout: default
 permalink: /blog/2026-06-15-exbridge-ai-oss-business.html
+seo_title: "AI導入コストを削減するOSS活用と自社仕様の構築術"
+head_keyword: "AI導入支援"
 ---
 
 最近、「AI導入支援」を謳う会社をよく見かけるようになった。

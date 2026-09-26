@@ -6,6 +6,8 @@ tags: [VWork, バイブコーディング, AI駆動経営, 営業パートナー
 status: published
 layout: default
 permalink: /blog/2026-05-26-sales-partner-recruit.html
+seo_title: "バイブコーディングとは？AIによる業務システム構築の最前線"
+head_keyword: "バイブコーディング"
 ---
 
 ## 今、本当にAI革命が起きている

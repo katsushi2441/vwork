@@ -4,6 +4,8 @@ description: "先日出した1ファイルのCalDAVサーバー kcaldav を大�
 date: 2026-08-10
 layout: default
 permalink: /blog/2026-08-10-kcaldav-web.html
+seo_title: "kcaldav | ブラウザで予定を読み書きできるCalDAV"
+head_keyword: "CalDAV"
 ---
 
 先日、[1ファイルのCalDAVサーバー kcaldav](https://katsushi2441.github.io/vwork/blog/2026-08-10-kcaldav.html) を公開しました。Thunderbirdの予定をスマホから見られるように、と作ったものです。

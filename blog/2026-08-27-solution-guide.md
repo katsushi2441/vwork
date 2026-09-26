@@ -7,6 +7,8 @@ title_blogger: "介護から広告代理店まで——業種別IT費用の見�
 date: 2026-08-27
 layout: default
 permalink: /blog/2026-08-27-solution-guide.html
+seo_title: "業種別IT費用見直しとSaaSの置き換えガイド"
+head_keyword: "IT費用削減"
 ---
 
 名古屋でAIシステム開発の会社をやっています。**業種・業務別にIT費用の見直しどころを仕分けした「ソリューション」ページ群（24ページ）**を公開しました。

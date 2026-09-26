@@ -6,6 +6,8 @@ tags: [VWork, バイブコーディング, easy-vibe, AIエージェント, 学�
 status: published
 layout: default
 permalink: /blog/2026-05-25-easy-vibe-learning-map.html
+seo_title: "easy-vibeのバイブコーディング学習ロードマップ"
+head_keyword: "バイブコーディング"
 ---
 
 [easy-vibe](https://github.com/datawhalechina/easy-vibe) の Stage 1 最初のセクション「学習マップ」の内容を紹介します。

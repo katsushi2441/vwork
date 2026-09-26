@@ -3,6 +3,9 @@ title: "日本語が一切ないOSSを、日本語にする——書類管理OSS
 emoji: "📄"
 type: "tech"
 topics: ["docspell", "paperless", "elm", "oss", "翻訳"]
+description: "書類管理OSS「Docspell」をゼロから日本語化した全記録を紹介します。Elmで書かれたソースコード内の1,056語を抽出し、158ファイルへの自動生成とコンパイル確認までを完了させました。翻訳データやスクリプトも公開しています。"
+seo_title: "Docspellの日本語対応・翻訳実装の全記録"
+head_keyword: "Docspell 日本語化"
 published: true
 title_hatena: "日本語が一切ない書類管理OSS「Docspell」を日本語化——1,056語を訳しElmで実装、コンパイルを通すまで"
 title_blogger: "スキャン書類の管理を自社サーバーで。OSS「Docspell」を日本語で使えるようにした話"

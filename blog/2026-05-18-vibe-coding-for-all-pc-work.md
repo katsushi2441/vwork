@@ -6,6 +6,8 @@ tags: [VWork, バイブコーディング, ナレッジ管理, PC作業, Office,
 status: published
 layout: default
 permalink: /blog/2026-05-18-vibe-coding-for-all-pc-work.html
+seo_title: "バイブコーディングとは？事務や営業への活用法とメリット"
+head_keyword: "バイブコーディング"
 ---
 
 バイブコーディングは、システム開発だけのものではありません。

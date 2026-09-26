@@ -4,6 +4,8 @@ description: "Brainに出品した100円記事に星1レビュー『は？』が
 date: 2026-08-14
 layout: default
 permalink: /blog/2026-08-14-brain-star1-lesson.html
+seo_title: "Brainで星1レビューを受けた原因と期待値設計の教訓"
+head_keyword: "Brain 運営"
 ---
 
 先日、[Brainの審査に落ちて書き直しで通過した話](https://katsushi2441.github.io/vwork/blog/2026-08-14-brain-post-knowhow.html)を書きました。実はその後日談があります。**公開した100円の記事に、星1レビューがついたのです。コメントは「？？？」「は？」。**

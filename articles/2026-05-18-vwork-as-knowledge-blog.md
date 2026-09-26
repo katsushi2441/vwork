@@ -3,6 +3,9 @@ title: "VWorkリポジトリを知識置き場兼ブログにする"
 emoji: "🐙"
 type: "tech"
 topics: [個人開発, github, 生成ai, openai, ポエム]
+description: "VWorkリポジトリを単なるテンプレート置き場ではなく、AI駆動開発の知識置き場やブログとして活用する方法を解説します。Markdownを活用し、Codexとの相性を高めながら汎用的な実践知を蓄積する仕組みを提案します。"
+seo_title: "VWorkリポジトリを知識置き場兼ブログにする方法"
+head_keyword: "VWork"
 published: true
 ---
 

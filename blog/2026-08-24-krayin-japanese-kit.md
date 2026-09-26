@@ -7,6 +7,8 @@ title_blogger: "営業の進み具合をドラッグで動かせる無料ツー�
 date: 2026-08-24
 layout: default
 permalink: /blog/2026-08-24-krayin-japanese-kit.html
+seo_title: "Krayin CRMの日本語化と導入キットの制作秘話"
+head_keyword: "Krayin CRM"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日は**「良いものが埋もれる理由」**の話です。

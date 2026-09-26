@@ -4,6 +4,8 @@ description: "URL2AIシリーズはKurageプロジェクトを広めるユーテ
 date: 2026-07-26
 layout: default
 permalink: /blog/2026-07-26-urlai-tokenomics-design.html
+seo_title: "URLAIトークノミクスの設計と実需の作り方"
+head_keyword: "トークノミクス"
 ---
 
 前回の記事では、AIの力を独占ではなく分かち合うという思想と、URLAI・Kurageで育てるエコシステムの全体像を書きました。今回はその続編として、**トークノミクスを具体的な数字でどう設計しているか**を書きます。

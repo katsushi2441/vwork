@@ -3,6 +3,9 @@ title: "Codexエージェントとは何か：LLMとローカル開発環境を�
 emoji: "🤖"
 type: "tech"
 topics: ["codex", "llm", "aiagent", "開発環境", "自動化"]
+description: "Codexエージェントとは、LLMとローカル開発環境を連携させ、ファイルの読み込みやテスト実行まで自動で行う開発支援システムです。通常のチャットAIとの違いや、ワークスペースを活用した具体的な作業フローについて解説します。"
+seo_title: "Codexエージェントとは？LLMと開発環境の連携仕組み"
+head_keyword: "Codexエージェント"
 published: true
 ---
 

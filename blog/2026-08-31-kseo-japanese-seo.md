@@ -7,6 +7,8 @@ title_blogger: "自社サイトのタイトルが検索結果で切れていた�
 date: 2026-08-31
 layout: default
 permalink: /blog/2026-08-31-kseo-japanese-seo.html
+seo_title: "日本語SEOツールの誤判定を防ぐ全角換算の仕組み"
+head_keyword: "日本語SEOツール"
 ---
 
 名古屋でAIシステム開発の会社をやっています。**Kurage SEO（kseo）**という日本語サイト向けの技術SEO診断ツールを作りました。この記事は設計判断と入手経路の話です。

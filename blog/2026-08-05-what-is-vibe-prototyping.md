@@ -4,6 +4,8 @@ description: "バイブプロトタイピングは、エンジニアが設計し
 date: 2026-08-05
 layout: default
 permalink: /blog/2026-08-05-what-is-vibe-prototyping.html
+seo_title: "バイブプロトタイピングとは？設計からAIで高速実装"
+head_keyword: "バイブプロトタイピング"
 ---
 
 「バイブプロトタイピング」と聞くと、雰囲気で適当に作ることのように見えるかもしれません。ここでいうバイブプロトタイピングは、その逆です。

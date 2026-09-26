@@ -3,6 +3,9 @@ title: "Zabbix×ローカルLLM×Bluditで「調査済みの障害メール」�
 emoji: "🚨"
 type: "tech"
 topics: ["zabbix", "llm", "ollama", "bludit", "監視"]
+description: "ZabbixとローカルLLM（Ollama/Gemma）を組み合わせ、障害発生時の証拠を自動収集して調査レポートを生成する仕組みを解説します。Bluditを活用したナレッジ蓄積や、実運用での解決事例も紹介します。"
+seo_title: "ZabbixとローカルLLMで障害調査を自動化する方法"
+head_keyword: "Zabbix 監視 自動化"
 published: true
 ---
 

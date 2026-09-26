@@ -3,6 +3,9 @@ title: "英語PDFを社外に出さずに日本語で読む——PDFMathTranslat
 emoji: "📄"
 type: "tech"
 topics: ["pdf", "翻訳", "oss", "ollama", "セルフホスト"]
+description: "PDFMathTranslateを自社サーバーに構築し、機密性の高い英語論文を費用0円で翻訳する手順を解説します。15ページを約3分で処理した実測値や、思考型モデルによる速度低下の罠、依存パッケージの回避策も紹介します。"
+seo_title: "PDFMathTranslateの自社構築と翻訳実測"
+head_keyword: "PDFMathTranslate"
 published: true
 title_hatena: "PDF翻訳を自社サーバーで完結させる——15ページ3分・0円、レイアウトと数式を保ったまま"
 title_blogger: "英語の技術資料を、クラウドに送らずに日本語にした話"

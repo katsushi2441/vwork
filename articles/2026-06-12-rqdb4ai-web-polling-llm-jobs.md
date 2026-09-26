@@ -3,6 +3,9 @@ title: "LLMの重い処理はキューに逃がす：RQDB4AIとWebポーリン�
 emoji: "⚙️"
 type: "tech"
 topics: ["aiagent", "llm", "queue", "php", "automation"]
+description: "LLMを用いたWeb機能の実装において、処理時間を考慮したキュー管理とWebポーリングによる構成を解説します。RQDB4AIを活用し、タイムアウトやサーバー負荷を防ぐ実運用向けのAIジョブ基盤の構築方法を紹介します。"
+seo_title: "LLMの重い処理をキューで管理するAIジョブ基盤の作り方"
+head_keyword: "LLM キュー 構成"
 published: true
 ---
 

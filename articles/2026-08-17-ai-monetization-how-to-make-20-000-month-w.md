@@ -3,6 +3,9 @@ title: "海外で伸びるAI収益化動画を読む：How to Make $20,000/Month
 emoji: "💸"
 type: "tech"
 topics: [生成ai, claude, codex, 個人開発, web3]
+description: "Claude Codeを活用して月収20,000ドルを目指すAIエージェンシー戦略を解説します。単発案件からリテーナーモデルへの転換や、最新の技術スタックを用いた高収益なビジネスモデルの構築手法を具体的に紹介します。"
+seo_title: "Claude Codeで稼ぐAIエージェンシー構築術"
+head_keyword: "Claude Code 収益化"
 published: true
 ---
 

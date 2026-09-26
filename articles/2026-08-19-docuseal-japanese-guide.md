@@ -3,6 +3,9 @@ title: "自社ホストの電子署名基盤「DocuSeal」日本語導入ガイ�
 emoji: "✍️"
 type: "tech"
 topics: ["docuseal", "電子契約", "oss", "docker", "selfhosted"]
+description: "オープンソースの電子署名基盤DocuSealをDockerで導入する方法を解説します。取引先への日本語対応状況や管理画面の対訳表、監査ログ等の機能を実機検証しました。月額費用を抑えて自社サーバーで電子契約を実現できます。"
+seo_title: "DocuSeal導入ガイド｜Dockerで立てる電子署名基盤"
+head_keyword: "DocuSeal 導入"
 published: true
 ---
 

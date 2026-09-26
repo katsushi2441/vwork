@@ -6,6 +6,8 @@ tags: [URL2AI, AI事業, x402, AI Agent, バイブコーディング]
 status: published
 layout: default
 permalink: /blog/2026-05-28-payapi-x402-ai-agent-business.html
+seo_title: "x402 AI AgentがPayAPI Marketの審査を通過"
+head_keyword: "x402"
 ---
 
 URL2AI / OSS2API の x402 AI Agent が、PayAPI Market の審査を通過しました。

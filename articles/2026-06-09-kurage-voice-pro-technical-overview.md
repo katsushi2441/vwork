@@ -3,6 +3,9 @@ title: "Kurage Voice-Proの技術解説：UMediaとOSS Voice-Proをつないだ�
 emoji: "🎙️"
 type: "tech"
 topics: ["ai", "動画生成", "字幕", "tts", "ffmpeg"]
+description: "Kurage Voice-Proの技術解説を公開します。UMediaやOSS Voice-Proなどの既存技術を組み合わせ、Xの動画から音声認識、翻訳、TTSを用いた吹き替え動画生成までを行うワークフローの実装内容を紹介します。"
+seo_title: "Kurage Voice-Proの技術解説と動画翻訳の実装"
+head_keyword: "Kurage Voice-Pro"
 published: true
 ---
 

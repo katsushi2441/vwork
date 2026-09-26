@@ -4,6 +4,8 @@ description: "『wordpress 代替』は月110回しか検索されないのに�
 date: 2026-08-19
 layout: default
 permalink: /blog/2026-08-19-wordpress-headless-cms.html
+seo_title: "WordPressからヘッドレスCMSへの移行ガイド"
+head_keyword: "WordPress 移行"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日のテーマは**WordPressの置き換え**です。「WordPressはもう使わない方がいい」という声が増えるなか、実測で確かめてから、受け皿一式(LP・実測ガイド・受託)を1日で作りました。その記録です。

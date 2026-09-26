@@ -7,6 +7,8 @@ title_blogger: "WordPressなしで会社サイトを作る実例——Decap CMS+
 date: 2026-08-27
 layout: default
 permalink: /blog/2026-08-27-decap-xb4g-case.html
+seo_title: "Decap CMSの導入事例と構築手順を解説"
+head_keyword: "Decap CMS"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今朝「WordPressの保守から卒業する」というテーマで[Decap CMSの日本語導入キット](https://katsushi2441.github.io/vwork/blog/2026-08-27-decap-kit.html)を公開しましたが、**売っている道具を自社の本番で使っていないのは不誠実**だと思い、その日のうちに自社の新サイトをDecap CMSで構築・公開しました。この記事はその実例報告と、同じ構成を手に入れる経路の仕分けです。

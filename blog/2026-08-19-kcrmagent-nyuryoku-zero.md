@@ -4,6 +4,8 @@ description: "スター8,600の海外エージェント型CRMの設計原則「A
 date: 2026-08-19
 layout: default
 permalink: /blog/2026-08-19-kcrmagent-nyuryoku-zero.html
+seo_title: "日報のAI自動化で実現する入力ゼロCRMの開発記録"
+head_keyword: "日報 自動化 AI"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今日は新製品を1日で作って出品したので、その意思決定と実測を全部書きます。製品は**「入力ゼロCRM」Kurage CRM Agent**——日報を投げるだけで、AIが顧客台帳・商談・活動に起票し、人が1タップで承認するCRMです。

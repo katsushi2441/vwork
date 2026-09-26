@@ -4,6 +4,8 @@ description: "サイボウズ・kintoneの代わりになる製品を作る前�
 date: 2026-08-17
 layout: default
 permalink: /blog/2026-08-17-kintone-keyword-first.html
+seo_title: "kintone等の製品開発前にキーワードプランナーで需要を測る方法"
+head_keyword: "キーワードプランナー 使い方"
 ---
 
 製品を作ってから売り先を探すのを、今回はやめました。**先に検索需要を測って、測った結果に合わせて作りました。**Google広告のキーワードプランナーで実測した数字を、全部そのまま公開します。
