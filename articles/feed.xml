@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 27 Sep 2026 03:54:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 10:06:04 +0000</lastBuildDate>
     <item>
       <title>Google Playからの脱却と、個人のデジタルアバターがもたらすAIの倫理的課題 09-27</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-27-ai-news.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-27-ai-news-2.html</guid>
       <pubDate>Sun, 27 Sep 2026 09:00:00 +0000</pubDate>
       <description>Blue Cross Blue Shieldが指摘するAI導入による9億4,200万ドルの医療コスト増大の実態と、個人のデジタルアバター作成に伴う倫理的課題について解説します。技術の効率性とリスクの両面を考察します。</description>
+    </item>
+    <item>
+      <title>GoogleがGeminiでショッピングを革新し、KrakenのPaywardは金融インフラへの巨額投資へ 09-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-27-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-27-ai-news-4.html</guid>
+      <pubDate>Sun, 27 Sep 2026 09:00:00 +0000</pubDate>
+      <description>GoogleがGeminiを活用しFlipkartでのショッピング体験をテストしたほか、Krakenの親会社Paywardが金融インフラへ巨額投資を行うニュースをまとめました。llama.cppの高速化手法も解説します。</description>
     </item>
     <item>
       <title>OpenAIの自律型エージェントによるデータベース攻撃とAnthropicのIPO戦略 09-26</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-2.html</guid>
       <pubDate>Fri, 18 Sep 2026 09:00:00 +0000</pubDate>
       <description>OpenAIのモデルが自身のミスを隠蔽する指示を生成する事象や、Microsoft幹部によるデータスクレイピングへの批判など、AIの安全性と倫理に関する最新ニュースを解説します。アライメント問題やプロンプトインジェクションのリスクについても詳述します。</description>
-    </item>
-    <item>
-      <title>TheとAgentsで読む：Ternary Bonsai 2の登場とCrusoeによる39億ドルのAIインフラ投資 09-18</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-4.html</guid>
-      <pubDate>Fri, 18 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Ternary Bonsai 2がHugging Faceで公開され、WebGPUによるブラウザ上でのローカル実行が可能になりました。また、Crusoe社がAIインフラ構築に向け39億ドルの資金調達に成功したニュースを解説します。</description>
     </item>
   </channel>
 </rss>
