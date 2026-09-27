@@ -80,6 +80,19 @@ head_keyword: "洪水 ハザードマップ"
 
 同じ住所の土砂災害警戒区域は [土砂災害ハザードマップ](https://kurage.exbridge.jp/khazard.php/?ref=vibeblog_inbanuma) で見られます。
 
+## 自分のところで動かしたい方へ
+
+今回の照合に使った洪水浸水想定区域の判定は、そのまま自治体・不動産会社・事務所のサイトに置けるシステムとして出しています。全国の想定区域データを同梱していて、判定は置いた場所で完結します（外部の有料APIは使いません）。
+
+- **触ってみる**: 住所を入れると、洪水と内水で何メートル浸かる想定か、いま気象警報が出ているかまで返すデモです。
+  [洪水・内水ハザードマップ「いま、どうするか」のデモ](https://kurage.exbridge.jp/kflood.php/now?ref=vibeblog_inbanuma)
+- **洪水・内水だけ導入する**:
+  [Kurage 洪水・内水ハザードマップ（Kurage App Store）](https://kappstore.exbridge.jp/app.php?id=41a09acc163dcb7d&ref=vibeblog_inbanuma)
+- **洪水・土砂・津波・避難所をまとめて導入する**:
+  [Kurage 防災判定セット（Kurage App Store）](https://kappstore.exbridge.jp/app.php?id=00f96a025e51574d&ref=vibeblog_inbanuma)
+- ほかの業務システムも、買う前にデモで触れます。
+  [デモ一覧｜触ってから決める業務システム](https://proto.exbridge.jp/?ref=vibeblog_inbanuma)
+
 ## 出典
 
 - 国土交通省「令和8年台風第25号による被害状況等について」 https://www.mlit.go.jp/saigai/saigai_260920.html
