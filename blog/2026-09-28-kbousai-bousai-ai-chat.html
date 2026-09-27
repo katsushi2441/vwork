@@ -1,0 +1,79 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>キキクルと台風の進路を住所で読む「Kurage 防災AIチャット」を作った——逃げるかどうかは規則で決め、AIは言い換えるだけにした | VWork バイブコーディングフレームワーク</title><meta name="description" content="住所か現在地を入れて「逃げた方がいい？」「川が氾濫しそう？」「津波は来る？」「台風は直撃する？」と聞くと、キキクル・アメダス・台風の進路・警報・避難情報とハザードマップを1画面に集めて答える防災AIチャットを作りました。逃げるかどうかは規則で決め、AIは言い換えるだけにした理由と、実際の台風26号で見つけた不具合を書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-09-28-kbousai-bousai-ai-chat.html"><meta property="og:type" content="article"><meta property="og:title" content="キキクルと台風の進路を住所で読む「Kurage 防災AIチャット」を作った——逃げるかどうかは規則で決め、AIは言い換えるだけにした"><meta property="og:description" content="住所か現在地を入れて「逃げた方がいい？」「川が氾濫しそう？」「津波は来る？」「台風は直撃する？」と聞くと、キキクル・アメダス・台風の進路・警報・避難情報とハザードマップを1画面に集めて答える防災AIチャットを作りました。逃げるかどうかは規則で決め、AIは言い換えるだけにした理由と、実際の台風26号で見つけた不具合を書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-09-28-kbousai-bousai-ai-chat.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="キキクルと台風の進路を住所で読む「Kurage 防災AIチャット」を作った——逃げるかどうかは規則で決め、AIは言い換えるだけにした"><meta name="twitter:description" content="住所か現在地を入れて「逃げた方がいい？」「川が氾濫しそう？」「津波は来る？」「台風は直撃する？」と聞くと、キキクル・アメダス・台風の進路・警報・避難情報とハザードマップを1画面に集めて答える防災AIチャットを作りました。逃げるかどうかは規則で決め、AIは言い換えるだけにした理由と、実際の台風26号で見つけた不具合を書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "キキクルと台風の進路を住所で読む「Kurage 防災AIチャット」を作った——逃げるかどうかは規則で決め、AIは言い換えるだけにした", "description": "住所か現在地を入れて「逃げた方がいい？」「川が氾濫しそう？」「津波は来る？」「台風は直撃する？」と聞くと、キキクル・アメダス・台風の進路・警報・避難情報とハザードマップを1画面に集めて答える防災AIチャットを作りました。逃げるかどうかは規則で決め、AIは言い換えるだけにした理由と、実際の台風26号で見つけた不具合を書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-09-28-kbousai-bousai-ai-chat.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-09-28", "dateModified": "2026-09-28", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>キキクルと台風の進路を住所で読む「Kurage 防災AIチャット」を作った——逃げるかどうかは規則で決め、AIは言い換えるだけにした</h1><p class="meta">2026-09-28</p><p>住所か現在地を入れて「逃げた方がいい？」と聞くと、その場所に関係する防災の情報を1画面に集めて、いまやることまで答えるチャットを作りました。</p>
+<ul>
+<li>デモ: <a href="https://kurage.exbridge.jp/kbousai.php/?ref=vibeblog_kbousai">Kurage 防災AIチャット</a></li>
+</ul>
+<p>「逃げた方がいい？」は一例で、「川が氾濫しそう？」「津波は来る？」「台風は直撃する？」「土砂崩れは大丈夫？」「近くの避難所は？」のように、聞きたいことをそのまま聞けます。</p>
+<h2>きっかけは長崎県の防災ポータル</h2>
+<p>長崎県の防災ポータルを見ていて、防災の情報は <strong>警報・観測・避難・被害</strong> の4つがそろって初めて役に立つ、と思いました。これにハザードマップを足した5つです。</p>
+<p>ただ、県のポータルは県全体の話です。住民が知りたいのは「うちはどうなのか」です。当社にはすでに、住所から洪水・土砂災害・津波の想定や避難所までの徒歩時間を出すシステムが4つあります（kflood・khazard・ktsunami・krefuge）。これに気象庁の観測を足して、住所1つで5つがそろう画面を作ることにしました。</p>
+<h2>質問ごとに、見る情報を変えた</h2>
+<p>同じ場所でも、質問によって見るべき情報が違います。</p>
+<ul>
+<li><strong>川が氾濫しそう？</strong> 周り約2kmの洪水キキクル（中小河川と、指定河川洪水予報の大きな川）、最寄りのアメダスの雨量、その場所の浸水の想定</li>
+<li><strong>津波は来る？</strong> その県の沿岸の津波警報・注意報、その場所の浸水の想定と標高、近い避難先</li>
+<li><strong>台風は直撃する？</strong> 台風の位置と強さ、その場所に最も近づく時刻と距離、暴風警戒域・予報円・強風域に入るか</li>
+<li><strong>土砂崩れは大丈夫？</strong> その地点の土砂キキクルと、土砂災害警戒区域に入っているか</li>
+</ul>
+<p>答えの横には、ハザード・警報・観測・避難・被害の5枚のカードを並べ、それぞれに時点と出典を付けています。</p>
+<h2>逃げるかどうかは、AIに決めさせない</h2>
+<p>いちばん迷ったのはここです。AIに全部の情報を渡して「逃げるべきか答えて」とやれば、それらしい文は出ます。でも、同じ状況で答えが揺れるかもしれない。命に関わる判断を、そういうものに任せたくありませんでした。</p>
+<p>そこで、結論は決まった規則で出すことにしました。内閣府「避難情報に関するガイドライン」の警戒レベルに合わせて、次の4つを同じ物差しに載せます。</p>
+<ul>
+<li>市区町村の避難情報（警戒レベル3〜5）</li>
+<li>気象庁の警報（大雨・洪水・土砂・高潮と特別警報）</li>
+<li>キキクル（黄＝レベル2、赤＝3、紫＝4、黒＝5相当）</li>
+<li>津波警報・注意報</li>
+</ul>
+<p>そのうえで、その場所が家屋倒壊等氾濫想定区域・土砂災害警戒区域・津波浸水想定区域にあたるかを組み合わせて、「全員避難」「高齢の方から避難」「準備」を言い分けます。</p>
+<p>AI（当社サーバーで動かしている gemma4）は、その結論を質問に合わせて3〜4文に言い換えるだけです。渡すのはその回に集めた事実だけにしています。AIが遅いときや止まっているときでも、規則の答えとカードはすぐに出ます。災害の日にアクセスが集中しても、事実が見えなくなることはありません。</p>
+<p>作ってすぐ、名古屋市で試したら「避難の準備をしておく段階です」と出ました。原因は <strong>雷注意報</strong> でした。注意報をすべてレベル2として数えていたのです。雷・強風・波浪の注意報は表示はしますが、避難の段階には数えないように直しました。こういう分岐は、自動テストで固定しています。</p>
+<h2>実際の台風26号で試して、不具合を見つけた</h2>
+<p>公開した日に、ちょうど台風26号（スリゲ、中心気圧945hPa）が南大東島の近くにいました。「台風は直撃する？」を南大東村で聞くと、こう答えます。</p>
+<p><img alt="南大東村で「台風は直撃する？」と聞いた画面" src="assets/kbousai-typhoon-minamidaito.png" /></p>
+<p>距離は、気象庁の台風情報の予報円と暴風警戒域の中心・半径を1時間ごとに補間して計算しています。</p>
+<p>実は、この画面の前に不具合がありました。朝6時に撮り直したら、台風が約113kmまで近づいているのに「暴風警戒域には入らない予報です」「いま、避難が必要な情報は出ていません」とだけ出ていたのです。</p>
+<p>理由は2つありました。いちばん近づく時刻が「いま」だったので、比べる半径が予報の暴風警戒域ではなく、いまの暴風域（約83km）になっていたこと。そして、境目の余裕を半径の3割で取っていたので、113kmがぎりぎり外に出たことです。実際には島は強風域に入っていて、アメダスでは風速15m/sを超えていました。</p>
+<p>直したのは3つです。</p>
+<ul>
+<li>いま強風域に入っているかを出す</li>
+<li>最も近づくのが「いま」なら、「いま、約113kmまで近づいています」と言う</li>
+<li>境目は割合でなく、少なくとも50kmの幅で見て、その内側なら「入らない」と言い切らず、入る前提で備えるよう伝える</li>
+</ul>
+<h2>川の水位は、取り込まなかった</h2>
+<p>「河川の水位」は入れたかった情報です。国土交通省の「川の防災情報」を見ると、利用規約に「ツール等による定期的なデータ収集は…お控えください」と書かれていました。データを機械で使うには、河川情報センターの有償の配信サービスに申し込む必要があります。</p>
+<p>なので水位は取り込まず、代わりに気象庁のキキクルの「洪水」と「指定河川洪水予報」を地点の周り約2kmで読み、水位そのものは川の防災情報へのリンクで案内しています。</p>
+<p>キキクルは画像のタイルで配られています。地点の画素の色を読み、気象庁の凡例の色（黄・赤・紫・黒）と照らして段階にしています。</p>
+<h2>取れないものは「取れない」と書く</h2>
+<p>避難指示などの発令を自動で取れるのは、いまは名古屋市・東京都・千葉県・神奈川県・静岡県だけです。ほかの地域では「発令なし」とは書かず、「取り込めていません。市区町村のサイト・防災無線で確かめてください」と出します。</p>
+<p>被害（けが人・住宅・通行止め）は、全国をまとめて機械で読めるデータが公開されていません。これも正直にそう書いて、消防庁と自治体の発表へ案内しています。</p>
+<h2>自治体・事務所のサーバーに置けるようにした</h2>
+<p>チャットは4つのエンジンから情報を集めて動くので、エンジンと一緒の一式にして Kurage App Store に出しました。名前・ロゴ・運営者名は設定ファイルで変えられ、計測タグは書かなければ出ません。</p>
+<p><a href="https://kappstore.exbridge.jp/app.php?id=cf817fdce13ee120&amp;ref=vibeblog_kbousai">Kurage 防災AIチャット＋防災判定セット（Kurage App Store）</a></p>
+<p>出品の準備で配布物を見直したら、エンジン側に当社のアクセス計測のタグと、検索エンジン向けの正式URL（canonical）が当社のドメインのまま残っていました。買った会社が公開すると、アクセスが当社に記録され、検索エンジンからは当社のページの写しに見えます。配布物からは計測タグを抜き、公開するドメインを1行書けば正式URLがそのドメインに置き換わるようにしました。</p>
+<h2>振り返り</h2>
+<p>防災の画面で怖いのは、間違った安心を出すことです。「発令なし」と「取れていない」を混ぜない、境目で「入らない」と言い切らない、逃げるかどうかをAIの気分に任せない。作りながら、この3つを何度も確かめることになりました。台風の不具合は、実際の台風で試さなければ気づかなかったと思います。</p>
+<p>ほかにも、触ってから決められるデモを置いています。</p>
+<p><a href="https://proto.exbridge.jp/?ref=vibeblog_kbousai">デモ一覧｜触ってから決める業務システム</a></p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
