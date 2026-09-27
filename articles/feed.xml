@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 27 Sep 2026 15:11:40 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 21:37:40 +0000</lastBuildDate>
+    <item>
+      <title>Googleで読む：Qwenモデルの精度向上とVitalik Buterinが描くEthereumの2030年ビジョン 09-28</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-2.html</guid>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <description>Qwenモデルへのlogit penalty導入による精度向上やNaive-N0.5-Flashの登場など最新AI動向を解説します。またVitalik Buterin氏が描く2030年のEthereumビジョンについても詳しく紹介します。</description>
+    </item>
     <item>
       <title>Vitalik Buterinが描くEthereumの2030年ビジョンと、Qwen 27BによるローカルLLMの躍進 09-28</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-3.html</guid>
       <pubDate>Fri, 18 Sep 2026 09:00:00 +0000</pubDate>
       <description>形式証明でAIのミスを防ぐ新言語Bendの登場や、Qwen 3.8 27BがHugging Faceでトレンド入りした最新動向を解説します。さらにRustへの標的型攻撃やOpenAIのプロンプト注入問題など、AIの安全性とインフラに関する重要ニュースを網羅しています。</description>
-    </item>
-    <item>
-      <title>Huaweiの次世代AIチップ開発とGoogle・Nvidiaらによるデータセンター電力確保の動向 09-18</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news.html</guid>
-      <pubDate>Fri, 18 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Huaweiが2027年第1四半期に新型AIチップ「Ascend 960DT」を投入する計画や、Google・NVIDIAらがデータセンター向けに100GWの電力確保を目指す動向を紹介します。また、小規模LLMの最適化技術やServoプロジェクトの進捗も解説します。</description>
     </item>
   </channel>
 </rss>
