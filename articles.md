@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Vitalik Buterinが描くEthereumの2030年ビジョンと、Qwen 27BによるローカルLLMの躍進 09-28](2026-09-28-ai-news.html)
 - [GoogleがGeminiでショッピングを革新し、KrakenのPaywardは金融インフラへの巨額投資へ 09-27](2026-09-27-ai-news-4.html)
 - [GoogleのGeminiがEC連携へ、llama.cppやQwenの進化など最新AI動向まとめ 09-27](2026-09-27-ai-news-3.html)
 - [InsurersとEthicsで読む：AIによる医療コスト増大の懸念と、個人のデジタルアバター化への課題 09-27](2026-09-27-ai-news-2.html)
