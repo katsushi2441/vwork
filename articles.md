@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [ChainlinkのCCIPアップデートとAIエージェントがもたらす金融・技術の新潮流 09-29](2026-09-29-ai-news.html)
 - [Holo4の登場とNVIDIAのオープンモデル戦略、そしてGoogleの変容 09-28](2026-09-28-ai-news-4.html)
 - [Qwenの進化とGoogleの検索戦略、そしてVitalik Buterinが描くEthereumの2030年ビジョン 09-28](2026-09-28-ai-news-3.html)
 - [Googleで読む：Qwenモデルの精度向上とVitalik Buterinが描くEthereumの2030年ビジョン 09-28](2026-09-28-ai-news-2.html)

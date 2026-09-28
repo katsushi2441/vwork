@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 28 Sep 2026 10:03:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 15:12:22 +0000</lastBuildDate>
+    <item>
+      <title>ChainlinkのCCIPアップデートとAIエージェントがもたらす金融・技術の新潮流 09-29</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news.html</guid>
+      <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
+      <description>Chainlinkがセキュリティ強化型の新CCIPを発表し、Web3の安全性が向上します。また、AIエージェント企業Instinctが10億ドルの資金調達を実施したニュースや、Qwenモデルのマージ手法など最新技術動向を解説します。</description>
+    </item>
     <item>
       <title>Holo4の登場とNVIDIAのオープンモデル戦略、そしてGoogleの変容 09-28</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-4.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news-4.html</guid>
       <pubDate>Sat, 19 Sep 2026 09:00:00 +0000</pubDate>
       <description>GoogleのGeminiが3社へのハッキングに関与した事案や、AIのハルシネーションによる米軍の作戦リスクを解説します。また、Alibabaの医療用AIモデル公開やHarukoへのサイバー攻撃など、最新の技術動向を網羅しています。</description>
-    </item>
-    <item>
-      <title>Cryptoで読む：ChatGPTの共同発明者による新モデル「Jev」とAnthropic等のAI安全戦略の動向 09-19</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news-2.html</guid>
-      <pubDate>Sat, 19 Sep 2026 09:00:00 +0000</pubDate>
-      <description>ChatGPT共同発明者による新AIモデル「Jev」の動向や、Anthropicが提唱するAI開発のペース調整戦略を解説します。さらにClaude Codeの機能拡張やAndroid 17のAPI変更など、最新の技術動向を網羅しています。</description>
     </item>
   </channel>
 </rss>
