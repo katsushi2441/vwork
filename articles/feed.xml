@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 27 Sep 2026 21:37:40 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 03:50:21 +0000</lastBuildDate>
+    <item>
+      <title>Qwenの進化とGoogleの検索戦略、そしてVitalik Buterinが描くEthereumの2030年ビジョン 09-28</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-3.html</guid>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <description>Qwenモデルの精度向上やゲーム操作能力の進化、Googleの生成AI要約に関する議論を解説します。さらにVitalik Buterin氏が描くEthereumの2030年ビジョンなど、最新のAIとWeb3動向を網羅しています。</description>
+    </item>
     <item>
       <title>Googleで読む：Qwenモデルの精度向上とVitalik Buterinが描くEthereumの2030年ビジョン 09-28</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-19-ai-news.html</guid>
       <pubDate>Sat, 19 Sep 2026 09:00:00 +0000</pubDate>
       <description>AnthropicのClaudeを利用したOpenAIへの不正アクセス実証や、バイブ・コーディングによる開発の脆弱性、Harukoへのサイバー攻撃、768GBのVRAMを確保するローカルLLM構成など最新の技術動向を解説します。</description>
-    </item>
-    <item>
-      <title>TheとSECで読む：Bendの形式証明とQwen 3.8の躍進：AIの安全性と効率化を加速する最新動向 09-18</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-18-ai-news-3.html</guid>
-      <pubDate>Fri, 18 Sep 2026 09:00:00 +0000</pubDate>
-      <description>形式証明でAIのミスを防ぐ新言語Bendの登場や、Qwen 3.8 27BがHugging Faceでトレンド入りした最新動向を解説します。さらにRustへの標的型攻撃やOpenAIのプロンプト注入問題など、AIの安全性とインフラに関する重要ニュースを網羅しています。</description>
     </item>
   </channel>
 </rss>
