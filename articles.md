@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Theで読む：ShopifyのAIエージェント対応とAMDによるWorld Labs買収など、加速するAI・Web3動向 09-29](2026-09-29-ai-news-3.html)
 - [Agentsで読む：ShopifyのAIエージェント対応とNVIDIAによるAI安全性の強化、そしてGoldman Sachsの仮想通… 09-29](2026-09-29-ai-news-2.html)
 - [ChainlinkのCCIPアップデートとAIエージェントがもたらす金融・技術の新潮流 09-29](2026-09-29-ai-news.html)
 - [Holo4の登場とNVIDIAのオープンモデル戦略、そしてGoogleの変容 09-28](2026-09-28-ai-news-4.html)
