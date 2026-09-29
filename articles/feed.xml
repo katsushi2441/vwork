@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 29 Sep 2026 03:40:34 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 05:44:29 +0000</lastBuildDate>
     <item>
       <title>Theで読む：ShopifyのAIエージェント対応とAMDによるWorld Labs買収など、加速するAI・Web3動向 09-29</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-3.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news.html</guid>
       <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
       <description>Chainlinkがセキュリティ強化型の新CCIPを発表し、Web3の安全性が向上します。また、AIエージェント企業Instinctが10億ドルの資金調達を実施したニュースや、Qwenモデルのマージ手法など最新技術動向を解説します。</description>
+    </item>
+    <item>
+      <title>動物病院の電子カルテをオープンソースで——英語だけのOpenVPMを日本語化し、紙カルテの移行（和暦・Shift_JIS）まで本番構成で確かめた記録</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-29-openvpm-japanese-vet-karte.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-29-openvpm-japanese-vet-karte.html</guid>
+      <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
+      <description>動物病院の電子カルテを、オープンソースのOpenVPMで自院のサーバーに置く方法を解説します。翻訳の仕組みが無い英語のアプリに約3,800の文言の日本語を入れ、紙カルテを表計算のCSV（和暦・Shift_JIS）で取り込めるようにして、本番と同じ構成で登録から復元まで確かめました。</description>
     </item>
     <item>
       <title>Holo4の登場とNVIDIAのオープンモデル戦略、そしてGoogleの変容 09-28</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news.html</guid>
       <pubDate>Sun, 20 Sep 2026 09:00:00 +0000</pubDate>
       <description>a16zの支援を受けるValsがAIベンチマークの標準化を目指す動向や、オープンソースのLayaの登場、Michael Saylorによるビットコインの価値擁護など、最新のAI・Web3ニュースを要約して解説します。</description>
-    </item>
-    <item>
-      <title>Exfiltrate Your Weightsで読む：Gemini 4の進化と、AIモデルの重み（Weights）に対するセキュリティ… 09-20</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-4.html</guid>
-      <pubDate>Sun, 20 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Gemini 4のベンチマーク向上や性能進化に加え、AIモデルの重み（Weights）を流出させる脆弱性の懸念について解説します。また、CXMT社のメモリチップ量産やFP4推論エンジンの議論など最新技術動向を網羅しています。</description>
     </item>
   </channel>
 </rss>
