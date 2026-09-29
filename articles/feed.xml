@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 29 Sep 2026 15:14:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 21:28:18 +0000</lastBuildDate>
+    <item>
+      <title>OpenAIのアプリストア戦略とGPT 6.1 Solの登場によるAIエコシステムの変革 09-30</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news-2.html</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIが発表したGPT 6.1 Solの低コストな高度知能や、独自のアプリストア戦略によるエコシステム変革を解説します。NVIDIAとの安全基準に関する非公開協力や、Microsoftに対抗するオフィススイート展開についても網羅しています。</description>
+    </item>
     <item>
       <title>OpenAIのセキュリティ問題とMetaやZcashの最新動向：AIエージェントが普及する中での課題 09-30</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news-2.html</guid>
       <pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate>
       <description>SamsungがHBM4およびHBM4Eの生産量を倍増させる方針や、アリババのQwen-Image-2.1リリースなどの最新AI動向を解説します。さらにChatGPTのプライバシー懸念やLLMの分散型配信など、技術的な課題も網羅しています。</description>
-    </item>
-    <item>
-      <title>Datasetteで読む：Qwen3.5やGemini 4の進化と、AIによるゲーム操作・金融への影響 09-20</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-3.html</guid>
-      <pubDate>Sun, 20 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Qwen3.5やGemini 4などの最新LLM動向を解説します。DoomでのAIエージェント制御実験やDatasetteの認証機能改善、AI安全性の議論、さらには暗号資産分野におけるAIが金融インフラに与える衝撃についてまとめます。</description>
     </item>
   </channel>
 </rss>
