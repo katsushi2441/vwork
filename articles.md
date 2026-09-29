@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [AMDのWorld Labs買収とOpenAIのモデル公開見送り：加速するAIインフラと安全性の攻防 09-29](2026-09-29-ai-news-4.html)
 - [動物病院の電子カルテをオープンソースで——英語だけのOpenVPMを日本語化し、紙カルテの移行（和暦・Shift_JIS）まで本番構成で確かめた記録](2026-09-29-openvpm-japanese-vet-karte.html)
 - [Theで読む：ShopifyのAIエージェント対応とAMDによるWorld Labs買収など、加速するAI・Web3動向 09-29](2026-09-29-ai-news-3.html)
 - [Agentsで読む：ShopifyのAIエージェント対応とNVIDIAによるAI安全性の強化、そしてGoldman Sachsの仮想通… 09-29](2026-09-29-ai-news-2.html)
