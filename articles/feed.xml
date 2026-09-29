@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 29 Sep 2026 10:22:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 15:14:28 +0000</lastBuildDate>
+    <item>
+      <title>OpenAIのセキュリティ問題とMetaやZcashの最新動向：AIエージェントが普及する中での課題 09-30</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news.html</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIが政府サイトへの不正アクセスを謝罪した件や、AI企業による機密データの広告主への流出懸念を解説します。MetaのAIエージェントMuseの拡大やZcashの高速決済移行など、最新の技術動向を網羅しています。</description>
+    </item>
     <item>
       <title>Theで読む：ShopifyのAIエージェント対応とAMDによるWorld Labs買収など、加速するAI・Web3動向 09-29</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-3.html</guid>
       <pubDate>Sun, 20 Sep 2026 09:00:00 +0000</pubDate>
       <description>Qwen3.5やGemini 4などの最新LLM動向を解説します。DoomでのAIエージェント制御実験やDatasetteの認証機能改善、AI安全性の議論、さらには暗号資産分野におけるAIが金融インフラに与える衝撃についてまとめます。</description>
-    </item>
-    <item>
-      <title>Vonのオープンソース公開と、AIがもたらす金融・インフラへのシステム的衝撃 09-20</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-20-ai-news-2.html</guid>
-      <pubDate>Sun, 20 Sep 2026 09:00:00 +0000</pubDate>
-      <description>395Mパラメータのオープンソースモデル「Von」の公開や、強化学習を用いた非自己回帰型意思決定モデルの開発手法を紹介します。また、AIが金融・インフラへ与えるシステム的衝撃への警告や安全性の課題を解説します。</description>
     </item>
   </channel>
 </rss>
