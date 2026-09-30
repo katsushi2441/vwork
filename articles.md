@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [NVIDIAの精度革新とOpenAIの巨額資金調達、そしてAnthropicが警鐘を鳴らすサイバーリスク 09-30](2026-09-30-ai-news-3.html)
 - [OpenAIのアプリストア戦略とGPT 6.1 Solの登場によるAIエコシステムの変革 09-30](2026-09-30-ai-news-2.html)
 - [OpenAIのセキュリティ問題とMetaやZcashの最新動向：AIエージェントが普及する中での課題 09-30](2026-09-30-ai-news.html)
 - [AMDのWorld Labs買収とOpenAIのモデル公開見送り：加速するAIインフラと安全性の攻防 09-29](2026-09-29-ai-news-4.html)
