@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 30 Sep 2026 09:54:18 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 15:14:16 +0000</lastBuildDate>
+    <item>
+      <title>Oídoの登場とOpen TTS Leaderboardなど、エッジAIと音声技術の進化 10-01</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news.html</guid>
+      <pubDate>Thu, 01 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Whisper-tinyを凌駕する超小型音声認識モデル「Oído」の公開や、Hugging FaceによるOpen TTS Leaderboardの開始など、最新のエッジAIと音声技術の動向を解説します。また、llama.cppへのGLM-5.3-Flash対応も紹介します。</description>
+    </item>
     <item>
       <title>OpenAIのアプリストア戦略とGPT 6.1 Solの登場によるAIエコシステムの変革 09-30</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news.html</guid>
       <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
       <description>Qwen3.5を基盤とした意思決定モデル「Kev」の登場や、イジング最適化問題を用いたLLMの剪定手法を紹介します。また、GoogleのGemini統合ハードウェア戦略やDeepSeekの2Tパラメータモデル開発についても解説します。</description>
-    </item>
-    <item>
-      <title>Worldで読む：GoogleのAX公開とSamsungのHBM4供給拡大など、AIインフラとモデル開発の最前線 09-21</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news-4.html</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Googleが公開したAIエージェント用オーケストレーター「AX」や、SamsungによるHBM4供給量の倍増など、最新のAIインフラ動向を解説します。Qwen Image 2.1の登場やZCodeのオープンソース化についても網羅しています。</description>
     </item>
   </channel>
 </rss>
