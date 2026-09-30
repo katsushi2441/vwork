@@ -1,0 +1,90 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>電子カルテ義務化はいつからか、法律と国会の議事録で確かめた——オープンソースの電子カルテは本命になるのか | VWork バイブコーディングフレームワーク</title><meta name="description" content="「電子カルテ義務化」は何が決まっているのかを、厚生労働省の資料、地域医療介護総合確保法の条文、国会の会議録（質疑と答弁462件）で確かめました。普及率、標準型電子カルテと認証製品の予定、OpenDolphin・OpenEMRなどオープンソースの電子カルテの現状、検索需要の実測までまとめます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-01-denshi-karte-gimuka-oss.html"><meta property="og:type" content="article"><meta property="og:title" content="電子カルテ義務化はいつからか、法律と国会の議事録で確かめた——オープンソースの電子カルテは本命になるのか"><meta property="og:description" content="「電子カルテ義務化」は何が決まっているのかを、厚生労働省の資料、地域医療介護総合確保法の条文、国会の会議録（質疑と答弁462件）で確かめました。普及率、標準型電子カルテと認証製品の予定、OpenDolphin・OpenEMRなどオープンソースの電子カルテの現状、検索需要の実測までまとめます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-01-denshi-karte-gimuka-oss.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="電子カルテ義務化はいつからか、法律と国会の議事録で確かめた——オープンソースの電子カルテは本命になるのか"><meta name="twitter:description" content="「電子カルテ義務化」は何が決まっているのかを、厚生労働省の資料、地域医療介護総合確保法の条文、国会の会議録（質疑と答弁462件）で確かめました。普及率、標準型電子カルテと認証製品の予定、OpenDolphin・OpenEMRなどオープンソースの電子カルテの現状、検索需要の実測までまとめます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "電子カルテ義務化はいつからか、法律と国会の議事録で確かめた——オープンソースの電子カルテは本命になるのか", "description": "「電子カルテ義務化」は何が決まっているのかを、厚生労働省の資料、地域医療介護総合確保法の条文、国会の会議録（質疑と答弁462件）で確かめました。普及率、標準型電子カルテと認証製品の予定、OpenDolphin・OpenEMRなどオープンソースの電子カルテの現状、検索需要の実測までまとめます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-01-denshi-karte-gimuka-oss.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-01", "dateModified": "2026-10-01", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>電子カルテ義務化はいつからか、法律と国会の議事録で確かめた——オープンソースの電子カルテは本命になるのか</h1><p class="meta">2026-10-01</p><p>動物病院向けのオープンソースの電子カルテ（OpenVPM）を日本語化したあと、「人の病院はどうなのか」が気になって調べました。病院はどこも電子カルテだと思っていたのですが、そうでもありませんでした。</p>
+<p>調べた結果と、それをもとに作ったものをまとめます。</p>
+<ul>
+<li>国会トラッカー: <a href="https://xb4g.com/giin/tracker/denshi-karte?ref=vibeblog_denshi_karte">電子カルテ義務化はいつから｜国会答弁</a></li>
+<li>整理したページ: <a href="https://exbridge.jp/solution/denshi-karte.html?ref=vibeblog_denshi_karte">電子カルテ義務化はいつから？ 標準型電子カルテと紙カルテの診療所の選択肢</a></li>
+</ul>
+<h2>電子カルテの普及率</h2>
+<p>厚生労働省の医療施設調査（令和5年）では、電子カルテを入れている割合はこうでした。</p>
+<ul>
+<li>一般病院 65.6%（400床以上は93.7%、200床未満は59.0%）</li>
+<li>一般診療所 55.0%</li>
+</ul>
+<p>大きな病院はほぼ入っていますが、診療所の半分近くはまだ紙です。厚生労働省の資料では、未導入は診療所が約4.7万、200床未満の病院が約3千とされています。</p>
+<h2>「義務化」で決まっていること</h2>
+<p>政府の工程表（令和5年6月 医療DX推進本部）には「遅くとも2030年には概ねすべての医療機関」で電子カルテの導入を目指す、とあります。</p>
+<p>法律にも入りました。2025年秋の国会で医療法等の改正案が修正され、地域医療介護総合確保法 第12条の3第4項に次の規定が加わっています。</p>
+<blockquote>
+<p>政府は、令和12年12月31日までに、電子カルテの普及率…が約100％となることを達成するよう、…医療機関の業務における情報の電子化を実現しなければならない。</p>
+</blockquote>
+<p>読んでみると、義務を負っているのは政府です。医療機関ごとに導入を罰則つきで義務づける規定ではありません。「電子カルテ 義務化」は月880回検索されていますが、条文を読むと、医療機関に直接かかる義務ではないことがわかります。</p>
+<p>「なぜ100％ではなく約100％なのか」は、2025年12月4日の参議院厚生労働委員会で田村まみ議員が修正案の提出者に聞いています。提出者の伊東信久議員は、「できる限り多くの医療機関なんですね、個々の医療機関に電子カルテを導入していただけるよう、一〇〇％とせずに約一〇〇％としたもの」と答えていました。</p>
+<h2>標準型電子カルテと認証製品の予定</h2>
+<p>厚生労働省の資料（令和8年3月12日）と、同省の検討会の報道から拾った予定です。</p>
+<ul>
+<li><strong>標準型電子カルテ</strong>: デジタル庁と厚生労働省が、医科の無床診療所向けにクラウド型で開発中。2026年度中の完成を目指す。先に作るのは、国の医療DXに必要な機能（診療情報提供書の送付、電子処方箋、検査データの登録）だけの「導入版」で、診療録は紙カルテのままでも使える</li>
+<li><strong>民間製品の認証制度</strong>: 診療所・中小病院向けの電子カルテに標準仕様を定め、国が認証する。2027年4月から認証製品の提供を目指す</li>
+<li><strong>認証要件の案</strong>: ISMAP、またはISMSとISMSクラウドセキュリティの認証。直近1年の稼働実績。価格の公開。電子カルテ情報共有サービスと電子処方箋への対応</li>
+<li><strong>電子カルテ情報共有サービス</strong>: 本格運用は2026年度冬頃の見込み</li>
+</ul>
+<p>国の方針ははっきりしていて、「カスタマイズしたオンプレ型から、クラウド型で安いものへ」です。</p>
+<h2>オープンソースの電子カルテは本命になるか</h2>
+<p>ならない、というのが結論です。</p>
+<ul>
+<li><strong>OpenDolphin</strong>（日本製・GPL-3.0）: 診療所向けで、保険請求は日本医師会のORCAと接続して行います。ただ、本家の最終版は2018年の2.7.1で、リポジトリの更新は2023年4月が最後でした。いま手を入れているのは個人が保守しているフォークです</li>
+<li><strong>OpenEMR</strong>（米国・GPL-3.0）: 世界で広く使われていますが、日本の保険診療のレセプトには対応していません</li>
+<li><strong>ORCA</strong>（日医標準レセプトソフト）: レセコンです。本体は無償公開されていますが、プログラムとマスタの更新には日本医師会ORCA管理機構との契約が要ります</li>
+</ul>
+<p>どれも国の認証制度が想定するクラウド型の製品ではありません。稼働実績やセキュリティ認証の要件を、自院のサーバーに置くオープンソースで満たすのは現実的ではありません。</p>
+<p>検索需要もはっきりしていました。キーワードプランナーで測った月間の検索回数です。</p>
+<ul>
+<li>電子カルテ 情報共有サービス 3,600</li>
+<li>電子カルテ 義務化 880</li>
+<li>標準型電子カルテ 720</li>
+<li>電子カルテ 補助金 480</li>
+<li>電子カルテ 無料 210</li>
+<li>opendolphin 140</li>
+<li>紙カルテ 電子化 20</li>
+<li>電子カルテ オープンソース 10</li>
+</ul>
+<p>調べられているのは制度のほうで、オープンソースの電子カルテを探している人はほとんどいません。動物病院には国の制度も認証もないので、OpenVPMの日本語版が成り立ちます。人の医療はそうではない、という違いです。</p>
+<h2>作ったもの</h2>
+<p>調べた結果から、次の3つを作りました。</p>
+<ol>
+<li><strong>国会トラッカー「電子カルテの普及と標準型電子カルテ」</strong>。国会会議録検索システムのAPIで、標準型電子カルテ・電子カルテの普及・義務・情報共有サービス・標準化に触れた2010年以降の発言を集めました。462件（質疑204件、政府の答弁241件）あり、2025年だけで168件です。上の「約100％」のやりとりもここから見つけました</li>
+<li><strong>「電子カルテ義務化はいつから？」のページ</strong>。決まっていること、まだ決まっていないこと、紙カルテの診療所がいま選べる道を整理しました。急いで高いオンプレ型を入れる必要はなく、標準型と認証製品が出そろうのを待つのが確実だ、と書いています</li>
+<li><strong>オープンソースのカタログにOpenDolphinを追加</strong>。OpenEMRの説明も、日本で使える範囲がわかるように直しました</li>
+</ol>
+<p>電子カルテの本体は国の標準型か認証製品を選ぶのが確実です。当社がお手伝いできるのは、予約受付や院内会議の記録、レセプトの点検と取り込みのように、電子カルテの外側にあって制度と切り離せる業務です。</p>
+<h2>出典</h2>
+<ul>
+<li><a href="https://www.mhlw.go.jp/content/10808000/001657580.pdf">電子カルテの普及について（厚生労働省 第28回 健康・医療・介護情報利活用検討会 資料1・令和8年3月12日）</a></li>
+<li><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/johoka/denkaru_iryoujuuji.html">電子カルテ情報共有サービス（厚生労働省・医療従事者向け）</a></li>
+<li><a href="https://gemmed.ghc-j.com/?p=75259">2027年4月からの「標準型電子カルテ」供給目指し、標準仕様ver.1を2026年9月に公表（GemMed）</a></li>
+<li><a href="https://kokkai.ndl.go.jp/txt/121914260X00620251204/82">参議院 厚生労働委員会 2025年12月4日 伊東信久議員の答弁（国会会議録）</a></li>
+<li><a href="https://github.com/dolphin-dev/OpenDolphin">OpenDolphin（GitHub）</a></li>
+<li><a href="https://www.orcamo.co.jp/products/orca/">日医標準レセプトソフト（日本医師会ORCA管理機構）</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
