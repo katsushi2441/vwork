@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Gemini 4 Argonの登場とOpenAIによるエージェント制御技術の進化 10-01](2026-10-01-ai-news-2.html)
 - [Oídoの登場とOpen TTS Leaderboardなど、エッジAIと音声技術の進化 10-01](2026-10-01-ai-news.html)
 - [OpenAIの1.4兆ドル評価額とQwen3.8 flashの高速推論技術 09-30](2026-09-30-ai-news-4.html)
 - [国会会議録検索システムのAPIで「論点ごとの国会トラッカー」を作る——語で集めて、質疑と答弁を機械的に分ける 09-30](2026-09-30-kokkai-kaigiroku-api-tracker.html)
