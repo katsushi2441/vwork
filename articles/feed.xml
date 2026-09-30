@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 30 Sep 2026 03:54:42 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 09:54:18 +0000</lastBuildDate>
     <item>
       <title>OpenAIのアプリストア戦略とGPT 6.1 Solの登場によるAIエコシステムの変革 09-30</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news-2.html</link>
@@ -34,6 +34,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news-3.html</guid>
       <pubDate>Wed, 30 Sep 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAのKumo Tabularが表形式データの予測精度を革新し、OpenAIは1.4兆ドルの評価額で資金調達交渉を行う見通しです。またAnthropicによるサイバーリスクの警告やGPT 6.1 Solの登場など最新動向を解説します。</description>
+    </item>
+    <item>
+      <title>OpenAIの1.4兆ドル評価額とQwen3.8 flashの高速推論技術 09-30</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news-4.html</guid>
+      <pubDate>Wed, 30 Sep 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIが1.4兆ドルの評価額で300億ドルの資金調達を交渉中であることや、新エンジンStrataによるQwen3.8 flashの高速推論技術、Opus 5.5の性能低下への懸念など最新のAIニュースを解説します。</description>
     </item>
     <item>
       <title>Theで読む：ShopifyのAIエージェント対応とAMDによるWorld Labs買収など、加速するAI・Web3動向 09-29</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news-4.html</guid>
       <pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate>
       <description>Googleが公開したAIエージェント用オーケストレーター「AX」や、SamsungによるHBM4供給量の倍増など、最新のAIインフラ動向を解説します。Qwen Image 2.1の登場やZCodeのオープンソース化についても網羅しています。</description>
-    </item>
-    <item>
-      <title>Qwen-Image-2.1のリリースとCoinbaseらによるトークン化株式への期待 09-21</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-21-ai-news.html</guid>
-      <pubDate>Mon, 21 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Qwen-Image-2.1がリリースされ、高度な画像編集やネイティブな透過サポートに対応した軽量モデルが登場しました。また、CoinbaseやRobinhoodなど主要企業がSECのトークン化株式推進から得る恩恵についても解説します。</description>
     </item>
   </channel>
 </rss>
