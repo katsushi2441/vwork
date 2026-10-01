@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 01 Oct 2026 03:36:48 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 09:47:49 +0000</lastBuildDate>
     <item>
       <title>Oídoの登場とOpen TTS Leaderboardなど、エッジAIと音声技術の進化 10-01</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news-2.html</guid>
       <pubDate>Thu, 01 Oct 2026 09:00:00 +0000</pubDate>
       <description>Googleが新モデル「Gemini 4 Argon」を発表し、AI開発の未来への議論を加速させています。またOpenAIはエージェント制御用のDecisions APIを公開し、WebGPU用最速カーネルのオープンソース化や5ドルのマイコンで動作する音声認識技術など最新動向を解説します。</description>
+    </item>
+    <item>
+      <title>GoogleがGemini 4 Argonを発表：最先端のAIモデルと進化するセキュリティ課題 10-01</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news-4.html</guid>
+      <pubDate>Thu, 01 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Googleが最新AIモデル「Gemini 4 Argon」を発表しました。コーディングやセキュリティに特化した性能に加え、AIエージェントによるワーム攻撃への警鐘やRedditのAPI制限など、最新のAI動向とセキュリティ課題を解説します。</description>
     </item>
     <item>
       <title>OpenAIのアプリストア戦略とGPT 6.1 Solの登場によるAIエコシステムの変革 09-30</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-3.html</guid>
       <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが数学諮問グループを設立し、未解決問題の解決を目指す動きやQwen 4の発表など、最新のAI動向を解説します。CloudflareのPython Workers提供やXiaomiのMiMo v2.6など主要な技術情報を網羅しています。</description>
-    </item>
-    <item>
-      <title>OpenAIの数学アドバイザリーグループ設立とSupra2-IMGの登場によるAI技術の深化 09-22</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-2.html</guid>
-      <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIが数学アドバイザリーグループを設立し、100以上の未解決問題への挑戦を開始しました。また、1億パラメータで高品質な画像生成を行うSupra2-IMGの公開やXiaomiのMiMo v2.6など最新動向を解説します。</description>
     </item>
   </channel>
 </rss>
