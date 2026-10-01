@@ -1,0 +1,59 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IT導入補助金・ものづくり補助金、うちで使えるのはどれ？会社の条件からAIが絞り込む「補助金AIチャット」を開発中 | VWork バイブコーディングフレームワーク</title><meta name="description" content="業種・従業員数・地域・やりたいこと（IT導入・設備投資・事業承継など）を話すと、いま申請できる補助金と補助率・上限額・締切を、デジタル庁のjGrantsの公開情報から規則で絞り込んで答えるAI相談システム「Kurage 補助金AIチャット」を開発中です。検索の需要と、いまの補助金ナビとの違いを書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-01-khojokin-ai-hojokin-ai-chat.html"><meta property="og:type" content="article"><meta property="og:title" content="IT導入補助金・ものづくり補助金、うちで使えるのはどれ？会社の条件からAIが絞り込む「補助金AIチャット」を開発中"><meta property="og:description" content="業種・従業員数・地域・やりたいこと（IT導入・設備投資・事業承継など）を話すと、いま申請できる補助金と補助率・上限額・締切を、デジタル庁のjGrantsの公開情報から規則で絞り込んで答えるAI相談システム「Kurage 補助金AIチャット」を開発中です。検索の需要と、いまの補助金ナビとの違いを書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-01-khojokin-ai-hojokin-ai-chat.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="IT導入補助金・ものづくり補助金、うちで使えるのはどれ？会社の条件からAIが絞り込む「補助金AIチャット」を開発中"><meta name="twitter:description" content="業種・従業員数・地域・やりたいこと（IT導入・設備投資・事業承継など）を話すと、いま申請できる補助金と補助率・上限額・締切を、デジタル庁のjGrantsの公開情報から規則で絞り込んで答えるAI相談システム「Kurage 補助金AIチャット」を開発中です。検索の需要と、いまの補助金ナビとの違いを書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "IT導入補助金・ものづくり補助金、うちで使えるのはどれ？会社の条件からAIが絞り込む「補助金AIチャット」を開発中", "description": "業種・従業員数・地域・やりたいこと（IT導入・設備投資・事業承継など）を話すと、いま申請できる補助金と補助率・上限額・締切を、デジタル庁のjGrantsの公開情報から規則で絞り込んで答えるAI相談システム「Kurage 補助金AIチャット」を開発中です。検索の需要と、いまの補助金ナビとの違いを書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-01-khojokin-ai-hojokin-ai-chat.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-01", "dateModified": "2026-10-01", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>IT導入補助金・ものづくり補助金、うちで使えるのはどれ？会社の条件からAIが絞り込む「補助金AIチャット」を開発中</h1><p class="meta">2026-10-01</p><p>補助金は数が多く、対象や締切も細かく分かれています。業種・従業員数・地域・やりたいことを話すと、いま申請できる補助金を絞り込んで答えるAI相談システムを開発しています。名前は <strong>Kurage 補助金AIチャット</strong> です。</p>
+<p><img alt="Kurage 補助金AIチャット（開発中）" src="assets/khojokin-ai-banner.png" /></p>
+<ul>
+<li>詳しい説明: <a href="https://exbridge.jp/solution/khojokin-ai.html?ref=vibeblog_khojokin-ai">Kurage 補助金AIチャット（開発中）</a></li>
+<li>Kurage App Store の掲載: <a href="https://kappstore.exbridge.jp/app.php?id=7af2a50b580f8992&amp;ref=vibeblog_khojokin-ai">Kurage 補助金AIチャット</a></li>
+</ul>
+<p>まだシステムはありません。先に入口のページだけを公開し、使いたい方からの問い合わせやアクセスを見てから作ります。</p>
+<h2>補助金の名前で検索している人が多い</h2>
+<p>キーワードプランナーで測ると（2026年10月1日）、こういう語が検索されています。</p>
+<ul>
+<li>IT導入補助金: 27,100</li>
+<li>ものづくり補助金: 27,100</li>
+<li>事業承継補助金: 3,600</li>
+<li>補助金 中小企業: 3,600</li>
+</ul>
+<p>補助金の名前は知っていても、自分の会社が対象になるのか、いま公募しているのか、締切はいつかは、公募要領を読まないと分かりません。</p>
+<h2>会社の条件を話すだけで</h2>
+<p>予定している答え方は次のとおりです。</p>
+<ul>
+<li><strong>社員10人の製造業。設備を入れたいが、使える補助金は？</strong> — 業種・従業員数・地域・目的が合う補助金を絞り込み、補助率・上限額・締切の近い順に示します。</li>
+<li><strong>会計ソフトを入れたい。IT導入補助金は使える？</strong> — 対象・補助率・申請の流れと、いま公募中かどうかを示します。</li>
+<li><strong>締切が近いものだけ知りたい</strong> — 条件に合う補助金を締切の近い順に並べ、申請に要る準備の目安を添えます。</li>
+<li><strong>事業を引き継ぐ予定</strong> — 事業承継・引継ぎに使える補助金を示します。</li>
+</ul>
+<h2>採択されるかは判定しない</h2>
+<p>絞り込みは、補助金の公開情報（対象・補助率・上限額・締切）を規則で当てはめて行います。AIはその結果を言い換えるだけなので、存在しない補助金や金額を作りません。採択されるかどうかは審査で決まるので、判定しません。</p>
+<p>jGrantsにはすべての補助金・助成金が載っているわけではありません。対応している範囲は、画面に明記します。</p>
+<h2>いまの補助金ナビとの違い</h2>
+<p>当社にはすでに <a href="https://kurage.exbridge.jp/khojokin.php/?ref=vibeblog_khojokin-ai">Kurage 補助金ナビ</a> があります。条件を選んで絞り込む画面で、デジタル庁のjGrantsの公開情報を使っています。補助金AIチャットは、会社の状況を言葉で話すと、それを条件に直して絞り込み、結果を説明する形にします。申請書の様式を埋める <a href="https://kappstore.exbridge.jp/app.php?id=6ae90e27bf778a42&amp;ref=vibeblog_khojokin-ai">申請書記入アシスト</a> と組み合わせることも考えています。</p>
+<h2>作る前に、入口だけを出した理由</h2>
+<p>中小企業が自分で使うのか、士業や商工会議所が相談の一次対応に使うのか、IT・設備の販売会社がお客様への提案に使うのかで、必要な画面と補助金の範囲が変わります。使いたい方の声を聞いてから、開発の順番と仕様を決めます。</p>
+<h2>使ってみたい方へ</h2>
+<p>士業・支援機関のサイトへの設置や、AIエージェントから呼べるMCPサーバーの形を考えています。お気軽にお問い合わせください。</p>
+<ul>
+<li><a href="https://exbridge.jp/solution/khojokin-ai.html?ref=vibeblog_khojokin-ai">Kurage 補助金AIチャット（開発中）の説明と問い合わせ</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
