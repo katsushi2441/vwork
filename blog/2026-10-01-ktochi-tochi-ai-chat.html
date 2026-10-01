@@ -1,0 +1,66 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>市街化調整区域・用途地域を住所からAIに聞ける「土地AIチャット」を開発中——家を建てられる土地かを、作る前に需要で確かめる | VWork バイブコーディングフレームワーク</title><meta name="description" content="市街化調整区域かどうか、用途地域・建ぺい率・容積率、洪水・内水・土砂・津波のリスクを、住所1つからまとめて答えるAI相談システム「Kurage 土地AIチャット」を開発中です。検索の需要、答え方、使う公開データ、土台にする既存のシステム、そして作る前に入口だけ公開した理由を書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-01-ktochi-tochi-ai-chat.html"><meta property="og:type" content="article"><meta property="og:title" content="市街化調整区域・用途地域を住所からAIに聞ける「土地AIチャット」を開発中——家を建てられる土地かを、作る前に需要で確かめる"><meta property="og:description" content="市街化調整区域かどうか、用途地域・建ぺい率・容積率、洪水・内水・土砂・津波のリスクを、住所1つからまとめて答えるAI相談システム「Kurage 土地AIチャット」を開発中です。検索の需要、答え方、使う公開データ、土台にする既存のシステム、そして作る前に入口だけ公開した理由を書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-01-ktochi-tochi-ai-chat.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="市街化調整区域・用途地域を住所からAIに聞ける「土地AIチャット」を開発中——家を建てられる土地かを、作る前に需要で確かめる"><meta name="twitter:description" content="市街化調整区域かどうか、用途地域・建ぺい率・容積率、洪水・内水・土砂・津波のリスクを、住所1つからまとめて答えるAI相談システム「Kurage 土地AIチャット」を開発中です。検索の需要、答え方、使う公開データ、土台にする既存のシステム、そして作る前に入口だけ公開した理由を書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "市街化調整区域・用途地域を住所からAIに聞ける「土地AIチャット」を開発中——家を建てられる土地かを、作る前に需要で確かめる", "description": "市街化調整区域かどうか、用途地域・建ぺい率・容積率、洪水・内水・土砂・津波のリスクを、住所1つからまとめて答えるAI相談システム「Kurage 土地AIチャット」を開発中です。検索の需要、答え方、使う公開データ、土台にする既存のシステム、そして作る前に入口だけ公開した理由を書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-01-ktochi-tochi-ai-chat.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-01", "dateModified": "2026-10-01", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>市街化調整区域・用途地域を住所からAIに聞ける「土地AIチャット」を開発中——家を建てられる土地かを、作る前に需要で確かめる</h1><p class="meta">2026-10-01</p><p>「この土地に家を建てられる？」に、住所1つで答えるAI相談システムを開発しています。名前は <strong>Kurage 土地AIチャット</strong> です。</p>
+<p><img alt="Kurage 土地AIチャット（開発中）" src="assets/ktochi-banner.png" /></p>
+<ul>
+<li>詳しい説明: <a href="https://exbridge.jp/solution/ktochi.html?ref=vibeblog_ktochi">Kurage 土地AIチャット（開発中）</a></li>
+<li>Kurage App Store の掲載: <a href="https://kappstore.exbridge.jp/app.php?id=3caa6a1697f5f568&amp;ref=vibeblog_ktochi">Kurage 土地AIチャット</a></li>
+</ul>
+<p>まだシステムはありません。先に入口のページだけを公開し、使いたい方からの問い合わせやアクセスを見てから作ります。この記事では、なぜこれを作るのか、どう答えるのかを書きます。</p>
+<h2>「市街化調整区域」は月18,100回検索されている</h2>
+<p>Google のキーワードプランナーで、土地まわりの語の月間検索数を測りました（2026年10月1日）。</p>
+<ul>
+<li>市街化調整区域: 18,100</li>
+<li>市街化調整区域とは: 14,800</li>
+<li>市街化調整区域に家を建てる: 880</li>
+<li>用途地域の調べ方: 720</li>
+</ul>
+<p>「市街化調整区域とは」を調べる人の多くは、気になる土地がまさにそれだった人だと思います。ところが、その土地が市街化調整区域かどうかは、自治体の都市計画図を開いて地図をたどらないと分かりません。分かっても、次に「では家は建つのか」「水害は大丈夫か」と、調べることが続きます。</p>
+<h2>住所1つで、まとめて答える</h2>
+<p>予定している答え方は次のとおりです。</p>
+<ul>
+<li><strong>この住所は市街化調整区域？家は建てられる？</strong> — 国土交通省の都市計画決定GISデータから区域区分と用途地域を引き、市街化調整区域なら「原則として建築が制限される区域」であることを、都市計画法の条文とともに示します。建てられるかの最終判断は自治体の開発許可の窓口なので、窓口で確かめるべき点を整理します。</li>
+<li><strong>建ぺい率と容積率は？</strong> — その地点の用途地域の建ぺい率・容積率を示し、敷地面積から建築面積・延べ床面積の上限の目安を計算します。</li>
+<li><strong>水害や土砂崩れの心配は？</strong> — 洪水・内水の想定浸水深、土砂災害警戒区域、津波浸水想定、建築基準法39条の災害危険区域を、住所の地点で判定します。</li>
+<li><strong>重要事項説明の災害の項目は？</strong> — 宅地建物取引業法施行規則で説明が求められる災害の項目を、判定できたもの・できないものに分けて示します。</li>
+</ul>
+<h2>結論はAIに作らせない</h2>
+<p>防災AIチャットと同じ作りにします。区域・数値・該当かどうかは、公開データと法令にもとづく規則で決めます。AIは、その結果を受け取って質問に合わせて言い換えるだけです。</p>
+<p>こうすると、AIがデータに無い区域や数字を作ることがありません。データが無い、または判定できないときは「確認できない」と答え、「該当なし」とは書きません。土地の判断で「該当なし」と書いてしまうのが、いちばん危ないからです。</p>
+<h2>土台はもうある</h2>
+<p>新しく作るのは、主にチャットの部分です。判定のエンジンは、すでに公開している当社のシステムを組み合わせます。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/ktoshikeikaku.php/?ref=vibeblog_ktochi">Kurage 都市計画ナビ</a> — 住所から用途地域・建ぺい率・容積率・市街化調整区域（全国）</li>
+<li><a href="https://kurage.exbridge.jp/kflood.php/?ref=vibeblog_ktochi">洪水・内水ハザードマップ</a>・<a href="https://kurage.exbridge.jp/khazard.php/?ref=vibeblog_ktochi">土砂災害ハザードマップ</a>・<a href="https://kurage.exbridge.jp/ktsunami.php/?ref=vibeblog_ktochi">津波ハザードマップ</a></li>
+<li><a href="https://kurage.exbridge.jp/kriskarea.php/?ref=vibeblog_ktochi">災害危険区域マップ</a> — 建築基準法39条の区域と根拠の条例</li>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=01d71e3bd7f717a8&amp;ref=vibeblog_ktochi">重説 災害項目チェック</a> — 宅建業者向けの下ごしらえ</li>
+</ul>
+<h2>作る前に、入口だけを出した理由</h2>
+<p>材料がそろっていても、誰がどこで使うかが決まらないと、画面も答えの細かさも決まりません。不動産会社が物件調査で使うのか、工務店が土地探しの相談で使うのか、自治体の窓口が問い合わせの一次対応で使うのかで、必要な項目と置き方が変わります。</p>
+<p>そこで今回は、説明のページと Kurage App Store の掲載だけを先に公開しました。問い合わせとアクセスを見て、使いたい方の要望に合わせて開発の順番と仕様を決めます。</p>
+<h2>使ってみたい方へ</h2>
+<p>自社サイトに埋め込む形、自社のサーバーに置く形、AIエージェントから呼べるMCPサーバーの形を考えています。対象の地域と必要な項目を伺って仕様を決めますので、お気軽にお問い合わせください。</p>
+<ul>
+<li><a href="https://exbridge.jp/solution/ktochi.html?ref=vibeblog_ktochi">Kurage 土地AIチャット（開発中）の説明と問い合わせ</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
