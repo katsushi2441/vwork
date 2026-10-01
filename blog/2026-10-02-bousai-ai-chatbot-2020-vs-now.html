@@ -1,0 +1,103 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>防災AIチャットボットは2020年から何が変わったか——当時の課題を、いまのAIでどこまで解けるか | VWork バイブコーディングフレームワーク</title><meta name="description" content="2020〜2021年に国の研究プログラムで作られた防災チャットボット（SOCDA）で報告された課題——選択肢が多すぎる、想定外の質問に答えられない、情報が多すぎて避難の判断ができない、導入と運用の費用——を、いまのAIでどこまで解けるかを、当社の防災AIチャットボットで確かめました。まだ解けないことも書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-02-bousai-ai-chatbot-2020-vs-now.html"><meta property="og:type" content="article"><meta property="og:title" content="防災AIチャットボットは2020年から何が変わったか——当時の課題を、いまのAIでどこまで解けるか"><meta property="og:description" content="2020〜2021年に国の研究プログラムで作られた防災チャットボット（SOCDA）で報告された課題——選択肢が多すぎる、想定外の質問に答えられない、情報が多すぎて避難の判断ができない、導入と運用の費用——を、いまのAIでどこまで解けるかを、当社の防災AIチャットボットで確かめました。まだ解けないことも書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-02-bousai-ai-chatbot-2020-vs-now.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="防災AIチャットボットは2020年から何が変わったか——当時の課題を、いまのAIでどこまで解けるか"><meta name="twitter:description" content="2020〜2021年に国の研究プログラムで作られた防災チャットボット（SOCDA）で報告された課題——選択肢が多すぎる、想定外の質問に答えられない、情報が多すぎて避難の判断ができない、導入と運用の費用——を、いまのAIでどこまで解けるかを、当社の防災AIチャットボットで確かめました。まだ解けないことも書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "防災AIチャットボットは2020年から何が変わったか——当時の課題を、いまのAIでどこまで解けるか", "description": "2020〜2021年に国の研究プログラムで作られた防災チャットボット（SOCDA）で報告された課題——選択肢が多すぎる、想定外の質問に答えられない、情報が多すぎて避難の判断ができない、導入と運用の費用——を、いまのAIでどこまで解けるかを、当社の防災AIチャットボットで確かめました。まだ解けないことも書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-02-bousai-ai-chatbot-2020-vs-now.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-02", "dateModified": "2026-10-02", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>防災AIチャットボットは2020年から何が変わったか——当時の課題を、いまのAIでどこまで解けるか</h1><p class="meta">2026-10-02</p><p>「防災AIチャットボット」で検索すると、2020年ごろからの取り組みがたくさん出てきます。当時の課題を調べ、いまのAIでどこまで解けるかを、当社の <a href="https://kurage.exbridge.jp/kbousai.php/?ref=vibeblog_bousai-2020">防災AIチャットボット</a> で確かめました。</p>
+<p><strong>防災AIチャットボットとは、</strong> 住所や現在地と質問から、その場所の警報・避難情報・ハザードマップなどを集めて、いまやることを答えるチャットボットです。</p>
+<h2>2020〜2021年の防災チャットボット</h2>
+<p>代表的なのが「SOCDA（ソクダ、対話型災害情報流通基盤）」です。国の研究プログラム（内閣府のSIP第2期）で、防災科学技術研究所・情報通信研究機構（NICT）・ウェザーニューズが、LINEの協力を得て作りました。住民がLINEで被災状況を送ると、NICTの災害向けの言語解析（D-SUMM・DISAANA）で整理して地図に載せ、避難の案内もする仕組みです。2023年3月に研究プログラムが終わり、ウェザーニューズが自治体ごとに導入するサービスとして引き継いでいます。</p>
+<p>実証や発表で報告された課題は、次のようなものでした。</p>
+<ul>
+<li>住民にとって「参考にする情報や指針が多すぎて、避難の判断が難しい」</li>
+<li>自治体にとって、避難所の混雑の予測、避難者数のリアルタイムの共有、安否確認の手作業が重い</li>
+<li>導入・運用の費用と、技術だけでなく制度や法律、防災業務の壁</li>
+</ul>
+<p>また当時のチャットボットに多かった、決まった筋書きで選択肢を選ばせる型には、「選択肢が多すぎて離脱する」「想定外の質問に答えられない」という課題がよく挙げられています。</p>
+<h2>いまのAIで、どこまで解けるか</h2>
+<table>
+<thead>
+<tr>
+<th>当時の課題</th>
+<th>いまの作り方（当社の防災AIチャットボット）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>想定外の質問に答えられない</td>
+<td>AIがふだんの言葉の質問をそのまま理解する。ボタン以外の自由な言葉で聞ける</td>
+</tr>
+<tr>
+<td>情報が多すぎて避難の判断ができない</td>
+<td>住所1つで、警報・キキクル・避難情報を警戒レベルにそろえ、「全員避難」「高齢の方から」「準備」の1つの結論にする</td>
+</tr>
+<tr>
+<td>AIの答えが信用できるか</td>
+<td>結論はAIに作らせず規則で決める。AIは結論を言い換えるだけ</td>
+</tr>
+<tr>
+<td>導入・運用の費用</td>
+<td>汎用のAIと公開データで作る。AIは自社のサーバーで動くローカルのモデルも選べる。一式220,000円（税込）</td>
+</tr>
+<tr>
+<td>多言語</td>
+<td>答えの言葉を、やさしい日本語・英語・中国語・韓国語・ベトナム語・ポルトガル語・タガログ語・ネパール語から選べる（2026年10月2日に追加）</td>
+</tr>
+</tbody>
+</table>
+<h3>結論はAIに作らせない</h3>
+<p>いまのAIは、ふだんの言葉を驚くほどよく理解します。その一方で、それらしい嘘をつくことがあります。命に関わる「逃げるかどうか」をAIに決めさせるわけにはいきません。</p>
+<p>そこで当社は、内閣府の避難情報に関するガイドラインの警戒レベルに合わせて、市区町村の避難情報・気象庁の警報・キキクル・津波警報を同じ物差しにそろえ、その場所が浸水や土砂災害の想定区域に入るかと組み合わせて、結論を規則で出しています。AIはその結論を、質問に合わせて言い換えるだけです。AIが遅いときや止まっているときでも、事実と規則の結論は出ます。</p>
+<h3>多言語は、言い換えの部分だけで足りた</h3>
+<p>当時の筋書き型では、言葉を増やすたびに筋書きを作り直す必要がありました。いまの作りでは、結論は規則で決まっているので、AIに「この言葉で言い換えて」と頼むだけで済みます。外国語の質問は、質問の種類（避難・川・台風など）を見分けるためにだけ日本語に直します。地名や避難先の名前は、現地の看板と照らし合わせられるよう日本語の表記を残します。</p>
+<p>試しに、名古屋市中川区の住所で英語・中国語・ベトナム語・やさしい日本語で聞くと、どれも「いま避難が必要な情報は出ていない。ただしこの場所には洪水・高潮・津波の浸水の想定がある」という同じ結論を、それぞれの言葉で返しました。中国語で「台風は直撃する？」と聞くと、台風の位置と中心気圧で答えました。</p>
+<h2>いまのAIでも、まだ解けないこと</h2>
+<ul>
+<li><strong>データが無いものは作れない。</strong> 避難所の混雑や避難者数は、誰かが入力しない限りどこにもありません。受付で読み取るなど、入力の仕組みが別に要ります</li>
+<li><strong>公開の制約。</strong> 国の「川の防災情報」は、ツールによる定期的なデータの取り込みを控えるよう求めているので、川の水位は取り込んでいません。避難情報を機械で読める形で出している自治体もまだ一部で、当社が取り込めているのは名古屋・東京・千葉・神奈川・静岡です</li>
+<li><strong>災害時の負荷。</strong> アクセスが集中するとAIの応答が遅れます。事実と規則の結論を先に出し、AIの言い換えは後から、という作りで備えています</li>
+<li><strong>制度と運用の壁。</strong> 自治体の運用や個人情報の扱いは、技術が進んでも残ります</li>
+</ul>
+<h2>これから足せること</h2>
+<p>当時NICTの専用の技術でやっていた「住民の投稿の整理」は、いまの汎用のAIで、文章の分類・要約・場所の抜き出しまでできます。写真を読めるAIなら、写真の中身も整理できます。LINEで住民とやりとりして安否を集める仕組みも、手作業をかなり減らせます。どちらも当社の LINE CRM などと組み合わせて作れます。</p>
+<h2>自治体・会社で使いたい方へ</h2>
+<ul>
+<li>デモ: <a href="https://kurage.exbridge.jp/kbousai.php/?ref=vibeblog_bousai-2020">Kurage 防災AIチャット</a>（住所を入れてその場で試せます。答えの言葉も選べます）</li>
+<li>導入の考え方: <a href="https://exbridge.jp/solution/bousai-ai-chatbot.html?ref=vibeblog_bousai-2020">防災AIチャットボット（業務別AIチャットボット）</a></li>
+<li>自社に置ける一式: <a href="https://kappstore.exbridge.jp/app.php?id=cf817fdce13ee120&amp;ref=vibeblog_bousai-2020">防災AIチャット＋防災判定セット（Kurage App Store）</a></li>
+</ul>
+<h2>よくある質問</h2>
+<h3>防災AIチャットボットとは何ですか？</h3>
+<p>住所や現在地と質問から、その場所の警報・避難情報・ハザードマップなどを集めて、いまやることを答えるチャットボットです。当社のものは、逃げるかどうかの結論を規則で決め、AIはその結論を言い換えるだけにしています。</p>
+<h3>2020年ごろの防災チャットボットと何が違いますか？</h3>
+<p>当時は決まった筋書きで選択肢を選ばせる型が多く、想定外の質問に答えにくいという課題がありました。いまはAIがふだんの言葉の質問を理解でき、結論を規則で決めることで、答えの信頼性も保てます。汎用のAIと公開データで作れるので、費用も下がりました。</p>
+<h3>外国語でも使えますか？</h3>
+<p>使えます。やさしい日本語・英語・中国語・韓国語・ベトナム語・ポルトガル語・タガログ語・ネパール語で答えます。結論は日本語と同じ規則で決まります。</p>
+<h3>避難所の混雑も分かりますか？</h3>
+<p>分かりません。避難所の混雑や避難者数は公開データに無く、入力の仕組みが別に必要です。</p>
+<h2>出典</h2>
+<ul>
+<li><a href="https://ai-bosai.jp/data/2023-03-31press.pdf">AI防災協議会「防災チャットボット『SOCDA』」についてのご案内（2023年3月31日）</a></li>
+<li><a href="https://www.nict.go.jp/resil/symposium2020/draft_fukushima.pdf">防災におけるLINE活用 - 防災チャットボット SOCDAの活用（情報通信研究機構 シンポジウム資料）</a></li>
+<li><a href="https://robotstart.info/2021/02/19/socda-experiment.html">AI防災チャットボット『SOCDA』の実証（ロボスタ）</a></li>
+<li><a href="https://www.watch.impress.co.jp/docs/news/1307499.html">災害時の避難場所や行動をLINEで知らせる「AI防災支援システム」（Impress Watch）</a></li>
+<li><a href="https://anotete.co.jp/blog/jichitai/">自治体のAIチャットボットを導入成功させるポイント（anotete）</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
