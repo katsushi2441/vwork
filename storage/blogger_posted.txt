@@ -453,3 +453,6 @@ kfreqai-entry-threshold-explained
 2026-09-30-ai-news-4
 2026-10-01-ai-news
 2026-10-01-denshi-karte-gimuka-oss
+2026-10-01-ai-news-2
+2026-10-01-ai-news-3
+2026-10-01-mlit-dpf-mcp-kbousai
