@@ -1,5 +1,5 @@
 # /vibeblog/ に移した AI OSS技術解説の記事（2026-10-02〜）。canonical をあちらへ向ける。
-# kpayload/scripts/build-vibeblog.ts の canonical-map.json から作る（Horizon の自動ニュースまとめは含まない）
+# kpayload/scripts/build-vibeblog.ts が書き出す（Horizon の自動ニュースまとめは含まない）
 - 2026-05-18-input-automation-and-vwork
 - 2026-05-18-vibe-coding-for-all-pc-work
 - 2026-05-18-vwork-as-knowledge-blog
