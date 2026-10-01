@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 30 Sep 2026 21:26:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 03:36:48 +0000</lastBuildDate>
     <item>
       <title>Oídoの登場とOpen TTS Leaderboardなど、エッジAIと音声技術の進化 10-01</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news.html</guid>
       <pubDate>Thu, 01 Oct 2026 09:00:00 +0000</pubDate>
       <description>Whisper-tinyを凌駕する超小型音声認識モデル「Oído」の公開や、Hugging FaceによるOpen TTS Leaderboardの開始など、最新のエッジAIと音声技術の動向を解説します。また、llama.cppへのGLM-5.3-Flash対応も紹介します。</description>
+    </item>
+    <item>
+      <title>GoogleのGemini 4 Argon発表とAIエージェント、Web3の最新動向 10-01</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news-3.html</guid>
+      <pubDate>Thu, 01 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Googleが発表したGemini 4 Argonの動向や、OpenAIのJevクローンによるスウォーミング・エージェントの制御技術を解説します。さらにElevenLabsの評価額倍増やWebGPUカーネルの公開など最新情報を網羅しています。</description>
     </item>
     <item>
       <title>Gemini 4 Argonの登場とOpenAIによるエージェント制御技術の進化 10-01</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-2.html</guid>
       <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが数学アドバイザリーグループを設立し、100以上の未解決問題への挑戦を開始しました。また、1億パラメータで高品質な画像生成を行うSupra2-IMGの公開やXiaomiのMiMo v2.6など最新動向を解説します。</description>
-    </item>
-    <item>
-      <title>Appleで読む：OpenAIの数学能力向上とQwen 4、そしてCloudflareのWorkers展開によるAIインフラの進化 09-22</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-22-ai-news-4.html</guid>
-      <pubDate>Tue, 22 Sep 2026 09:00:00 +0000</pubDate>
-      <description>CloudflareがPython Workersを一般提供しエッジコンピューティングを強化します。またOpenAIの数学能力向上やAlibabaのQwen 4発表、XiaomiのMiMo v2.6リリースなど最新のAI動向を網羅しています。</description>
     </item>
   </channel>
 </rss>
