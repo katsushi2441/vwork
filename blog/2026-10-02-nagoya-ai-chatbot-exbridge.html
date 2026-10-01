@@ -1,0 +1,156 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>名古屋でAIチャットボットを導入するなら——業務ごとに「答えの根拠」を決めて、自社に置く。エクスブリッジの作り方 | VWork バイブコーディングフレームワーク</title><meta name="description" content="名古屋市瑞穂区のシステム開発会社・株式会社エクスブリッジが、AIチャットボットの作り方をまとめました。業務ごとに答えの根拠を決めること、命や安全に関わる結論をAIに作らせないこと、月額に縛られず自社のサーバーに置くこと。公開中の防災AIチャットボット、業務別13パターン、費用の目安、名古屋での相談の進め方を書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-02-nagoya-ai-chatbot-exbridge.html"><meta property="og:type" content="article"><meta property="og:title" content="名古屋でAIチャットボットを導入するなら——業務ごとに「答えの根拠」を決めて、自社に置く。エクスブリッジの作り方"><meta property="og:description" content="名古屋市瑞穂区のシステム開発会社・株式会社エクスブリッジが、AIチャットボットの作り方をまとめました。業務ごとに答えの根拠を決めること、命や安全に関わる結論をAIに作らせないこと、月額に縛られず自社のサーバーに置くこと。公開中の防災AIチャットボット、業務別13パターン、費用の目安、名古屋での相談の進め方を書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-02-nagoya-ai-chatbot-exbridge.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="名古屋でAIチャットボットを導入するなら——業務ごとに「答えの根拠」を決めて、自社に置く。エクスブリッジの作り方"><meta name="twitter:description" content="名古屋市瑞穂区のシステム開発会社・株式会社エクスブリッジが、AIチャットボットの作り方をまとめました。業務ごとに答えの根拠を決めること、命や安全に関わる結論をAIに作らせないこと、月額に縛られず自社のサーバーに置くこと。公開中の防災AIチャットボット、業務別13パターン、費用の目安、名古屋での相談の進め方を書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "名古屋でAIチャットボットを導入するなら——業務ごとに「答えの根拠」を決めて、自社に置く。エクスブリッジの作り方", "description": "名古屋市瑞穂区のシステム開発会社・株式会社エクスブリッジが、AIチャットボットの作り方をまとめました。業務ごとに答えの根拠を決めること、命や安全に関わる結論をAIに作らせないこと、月額に縛られず自社のサーバーに置くこと。公開中の防災AIチャットボット、業務別13パターン、費用の目安、名古屋での相談の進め方を書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-02-nagoya-ai-chatbot-exbridge.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-02", "dateModified": "2026-10-02", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>名古屋でAIチャットボットを導入するなら——業務ごとに「答えの根拠」を決めて、自社に置く。エクスブリッジの作り方</h1><p class="meta">2026-10-02</p><p>名古屋市瑞穂区のシステム開発会社、株式会社エクスブリッジです。AIチャットボットの作り方を、当社が実際に作って公開しているものをもとにまとめました。</p>
+<p><img alt="AIチャットボットの導入は、業務ごとに「答えの根拠」で決まる" src="assets/nagoya-ai-chatbot-banner.png" /></p>
+<p><strong>株式会社エクスブリッジとは、</strong> 2004年に名古屋で設立したシステム開発会社で、AIチャットボットをはじめとするAI駆動のシステム開発と、オンプレミスで使える業務システムの販売を行っています。AIチャットボットについては、PHPの1ファイルで動く自社製品「Kurage Light ChatBot」と、住所で防災情報に答える「防災AIチャットボット」を公開しています。</p>
+<ul>
+<li>業務別の作り方: <a href="https://exbridge.jp/solution/ai-chatbot.html?ref=vibeblog_nagoya-ai-chatbot">AIチャットボットの導入（業務別の作り方）</a></li>
+<li>名古屋での相談: <a href="https://exbridge.jp/contact.php?ref=vibeblog_nagoya-ai-chatbot&amp;subject=%E5%90%8D%E5%8F%A4%E5%B1%8B%E3%81%A7AI%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%81%AE%E7%9B%B8%E8%AB%87#form">無料相談</a></li>
+</ul>
+<h2>なぜ名古屋の会社にAIチャットボットが合うのか</h2>
+<p>名古屋・愛知の会社には、製造業や建設業を中心に、取引先からの問い合わせ、社内の手続き、現場の手順の確認が毎日たくさんあります。担当者が少なく、答えられる人が決まっていて、その人が休むと止まる——いわゆる属人化です。</p>
+<p>ところが、その答えの多くは、すでに社内のどこかに書いてあります。規程、マニュアル、手順書、過去の回答。AIチャットボットは、この「書いてあるのに探せない」を解く道具です。</p>
+<h2>当社が大事にしている、AIチャットボットの3つの決めごと</h2>
+<h3>1. 業務ごとに「答えの根拠」を決める</h3>
+<p>AIチャットボットの出来は、AIの性能より、何を根拠に答えるかで決まります。防災なら気象庁と自治体のデータ、社内の問い合わせなら規程とマニュアル、ECなら商品と配送の規約。根拠を決め、その範囲だけで答えさせ、答えには出典を付けます。根拠が見つからないときは「分からない」と答えさせます。</p>
+<h3>2. 命や安全に関わる結論は、AIに作らせない</h3>
+<p>当社の <a href="https://kurage.exbridge.jp/kbousai.php/?ref=vibeblog_nagoya-ai-chatbot">防災AIチャットボット</a> は、「いま逃げた方がいい？」に住所で答えます。ただし、逃げるかどうかの結論は、内閣府の避難情報に関するガイドラインの警戒レベルに合わせた規則で決め、AIはその結論を言い換えるだけにしています。AIが遅いときや止まっているときでも、規則の結論と事実は出ます。病院向けなら症状の判断はさせない、不動産向けなら判定できない災害リスクを「該当なし」と書かせない。業務ごとに「AIにやらせないこと」も決めます。</p>
+<h3>3. 月額に縛られず、自社に置く</h3>
+<p>当社の <a href="https://kappstore.exbridge.jp/app.php?id=224e141f77bd07a8&amp;ref=vibeblog_nagoya-ai-chatbot">Kurage Light ChatBot</a> は、PHPの1ファイルで動くAIチャットボットで、価格は55,000円（税込）、月額はかかりません。ソースコードを同梱し、MITライセンスなので自社で変えられます。社内向けはパスワードで閉じ、AIは社内のサーバーで動くローカルのモデルも選べるので、文書の中身を社外に出さない構成にもできます。資料が多い会社には、Namazu や Fess の <a href="https://exbridge.jp/solution/zenbun-kensaku-ai-chatbot.html?ref=vibeblog_nagoya-ai-chatbot">全文検索と組み合わせる構成</a> を組みます。</p>
+<h2>業務別のAIチャットボット</h2>
+<p>業務ごとに、答えの根拠と土台にする当社のシステムを決めています。それぞれのページに、答え方・構成・向いている会社・費用をまとめました。</p>
+<table>
+<thead>
+<tr>
+<th>業務</th>
+<th>答えの根拠と土台</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://exbridge.jp/solution/bousai-ai-chatbot.html">防災</a></td>
+<td>気象庁・自治体のデータ。防災AIチャット（公開中）</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/jichitai-ai-chatbot.html">自治体</a></td>
+<td>制度・窓口の公開情報。制度ナビ・通報先ナビ</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/shanai-ai-chatbot.html">社内の問い合わせ</a></td>
+<td>規程・マニュアル。Light ChatBot と全文検索</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/helpdesk-ai-chatbot.html">ヘルプデスク</a></td>
+<td>手順書。FreeScout・LibreDesk への引き継ぎ</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/faq-ai-chatbot.html">FAQ</a></td>
+<td>よくある質問のファイル</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/support-ai-chatbot.html">問い合わせ・サポート</a></td>
+<td>商品資料・料金表</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/line-ai-chatbot.html">LINE</a></td>
+<td>資料と相談の記録。Kurage LINE CRM</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/ec-ai-chatbot.html">EC</a></td>
+<td>商品情報・配送と返品の規約</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/fudosan-ai-chatbot.html">不動産</a></td>
+<td>物件資料と、都市計画・災害の公開データ</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/saiyo-ai-chatbot.html">採用</a></td>
+<td>募集要項・会社資料</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/byoin-ai-chatbot.html">病院・クリニック</a></td>
+<td>院内の案内資料（症状の判断はしない）</td>
+</tr>
+<tr>
+<td><a href="https://exbridge.jp/solution/kaigo-ai-chatbot.html">介護</a></td>
+<td>厚生労働省の公開データ。介護事業所ナビ</td>
+</tr>
+</tbody>
+</table>
+<h2>当社ができること</h2>
+<table>
+<thead>
+<tr>
+<th>支援内容</th>
+<th>当社のやり方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>答えの根拠の整理</td>
+<td>規程・マニュアル・公開データのどれを根拠にするかを一緒に決める。文書が整っていなければ、そこから手伝う</td>
+</tr>
+<tr>
+<td>チャットボットの設置</td>
+<td>Kurage Light ChatBot を自社サイトや社内に置く。パスワードで閉じる・回数と1日の上限を決める</td>
+</tr>
+<tr>
+<td>全文検索との組み合わせ</td>
+<td>文書が多い場合、Namazu か Fess で探してから答える形を構築する</td>
+</tr>
+<tr>
+<td>AIの選択</td>
+<td>クラウドのAPIか、社内サーバーで動くローカルのモデルか。データを外に出したくない会社には後者</td>
+</tr>
+<tr>
+<td>AIエージェントとの連携</td>
+<td>MCPサーバーとして、ほかのAIから呼べる形にもできる（防災AIチャットで実装済み）</td>
+</tr>
+</tbody>
+</table>
+<h2>名古屋での相談の進め方</h2>
+<ol>
+<li><strong>無料相談</strong>: いま困っている問い合わせや、答えの根拠になりそうな資料を見せていただき、どの業務から始めるかを決めます。Zoomでも対面（名古屋近郊）でも。</li>
+<li><strong>試作</strong>: 一部の資料で動かし、実際によく来る質問で答えと出典を確かめます。</li>
+<li><strong>公開と引き継ぎ</strong>: サイトや社内に公開し、資料の更新の仕方を引き継ぎます。</li>
+</ol>
+<p>名古屋市内の会社には、月15時間・税別150,000円で情報システム部門の役割を引き受ける <a href="https://exbridge.jp/ai-it-komon.html?ref=vibeblog_nagoya-ai-chatbot">AI-IT顧問契約</a> もあります。キャンペーン中（期限未定）で、契約期間中に構築できる当社の販売商品は、商品代金なしで構築します。仕様書を待たずに動くものを見たい方には、初日のヒアリングと提案が無料の <a href="https://exbridge.jp/nagoya-system-development.html?ref=vibeblog_nagoya-ai-chatbot">AI導入のお試し</a> もあります。</p>
+<h2>よくある質問</h2>
+<h3>名古屋でAIチャットボットの開発を頼める会社はどこですか？</h3>
+<p>名古屋市瑞穂区の株式会社エクスブリッジは、AIチャットボットの開発と導入を行っているシステム開発会社です。自社製品の Kurage Light ChatBot（55,000円・月額なし）を土台に、防災・自治体・社内・ヘルプデスク・LINE・ECなど業務ごとのAIチャットボットを構築します。</p>
+<h3>AIチャットボットの導入費用はどのくらいですか？</h3>
+<p>当社の Kurage Light ChatBot は55,000円（税込）で、月額はかかりません。別に、AIの利用料（クラウドのAPIは使った分だけ。ローカルのモデルならAPI料金なし）と、業務に合わせた構築の費用がかかります。初回の相談は無料です。</p>
+<h3>社内の情報を外に出さずにAIチャットボットを使えますか？</h3>
+<p>使えます。チャットボットを自社のサーバーに置き、AIも社内サーバーで動くローカルのモデルにすれば、文書の中身が社外に出ない構成にできます。</p>
+<h3>AIチャットボットが間違った答えをしませんか？</h3>
+<p>答えてよい範囲を資料やデータに限り、出典を示し、根拠が無いときは「分からない」と答える作りにします。命や安全に関わる結論は、AIではなく規則で決めます。それでも要約の誤りは起こりうるので、大事な判断は出典を開いて確かめる運用をおすすめしています。</p>
+<h3>名古屋以外の会社でも頼めますか？</h3>
+<p>頼めます。打ち合わせはZoomで行えます。AI-IT顧問契約と対面での打ち合わせは名古屋市内・名古屋近郊の会社が対象です。</p>
+<h2>お問い合わせ</h2>
+<p>AIチャットボットを入れたい業務と、答えの根拠になりそうな資料を教えてください。どこから始めるのがよいかを一緒に決めます。</p>
+<ul>
+<li><a href="https://exbridge.jp/contact.php?ref=vibeblog_nagoya-ai-chatbot&amp;subject=%E5%90%8D%E5%8F%A4%E5%B1%8B%E3%81%A7AI%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88%E3%81%AE%E7%9B%B8%E8%AB%87#form">名古屋でAIチャットボットの相談をする（無料）</a></li>
+<li><a href="https://exbridge.jp/solution/ai-chatbot.html?ref=vibeblog_nagoya-ai-chatbot">AIチャットボットの導入（業務別の作り方）</a></li>
+<li><a href="https://exbridge.jp/profile.html?ref=vibeblog_nagoya-ai-chatbot">会社概要</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
