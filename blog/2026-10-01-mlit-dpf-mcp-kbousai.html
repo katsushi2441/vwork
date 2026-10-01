@@ -1,0 +1,69 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>国交省のMCPと自社の防災AIチャットのMCPを、同じAIにつないで動かしてみた | VWork バイブコーディングフレームワーク</title><meta name="description" content="国土交通省が公開している国土交通データプラットフォームのMCPと、当社の防災AIチャットのMCPを、同じAIエージェントにつないで動かしました。住所1つの質問に、警報・浸水の想定・避難先と、周りの病院・駅・PLATEAU（3D都市モデル）までをまとめて答えた様子を、実際の画面の録画とともに書きます。うまくいかなかった点も書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-01-mlit-dpf-mcp-kbousai.html"><meta property="og:type" content="article"><meta property="og:title" content="国交省のMCPと自社の防災AIチャットのMCPを、同じAIにつないで動かしてみた"><meta property="og:description" content="国土交通省が公開している国土交通データプラットフォームのMCPと、当社の防災AIチャットのMCPを、同じAIエージェントにつないで動かしました。住所1つの質問に、警報・浸水の想定・避難先と、周りの病院・駅・PLATEAU（3D都市モデル）までをまとめて答えた様子を、実際の画面の録画とともに書きます。うまくいかなかった点も書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-01-mlit-dpf-mcp-kbousai.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="国交省のMCPと自社の防災AIチャットのMCPを、同じAIにつないで動かしてみた"><meta name="twitter:description" content="国土交通省が公開している国土交通データプラットフォームのMCPと、当社の防災AIチャットのMCPを、同じAIエージェントにつないで動かしました。住所1つの質問に、警報・浸水の想定・避難先と、周りの病院・駅・PLATEAU（3D都市モデル）までをまとめて答えた様子を、実際の画面の録画とともに書きます。うまくいかなかった点も書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "国交省のMCPと自社の防災AIチャットのMCPを、同じAIにつないで動かしてみた", "description": "国土交通省が公開している国土交通データプラットフォームのMCPと、当社の防災AIチャットのMCPを、同じAIエージェントにつないで動かしました。住所1つの質問に、警報・浸水の想定・避難先と、周りの病院・駅・PLATEAU（3D都市モデル）までをまとめて答えた様子を、実際の画面の録画とともに書きます。うまくいかなかった点も書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-01-mlit-dpf-mcp-kbousai.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-01", "dateModified": "2026-10-01", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>国交省のMCPと自社の防災AIチャットのMCPを、同じAIにつないで動かしてみた</h1><p class="meta">2026-10-01</p><p>国土交通省が、国土交通データプラットフォームのMCPサーバーを公開しています（GitHub の <a href="https://github.com/MLIT-DATA-PLATFORM/mlit-dpf-mcp">MLIT-DATA-PLATFORM/mlit-dpf-mcp</a>、MITライセンス）。MCPは、AIエージェントが外の道具やデータを呼び出すための共通の口です。</p>
+<p>当社の <a href="https://kurage.exbridge.jp/kbousai.php/?ref=vibeblog_mlit_mcp">Kurage 防災AIチャット</a> にも、AIエージェントから呼べるMCPがあります。そこで、この2つを同じAIエージェントにつなぐと何が答えられるのかを、実際に動かして確かめました。</p>
+<div style="position:relative;width:100%;max-width:960px;aspect-ratio:16/9;margin:16px auto;border-radius:10px;overflow:hidden;background:#000">
+  <iframe title="自社のMCPと国交省のMCPを同じAIにつないだ実演" loading="lazy" src="https://kurage.exbridge.jp/kuragev.php?id=d636568397915983&embed=1" style="position:absolute;inset:0;width:100%;height:100%;border:0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<p>動画は、AIエージェントを実際に動かしている画面の録画です（<a href="https://kurage.exbridge.jp/kuragev.php?id=d636568397915983&amp;ref=vibeblog_mlit_mcp">動画のページ</a>）。</p>
+<h2>やったこと</h2>
+<ol>
+<li>国土交通データプラットフォームでアカウントを作り、APIキーを取りました。APIの利用には、規約に同意したうえでのアカウント作成とキーの発行が要ります</li>
+<li>国交省のMCPと当社の防災AIチャットのMCPを、同じAIエージェント（Claude）につなぎました</li>
+<li>名古屋市中川区の住所で、次の質問を1回だけしました</li>
+</ol>
+<blockquote>
+<p>大雨や台風のとき、この場所はどれくらい危ないですか？逃げるならどこへ？あわせて、この場所の周り（半径1km程度）にある施設・建物（PLATEAUなど）・交通のデータを、国土交通データプラットフォームから探して、何が分かるかまとめてください。</p>
+</blockquote>
+<h2>AIがどう動いたか</h2>
+<p>AIは、どの道具を何回使うかを自分で決めました。動画の回では、当社のMCPを2回、国交省のMCPを21回呼び、答えまで79秒でした。</p>
+<ul>
+<li><strong>当社のMCP</strong>：いまの警報・避難情報・雨量・キキクル・台風との距離と、平時の浸水の想定（洪水0.5〜3m、高潮2〜3m）、標高（約0.8m）、近い避難先</li>
+<li><strong>国交省のMCP</strong>：その地点から半径1kmの病院・学校・避難施設・駅・道路と、名古屋市のPLATEAU（3D都市モデル）</li>
+</ul>
+<p>最後に、「いまは避難の必要はないが、高潮と洪水で1階がつかる想定の土地。台風のときは早めに高い所へ」という1つの答えにまとめました。</p>
+<h2>うまくいかなかったこと</h2>
+<ul>
+<li><strong>最初は、AIが地点を推測していました。</strong> 国交省のMCPで周りを探すとき、AIは住所から「高畑駅のあたり」と見当をつけて座標を入れていました。当社のMCPが住所から求めた緯度経度も返すようにすると、その点をそのまま使うようになりました</li>
+<li><strong>PLATEAUは「周り1km」では見つかりません。</strong> 3D都市モデルは市全体で1件のデータとして登録されているためです。AIは名古屋市で絞り直して見つけていました</li>
+<li><strong>バス停は0件でした。</strong> 時刻表のデータは別のカタログにあり、今回は探していません</li>
+<li><strong>1回あたり約2分・約1.7ドルかかります。</strong> 質問のたびにAIが20回以上道具を呼ぶので、誰でも使える無料の画面にそのまま載せる形には向きません。製品に組み込むなら、「周り1kmの避難施設・病院・駅」のような決まった検索を当社の側で行い、AIには言い換えだけをさせる形がよいと考えています</li>
+</ul>
+<h2>動画の作り方</h2>
+<p>MCPを呼ぶAIエージェントには画面がありません。そこで、「実行」を押すと本当にAIを動かし、呼び出したMCPを1つずつ画面に出す確認用の画面を作りました。当社の動画生成の仕組み（Kurage Argo Video）で、その画面を本物のクリックで操作して録画しています。作り物の再生ではなく、ナレーションも、その回に実際に出た呼び出しと件数から書いています。</p>
+<h2>Kurage 防災AIチャット</h2>
+<p>住所か現在地を入れて「逃げた方がいい？」「川が氾濫しそう？」と聞くと、気象庁のキキクル・警報・台風の進路・アメダス・市区町村の避難情報とハザードマップを1画面に集めて答えます。逃げるかどうかは規則で決め、AIは言い換えるだけにしています。</p>
+<ul>
+<li>デモ：<a href="https://kurage.exbridge.jp/kbousai.php/?ref=vibeblog_mlit_mcp">Kurage 防災AIチャット</a></li>
+<li>自治体・会社の名前で置く一式（洪水・土砂・津波・避難所の判定とAIエージェント向けのMCPを同梱）：<a href="https://kappstore.exbridge.jp/app.php?id=cf817fdce13ee120&amp;ref=vibeblog_mlit_mcp">Kurage 防災AIチャット＋防災判定セット</a></li>
+</ul>
+<p>行政のMCPと自社のMCPを組み合わせると、1つの質問から、いまの危なさと周りの施設や交通まで、その場で答えが作れます。自社のシステムやAIに防災の答えを組み込みたい場合は、ご相談ください。</p>
+<h2>出典</h2>
+<ul>
+<li><a href="https://github.com/MLIT-DATA-PLATFORM/mlit-dpf-mcp">MLIT-DATA-PLATFORM/mlit-dpf-mcp（GitHub）</a></li>
+<li><a href="https://data-platform.mlit.go.jp/">国土交通データプラットフォーム</a></li>
+<li>気象庁・国土数値情報・国土地理院・名古屋市（Kurage 防災AIチャット）</li>
+</ul>
+<p>このサービスは、国土交通データプラットフォームのAPI機能を使用していますが、最新のデータを保証するものではありません。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
