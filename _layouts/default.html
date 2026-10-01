@@ -21,6 +21,17 @@
   {% assign seo_url = page.url | absolute_url %}
   {% assign vibeblog = 'https://exbridge.jp/vibeblog/' %}
   {% assign moved = false %}
+  {% comment %}
+    2026-10-02: AI OSS技術解説（articles/）のうち人が書いた解説記事も /vibeblog/ に移した（ユーザー指示）。
+    移した記事の一覧は _data/vibeblog_moved_articles.yml。Horizon の自動ニュースまとめは移していないので自分自身のまま。
+  {% endcomment %}
+  {% if page.url contains '/articles/' %}
+    {% assign art_slug = page.url | split: '/articles/' | last | replace: '.html', '' %}
+    {% if site.data.vibeblog_moved_articles contains art_slug %}
+      {% assign moved = true %}
+      {% assign seo_url = vibeblog | append: art_slug | append: '.html' %}
+    {% endif %}
+  {% endif %}
   {% if page.url contains '/blog/' %}
     {% assign moved = true %}
     {% assign blog_slug = page.url | split: '/blog/' | last %}
@@ -300,7 +311,7 @@
         読む人のために1行だけ案内を出す（301 は使わない決まり）。
       {% endcomment %}
       {% if moved %}
-      <p class="moved-note">この記事は <strong>バイブコーディング的仕事ブログ</strong>（VWork Blog）へ移りました。
+      <p class="moved-note">この記事は <strong>バイブコーディング的仕事ブログ</strong>（{% if page.url contains '/articles/' %}AI OSS技術解説{% else %}VWork Blog{% endif %}）へ移りました。
         最新版はこちらです → <a href="{{ seo_url }}">{{ seo_url }}</a></p>
       {% endif %}
       {{ content }}

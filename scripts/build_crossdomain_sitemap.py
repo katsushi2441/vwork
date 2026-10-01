@@ -52,8 +52,17 @@ def env():
     return out
 
 
+def moved_articles():
+    """/vibeblog/ に移した AI OSS技術解説の記事（canonical があちらを向くので、ここには載せない。2026-10-02）"""
+    p = os.path.join(REPO, '_data', 'vibeblog_moved_articles.yml')
+    if not os.path.exists(p):
+        return set()
+    return {ln[2:].strip() for ln in open(p, encoding='utf-8') if ln.startswith('- ')}
+
+
 def collect():
     rows = []
+    moved = moved_articles()
     for sub in SUBS:
         # 日付接頭辞の無い記事（articles/capafy-skill-marketplace.md 等）も拾う
         for p in glob.glob(os.path.join(REPO, sub, '*.md')):
@@ -66,6 +75,8 @@ def collect():
             slug = os.path.basename(p)[:-3]
             if slug == 'index':
                 continue  # 一覧ページは ENTRIES で入れている
+            if sub == 'articles' and slug in moved:
+                continue  # /vibeblog/ が正本（あちらの sitemap に載る）
             m = re.match(r'(\d{4}-\d{2}-\d{2})', slug) or re.search(r'^date:\s*"?(\d{4}-\d{2}-\d{2})', fm, re.M)
             if m:
                 day = m.group(1)
