@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Olmo-core 3の登場とQwenによる軽量・高速なエージェント構築の最前線 10-02](2026-10-02-ai-news.html)
 - [GoogleがGemini 4 Argonを発表：最先端のAIモデルと進化するセキュリティ課題 10-01](2026-10-01-ai-news-4.html)
 - [GoogleのGemini 4 Argon発表とAIエージェント、Web3の最新動向 10-01](2026-10-01-ai-news-3.html)
 - [Gemini 4 Argonの登場とOpenAIによるエージェント制御技術の進化 10-01](2026-10-01-ai-news-2.html)
