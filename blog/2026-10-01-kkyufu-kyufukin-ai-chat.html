@@ -1,0 +1,64 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>申請したらもらえるお金を状況からAIに聞ける「給付金AIチャット」を開発中——子育て・退職・介護・被災 | VWork バイブコーディングフレームワーク</title><meta name="description" content="給付金や手当の多くは、自分で申請しないと受け取れません。出産・子育て・退職・介護・被災などの状況から、申請できる制度と申請先・期限・必要な書類を示すAI相談システム「Kurage 給付金AIチャット」を開発中です。検索の需要、答え方、土台にする既存のシステムを書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-01-kkyufu-kyufukin-ai-chat.html"><meta property="og:type" content="article"><meta property="og:title" content="申請したらもらえるお金を状況からAIに聞ける「給付金AIチャット」を開発中——子育て・退職・介護・被災"><meta property="og:description" content="給付金や手当の多くは、自分で申請しないと受け取れません。出産・子育て・退職・介護・被災などの状況から、申請できる制度と申請先・期限・必要な書類を示すAI相談システム「Kurage 給付金AIチャット」を開発中です。検索の需要、答え方、土台にする既存のシステムを書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-01-kkyufu-kyufukin-ai-chat.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="申請したらもらえるお金を状況からAIに聞ける「給付金AIチャット」を開発中——子育て・退職・介護・被災"><meta name="twitter:description" content="給付金や手当の多くは、自分で申請しないと受け取れません。出産・子育て・退職・介護・被災などの状況から、申請できる制度と申請先・期限・必要な書類を示すAI相談システム「Kurage 給付金AIチャット」を開発中です。検索の需要、答え方、土台にする既存のシステムを書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "申請したらもらえるお金を状況からAIに聞ける「給付金AIチャット」を開発中——子育て・退職・介護・被災", "description": "給付金や手当の多くは、自分で申請しないと受け取れません。出産・子育て・退職・介護・被災などの状況から、申請できる制度と申請先・期限・必要な書類を示すAI相談システム「Kurage 給付金AIチャット」を開発中です。検索の需要、答え方、土台にする既存のシステムを書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-01-kkyufu-kyufukin-ai-chat.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-01", "dateModified": "2026-10-01", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>申請したらもらえるお金を状況からAIに聞ける「給付金AIチャット」を開発中——子育て・退職・介護・被災</h1><p class="meta">2026-10-01</p><p>給付金や手当の多くは、自分で申請しないと受け取れません。いまの状況から、申請できる制度と申請先・期限・必要な書類を示すAI相談システムを開発しています。名前は <strong>Kurage 給付金AIチャット</strong> です。</p>
+<p><img alt="Kurage 給付金AIチャット（開発中）" src="assets/kkyufu-banner.png" /></p>
+<ul>
+<li>詳しい説明: <a href="https://exbridge.jp/solution/kkyufu.html?ref=vibeblog_kkyufu">Kurage 給付金AIチャット（開発中）</a></li>
+<li>Kurage App Store の掲載: <a href="https://kappstore.exbridge.jp/app.php?id=5da3d8efae6ddd62&amp;ref=vibeblog_kkyufu">Kurage 給付金AIチャット</a></li>
+</ul>
+<p>まだシステムはありません。先に入口のページだけを公開し、使いたい方からの問い合わせやアクセスを見てから作ります。</p>
+<h2>「申請したらもらえるお金」を探している人がいる</h2>
+<p>キーワードプランナーで測ると、こういう語が検索されています。</p>
+<ul>
+<li>子育て支援金: 40,500</li>
+<li>子育て世帯給付金: 12,100</li>
+<li>申請したらもらえるお金: 1,000</li>
+<li>退職したらもらえるお金: 1,000</li>
+</ul>
+<p>「申請したら」「退職したら」と、状況を先に打つ検索が目立ちます。知りたいのは制度の名前ではなく、「自分の場合に何があるか」です。ところが制度は、国・都道府県・市区町村、それに雇用保険や年金と、窓口ごとに分かれて書かれています。</p>
+<h2>状況から、申請先・期限・書類まで</h2>
+<p>予定している答え方は次のとおりです。</p>
+<ul>
+<li><strong>子どもが生まれる</strong> — 出産育児一時金、児童手当、自治体の子育て支援など、状況に合う制度を、申請先・期限・必要な書類とともに示します。</li>
+<li><strong>会社を辞めた</strong> — 雇用保険の基本手当（いわゆる失業給付）、国民健康保険・国民年金への切り替えと、保険料の減免・免除など、退職後の手続きを期限の順に並べます。</li>
+<li><strong>親の介護が始まった</strong> — 要介護認定の申請、介護休業給付、高額介護サービス費など、介護する人・される人それぞれの制度を示します。</li>
+<li><strong>災害で家が壊れた</strong> — 罹災証明書の申請から、被災者生活再建支援金・住宅の応急修理などを、内閣府の被災者支援制度の一覧にもとづいて示します。</li>
+</ul>
+<h2>受給できるかは判定しない</h2>
+<p>制度ごとの対象・期限・申請先を規則として持ち、入力された状況に当てはめて候補を絞ります。AIはその結果を言い換えるだけで、存在しない制度や金額を作りません。</p>
+<p>受給できるかどうかの最終判断は、各制度の窓口がします。このシステムは「候補と申請先を示す」ところまでにします。金額や条件が変わる制度は、出典と確認した日を添えて、窓口で確かめるよう促します。</p>
+<h2>土台はもうある</h2>
+<ul>
+<li><a href="https://kurage.exbridge.jp/kseido.php/?ref=vibeblog_kkyufu">Kurage 制度ナビ</a> — 困りごとから使える制度・申請先・期限を引く。名古屋市の45制度を取り込み済み</li>
+<li><a href="https://kurage.exbridge.jp/khisai.php/?ref=vibeblog_kkyufu">Kurage 被災者支援ナビ</a> — 被災したときの国の支援制度を状況から</li>
+<li><a href="https://kurage.exbridge.jp/kacnavi.php/?ref=vibeblog_kkyufu">Kurage AfterCare Navi</a> — 身内が亡くなったあとの手続きを状況から絞る</li>
+<li><a href="https://kurage.exbridge.jp/khojokin.php/?ref=vibeblog_kkyufu">Kurage 補助金ナビ</a> — 事業者向け。会社の条件から、いま出せる補助金</li>
+</ul>
+<h2>作る前に、入口だけを出した理由</h2>
+<p>制度は地域ごとに違います。どの地域の、どの窓口で使うかが決まらないと、取り込む制度の範囲が決まりません。自治体の窓口、社会福祉協議会、議員事務所、会社の人事——使いたい方の声を聞いてから、開発の順番と仕様を決めます。</p>
+<h2>使ってみたい方へ</h2>
+<p>対象の地域と必要な制度を伺って仕様を決めます。お気軽にお問い合わせください。</p>
+<ul>
+<li><a href="https://exbridge.jp/solution/kkyufu.html?ref=vibeblog_kkyufu">Kurage 給付金AIチャット（開発中）の説明と問い合わせ</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
