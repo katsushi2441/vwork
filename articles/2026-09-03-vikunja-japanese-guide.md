@@ -123,4 +123,4 @@ services:
 - 公式ドキュメント（docker 構成）: https://vikunja.io/docs/full-docker-example/
 - 翻訳（Crowdin）: https://crowdin.com/project/vikunja
 - 当社の翻訳パッチ・構成: https://github.com/katsushi2441/vikunja-jp
-- 関連記事: [Krayin CRM の日本語化が本家にマージされるまで](2026-09-02-krayin-japanese-merged.html) ／ [Zammad の日本語を23%から100%にした記録](2026-09-03-zammad-japanese-guide.html)
+- 関連記事: [Krayin CRM の日本語化が本家にマージされるまで](2026-09-02-krayin-japanese-merged.html) ／ [Zammadを日本語で使う方法（日本語を23%から100%にした記録）](2026-09-03-zammad-japanese-guide.html)

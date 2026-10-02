@@ -140,4 +140,4 @@ volumes: { docmost: {}, db_data: {}, redis_data: {} }
 
 - 本家: https://github.com/docmost/docmost （AGPL-3.0、`ee/` 配下のみ別ライセンス）
 - 公式サイト・料金（Community／Business／Enterprise の境界）: https://docmost.com/pricing
-- 関連記事: [Vikunja（タスク管理）の導入と翻訳の穴を埋めた記録](2026-09-03-vikunja-japanese-guide.html) ／ [Zammad の日本語を23%から100%にした記録](2026-09-03-zammad-japanese-guide.html)
+- 関連記事: [Vikunja（タスク管理）の導入と翻訳の穴を埋めた記録](2026-09-03-vikunja-japanese-guide.html) ／ [Zammadを日本語で使う方法（日本語を23%から100%にした記録）](2026-09-03-zammad-japanese-guide.html)

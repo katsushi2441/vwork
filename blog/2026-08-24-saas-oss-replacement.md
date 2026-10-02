@@ -39,7 +39,7 @@ head_keyword: "SaaS 費用削減"
 | --- | --- |
 | kintone | NocoDB、Budibase、Appsmith |
 | Salesforce | Twenty、Krayin CRM、EspoCRM、SuiteCRM |
-| Zendesk | Zammad、Chatwoot、FreeScout、Frappe Helpdesk |
+| Zendesk | [Zammad](https://exbridge.jp/vibeblog/2026-09-03-zammad-japanese-guide.html)、Chatwoot、FreeScout、Frappe Helpdesk |
 | Notion | Outline、Docmost、AFFiNE、BookStack、Wiki.js |
 | Tableau | Metabase、Superset、Grafana |
 | Backlog | Plane、Wekan |
