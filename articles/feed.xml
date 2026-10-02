@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 02 Oct 2026 09:46:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 15:09:22 +0000</lastBuildDate>
+    <item>
+      <title>llama.cppの進化とQwenモデルによるハードウェア最適化の最前線 10-03</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-03-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-03-ai-news.html</guid>
+      <pubDate>Sat, 03 Oct 2026 09:00:00 +0000</pubDate>
+      <description>llama.cppに意思決定モデルの新機能が登場し、ローカル環境での高度なタスク実行が可能になります。また、Huawei Ascendカードを用いたQwen3.8 Flash-Nextの高速推論や、新APIによる多様なモデル対応についても解説します。</description>
+    </item>
     <item>
       <title>SECの暗号資産規制案とOpenAIの安全研究者解雇に見る最新動向 10-02</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-02-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news.html</guid>
       <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
       <description>HuggingFaceのTransformersがllama.cppの量子化モデルに対応し、ローカルでの推論効率が向上します。またAstroForgeによる宇宙探査機へのAI搭載や、欧州の中央銀行によるステーブルコイン規制の動向をまとめました。</description>
-    </item>
-    <item>
-      <title>民泊の可否を住所から調べる：用途地域GISと上乗せ条例を1ファイルのPHPで引く設計</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-23-minpaku-youto-jorei-check.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-minpaku-youto-jorei-check.html</guid>
-      <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
-      <description>住所から民泊の可否を判定するシステムをPHPで構築した過程を解説します。国土数値情報の用途地域データや自治体ごとの上乗せ条例など、データの選定とライセンス確認における課題や注意点を具体的に紹介します。</description>
     </item>
   </channel>
 </rss>
