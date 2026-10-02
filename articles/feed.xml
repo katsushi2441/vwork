@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 01 Oct 2026 21:22:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 03:33:08 +0000</lastBuildDate>
+    <item>
+      <title>SECの暗号資産規制案とOpenAIの安全研究者解雇に見る最新動向 10-02</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-02-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-02-ai-news-3.html</guid>
+      <pubDate>Fri, 02 Oct 2026 09:00:00 +0000</pubDate>
+      <description>SECによる暗号資産カストディ規則の提案やOpenAIの安全研究者解雇など、最新のテック動向を解説します。Olmo-core 3の導入やPi 1.0の性能分析、Opus 5.5の文章パターンについても網羅しています。</description>
+    </item>
     <item>
       <title>Olmo-core 3の登場とQwenによる軽量・高速なエージェント構築の最前線 10-02</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-02-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-4.html</guid>
       <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
       <description>Claude Opus 5.5やGPT-6などの次世代AIモデルの動向に加え、BlackRockが予測するAIエージェントによるステーブルコイン決済の衝撃を解説します。GGUF形式のサポートやQualcommの新チップ情報も網羅しています。</description>
-    </item>
-    <item>
-      <title>OpenAIのGPT-6とAnthropicのClaude Opus 5.5が示す次世代AIの衝撃 09-23</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-23-ai-news-2.html</guid>
-      <pubDate>Wed, 23 Sep 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIのGPT-6 SolやAnthropicのClaude Opus 5.5など、次世代AIモデルの最新動向を解説します。エニグマ暗号の解読成功やQualcommの新型チップ発表など、技術革新の最前線をお届けします。</description>
     </item>
   </channel>
 </rss>
