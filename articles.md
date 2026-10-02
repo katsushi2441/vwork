@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [EFFとNewで読む：Appleのセキュリティ強化とQwenモデルの進化：AIエージェント時代の新たな課題 10-03](2026-10-03-ai-news-2.html)
 - [llama.cppの進化とQwenモデルによるハードウェア最適化の最前線 10-03](2026-10-03-ai-news.html)
 - [Olmo-core 3の登場とChatGPTのバーチャル試着機能など、最新AI動向まとめ 10-02](2026-10-02-ai-news-4.html)
 - [SECの暗号資産規制案とOpenAIの安全研究者解雇に見る最新動向 10-02](2026-10-02-ai-news-3.html)
