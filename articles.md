@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Aleph-AlphaのKolibri-1登場とOpenAIの組織文化を巡る動向 10-04](2026-10-04-ai-news-2.html)
 - [Aleph-Alphaが公開した「Kolibri-1」：最大100万トークンのコンテキストを誇る新モデルの衝撃 10-04](2026-10-04-ai-news.html)
 - [AgentsとBankで読む：Appleのセキュリティ強化とQwenモデルの進化、そして暗号資産市場の動向 10-03](2026-10-03-ai-news-4.html)
 - [BankとAgentsで読む：Qwenの高速化とAppleによるAIエージェントへのセキュリティ強化 10-03](2026-10-03-ai-news-3.html)

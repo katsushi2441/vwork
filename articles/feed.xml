@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 03 Oct 2026 15:11:23 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 21:21:34 +0000</lastBuildDate>
     <item>
       <title>Aleph-Alphaが公開した「Kolibri-1」：最大100万トークンのコンテキストを誇る新モデルの衝撃 10-04</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news.html</guid>
       <pubDate>Sun, 04 Oct 2026 09:00:00 +0000</pubDate>
       <description>Aleph-Alphaが公開した最新モデル「Kolibri-1」の詳細を紹介します。78Bのパラメータを持ち、最大100万トークンのコンテキストウィンドウに対応しています。Apache 2.0ライセンスで提供される特徴も解説します。</description>
+    </item>
+    <item>
+      <title>Aleph-AlphaのKolibri-1登場とOpenAIの組織文化を巡る動向 10-04</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news-2.html</guid>
+      <pubDate>Sun, 04 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Aleph-Alphaが最大100万トークンのコンテキスト窓を持つLLM「Kolibri-1」を公開しました。また、OpenAIの安全担当者の退職による組織文化への懸念や、AWSのNDA不使用方針など最新動向を解説します。</description>
     </item>
     <item>
       <title>AgentsとBankで読む：Appleのセキュリティ強化とQwenモデルの進化、そして暗号資産市場の動向 10-03</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-jichitai-code-egov-law-api.html</guid>
       <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
       <description>e-Gov法令APIと地方公共団体コードを活用し、正確な条文に基づいた手続きナビの構築方法を解説します。相続登記の3年ルールなど、改正に対応した最新の期限情報を取得するための技術的な注意点や実装のコツを紹介します。</description>
-    </item>
-    <item>
-      <title>Snapdragon X2へのLinux対応とMetaのAIエージェントMuseなど最新動向 09-24</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-3.html</guid>
-      <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
-      <description>QualcommがSnapdragon X2シリーズへのLinuxサポートを計画したことや、MetaのAIエージェントMuseの新機能追加、Envedaによる3億1,100万ドルの資金調達など、最新の技術動向を解説します。</description>
     </item>
   </channel>
 </rss>
