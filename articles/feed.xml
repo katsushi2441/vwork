@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 03 Oct 2026 03:26:25 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 09:35:44 +0000</lastBuildDate>
+    <item>
+      <title>AgentsとBankで読む：Appleのセキュリティ強化とQwenモデルの進化、そして暗号資産市場の動向 10-03</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-03-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-03-ai-news-4.html</guid>
+      <pubDate>Sat, 03 Oct 2026 09:00:00 +0000</pubDate>
+      <description>iPhoneをMacBookのセカンドGPUとして活用しQwen 3.8 27Bの速度を向上させる手法や、AppleによるmacOSの権限管理強化、Qwen最新モデルのリリース、暗号資産市場の動向など最新技術ニュースを解説します。</description>
+    </item>
     <item>
       <title>BankとAgentsで読む：Qwenの高速化とAppleによるAIエージェントへのセキュリティ強化 10-03</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-03-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news.html</guid>
       <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
       <description>NVIDIA Nemotron 3を用いたリアルタイム多人数話者分離技術や、MiMo-V3の新アーキテクチャHySparse2の動向を解説します。Claude Codeの修正やYouTubeのAIアルゴリズム機能など最新情報を網羅しています。</description>
-    </item>
-    <item>
-      <title>Snapdragon X2へのLinux対応とMetaのカメラレスAIグラスなど、進化するハードウェアとセキュリティ動向 09-24</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-24-ai-news-4.html</guid>
-      <pubDate>Thu, 24 Sep 2026 09:00:00 +0000</pubDate>
-      <description>QualcommのSnapdragon X2へのLinux対応やMetaのカメラレスAIグラスなど、最新のハードウェア動向を解説します。さらにClaudeによる酵素発見や量子コンピューティングの脅威など、技術革新とセキュリティの最新情報を網羅しています。</description>
     </item>
   </channel>
 </rss>
