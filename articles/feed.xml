@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 04 Oct 2026 03:36:22 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 09:48:34 +0000</lastBuildDate>
     <item>
       <title>Aleph-Alphaが公開した「Kolibri-1」：最大100万トークンのコンテキストを誇る新モデルの衝撃 10-04</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news-3.html</guid>
       <pubDate>Sun, 04 Oct 2026 09:00:00 +0000</pubDate>
       <description>Aleph-Alphaが最大100万トークンに対応したKolibri-1を公開しました。またQwen3.8 Flash NextをノートPCで動作させる技術やAIエージェントの信頼性、AmazonのNDA廃止など最新動向を解説します。</description>
+    </item>
+    <item>
+      <title>TheとValveで読む：OpenAIの安全文化への疑問とMeta Muse、そしてAMD GPU最適化の最前線 10-04</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news-4.html</guid>
+      <pubDate>Sun, 04 Oct 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIの安全文化への疑問やAmazonのNDA廃止など最新テックニュースを解説します。ValveによるLinux上でのAMD GPU最適化や、AIエージェントの状態管理における課題、リソース予算上限の設定の重要性についても詳しく紹介します。</description>
     </item>
     <item>
       <title>AgentsとBankで読む：Appleのセキュリティ強化とQwenモデルの進化、そして暗号資産市場の動向 10-03</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news.html</guid>
       <pubDate>Fri, 25 Sep 2026 09:00:00 +0000</pubDate>
       <description>英国最大手銀行による世界初のトークン化預金を用いた銀行間取引の成功や、Qwen-3.8-27Bのローカル実行事例を解説します。さらにLFM2.5-VL-DSparkの導入やAndo社の資金調達など最新動向を網羅します。</description>
-    </item>
-    <item>
-      <title>PrismMLとQualcommが推進するエッジAIとQwenの進化 09-25</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-25-ai-news-2.html</guid>
-      <pubDate>Fri, 25 Sep 2026 09:00:00 +0000</pubDate>
-      <description>PrismMLとQualcommが提携し、スマートグラスへ軽量LLMを直接デプロイするエッジAI技術を紹介します。Qwen-3.8-27Bのローカル運用やUkisAI Swiftシリーズの高速化など、最新のAI動向を網羅しています。</description>
     </item>
   </channel>
 </rss>

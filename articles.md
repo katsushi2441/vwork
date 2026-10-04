@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [TheとValveで読む：OpenAIの安全文化への疑問とMeta Muse、そしてAMD GPU最適化の最前線 10-04](2026-10-04-ai-news-4.html)
 - [Aleph-AlphaのKolibri-1登場とQwen3.8 Flash Nextの軽量化で加速するAI技術の最前線 10-04](2026-10-04-ai-news-3.html)
 - [Aleph-AlphaのKolibri-1登場とOpenAIの組織文化を巡る動向 10-04](2026-10-04-ai-news-2.html)
 - [Aleph-Alphaが公開した「Kolibri-1」：最大100万トークンのコンテキストを誇る新モデルの衝撃 10-04](2026-10-04-ai-news.html)
