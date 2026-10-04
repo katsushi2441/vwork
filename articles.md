@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Googleのバグバウンティ凍結とQwen3.5のハードウェア最適化が進むAI開発の最前線 10-05](2026-10-05-ai-news-2.html)
 - [BilibiliがQwen3.5基盤の多言語翻訳モデル「Index-Translate」を公開 10-05](2026-10-05-ai-news.html)
 - [TheとValveで読む：OpenAIの安全文化への疑問とMeta Muse、そしてAMD GPU最適化の最前線 10-04](2026-10-04-ai-news-4.html)
 - [Aleph-AlphaのKolibri-1登場とQwen3.8 Flash Nextの軽量化で加速するAI技術の最前線 10-04](2026-10-04-ai-news-3.html)
