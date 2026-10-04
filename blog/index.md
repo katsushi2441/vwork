@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [OpenFreeMap と MapLibre で、地名が日本語の地図を作る——感染症マップで使った手順と、OSM本家のタイルを使わない理由](2026-10-04-openfreemap-maplibre-japanese.html)
 - [統一地方選挙2027に向けて、議員事務所がAIエージェントとバイブコーディングで短期間・低コストに作れる5つのこと](2026-10-02-touitsu-chihou-senkyo-giin-dx.html)
 - [防災AIチャットボットは2020年から何が変わったか——当時の課題を、いまのAIでどこまで解けるか](2026-10-02-bousai-ai-chatbot-2020-vs-now.html)
 - [名古屋でAIチャットボットを導入するなら——業務ごとに「答えの根拠」を決めて、自社に置く。エクスブリッジの作り方](2026-10-02-nagoya-ai-chatbot-exbridge.html)
