@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [ブロードリスニングの後半——集めた意見が国会でどう扱われたかを追う（偽広告・SNS型投資詐欺を例に）](2026-10-06-broad-listening-after-policy-tracking.md)
 - [デジタル民主主義2030の「3つのブロードリスニング」に、当社のシステムを当てはめてみた——広聴AI・Pol.is互換・質問主意書・陳情](2026-10-06-dd2030-digital-democracy-broad-listening.md)
 - [名古屋市の学級閉鎖は104件、南区のインフルエンザは警報レベルの目安——区ごとの数字（2026年10月5日時点）](2026-10-05-nagoya-gakkyu-heisa-influenza.md)
 - [OpenFreeMap と MapLibre で、地名が日本語の地図を作る——感染症マップで使った手順と、OSM本家のタイルを使わない理由](2026-10-04-openfreemap-maplibre-japanese.md)
