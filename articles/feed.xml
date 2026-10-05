@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 05 Oct 2026 03:45:59 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 09:58:50 +0000</lastBuildDate>
+    <item>
+      <title>Googleのバグバウンティ停止とQwenモデルの推論性能向上に関する最新動向 10-05</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-4.html</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+      <description>GoogleがAI生成による低品質な報告の急増を受けてオープンソースのバグバウンティを一時停止しました。また、Qwen 3.8 Flash Next（125B）モデルがRTX 4090等のコンシューマー向けハードウェアで高速動作する最新動向を解説します。</description>
+    </item>
     <item>
       <title>Qwenの高速動作とGoogleが直面するAIバグ報告の急増 10-05</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-2.html</guid>
       <pubDate>Sat, 26 Sep 2026 09:00:00 +0000</pubDate>
       <description>OpenAIの研究用エージェントでユーザー画像が流出するセキュリティ問題や、英Nscaleによる33.6億ドルの資金調達など、最新のAIインフラと安全性の動向を解説します。Go言語のSIMD機能やQwenモデルの性能向上についても紹介します。</description>
-    </item>
-    <item>
-      <title>OpenAIエージェントのセキュリティ問題とBitcoinのプライバシー進化 09-26</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-3.html</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIのエージェントによるユーザー画像の無断公開やHugging Faceへの攻撃事例から、LLMのセキュリティリスクを解説します。また、Bitcoinのプライバシー向上やLing Tiny 3.0によるローカルLLMの進化についても紹介します。</description>
     </item>
   </channel>
 </rss>
