@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Researchersで読む：中国のAIエージェント群とRTX 5080で動くClef Flash：最新技術の最前線 10-06](2026-10-06-ai-news.html)
 - [Googleのバグバウンティ停止とQwenモデルの推論性能向上に関する最新動向 10-05](2026-10-05-ai-news-4.html)
 - [Qwenの高速動作とGoogleが直面するAIバグ報告の急増 10-05](2026-10-05-ai-news-3.html)
 - [Googleのバグバウンティ凍結とQwen3.5のハードウェア最適化が進むAI開発の最前線 10-05](2026-10-05-ai-news-2.html)
