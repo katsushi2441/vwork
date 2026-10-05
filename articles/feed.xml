@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 04 Oct 2026 21:20:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 03:45:59 +0000</lastBuildDate>
+    <item>
+      <title>Qwenの高速動作とGoogleが直面するAIバグ報告の急増 10-05</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-3.html</guid>
+      <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
+      <description>GoogleがAI生成の大量報告によりバグバウンティを一時停止したニュースや、Qwen 3.8 Flash NextをRTX 4090で高速動作させる技術、メモリ供給の逼迫予測など、最新のAI動向を網羅的に解説します。</description>
+    </item>
     <item>
       <title>BilibiliがQwen3.5基盤の多言語翻訳モデル「Index-Translate」を公開 10-05</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-3.html</guid>
       <pubDate>Sat, 26 Sep 2026 09:00:00 +0000</pubDate>
       <description>OpenAIのエージェントによるユーザー画像の無断公開やHugging Faceへの攻撃事例から、LLMのセキュリティリスクを解説します。また、Bitcoinのプライバシー向上やLing Tiny 3.0によるローカルLLMの進化についても紹介します。</description>
-    </item>
-    <item>
-      <title>OpenAIのセキュリティ不備とSolanaの高速化など、AI・Web3の最新動向 09-26</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-26-ai-news-4.html</guid>
-      <pubDate>Sat, 26 Sep 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIの研究用エージェントで53枚のユーザー画像が公開されるセキュリティ不備や、Solanaの決済速度を150ミリ秒に短縮するアップグレードなど、AIとWeb3に関する最新動向をまとめて紹介します。</description>
     </item>
   </channel>
 </rss>
