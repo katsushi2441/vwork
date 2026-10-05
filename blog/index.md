@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [デジタル民主主義2030の「3つのブロードリスニング」に、当社のシステムを当てはめてみた——広聴AI・Pol.is互換・質問主意書・陳情](2026-10-06-dd2030-digital-democracy-broad-listening.html)
 - [名古屋市の学級閉鎖は104件、南区のインフルエンザは警報レベルの目安——区ごとの数字（2026年10月5日時点）](2026-10-05-nagoya-gakkyu-heisa-influenza.html)
 - [OpenFreeMap と MapLibre で、地名が日本語の地図を作る——感染症マップで使った手順と、OSM本家のタイルを使わない理由](2026-10-04-openfreemap-maplibre-japanese.html)
 - [統一地方選挙2027に向けて、議員事務所がAIエージェントとバイブコーディングで短期間・低コストに作れる5つのこと](2026-10-02-touitsu-chihou-senkyo-giin-dx.html)
