@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 06 Oct 2026 09:45:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 15:12:48 +0000</lastBuildDate>
+    <item>
+      <title>Mistral Large 4の登場とOpenAI GPT-6に採用される新アーキテクチャの衝撃 10-07</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news.html</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Mistral AIが新型モデル「Mistral Large 4」を発表し、高い汎用性を備えたマルチモーダル性能を実現しました。また、OpenAIのGPT-6へのLooped Transformers採用やReflection社の新モデルBeamの動向を解説します。</description>
+    </item>
     <item>
       <title>Reflectionの501Bモデル登場とTikTokやFalconによるAIの実装進展 10-06</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news-4.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-27-ai-news.html</guid>
       <pubDate>Sun, 27 Sep 2026 09:00:00 +0000</pubDate>
       <description>Google Playのエコシステムから脱却しConversationsを導入する背景や、オープンなソフトウェア構造の重要性を解説します。また、自身の性格を学習したデジタルアバター作成におけるAIクローンの倫理的課題についても論じます。</description>
-    </item>
-    <item>
-      <title>GoogleのGeminiがEC連携へ、llama.cppやQwenの進化など最新AI動向まとめ 09-27</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-27-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-27-ai-news-3.html</guid>
-      <pubDate>Sun, 27 Sep 2026 09:00:00 +0000</pubDate>
-      <description>GoogleのGeminiがFlipkartでのEC連携をテストするほか、llama.cppのドラフト作成速度が42倍向上した最新動向を紹介します。Qwen 4アーキテクチャへの移行や新図解言語Reladrawの情報も網羅しています。</description>
     </item>
   </channel>
 </rss>
