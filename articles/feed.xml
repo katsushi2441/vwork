@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 05 Oct 2026 21:20:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 03:32:38 +0000</lastBuildDate>
     <item>
       <title>U.Sで読む：OpenAIのEU対応とReflection社によるBeam公開など、AI・Web3の規制と技術革新の最前線 10-06</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news-2.html</guid>
       <pubDate>Tue, 06 Oct 2026 09:00:00 +0000</pubDate>
       <description>OpenAIがEUのAI法準拠のためChatGPTに電子透かしを導入する計画や、Reflection社による低コストなオープンウェイトモデルBeamの公開など、最新のAI規制と技術革新の動向を解説します。またllama.cpp v0.6.0の更新情報も網羅しています。</description>
+    </item>
+    <item>
+      <title>llama.cppの更新と米国CFTCによる暗号資産規制案など、最新AI・Web3動向まとめ 10-06</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news-3.html</guid>
+      <pubDate>Tue, 06 Oct 2026 09:00:00 +0000</pubDate>
+      <description>llama.cpp v0.6.0のリリースによるMTP投機的デコーディング対応や、Reflection社の新モデルBeamの発表など、最新のAI動向をまとめました。また米国CFTCによる暗号資産規制案についても解説します。</description>
     </item>
     <item>
       <title>Researchersで読む：中国のAIエージェント群とRTX 5080で動くClef Flash：最新技術の最前線 10-06</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-27-ai-news-2.html</guid>
       <pubDate>Sun, 27 Sep 2026 09:00:00 +0000</pubDate>
       <description>Blue Cross Blue Shieldが指摘するAI導入による9億4,200万ドルの医療コスト増大の実態と、個人のデジタルアバター作成に伴う倫理的課題について解説します。技術の効率性とリスクの両面を考察します。</description>
-    </item>
-    <item>
-      <title>GoogleがGeminiでショッピングを革新し、KrakenのPaywardは金融インフラへの巨額投資へ 09-27</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-27-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-27-ai-news-4.html</guid>
-      <pubDate>Sun, 27 Sep 2026 09:00:00 +0000</pubDate>
-      <description>GoogleがGeminiを活用しFlipkartでのショッピング体験をテストしたほか、Krakenの親会社Paywardが金融インフラへ巨額投資を行うニュースをまとめました。llama.cppの高速化手法も解説します。</description>
     </item>
   </channel>
 </rss>
