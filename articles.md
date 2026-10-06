@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Mistral Large 4の登場とGoogleが発表したEmbeddingGemma 2によるマルチモーダル進化 10-07](2026-10-07-ai-news-2.html)
 - [Mistral Large 4の登場とOpenAI GPT-6に採用される新アーキテクチャの衝撃 10-07](2026-10-07-ai-news.html)
 - [Reflectionの501Bモデル登場とTikTokやFalconによるAIの実装進展 10-06](2026-10-06-ai-news-4.html)
 - [llama.cppの更新と米国CFTCによる暗号資産規制案など、最新AI・Web3動向まとめ 10-06](2026-10-06-ai-news-3.html)
