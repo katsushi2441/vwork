@@ -1,0 +1,232 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>チームみらい・安野貴博氏が立ち上げたデジタル民主主義2030はオワコンか——Slack・GitHubの数字で考察した | VWork バイブコーディングフレームワーク</title><meta name="description" content="チームみらいの安野貴博氏が2025年1月に立ち上げた「デジタル民主主義2030」は、いまも活発なのか。Slackの書き込み、GitHubで取り込まれた修正、Discordのログを月ごとに数えました。ピークは2025年5月、2026年9月の書き込みは58件。ただ、広聴AIの開発はいまも続いています。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-06-dd2030-owakon-data.html"><meta property="og:type" content="article"><meta property="og:title" content="チームみらい・安野貴博氏が立ち上げたデジタル民主主義2030はオワコンか——Slack・GitHubの数字で考察した"><meta property="og:description" content="チームみらいの安野貴博氏が2025年1月に立ち上げた「デジタル民主主義2030」は、いまも活発なのか。Slackの書き込み、GitHubで取り込まれた修正、Discordのログを月ごとに数えました。ピークは2025年5月、2026年9月の書き込みは58件。ただ、広聴AIの開発はいまも続いています。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-06-dd2030-owakon-data.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="チームみらい・安野貴博氏が立ち上げたデジタル民主主義2030はオワコンか——Slack・GitHubの数字で考察した"><meta name="twitter:description" content="チームみらいの安野貴博氏が2025年1月に立ち上げた「デジタル民主主義2030」は、いまも活発なのか。Slackの書き込み、GitHubで取り込まれた修正、Discordのログを月ごとに数えました。ピークは2025年5月、2026年9月の書き込みは58件。ただ、広聴AIの開発はいまも続いています。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "チームみらい・安野貴博氏が立ち上げたデジタル民主主義2030はオワコンか——Slack・GitHubの数字で考察した", "description": "チームみらいの安野貴博氏が2025年1月に立ち上げた「デジタル民主主義2030」は、いまも活発なのか。Slackの書き込み、GitHubで取り込まれた修正、Discordのログを月ごとに数えました。ピークは2025年5月、2026年9月の書き込みは58件。ただ、広聴AIの開発はいまも続いています。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-06-dd2030-owakon-data.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-06", "dateModified": "2026-10-06", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>チームみらい・安野貴博氏が立ち上げたデジタル民主主義2030はオワコンか——Slack・GitHubの数字で考察した</h1><p class="meta">2026-10-06</p><p>名古屋でAIシステム開発の会社をやっています。10月6日、デジタル民主主義2030（DD2030）のSlackに参加し、開発中の「広聴AI」に実測を共有して、修正の提案も出しました（その流れは<a href="https://exbridge.jp/vibeblog/2026-10-06-dd2030-digital-democracy-broad-listening.html?ref=vibeblog_dd2030-data">前の記事</a>に書いています）。</p>
+<p>入ってみて最初に感じたのは、「静かだな」ということでした。登録者は1,600人を超えているのに、書き込みがほとんどありません。印象で「オワコン」と言うのは簡単ですが、それでは何も分からないので、数字で確かめました。</p>
+<h2>先に結論</h2>
+<p><strong>オワコンではありません。ただ、ピークは2025年5月で、いまは十数人で回している状態です。</strong></p>
+<ul>
+<li>Slackの書き込みは、2025年5月の6,982件（138人）がピークで、2026年9月は58件（16人）</li>
+<li>開発は、広聴AIはいまも続いている（2026年9月に26件の修正）。いどばたとPolimoneyは、ほぼ止まっている</li>
+<li>ピークの2025年5月は、安野氏がチームみらいを結党し、DD2030のボードを退いた月と重なる</li>
+</ul>
+<h2>調べ方</h2>
+<ul>
+<li><strong>Slack</strong>：DD2030のSlackの公開チャンネル59個の書き込みを、月ごとに数えました。スレッドの返信も含め、ボットは除いています。DD2030は、同じ公開チャンネルのログを<a href="https://github.com/digitaldemocracy2030/slack-logs">GitHubで公開</a>しています</li>
+<li><strong>GitHub</strong>：広聴AI・いどばた・Polimoneyのリポジトリで、取り込まれた（マージされた）修正の数と、それを書いた人の数を月ごとに数えました</li>
+<li><strong>Discord</strong>：DD2030の公式Discordの公開ログ（これも<a href="https://github.com/digitaldemocracy2030/discord_ddb_log">GitHubで公開</a>）の量を週ごとに見ました</li>
+<li>2026年10月6日に数えています。非公開のチャンネルや、通話（ハドル）での活動は数に入っていません</li>
+</ul>
+<h2>Slackの書き込み（月ごと）</h2>
+<table>
+<thead>
+<tr>
+<th>月</th>
+<th align="right">書き込み</th>
+<th align="right">書いた人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025年3月</td>
+<td align="right">1,590</td>
+<td align="right">108</td>
+</tr>
+<tr>
+<td>2025年4月</td>
+<td align="right">4,288</td>
+<td align="right">142</td>
+</tr>
+<tr>
+<td><strong>2025年5月</strong></td>
+<td align="right"><strong>6,982</strong></td>
+<td align="right"><strong>138</strong></td>
+</tr>
+<tr>
+<td>2025年6月</td>
+<td align="right">1,231</td>
+<td align="right">84</td>
+</tr>
+<tr>
+<td>2025年7月</td>
+<td align="right">1,402</td>
+<td align="right">69</td>
+</tr>
+<tr>
+<td>2025年8月</td>
+<td align="right">820</td>
+<td align="right">52</td>
+</tr>
+<tr>
+<td>2025年9月</td>
+<td align="right">667</td>
+<td align="right">29</td>
+</tr>
+<tr>
+<td>2025年10月</td>
+<td align="right">847</td>
+<td align="right">45</td>
+</tr>
+<tr>
+<td>2025年11月</td>
+<td align="right">877</td>
+<td align="right">33</td>
+</tr>
+<tr>
+<td>2025年12月</td>
+<td align="right">1,606</td>
+<td align="right">42</td>
+</tr>
+<tr>
+<td>2026年1月</td>
+<td align="right">1,560</td>
+<td align="right">73</td>
+</tr>
+<tr>
+<td>2026年2月</td>
+<td align="right">1,636</td>
+<td align="right">49</td>
+</tr>
+<tr>
+<td>2026年3月</td>
+<td align="right">1,652</td>
+<td align="right">43</td>
+</tr>
+<tr>
+<td>2026年4月</td>
+<td align="right">648</td>
+<td align="right">37</td>
+</tr>
+<tr>
+<td>2026年5月</td>
+<td align="right">805</td>
+<td align="right">28</td>
+</tr>
+<tr>
+<td>2026年6月</td>
+<td align="right">896</td>
+<td align="right">49</td>
+</tr>
+<tr>
+<td>2026年7月</td>
+<td align="right">825</td>
+<td align="right">21</td>
+</tr>
+<tr>
+<td>2026年8月</td>
+<td align="right">531</td>
+<td align="right">35</td>
+</tr>
+<tr>
+<td><strong>2026年9月</strong></td>
+<td align="right"><strong>58</strong></td>
+<td align="right"><strong>16</strong></td>
+</tr>
+<tr>
+<td>2026年10月（6日まで）</td>
+<td align="right">34</td>
+<td align="right">5</td>
+</tr>
+</tbody>
+</table>
+<p>2025年5月のピークのあと、いったん月700〜1,400件に落ち、2025年12月〜2026年3月にもう一度、月1,600件前後の山があります。2026年4月からは月500〜900件で、<strong>2026年9月に58件まで急に減りました。</strong></p>
+<p>議論の場がDiscordに移ったのかとも考えましたが、Discordの公開ログは週に数KBで、ほとんど書き込みがありません。9月に急に減った理由は、数字からは分かりませんでした。</p>
+<h2>開発（GitHubで取り込まれた修正の数）</h2>
+<h3>広聴AI：いまも続いている</h3>
+<table>
+<thead>
+<tr>
+<th>月</th>
+<th align="right">取り込まれた修正</th>
+<th align="right">書いた人</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025年3月</td>
+<td align="right">98</td>
+<td align="right">11</td>
+</tr>
+<tr>
+<td>2025年4月</td>
+<td align="right">76</td>
+<td align="right">11</td>
+</tr>
+<tr>
+<td>2025年5月</td>
+<td align="right">65</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td>2025年9月</td>
+<td align="right">11</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td>2026年2月</td>
+<td align="right">29</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td>2026年5月</td>
+<td align="right">39</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>2026年9月</td>
+<td align="right">26</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+<p>これまでの合計は462件です。公開直後の2025年3〜5月は月10人以上が書いていましたが、いまは月1〜5人です。人は減っても、修正の数は月によって公開直後に近い水準まで戻っていて、少数のコアメンバーが続けていることが分かります。2025年12月には安定版 v4.0.0 も出ています。</p>
+<h3>いどばた・Polimoney：ほぼ止まっている</h3>
+<ul>
+<li>いどばた：2025年5月に125件（10人）がピークで、2025年秋以降はほぼ止まっています</li>
+<li>Polimoney（政治資金の見える化）：2025年5月に38件がピークで、2026年5月の8件を最後に止まっています</li>
+</ul>
+<h2>何が起きたのか</h2>
+<p>数字と、公開されている出来事を並べると、次のように読めます。</p>
+<ol>
+<li><strong>2025年1月</strong>：安野貴博氏がDD2030を立ち上げる</li>
+<li><strong>2025年3月</strong>：広聴AIをオープンソースで公開。Slackに人が集まり始める</li>
+<li><strong>2025年5月</strong>：Slack・開発ともにピーク。同じ月に、安野氏がチームみらいを結党し、政治的中立のためDD2030のボードを退く</li>
+<li><strong>2025年10月以降</strong>：チームみらいの「永田町エンジニアチーム」が、「みらいまる見え政治資金」「みらい議会」など自前のプロダクトを出す</li>
+<li><strong>2026年2月</strong>：チームみらいが衆院選の比例で381万票・11議席</li>
+<li><strong>2026年6〜8月</strong>：DD2030は詐欺広告対策の「コアループ」で市民熟議を開き、8月にはデジタル民主主義サミットを開催</li>
+<li><strong>2026年9月</strong>：Slackの書き込みが58件に</li>
+</ol>
+<p>注目と人の流れが、政党としてのチームみらいの側へ移った——と考えると、ピークの時期と合います。一方で、DD2030が政党から切り離された場所として続いているのも事実です。</p>
+<h2>当社の結論</h2>
+<p>「オワコン」というより、<strong>立ち上げの熱が引いたあとの、少人数の開発コミュニティ</strong>になった、というのが数字から言えることです。</p>
+<p>参加する側から見ると、悪いことばかりではありません。動いている人が少ないので、貢献すると目に留まりやすいです。当社が広聴AIの課題（#471）に実測を書いたところ、Issueを整理している中心のメンバーから半日で返事がありました。修正の提案（PR #952）も、人のレビューを待っています。</p>
+<p>ただ、「コミュニティを通じて大勢に届く」ことは期待しにくい規模です。当社は、広聴AIの開発に貢献しながら、その成果を自社の議会・行政向けのシステム（<a href="https://xb4g.com/giin/bill?ref=vibeblog_dd2030-data">国会の法案ページ</a>、<a href="https://kurage.exbridge.jp/kshuisho.php/?ref=vibeblog_dd2030-data">質問主意書アシスト</a>、<a href="https://kappstore.exbridge.jp/app.php?id=53493d74a09cfd8c&amp;ref=vibeblog_dd2030-data">広聴AIの完全ローカル導入キット</a>）に生かしていく、という関わり方をするつもりです。</p>
+<h2>よくある質問</h2>
+<h3>デジタル民主主義2030とチームみらいは同じ団体ですか？</h3>
+<p>違います。デジタル民主主義2030は、安野貴博氏が2025年1月に立ち上げた民間のコミュニティで、チームみらいは同氏が2025年5月に結党した政党です。安野氏は結党の際、政治的中立のためにデジタル民主主義2030のボードを退いています。広聴AIはデジタル民主主義2030が開発し、チームみらいは使う側です。</p>
+<h3>デジタル民主主義2030はもう活動していないのですか？</h3>
+<p>活動しています。広聴AIの開発は2026年9月にも26件の修正が取り込まれていて、詐欺広告対策の市民熟議やサミットも開かれています。ただ、Slackの書き込みは2025年5月の約7,000件から、2026年9月には58件まで減っています。</p>
+<h3>この数字はどうやって数えましたか？</h3>
+<p>Slackは公開チャンネル59個の書き込み（スレッドの返信を含み、ボットを除く）を、GitHubは各リポジトリで取り込まれた修正を、月ごとに数えました。いずれも2026年10月6日時点で、非公開のチャンネルや通話での活動は入っていません。</p>
+<h3>自分の会社や自治体でも、広聴AIのような仕組みを使えますか？</h3>
+<p>広聴AIはオープンソースなので、誰でも使えます。当社では、外部のAIを使わずに自社のサーバーだけで動かす導入キットや、業務に合わせた<a href="https://kurage.exbridge.jp/vibe-customize.html?ref=vibeblog_dd2030-data">バイブカスタマイズ</a>、名古屋市内で月15時間の<a href="https://exbridge.jp/ai-it-komon.html?ref=vibeblog_dd2030-data">AI-IT顧問契約</a>をお受けしています。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
