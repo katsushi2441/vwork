@@ -1,0 +1,99 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>建設業許可の更新期限を自動で計算・管理する——「検索する人＝買い手」の業務を選んで1日で作った | VWork バイブコーディングフレームワーク</title><meta name="description" content="建設業許可の更新は満了の30日前まで、決算変更届は決算から4か月以内。許可日から期限を計算する無料ページと、顧問先ごとに期限前に知らせる管理画面を作りました。介護施設のページに毎日400人来ても店に0人だった反省から、検索する人がそのまま買い手になる業務を実測で選んだ経緯も書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-06-kensetsu-kyoka-koshin-kigen.html"><meta property="og:type" content="article"><meta property="og:title" content="建設業許可の更新期限を自動で計算・管理する——「検索する人＝買い手」の業務を選んで1日で作った"><meta property="og:description" content="建設業許可の更新は満了の30日前まで、決算変更届は決算から4か月以内。許可日から期限を計算する無料ページと、顧問先ごとに期限前に知らせる管理画面を作りました。介護施設のページに毎日400人来ても店に0人だった反省から、検索する人がそのまま買い手になる業務を実測で選んだ経緯も書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-06-kensetsu-kyoka-koshin-kigen.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="建設業許可の更新期限を自動で計算・管理する——「検索する人＝買い手」の業務を選んで1日で作った"><meta name="twitter:description" content="建設業許可の更新は満了の30日前まで、決算変更届は決算から4か月以内。許可日から期限を計算する無料ページと、顧問先ごとに期限前に知らせる管理画面を作りました。介護施設のページに毎日400人来ても店に0人だった反省から、検索する人がそのまま買い手になる業務を実測で選んだ経緯も書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "建設業許可の更新期限を自動で計算・管理する——「検索する人＝買い手」の業務を選んで1日で作った", "description": "建設業許可の更新は満了の30日前まで、決算変更届は決算から4か月以内。許可日から期限を計算する無料ページと、顧問先ごとに期限前に知らせる管理画面を作りました。介護施設のページに毎日400人来ても店に0人だった反省から、検索する人がそのまま買い手になる業務を実測で選んだ経緯も書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-06-kensetsu-kyoka-koshin-kigen.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-06", "dateModified": "2026-10-06", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>建設業許可の更新期限を自動で計算・管理する——「検索する人＝買い手」の業務を選んで1日で作った</h1><p class="meta">2026-10-06</p><p>名古屋でAIシステム開発の会社をやっています。今日、建設業許可の更新期限を計算する無料のページと、顧問先ごとに期限を管理する仕組みを作って公開しました。</p>
+<ul>
+<li>期限の計算（無料・登録不要）：<a href="https://kurage.exbridge.jp/kkensetsu.php/?ref=vibeblog_kkensetsu">Kurage 建設業許可 更新期限チェック</a></li>
+<li>管理画面のデモ（見本6件入り・毎日0時に戻る）：<a href="https://proto.exbridge.jp/kkensetsu/?ref=vibeblog_kkensetsu">proto.exbridge.jp/kkensetsu/</a></li>
+<li>商品ページ：<a href="https://kappstore.exbridge.jp/app.php?id=c8a24775df796de6&amp;ref=vibeblog_kkensetsu">Kurage 建設業許可 期限管理</a></li>
+<li>ソースコード：<a href="https://github.com/katsushi2441/kkensetsu">github.com/katsushi2441/kkensetsu</a></li>
+</ul>
+<p>この記事では、なぜ「建設業許可」を選んだのかを先に書きます。作ったものの中身は後半です。</p>
+<h2>毎日400人来るページから、店には0人だった</h2>
+<p>当社は、公開データを1件1ページに展開したシステムをいくつも出しています。いちばん人が来ているのは、介護事業所と障害者グループホームの事業所ページで、検索から1日400人以上が来ます。</p>
+<p>ところが、そこから商品を売っている店（kappstore）に進んだ人は、2週間でほぼ0人でした。見に来ているのは施設を探しているご家族で、システムを買う人ではないからです。ハザードマップの地域ページも同じで、来るのは住民です。</p>
+<p>アクセスは集まっている。でも売れない。ずれているのは「検索している人」と「買う人」でした。なので次に作るものは、<strong>検索している人がそのまま買い手になる業務</strong>から選ぶことにしました。</p>
+<h2>3つの候補を、検索数と公開データで比べた</h2>
+<p>候補は3つでした。Googleのキーワードプランナーで月間の検索数を測り、使える公開データの中身と利用規約も確かめました。</p>
+<table>
+<thead>
+<tr>
+<th>候補</th>
+<th>分かったこと</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>入札案件ナビ</td>
+<td>官公需情報ポータルのAPIは鍵なし・商用可。「入札」は月9,900回。ただし自治体の案件がほとんど入っておらず、愛知県は直近1か月で171件、名古屋市は今年0件だった</td>
+</tr>
+<tr>
+<td>取引先のインボイス・法人番号チェック</td>
+<td>国税庁の一括ダウンロードは申請なしで使える。「法人番号 検索」は月24.6万回だが、ほぼ国税庁のサイトへ行きたい人。個人事業者の情報は本人の同意なく公表すると個人情報保護法に触れるおそれがあると明記されている</td>
+</tr>
+<tr>
+<td>建設業許可の期限管理</td>
+<td>「建設業許可 更新」1,900回、「必要書類」720回、「費用」260回、「自分で」140回、「期限切れ」110回。検索しているのは建設会社と行政書士だけ</td>
+</tr>
+</tbody>
+</table>
+<p>数だけなら法人番号が圧倒的です。でも、その人たちは当社のページには来ません。建設業許可は数こそ小さいものの、検索する人の全員が「許可を持っている会社」か「その手続きをする人」です。期限を過ぎると許可が消えるので、困っている度合いも強い。これに決めました。</p>
+<p>ちなみに、10月1日に「入口のページだけ先に作り、問い合わせが来たら開発する」形で出した7件の着地ページは、5日間でそれぞれ2〜5人しか来ていませんでした。着地ページだけでは人は集まらず、<strong>計算できる・調べられるページ</strong>で人を集める必要がある、というのも今回の前提です。</p>
+<h2>期限の数え方は、条文どおりに</h2>
+<p>計算に入れた決まりは次のとおりです。e-Govの法令本文と、国土交通省関東地方整備局の手引きで確かめました。</p>
+<ul>
+<li>有効期間は5年。許可日から5年目を経過する日の前日で満了し、満了日が休日でも動かない（建設業法第3条第3項・手引き）</li>
+<li>更新申請は「有効期間満了の日の三十日前までに」（建設業法施行規則第5条）。その日が行政庁の休日なら直後の開庁日</li>
+<li>満了日までに申請していれば、処分が出るまでは今の許可が有効（建設業法第3条第4項）</li>
+<li>決算変更届は「毎事業年度経過後四月以内」（建設業法第11条第2項）</li>
+</ul>
+<p>たとえば2021年11月25日の許可なら、満了日は2026年11月24日。30日前は10月25日の日曜日なので、更新申請の期限は10月26日の月曜日になります。休日のずれ・和暦での入力・2月29日の許可を含む6件で、手で数えた答えと画面の結果が一致することを確かめてから公開しました。</p>
+<p>逆に、確かめられなかったことは書いていません。「決算変更届を出していないと更新を受け付けてもらえない」という話はよく見かけますが、手引きで確認できなかったので、画面には入れていません。</p>
+<h2>47都道府県の窓口は、公式ページで確かめた</h2>
+<p>都道府県ごとのページには、更新の申請先、手数料の納め方、電子申請（JCIP）の受付、公式の手引きへのリンクを載せました。調べてみると、納め方はかなりばらばらでした。</p>
+<ul>
+<li>東京都：窓口で現金かキャッシュレス、電子申請はPay-easyのみ</li>
+<li>大阪府：府の手数料窓口で納付。30日前を過ぎた更新は電子申請では受け付けない</li>
+<li>福岡県：紙の申請は領収証紙、電子申請はオンライン決済で、互いに混ぜられない</li>
+<li>愛知県：証紙か、令和7年1月20日からは窓口のキャッシュレス決済</li>
+</ul>
+<p>愛知県のサイトは当社からのアクセスを弾く設定になっていて、ページを直接は開けませんでした。そこで検索結果に出る県の公式ページと案内PDFで確かめています。地元なのに一番手間がかかりました。</p>
+<h2>管理画面は、事務所で使う前提で</h2>
+<p>無料の計算ページは保存も通知もしません。事務所で使うときに欲しいのは、顧問先の許可を入れておいて、期限が来る前に知らせてくれることです。</p>
+<ul>
+<li>顧問先ごとに許可番号・許可日・決算月・連絡先を登録（CSVでまとめて取り込める）</li>
+<li>期限の近い順に一覧。期限切れ・30日以内・31〜90日の件数を上に出す</li>
+<li>「更新申請を出した」「決算変更届を出した」を押すと、その期限の警告が消え、決算変更届は次の決算期に進む</li>
+<li>期限の90・60・30・14・7日前に、1日1通にまとめてメールで知らせる</li>
+<li>Googleカレンダーで購読すると、期限が予定として入る</li>
+</ul>
+<p>PHPとSQLiteだけで動くので、レンタルサーバーに置けます。顧問先の情報は置いたサーバーにだけ残り、月額はかかりません。</p>
+<h2>よくある質問</h2>
+<h3>建設業許可の更新はいつまでに申請しますか？</h3>
+<p>有効期間が満了する日の30日前までです（建設業法施行規則第5条）。その日が土日・祝日・年末年始なら直後の開庁日までです。</p>
+<h3>30日前を過ぎたら、もう更新できませんか？</h3>
+<p>満了日までに更新の申請が受け付けられれば、審査中は今の許可が有効です（建設業法第3条第4項）。ただし受け付けの扱いは許可行政庁ごとに違うので、すぐ窓口に相談してください。</p>
+<h3>決算変更届の期限はいつですか？</h3>
+<p>毎事業年度が終わってから4か月以内です。3月決算なら7月31日です。</p>
+<h3>申請書も作ってくれますか？</h3>
+<p>作りません。申請書の作成と提出は行政書士の業務で、この仕組みは期限を数えて知らせるところまでです。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
