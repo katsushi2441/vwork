@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [チームみらい・安野貴博氏が立ち上げたデジタル民主主義2030はオワコンか——Slack・GitHubの数字で考察した](2026-10-06-dd2030-owakon-data.html)
 - [チームみらいの「みらい議会」を参考に、国会の法案741件を質疑・答弁とつなぐページを作った——審議経過・会派別の賛否・声の届け先](2026-10-06-team-mirai-mirai-gikai-kokkai-bill.html)
 - [ブロードリスニングの後半——集めた意見が国会でどう扱われたかを追う（偽広告・SNS型投資詐欺を例に）](2026-10-06-broad-listening-after-policy-tracking.html)
 - [デジタル民主主義2030の「3つのブロードリスニング」に、当社のシステムを当てはめてみた——広聴AI・Pol.is互換・質問主意書・陳情](2026-10-06-dd2030-digital-democracy-broad-listening.html)
