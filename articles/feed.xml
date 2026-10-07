@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 07 Oct 2026 09:59:56 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 15:12:10 +0000</lastBuildDate>
+    <item>
+      <title>Zcashで読む：NVIDIAのNemotronが数学・情報学で金メダル級の成果、そして量子コンピューティングとWeb3のセキュリティ… 10-08</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-08-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-08-ai-news.html</guid>
+      <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+      <description>NVIDIAのNemotronがファインチューニングによりIOIとIMOでゴールドレベルの成果を達成しました。また、ChromeのJPEG XL対応や量子コンピュータによる秘密鍵への脅威、2万パラメータの小型LLMの物語生成など最新技術動向を解説します。</description>
+    </item>
     <item>
       <title>Mistral Large 4の登場とOpenAI GPT-6に採用される新アーキテクチャの衝撃 10-07</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-4.html</guid>
       <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
       <description>汎用的なコンピューター操作エージェント向けフレームワーク「Holo4」の登場や、NVIDIAによるオープンソース・サンドボックス「OpenShell」の公開について解説します。また、企業のオープンモデル採用傾向やGoogle検索のAI変容をまとめます。</description>
-    </item>
-    <item>
-      <title>Qwenの進化とGoogleの検索戦略、そしてVitalik Buterinが描くEthereumの2030年ビジョン 09-28</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-3.html</guid>
-      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Qwenモデルの精度向上やゲーム操作能力の進化、Googleの生成AI要約に関する議論を解説します。さらにVitalik Buterin氏が描くEthereumの2030年ビジョンなど、最新のAIとWeb3動向を網羅しています。</description>
     </item>
   </channel>
 </rss>

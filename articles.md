@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Zcashで読む：NVIDIAのNemotronが数学・情報学で金メダル級の成果、そして量子コンピューティングとWeb3のセキュリティ… 10-08](2026-10-08-ai-news.html)
 - [OpenAIの数学への挑戦とAIエージェントが直面するWebアクセス権の壁 10-07](2026-10-07-ai-news-4.html)
 - [Microsoftが認めるGPT-6の技術とOpenAIエージェントの課題 10-07](2026-10-07-ai-news-3.html)
 - [Mistral Large 4の登場とGoogleが発表したEmbeddingGemma 2によるマルチモーダル進化 10-07](2026-10-07-ai-news-2.html)
