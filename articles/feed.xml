@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 07 Oct 2026 03:46:30 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 09:59:56 +0000</lastBuildDate>
     <item>
       <title>Mistral Large 4の登場とOpenAI GPT-6に採用される新アーキテクチャの衝撃 10-07</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news-3.html</guid>
       <pubDate>Wed, 07 Oct 2026 09:00:00 +0000</pubDate>
       <description>MicrosoftがGPT-6シリーズでLooped Transformersを採用することを明らかにしました。また、Mistral Large 4の登場やGoogleのembeddinggemma-2公開、OpenAIエージェントの安全性課題など最新情報をまとめます。</description>
+    </item>
+    <item>
+      <title>OpenAIの数学への挑戦とAIエージェントが直面するWebアクセス権の壁 10-07</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news-4.html</guid>
+      <pubDate>Wed, 07 Oct 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIが公開した高度な数学分野におけるLLMの進展や、Jake Boggan氏によるBarnetteの予想解決のニュースを解説します。また、AIエージェントのWebアクセス権の壁やHark社のプライバシー重視な新サービスを紹介します。</description>
     </item>
     <item>
       <title>Reflectionの501Bモデル登場とTikTokやFalconによるAIの実装進展 10-06</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-3.html</guid>
       <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
       <description>Qwenモデルの精度向上やゲーム操作能力の進化、Googleの生成AI要約に関する議論を解説します。さらにVitalik Buterin氏が描くEthereumの2030年ビジョンなど、最新のAIとWeb3動向を網羅しています。</description>
-    </item>
-    <item>
-      <title>Googleで読む：Qwenモデルの精度向上とVitalik Buterinが描くEthereumの2030年ビジョン 09-28</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-28-ai-news-2.html</guid>
-      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Qwenモデルへのlogit penalty導入による精度向上やNaive-N0.5-Flashの登場など最新AI動向を解説します。またVitalik Buterin氏が描く2030年のEthereumビジョンについても詳しく紹介します。</description>
     </item>
   </channel>
 </rss>
