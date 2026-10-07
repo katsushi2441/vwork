@@ -198,9 +198,8 @@ def ensure_pages_workflow(commit_sha: str):
             "gh", "run", "list",
             "--repo", GITHUB_REPO,
             "--workflow", PAGES_WORKFLOW,
-            "--commit", commit_sha,
-            "--limit", "1",
-            "--json", "databaseId,status,conclusion",
+            "--limit", "20",
+            "--json", "databaseId,status,conclusion,headSha",
         ],
         capture_output=True,
         text=True,
@@ -208,7 +207,8 @@ def ensure_pages_workflow(commit_sha: str):
     if result.returncode != 0:
         raise RuntimeError(f"GitHub Pages実行状況を確認できません: {result.stderr.strip()}")
 
-    runs = json.loads(result.stdout or "[]")
+    # gh 2.96 の run list には --commit が無い（2026-10-07 に unknown flag で失敗）。直近20件を取ってコミットで絞る
+    runs = [r for r in json.loads(result.stdout or "[]") if r.get("headSha") == commit_sha][:1]
     if runs:
         print(f"  Pages workflow: {runs[0]['status']}")
         return
