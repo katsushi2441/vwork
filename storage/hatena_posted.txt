@@ -629,3 +629,5 @@ note-n29b87dbd59bd
 2026-10-06-ai-news-4
 2026-10-07-ai-news
 2026-10-07-ai-news-2
+2026-10-07-ai-news-3
+2026-10-07-ai-news-4
