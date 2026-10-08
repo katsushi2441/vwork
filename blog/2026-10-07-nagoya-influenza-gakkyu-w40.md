@@ -18,7 +18,7 @@ tags: [名古屋市, 学級閉鎖, インフルエンザ, 感染症マップ]
 
 数字はどれも名古屋市の発表をそのまま使っています。警報・注意報は、国の基準値を区の値に当てはめた「目安」で、市が正式に出したものではありません。
 
-毎日の最新の学級閉鎖は、[名古屋市の学級閉鎖（最新）](https://kurage.exbridge.jp/kkansen.php/gakkyu/?ref=vibeblog_nagoya-flu-w40)のページで、市の発表に合わせて更新しています。
+毎日の最新の学級閉鎖は、[名古屋市の学級閉鎖 最新](https://exbridge.jp/vibeblog/nagoya-gakkyu-heisa.html)のページで、市の発表に合わせて毎日更新しています（区ごとの地図は[Kurage 感染症マップ](https://kurage.exbridge.jp/kkansen.php/gakkyu/?ref=vibeblog_nagoya-flu-w40)）。
 
 ## 区ごとのインフルエンザ（第40週・9月28日〜10月4日）
 
