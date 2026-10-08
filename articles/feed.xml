@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 08 Oct 2026 15:14:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 21:27:43 +0000</lastBuildDate>
+    <item>
+      <title>OpenAIの安全研究を巡る論争と、最新AIモデルによるサイバー攻撃の実態 10-09</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news-2.html</guid>
+      <pubDate>Fri, 09 Oct 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIの安全研究を巡る論争や、DeepSeek v4.1-Flash等の最新AIモデルを組み合わせた韓国銀行へのサイバー攻撃の実態を解説します。また、Qwen3.8-Flash-Nextを高速動作させる低コストな機材構成も紹介します。</description>
+    </item>
     <item>
       <title>GoogleのAI Edge Foresight登場と、DeepSeekやClaudeを用いた高度なサイバー攻撃の脅威 10-09</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-3.html</guid>
       <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
       <description>ShopifyがAIエージェント向けチェックアウト機能を公開したほか、AMDによるWorld Labsの82億ドルでの買収方針やAnthropicのClaude Sonnet 5.5リリースなど、最新のAI・Web3動向を要約します。</description>
-    </item>
-    <item>
-      <title>AMDのWorld Labs買収とOpenAIのモデル公開見送り：加速するAIインフラと安全性の攻防 09-29</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-4.html</guid>
-      <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
-      <description>AMDによるWorld Labsの買収計画やOpenAIのモデル公開見送りのニュースを解説します。Qwen3.8-Flash-Nextの新リリースやModal Labsの資金調達など、最新のAIインフラと安全性の動向を網羅しています。</description>
     </item>
   </channel>
 </rss>
