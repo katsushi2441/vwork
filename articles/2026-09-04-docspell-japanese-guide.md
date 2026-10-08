@@ -77,6 +77,9 @@ de =
 - CSS の生成に `tailwindcss` コマンドが要ります。`modules/webapp` で `npm ci` してから `node_modules/.bin` を PATH に通さないと、Elm は通っているのにスタイルの段で落ちます
 - JDK 17 と sbt は coursier で入れると環境を汚しません
 
+> **ここで止まったら、導入を任せてください。** 当社がこの記事のとおり実際に入れて確かめた手順で、サーバーへの導入、日本語化、初期設定まで代行します（標準プラン 税込110,000円から）。
+> [文書管理システムを無料で入れる（Paperless-ngx・Docspellの導入を代行）](https://exbridge.jp/solution/bunsho-kanri.html?ref=vibeblog-oss-docspell)
+
 ## 会社で使うときの勘所（実測から）
 
 **メール取り込みは最初に設計する。** 請求書がメール添付で届く会社なら、IMAP の定期取り込み（scan mailbox）を設定して、取り込んだ後にメールを移動するか残すかを決めます。ここを曖昧にすると同じ書類が二重に入ります。

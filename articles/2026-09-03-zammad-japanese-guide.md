@@ -55,6 +55,9 @@ zammad run rails r 'Translation.sync'
 
 個別の文言はZammad管理画面の翻訳カスタマイズでも上書きできます。
 
+> **ここで止まったら、導入を任せてください。** 当社がこの記事のとおり実際に入れて確かめた手順で、サーバーへの導入、日本語化、初期設定まで代行します（標準プラン 税込110,000円から）。
+> [問い合わせ管理システムを無料で入れる（FreeScout・Zammadの導入を代行）](https://exbridge.jp/solution/toiawase.html?ref=vibeblog-oss-zammad)
+
 ## 本家への還元: 直接PRは「拒否」と明文化されている
 
 前回の [Krayin日本語化](2026-08-18-krayin-crm-japanese-guide.html) ではGitHubへのPRがそのままマージされましたが、Zammadは開発者ドキュメントに **「翻訳ファイルを直接変更するPRは拒否する」** と明記されています。正規ルートは翻訳プラットフォームの [Weblate](https://translations.zammad.org/)（要アカウント）です。

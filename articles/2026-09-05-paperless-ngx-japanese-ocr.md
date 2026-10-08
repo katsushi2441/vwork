@@ -154,6 +154,9 @@ PAPERLESS_OCR_USER_ARGS={"tesseract_pagesegmode": 6}
 
 社名・件名・日付・金額・口座番号まで、すべて正確に読めました。
 
+> **ここで止まったら、導入を任せてください。** 当社がこの記事のとおり実際に入れて確かめた手順で、サーバーへの導入、日本語化、初期設定まで代行します（標準プラン 税込110,000円から）。
+> [文書管理システムを無料で入れる（Paperless-ngx・Docspellの導入を代行）](https://exbridge.jp/solution/bunsho-kanri.html?ref=vibeblog-oss-paperless)
+
 ## 日本語の全文検索は、そのままで効く
 
 ここは良い知らせです。**追加の設定は要りません。**

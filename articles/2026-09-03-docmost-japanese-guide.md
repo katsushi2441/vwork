@@ -109,6 +109,9 @@ volumes: { docmost: {}, db_data: {}, redis_data: {} }
 
 これは Docmost 固有というより、PostgreSQL の全文検索を日本語で使う OSS 全般に共通する話です。将来のバージョンで改善される可能性はありますが、**導入時点では運用で補う**のが現実的です。
 
+> **ここで止まったら、導入を任せてください。** 当社がこの記事のとおり実際に入れて確かめた手順で、サーバーへの導入、日本語化、初期設定まで代行します（標準プラン 税込110,000円から）。
+> [社内wikiを無料で作る（Docmostの導入を代行）](https://exbridge.jp/solution/shanai-wiki.html?ref=vibeblog-oss-docmost)
+
 ## 移行・入出力（無料版でどこまで）
 
 - **ページの書き出し**：Markdown／HTML で1ページずつ。スペース単位なら zip で一括

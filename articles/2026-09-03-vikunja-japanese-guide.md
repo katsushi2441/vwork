@@ -97,6 +97,9 @@ services:
 
 「日本語が無いOSSを訳して本家に返す」という当社の取り組みは、これで Krayin（CRM、本家マージ済み）、Zammad（ヘルプデスク、Weblate 100%）に続く3本目になります。
 
+> **ここで止まったら、導入を任せてください。** 当社がこの記事のとおり実際に入れて確かめた手順で、サーバーへの導入、日本語化、初期設定まで代行します（標準プラン 税込110,000円から）。
+> [タスク管理ツールを無料で自社に入れる（Vikunja・Plankaの導入を代行）](https://exbridge.jp/solution/task-kanri.html?ref=vibeblog-oss-vikunja)
+
 ## 会社で使うときの勘所（実測から）
 
 **CalDAVは本当に動く**。`/dav/principals/<ユーザー名>/` に対して PROPFIND を投げると 207 Multi-Status が返り、プロジェクトがカレンダーとして見えました。iPhone の「アカウント追加 → その他 → CalDAV」やThunderbirdから、Vikunjaのタスクを既存の予定と並べて見られます。社内の「タスクは Vikunja、予定はスマホの標準カレンダー」という分業が成り立ちます。
