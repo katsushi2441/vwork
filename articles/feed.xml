@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 08 Oct 2026 03:33:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 09:47:10 +0000</lastBuildDate>
     <item>
       <title>Margaret Hamiltonの逝去とllama.cppの進化：AIインフラと歴史を動かす技術革新 10-08</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-08-ai-news-3.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-08-ai-news.html</guid>
       <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAのNemotronがファインチューニングによりIOIとIMOでゴールドレベルの成果を達成しました。また、ChromeのJPEG XL対応や量子コンピュータによる秘密鍵への脅威、2万パラメータの小型LLMの物語生成など最新技術動向を解説します。</description>
+    </item>
+    <item>
+      <title>Claude Haikuの進化とSamsungによるUSDC統合など、AI・Web3の最前線ニュース 10-08</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-08-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-08-ai-news-4.html</guid>
+      <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Claude Haiku 5.5の登場やNemotronの数学的推論能力向上など、AI・Web3の最新技術ニュースをまとめました。Microsoftの新型AI PCやNous Researchの企業価値15億ドル到達など、最前線の動向を解説します。</description>
     </item>
     <item>
       <title>ChatGPTで読む：AnthropicのClaude Haiku 5.5登場とNous Researchの急成長など、AI・Web3… 10-08</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-2.html</guid>
       <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
       <description>ShopifyがAIエージェント向けにチェックアウト機能を開放し、Eコマースの自動化を加速させます。またNVIDIAはAIの暴走を防ぐセキュリティ層を発表し、ゴールドマン・サックスは1,000億ドルの基金を仮想通貨基盤へ導入します。</description>
-    </item>
-    <item>
-      <title>ChainlinkのCCIPアップデートとAIエージェントがもたらす金融・技術の新潮流 09-29</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news.html</guid>
-      <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
-      <description>Chainlinkがセキュリティ強化型の新CCIPを発表し、Web3の安全性が向上します。また、AIエージェント企業Instinctが10億ドルの資金調達を実施したニュースや、Qwenモデルのマージ手法など最新技術動向を解説します。</description>
     </item>
   </channel>
 </rss>
