@@ -1,0 +1,80 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Claude Code活用事例：広聴AIの韓国語版READMEを1時間でPRに——OSSコントリビュートの手順 | VWork バイブコーディングフレームワーク</title><meta name="description" content="デジタル民主主義2030（DD2030）のSlackにあった「韓国語版のREADMEを作る」というメモを見て、Claude Codeで広聴AIのREADMEを韓国語に訳し、IssueとPRを出しました。原文と訳文で見出し・URL・コマンドが一致するかを機械で確かめた手順と、プロジェクトのAI向けルールに沿って進めたところを書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-09-kouchou-ai-readme-korean.html"><meta property="og:type" content="article"><meta property="og:title" content="Claude Code活用事例：広聴AIの韓国語版READMEを1時間でPRに——OSSコントリビュートの手順"><meta property="og:description" content="デジタル民主主義2030（DD2030）のSlackにあった「韓国語版のREADMEを作る」というメモを見て、Claude Codeで広聴AIのREADMEを韓国語に訳し、IssueとPRを出しました。原文と訳文で見出し・URL・コマンドが一致するかを機械で確かめた手順と、プロジェクトのAI向けルールに沿って進めたところを書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-09-kouchou-ai-readme-korean.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Claude Code活用事例：広聴AIの韓国語版READMEを1時間でPRに——OSSコントリビュートの手順"><meta name="twitter:description" content="デジタル民主主義2030（DD2030）のSlackにあった「韓国語版のREADMEを作る」というメモを見て、Claude Codeで広聴AIのREADMEを韓国語に訳し、IssueとPRを出しました。原文と訳文で見出し・URL・コマンドが一致するかを機械で確かめた手順と、プロジェクトのAI向けルールに沿って進めたところを書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Claude Code活用事例：広聴AIの韓国語版READMEを1時間でPRに——OSSコントリビュートの手順", "description": "デジタル民主主義2030（DD2030）のSlackにあった「韓国語版のREADMEを作る」というメモを見て、Claude Codeで広聴AIのREADMEを韓国語に訳し、IssueとPRを出しました。原文と訳文で見出し・URL・コマンドが一致するかを機械で確かめた手順と、プロジェクトのAI向けルールに沿って進めたところを書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-09-kouchou-ai-readme-korean.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-09", "dateModified": "2026-10-09", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Claude Code活用事例：広聴AIの韓国語版READMEを1時間でPRに——OSSコントリビュートの手順</h1><p class="meta">2026-10-09</p><p>名古屋でAIシステム開発の会社をやっています。10月9日の朝、デジタル民主主義2030（DD2030）のSlackを読んでいて、広聴AIの開発者の西尾さんが前日に残した「メモ: 韓国語版のREADMEを作る」という一行を見つけました。READMEの翻訳なら、すぐに形にできると思い、その場で取りかかりました。Issueを立ててPRを出し、Slackで知らせるまで、およそ1時間でした。</p>
+<ul>
+<li><a href="https://github.com/digitaldemocracy2030/kouchou-ai/pull/959">PR #959 docs: 韓国語版のREADME（README.ko.md）を追加</a></li>
+<li><a href="https://github.com/digitaldemocracy2030/kouchou-ai/issues/958">Issue #958</a></li>
+</ul>
+<h2>1. なぜ韓国語版なのか</h2>
+<p>広聴AIは、たくさんの意見を読み込んで、話題ごとのまとまりに分けて見せるオープンソースのソフトウェアです。最近は、韓国語で書かれた短い意見を日本語の意見として分析する使い方も試されていて、Slackでもその話が出ていました。韓国の方が広聴AIを知って最初に開くのはGitHubのREADMEなので、そこが日本語だけだと入口で止まってしまいます。</p>
+<h2>2. 先に確かめたこと</h2>
+<p>手を動かす前に、次の3つを確かめました。</p>
+<ul>
+<li>本家のリポジトリに、韓国語版のREADMEがまだ無いこと</li>
+<li>同じ作業をしているIssueやPRが無いこと（誰かと重なると、お互いの手間になります）</li>
+<li>プロジェクトの、AIエージェントで貢献するときのルール</li>
+</ul>
+<p>広聴AIには「Claude Code / Codex でIssueに着手してからPRを提出するまで」の案内があり、Issueを確かめてから着手すること、PRには検証した結果と、確かめていないことを分けて書くこと、レビューの依頼やSlackでの連絡はAIが勝手にしないこと、などが決められています。今回もこれに沿って進めました。</p>
+<h2>3. やったこと</h2>
+<ol>
+<li>本家の最新の main から作業用のブランチを作りました</li>
+<li>Issue #958 を立てて、やることを書きました（README.ko.md の追加、言語の切り替えリンク、日本語版が正という注記）</li>
+<li>README の全文、約240行を韓国語に訳しました</li>
+<li>日本語版と韓国語版の両方の冒頭に「日本語 | 한국어」の切り替えリンクを入れました</li>
+<li>韓国語版の冒頭に「日本語版が正で、リンク先のガイドはほとんど日本語」と一言添えました</li>
+<li>公開フォークに上げて、PR #959 を出しました</li>
+<li>西尾さんのメモのスレッドに、PRを出したことを返信しました</li>
+</ol>
+<h2>4. AIで訳すときに、機械で確かめたこと</h2>
+<p>READMEの翻訳で一番困るのは、訳文がそれらしく読めても、コマンドや環境変数の名前、URLが原文から少しずれていることです。読んだだけでは気づきにくく、そのまま手順どおりに打った人がつまずきます。そこで、原文と訳文を並べて、次の数がそろっているかをスクリプトで数えました。</p>
+<ul>
+<li>見出し：どちらも24</li>
+<li>コードブロック：どちらも8</li>
+<li>URL：どちらも同じ18種類</li>
+<li>コマンド・環境変数名・ファイルのパス（<code>docker compose up</code>、<code>OLLAMA_HOST_PORT</code> など）：すべて一致</li>
+</ul>
+<p>もう1つ、日本語の書き方がそのまま残っていないかも見ました。最初の訳では「」や「・」が残っていたので、韓国語でふつうに使う‘’や読点に直しました。一方で、CONTRIBUTING.md へのリンクの <code>#コードを書かずに参加する</code> は、リンク先の見出しが日本語なので、あえてそのままにしています。</p>
+<h2>5. 確かめていないこと</h2>
+<p>韓国語として自然かどうかは、話者の方に見てもらわないと分かりません。PRとSlackには、ネイティブのチェックはできていないので、どなたか見ていただけると助かる、と正直に書きました。訳の正しさを、自分で「確認済み」とは書いていません。</p>
+<h2>6. 前回の貢献とのつながり</h2>
+<p>広聴AIへの貢献は今回が2回目です。10月6日には、パソコンにすでに Ollama が入っていると広聴AIのローカルLLMが起動しない問題を見つけ、Issue #951 と PR #952 を出しました。こちらは同じ日のうちにマージされています。どちらも、自分で使ってつまずいたところや、開発者の方のメモから、小さく直せるものを選んで出しています。</p>
+<h2>途中で気をつけたところ</h2>
+<ul>
+<li><strong>ルールを先に読む</strong>：AIエージェント向けの案内があるプロジェクトでは、それを読まずにPRを出すと、レビューする方の手間を増やします</li>
+<li><strong>数えられるものは数える</strong>：訳文の良し悪しは読んで判断するしかありませんが、URLやコマンドが一致しているかは機械で確かめられます</li>
+<li><strong>できていないことを書く</strong>：ネイティブのチェックをしていないことは、PRの本文に分けて書きました</li>
+</ul>
+<h2>よくある質問</h2>
+<h3>広聴AIとは何ですか？</h3>
+<p>デジタル民主主義2030が開発しているオープンソースのソフトウェアで、パブリックコメントやアンケートの自由記述のような、たくさんの意見を読み込んで、話題ごとのまとまりに分けて見せます。自治体や政治家の実務に合わせて改良が進められています。</p>
+<h3>AIで翻訳したREADMEをPRに出してもよいのですか？</h3>
+<p>広聴AIは、Claude Code や Codex を使った貢献の手順を公式に案内しています。大事なのは、プロジェクトのルールに沿うことと、検証した結果と確かめていないことを分けて書くことです。今回もコントリビューターライセンス契約（CLA）に同意したうえで出しています。</p>
+<h3>翻訳のどこを機械で確かめられますか？</h3>
+<p>見出しの数、コードブロックの数、URL、コマンド・環境変数名・ファイルのパスです。ここがずれると手順どおりに動かなくなるので、まずここを原文とそろえます。文章が自然かどうかは、話者の方に見てもらう必要があります。</p>
+<h2>関連</h2>
+<ul>
+<li><a href="https://exbridge.jp/vibeblog/2026-10-08-kouchou-ai-ronten-ai-map.html?ref=vibeblog-readme-ko">広聴AIでは出ない「賛否」と「国会とネットのずれ」——論点AIマップと合意点マップを作った</a></li>
+<li><a href="https://kurage.exbridge.jp/kronten.php/?ref=vibeblog-readme-ko">Kurage 論点AIマップ</a>（すでにある声から話題と論点を立てる。無料・登録不要）</li>
+<li><a href="https://exbridge.jp/ai-agent-automation.html?ref=vibeblog-readme-ko">AIエージェントで業務を自動化する事例</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
