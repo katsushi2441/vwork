@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 08 Oct 2026 09:47:10 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 15:14:22 +0000</lastBuildDate>
+    <item>
+      <title>GoogleのAI Edge Foresight登場と、DeepSeekやClaudeを用いた高度なサイバー攻撃の脅威 10-09</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news.html</guid>
+      <pubDate>Fri, 09 Oct 2026 09:00:00 +0000</pubDate>
+      <description>GoogleがオンデバイスAIアプリ「AI Edge Foresight」を発表しました。また、DeepSeekやClaudeを用いた韓国銀行への高度なサイバー攻撃の実態や、軽量モデルSaluki 27Bの性能など最新のAI動向を解説します。</description>
+    </item>
     <item>
       <title>Margaret Hamiltonの逝去とllama.cppの進化：AIインフラと歴史を動かす技術革新 10-08</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-08-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-4.html</guid>
       <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
       <description>AMDによるWorld Labsの買収計画やOpenAIのモデル公開見送りのニュースを解説します。Qwen3.8-Flash-Nextの新リリースやModal Labsの資金調達など、最新のAIインフラと安全性の動向を網羅しています。</description>
-    </item>
-    <item>
-      <title>Agentsで読む：ShopifyのAIエージェント対応とNVIDIAによるAI安全性の強化、そしてGoldman Sachsの仮想通… 09-29</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-2.html</guid>
-      <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
-      <description>ShopifyがAIエージェント向けにチェックアウト機能を開放し、Eコマースの自動化を加速させます。またNVIDIAはAIの暴走を防ぐセキュリティ層を発表し、ゴールドマン・サックスは1,000億ドルの基金を仮想通貨基盤へ導入します。</description>
     </item>
   </channel>
 </rss>

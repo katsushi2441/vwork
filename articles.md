@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [GoogleのAI Edge Foresight登場と、DeepSeekやClaudeを用いた高度なサイバー攻撃の脅威 10-09](2026-10-09-ai-news.html)
 - [Claude Haikuの進化とSamsungによるUSDC統合など、AI・Web3の最前線ニュース 10-08](2026-10-08-ai-news-4.html)
 - [Margaret Hamiltonの逝去とllama.cppの進化：AIインフラと歴史を動かす技術革新 10-08](2026-10-08-ai-news-3.html)
 - [ChatGPTで読む：AnthropicのClaude Haiku 5.5登場とNous Researchの急成長など、AI・Web3… 10-08](2026-10-08-ai-news-2.html)
