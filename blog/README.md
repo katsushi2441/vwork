@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [fxtwitterの検索が404で止まった——Xの検索の仕様変更と、止まっている間に何で代わりに読んだか](2026-10-10-fxtwitter-search-404.md)
 - [パブリックコメントやアンケートの自由記述から、AIで意見の割れ方と合意点を出す——Pol.isと合意形成AI、そして日本ではまだほとんど使われていないこと](2026-10-09-pubcom-free-text-consensus-ai.md)
 - [Claude Code活用事例：広聴AIの韓国語版READMEを1時間でPRに——OSSコントリビュートの手順](2026-10-09-kouchou-ai-readme-korean.md)
 - [広聴AIでは出ない「賛否」と「国会とネットのずれ」——論点AIマップと合意形成AI（合意点マップ）を作った](2026-10-08-kouchou-ai-ronten-ai-map.md)
