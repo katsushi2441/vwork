@@ -1,0 +1,122 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>fxtwitterの検索が404で止まった——Xの検索の仕様変更と、止まっている間に何で代わりに読んだか | VWork バイブコーディングフレームワーク</title><meta name="description" content="2026年10月9日の夜から、fxtwitterの検索API（/2/search）がどの語でも404を返すようになりました。当社のX返信候補と国会議員のX監視が0件になったので、原因を調べ、議員ごとの時系列とYahoo!リアルタイム検索で代わりに読む形にしました。調べた順と、代わりのサービスを試した結果をまとめます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-10-fxtwitter-search-404.html"><meta property="og:type" content="article"><meta property="og:title" content="fxtwitterの検索が404で止まった——Xの検索の仕様変更と、止まっている間に何で代わりに読んだか"><meta property="og:description" content="2026年10月9日の夜から、fxtwitterの検索API（/2/search）がどの語でも404を返すようになりました。当社のX返信候補と国会議員のX監視が0件になったので、原因を調べ、議員ごとの時系列とYahoo!リアルタイム検索で代わりに読む形にしました。調べた順と、代わりのサービスを試した結果をまとめます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-10-fxtwitter-search-404.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="fxtwitterの検索が404で止まった——Xの検索の仕様変更と、止まっている間に何で代わりに読んだか"><meta name="twitter:description" content="2026年10月9日の夜から、fxtwitterの検索API（/2/search）がどの語でも404を返すようになりました。当社のX返信候補と国会議員のX監視が0件になったので、原因を調べ、議員ごとの時系列とYahoo!リアルタイム検索で代わりに読む形にしました。調べた順と、代わりのサービスを試した結果をまとめます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "fxtwitterの検索が404で止まった——Xの検索の仕様変更と、止まっている間に何で代わりに読んだか", "description": "2026年10月9日の夜から、fxtwitterの検索API（/2/search）がどの語でも404を返すようになりました。当社のX返信候補と国会議員のX監視が0件になったので、原因を調べ、議員ごとの時系列とYahoo!リアルタイム検索で代わりに読む形にしました。調べた順と、代わりのサービスを試した結果をまとめます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-10-fxtwitter-search-404.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-10", "dateModified": "2026-10-10", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>fxtwitterの検索が404で止まった——Xの検索の仕様変更と、止まっている間に何で代わりに読んだか</h1><p class="meta">2026-10-10</p><p>名古屋でAIシステム開発の会社をやっています。当社では、Xの投稿をログインせずに読むのに fxtwitter のAPIを使っています。その検索が、10月9日の夜から止まりました。何が起きていたのか、何を調べたのか、止まっている間をどうしのいでいるのかを、時間の順に書いておきます。同じように fxtwitter を使っていて困っている方の参考になればと思います。</p>
+<h2>1. 何が止まったか</h2>
+<p>fxtwitter は、Xの投稿のリンクを Discord などに貼ったときに、画像や動画をきちんと表示するためのサービスです。投稿の中身をJSONで返すAPIもあり、ログインせずに投稿を読めるので、当社では次の3つのシステムで使っています。</p>
+<ul>
+<li><strong>X返信候補</strong>：国会議員や話題の投稿のうち、投稿から30分以内のものを拾って、返信の下書きを作る（1時間ほどおき）</li>
+<li><strong>国会議員のX監視</strong>：国会議員583人の投稿を15分おきに読み、国会トラッカーの話題にふれた投稿を知らせる</li>
+<li><strong>エンタメ動画の候補集め</strong>：話題の動画を探す</li>
+</ul>
+<p>どれも、fxtwitter の検索（<code>/2/search</code>）を使っていました。10月9日の22時17分の回から、この検索がどの語で調べても <code>{"code":404,"results":[]}</code> を返すようになり、3つとも0件になりました。21時02分の回までは、ふだんどおり数百件の投稿が取れていました。</p>
+<h2>2. 最初に疑ったのは、自分たちの使いすぎ</h2>
+<p>国会議員の監視は15分おきに動いていて、1回に何百回もAPIを呼びます。最初は「呼びすぎて止められたのではないか」と考えました。</p>
+<p>ただ、これは確かめずに言えることではありません。そこで、当社とは別の回線（レンタルサーバーに一時的に置いたPHP）から同じ検索を呼んでみました。結果は同じ404でした。当社の回線だけが止められているのではなく、どこから呼んでも止まっている、ということです。</p>
+<p>あわせて、検索以外のAPIも確かめました。</p>
+<ul>
+<li>投稿1件を読む（<code>/2/status/&lt;id&gt;</code>）：読める</li>
+<li>プロフィールを読む：読める</li>
+<li>その人の投稿一覧を読む（<code>/2/profile/&lt;名前&gt;/statuses</code>）：読める</li>
+<li>検索（<code>/2/search</code>）：404</li>
+</ul>
+<p>止まっているのは検索だけでした。</p>
+<h2>3. 本家の不具合報告</h2>
+<p>fxtwitter を作っている FxEmbed の GitHub に、同じ症状の報告（issue #2303「/2/search がどの語でも空の404を返す」）がありました。経緯は次のとおりです。</p>
+<ul>
+<li><strong>7月下旬</strong>：検索が404になると報告される。つながったり止まったりを繰り返す</li>
+<li><strong>8月28日</strong>：開発者が「ときどき壊れる。原因はまだ分からない」と書く</li>
+<li><strong>9月28日</strong>：開発者が原因を見つけて直す。Xが、検索のリクエストに付ける識別子（X-Client-Transaction-Id）の作り方を変えたのが原因で、それに合わせて直した、とのことでした</li>
+<li><strong>10月8日の朝（日本時間）</strong>：「また404になる。本人の投稿一覧でもときどき起きる」という書き込み。ここから先、開発者の返事はまだありません</li>
+</ul>
+<p>つまり、Xが仕様を変えるたびに fxtwitter 側が追いかける、ということを繰り返しています。今回も、Xがまた何かを変えたと考えるのが自然です。</p>
+<h2>4. Xの検索そのものもおかしくなっていた</h2>
+<p>「Xが検索の仕様を変えたなら、もっと騒がれているはずでは」と思い、Xでの声を Yahoo!リアルタイム検索で読みました。騒がれていました。ただし、APIの話としてではありませんでした。</p>
+<ul>
+<li><strong>10月6日の朝から</strong>、Xの検索の「最新」タブに20〜40件しか出ず、それより前の投稿まで遡れなくなった、という声がたくさん出ています。スマホのアプリでもブラウザでも同じでした</li>
+<li>アプリの不具合を伝えるニュースサイトも、10月6日に「Xの検索結果の件数が減った・20〜40件しか表示されない問題が発生」と記事にしています</li>
+<li>10月7日の朝には「直った」という声もありました。でも10月9日の夜や10日の深夜にも、「検索に全然引っかからない」という投稿が続いています</li>
+</ul>
+<p>fxtwitter の検索は、Xの画面の検索と同じ仕組みを外から呼んでいます。Xが検索の裏側を変えた時期と、fxtwitter で404が出はじめた時期は、ほぼ重なっています。同じ原因かどうかは、Xも fxtwitter の開発者も言っていないので確かめられていません。今のところは「同じ時期にXが検索の裏側を変えていて、その影響と考えるのが自然」というところまでです。</p>
+<p>普通の人には「検索が20件しか出ない」という形で見えていたので、「APIが止まった」という話題にはなっていなかった、ということだと思います。最初に「fxtwitter」「API」といった言葉で探したときは、この騒ぎは引っかかりませんでした。探す言葉を、使っている人の言葉に変える必要がありました。</p>
+<h2>5. 代わりのサービスを試した</h2>
+<p>似たサービスがほかにもあるので、10月10日の深夜に当社の回線から実際に呼んでみました。</p>
+<table>
+<thead>
+<tr>
+<th>試したもの</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fixupx</td>
+<td>fxtwitter と同じ仕組み（FxEmbed）なので、検索も同じく404。API用の名前は引けなかった</td>
+</tr>
+<tr>
+<td>dxtwitter</td>
+<td>API用の名前が引けず、つながらない</td>
+</tr>
+<tr>
+<td>vxtwitter</td>
+<td>別の仕組みだが、Cloudflare の確認画面（403）で止められる。もともと検索のAPIは無い</td>
+</tr>
+<tr>
+<td>Xの埋め込み用（syndication）</td>
+<td>投稿1件は読める。検索はできない</td>
+</tr>
+<tr>
+<td>Nitter</td>
+<td>もう使えない</td>
+</tr>
+</tbody>
+</table>
+<p>検索の代わりになる無料のサービスは、見つかりませんでした。X公式のAPIは検索に使えますが有料で、安い契約だと直近7日分しか読めません。検索に対応している有料の外部APIもいくつかありますが、料金と安定性は確かめていません。Xにログインして読むライブラリもありますが、アカウントを止められるおそれがあるので使っていません。</p>
+<h2>6. 止まっている間の読み方</h2>
+<p>検索が使えなくても、「その人の投稿一覧」と「投稿1件」は読めます。そこで、検索の使い方ごとに代わりの読み方を決めました。</p>
+<p><strong>決まった人の投稿を読む（from: で検索していたもの）</strong></p>
+<p>国会議員の投稿は、もともと「from:議員名」で検索していました。これを、議員ごとの投稿一覧を4本同時に読む形に変えました。返信とリポストは外します。試しに議員60人分を読むと、11秒で直近12時間の投稿が12件取れました。583人全部だと1回に8分ほどかかります。</p>
+<p>15分おきに8分かけて全員を読むと、fxtwitter にかける負担が大きくなります。検索が止まっている間は、全員を読むのを25分に1回にして、その間の回は読まずに終わるようにしました。</p>
+<p><strong>語で探す（「国会」「補助金」など）</strong></p>
+<p>語の検索は、Yahoo!リアルタイム検索で代わりに読みます。Yahoo!リアルタイム検索はログインせずに読めて、直近の投稿が新しい順に出ます。ただ、表示回数などの数字が足りないので、いいねが多いものと、議員らしい名前のものだけ、fxtwitter の投稿1件のAPIで数字を補います。試しに「国会」で調べると、直近3時間の投稿が19件取れました。</p>
+<p><strong>動画を探す</strong></p>
+<p>エンタメ動画の候補集めは、検索が0件のときに、Yahoo!リアルタイム検索から動画付きの投稿を探します。ただし新しい順なので、見つかるのは投稿されたばかりの、まだ見られていない動画です。人気の動画を選ぶ用途には弱く、検索が戻るまでのつなぎと割り切っています。</p>
+<p><strong>戻ったら自動で戻る</strong></p>
+<p>毎回、まず fxtwitter の検索を試します。結果が返ってくれば、いつもどおり検索で読みます。404のときだけ代わりの読み方に切り替わるので、検索が直ったら何もしなくても元に戻ります。</p>
+<h2>7. 今回の学び</h2>
+<ul>
+<li><strong>「止められた」と言う前に、別の回線から試す。</strong> 自分の回線だけで見ていると、自分のせいか全体の問題かが分かりません。今回は別のサーバーから1回呼ぶだけで、全体の問題だと分かりました。</li>
+<li><strong>止まったものと止まっていないものを分ける。</strong> 検索だけが止まっていて、投稿一覧と投稿1件は読めました。読めるもので組み直せば、完全には止まりません。</li>
+<li><strong>探す言葉は、困っている人の言葉にする。</strong> 開発者の言葉（API、404）で探すと見つからず、利用者の言葉（検索が遡れない、20件しか出ない）で探すと、たくさん見つかりました。</li>
+<li><strong>外部の無料APIは、いつか止まる前提で作る。</strong> fxtwitter は、Xの仕様変更を追いかけて何度も直してくれています。それでも、止まったときの代わりの道を先に持っておく必要がありました。</li>
+</ul>
+<h2>よくある質問</h2>
+<h3>fxtwitter の検索が404になるのは、自分が使いすぎたからですか？</h3>
+<p>10月9日の夜からの404は、使いすぎが原因ではないと考えています。当社とは別の回線から呼んでも同じ404が返り、同じ症状が fxtwitter の本家にも報告されているからです。確かめるには、別の回線やサーバーから同じURLを1回呼んでみるのが早いです。</p>
+<h3>fxtwitter の検索の代わりになるサービスはありますか？</h3>
+<p>無料で検索の代わりになるものは、当社が試した範囲では見つかりませんでした。fixupx は fxtwitter と同じ仕組みなので同じく止まっていて、vxtwitter には検索のAPIがありません。決まった人の投稿なら fxtwitter の投稿一覧のAPIで、語で探すなら Yahoo!リアルタイム検索で、代わりに読めます。</p>
+<h3>Xの検索で20〜40件しか出ないのと、関係はありますか？</h3>
+<p>時期はほぼ重なっていますが、同じ原因かどうかはXも fxtwitter の開発者も言っていないので、確かめられていません。Xの検索の不具合は10月6日の朝から、fxtwitter の404は当社では10月9日の夜から出ています。</p>
+<h3>検索が戻ったら、何か直す必要がありますか？</h3>
+<p>当社の仕組みでは、毎回まず検索を試して、結果が返ればそのまま使うので、何もしなくても元に戻ります。ただし、Xの画面の検索で件数が減っているので、検索が戻っても一度に取れる件数は以前より少なくなるかもしれません。</p>
+<p>国会議員の質疑と答弁を話題ごとに追える<a href="https://xb4g.com/giin/tracker/?ref=vibeblog_fxtwitter">国会トラッカー</a>も、今回のX監視とつないで使っています。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
