@@ -1,0 +1,146 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>パブリックコメントやアンケートの自由記述から、AIで意見の割れ方と合意点を出す——Pol.isと合意形成AI、そして日本ではまだほとんど使われていないこと | VWork バイブコーディングフレームワーク</title><meta name="description" content="パブリックコメントや住民アンケートの自由記述から、AIで「意見がどう割れているか」と「立場をこえて一致する点」を出す方法を、Pol.isと当社の合意形成AI（合意点マップ）で紹介します。あわせて、国会でPol.isにふれた発言が0件、人の票が集まらないなど、日本の合意形成の現状を数字でまとめました。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-09-pubcom-free-text-consensus-ai.html"><meta property="og:type" content="article"><meta property="og:title" content="パブリックコメントやアンケートの自由記述から、AIで意見の割れ方と合意点を出す——Pol.isと合意形成AI、そして日本ではまだほとんど使われていないこと"><meta property="og:description" content="パブリックコメントや住民アンケートの自由記述から、AIで「意見がどう割れているか」と「立場をこえて一致する点」を出す方法を、Pol.isと当社の合意形成AI（合意点マップ）で紹介します。あわせて、国会でPol.isにふれた発言が0件、人の票が集まらないなど、日本の合意形成の現状を数字でまとめました。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-09-pubcom-free-text-consensus-ai.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="パブリックコメントやアンケートの自由記述から、AIで意見の割れ方と合意点を出す——Pol.isと合意形成AI、そして日本ではまだほとんど使われていないこと"><meta name="twitter:description" content="パブリックコメントや住民アンケートの自由記述から、AIで「意見がどう割れているか」と「立場をこえて一致する点」を出す方法を、Pol.isと当社の合意形成AI（合意点マップ）で紹介します。あわせて、国会でPol.isにふれた発言が0件、人の票が集まらないなど、日本の合意形成の現状を数字でまとめました。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "パブリックコメントやアンケートの自由記述から、AIで意見の割れ方と合意点を出す——Pol.isと合意形成AI、そして日本ではまだほとんど使われていないこと", "description": "パブリックコメントや住民アンケートの自由記述から、AIで「意見がどう割れているか」と「立場をこえて一致する点」を出す方法を、Pol.isと当社の合意形成AI（合意点マップ）で紹介します。あわせて、国会でPol.isにふれた発言が0件、人の票が集まらないなど、日本の合意形成の現状を数字でまとめました。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-09-pubcom-free-text-consensus-ai.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-09", "dateModified": "2026-10-09", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>パブリックコメントやアンケートの自由記述から、AIで意見の割れ方と合意点を出す——Pol.isと合意形成AI、そして日本ではまだほとんど使われていないこと</h1><p class="meta">2026-10-09</p><p>名古屋でAIシステム開発の会社をやっています。今日、Claude Code と一緒に「ブロードリスニングの先にある合意形成に、AIはどれくらい使われているのか」を、国会の会議録と検索の数で調べました。結論から書くと、ほとんど使われていません。この記事では、その数字と、なぜそうなっているのかの見立て、そして今あるデータから始められる使い方を書きます。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/kconsensus.php/?ref=vibeblog_pubcom">Kurage 合意形成AI（合意点マップ）</a></li>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=d88a943736386fb3&amp;ref=vibeblog_pubcom">Kurage 合意形成AI（合意点マップ）（Pol.is 互換）を自社や自治体に置く</a></li>
+</ul>
+<h2>1. パブリックコメントは、集めたあとが大変</h2>
+<p>自治体や省庁が計画や制度を決めるとき、パブリックコメントや住民アンケートで意見を募ります。集まるのは、ほとんどが自由記述です。数十件ならまだ読めますが、数百件、数千件になると、担当の方が1件ずつ読んで「主な意見と市の考え方」にまとめるだけで手一杯になります。</p>
+<p>そのまとめ方は、多くの場合「こういう意見が何件ありました」という分類です。どの意見とどの意見が対立していて、反対の立場の人どうしでも一致している点はどこか、というところまでは、なかなか手が回りません。</p>
+<h2>2. 「ブロードリスニング」は、いま「集めて地図にする」という意味で使われている</h2>
+<p>大勢の声をAIで聞き取る取り組みは、ブロードリスニングと呼ばれています。国会でこの言葉にふれた発言を全部読むと、使われ方はほぼ一つでした。</p>
+<ul>
+<li>国民民主党の川合孝典議員（2025年1月、本会議）：Talk to the City を使ったブロードリスニングで、党に寄せられた意見の可視化とマッピングを行った</li>
+<li>同じく伊藤孝恵議員（2025年3月、予算委員会）：AIを使ったブロードリスニングで、SNSや電話、フォームから声を集め、政策ニーズを点の地図にして総理に示した</li>
+<li>チームみらいの山田瑛理議員（2026年4月、安全保障委員会）：AIを使って国民の声を収集、分析、可視化する手法</li>
+</ul>
+<p>つまり、いまのブロードリスニングは「意見を集めて、似たものどうしにまとめて、地図のように見せる」ところまでを指しています。当社の<a href="https://kurage.exbridge.jp/kronten.php/?ref=vibeblog_pubcom">論点AIマップ</a>も、この役割を受け持つシステムです。</p>
+<h2>3. その先にある「合意形成」と Pol.is</h2>
+<p>意見を地図にしたあと、本当に知りたいのは「どこで割れていて、どこなら合意できるのか」です。ここを受け持つ仕組みとして知られているのが、台湾の政策づくりで使われた Pol.is です。</p>
+<p>Pol.is の考え方は、次のとおりです。</p>
+<ol>
+<li>参加した人に、短い意見文に賛成か反対かを押してもらう</li>
+<li>押し方の似た人どうしをまとめて、意見のグループを見つける</li>
+<li>グループをまたいで、どのグループからも賛成が多い意見を「合意点」として出す</li>
+</ol>
+<p>多数決とちがうのは、人数の多いグループの意見を勝たせるのではなく、立場のちがう人たちがそろって賛成できる点を探すところです。当社の合意形成AI（合意点マップ）は、この筋の計算を自前で実装したものです（MITライセンス）。</p>
+<h2>4. 日本では、まだほとんど使われていない</h2>
+<p>今日、国会の会議録と、X、検索の数で確かめた結果です。</p>
+<table>
+<thead>
+<tr>
+<th>調べたもの</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国会で「Pol.is」にふれた発言</td>
+<td>0件</td>
+</tr>
+<tr>
+<td>国会で「Decidim（デシディム）」にふれた発言</td>
+<td>6件（2021〜2024年、いずれも加古川市の例として）</td>
+</tr>
+<tr>
+<td>国会で「ブロードリスニング」にふれた発言</td>
+<td>9件（2016年以降）</td>
+</tr>
+<tr>
+<td>国会で「デジタル民主主義」にふれた発言</td>
+<td>9件（2016年以降）</td>
+</tr>
+<tr>
+<td>国会で「合意形成」にふれた発言</td>
+<td>2,157件（2016年以降）</td>
+</tr>
+<tr>
+<td>国会で「パブリックコメント」にふれた発言</td>
+<td>1,995件（2016年以降）</td>
+</tr>
+<tr>
+<td>Google の検索（月あたり）</td>
+<td>パブリックコメント 9,900回、合意形成 4,400回、ブロードリスニング 1,000回、デジタル民主主義 390回</td>
+</tr>
+</tbody>
+</table>
+<p>自治体では、スペインで生まれた市民参加の仕組み Decidim を、兵庫県加古川市などが使っています。ただ、Decidim は意見を集めて議論する場で、Pol.is のように意見の割れ方を計算して合意点を出す仕組みではありません。Pol.is そのものは、日本では研究者や個人が試しに使っている例が見つかる程度でした。チームみらいの広聴本部は、10月6日に「みらい版Pol.is」をこれから作ると発表しています。</p>
+<p>「合意形成」や「パブリックコメント」は、国会でも検索でも毎日のように使われている言葉です。それなのに、そこにAIを使う話はほとんど出てきません。</p>
+<h2>5. なぜ使われていないのか</h2>
+<p>当社の合意形成AIは9月19日から公開していますが、人に賛否を押してもらう票は、ほとんど集まっていません。</p>
+<table>
+<thead>
+<tr>
+<th>論点</th>
+<th>人の票</th>
+<th>ネットの反応からAIが読み取った賛否</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>消費税減税</td>
+<td>2人・15票</td>
+<td>176件の反応から2,464回読み取り、意見グループ3つ</td>
+</tr>
+<tr>
+<td>子どもとSNS</td>
+<td>0票</td>
+<td>332件の反応から6,640回読み取り、意見グループ2つ</td>
+</tr>
+</tbody>
+</table>
+<p>この差が、日本で合意形成にAIが使われていない理由をよく表していると考えています。見立ては3つです。</p>
+<ul>
+<li><strong>参加してもらう手間が大きい</strong>：Pol.is 型は、人に何問も賛否を押してもらわないと動きません。ページを用意しても、人はなかなか来ません。</li>
+<li><strong>合意形成は人がやるもの、と思われている</strong>：話し合いの場をつくることには関心が集まりますが、「どこなら合意できるか」をAIに計算させる発想は、まだ広まっていません。</li>
+<li><strong>合意点が見えることが、いつも歓迎されるとは限らない</strong>：立場のちがう人たちが一致する点がはっきりすると、その先の判断を求められます。</li>
+</ul>
+<p>逆に、AIの性能が足りないから使われていない、というわけではありません。すでにある声を読ませれば、人の票が1票もなくても、意見のグループと割れ方は出ています。</p>
+<h2>6. だから、パブリックコメントとアンケートの自由記述から始める</h2>
+<p>新しく人を集める必要はありません。自治体には、パブリックコメントや住民アンケートの自由記述が、すでに大量にあります。合意形成AIは、この自由記述をCSVで入れるところから始められます。</p>
+<ol>
+<li>自由記述をCSVにする（1行に1件。投稿者や重みの列は任意）</li>
+<li>AIが、賛成か反対かを問える論点を、実際の記述から立てる（論点を先に決めて渡すこともできます）</li>
+<li>1件ずつ「この人はこの論点に賛成か、反対か、触れていないか」を読み取る</li>
+<li>意見のグループと、グループをまたいで賛成が多い点（合意点）が出る</li>
+</ol>
+<p>担当の方が「主な意見」をまとめる作業の横に、「この論点は賛否が割れている」「この点は反対の立場の人も含めて多くが賛成している」という見え方が加わります。市の考え方を書くときの材料にもなります。</p>
+<p>意見は作りません。AIがするのは、実在する記述を論点の言葉に言い換えることと、賛否の分類だけです。読み取りは推定なので、精度（当社の確認では75〜85%）と読み違いの例を画面に出し、人が押した票とは分けて集計しています。読み取りには手元の生成AIを使い、意見を外部のAIのサービスに送ることはありません。</p>
+<h2>7. 実際の画面</h2>
+<p>ネットの反応から読み取った結果は、次のページで見られます。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/kconsensus.php/t/kodomo-sns/?ref=vibeblog_pubcom">子どもとSNS（年齢制限・フィルタリング）</a>：「16歳未満のSNS利用を法律で禁止すべき」は、触れていた107件のうち81件が賛成でした。一方で「政府の一律な規制より親の判断を重視すべき」は、ほぼ半々に割れています。</li>
+<li><a href="https://kurage.exbridge.jp/kconsensus.php/t/shohizei/?ref=vibeblog_pubcom">消費税減税</a>：「食料品の消費税率を1%へ」は、触れていた102件のうち55件が賛成で、ほぼ半々でした。</li>
+</ul>
+<p>論点は、国会の実際の発言とニュースへの反応から立てています。国会でこれらのテーマがどう議論されてきたかは、<a href="https://xb4g.com/giin/tracker/?ref=vibeblog_pubcom">国会トラッカー</a>で追えます。</p>
+<h2>よくある質問</h2>
+<h3>パブリックコメントが何件あれば使えますか？</h3>
+<p>何件から、という下限は決めていません。当社の公開している例は、ネットの反応176件と332件から意見のグループが出ています。件数が少ないと、グループがはっきり分かれないことがあります。人が賛否を押す票のほうは、3問以上押した人が8人そろうまでグループを作らず、画面に「足りない」と出します。数百件、数千件になるほど、人が読み切れない部分をAIが補う意味が大きくなります。</p>
+<h3>Pol.is とのちがいは何ですか？</h3>
+<p>意見の割れ方と合意点を出す計算の筋は同じです。ちがいは入口で、Pol.is は参加者に賛否を押してもらうところから始まりますが、合意形成AIは、パブリックコメントやアンケートの自由記述、国会の発言、ニュースへの反応など、すでにある声から論点を立てて賛否を読み取れます。人に押してもらう使い方もできます。</p>
+<h3>住民の意見を外部に出さずに使えますか？</h3>
+<p>使えます。合意形成AIは、自治体や議員事務所のサーバーに置ける形で作っていて、読み取りには手元の生成AIを使います。意見の文章を外部のAIのサービスに送ることはありません。</p>
+<h3>ブロードリスニングとは何がちがいますか？</h3>
+<p>いま使われているブロードリスニングは、意見を集めて地図にするところまでを指すことがほとんどです。合意形成AIは、その地図の先で「どこが割れていて、どこなら合意できるか」を出すところを受け持ちます。当社では、集めて地図にする部分を<a href="https://kurage.exbridge.jp/kronten.php/?ref=vibeblog_pubcom">論点AIマップ</a>、合意点を出す部分を合意形成AIと分けています。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
