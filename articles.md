@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIの安全性を巡る論争とQwen3.8の高性能化：最新AI動向まとめ 10-09](2026-10-09-ai-news-4.html)
 - [OpenAIの安全研究者解雇問題とLMArenaの急成長に見るAI業界の動向 10-09](2026-10-09-ai-news-3.html)
 - [OpenAIの安全研究を巡る論争と、最新AIモデルによるサイバー攻撃の実態 10-09](2026-10-09-ai-news-2.html)
 - [GoogleのAI Edge Foresight登場と、DeepSeekやClaudeを用いた高度なサイバー攻撃の脅威 10-09](2026-10-09-ai-news.html)
