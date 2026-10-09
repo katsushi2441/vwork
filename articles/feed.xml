@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 08 Oct 2026 21:27:43 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 03:39:22 +0000</lastBuildDate>
     <item>
       <title>OpenAIの安全研究を巡る論争と、最新AIモデルによるサイバー攻撃の実態 10-09</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news-2.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news.html</guid>
       <pubDate>Fri, 09 Oct 2026 09:00:00 +0000</pubDate>
       <description>GoogleがオンデバイスAIアプリ「AI Edge Foresight」を発表しました。また、DeepSeekやClaudeを用いた韓国銀行への高度なサイバー攻撃の実態や、軽量モデルSaluki 27Bの性能など最新のAI動向を解説します。</description>
+    </item>
+    <item>
+      <title>OpenAIの安全研究者解雇問題とLMArenaの急成長に見るAI業界の動向 10-09</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news-3.html</guid>
+      <pubDate>Fri, 09 Oct 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIの安全研究者解雇問題やLMArenaの企業価値が31億ドルへ急騰する動向を解説します。韓国銀行へのサイバー攻撃や収益予測の乖離、AI時代に必要なキャリアスキルなど最新の業界ニュースを網羅しています。</description>
     </item>
     <item>
       <title>Margaret Hamiltonの逝去とllama.cppの進化：AIインフラと歴史を動かす技術革新 10-08</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news-4.html</guid>
       <pubDate>Wed, 30 Sep 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが1.4兆ドルの評価額で300億ドルの資金調達を交渉中であることや、新エンジンStrataによるQwen3.8 flashの高速推論技術、Opus 5.5の性能低下への懸念など最新のAIニュースを解説します。</description>
-    </item>
-    <item>
-      <title>Theで読む：ShopifyのAIエージェント対応とAMDによるWorld Labs買収など、加速するAI・Web3動向 09-29</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-29-ai-news-3.html</guid>
-      <pubDate>Tue, 29 Sep 2026 09:00:00 +0000</pubDate>
-      <description>ShopifyがAIエージェント向けチェックアウト機能を公開したほか、AMDによるWorld Labsの82億ドルでの買収方針やAnthropicのClaude Sonnet 5.5リリースなど、最新のAI・Web3動向を要約します。</description>
     </item>
   </channel>
 </rss>
