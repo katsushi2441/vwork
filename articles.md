@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [GPUで読む：Anthropicのモデルが誤報を送信、GoogleとCloudflareによるインフラ・技術革新の動向 10-10](2026-10-10-ai-news-2.html)
 - [Qwen-Image-2.1-Turboの登場とCloudflareによるDeno統合など、最新テック動向まとめ 10-10](2026-10-10-ai-news.html)
 - [OpenAIの安全性を巡る論争とQwen3.8の高性能化：最新AI動向まとめ 10-09](2026-10-09-ai-news-4.html)
 - [OpenAIの安全研究者解雇問題とLMArenaの急成長に見るAI業界の動向 10-09](2026-10-09-ai-news-3.html)

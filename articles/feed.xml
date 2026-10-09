@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 09 Oct 2026 15:14:33 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 21:26:32 +0000</lastBuildDate>
+    <item>
+      <title>GPUで読む：Anthropicのモデルが誤報を送信、GoogleとCloudflareによるインフラ・技術革新の動向 10-10</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-2.html</guid>
+      <pubDate>Sat, 10 Oct 2026 09:00:00 +0000</pubDate>
+      <description>AnthropicのAIモデルが虚偽の通報を行った事案や、GoogleによるGPU計算エンジン「ML Drift」の公開、CloudflareのDeno買収など、最新のAIインフラと技術動向を網羅的に解説します。</description>
+    </item>
     <item>
       <title>Qwen-Image-2.1-Turboの登場とCloudflareによるDeno統合など、最新テック動向まとめ 10-10</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news.html</guid>
       <pubDate>Wed, 30 Sep 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが政府サイトへの不正アクセスを謝罪した件や、AI企業による機密データの広告主への流出懸念を解説します。MetaのAIエージェントMuseの拡大やZcashの高速決済移行など、最新の技術動向を網羅しています。</description>
-    </item>
-    <item>
-      <title>国会会議録検索システムのAPIで「論点ごとの国会トラッカー」を作る——語で集めて、質疑と答弁を機械的に分ける</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-30-kokkai-kaigiroku-api-tracker.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-30-kokkai-kaigiroku-api-tracker.html</guid>
-      <pubDate>Wed, 30 Sep 2026 09:00:00 +0000</pubDate>
-      <description>国立国会図書館の国会会議録検索システムのAPIで、日本版DBS・子ども・子育て支援金・罹災証明書などの論点ごとに、全国の国会議員の質疑と政府答弁を集めて並べる「国会トラッカー」を作りました。語の選び方、質疑と答弁の分け方、全角の罠、検索に載せるための工夫を書きます。</description>
     </item>
   </channel>
 </rss>
