@@ -71,7 +71,7 @@ head_keyword: "チームみらい"
 - 付託された委員会の委員：委員長と理事、会派ごとの人数、委員の全員（衆参の委員名簿を毎日取り込みます。衆議院24委員会・807人、参議院17委員会・412人）
 - 愛知の議員でその委員会の委員の人（この法案では5人）
 - 国会への請願の方法：紹介議員が要ることと、衆参の公式の手続ページ
-- 意見が大きく割れている話題（消費税の減税など）だけ、当社の[合意点マップ](https://kurage.exbridge.jp/kconsensus.php/?ref=vibeblog_mirai)へ
+- 意見が大きく割れている話題（消費税の減税など）だけ、当社の[合意形成AI（合意点マップ）](https://kurage.exbridge.jp/kconsensus.php/?ref=vibeblog_mirai)へ
 
 いまの国会で委員会で審査中の法案は、[21件](https://xb4g.com/giin/bill?s=%E5%A7%94%E5%93%A1%E4%BC%9A%E3%81%A7%E5%AF%A9%E6%9F%BB%E4%B8%AD&ref=vibeblog_mirai)あります。
 

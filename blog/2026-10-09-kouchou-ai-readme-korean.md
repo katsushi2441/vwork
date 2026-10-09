@@ -82,6 +82,6 @@ READMEの翻訳で一番困るのは、訳文がそれらしく読めても、�
 
 ## 関連
 
-- [広聴AIでは出ない「賛否」と「国会とネットのずれ」——論点AIマップと合意点マップを作った](https://exbridge.jp/vibeblog/2026-10-08-kouchou-ai-ronten-ai-map.html?ref=vibeblog-readme-ko)
+- [広聴AIでは出ない「賛否」と「国会とネットのずれ」——論点AIマップと合意形成AI（合意点マップ）を作った](https://exbridge.jp/vibeblog/2026-10-08-kouchou-ai-ronten-ai-map.html?ref=vibeblog-readme-ko)
 - [Kurage 論点AIマップ](https://kurage.exbridge.jp/kronten.php/?ref=vibeblog-readme-ko)（すでにある声から話題と論点を立てる。無料・登録不要）
 - [AIエージェントで業務を自動化する事例](https://exbridge.jp/ai-agent-automation.html?ref=vibeblog-readme-ko)

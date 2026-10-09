@@ -25,7 +25,7 @@ head_keyword: "オープンデータ 活用"
 ## 記事一覧
 
 - [Claude Code活用事例：広聴AIの韓国語版READMEを1時間でPRに——OSSコントリビュートの手順](2026-10-09-kouchou-ai-readme-korean.html)
-- [広聴AIでは出ない「賛否」と「国会とネットのずれ」——論点AIマップと合意点マップを作った](2026-10-08-kouchou-ai-ronten-ai-map.html)
+- [広聴AIでは出ない「賛否」と「国会とネットのずれ」——論点AIマップと合意形成AI（合意点マップ）を作った](2026-10-08-kouchou-ai-ronten-ai-map.html)
 - [名古屋市の学級閉鎖は146件、インフルエンザは南区が定点当たり23.67——区ごとの数字（第40週）](2026-10-07-nagoya-influenza-gakkyu-w40.html)
 - [建設業許可の更新期限を自動で計算・管理する——「検索する人＝買い手」の業務を選んで1日で作った](2026-10-06-kensetsu-kyoka-koshin-kigen.html)
 - [チームみらい・安野貴博氏が立ち上げたデジタル民主主義2030はオワコンか——Slack・GitHubの数字で考察した](2026-10-06-dd2030-owakon-data.html)
