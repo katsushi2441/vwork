@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [AIインタビューで法案への意見を聞くシステムを作った——話題に束ね、合意点まで出す仕組みと、荒らし・個人情報への備え](2026-10-11-khouan-ai-interview-bills.md)
 - [オードリー・タンとみらい議会から考えた、法案AIインタビュー「khouan」の構想——Join・いどばた・AIインタビューを調べて分かったこと](2026-10-11-khouan-mirai-gikai-audrey-tang.md)
 - [チームみらいの381万票はどこから来たのか——Xのフォロワー・YouTube登録者・党員数を、参政党・日本保守党・NHK党と比べる](2026-10-10-team-mirai-votes-vs-followers.md)
 - [ブロードリスニングから合意形成までの見取り図——vTaiwan・Pol.is・Talk to the City・広聴AI・いどばた・論点AIマップ・合意形成AIを一つの流れで](2026-10-10-broad-listening-consensus-tools-map.md)
