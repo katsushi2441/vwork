@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [チームみらいの381万票はどこから来たのか——Xのフォロワー・YouTube登録者・党員数を、参政党・日本保守党・NHK党と比べる](2026-10-10-team-mirai-votes-vs-followers.md)
 - [ブロードリスニングから合意形成までの見取り図——vTaiwan・Pol.is・Talk to the City・広聴AI・いどばた・論点AIマップ・合意形成AIを一つの流れで](2026-10-10-broad-listening-consensus-tools-map.md)
 - [fxtwitterの検索が404で止まった——Xの検索の仕様変更と、止まっている間に何で代わりに読んだか](2026-10-10-fxtwitter-search-404.md)
 - [パブリックコメントやアンケートの自由記述から、AIで意見の割れ方と合意点を出す——Pol.isと合意形成AI、そして日本ではまだほとんど使われていないこと](2026-10-09-pubcom-free-text-consensus-ai.md)
