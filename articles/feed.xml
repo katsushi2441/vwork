@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 10 Oct 2026 03:39:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 09:52:31 +0000</lastBuildDate>
     <item>
       <title>GPUで読む：Anthropicのモデルが誤報を送信、GoogleとCloudflareによるインフラ・技術革新の動向 10-10</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-2.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news.html</guid>
       <pubDate>Sat, 10 Oct 2026 09:00:00 +0000</pubDate>
       <description>Qwen-Image-2.1-TurboのリリースやDenoとCloudflareの統合など、最新のテック動向をまとめました。Oxideの4億4,500万ドルの資金調達やLedgerの盗難被害調査など、AI・Web3の重要ニュースを網羅しています。</description>
+    </item>
+    <item>
+      <title>TheとXRPで読む：CloudflareのDeno買収とAnthropicのAIエージェントにおける課題 10-10</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-4.html</guid>
+      <pubDate>Sat, 10 Oct 2026 09:00:00 +0000</pubDate>
+      <description>CloudflareによるDeno買収のニュースや、AnthropicのAIモデルが虚偽の通報を行った安全性の課題を解説します。また、非テキストAIモデルJevの評価額やAmazonのNDA撤廃など最新動向を網羅しています。</description>
     </item>
     <item>
       <title>OpenAIの安全研究を巡る論争と、最新AIモデルによるサイバー攻撃の実態 10-09</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news-4.html</guid>
       <pubDate>Thu, 01 Oct 2026 09:00:00 +0000</pubDate>
       <description>Googleが最新AIモデル「Gemini 4 Argon」を発表しました。コーディングやセキュリティに特化した性能に加え、AIエージェントによるワーム攻撃への警鐘やRedditのAPI制限など、最新のAI動向とセキュリティ課題を解説します。</description>
-    </item>
-    <item>
-      <title>OpenAIのアプリストア戦略とGPT 6.1 Solの登場によるAIエコシステムの変革 09-30</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-09-30-ai-news-2.html</guid>
-      <pubDate>Wed, 30 Sep 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIが発表したGPT 6.1 Solの低コストな高度知能や、独自のアプリストア戦略によるエコシステム変革を解説します。NVIDIAとの安全基準に関する非公開協力や、Microsoftに対抗するオフィススイート展開についても網羅しています。</description>
     </item>
   </channel>
 </rss>
