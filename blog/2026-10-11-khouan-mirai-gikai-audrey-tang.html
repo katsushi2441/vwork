@@ -1,0 +1,92 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>オードリー・タンとみらい議会から考えた、法案AIインタビュー「khouan」の構想——Join・いどばた・AIインタビューを調べて分かったこと | VWork バイブコーディングフレームワーク</title><meta name="description" content="オードリー・タン氏が台湾で実現したこと、台湾のJoinとDD2030のいどばたの違い、チームみらいのみらい議会とAIインタビューの機能を、公開資料とソースコードで調べました。みらい議会の構想にあってまだ無い「賛否と対立の見え方」「議員の発言の記録」は当社のシステムにすでにあり、そこから法案AIインタビュー「khouan」を作り始めるまでの経緯をまとめます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-11-khouan-mirai-gikai-audrey-tang.html"><meta property="og:type" content="article"><meta property="og:title" content="オードリー・タンとみらい議会から考えた、法案AIインタビュー「khouan」の構想——Join・いどばた・AIインタビューを調べて分かったこと"><meta property="og:description" content="オードリー・タン氏が台湾で実現したこと、台湾のJoinとDD2030のいどばたの違い、チームみらいのみらい議会とAIインタビューの機能を、公開資料とソースコードで調べました。みらい議会の構想にあってまだ無い「賛否と対立の見え方」「議員の発言の記録」は当社のシステムにすでにあり、そこから法案AIインタビュー「khouan」を作り始めるまでの経緯をまとめます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-11-khouan-mirai-gikai-audrey-tang.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="オードリー・タンとみらい議会から考えた、法案AIインタビュー「khouan」の構想——Join・いどばた・AIインタビューを調べて分かったこと"><meta name="twitter:description" content="オードリー・タン氏が台湾で実現したこと、台湾のJoinとDD2030のいどばたの違い、チームみらいのみらい議会とAIインタビューの機能を、公開資料とソースコードで調べました。みらい議会の構想にあってまだ無い「賛否と対立の見え方」「議員の発言の記録」は当社のシステムにすでにあり、そこから法案AIインタビュー「khouan」を作り始めるまでの経緯をまとめます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "オードリー・タンとみらい議会から考えた、法案AIインタビュー「khouan」の構想——Join・いどばた・AIインタビューを調べて分かったこと", "description": "オードリー・タン氏が台湾で実現したこと、台湾のJoinとDD2030のいどばたの違い、チームみらいのみらい議会とAIインタビューの機能を、公開資料とソースコードで調べました。みらい議会の構想にあってまだ無い「賛否と対立の見え方」「議員の発言の記録」は当社のシステムにすでにあり、そこから法案AIインタビュー「khouan」を作り始めるまでの経緯をまとめます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-11-khouan-mirai-gikai-audrey-tang.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-11", "dateModified": "2026-10-11", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>オードリー・タンとみらい議会から考えた、法案AIインタビュー「khouan」の構想——Join・いどばた・AIインタビューを調べて分かったこと</h1><p class="meta">2026-10-11</p><p>名古屋でAIシステム開発の会社をやっています。デジタル民主主義の道具を一つの流れに並べた資料を作ったあと、Claude Code と一緒に「オードリー・タンさんは何を実現したのか」から調べ直しました。調べるうちに、台湾のJoin、DD2030のいどばた、チームみらいのみらい議会とAIインタビューへと話がつながり、最後は新しいシステム「Kurage 法案AIインタビュー（khouan）」を作り始めることになりました。その経緯を、調べた順に書きます。</p>
+<h2>1. オードリー・タンさんが実現したこと</h2>
+<p>オードリー・タンさんは、台湾の市民技術者のコミュニティ g0v の中心人物の一人で、2016年からデジタル担当の大臣、2022年からは新しくできたデジタル発展部の初代大臣を務めました。</p>
+<p>主張の中心は、分断はテクノロジーで乗り越えられる、ということです。多数決で勝ち負けを決めるのではなく、立場の違う人どうしが一致できる点を探す。2024年にグレン・ワイルさんと出した『Plurality（多元性）』では、テクノロジーで国家の権限を社会の側へ分散させる道を説いています。</p>
+<p>実現したことは、次のようなものです。</p>
+<ul>
+<li><strong>vTaiwan</strong>：法令づくりへの市民参加の場。2015年の配車アプリの規制では、Pol.is で見つけた立場をこえた合意点が、規則づくりに使われました。</li>
+<li><strong>Join</strong>：市民が政策を提案する場。</li>
+<li><strong>マスクマップ</strong>：コロナの初期に、薬局ごとのマスクの在庫を地図に出しました。</li>
+</ul>
+<p>日本の国会でオードリー・タンさんにふれた発言は46件ありました。ただ、ほとんどはマスクマップの話で、合意形成や『Plurality』の考え方まで議論した発言はわずかでした。</p>
+<h2>2. Joinといどばたは、似ているが別物</h2>
+<p>次に、Joinを参考に DD2030 の「いどばた」ができたのかを調べました。</p>
+<p>いどばたのリポジトリを全部読みましたが、Join・台湾・vTaiwan・Pol.is にふれた箇所はありませんでした。一方で、DD2030 の周りの資料には、2025年1月の台湾視察や、「台湾の JOIN のような市民参加型の政策形成を日本で実装する」という目標が出てきます。問題意識は近いが、写したものではない、と読むのが正確です。</p>
+<p>仕組みははっきり違います。</p>
+<ul>
+<li><strong>Join は「制度」</strong>です。60日で5,000人の賛同が集まると、担当の省庁は2か月以内に回答しなければなりません。ただ、開設から5年で9,000件を超える提案のうち、5,000人に届いたのは202件、実際に採用されたのは39件という指摘もあります。</li>
+<li><strong>いどばたは「道具」</strong>です。AIとの対話で意見を集め、課題と解決策を整理して、論点や政策の案を作ります。使う側に回答の義務はありません。</li>
+</ul>
+<p>どちらにも、賛否の割れ方を計算して合意点を出す仕組みはありません。</p>
+<h2>3. いどばたは、ほぼチームみらいで使われている</h2>
+<p>いどばたがどこで使われているかを調べると、中心はチームみらいでした。「みらいいどばた会議」と、マニフェストへの修正の提案（2,000件近く）に使われています。立憲民主党の採用の発表や、中野駅の再開発の実証実験もありましたが、いま動いていると確かめられたのはチームみらいの分だけでした。</p>
+<p>GitHub の写し（フォーク）は51件ありましたが、ほとんどは個人のもので、自治体や団体の名前のものはありませんでした。本体の更新も、2026年7月から止まっています。</p>
+<h2>4. チームみらいは、いどばたとみらい議会をどう使い分けているか</h2>
+<p>チームみらいの使い方を整理すると、こうなりました（使い分けを一つの文書で説明した資料は無く、ここは私たちの読みです）。</p>
+<ul>
+<li><strong>いどばた</strong>：チームみらい自身の政策をつくる</li>
+<li><strong>みらい議会</strong>：国会の法案ごとに、解説して、意見を聞く。2026年3月に AIインタビュー、6月に意見を話題に束ねる機能が加わりました</li>
+<li><strong>広聴AI</strong>：集めた声を地図にする</li>
+<li><strong>広聴本部</strong>：2026年9月に、これらを束ねる組織として立ち上げ。10月には「みらい版Pol.is」をこれから作ると発表</li>
+</ul>
+<p>AIインタビューは別の道具ではなく、みらい議会の中の機能でした。</p>
+<h2>5. みらい議会のソースコードを読んで分かったこと</h2>
+<p>みらい議会は GitHub で公開されています。中身を読むと、法案の解説（やさしい解説への切り替え・AIへの質問）、党の賛否の表示、AIインタビュー（同意の画面・本人が確かめるまとめ・「参考になる」の反応）、意見の一覧と話題のページ、データの公開、管理画面のインタビューの試し運転まで、よく作り込まれていました。</p>
+<p>一方で、2025年9月の最初の構想の資料にあって、まだ入っていないものがありました。</p>
+<ul>
+<li>法案や論点への賛否の投票と、意見の対立の見え方</li>
+<li>議員ごとの投票の記録と、発言・答弁の履歴（議員のトラッキング）</li>
+</ul>
+<h2>6. その2つは、当社にすでにあった</h2>
+<p>この2つは、当社がすでに動かしているものでした。</p>
+<ul>
+<li><strong>国会トラッカー</strong>：法案742本について、要約（元の文と数字・日付を照らし合わせたもの）、審議の経過、国会での質疑と答弁7,062件、会派ごとの賛否を並べています。</li>
+<li><strong><a href="https://kurage.exbridge.jp/kronten.php/#ref=vibeblog-khouan">論点AIマップ</a></strong>：すでにある声から、話題の地図と論点を作ります。</li>
+<li><strong><a href="https://kurage.exbridge.jp/kconsensus.php/#ref=vibeblog-khouan">合意形成AI（Pol.is 互換）</a></strong>：賛否の割れ方と、立場をこえた合意点を出します。</li>
+</ul>
+<p>足りないのは、「法案ごとに意見を聞く」ところだけでした。</p>
+<h2>7. khouan の構想</h2>
+<p>そこで、新しい製品「Kurage 法案AIインタビュー（khouan）」を作ることにしました。名前は、検索や対外の名前が後から割れないよう、作る前に決めました。</p>
+<p>khouan は、論点AIマップや合意形成AIと同じく、別の製品として作り、デモを動かしながら、国会トラッカーの法案のページに組み込みます。</p>
+<ol>
+<li><strong>法案を解説する</strong>：国会トラッカーの法案の要約・審議の経過・質疑と答弁を使う</li>
+<li><strong>意見を聞く</strong>：法案ごとに AI が聞き手になり、答えに合わせて質問を重ね、最後に本人が確かめた「意見のまとめ」を残す</li>
+<li><strong>話題に束ねる</strong>：論点AIマップと同じ仕組みで、意見を話題に分ける</li>
+<li><strong>割れ方と合意点を出す</strong>：話題から賛否を問える論点を作り、合意形成AIに渡す</li>
+</ol>
+<p>法案のページには、「この法案に意見を伝える」「みんなの意見」「どこで割れていて、どこで一致しているか」の3つの枠を足します。法案を読む、議員の質疑と答弁をたどる、自分の意見を伝える、みんなの意見の割れ方と合意点を見る、までが一つの流れになります。</p>
+<p>AIは当社のサーバーで動かす生成AIを使い、最初はいまの臨時国会で審議中の法案から始めます。この記事を書いている時点では、作り始めたところです。動いたら、改めてこのブログで報告します。</p>
+<h2>調べてみて思ったこと</h2>
+<p>オードリー・タンさんの取り組みの中心は、声を集めて地図にすることではなく、立場の違う人が一致できる点を見つけて、政策に反映させるところにありました。日本では、声を集める道具は広がりつつあります。その先の「どこで一致できるか」と「誰が何を言ってきたか」を、法案という具体的な単位でつなげることが、次の一歩だと考えています。</p>
+<h2>よくある質問</h2>
+<h3>オードリー・タンさんは何をした人ですか？</h3>
+<p>台湾のデジタル担当の大臣（2016年〜）、初代のデジタル発展部の大臣（2022〜2024年）を務めた人です。法令づくりへの市民参加の場 vTaiwan や、コロナの初期のマスクマップで知られ、立場の違う人どうしの合意点を探す考え方『Plurality（多元性）』を説いています。</p>
+<h3>みらい議会とは何ですか？</h3>
+<p>チームみらいが運営する、国会の法案をAIで分かりやすく解説し、AIインタビューで意見を聞き、意見を話題に束ねて見せるサイトです。ソースコードは GitHub で公開されています。</p>
+<h3>いどばたとみらい議会の違いは何ですか？</h3>
+<p>いどばたは DD2030 が作った道具で、チームみらいでは党自身の政策をつくるのに使われています。みらい議会はチームみらいが自分で作ったシステムで、国会の法案ごとに解説と意見の聞き取りをします。AIインタビューは、みらい議会の中の機能です。</p>
+<h3>khouan はみらい議会と何が違いますか？</h3>
+<p>法案を解説して意見を聞き、話題に束ねるところは同じ方向です。違いは、当社の国会トラッカーの「議員の質疑と答弁の記録」と、合意形成AIの「賛否の割れ方と合意点」を、法案のページで一つにつなぐところです。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
