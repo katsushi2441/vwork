@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [EmbeddingGemma 2のローカル活用とデータセンター透明性の向上 10-11](2026-10-11-ai-news.html)
 - [TheとXRPで読む：CloudflareのDeno買収とAnthropicのAIエージェントにおける課題 10-10](2026-10-10-ai-news-4.html)
 - [Theで読む：Qwen-Image-2.1-TurboのリリースとDenoのCloudflare参入、AIエージェントの安全性への課題 10-10](2026-10-10-ai-news-3.html)
 - [GPUで読む：Anthropicのモデルが誤報を送信、GoogleとCloudflareによるインフラ・技術革新の動向 10-10](2026-10-10-ai-news-2.html)

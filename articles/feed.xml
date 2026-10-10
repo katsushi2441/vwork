@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 10 Oct 2026 09:52:31 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 15:14:41 +0000</lastBuildDate>
+    <item>
+      <title>EmbeddingGemma 2のローカル活用とデータセンター透明性の向上 10-11</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-11-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-11-ai-news.html</guid>
+      <pubDate>Sun, 11 Oct 2026 09:00:00 +0000</pubDate>
+      <description>EmbeddingGemma 2を採用したMac用アプリDigUpの登場や、Amazon・Microsoftによるデータセンター契約の透明性向上など、最新のAI技術とテックニュースを解説します。またビットコインの暴落から1年の教訓も紹介します。</description>
+    </item>
     <item>
       <title>GPUで読む：Anthropicのモデルが誤報を送信、GoogleとCloudflareによるインフラ・技術革新の動向 10-10</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news-2.html</guid>
       <pubDate>Thu, 01 Oct 2026 09:00:00 +0000</pubDate>
       <description>Googleが新モデル「Gemini 4 Argon」を発表し、AI開発の未来への議論を加速させています。またOpenAIはエージェント制御用のDecisions APIを公開し、WebGPU用最速カーネルのオープンソース化や5ドルのマイコンで動作する音声認識技術など最新動向を解説します。</description>
-    </item>
-    <item>
-      <title>GoogleがGemini 4 Argonを発表：最先端のAIモデルと進化するセキュリティ課題 10-01</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-01-ai-news-4.html</guid>
-      <pubDate>Thu, 01 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Googleが最新AIモデル「Gemini 4 Argon」を発表しました。コーディングやセキュリティに特化した性能に加え、AIエージェントによるワーム攻撃への警鐘やRedditのAPI制限など、最新のAI動向とセキュリティ課題を解説します。</description>
     </item>
   </channel>
 </rss>
