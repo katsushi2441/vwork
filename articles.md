@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Buildingで読む：MicrosoftのナデラCEOが警鐘を鳴らすAIモデルへの「緊急ブレーキ」と最新テック動向 10-11](2026-10-11-ai-news-3.html)
 - [Commoditiesで読む：EmbeddingGemmaやAppleの技術獲得など、AI・Web3の最新動向まとめ 10-11](2026-10-11-ai-news-2.html)
 - [EmbeddingGemma 2のローカル活用とデータセンター透明性の向上 10-11](2026-10-11-ai-news.html)
 - [TheとXRPで読む：CloudflareのDeno買収とAnthropicのAIエージェントにおける課題 10-10](2026-10-10-ai-news-4.html)
