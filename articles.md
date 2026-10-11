@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Buildで読む：Qualcommが予測する2028年のスマホ進化とDeepSeekのセキュリティリスク 10-11](2026-10-11-ai-news-4.html)
 - [Buildingで読む：MicrosoftのナデラCEOが警鐘を鳴らすAIモデルへの「緊急ブレーキ」と最新テック動向 10-11](2026-10-11-ai-news-3.html)
 - [Commoditiesで読む：EmbeddingGemmaやAppleの技術獲得など、AI・Web3の最新動向まとめ 10-11](2026-10-11-ai-news-2.html)
 - [EmbeddingGemma 2のローカル活用とデータセンター透明性の向上 10-11](2026-10-11-ai-news.html)
