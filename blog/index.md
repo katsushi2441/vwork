@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [質問主意書の下書きをAIで作る——過去の答弁を原文のまま引用し、出典と照らし合わせる質問主意書アシスト](2026-10-11-kshuisho-ai-draft-semantic-search.html)
 - [AIインタビューで法案への意見を聞くシステムを作った——話題に束ね、合意点まで出す仕組みと、荒らし・個人情報への備え](2026-10-11-khouan-ai-interview-bills.html)
 - [オードリー・タンとみらい議会から考えた、法案AIインタビュー「khouan」の構想——Join・いどばた・AIインタビューを調べて分かったこと](2026-10-11-khouan-mirai-gikai-audrey-tang.html)
 - [チームみらいの381万票はどこから来たのか——Xのフォロワー・YouTube登録者・党員数を、参政党・日本保守党・NHK党と比べる](2026-10-10-team-mirai-votes-vs-followers.html)
