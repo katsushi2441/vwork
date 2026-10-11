@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [GLM5.3 Flashの高速化とApple HomeView、そしてRTX 5090を巡るAIインフラの動向 10-12](2026-10-12-ai-news-2.html)
 - [Voice AIで読む：MicrosoftのAesCodeとRTX 5090から見る、構造的生成とAIインフラの現状 10-12](2026-10-12-ai-news.html)
 - [Buildで読む：Qualcommが予測する2028年のスマホ進化とDeepSeekのセキュリティリスク 10-11](2026-10-11-ai-news-4.html)
 - [Buildingで読む：MicrosoftのナデラCEOが警鐘を鳴らすAIモデルへの「緊急ブレーキ」と最新テック動向 10-11](2026-10-11-ai-news-3.html)
