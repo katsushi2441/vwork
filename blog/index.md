@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [ブロードリスニングを始めた田川市を調べた——「聴くAI」の仕組み、10日で集まった234件の声、当社の論点AIマップ・合意形成AIとの違い](2026-10-11-tagawa-broad-listening-kikuai.html)
 - [質問主意書の下書きをAIで作る——過去の答弁を原文のまま引用し、出典と照らし合わせる質問主意書アシスト](2026-10-11-kshuisho-ai-draft-semantic-search.html)
 - [AIインタビューで法案への意見を聞くシステムを作った——話題に束ね、合意点まで出す仕組みと、荒らし・個人情報への備え](2026-10-11-khouan-ai-interview-bills.html)
 - [オードリー・タンとみらい議会から考えた、法案AIインタビュー「khouan」の構想——Join・いどばた・AIインタビューを調べて分かったこと](2026-10-11-khouan-mirai-gikai-audrey-tang.html)
