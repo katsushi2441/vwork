@@ -1,0 +1,75 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>質問主意書の下書きをAIで作る——過去の答弁を原文のまま引用し、出典と照らし合わせる質問主意書アシスト | VWork バイブコーディングフレームワーク</title><meta name="description" content="衆参の質問主意書と答弁書を本文まで探せる「Kurage 質問主意書アシスト」に、意味の近い質問主意書を出す機能、言い換えでも探す機能、AIが下書きを作る機能を足しました。下書きの引用は答弁書の原文と一字一句照らし合わせ、合わなければ出しません。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-11-kshuisho-ai-draft-semantic-search.html"><meta property="og:type" content="article"><meta property="og:title" content="質問主意書の下書きをAIで作る——過去の答弁を原文のまま引用し、出典と照らし合わせる質問主意書アシスト"><meta property="og:description" content="衆参の質問主意書と答弁書を本文まで探せる「Kurage 質問主意書アシスト」に、意味の近い質問主意書を出す機能、言い換えでも探す機能、AIが下書きを作る機能を足しました。下書きの引用は答弁書の原文と一字一句照らし合わせ、合わなければ出しません。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-11-kshuisho-ai-draft-semantic-search.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="質問主意書の下書きをAIで作る——過去の答弁を原文のまま引用し、出典と照らし合わせる質問主意書アシスト"><meta name="twitter:description" content="衆参の質問主意書と答弁書を本文まで探せる「Kurage 質問主意書アシスト」に、意味の近い質問主意書を出す機能、言い換えでも探す機能、AIが下書きを作る機能を足しました。下書きの引用は答弁書の原文と一字一句照らし合わせ、合わなければ出しません。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "質問主意書の下書きをAIで作る——過去の答弁を原文のまま引用し、出典と照らし合わせる質問主意書アシスト", "description": "衆参の質問主意書と答弁書を本文まで探せる「Kurage 質問主意書アシスト」に、意味の近い質問主意書を出す機能、言い換えでも探す機能、AIが下書きを作る機能を足しました。下書きの引用は答弁書の原文と一字一句照らし合わせ、合わなければ出しません。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-11-kshuisho-ai-draft-semantic-search.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-11", "dateModified": "2026-10-11", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>質問主意書の下書きをAIで作る——過去の答弁を原文のまま引用し、出典と照らし合わせる質問主意書アシスト</h1><p class="meta">2026-10-11</p><p>名古屋でAIシステム開発の会社をやっています。衆議院と参議院の質問主意書と政府の答弁書を、本文の中まで言葉で探せる「Kurage 質問主意書アシスト」に、3つの機能を足しました。意味の近い質問主意書を出す機能、言い換えでも探す機能、そしてAIが下書きを作る機能です。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/kshuisho.php/#ref=vibeblog-kshuisho-ai">Kurage 質問主意書アシスト（デモ）</a></li>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=9701841975d2ed6a#ref=vibeblog-kshuisho-ai">議員事務所に置いて使う（Kurage App Store）</a></li>
+</ul>
+<h2>1. 「導入する考えもない」と答えられた仕組み</h2>
+<p>質問主意書は、会派や委員会に縛られず、議員が内閣に質問できる手段です。ただ、衆議院と参議院でサイトが分かれていて、過去に同じような質問が出ているかを探すのは簡単ではありません。</p>
+<p>2023年12月8日、吉田はるみ衆議院議員（当時）が「質問主意書の在り方に関する質問主意書」を出しています。その中で、衆参の質問主意書と答弁をまとめ、会期・提出者・内容のキーワードで検索できる仕組みを政府が作るべきではないか、と問いました。理由は、同じような質問が何度も出ると答弁を作る側の負担になること、そして国民が関心のある質問と答弁を探しにくく、知る権利を損なうことでした。</p>
+<p>政府の答弁（12月22日）は、各議院で検討されるべきことだとして、「導入する予定はなく、また、導入する考えもない」というものでした。</p>
+<p>質問主意書アシストは、ちょうどその仕組みにあたるものです。第212回から第221回国会までの2,167件を、題名・質問・答弁の本文まで、衆参をまたいで探せます。今回は、その上に3つの機能を足しました。</p>
+<h2>2. 意味の近い質問主意書を出す</h2>
+<p>言葉で探す検索は、確実で、なぜその結果が出たのか誰でも説明できます。一方で、「教育費」で探しても、「学費」や「授業料」としか書かれていない質問主意書は出てきません。</p>
+<p>そこで、2,167件すべてについて、件名と質問の冒頭の意味の近さを当社のサーバーで先に計算し、近い8件ずつを表にしました。各質問主意書のページに「似た質問主意書」として出ています。</p>
+<p>たとえば、先ほどの「質問主意書の在り方に関する質問主意書」のページでは、1位に水野素子参議院議員の「質問主意書の回答期限に関する質問主意書」、2位と3位に浜田聡参議院議員の、答弁の期限と官僚の負担についての質問主意書が出ました。言葉は違っても、同じ論点で誰が何を聞いたかが並びます。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/kshuisho.php/q/shu-212-141#ref=vibeblog-kshuisho-ai">「質問主意書の在り方に関する質問主意書」と似た質問主意書</a></li>
+</ul>
+<p>この表は前もって計算しておくので、画面を開いたときにAIは動きません。AIを動かせない環境でも、この機能は使えます。</p>
+<h2>3. 言い換えでも探す</h2>
+<p>AIを使える環境では、入れた言葉の言い換えもAIに出させて、その言葉でも探します。「教育費」と入れると、「学費・修学費用・教育負担・授業料・給付型奨学金」に言い換え、元の言葉では出なかった質問主意書を19件、別の枠に足しました。どの言い換えで一致したかも、カードごとに書いてあります。</p>
+<p>ただし、言葉によっては言い換えがずれることもあります。そのため、枠には「論点に合っているかは人が確かめてください」と書いています。</p>
+<h2>4. AIが下書きを作る</h2>
+<p>作成アシストの画面では、論点の言葉を入れると、質問主意書を書く前に要る材料を1画面に並べます。政府の答弁の原文の段落、「お答えすることは困難」などの答えていない型が返った質問、過去の質問です。AIを使える環境では、ここに「下書きを作る」ボタンが出ます。</p>
+<p>下書きは、件名、前提の事実、過去の答弁の引用、一から三までの問いの形で作ります。ここで一番気をつけたのは、引用です。質問主意書は議員の名前で国会に出す文書なので、AIが答弁を言い換えたり、存在しない答弁を作ったりすると、議員の責任になってしまいます。</p>
+<p>そこで、作った下書きをそのまま出さず、サーバーで次のことを照らし合わせています。</p>
+<ol>
+<li>かぎかっこで引いた答弁が、渡した答弁書の原文に一字一句そのまま含まれているか</li>
+<li>引用に付けた出典の番号が、実際に渡したものか</li>
+<li>前提の事実に書いた数字が、出典の原文にあるか</li>
+</ol>
+<p>どれかが外れたら1回だけ作り直し、それでも外れたら「作れませんでした」と出して、下書きは表示しません。原文に無い引用を混ぜる、引用の語尾を変える、渡していない出典の番号を付ける、といった下書きをわざと作って試し、すべて止まることを確かめています。</p>
+<p>吉田さんの論点で試すと、政府の「導入する予定はなく、また、導入する考えもない」という答弁を、答弁書の番号と日付を付けて原文どおりに引いた下書きができました。</p>
+<p>画面には「AIが作った下書きです。提出の前に、引用と事実を原文で必ず確かめてください」と出します。下書きはその場で表示するだけで、保存しません。</p>
+<ul>
+<li><a href="https://kurage.exbridge.jp/kshuisho.php/assist?q=%E6%95%99%E8%82%B2%E8%B2%BB#ref=vibeblog-kshuisho-ai">作成アシスト（「教育費」の例）</a></li>
+</ul>
+<h2>5. AIを使える環境と、使えない環境</h2>
+<p>質問主意書アシストは、議員事務所のサーバーに置いて使える形で、Kurage App Store に出しています。PHPのファイル1つとデータベースだけで動くので、AIを動かすサーバーが無い事務所でも置けます。</p>
+<ul>
+<li><strong>AIが無い環境</strong>：言葉で探す、似た質問主意書を見る、作成アシストで材料と型を並べる</li>
+<li><strong>AIがある環境</strong>：上に加えて、言い換えでも探す、下書きを作る</li>
+</ul>
+<p>AIは当社のサーバーで動かす生成AI（gemma4）を使い、質問や答弁の文章を外部のAIのサービスに送りません。</p>
+<h2>よくある質問</h2>
+<h3>質問主意書とは何ですか？</h3>
+<p>国会議員が内閣に対して文書で質問する仕組みです。国会法74条に基づき、議長の承認を経て内閣に送られ、内閣は原則7日以内に答弁書を閣議決定して答えます。会派や委員会に関係なく、議員が質問できるのが特徴です。</p>
+<h3>AIが作った下書きをそのまま提出できますか？</h3>
+<p>そのまま提出することは勧めません。引用は答弁書の原文と照らし合わせていますが、前提の事実や問いの立て方は、議員や事務所の方が原文で確かめ、直してから使ってください。</p>
+<h3>どの国会の質問主意書が入っていますか？</h3>
+<p>いまは第212回から第221回国会までの、衆参あわせて2,167件です。</p>
+<h3>似た質問主意書は、どのくらい当たりますか？</h3>
+<p>上位3件ほどは、同じ論点のものがよく並びます。収めている件数がまだ少ないので、4位以降には論点が少しずれたものが混ざることがあります。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
