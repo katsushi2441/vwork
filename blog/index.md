@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [広聴AIは自治体の普通のPCで動くか——GPUなし・4コア・16GBでローカルLLMの速さを測り、DD2030のIssueに返信した](2026-10-12-kouchou-ai-local-llm-cpu.html)
 - [ブロードリスニングに取り組む自治体を調べた——田川市・堺市・大阪府・岩手県・渋谷区・宇多津町・横浜市、使った仕組みと首長の発信](2026-10-12-broad-listening-jichitai-chosa.html)
 - [ブロードリスニングを始めた田川市を調べた——「聴くAI」の仕組み、10日で集まった234件の声、当社の論点AIマップ・合意形成AIとの違い](2026-10-11-tagawa-broad-listening-kikuai.html)
 - [質問主意書の下書きをAIで作る——過去の答弁を原文のまま引用し、出典と照らし合わせる質問主意書アシスト](2026-10-11-kshuisho-ai-draft-semantic-search.html)
