@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Ledgerの警告とDecision 3.0の登場：ハードウェアセキュリティとマルチモーダルモデルの最前線 10-12](2026-10-12-ai-news-4.html)
 - [LLMの能力に対する認識の乖離と、RTX 5090が$5,000に達するAIインフラの現状 10-12](2026-10-12-ai-news-3.html)
 - [GLM5.3 Flashの高速化とApple HomeView、そしてRTX 5090を巡るAIインフラの動向 10-12](2026-10-12-ai-news-2.html)
 - [Voice AIで読む：MicrosoftのAesCodeとRTX 5090から見る、構造的生成とAIインフラの現状 10-12](2026-10-12-ai-news.html)
