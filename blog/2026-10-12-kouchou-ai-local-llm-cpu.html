@@ -1,0 +1,126 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>広聴AIは自治体の普通のPCで動くか——GPUなし・4コア・16GBでローカルLLMの速さを測り、DD2030のIssueに返信した | VWork バイブコーディングフレームワーク</title><meta name="description" content="デジタル民主主義2030（DD2030）の広聴AIを、GPUのない自治体の普通のPCで動かせるかを測りました。4コア・メモリ16GB・GPUなしの条件で、ELYZA-JP-8Bは1秒5.7トークン、広聴AIの意見抽出は1件7.9秒で、100件なら約13分。思考型のgemma4は広聴AIを通すと約3倍遅くなります。開発の中心の西尾さんの整理を受けて、測ってから返信した経緯をまとめます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-12-kouchou-ai-local-llm-cpu.html"><meta property="og:type" content="article"><meta property="og:title" content="広聴AIは自治体の普通のPCで動くか——GPUなし・4コア・16GBでローカルLLMの速さを測り、DD2030のIssueに返信した"><meta property="og:description" content="デジタル民主主義2030（DD2030）の広聴AIを、GPUのない自治体の普通のPCで動かせるかを測りました。4コア・メモリ16GB・GPUなしの条件で、ELYZA-JP-8Bは1秒5.7トークン、広聴AIの意見抽出は1件7.9秒で、100件なら約13分。思考型のgemma4は広聴AIを通すと約3倍遅くなります。開発の中心の西尾さんの整理を受けて、測ってから返信した経緯をまとめます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-12-kouchou-ai-local-llm-cpu.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="広聴AIは自治体の普通のPCで動くか——GPUなし・4コア・16GBでローカルLLMの速さを測り、DD2030のIssueに返信した"><meta name="twitter:description" content="デジタル民主主義2030（DD2030）の広聴AIを、GPUのない自治体の普通のPCで動かせるかを測りました。4コア・メモリ16GB・GPUなしの条件で、ELYZA-JP-8Bは1秒5.7トークン、広聴AIの意見抽出は1件7.9秒で、100件なら約13分。思考型のgemma4は広聴AIを通すと約3倍遅くなります。開発の中心の西尾さんの整理を受けて、測ってから返信した経緯をまとめます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "広聴AIは自治体の普通のPCで動くか——GPUなし・4コア・16GBでローカルLLMの速さを測り、DD2030のIssueに返信した", "description": "デジタル民主主義2030（DD2030）の広聴AIを、GPUのない自治体の普通のPCで動かせるかを測りました。4コア・メモリ16GB・GPUなしの条件で、ELYZA-JP-8Bは1秒5.7トークン、広聴AIの意見抽出は1件7.9秒で、100件なら約13分。思考型のgemma4は広聴AIを通すと約3倍遅くなります。開発の中心の西尾さんの整理を受けて、測ってから返信した経緯をまとめます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-12-kouchou-ai-local-llm-cpu.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-12", "dateModified": "2026-10-12", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>広聴AIは自治体の普通のPCで動くか——GPUなし・4コア・16GBでローカルLLMの速さを測り、DD2030のIssueに返信した</h1><p class="meta">2026-10-12</p><p>名古屋でAIシステム開発の会社をやっています。デジタル民主主義2030（DD2030）が作っているオープンソースの「広聴AI」に、10月から参加しています。</p>
+<p>広聴AIのGitHubに、「ローカルLLMのベンチマーク、推奨スペックの決定」というIssue（#471）があります。2025年5月にできたもので、「どれくらいのPCなら動くのか分からない」「自治体向けに、どんなPCを買えば快適に動くのか案内を出したい」というのがゴールです。</p>
+<p>このIssueに、10月12日、開発の中心の西尾泰和さんから整理のコメントが付きました。その指摘を受けて、先に測ってから返信した経緯を書きます。</p>
+<h2>1. これまで当社が出していたもの</h2>
+<p>当社はこのIssueに、2回実測を書いていました。</p>
+<ul>
+<li><strong>10月5日</strong>：RTX 3090（GPU）でELYZA-JP-8Bを動かし、意見48件の分析が全部で2分33秒で終わった。GPUのメモリは約21.5GB使った</li>
+<li><strong>10月7日</strong>：gemma4:12bで、広聴AIの意見抽出に208件を流し、意味が変わった「誤読」が6件（約3%）あった。温度0でも結果は揺れた</li>
+</ul>
+<p>どちらも、GPUのある当社の機械での数字です。</p>
+<h2>2. 西尾さんに指摘されたこと</h2>
+<p>西尾さんのコメントは、2つに分かれていました。</p>
+<p><strong>1つ目は棚卸しです。</strong> このIssueが求めている2つの成果物、つまり「ベンチマーク用のスクリプト」と「自治体向けの推奨スペックの文書」は、まだ広聴AIの本体には無い。いま書かれている動作要件は「NVIDIAのGPUとドライバが必須、GPUメモリ8GB以上を推奨」で、「自治体の普通のPCで動く」というゴールとは合っていない。当社が出した実測は「貴重な材料」だが、成果物そのものではない、という整理でした。</p>
+<p><strong>2つ目は、目標の定め直しの提案です。</strong></p>
+<ul>
+<li>目標を「自治体の普通のPC（x86・GPUなし・CPUが主体）で、実用的に最後まで動くか」にする。GPUは「あれば速い補助」</li>
+<li>測るのは2つの層に分ける。ローカルLLMそのものの速さ（モデルサーバ層）と、広聴AIの処理全体が何件で何分か（パイプライン層）</li>
+<li>チームのやることは4つ。①普通のPCで処理全体を測る、②候補のローカルLLMの速さを測る、③出力の品質を人が見て絞る、④件数と時間の目安表と推奨スペックを決める</li>
+</ul>
+<p>当社の実測はどれもGPUの上の数字で、まさに「普通のPC」の答えにはなっていませんでした。</p>
+<h2>3. 返信する前に、測った</h2>
+<p>最初は「②と③を手伝えます」と返信しようとしました。ただ、それでは約束を書くだけです。先に測って、数字を持ってから返信することにしました。</p>
+<p><strong>条件</strong>：同じ機械の中で、普通のPCに近づけました。</p>
+<ul>
+<li>CPU：AMD Ryzen 7 5700X のうち、4コア（8スレッド）だけを使わせる</li>
+<li>メモリ：上限16GB</li>
+<li>GPU：使わない（ローカルLLMのサーバ Ollama を、CPUだけで動かす）</li>
+<li>モデル：ELYZA-JP-8B、gemma4:e4b、gemma4:12b</li>
+</ul>
+<h3>落とし穴：GPUを切ったつもりで、切れていなかった</h3>
+<p>最初、GPUを使わない設定（<code>CUDA_VISIBLE_DEVICES=-1</code>）で起動したのに、Ollamaは別の経路（Vulkan）でGPUを見つけて使おうとしていました。起動の記録を見なければ、GPUの数字を「CPUの数字」として出すところでした。</p>
+<p>CPUだけで測るには、Vulkanも止める設定（<code>OLLAMA_VULKAN=false</code>、<code>GGML_VK_VISIBLE_DEVICES=-1</code>）が要り、起動の記録に <code>library=cpu</code> と出ることを確かめる必要がありました。同じように測る人のために、返信にも書いています。</p>
+<h3>結果1：ローカルLLMの速さ</h3>
+<p>既定の抽出の指示文とコメント1件を4回流し、2回目以降の真ん中の値です。</p>
+<table>
+<thead>
+<tr>
+<th>モデル</th>
+<th align="right">出力の速さ</th>
+<th align="right">1件</th>
+<th align="right">最初の読み込み</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ELYZA-JP-8B</td>
+<td align="right">1秒に5.7トークン</td>
+<td align="right">7.4秒</td>
+<td align="right">10秒</td>
+</tr>
+<tr>
+<td>gemma4:e4b</td>
+<td align="right">1秒に8.1トークン</td>
+<td align="right">11.5秒</td>
+<td align="right">70秒</td>
+</tr>
+<tr>
+<td>gemma4:12b</td>
+<td align="right">1秒に3.3トークン</td>
+<td align="right">30.6秒</td>
+<td align="right">41秒</td>
+</tr>
+</tbody>
+</table>
+<h3>結果2：広聴AIの意見抽出を、そのまま通す</h3>
+<p>広聴AIの処理の中で一番時間がかかる「意見の抽出」を、広聴AIのコードのまま、CPUだけのサーバに向けて20件流しました。</p>
+<ul>
+<li><strong>ELYZA-JP-8B</strong>：1件7.9秒、20件で3分5秒、失敗0件</li>
+</ul>
+<p>抽出だけで、100件なら約13分、1,000件なら約2時間10分の見込みです。8B級なら、4コア・16GB・GPUなしでも数百件は実用の範囲で、12B級（1件30秒）は1,000件で8時間を超えるので「GPUが要る」側になりそうです。</p>
+<h3>結果3：思考型のgemma4は、広聴AIを通すと3倍遅い</h3>
+<p>gemma4:e4bも同じように流すと、1件あたり約34秒かかりました（測り始めの5件）。Ollamaに直接流したときの11.5秒の、約3倍です。</p>
+<p>gemma4は、答える前に考える「思考型」のモデルです。直接流したときは「考えない」設定を付けていましたが、広聴AIからの呼び出しにはこの設定が付かないため、考える分だけ遅くなっていると見ています。速さの数字だけを見てモデルを選ぶと、実際に広聴AIで使ったときに外れる、ということです。</p>
+<h2>4. 返信したこと</h2>
+<p>測った数字を表にして、Issueに返信しました。</p>
+<ul>
+<li>目標の定め直しに賛成し、②（LLM層）を普通のPCに近い条件で先に測ったこと</li>
+<li>モデルサーバ層の3つのモデルの速さと、ELYZAでの抽出20件の結果</li>
+<li>8B級なら数百件は実用の範囲、12B級は「要GPU」側になりそう、という見立て</li>
+<li>GPUを本当に切るにはVulkanも止める必要がある、という注意</li>
+<li>まだ測れていないもの（処理全体の時間、gemma4:e4bの抽出、品質の比較）。処理全体は、西尾さんが作ったベンチの仕組みが本体に入ったら、同じ条件で測ること</li>
+</ul>
+<p>計測のスクリプトと結果は、当社が公開している広聴AIの導入キットに置きました。</p>
+<h2>5. 測ってから返信してよかったこと</h2>
+<p>「手伝えます」とだけ書いていたら、相手にとっては、まだ何も無いのと同じでした。先に測ったことで、次の3つが返信に入りました。</p>
+<ol>
+<li>普通のPCで何件なら何分か、という見積もり</li>
+<li>GPUを切ったつもりで切れていない、という、測った人にしか分からない落とし穴</li>
+<li>思考型のモデルは広聴AIを通すと遅くなる、という、モデルを選ぶときの注意</li>
+</ol>
+<p>オープンソースの議論では、意見より実測のほうが、ずっと前に進めます。</p>
+<p>当社では、広聴AIを自治体や議員事務所のサーバーに置いて使うための導入キットや、集まった声から意見の割れ方と合意点を出すシステムも作っています。</p>
+<ul>
+<li><a href="https://exbridge.jp/vibeblog/2026-10-12-broad-listening-jichitai-chosa.html#ref=vibeblog-kouchou-cpu">ブロードリスニングに取り組む自治体を調べた記事</a></li>
+<li><a href="https://kurage.exbridge.jp/kconsensus.php/#ref=vibeblog-kouchou-cpu">合意形成AI：意見のグループと、立場をこえて賛成が多い点を出す</a></li>
+</ul>
+<h2>よくある質問</h2>
+<h3>広聴AIはGPUのないPCでも動きますか？</h3>
+<p>ローカルLLMを使う場合、4コア・メモリ16GB・GPUなしの条件で、ELYZA-JP-8Bなら意見の抽出は1件約8秒でした。100件なら抽出だけで約13分です。埋め込みやラベル付けを含めた処理全体の時間は、まだ測っていません。</p>
+<h3>広聴AIのローカルLLMには、どのモデルがよいですか？</h3>
+<p>CPUだけで動かすなら、8B級が現実的です。12B級は1件30秒ほどかかり、件数が多いとGPUが要ります。gemma4のような思考型のモデルは、広聴AIから呼ぶと考える分だけ遅くなるので注意が要ります。品質（誤読の少なさ）の比較は、これからです。</p>
+<h3>OllamaをCPUだけで動かすには？</h3>
+<p><code>CUDA_VISIBLE_DEVICES=-1</code> だけでは、Vulkan経由でGPUを使うことがあります。<code>OLLAMA_VULKAN=false</code> と <code>GGML_VK_VISIBLE_DEVICES=-1</code> も設定し、起動の記録に <code>library=cpu</code> と出ることを確かめてください。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
