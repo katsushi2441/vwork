@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Metaの初フロンティアモデル「Muse Wonder」登場とLedgerのセキュリティ問題 10-13](2026-10-13-ai-news-4.html)
 - [Metaの初フロンティアモデル「Muse Wonder」登場とIntel GPUの新展開 10-13](2026-10-13-ai-news-3.html)
 - [QwenのRLフレームワークとMetaの新型モデルMuse Wonderが示すAI進化の最前線 10-13](2026-10-13-ai-news-2.html)
 - [Qwenの「QwenGyre」リリースとスタンダードチャータードによるRLUSDカストディ展開 10-13](2026-10-13-ai-news.html)
