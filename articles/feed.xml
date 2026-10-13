@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Oct 2026 15:15:24 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 21:27:46 +0000</lastBuildDate>
     <item>
       <title>Rustのボローチェッカーにおける脆弱性とAmexによるAIエージェントの決済制限フレームワーク 10-14</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news.html</guid>
       <pubDate>Wed, 14 Oct 2026 09:00:00 +0000</pubDate>
       <description>Rustのボローチェッカーに11年以上放置されていたバグの発見や、AmexによるAIエージェントの決済制限フレームワークなど、最新の技術動向を解説します。EmbeddingGemma 2の音声認識への転換も紹介します。</description>
+    </item>
+    <item>
+      <title>Gemini 4 Argonの進化とOpenAI対Appleの法的紛争、そしてAnthropicの基盤整備 10-14</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news-2.html</guid>
+      <pubDate>Wed, 14 Oct 2026 09:00:00 +0000</pubDate>
+      <description>GoogleのGemini 4 Argonが示す高度な推論能力や実用性を解説します。また、Anthropicのソース管理システム再設計やOpenAI対Appleの営業秘密訴訟の進展、Appleの新デバイスHomeViewの発表など最新ニュースを網羅します。</description>
     </item>
     <item>
       <title>Qwenの「QwenGyre」リリースとスタンダードチャータードによるRLUSDカストディ展開 10-13</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news-2.html</guid>
       <pubDate>Sun, 04 Oct 2026 09:00:00 +0000</pubDate>
       <description>Aleph-Alphaが最大100万トークンのコンテキスト窓を持つLLM「Kolibri-1」を公開しました。また、OpenAIの安全担当者の退職による組織文化への懸念や、AWSのNDA不使用方針など最新動向を解説します。</description>
-    </item>
-    <item>
-      <title>Aleph-AlphaのKolibri-1登場とQwen3.8 Flash Nextの軽量化で加速するAI技術の最前線 10-04</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news-3.html</guid>
-      <pubDate>Sun, 04 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Aleph-Alphaが最大100万トークンに対応したKolibri-1を公開しました。またQwen3.8 Flash NextをノートPCで動作させる技術やAIエージェントの信頼性、AmazonのNDA廃止など最新動向を解説します。</description>
     </item>
   </channel>
 </rss>

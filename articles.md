@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Gemini 4 Argonの進化とOpenAI対Appleの法的紛争、そしてAnthropicの基盤整備 10-14](2026-10-14-ai-news-2.html)
 - [Rustのボローチェッカーにおける脆弱性とAmexによるAIエージェントの決済制限フレームワーク 10-14](2026-10-14-ai-news.html)
 - [Metaの初フロンティアモデル「Muse Wonder」登場とLedgerのセキュリティ問題 10-13](2026-10-13-ai-news-4.html)
 - [Metaの初フロンティアモデル「Muse Wonder」登場とIntel GPUの新展開 10-13](2026-10-13-ai-news-3.html)
