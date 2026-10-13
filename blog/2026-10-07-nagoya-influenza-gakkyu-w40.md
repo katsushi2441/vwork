@@ -12,6 +12,8 @@ permalink: /blog/2026-10-07-nagoya-influenza-gakkyu-w40.html
 tags: [名古屋市, 学級閉鎖, インフルエンザ, 感染症マップ]
 ---
 
+> **最新の学級閉鎖は、毎日更新の「[名古屋市の学級閉鎖 最新](https://exbridge.jp/vibeblog/nagoya-gakkyu-heisa.html#ref=vibeblog-gakkyu-old)」にあります。** この記事は10月7日時点の数字で、更新していません。
+
 名古屋でAIシステム開発の会社をやっています。自社で作った「[Kurage 感染症マップ](https://kurage.exbridge.jp/kkansen.php/nagoya/?ref=vibeblog_nagoya-flu-w40)」が、名古屋市の週報と学級閉鎖の発表を毎日取り込んでいるので、新しい週報が出たところで、その数字をまとめておきます。
 
 第40週（9月28日〜10月4日）の区ごとのインフルエンザは、**南区がいちばん多く、定点当たり23.67**でした。国の警報の基準値（30）を超えた区はありません。**学級閉鎖などは今シーズン146件**（10月7日判明分まで）です。

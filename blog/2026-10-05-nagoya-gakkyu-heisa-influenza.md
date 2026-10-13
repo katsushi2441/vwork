@@ -8,9 +8,11 @@ layout: default
 permalink: /blog/2026-10-05-nagoya-gakkyu-heisa-influenza.html
 tags: [名古屋市, 学級閉鎖, インフルエンザ, 感染症マップ]
 description: "名古屋市の集団かぜによる学級閉鎖・学年閉鎖・休校は、9月7日から10月1日までに104件（小学校46・高校39・中学校16ほか）。区ごとのインフルエンザは、第39週（9月21日〜27日）の定点当たりで南区36.00が警報レベルの目安、中川区24.25・昭和区18.00など7区が注意報レベルの目安でした。市の週報と学級閉鎖の発表から、区ごとの数字をまとめます。"
-seo_title: "名古屋市の学級閉鎖とインフルエンザ 区ごとの数字"
+seo_title: "名古屋市の学級閉鎖とインフルエンザ（10月5日時点）"
 head_keyword: "名古屋市 学級閉鎖"
 ---
+
+> **最新の学級閉鎖は、毎日更新の「[名古屋市の学級閉鎖 最新](https://exbridge.jp/vibeblog/nagoya-gakkyu-heisa.html#ref=vibeblog-gakkyu-old)」にあります。** この記事は10月5日時点の数字で、更新していません。
 
 名古屋でAIシステム開発の会社をやっています。自社で作った「[Kurage 感染症マップ](https://kurage.exbridge.jp/kkansen.php/nagoya/?ref=vibeblog_nagoya-flu-1005)」が、名古屋市の週報と学級閉鎖の発表を毎日取り込んでいるので、その数字から名古屋市の今の様子をまとめておきます。
 
