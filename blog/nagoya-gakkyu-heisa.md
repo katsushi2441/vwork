@@ -1,6 +1,6 @@
 ---
 title: "名古屋市の学級閉鎖 最新——インフルエンザなどの学級閉鎖・学年閉鎖を毎日更新"
-seo_title: "名古屋市の学級閉鎖・インフルエンザ 最新｜10月9日更新・10月8日判明分まで"
+seo_title: "名古屋市の学級閉鎖・インフルエンザ 最新｜10月9日更新"
 date: 2026-10-09
 layout: default
 permalink: /blog/nagoya-gakkyu-heisa.html
