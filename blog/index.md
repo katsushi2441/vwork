@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [AI駆動経営とは——企業のAI活用を4段階で考える。AIが仕事を起こし続け、人が判断する第4段階](2026-10-13-ai-kudo-keiei-4-dankai.html)
 - [こども誰でも通園制度の国会答弁まとめ——だれが質問し、政府は何と答えたか（質疑161件・答弁213件）](2026-10-13-kokkai-toben-kodomo-daredemo-tsuen.html)
 - [OTC類似薬の国会答弁まとめ——だれが質問し、政府は何と答えたか（質疑281件・答弁189件）](2026-10-13-kokkai-toben-otc-ruiji-yaku.html)
 - [消費税減税の国会答弁まとめ——だれが質問し、政府は何と答えたか（質疑1,136件・答弁574件）](2026-10-13-kokkai-toben-shohizei-genzei.html)
