@@ -1,0 +1,84 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>国会答弁をテーマごとに集めて、質問と答弁を1枚のカードにする——Kurage 国会トラッカーを単体の製品にしました | VWork バイブコーディングフレームワーク</title><meta name="description" content="テーマを決めると、全国の国会議員の質疑と政府の答弁を国会会議録から集め、だれが質問し政府が何と答えたかを日付順に並べる「Kurage 国会トラッカー」を、議員発言ログから切り出して単体の製品にしました。質問と答弁を1枚の画像にする質疑カード、議員×テーマのカード、推移グラフ入りの画像を作った理由と、別の論点への答弁を組にしない仕組みを書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-14-kokkai-tracker-shitsugi-card.html"><meta property="og:type" content="article"><meta property="og:title" content="国会答弁をテーマごとに集めて、質問と答弁を1枚のカードにする——Kurage 国会トラッカーを単体の製品にしました"><meta property="og:description" content="テーマを決めると、全国の国会議員の質疑と政府の答弁を国会会議録から集め、だれが質問し政府が何と答えたかを日付順に並べる「Kurage 国会トラッカー」を、議員発言ログから切り出して単体の製品にしました。質問と答弁を1枚の画像にする質疑カード、議員×テーマのカード、推移グラフ入りの画像を作った理由と、別の論点への答弁を組にしない仕組みを書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-14-kokkai-tracker-shitsugi-card.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="国会答弁をテーマごとに集めて、質問と答弁を1枚のカードにする——Kurage 国会トラッカーを単体の製品にしました"><meta name="twitter:description" content="テーマを決めると、全国の国会議員の質疑と政府の答弁を国会会議録から集め、だれが質問し政府が何と答えたかを日付順に並べる「Kurage 国会トラッカー」を、議員発言ログから切り出して単体の製品にしました。質問と答弁を1枚の画像にする質疑カード、議員×テーマのカード、推移グラフ入りの画像を作った理由と、別の論点への答弁を組にしない仕組みを書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "国会答弁をテーマごとに集めて、質問と答弁を1枚のカードにする——Kurage 国会トラッカーを単体の製品にしました", "description": "テーマを決めると、全国の国会議員の質疑と政府の答弁を国会会議録から集め、だれが質問し政府が何と答えたかを日付順に並べる「Kurage 国会トラッカー」を、議員発言ログから切り出して単体の製品にしました。質問と答弁を1枚の画像にする質疑カード、議員×テーマのカード、推移グラフ入りの画像を作った理由と、別の論点への答弁を組にしない仕組みを書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-14-kokkai-tracker-shitsugi-card.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-14", "dateModified": "2026-10-14", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>国会答弁をテーマごとに集めて、質問と答弁を1枚のカードにする——Kurage 国会トラッカーを単体の製品にしました</h1><p class="meta">2026-10-14</p><p>名古屋でAIシステム開発の会社をやっています。国会の質疑と政府の答弁をテーマごとに集める「国会トラッカー」を、これまで議員発言ログの一部として動かしてきました。今日、これを単体の製品「Kurage 国会トラッカー」として切り出しました。あわせて、質問と答弁を1枚の画像にする「質疑カード」などを作ったので、理由と仕組みを書きます。</p>
+<ul>
+<li><a href="https://xb4g.com/giin/tracker#ref=vibeblog-tracker-product">国会トラッカー（デモ・89テーマ）</a></li>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=5447675118edd258#ref=vibeblog-tracker-product">自社のサーバーに置いて使う（Kurage App Store）</a></li>
+</ul>
+<h2>1. 国会トラッカーは何をするか</h2>
+<p>「内密出産」「OTC類似薬」「不登校」のようにテーマと語を決めると、国立国会図書館の国会会議録検索システムから、その語を含む発言を全国の国会議員について集めます。いまのデモでは89のテーマで、議員の質疑が30,398件、政府の答弁が22,138件、取り上げた議員は1,483人です。</p>
+<p>テーマのページには、次のものを並べます。</p>
+<ul>
+<li>質疑と答弁の件数、取り上げた議員の数、最初と最新の日付</li>
+<li>いま政府は何と答えているか（直近の答弁）</li>
+<li>年ごと・党ごとの件数、よく取り上げた議員</li>
+<li>発言のあゆみ（質疑・答弁・参考人で切り替え）</li>
+</ul>
+<p>要約はしません。出すのは、テーマの語を含む文をそのまま抜いた抜粋と、会議録へのリンクだけです。発言は冒頭の話者表記から、議員の質疑・政府の答弁・委員長の議事整理・参考人に機械的に分けています。分けずに数えると、委員長や大臣を務めた議員の件数が跳ね上がり、「よく質問している人」に見えてしまうからです。</p>
+<h2>2. なぜ単体の製品にしたか</h2>
+<p>国会トラッカーは、もともと「愛知の国会議員が国会で何を言ったか」を引く議員発言ログの中に作りました。愛知の議員の発言だけでは「内密出産の法整備はどこまで来たか」が分からないので、テーマを決めて全国の発言を集める部分を足したのが始まりです。</p>
+<p>使っていくうちに、この2つは使う人が違うと分かりました。</p>
+<ul>
+<li><strong>議員発言ログ</strong>：特定の地域の議員が何を言ったかを見たい人。後援会、地方の報道、議員事務所</li>
+<li><strong>国会トラッカー</strong>：あるテーマが国会でどこまで来たかを見たい人。業界団体、NPOや当事者の団体、記者、政策の担当者</li>
+</ul>
+<p>国会トラッカーは議員の名簿を持たず、テーマの語だけで動きます。名簿を作らなくてよいので、導入もこちらのほうが簡単です。そこで、別々の製品に分けました。デモの画面は両方を一緒に動かしていますが、配布するものは中身を分けています。</p>
+<h2>3. 質疑カード——質問と答弁を1枚にする</h2>
+<p>きっかけはXでした。議員の投稿に、国会トラッカーのリンクを添えて返信すると、表示される画像が見られていることが分かりました。返信に貼ったカードに、議員ご本人から反応をいただいたこともあります。</p>
+<p>ただ、テーマ全体の画像だと「その議員が何を聞き、政府が何と答えたか」までは伝わりません。そこで、質疑1件ごとにページを作り、質問の一文と、その直後の政府の答弁の一文を1枚の画像にしました。ページのURLをXに貼ると、この画像がそのまま表示されます。ページには「タイトルとURLをコピー」のボタンを付けて、返信に貼る文とURLを一度にコピーできるようにしました。</p>
+<p>画像は、PHPで最初に開かれたときに描き、2回目からはそれを使います。会議録は3万件あるので、前もって全部作って置くのではなく、使われた分だけ描く形にしました。</p>
+<h2>4. 別の論点への答弁を、組にしない</h2>
+<p>一番気をつけたのはここです。会議録では、質問の直後に政府の答弁が来ます。ところが、議員は一つの質問の中で話題を移すことがあります。</p>
+<p>実際にあった例では、ある議員が内密出産にふれたあと「一つ飛ばして、次に」と別の話題に移って質問を終え、直後の答弁はその別の話題への答えでした。これをそのまま組にすると、内密出産の質問に、関係のない答弁が付いたカードができてしまいます。議員や政府の発言を取り違えて見せることになります。</p>
+<p>そこで、答弁を組にするのは、次のどちらかのときだけにしました。</p>
+<ul>
+<li>答弁の中にもテーマの語が出てくる</li>
+<li>質問の後ろ3割で、テーマの語にふれている</li>
+</ul>
+<p>どちらにも当たらないときは、質問だけのカードにして、ページに「直後の答弁は別の論点への答えでした」と書き、会議録へのリンクを出します。答弁がテーマの語を含まずに表に入っていないときは、会議録のAPIで直後の発言を1回だけ読み、手元に置いて二度と読みません。</p>
+<h2>5. 議員×テーマのカードと、推移グラフ</h2>
+<p>質疑1件より、「この議員はこのテーマを何年にわたって、何日取り上げてきたか」のほうが伝わる場面もあります。そこで、議員×テーマのページとカードも作りました。取り上げた日数と件数、最初の年、年ごとの件数の棒グラフ、直近の質問の一文を1枚にしています。</p>
+<p>テーマのページの画像にも、年ごとの質疑の件数を棒グラフで入れました。たとえば内密出産なら、2022年に質疑が35件と一番多かったことが、URLを貼るだけで見えます。</p>
+<p>数字は会議録から数えたものだけで、順位や評価は付けません。質疑ができるのは、その日その委員会で質問に立った議員だけなので、件数の差は熱心さの差ではないからです。</p>
+<h2>6. どんな使い方を想定しているか</h2>
+<ul>
+<li><strong>業界団体・NPO</strong>：自分たちのテーマについて、国会でだれが取り上げ、政府がどう答えてきたかを、会員や支援者に日付つきで示す</li>
+<li><strong>議員事務所</strong>：自分の質疑をカードにして発信する。同じテーマで質問してきた他の議員を調べる</li>
+<li><strong>記者・政策担当</strong>：テーマの経緯を、会議録のリンクつきで短時間で押さえる</li>
+</ul>
+<p>PHPとSQLiteだけで動き、共有のレンタルサーバーに置けます。LLMを使わないので、運用にAPI費用はかかりません。テーマは <code>data/trackers.json</code> に語を書くだけで足せます。毎日の更新のジョブも同梱していて、公開ページの件数が手元と一致したときだけ成功とします。</p>
+<ul>
+<li><a href="https://xb4g.com/giin/tracker#ref=vibeblog-tracker-product">国会トラッカー（デモ）</a></li>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=5447675118edd258#ref=vibeblog-tracker-product">Kurage 国会トラッカー（Kurage App Store）</a></li>
+<li><a href="https://kappstore.exbridge.jp/app.php?id=dd868beae043026b#ref=vibeblog-tracker-product">議員ごとに引くなら：Kurage 議員発言ログ（Kurage App Store）</a></li>
+</ul>
+<h2>よくある質問</h2>
+<h3>国会トラッカーとは何ですか？</h3>
+<p>テーマを決めると、全国の国会議員の質疑と政府の答弁を国会会議録から集め、だれが質問し、政府が何と答えたかを日付順に並べるシステムです。要約はせず、語を含む文の抜粋と会議録へのリンクだけを出します。</p>
+<h3>質疑カードとは何ですか？</h3>
+<p>質問の一文と、その直後の政府の答弁の一文を、1枚の画像（1200×630）にしたものです。ページのURLをXやSlackに貼ると、この画像が表示されます。別の論点への答弁は組にしません。</p>
+<h3>議員発言ログとの違いは何ですか？</h3>
+<p>議員発言ログは、特定の地域の議員が国会でいつ何を質問したかを議員ごとに引くものです。国会トラッカーは議員の名簿を持たず、テーマの語だけで全国の議員の質疑と答弁を集めます。</p>
+<h3>どんな環境で動きますか？</h3>
+<p>PHP 8 とSQLiteで動き、共有のレンタルサーバーに置けます。カードの画像はPHPのGDで描きます。取り込みはPythonで、LLMは使いません。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
