@@ -1,0 +1,93 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DXは「要件定義」から始めない——業務の自動化を目指しながら効率化から実現する、現場に来て話を聞きながらその場で作る開発 | VWork バイブコーディングフレームワーク</title><meta name="description" content="システム開発の請負では、要件定義・相見積もり・設計・開発・テストを経て、運用で現場から「違う」と言われ、仕様変更で費用がふくらんで揉めることが少なくありません。AIで開発できるようになった今、現場に来て話を聞きながらその場で作り、業務の効率化から始めて自動化へ進める開発のほうが、費用も期間も小さくなります。その進め方と、契約や記録で気をつけることを書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-14-dx-genba-de-sono-ba-de-tsukuru.html"><meta property="og:type" content="article"><meta property="og:title" content="DXは「要件定義」から始めない——業務の自動化を目指しながら効率化から実現する、現場に来て話を聞きながらその場で作る開発"><meta property="og:description" content="システム開発の請負では、要件定義・相見積もり・設計・開発・テストを経て、運用で現場から「違う」と言われ、仕様変更で費用がふくらんで揉めることが少なくありません。AIで開発できるようになった今、現場に来て話を聞きながらその場で作り、業務の効率化から始めて自動化へ進める開発のほうが、費用も期間も小さくなります。その進め方と、契約や記録で気をつけることを書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-14-dx-genba-de-sono-ba-de-tsukuru.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="DXは「要件定義」から始めない——業務の自動化を目指しながら効率化から実現する、現場に来て話を聞きながらその場で作る開発"><meta name="twitter:description" content="システム開発の請負では、要件定義・相見積もり・設計・開発・テストを経て、運用で現場から「違う」と言われ、仕様変更で費用がふくらんで揉めることが少なくありません。AIで開発できるようになった今、現場に来て話を聞きながらその場で作り、業務の効率化から始めて自動化へ進める開発のほうが、費用も期間も小さくなります。その進め方と、契約や記録で気をつけることを書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "DXは「要件定義」から始めない——業務の自動化を目指しながら効率化から実現する、現場に来て話を聞きながらその場で作る開発", "description": "システム開発の請負では、要件定義・相見積もり・設計・開発・テストを経て、運用で現場から「違う」と言われ、仕様変更で費用がふくらんで揉めることが少なくありません。AIで開発できるようになった今、現場に来て話を聞きながらその場で作り、業務の効率化から始めて自動化へ進める開発のほうが、費用も期間も小さくなります。その進め方と、契約や記録で気をつけることを書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-14-dx-genba-de-sono-ba-de-tsukuru.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-14", "dateModified": "2026-10-14", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>DXは「要件定義」から始めない——業務の自動化を目指しながら効率化から実現する、現場に来て話を聞きながらその場で作る開発</h1><p class="meta">2026-10-14</p><p>名古屋でAIシステム開発の会社をやっています。DXや業務の自動化の相談を受けていて、最近よく思うことがあります。システム開発で一番大変なのは、作ることより、要件をまとめるところではないか、ということです。</p>
+<h2>1. 要件をまとめても、現場から「違う」と言われる</h2>
+<p>よくある流れはこうです。</p>
+<ol>
+<li>現場の困りごとを聞き、要件をまとめる</li>
+<li>何社かに相見積もりをとり、発注する</li>
+<li>要件定義、設計、開発、テストと進める</li>
+<li>運用が始まって、現場から「やっぱり違う」と言われる</li>
+<li>そこからの仕様変更で費用がふくらみ、発注した側と作った側で揉める</li>
+</ol>
+<p>1から5まで、半年から1年かかることも珍しくありません。そして5は、少なくありません。</p>
+<h2>2. なぜ「違う」が起きるのか</h2>
+<p>理由は、要件を書く手間よりも、<strong>要件が現場を一番知らない人の言葉で決まってしまう</strong>ことにあると考えています。</p>
+<ul>
+<li><strong>書く人と使う人が別</strong>：要件をまとめるのは発注の責任者で、毎日使うのは現場の人です。組織が大きいほど、現場と発注の責任者の距離が遠くなり、伝言が増えます。現場の「なんとなく使いにくい」「この順番だと二度手間」は、要件定義書の言葉になりません</li>
+<li><strong>違いが見つかるのが最後</strong>：現場の人が実際に触れるのは、テストか運用が始まってからです。そこで見つかった違いは、全部「仕様変更」になります</li>
+<li><strong>契約が変更を嫌う</strong>：一括の請負は「最初に決めた範囲を、決めた金額で作る」約束です。作りながら気づいたことを入れるほど、追加の費用と交渉が必要になり、揉めます</li>
+</ul>
+<p>どれも、誰かが悪いわけではありません。作り直しに大きな費用がかかる時代には、先に全部決めてから作るのが合理的でした。</p>
+<h2>3. AIで、作り直しの費用がほぼなくなった</h2>
+<p>いまは、AIに相談しながら開発できます。画面を一つ作るのも、直すのも、数分から数十分です。作り直しの費用がほぼなくなったので、「先に全部決めてから作る」必要がなくなりました。</p>
+<p>当社の今日の仕事で言うと、国会の質疑と答弁を集めるシステムを単体の製品に切り出し、質問と答弁を1枚の画像にするカードを3種類作り、販売のページと紹介の動画まで用意しました。この間、要件定義書は1枚も書いていません。</p>
+<ul>
+<li>「URLだけでなく、タイトルとURLを一緒にコピーできるボタンにしたほうがいい」と言われて、その場で直す</li>
+<li>「この例、古くない？」と言われて、新しい例に差し替える</li>
+<li>作りながら見つかった問題（質問の途中で話題が移ると、別の答弁を組にしてしまう）も、その日のうちに直す</li>
+</ul>
+<p>使う人の一言を、その場で反映できる。これが、請負の開発との一番の違いです。</p>
+<h2>4. 効率化から始めて、自動化を目指す</h2>
+<p>DXの目標は業務の自動化ですが、いきなり全部を自動にしようとすると、それこそ大きな要件定義が必要になります。そこで、順番を逆にします。</p>
+<ol>
+<li><strong>現場に来て、いまの仕事を見る</strong>：何に時間がかかっているか、どこで転記や二度手間が起きているかを、話を聞きながら確かめます</li>
+<li><strong>一番時間がかかっている作業から、その場で効率化する</strong>：たとえば、毎日手で写している表を自動で集める、問い合わせの返信の下書きをAIに作らせる。小さく作って、その日から使ってもらいます</li>
+<li><strong>使ってもらいながら直す</strong>：「この項目も欲しい」「この順番がいい」をその場で直します。ここで、現場の言葉がそのまま仕組みに入ります</li>
+<li><strong>つながったところから自動にする</strong>：効率化した作業がいくつかつながると、人が間に入らなくても流れる部分が見えてきます。そこを自動化します</li>
+</ol>
+<p>効率化の段階で、現場の人は「これは使える」と実感しています。だから自動化の段階でも、現場が協力的です。上から決めた仕組みを押し付けるのとは、ここが違います。</p>
+<p>企業のAI活用を4つの段階で考えると、これは第2段階（資料やアプリで作業を支援する）から始めて、第3段階（仕組みが自動で業務を進める）へ進む道筋です。段階の考え方は、<a href="https://exbridge.jp/vibeblog/2026-10-13-ai-kudo-keiei-4-dankai.html#ref=vibeblog-genba">AI駆動経営の記事</a>に書きました。</p>
+<h2>5. 現場に来て、その場で作る人がいればいい</h2>
+<p>請負の開発スタイルより、<strong>AIで開発できる人が現場に来て、話を聞きながらその場で作る</strong>ほうが、費用も期間も大きく小さくなります。</p>
+<ul>
+<li><strong>要件定義と相見積もりの期間がなくなる</strong>：話を聞いたその日に、最初の画面ができます</li>
+<li><strong>仕様変更で揉めない</strong>：変更は「次にやること」でしかないので、追加の交渉が要りません</li>
+<li><strong>現場と発注の責任者の距離が縮まる</strong>：現場で作っているので、責任者も実物を見て判断できます</li>
+</ul>
+<p>AIの開発の速さを示す例として、落合陽一氏は、AIを使った開発の生産性を人間だけのときの32倍と書いています。当社でも、300時間かかると見積もられるような難しい開発が3時間ほどででき、100万〜300万円の開発費が3万円ほどで済んだ例があります。</p>
+<h2>6. 気をつけること</h2>
+<p>現場でその場で作るやり方にも、気をつけることがあります。</p>
+<ol>
+<li><strong>契約は「働いた時間の分だけ」にする</strong>：現場に常駐して、現場の人と相談しながら作るなら、一括の請負ではなく、時間で精算する契約（準委任）にするのが筋です。請負の契約のまま現場で指示を受けて作ると、偽装請負と見られるおそれもあります</li>
+<li><strong>作った人にしか分からない状態を防ぐ</strong>：その場で作るほど、記録が残りにくくなります。設計のメモや手順書もAIに書かせて、作ったものと一緒に残します</li>
+<li><strong>決めることは人に残す</strong>：何から作るかの優先順位、外に出すかどうか、お金がかかる判断は、現場と責任者が決めます</li>
+<li><strong>最初に決めたほうがよい仕事もある</strong>：法令で仕様が決まっている基幹の仕組みや、何社かで責任を分ける大きな案件は、今でも先に要件を固めたほうが安全です</li>
+</ol>
+<h2>7. 当社のやり方</h2>
+<p>当社は、この形を「AI-IT顧問契約」として引き受けています。現場に伺い、話を聞きながらその場で仕組みを作り、働いた時間の分だけ請求します。保守料のように、何もしなくてもかかる費用はありません。</p>
+<ul>
+<li><a href="https://exbridge.jp/ai-it-komon.html#ref=vibeblog-genba">AI-IT顧問契約（現場で、その場で作る）</a></li>
+<li><a href="https://exbridge.jp/ai-agent-automation.html#ref=vibeblog-genba">AIエージェントで業務を自動化する事例</a></li>
+<li><a href="https://exbridge.jp/system-development-cost.html#ref=vibeblog-genba">システム開発の費用はなぜ高くなるのか</a></li>
+</ul>
+<h2>よくある質問</h2>
+<h3>DXは要件定義から始めなくてよいのですか？</h3>
+<p>業務の効率化から始めるなら、大きな要件定義は要りません。現場に来て、一番時間がかかっている作業を見つけ、その場で小さく作って使ってもらい、直しながら広げます。法令で仕様が決まっている基幹の仕組みなど、先に要件を固めたほうがよい仕事もあります。</p>
+<h3>システム開発で仕様変更が揉めるのはなぜですか？</h3>
+<p>要件をまとめる人と使う人が別で、現場が実物に触れるのがテストや運用の段階だからです。そこで見つかった違いが全部仕様変更になり、一括の請負の契約では追加の費用と交渉が必要になります。</p>
+<h3>現場に常駐して開発してもらうときの契約はどうすればよいですか？</h3>
+<p>現場の人と相談しながら作るなら、一括の請負ではなく、働いた時間で精算する準委任の契約にするのが筋です。請負の契約のまま現場で指示を受けて作ると、偽装請負と見られるおそれがあります。</p>
+<h3>業務効率化と業務自動化は何が違いますか？</h3>
+<p>効率化は、人がしている作業を速く、楽にすることです。自動化は、人が間に入らなくても仕事が流れるようにすることです。効率化した作業がつながると、自動にできる部分が見えてくるので、効率化から始めて自動化を目指すのが進めやすい順番です。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
