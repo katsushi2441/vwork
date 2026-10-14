@@ -19,6 +19,12 @@ head_keyword: "OGP画像"
 - [国会トラッカー（デモ）](https://xb4g.com/giin/tracker#ref=vibeblog-ogp-kinds)
 - [議員発言ログ（デモ）](https://xb4g.com/giin/#ref=vibeblog-ogp-kinds)
 
+8種類を20秒で順に見られる動画です（音はありません）。
+
+<div style="width:100%;max-width:960px;margin:16px auto;border-radius:10px;overflow:hidden;background:#f4f8f8">
+  <video src="https://kurage.exbridge.jp/pv/ogp-cards-slideshow.mp4" poster="https://kurage.exbridge.jp/pv/ogp-cards-slideshow-poster.jpg" controls muted playsinline loop preload="metadata" style="display:block;width:100%;height:auto"></video>
+</div>
+
 ## 一覧
 
 | カード | 何が出るか |
