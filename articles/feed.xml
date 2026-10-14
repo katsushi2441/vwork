@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 14 Oct 2026 15:12:45 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 21:22:49 +0000</lastBuildDate>
     <item>
       <title>NVIDIAのNemotron BoltやAnthropicの議論から見るAIモデルの最新動向 10-15</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news.html</guid>
       <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAのNemotron Bolt 3.5やLiquidAIのLFM2.5-24B-A2Bなど、最新AIモデルの動向を解説します。中国と米国のモデル性能差やAnthropicによるオープンソースのリスクに関する議論も網羅しています。</description>
+    </item>
+    <item>
+      <title>MusicとAgentsで読む：QwenのPS5動作からNVIDIAの新モデルまで、加速するAI技術と社会への影響 10-15</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-2.html</guid>
+      <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
+      <description>PS5でQwen 3.8 27Bモデルの動作成功やNVIDIAのNemotron Bolt 3.5 74B A9Bリリースなど、最新AI技術の動向を解説します。気象シミュレーションや詐欺対策への応用、YouTube MusicのAIラベル導入も紹介します。</description>
     </item>
     <item>
       <title>Rustのボローチェッカーにおける脆弱性とAmexによるAIエージェントの決済制限フレームワーク 10-14</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-3.html</guid>
       <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
       <description>GoogleがAI生成の大量報告によりバグバウンティを一時停止したニュースや、Qwen 3.8 Flash NextをRTX 4090で高速動作させる技術、メモリ供給の逼迫予測など、最新のAI動向を網羅的に解説します。</description>
-    </item>
-    <item>
-      <title>BilibiliがQwen3.5基盤の多言語翻訳モデル「Index-Translate」を公開 10-05</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news.html</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
-      <description>BilibiliがQwen3.5をベースとした多言語翻訳モデル「Index-Translate」を発表しました。最大150言語に対応し、テキストや音声条件付けも可能です。あわせてLLMのハードウェア拡張やローカルAIの活用事例も紹介します。</description>
     </item>
   </channel>
 </rss>
