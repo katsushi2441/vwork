@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 14 Oct 2026 03:40:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 09:51:42 +0000</lastBuildDate>
     <item>
       <title>Rustのボローチェッカーにおける脆弱性とAmexによるAIエージェントの決済制限フレームワーク 10-14</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news-2.html</guid>
       <pubDate>Wed, 14 Oct 2026 09:00:00 +0000</pubDate>
       <description>GoogleのGemini 4 Argonが示す高度な推論能力や実用性を解説します。また、Anthropicのソース管理システム再設計やOpenAI対Appleの営業秘密訴訟の進展、Appleの新デバイスHomeViewの発表など最新ニュースを網羅します。</description>
+    </item>
+    <item>
+      <title>Gemini 4 Argonの進化とAnthropicによるソース管理再設計、そしてOpenAIを巡る法的動向 10-14</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news-4.html</guid>
+      <pubDate>Wed, 14 Oct 2026 09:00:00 +0000</pubDate>
+      <description>GoogleのGemini 4 Argonがコーディング能力で進化し、Anthropicはソース管理を再設計します。また、OpenAIに対するAppleの営業秘密訴訟での採用記録開示命令や、LiquidAIの新モデルLFM2.5-24B-A2Bの登場についても解説します。</description>
     </item>
     <item>
       <title>Qwenの「QwenGyre」リリースとスタンダードチャータードによるRLUSDカストディ展開 10-13</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-2.html</guid>
       <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
       <description>GoogleがAI生成による低品質な報告でバグバウンティを一時凍結したニュースや、Qwen3.5を安価なマイニング機器で動作させるFPGA実装の技術、RTX 4090での高速推論手法など、最新のAI開発動向を解説します。</description>
-    </item>
-    <item>
-      <title>Aleph-Alphaが公開した「Kolibri-1」：最大100万トークンのコンテキストを誇る新モデルの衝撃 10-04</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-04-ai-news.html</guid>
-      <pubDate>Sun, 04 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Aleph-Alphaが公開した最新モデル「Kolibri-1」の詳細を紹介します。78Bのパラメータを持ち、最大100万トークンのコンテキストウィンドウに対応しています。Apache 2.0ライセンスで提供される特徴も解説します。</description>
     </item>
   </channel>
 </rss>
