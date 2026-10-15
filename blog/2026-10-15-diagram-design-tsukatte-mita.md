@@ -17,7 +17,7 @@ head_keyword: "diagram-design"
 ちょうど、議員事務所や自治体の方に見せている「ブロードリスニングから合意形成までの見取り図」の図を、もう少し見やすくしたいと思っていました。そこで、この図を diagram-design で描き直してみました。
 
 - [diagram-design（当社のOSSカタログ）](https://kurage.exbridge.jp/oss/diagram-design/#ref=vibeblog-diagram-design)
-- [元の見取り図の記事（12枚のスライド）](https://exbridge.jp/vibeblog/2026-10-10-broad-listening-consensus-tools-map.html#ref=vibeblog-diagram-design)
+- [元の見取り図の記事（スライド13枚）](https://exbridge.jp/vibeblog/2026-10-10-broad-listening-consensus-tools-map.html#ref=vibeblog-diagram-design)
 
 ## 1. diagram-design は何をするものか
 
@@ -51,7 +51,7 @@ diagram-design は、構成図・工程図・データの流れ・時系列・2�
 
 元のスライドは、政策づくりの5つの工程を横に並べ、それぞれを受け持つ道具の名前を箱の中に書いたものでした。
 
-![描き直す前：5つの工程の箱の中に道具の名前を並べたスライド](assets/dd-tools-02.jpg)
+![描き直す前：5つの工程の箱の中に道具の名前を並べたスライド](assets/dd-tools-02-before.jpg)
 
 diagram-design では、これを「工程（process）」の型で描き直しました。横に5つの工程、縦に「海外」「日本のDD2030」「当社」の3つの列を置き、その交わりに道具の箱を置く形です。
 
