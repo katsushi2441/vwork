@@ -136,14 +136,10 @@ def stages() -> str:
                 f'{dash} marker-end="url(#arrow)"/>')
     b.append(h_arrow(0, 3, 4))                      # Pol.is → vTaiwan
     b.append(h_arrow(1, 1, 2))                      # 広聴AI → いどばたビジョン
-    b.append(h_arrow(1, 2, 4))                      # いどばたビジョン → いどばた政策（3列目は空き）
     b.append(h_arrow(2, 0, 2))                      # すでにある声 → 論点AIマップ（1列目は空き）
     b.append(label((cx(0) + cx(2)) / 2, mid(2), "そのまま入れる"))
     b.append(h_arrow(2, 2, 3))                      # 論点AIマップ → 合意形成AI
-    # 合意形成AI → いどばた政策（列をまたぐ・破線）：上に出て、DD2030の列の高さで右へ
-    x0, y0, y1, x1 = cx(3) + 24, ny(2), mid(1) + 12, cx(4) - NODE_W // 2 - 1
-    b.append(f'<path d="M{x0},{y0} L{x0},{y1 + 8} Q{x0},{y1} {x0 + 8},{y1} L{x1},{y1}" fill="none" stroke="{C["muted"]}" stroke-width="1" stroke-dasharray="5,4" marker-end="url(#arrow)"/>')
-    b.append(label(x0 + 8 + (x1 - x0 - 8) / 2 + 2, y1, "合意点を渡す", above=False))
+    b.append(h_arrow(2, 3, 4))                      # 合意形成AI → 法案AIインタビュー（合意点を議題に）
     # 箱
     def put(k, j, kind, tag, name, sub):
         b.append(node(cx(j) - NODE_W // 2, ny(k), NODE_W, NODE_H, kind, tag, name, sub))
@@ -152,16 +148,16 @@ def stages() -> str:
     put(0, 4, "tool", "台湾", "vTaiwan", "合意点から会合・規則へ")
     put(1, 1, "tool", "DD2030", "広聴AI", "TttCを自治体向けに")
     put(1, 2, "tool", "DD2030", "いどばたビジョン", "意見から論点を引き出す")
-    put(1, 4, "tool", "DD2030", "いどばた政策", "政策案への改善提案")
     put(2, 0, "input", "入力", "すでにある声", "パブコメ・国会・ネット")
     put(2, 2, "ours", "当社", "論点AIマップ", "話題の地図＋論点の文")
     put(2, 3, "focal", "当社", "合意形成AI", "既にある声の賛否をAIで")
+    put(2, 4, "ours", "当社", "法案AIインタビュー", "条文への修正提案まで")
     b.append(legend(legend_top + 28, vw, [("input", "入力"), ("tool", "ほかの道具"), ("ours", "当社の道具"),
                                            ("focal", "日本でまだほとんど使われていない工程")]))
     note = ('<p class="note">日本では2「話題の地図にする」までが広がりつつあり、'
             '<b>4「賛否を測り、合意点を出す」</b>はまだほとんど使われていない。</p>')
     return page("bl-stages", "Process · Diagram Design", "政策づくりの5つの工程と、それぞれを受け持つ道具",
-                "声を集める・話題の地図・論点・合意点・政策の5工程に、海外・DD2030・当社の道具を並べ、合意点を出す工程が日本では手薄なことを示す図",
+                "声を集める・話題の地図・論点・合意点・政策の5工程に、海外・DD2030・当社の道具を並べ、当社は既にある声から法案の条文への修正提案までつながること、合意点を出す工程が日本では手薄なことを示す図",
                 vw, vh, "".join(b), note)
 
 
@@ -197,7 +193,7 @@ def flow() -> str:
         return s + (label((x1 + x2) / 2, y, text) if text else "")
     b.append(harrow(1, acc=True, text="論点の文"))
     b.append(harrow(2, text="合意点"))
-    b.append(harrow(3, dashed=True, text="意見"))
+    b.append(harrow(3, dashed=True, text="意見"))  # 人に聞いた意見を、法案の条文への修正提案に
     # 箱
     b.append(node(xs[0], rows_y[0], W, H, "input", "入力", "パブコメ・アンケート", "自由記述"))
     b.append(node(xs[0], rows_y[1], W, H, "input", "入力", "議会の会議録", "国会・地方議会"))
@@ -205,12 +201,12 @@ def flow() -> str:
     b.append(node(xs[1], main_y, W, H, "ours", "当社", "論点AIマップ", "話題の地図・論点を立てる"))
     b.append(node(xs[2], main_y, W, H, "focal", "当社", "合意形成AI", "割れ方と合意点を出す"))
     b.append(node(xs[3], main_y, W, H, "tool", "人", "賛否を押す場・会合", "Pol.is 型で住民に聞く"))
-    b.append(node(xs[4], main_y, W, H, "tool", "DD2030", "いどばた", "計画・政策案に落とす"))
+    b.append(node(xs[4], main_y, W, H, "ours", "当社", "法案AIインタビュー", "条文への修正提案まで"))
     b.append(legend(rows_y[-1] + H + 36, vw, [("input", "すでにある声（新しく人を集めない）"), ("ours", "当社の道具"),
                                                ("focal", "合意点を出す（日本で手薄な工程）"), ("tool", "人とほかの道具")]))
-    note = '<p class="note">新しく人を集める前に、<b>すでにある声</b>から地図と合意点を出し、それを議題に人に聞く。</p>'
+    note = '<p class="note">新しく人を集める前に、<b>すでにある声</b>から地図と合意点を出し、それを議題に人に聞いて、条文への修正提案までつなぐ。</p>'
     return page("bl-flow", "Data flow · Diagram Design", "すでにある声から始めて、つなぐ",
-                "パブコメ・会議録・ネットの反応を論点AIマップと合意形成AIに通し、合意点を議題に住民に聞いて、いどばたで政策案にする流れの図",
+                "パブコメ・会議録・ネットの反応を論点AIマップと合意形成AIに通し、合意点を議題に住民に聞いて、法案AIインタビューで条文への修正提案にする流れの図",
                 vw, vh, "".join(b), note)
 
 
