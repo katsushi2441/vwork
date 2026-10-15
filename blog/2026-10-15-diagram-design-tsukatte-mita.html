@@ -25,8 +25,13 @@
 <p>ちょうど、議員事務所や自治体の方に見せている「ブロードリスニングから合意形成までの見取り図」の図を、もう少し見やすくしたいと思っていました。そこで、この図を diagram-design で描き直してみました。</p>
 <ul>
 <li><a href="https://kurage.exbridge.jp/oss/diagram-design/#ref=vibeblog-diagram-design">diagram-design（当社のOSSカタログ）</a></li>
-<li><a href="https://exbridge.jp/vibeblog/2026-10-10-broad-listening-consensus-tools-map.html#ref=vibeblog-diagram-design">元の見取り図の記事（12枚のスライド）</a></li>
+<li><a href="https://exbridge.jp/vibeblog/2026-10-10-broad-listening-consensus-tools-map.html#ref=vibeblog-diagram-design">元の見取り図の記事（スライド13枚）</a></li>
 </ul>
+<p>描き直す前と後の図を、20秒ほどで順に見られる動画です（音はありません）。</p>
+<div style="width:100%;max-width:960px;margin:16px auto;border-radius:10px;overflow:hidden;background:#f6f5f0">
+  <video src="https://kurage.exbridge.jp/pv/diagram-design-slideshow.mp4" poster="https://kurage.exbridge.jp/pv/diagram-design-slideshow-poster.jpg" controls muted playsinline loop preload="metadata" style="display:block;width:100%;height:auto"></video>
+</div>
+
 <h2>1. diagram-design は何をするものか</h2>
 <p>diagram-design は、構成図・工程図・データの流れ・時系列・2軸の図など45種類の図を、<strong>1つのHTMLファイル（中にSVGの図）</strong>として描くためのスキルです。AIエージェントがスキルの説明を読み、図の種類を選び、決まりに沿って描きます。外部の画像やライブラリに頼らないので、ファイル1つをブラウザで開けば見られます。</p>
 <p>特徴は、見た目の決まりがとても細かいことです。</p>
@@ -51,7 +56,7 @@
 <p>フォントは、見出しが明朝系（Instrument Serif）、名前がゴシック系（Geist）、補足が等幅（Geist Mono）という3つの組み合わせです。どれも日本語の字を持っていないので、<strong>英字のフォントのあとに Noto Sans JP（見出しは Noto Serif JP）を続けて</strong>指定しました。スキルの説明に韓国語・中国語の例があり、同じやり方で日本語も出せました。</p>
 <h2>3. 描き直す前と後</h2>
 <p>元のスライドは、政策づくりの5つの工程を横に並べ、それぞれを受け持つ道具の名前を箱の中に書いたものでした。</p>
-<p><img alt="描き直す前：5つの工程の箱の中に道具の名前を並べたスライド" src="assets/dd-tools-02.jpg" /></p>
+<p><img alt="描き直す前：5つの工程の箱の中に道具の名前を並べたスライド" src="assets/dd-tools-02-before.jpg" /></p>
 <p>diagram-design では、これを「工程（process）」の型で描き直しました。横に5つの工程、縦に「海外」「日本のDD2030」「当社」の3つの列を置き、その交わりに道具の箱を置く形です。</p>
 <p><img alt="描き直した後：工程×担い手の表に道具の箱を置き、合意形成AIと4つ目の工程だけを強調した図" src="assets/bl-dd-stages.png" /></p>
 <p>変わったところは次のとおりです。</p>
