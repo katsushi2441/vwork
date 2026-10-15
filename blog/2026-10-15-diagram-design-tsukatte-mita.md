@@ -19,6 +19,12 @@ head_keyword: "diagram-design"
 - [diagram-design（当社のOSSカタログ）](https://kurage.exbridge.jp/oss/diagram-design/#ref=vibeblog-diagram-design)
 - [元の見取り図の記事（スライド13枚）](https://exbridge.jp/vibeblog/2026-10-10-broad-listening-consensus-tools-map.html#ref=vibeblog-diagram-design)
 
+描き直す前と後の図を、20秒ほどで順に見られる動画です（音はありません）。
+
+<div style="width:100%;max-width:960px;margin:16px auto;border-radius:10px;overflow:hidden;background:#f6f5f0">
+  <video src="https://kurage.exbridge.jp/pv/diagram-design-slideshow.mp4" poster="https://kurage.exbridge.jp/pv/diagram-design-slideshow-poster.jpg" controls muted playsinline loop preload="metadata" style="display:block;width:100%;height:auto"></video>
+</div>
+
 ## 1. diagram-design は何をするものか
 
 diagram-design は、構成図・工程図・データの流れ・時系列・2軸の図など45種類の図を、**1つのHTMLファイル（中にSVGの図）**として描くためのスキルです。AIエージェントがスキルの説明を読み、図の種類を選び、決まりに沿って描きます。外部の画像やライブラリに頼らないので、ファイル1つをブラウザで開けば見られます。
