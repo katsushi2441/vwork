@@ -10,6 +10,7 @@ tags: [diagram-design, Claude Code, 図解, SVG, ブロードリスニング, �
 description: "AIエージェントに説明用の図を描かせるスキル diagram-design（MIT）を使い、ブロードリスニングから合意形成、法案の条文への修正提案までの見取り図を描き直しました。要素は9個まで・強調は2か所まで・線は直角、といった決まりの中で、日本語のフォントと箱の幅をどう扱ったか、描き直す前と後、付属の検査スクリプトの結果を書きます。"
 seo_title: "diagram-designを使ってみた｜Claude Codeで説明図を描く"
 head_keyword: "diagram-design"
+og_figure: "assets/bl-dd-stages-svg.png"
 ---
 
 名古屋でAIシステム開発の会社をやっています。今週、GitHubのトレンドに **diagram-design** というスキルが入っていました。AIエージェント（Claude Code など）に、説明用の図をきれいに描かせるためのもので、スターは5万を超えています。ライセンスは MIT です。

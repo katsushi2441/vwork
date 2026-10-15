@@ -23,4 +23,9 @@ with sync_playwright() as p:
         pg.screenshot(path=out, full_page=True, clip={"x": max(0, bb["x"] - 40), "y": max(0, bb["y"] - 40),
                                                       "width": bb["width"] + 80, "height": bb["height"] + 80})
         print(out)
+        # 見出し画像（OGP）用に、図（SVG）の部分だけも書き出す。見出しや注記を入れると図が小さくなり、Xの一覧で読めない
+        sv = pg.query_selector("svg").bounding_box()
+        svg_out = out[:-4] + "-svg.png"
+        pg.screenshot(path=svg_out, full_page=True, clip={"x": sv["x"] - 8, "y": sv["y"] - 8, "width": sv["width"] + 16, "height": sv["height"] + 16})
+        print(svg_out)
     b.close()
