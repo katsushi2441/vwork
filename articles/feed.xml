@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 15 Oct 2026 03:35:13 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 09:47:55 +0000</lastBuildDate>
     <item>
       <title>NVIDIAのNemotron BoltやAnthropicの議論から見るAIモデルの最新動向 10-15</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-2.html</guid>
       <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
       <description>PS5でQwen 3.8 27Bモデルの動作成功やNVIDIAのNemotron Bolt 3.5 74B A9Bリリースなど、最新AI技術の動向を解説します。気象シミュレーションや詐欺対策への応用、YouTube MusicのAIラベル導入も紹介します。</description>
+    </item>
+    <item>
+      <title>Stepfunの新型モデル登場とFigmaによるAIエージェント機能の拡充 10-15</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-4.html</guid>
+      <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Stepfunが最大100万トークンに対応する最新モデル「Step-5-Preview」を発表しました。また、FigmaによるAIエージェントの新機能やYouTube MusicのAI生成音楽ラベルなど、最新の技術動向を解説します。</description>
     </item>
     <item>
       <title>Rustのボローチェッカーにおける脆弱性とAmexによるAIエージェントの決済制限フレームワーク 10-14</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news.html</guid>
       <pubDate>Tue, 06 Oct 2026 09:00:00 +0000</pubDate>
       <description>中国のAIエージェント艦隊によるサイバーセキュリティへの影響や、RTX 5080上で動作するClef Flashのリアルタイム操作能力など、最新のAI技術動向を解説します。Agens Volundr 32Bの公開も紹介します。</description>
-    </item>
-    <item>
-      <title>Googleのバグバウンティ停止とQwenモデルの推論性能向上に関する最新動向 10-05</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-4.html</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
-      <description>GoogleがAI生成による低品質な報告の急増を受けてオープンソースのバグバウンティを一時停止しました。また、Qwen 3.8 Flash Next（125B）モデルがRTX 4090等のコンシューマー向けハードウェアで高速動作する最新動向を解説します。</description>
     </item>
   </channel>
 </rss>

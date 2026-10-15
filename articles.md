@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Stepfunの新型モデル登場とFigmaによるAIエージェント機能の拡充 10-15](2026-10-15-ai-news-4.html)
 - [Ricursive IntelligenceとNVIDIAの動向から見るAIインフラとモデルの最前線 10-15](2026-10-15-ai-news-3.html)
 - [MusicとAgentsで読む：QwenのPS5動作からNVIDIAの新モデルまで、加速するAI技術と社会への影響 10-15](2026-10-15-ai-news-2.html)
 - [NVIDIAのNemotron BoltやAnthropicの議論から見るAIモデルの最新動向 10-15](2026-10-15-ai-news.html)
