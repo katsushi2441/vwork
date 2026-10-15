@@ -13,6 +13,7 @@ exclude:
   - packages
   - pyproject.toml
   - LICENSE
+  - diagrams
 defaults:
   - scope:
       path: ""
