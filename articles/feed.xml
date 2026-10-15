@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 14 Oct 2026 21:22:49 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 03:35:13 +0000</lastBuildDate>
     <item>
       <title>NVIDIAのNemotron BoltやAnthropicの議論から見るAIモデルの最新動向 10-15</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news.html</guid>
       <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAのNemotron Bolt 3.5やLiquidAIのLFM2.5-24B-A2Bなど、最新AIモデルの動向を解説します。中国と米国のモデル性能差やAnthropicによるオープンソースのリスクに関する議論も網羅しています。</description>
+    </item>
+    <item>
+      <title>Ricursive IntelligenceとNVIDIAの動向から見るAIインフラとモデルの最前線 10-15</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-3.html</guid>
+      <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Ricursive IntelligenceによるAIを用いたチップ設計やNVIDIAのNemotron Bolt 3.5 74B A9Bの最新動向を解説します。計算資源不足への解決策やゲームデコンパイル、詐欺調査へのAI活用など、最先端の技術情報を網羅しています。</description>
     </item>
     <item>
       <title>MusicとAgentsで読む：QwenのPS5動作からNVIDIAの新モデルまで、加速するAI技術と社会への影響 10-15</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-4.html</guid>
       <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
       <description>GoogleがAI生成による低品質な報告の急増を受けてオープンソースのバグバウンティを一時停止しました。また、Qwen 3.8 Flash Next（125B）モデルがRTX 4090等のコンシューマー向けハードウェアで高速動作する最新動向を解説します。</description>
-    </item>
-    <item>
-      <title>Qwenの高速動作とGoogleが直面するAIバグ報告の急増 10-05</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-05-ai-news-3.html</guid>
-      <pubDate>Mon, 05 Oct 2026 09:00:00 +0000</pubDate>
-      <description>GoogleがAI生成の大量報告によりバグバウンティを一時停止したニュースや、Qwen 3.8 Flash NextをRTX 4090で高速動作させる技術、メモリ供給の逼迫予測など、最新のAI動向を網羅的に解説します。</description>
     </item>
   </channel>
 </rss>
