@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 15 Oct 2026 09:47:55 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 15:12:07 +0000</lastBuildDate>
+    <item>
+      <title>NVIDIAのNemotron発表とAnthropicの急成長など、AIインフラとビジネスの最前線 10-16</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news.html</guid>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+      <description>NVIDIAがローカル展開向けのNemotron-3.5-Super-VLを発表したほか、Anthropicの売上高が前年比約50%増の168億ドルに達する急成長を報告しました。最新のAIインフラ動向を解説します。</description>
+    </item>
     <item>
       <title>NVIDIAのNemotron BoltやAnthropicの議論から見るAIモデルの最新動向 10-15</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news-3.html</guid>
       <pubDate>Tue, 06 Oct 2026 09:00:00 +0000</pubDate>
       <description>llama.cpp v0.6.0のリリースによるMTP投機的デコーディング対応や、Reflection社の新モデルBeamの発表など、最新のAI動向をまとめました。また米国CFTCによる暗号資産規制案についても解説します。</description>
-    </item>
-    <item>
-      <title>Researchersで読む：中国のAIエージェント群とRTX 5080で動くClef Flash：最新技術の最前線 10-06</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news.html</guid>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 +0000</pubDate>
-      <description>中国のAIエージェント艦隊によるサイバーセキュリティへの影響や、RTX 5080上で動作するClef Flashのリアルタイム操作能力など、最新のAI技術動向を解説します。Agens Volundr 32Bの公開も紹介します。</description>
     </item>
   </channel>
 </rss>

@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [NVIDIAのNemotron発表とAnthropicの急成長など、AIインフラとビジネスの最前線 10-16](2026-10-16-ai-news.html)
 - [Stepfunの新型モデル登場とFigmaによるAIエージェント機能の拡充 10-15](2026-10-15-ai-news-4.html)
 - [Ricursive IntelligenceとNVIDIAの動向から見るAIインフラとモデルの最前線 10-15](2026-10-15-ai-news-3.html)
 - [MusicとAgentsで読む：QwenのPS5動作からNVIDIAの新モデルまで、加速するAI技術と社会への影響 10-15](2026-10-15-ai-news-2.html)
