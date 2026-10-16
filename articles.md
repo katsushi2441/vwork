@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [MetaとAnthropicの動向から見るAIモデルの進化とインフラ競争 10-16](2026-10-16-ai-news-3.html)
 - [MetaのMuse Spark Open登場とAmazonが描く「アプリ不要」なAIデバイスの未来 10-16](2026-10-16-ai-news-2.html)
 - [NVIDIAのNemotron発表とAnthropicの急成長など、AIインフラとビジネスの最前線 10-16](2026-10-16-ai-news.html)
 - [Stepfunの新型モデル登場とFigmaによるAIエージェント機能の拡充 10-15](2026-10-15-ai-news-4.html)
