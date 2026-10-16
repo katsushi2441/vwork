@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [政治家・議員のホームページによくある課題と改善案——国会活動はAIが下書きし、事務所は確かめて公開するだけに](2026-10-16-giin-homepage-kadai-kaizen.html)
 - [Claude Codeで図を描くスキル diagram-design を使ってみた——ブロードリスニングの見取り図を描き直して分かった日本語のコツ](2026-10-15-diagram-design-tsukatte-mita.html)
 - [会議録が公開されたら、議員の公式サイトの投稿の下書きができている——伊藤たかえ議員の国会活動で見本を作りました](2026-10-15-giin-hp-kokkai-katsudo-shitagaki.html)
 - [URLを貼るだけで中身が1枚の画像で出る——国会トラッカーなどで作ったOGP画像のカード8種類の一覧](2026-10-15-ogp-card-ichiran.html)
