@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [TheとNVIDIAで読む：中国のAI輸出規制案とRTX 5090で動く新モデルORLの衝撃 10-17](2026-10-17-ai-news-2.html)
 - [TheとFutureで読む：Welcome Beamの登場と中国によるAI輸出規制：加速するオープンモデルの民主化 10-17](2026-10-17-ai-news.html)
 - [MetaのMac対応モデル投入とAnthropicの急成長など、AI業界の最新動向 10-16](2026-10-16-ai-news-4.html)
 - [MetaとAnthropicの動向から見るAIモデルの進化とインフラ競争 10-16](2026-10-16-ai-news-3.html)
