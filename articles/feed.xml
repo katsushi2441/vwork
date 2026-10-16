@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 16 Oct 2026 03:49:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 10:00:46 +0000</lastBuildDate>
     <item>
       <title>NVIDIAのNemotron発表とAnthropicの急成長など、AIインフラとビジネスの最前線 10-16</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-3.html</guid>
       <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
       <description>MetaがMacで動作するオープンウェイトモデルを発表し、AnthropicはMETRへ内部アクセス権を付与しました。HuggingFaceでの2.8兆トークン規模の学習やNVIDIAの新モデル公開など、最新のAI動向を解説します。</description>
+    </item>
+    <item>
+      <title>MetaのMac対応モデル投入とAnthropicの急成長など、AI業界の最新動向 10-16</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-4.html</guid>
+      <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
+      <description>MetaがAppleシリコン向けオープンウェイトモデル「Muse Spark Open」を発表しました。また、Anthropicの売上高が前年比約50%増となる急成長や、スタンフォード大学によるハイブリッド推論エージェントの研究成果など、AI業界の最新動向を解説します。</description>
     </item>
     <item>
       <title>NVIDIAのNemotron BoltやAnthropicの議論から見るAIモデルの最新動向 10-15</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news-4.html</guid>
       <pubDate>Wed, 07 Oct 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが公開した高度な数学分野におけるLLMの進展や、Jake Boggan氏によるBarnetteの予想解決のニュースを解説します。また、AIエージェントのWebアクセス権の壁やHark社のプライバシー重視な新サービスを紹介します。</description>
-    </item>
-    <item>
-      <title>Reflectionの501Bモデル登場とTikTokやFalconによるAIの実装進展 10-06</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-06-ai-news-4.html</guid>
-      <pubDate>Tue, 06 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Beamが公開した501BパラメータのオープンウェイトモデルReflectionの登場や、TikTokによるAIショッピングアシスタント導入、OpenAIのEU向けテキストウォーターマーク対応など、最新のAI技術動向を解説します。</description>
     </item>
   </channel>
 </rss>
