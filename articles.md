@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [TheとFutureで読む：Welcome Beamの登場と中国によるAI輸出規制：加速するオープンモデルの民主化 10-17](2026-10-17-ai-news.html)
 - [MetaのMac対応モデル投入とAnthropicの急成長など、AI業界の最新動向 10-16](2026-10-16-ai-news-4.html)
 - [MetaとAnthropicの動向から見るAIモデルの進化とインフラ競争 10-16](2026-10-16-ai-news-3.html)
 - [MetaのMuse Spark Open登場とAmazonが描く「アプリ不要」なAIデバイスの未来 10-16](2026-10-16-ai-news-2.html)

@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 16 Oct 2026 10:00:46 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 15:14:17 +0000</lastBuildDate>
+    <item>
+      <title>TheとFutureで読む：Welcome Beamの登場と中国によるAI輸出規制：加速するオープンモデルの民主化 10-17</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-17-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-17-ai-news.html</guid>
+      <pubDate>Sat, 17 Oct 2026 09:00:00 +0000</pubDate>
+      <description>HuggingFaceが501Bパラメータのオープンモデル「Welcome Beam」を発表しました。中国によるAI輸出規制の動向や、Replit CEOが予測する自律型企業の未来など、最新のAI技術動向を解説します。</description>
+    </item>
     <item>
       <title>NVIDIAのNemotron発表とAnthropicの急成長など、AIインフラとビジネスの最前線 10-16</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news-3.html</guid>
       <pubDate>Wed, 07 Oct 2026 09:00:00 +0000</pubDate>
       <description>MicrosoftがGPT-6シリーズでLooped Transformersを採用することを明らかにしました。また、Mistral Large 4の登場やGoogleのembeddinggemma-2公開、OpenAIエージェントの安全性課題など最新情報をまとめます。</description>
-    </item>
-    <item>
-      <title>OpenAIの数学への挑戦とAIエージェントが直面するWebアクセス権の壁 10-07</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news-4.html</guid>
-      <pubDate>Wed, 07 Oct 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIが公開した高度な数学分野におけるLLMの進展や、Jake Boggan氏によるBarnetteの予想解決のニュースを解説します。また、AIエージェントのWebアクセス権の壁やHark社のプライバシー重視な新サービスを紹介します。</description>
     </item>
   </channel>
 </rss>
