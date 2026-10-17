@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 16 Oct 2026 21:26:13 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 03:38:53 +0000</lastBuildDate>
     <item>
       <title>TheとNVIDIAで読む：中国のAI輸出規制案とRTX 5090で動く新モデルORLの衝撃 10-17</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-17-ai-news-2.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-17-ai-news.html</guid>
       <pubDate>Sat, 17 Oct 2026 09:00:00 +0000</pubDate>
       <description>HuggingFaceが501Bパラメータのオープンモデル「Welcome Beam」を発表しました。中国によるAI輸出規制の動向や、Replit CEOが予測する自律型企業の未来など、最新のAI技術動向を解説します。</description>
+    </item>
+    <item>
+      <title>WithとLlama.cppで読む：ElorianのGlimpseがGPT-6を凌駕し、中国はAI輸出規制を強化へ 10-17</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-17-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-17-ai-news-3.html</guid>
+      <pubDate>Sat, 17 Oct 2026 09:00:00 +0000</pubDate>
+      <description>ElorianのAIモデル「Glimpse」がGPT-6 Astraを上回る視覚的推論性能を実証しました。また、中国による23のAI技術への輸出規制案や、PS5上でLlama.cppを実行するプロジェクトなど最新ニュースを解説します。</description>
     </item>
     <item>
       <title>NVIDIAのNemotron発表とAnthropicの急成長など、AIインフラとビジネスの最前線 10-16</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news.html</guid>
       <pubDate>Wed, 07 Oct 2026 09:00:00 +0000</pubDate>
       <description>Mistral AIが新型モデル「Mistral Large 4」を発表し、高い汎用性を備えたマルチモーダル性能を実現しました。また、OpenAIのGPT-6へのLooped Transformers採用やReflection社の新モデルBeamの動向を解説します。</description>
-    </item>
-    <item>
-      <title>Mistral Large 4の登場とGoogleが発表したEmbeddingGemma 2によるマルチモーダル進化 10-07</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-07-ai-news-2.html</guid>
-      <pubDate>Wed, 07 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Mistral AIが最新モデル「Mistral Large 4」を発表しました。またGoogle DeepMindによるマルチモーダル埋め込みモデル「EmbeddingGemma 2」の公開や、OpenAIのGPT-6に関する技術革新など、最新のAI動向を解説します。</description>
     </item>
   </channel>
 </rss>
