@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Googleの量子計算機「Willow」の進展とClaudeによるNSA暗号謎の解明 10-17](2026-10-17-ai-news-4.html)
 - [WithとLlama.cppで読む：ElorianのGlimpseがGPT-6を凌駕し、中国はAI輸出規制を強化へ 10-17](2026-10-17-ai-news-3.html)
 - [TheとNVIDIAで読む：中国のAI輸出規制案とRTX 5090で動く新モデルORLの衝撃 10-17](2026-10-17-ai-news-2.html)
 - [TheとFutureで読む：Welcome Beamの登場と中国によるAI輸出規制：加速するオープンモデルの民主化 10-17](2026-10-17-ai-news.html)
