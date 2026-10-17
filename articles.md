@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [DeepSeek V4.1 Flashの躍進と、ReplitによるOpenAIへの主力移行 10-18](2026-10-18-ai-news-2.html)
 - [DeepSeek v4.1 Flashの衝撃とNVIDIAが描く物理AIの基礎技術 10-18](2026-10-18-ai-news.html)
 - [Googleの量子計算機「Willow」の進展とClaudeによるNSA暗号謎の解明 10-17](2026-10-17-ai-news-4.html)
 - [WithとLlama.cppで読む：ElorianのGlimpseがGPT-6を凌駕し、中国はAI輸出規制を強化へ 10-17](2026-10-17-ai-news-3.html)
