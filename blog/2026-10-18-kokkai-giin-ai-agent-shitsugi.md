@@ -17,6 +17,12 @@ og_figure: "assets/ga-flow-svg.png"
 
 議員とAIエージェントで、国会の質疑や質問主意書の叩き台を一緒につくり、その過程を議員自身が発信する。この提案には、目的が2つあります。
 
+提案の中身を18秒で見られる動画です（音はありません）。
+
+<div style="width:100%;max-width:960px;margin:16px auto;border-radius:10px;overflow:hidden;background:#f6f5f0">
+  <video src="https://kurage.exbridge.jp/pv/giin-ai-pv.mp4" poster="https://kurage.exbridge.jp/pv/giin-ai-pv-poster.jpg" controls muted playsinline loop preload="metadata" style="display:block;width:100%;height:auto"></video>
+</div>
+
 ## 1. この提案の2つの目的
 
 - **目的1：AIエージェントを使いこなす議員として示す**。議員が**AIエンジニアとAIエージェントを活用して国会対応の仕事をする姿**を発信し、「AIエージェントを使いこなす議員」というイメージを浸透させます。
