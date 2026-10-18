@@ -1,0 +1,76 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>経済指標を1枚のグラフに——ドル円・金利・物価・短観を、日銀のデータから毎日まとめるページを作りました | VWork バイブコーディングフレームワーク</title><meta name="description" content="ドル円相場、無担保コールレート、銀行の新規貸出金利、企業物価指数、企業向けサービス価格指数、日銀短観（大企業・製造業／中小企業・全産業）の7つの経済指標を、日本銀行の時系列統計データから毎日まとめるページを作りました。指標ごとに、最新の値・1か月前や1年前との差・2年分の推移を1枚の画像にしてあり、SNSにURLを貼るとその画像が出ます。作った理由と、数字の読み方、仕組みを書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-19-keizai-shihyo-card.html"><meta property="og:type" content="article"><meta property="og:title" content="経済指標を1枚のグラフに——ドル円・金利・物価・短観を、日銀のデータから毎日まとめるページを作りました"><meta property="og:description" content="ドル円相場、無担保コールレート、銀行の新規貸出金利、企業物価指数、企業向けサービス価格指数、日銀短観（大企業・製造業／中小企業・全産業）の7つの経済指標を、日本銀行の時系列統計データから毎日まとめるページを作りました。指標ごとに、最新の値・1か月前や1年前との差・2年分の推移を1枚の画像にしてあり、SNSにURLを貼るとその画像が出ます。作った理由と、数字の読み方、仕組みを書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-19-keizai-shihyo-card.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="経済指標を1枚のグラフに——ドル円・金利・物価・短観を、日銀のデータから毎日まとめるページを作りました"><meta name="twitter:description" content="ドル円相場、無担保コールレート、銀行の新規貸出金利、企業物価指数、企業向けサービス価格指数、日銀短観（大企業・製造業／中小企業・全産業）の7つの経済指標を、日本銀行の時系列統計データから毎日まとめるページを作りました。指標ごとに、最新の値・1か月前や1年前との差・2年分の推移を1枚の画像にしてあり、SNSにURLを貼るとその画像が出ます。作った理由と、数字の読み方、仕組みを書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "経済指標を1枚のグラフに——ドル円・金利・物価・短観を、日銀のデータから毎日まとめるページを作りました", "description": "ドル円相場、無担保コールレート、銀行の新規貸出金利、企業物価指数、企業向けサービス価格指数、日銀短観（大企業・製造業／中小企業・全産業）の7つの経済指標を、日本銀行の時系列統計データから毎日まとめるページを作りました。指標ごとに、最新の値・1か月前や1年前との差・2年分の推移を1枚の画像にしてあり、SNSにURLを貼るとその画像が出ます。作った理由と、数字の読み方、仕組みを書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-19-keizai-shihyo-card.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-19", "dateModified": "2026-10-19", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>経済指標を1枚のグラフに——ドル円・金利・物価・短観を、日銀のデータから毎日まとめるページを作りました</h1><p class="meta">2026-10-19</p><p>名古屋でAIシステムの開発をしている小嶋です。経営者の方と話していると、円安、仕入れ値、借入れの金利、景気の話がよく出ます。そのとき、手元に数字が1枚あると話が早い。そこで、主な経済指標を日本銀行のデータから毎日まとめるページを作りました。</p>
+<p>経済指標のいま（為替・金利・物価・短観）
+https://exbridge.jp/keizai/#ref=vb-keizai</p>
+<h2>1枚で、最新の値と推移が分かる</h2>
+<p><img alt="ドル円相場のカード。2026年10月14日の158.35円、1か月前と1年前の値との差、2年分の推移のグラフ" src="assets/kz-dollar-yen.png" /></p>
+<p>指標ごとに、1枚の画像にしています。入っているのは次のものです。</p>
+<ul>
+<li>最新の値と、その日付（月・調査の回）</li>
+<li>1か月前（月の指標は前月、短観は前回）と1年前の値、その差</li>
+<li>2年分の推移のグラフ（短観は16回分の棒グラフ）</li>
+<li>出典</li>
+</ul>
+<p>ページのURLをXなどに貼ると、この画像がそのまま出ます。返信やコメントに数字を添えるときに使えるように作りました。</p>
+<h2>いま入っている7つの指標</h2>
+<ul>
+<li><strong>ドル円相場</strong>（東京市場 17時時点）：輸入する原材料・燃料・仕入れの値段に直接かかわります</li>
+<li><strong>無担保コールレート</strong>：日本銀行が金融政策の目標にしている金利です。銀行の貸出金利や預金金利の土台になります</li>
+<li><strong>貸出金利（新規）</strong>：国内の銀行がその月に新しく貸し出したお金の平均金利です</li>
+<li><strong>企業物価指数</strong>（前年同月比）：企業どうしが売り買いする商品の値段の動きです</li>
+<li><strong>企業向けサービス価格指数</strong>（前年同月比）：運輸・広告・リース・人材派遣など、企業向けのサービスの値段の動きです</li>
+<li><strong>日銀短観 大企業・製造業</strong>、<strong>日銀短観 中小企業・全産業</strong>：業況が「良い」と答えた企業の割合から「悪い」の割合を引いた数字です</li>
+</ul>
+<h2>いまの数字から見えること</h2>
+<p><img alt="企業物価指数（前年同月比）のカード。2026年9月は+6.8%、1年前は+2.8%" src="assets/kz-kigyo-bukka.png" /></p>
+<p>いくつか、ページの数字を並べてみます。</p>
+<ul>
+<li>ドル円は、2026年10月14日に158.35円。1年前（2025年10月14日）は151.97円でした</li>
+<li>企業物価指数の前年同月比は、2026年9月に+6.8%。1年前（2025年9月）は+2.8%でした</li>
+<li>銀行の新規の貸出金利は、2026年8月に1.782%。1年前（2025年8月）は1.149%でした</li>
+<li>日銀短観の中小企業・全産業は、2026年9月調査で+15。1年前は+9でした</li>
+</ul>
+<p><img alt="日銀短観 中小企業・全産業のカード。2026年9月調査は+15" src="assets/kz-tankan-chusho.png" /></p>
+<p>仕入れの値段と借入れの金利がどちらも1年前より上がっている一方で、短観では「業況が良い」と答える中小企業が増えています。数字の良し悪しをここで決めるつもりはありません。自社の仕入れや借入れ、値決めを見直すときに、世の中の数字と並べて見るための材料です。</p>
+<h2>仕組み</h2>
+<ul>
+<li>データは、日本銀行の「時系列統計データ検索サイト」のAPIから取っています。毎日1回、指標ごとに1回ずつ取り直します</li>
+<li>前年同月比は、日本銀行が公表している前年比の系列をそのまま使っています。自分で計算し直した値ではありません</li>
+<li>ページとグラフの画像は、毎日の取り直しのあとに作り直して置きます。古い画像がSNSに残らないよう、画像のURLには日付を入れています</li>
+<li>作業はAIエージェント（Claude Code）と一緒に、データの取り方の確認から公開まで1日の中で進めました。日本銀行のAPIの利用条件にある表示を各ページに入れ、公開したことも日本銀行に連絡しています</li>
+</ul>
+<p>このページは、日本銀行時系列統計データ検索サイトの API 機能を使用しています。サービスの内容は日本銀行によって保証されたものではありません。</p>
+<h2>これから</h2>
+<p>消費者物価指数、実質賃金、失業率も足したいと考えています。これらは政府統計の窓口（e-Stat）から取る予定です。</p>
+<h2>よくある質問</h2>
+<h3>数字はいつの時点のものですか</h3>
+<p>指標ごとに、ページとカードに日付を書いています。ドル円と無担保コールレートは日ごと、貸出金利と物価は月ごと、短観は3か月ごとの数字です。日本銀行が公表したあとの、次の毎日の更新で反映されます。</p>
+<h3>グラフの画像を使ってもいいですか</h3>
+<p>ページのURLを貼っていただければ、SNSではその画像が出ます。画像には出典と、元のページのURLを入れています。</p>
+<h3>自社の数字と並べて見られますか</h3>
+<p>このページでは扱っていません。仕入れ値や借入れの金利など自社の数字と、為替・物価・金利を並べて見る仕組みは、個別にお作りしています。</p>
+<p>為替・金利・物価の動きを、自社の仕入れ・借入れ・価格の見直しにつなげる仕組みづくりのご相談は、こちらから。</p>
+<p>名古屋のAI-IT顧問契約
+https://exbridge.jp/ai-it-komon.html#ref=vb-keizai</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
