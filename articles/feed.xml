@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 18 Oct 2026 03:34:28 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 09:44:56 +0000</lastBuildDate>
     <item>
       <title>Metaで読む：DeepSeekの新モデル登場とReplitがOpenAIを優先する動きなど、最新のAI・Web3動向 10-18</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news-3.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news.html</guid>
       <pubDate>Sun, 18 Oct 2026 09:00:00 +0000</pubDate>
       <description>DeepSeek v4.1 Flashがコーディングベンチマークで競合を上回る性能を記録したほか、NVIDIA出身者が語る物理AIの基礎技術や、BISによるステーブルコイン普及への影響、Qwen 3.8 Flash Nextの最適化議論を解説します。</description>
+    </item>
+    <item>
+      <title>DeepSeek V4.1 Flashの躍進とMetaの規約変更：AIモデル競争の最前線 10-18</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news-4.html</guid>
+      <pubDate>Sun, 18 Oct 2026 09:00:00 +0000</pubDate>
+      <description>DeepSeek V4.1 Flash 1017がオープンウェイトモデルで首位を獲得したニュースや、Metaによる利用規約の更新、ReplitのOpenAI採用など、最新のAI技術動向とセキュリティ情報を網羅的に解説します。</description>
     </item>
     <item>
       <title>DeepSeek V4.1 Flashの躍進と、ReplitによるOpenAIへの主力移行 10-18</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news-3.html</guid>
       <pubDate>Fri, 09 Oct 2026 09:00:00 +0000</pubDate>
       <description>OpenAIの安全研究者解雇問題やLMArenaの企業価値が31億ドルへ急騰する動向を解説します。韓国銀行へのサイバー攻撃や収益予測の乖離、AI時代に必要なキャリアスキルなど最新の業界ニュースを網羅しています。</description>
-    </item>
-    <item>
-      <title>Margaret Hamiltonの逝去とllama.cppの進化：AIインフラと歴史を動かす技術革新 10-08</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-08-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-08-ai-news-3.html</guid>
-      <pubDate>Thu, 08 Oct 2026 09:00:00 +0000</pubDate>
-      <description>コンピュータサイエンスの先駆者マーガレット・ハミルトン氏の逝去と、llama.cppへのMoEモデル向けGPUキャッシュ機能追加などの最新技術動向を解説します。Claude Haiku 5.5や新型AI PCのニュースも網羅しています。</description>
     </item>
   </channel>
 </rss>
