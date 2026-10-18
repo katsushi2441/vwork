@@ -1,0 +1,86 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>質問主意書を1件ずつ、Xで共有できるカードに——国会の質疑と質問主意書を1枚で見せる | VWork バイブコーディングフレームワーク</title><meta name="description" content="質問主意書アシストに、質問主意書1件ごとと提出者ごとのカード画像（OGP）を付けました。Xにページを貼ると、件名・提出者・提出日と答弁日・質問と答弁書の抜き書き・答弁の定型句が1枚で出ます。国会トラッカーの議員カードには提出した質問主意書の件数を足し、大臣の長い肩書きで名前がはみ出す不具合と、参考人（日銀総裁など）の答えが質問と組にならない不具合を直しました。きっかけになったXの返信の実測と、作業の中身をまとめます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-18-shitsumon-shuisho-card.html"><meta property="og:type" content="article"><meta property="og:title" content="質問主意書を1件ずつ、Xで共有できるカードに——国会の質疑と質問主意書を1枚で見せる"><meta property="og:description" content="質問主意書アシストに、質問主意書1件ごとと提出者ごとのカード画像（OGP）を付けました。Xにページを貼ると、件名・提出者・提出日と答弁日・質問と答弁書の抜き書き・答弁の定型句が1枚で出ます。国会トラッカーの議員カードには提出した質問主意書の件数を足し、大臣の長い肩書きで名前がはみ出す不具合と、参考人（日銀総裁など）の答えが質問と組にならない不具合を直しました。きっかけになったXの返信の実測と、作業の中身をまとめます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-18-shitsumon-shuisho-card.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="質問主意書を1件ずつ、Xで共有できるカードに——国会の質疑と質問主意書を1枚で見せる"><meta name="twitter:description" content="質問主意書アシストに、質問主意書1件ごとと提出者ごとのカード画像（OGP）を付けました。Xにページを貼ると、件名・提出者・提出日と答弁日・質問と答弁書の抜き書き・答弁の定型句が1枚で出ます。国会トラッカーの議員カードには提出した質問主意書の件数を足し、大臣の長い肩書きで名前がはみ出す不具合と、参考人（日銀総裁など）の答えが質問と組にならない不具合を直しました。きっかけになったXの返信の実測と、作業の中身をまとめます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "質問主意書を1件ずつ、Xで共有できるカードに——国会の質疑と質問主意書を1枚で見せる", "description": "質問主意書アシストに、質問主意書1件ごとと提出者ごとのカード画像（OGP）を付けました。Xにページを貼ると、件名・提出者・提出日と答弁日・質問と答弁書の抜き書き・答弁の定型句が1枚で出ます。国会トラッカーの議員カードには提出した質問主意書の件数を足し、大臣の長い肩書きで名前がはみ出す不具合と、参考人（日銀総裁など）の答えが質問と組にならない不具合を直しました。きっかけになったXの返信の実測と、作業の中身をまとめます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-18-shitsumon-shuisho-card.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-18", "dateModified": "2026-10-18", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>質問主意書を1件ずつ、Xで共有できるカードに——国会の質疑と質問主意書を1枚で見せる</h1><p class="meta">2026-10-18</p><p>名古屋でAIシステムの開発をしている小嶋です。国会の会議録と質問主意書を扱う2つのシステム、<a href="https://xb4g.com/giin/tracker/#ref=vb-sc-card">国会トラッカー</a>と<a href="https://kurage.exbridge.jp/kshuisho.php/#ref=vb-sc-card">質問主意書アシスト</a>に、今日まとめて手を入れました。質問主意書を1件ずつ、Xで共有できるカードにしたのが中心です。やったことと、できたことを書いておきます。</p>
+<p>作業はAIエージェント（Claude Code）と一緒に、1日のうちに4つを順番に進めました。</p>
+<ol>
+<li>質問主意書1件ごとのカード</li>
+<li>提出者ごとの質問主意書のカード</li>
+<li>国会での質疑と質問主意書を合わせた議員カード</li>
+<li>いまある質疑カードの不具合2つの修正</li>
+</ol>
+<h2>きっかけ：カードがあるページは、読まれ方が違った</h2>
+<p>この数週間、国会議員のXの投稿に、国会の記録を添えて返信してきました。10月1日から18日までの返信を、貼ったページの種類ごとに集計しました。</p>
+<ul>
+<li>テーマ全体のカード（国会トラッカーの一覧）：返信239本・1,338人。1本あたりの中央値は2人で、2ページ目まで読んだ人は7%</li>
+<li>議員ページ：返信9本・165人。中央値3人で、2ページ目まで読んだ人は16%</li>
+<li>議員×テーマのカード（その議員の質疑と答弁を1枚に）：2ページ目まで読んだ人は32%</li>
+<li>質問主意書アシスト：返信3本・6人</li>
+</ul>
+<p>質問主意書アシストだけ、ページごとの共有画像がありませんでした。どの質問主意書を貼っても、Xに出るのは同じサービスの画像です。何の質問主意書なのかが、押す前に分かりません。そこで、カードを作ることにしました。</p>
+<h2>1. 質問主意書1件ごとのカード</h2>
+<p><img alt="質問主意書1件ごとのカード。件名「質問主意書の在り方に関する質問主意書」、提出者と会派、提出日と答弁日、質問本文と政府答弁書の抜き書きを左右に並べたもの" src="assets/sc-q-card.png" /></p>
+<p>質問主意書のページ（/q/&lt;番号&gt;）をXに貼ると、このカードが出るようにしました。1枚に入れたのは次のものです。</p>
+<ul>
+<li>件名と、衆参・国会の回・質問の番号</li>
+<li>提出者と会派、提出日と答弁書の日付、その間の日数</li>
+<li>質問本文と政府答弁書の抜き書きを、左右に並べたもの</li>
+<li>答弁書に「お答えすることは困難」「趣旨が明らかではない」などの定型句があれば、その種類と回数</li>
+</ul>
+<p>カードの文は原文のままです。要約はしていません。答弁書の「一について」のような見出しだけを外して、本文から抜き書きしています。</p>
+<h2>2. 提出者ごとのカード</h2>
+<p><img alt="提出者ごとのカード。提出者名と件数、年ごとの件数の棒グラフ、最も多い答弁の定型句、最近の質問主意書3件の件名" src="assets/sc-giin-card.png" /></p>
+<p>提出者のページ（/giin/&lt;名前&gt;）にもカードを付けました。提出した件数、年ごとの件数、答弁書に出てきた定型句でいちばん多いもの、最近の3件の件名です。衆議院から参議院へ移った議員は、両方の院の分を数えます。</p>
+<h2>3. 国会の質疑と質問主意書を合わせた議員カード</h2>
+<p><img alt="議員カード。議員として質問・討論した発言、委員長としての議事整理、提出した質問主意書の3つの件数と、年ごとの質疑の件数、直近の質問の抜き書き" src="assets/sc-member-card.png" /></p>
+<p>国会トラッカーの議員カードには、これまで国会での発言の件数だけを出していました。そこに「提出した質問主意書 N件」を足しました。国会での質疑と質問主意書は、議員が政府に問う2つの道です。片方だけでは、その議員の仕事が半分しか見えません。</p>
+<p>質問主意書アシストの1947年からの23,333件と、国会議員711人の名簿を突き合わせると、質問主意書の記録がある議員は189人でした。議員ページにも同じ件数を出し、押すと質問主意書アシストのその議員の一覧へ移ります。</p>
+<h2>4. 質疑カードの不具合を2つ直した</h2>
+<p>ひとつ目は、大臣の肩書きが長いと、カードの右端から名前がはみ出す不具合です。兼務の多い大臣は、肩書きが60字を超えます。括弧の中の担当の列挙を落として、名前は必ず入るようにしました。</p>
+<p><img alt="修正後の質疑カード。答弁者の欄が「内閣府特命担当大臣　黄川田仁志」と収まっている" src="assets/sc-qa-katagaki.png" /></p>
+<p>ふたつ目は、参考人の答えが質問と組にならない不具合です。日銀総裁は、国会では「参考人」として答えます。システムが参考人を質問する側に数えていたので、カードの答弁の欄が空になっていました。参考人の答えも、直前の質問と組にするように直しました。</p>
+<p><img alt="修正後の質疑カード。質問の下に、日本銀行総裁　植田和男の答弁が組になって出ている" src="assets/sc-qa-sankonin.png" /></p>
+<h2>どう作ったか</h2>
+<p>カードは、公開しているサーバーのPHPで、ページが最初に開かれたときに描いて置いておきます。2回目からは置いたものを返すので、重くなりません。データを入れ替えたときは、自動で描き直します。</p>
+<p>作業は、私が「順番にこれやって」と4つを並べて渡し、AIエージェントが1つずつコードを書き、公開し、公開先の画像を取ってきて私と一緒に確かめる、という進め方でした。文字がはみ出していないか、数字が合っているかは、画像を見て直しています。たとえば提出者ごとのカードは、最初は定型句の行が途中で切れていたので、いちばん多い定型句だけを出す形に直しました。</p>
+<h2>使ってください</h2>
+<p>国会トラッカーも質問主意書アシストも、GitHubでMITライセンスのオープンソースとして公開しています。どの議員も、どの事務所も、報道の方も、同じ条件で使えます。</p>
+<p>国会トラッカー（テーマごとの質疑と答弁）
+https://xb4g.com/giin/tracker/#ref=vb-sc-card</p>
+<p>質問主意書アシスト（1947年からの質問主意書と答弁書）
+https://kurage.exbridge.jp/kshuisho.php/#ref=vb-sc-card</p>
+<p>国会議員の発言ログ（711人）
+https://xb4g.com/giin/#ref=vb-sc-card</p>
+<p>議員とAIエージェントで、国会の質疑や質問主意書の叩き台を2〜3時間でつくる企画も、すべての国会議員にご提案しています。</p>
+<p>国会議員のAI活用の提案
+https://exbridge.jp/vibeblog/2026-10-18-kokkai-giin-ai-agent-shitsugi.html#ref=vb-sc-card</p>
+<h2>よくある質問</h2>
+<h3>カードの文は要約ですか</h3>
+<p>いいえ。質問本文と答弁書の原文から、冒頭を抜き書きしています。言い換えや要約はしていません。</p>
+<h3>定型句が出ているのは、答弁の評価ですか</h3>
+<p>いいえ。「お答えすることは困難」などの言葉が答弁書にあるかを、語の一致で数えたものです。答弁の良し悪しを判断したものではありません。</p>
+<h3>質問主意書の件数は、いつの分ですか</h3>
+<p>質問主意書アシストに入っている1947年6月から2026年10月までの、衆参の質問主意書です。国会での発言の件数（2023年から）とは、数えている期間が違います。カードにはそれぞれの期間を書いています。</p>
+<p>議員事務所の方で、国会の記録の使い方やAIの活用に関心をお持ちいただけたら、お気軽にご相談ください。</p>
+<p>政党・政治団体・議員事務所のAI活用のご案内
+https://exbridge.jp/solution/seito.html#ref=vb-sc-card</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
