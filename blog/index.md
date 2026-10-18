@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [国会議員のAI活用：AIエージェントで、質疑と質問主意書の叩き台を2〜3時間でつくる——すべての国会議員へのご提案](2026-10-18-kokkai-giin-ai-agent-shitsugi.html)
 - [政治家・議員のホームページによくある課題と改善案——国会活動はAIが下書きし、事務所は確かめて公開するだけに](2026-10-16-giin-homepage-kadai-kaizen.html)
 - [Claude Codeで図を描くスキル diagram-design を使ってみた——ブロードリスニングの見取り図を描き直して分かった日本語のコツ](2026-10-15-diagram-design-tsukatte-mita.html)
 - [会議録が公開されたら、議員の公式サイトの投稿の下書きができている——伊藤たかえ議員の国会活動で見本を作りました](2026-10-15-giin-hp-kokkai-katsudo-shitagaki.html)
