@@ -1,0 +1,74 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>国会議員のAI活用：AIエージェントで、質疑と質問主意書の叩き台を2〜3時間でつくる——すべての国会議員へのご提案 | VWork バイブコーディングフレームワーク</title><meta name="description" content="国会議員とAIエージェント（Claude Code）で、国会の質疑や質問主意書の叩き台を2〜3時間でつくる企画を、すべての国会議員に提案します。使うのはOSS（MITライセンス）で公開した国会トラッカーと質問主意書アシスト。公開は質疑や提出が終わったあと、AIに渡すのは公開資料だけ、判断と責任は議員、という決まりごとと、2〜3時間の配分の例を書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-18-kokkai-giin-ai-agent-shitsugi.html"><meta property="og:type" content="article"><meta property="og:title" content="国会議員のAI活用：AIエージェントで、質疑と質問主意書の叩き台を2〜3時間でつくる——すべての国会議員へのご提案"><meta property="og:description" content="国会議員とAIエージェント（Claude Code）で、国会の質疑や質問主意書の叩き台を2〜3時間でつくる企画を、すべての国会議員に提案します。使うのはOSS（MITライセンス）で公開した国会トラッカーと質問主意書アシスト。公開は質疑や提出が終わったあと、AIに渡すのは公開資料だけ、判断と責任は議員、という決まりごとと、2〜3時間の配分の例を書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-18-kokkai-giin-ai-agent-shitsugi.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="国会議員のAI活用：AIエージェントで、質疑と質問主意書の叩き台を2〜3時間でつくる——すべての国会議員へのご提案"><meta name="twitter:description" content="国会議員とAIエージェント（Claude Code）で、国会の質疑や質問主意書の叩き台を2〜3時間でつくる企画を、すべての国会議員に提案します。使うのはOSS（MITライセンス）で公開した国会トラッカーと質問主意書アシスト。公開は質疑や提出が終わったあと、AIに渡すのは公開資料だけ、判断と責任は議員、という決まりごとと、2〜3時間の配分の例を書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "国会議員のAI活用：AIエージェントで、質疑と質問主意書の叩き台を2〜3時間でつくる——すべての国会議員へのご提案", "description": "国会議員とAIエージェント（Claude Code）で、国会の質疑や質問主意書の叩き台を2〜3時間でつくる企画を、すべての国会議員に提案します。使うのはOSS（MITライセンス）で公開した国会トラッカーと質問主意書アシスト。公開は質疑や提出が終わったあと、AIに渡すのは公開資料だけ、判断と責任は議員、という決まりごとと、2〜3時間の配分の例を書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-18-kokkai-giin-ai-agent-shitsugi.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-18", "dateModified": "2026-10-18", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>国会議員のAI活用：AIエージェントで、質疑と質問主意書の叩き台を2〜3時間でつくる——すべての国会議員へのご提案</h1><p class="meta">2026-10-18</p><p>名古屋でAIシステムの開発をしている小嶋です。国会の会議録や質問主意書を扱うシステムを作ってきました。この記事は、すべての国会議員と議員事務所の方への提案です。</p>
+<p>議員とAIエージェントで、国会の質疑や質問主意書の叩き台を一緒につくり、その過程を議員自身が発信する。国会議員がAIエージェントで国会の仕事を準備する様子を公開している例は、まだほとんどありません。</p>
+<h2>1. 使うシステムは、すべてオープンソース</h2>
+<p>使うのは、当社が作って公開している3つのシステムです。コードはGitHubで<strong>MITライセンス</strong>で公開していて、どの議員も、どの事務所も、同じ条件で使えます。</p>
+<ul>
+<li><strong><a href="https://xb4g.com/giin/tracker/#ref=vb-giin-ai">国会トラッカー</a></strong>：テーマごとに、全国の国会議員の質疑と政府の答弁を、国会会議録から集めて並べます。年ごとの件数や、議員ごとの記録、質問と答弁を1枚にした画像も出ます。いま<strong>137テーマ</strong>を公開しています。</li>
+<li><strong><a href="https://kurage.exbridge.jp/kshuisho.php/#ref=vb-giin-ai">質問主意書アシスト</a></strong>：衆参の質問主意書と政府の答弁書を、本文まで検索できます。<strong>1947年からの23,333件</strong>が入っています。</li>
+<li><strong><a href="https://xb4g.com/giin/#ref=vb-giin-ai">国会議員 発言ログ</a></strong>：全国の国会議員711人の2023年からの質疑を、日付と会議名つきで引けます。</li>
+</ul>
+<p>この3つをAIエージェント（Claude Code）から使うと、「このテーマで、これまで誰が何を聞き、政府は何と答えてきたか」を、数分で並べられます。</p>
+<h2>2. 企画の流れ</h2>
+<p><img alt="国会議員とAIエージェントで、質疑と質問主意書の叩き台をつくる流れ。当社がシステムをOSSで公開し、議員とAIで2〜3時間かけて質疑や質問主意書の叩き台をつくり、質疑や提出が終わったら議員自身がX・note・ブログ・YouTubeで過程を発信し、AIを使う議員として事務所や党へ広がる" src="assets/ga-flow.png" /></p>
+<ol>
+<li><strong>1つのテーマで試す</strong>：議員が国会で続けて取り上げてきたテーマを1つ選び、議員と一緒に叩き台をつくります。<strong>叩き台なら、一緒に2〜3時間の作業でできます。</strong></li>
+<li><strong>終わってから公開する</strong>：質疑や質問主意書の提出が終わったあとに、議員自身のX・note・ブログ・YouTubeで「どう作ったか」を発信します。記事の下書きは当社がお手伝いします。</li>
+</ol>
+<h2>3. 2〜3時間で、何をどこまでつくるか</h2>
+<p><img alt="叩き台をつくる2〜3時間の配分の例。これまでの質疑と答弁を年ごとに整理する30分、ほかの議員の質疑・質問主意書・統計を集める30〜45分、議員とAIで質問案と質問主意書の下書きをつくる60分、数字と引用を会議録の原文で確かめる15〜30分" src="assets/ga-session.png" /></p>
+<p>たとえば次の配分で進めます。</p>
+<ul>
+<li><strong>30分：これまでを整理する</strong>。その議員がこのテーマで国会で何を聞き、政府は何と答え、何が変わっていないかを、年ごとに並べます。</li>
+<li><strong>30〜45分：周りを集める</strong>。ほかの議員の質疑、関係する質問主意書と答弁書、公表されている統計や海外の制度の資料を集めます。</li>
+<li><strong>60分：叩き台をつくる</strong>。次の質疑の質問案と、質問主意書の下書きを、AIが案を出し、議員と一緒に直していきます。</li>
+<li><strong>15〜30分：原文で確かめる</strong>。数字と引用を、会議録と答弁書の原文で一つずつ確かめます。</li>
+</ul>
+<p>事前に、選んだテーマのトラッカーと、議員の過去の質疑の一覧を当社で用意しておきます。当日の2〜3時間は、作る時間ではなく、決める時間にします。</p>
+<p>2〜3時間で終わらないものもあります。質問主意書の言葉を最後まで詰めることや、事務所や党の中での確認は、そのあと事務所で行います。叩き台は、あくまで出発点です。</p>
+<p>この企画を考えたのは、この数日、議員のXの投稿に国会の記録を添えて返信するために、新しいテーマのトラッカーをその場で作ってきたからです。1つのテーマの会議録を集めて公開するまで数分、使える答弁を探すのも数分でした。議員と一緒なら、そこから叩き台まで進めます。</p>
+<h2>4. あらかじめ決めておくこと</h2>
+<ol>
+<li><strong>公開は、質疑や提出が終わったあと</strong>。質問の中身を事前に出すことはしません。</li>
+<li><strong>AIに渡すのは公開資料だけ</strong>。会議録・質問主意書・公表された統計などです。陳情者の個人情報や未公表の情報は渡しません。</li>
+<li><strong>AIは下調べと下書きまで</strong>。数字や引用は会議録の原文で確かめ、内容の判断と責任は議員と事務所にあります。</li>
+<li><strong>契約の形は、事務所の会計責任者とご相談のうえで決めます</strong>。会社が議員個人に作業を無償で提供すると、政治資金規正法上の寄附にあたるおそれがあるためです。当社の作業は、顧問契約などの有償の形を想定しています。システムそのものはOSSなので、誰でも無償で使えます。</li>
+</ol>
+<h2>5. この企画にかける思い</h2>
+<p>2026年の衆院選で、チームみらいは党員2,181人ながら、比例で381万票を得ました。党員1人あたり約1,750票で、日本保守党の約27票（146万票÷5.4万人）と比べると、桁が二つ違います（数字は<a href="https://exbridge.jp/vibeblog/2026-10-10-team-mirai-votes-vs-followers.html#ref=vb-giin-ai">チームみらいの381万票はどこから来たのか</a>で確かめたもの）。熱心な支持者の数を大きく超える、組織に頼らない票です。「デジタルで政治が変わる」と期待した人たちの票だと、私は考えています。</p>
+<p>ただ、その後の国会で、デジタル民主主義が大きく前進したようには、私には見えません。期待した分、物足りなさを感じている人もいるはずです。</p>
+<p>議員の皆さんには、何年も積み重ねてこられた仕事があります。その仕事をAIエージェントでさらに深め、過程とシステムを公開する。デジタルに期待する人たちに、法案を実現できる議員と政党でこそデジタルが生きることを、示していただきたいと思っています。名古屋で国会のシステムを作ってきた者として、それを一緒に形にしたいと願っています。</p>
+<h2>よくある質問</h2>
+<h3>AIが質問を勝手に作って、そのまま国会で使うのですか</h3>
+<p>いいえ。AIがするのは、過去の質疑や質問主意書を集めて並べることと、叩き台の案を出すことまでです。どの質問をするか、どの言葉で聞くかを決めるのは議員と事務所です。数字や引用は、会議録の原文で確かめてから使います。</p>
+<h3>どの党の議員でも使えますか</h3>
+<p>使えます。国会トラッカーも質問主意書アシストも、GitHubでMITライセンスで公開しているので、どの議員も同じ条件で使えます。全国の国会議員711人の発言ログも、どの議員にも同じ形で公開しています。</p>
+<h3>費用はかかりますか</h3>
+<p>システムそのものはOSSなので、使うのに費用はかかりません。当社が一緒に作業する場合は、政治資金規正法の決まりに合わせて有償の契約の形にし、契約の形は事務所の会計責任者とご相談のうえで決めます。</p>
+<h3>質問の中身が事前に外に出ることはありませんか</h3>
+<p>ありません。発信は、質疑や質問主意書の提出が終わったあとに行います。AIに渡すのも、会議録や公表された資料だけです。</p>
+<p>議員事務所の方で、関心をお持ちいただけたら、お気軽にご相談ください。</p>
+<p>政党・政治団体・議員事務所のAI活用のご案内
+https://exbridge.jp/solution/seito.html#ref=vb-giin-ai</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
