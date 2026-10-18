@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 18 Oct 2026 09:44:56 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 15:08:52 +0000</lastBuildDate>
+    <item>
+      <title>VisaやMastercardによる決済拡大とDeepSeekの低コストAPIが示す最新動向 10-19</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-19-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-19-ai-news.html</guid>
+      <pubDate>Mon, 19 Oct 2026 09:00:00 +0000</pubDate>
+      <description>VisaやMastercardとの統合により仮想通貨決済が45%急増した最新動向を解説します。また、DeepSeekの低コストAPI（1,000リクエスト$0.75）や軽量音声認識モデルAuroraASR-1Mの登場など、AIと金融の最新ニュースを網羅しています。</description>
+    </item>
     <item>
       <title>Metaで読む：DeepSeekの新モデル登場とReplitがOpenAIを優先する動きなど、最新のAI・Web3動向 10-18</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news.html</guid>
       <pubDate>Fri, 09 Oct 2026 09:00:00 +0000</pubDate>
       <description>GoogleがオンデバイスAIアプリ「AI Edge Foresight」を発表しました。また、DeepSeekやClaudeを用いた韓国銀行への高度なサイバー攻撃の実態や、軽量モデルSaluki 27Bの性能など最新のAI動向を解説します。</description>
-    </item>
-    <item>
-      <title>OpenAIの安全研究者解雇問題とLMArenaの急成長に見るAI業界の動向 10-09</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news-3.html</guid>
-      <pubDate>Fri, 09 Oct 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIの安全研究者解雇問題やLMArenaの企業価値が31億ドルへ急騰する動向を解説します。韓国銀行へのサイバー攻撃や収益予測の乖離、AI時代に必要なキャリアスキルなど最新の業界ニュースを網羅しています。</description>
     </item>
   </channel>
 </rss>

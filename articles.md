@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [VisaやMastercardによる決済拡大とDeepSeekの低コストAPIが示す最新動向 10-19](2026-10-19-ai-news.html)
 - [DeepSeek V4.1 Flashの躍進とMetaの規約変更：AIモデル競争の最前線 10-18](2026-10-18-ai-news-4.html)
 - [Metaで読む：DeepSeekの新モデル登場とReplitがOpenAIを優先する動きなど、最新のAI・Web3動向 10-18](2026-10-18-ai-news-3.html)
 - [DeepSeek V4.1 Flashの躍進と、ReplitによるOpenAIへの主力移行 10-18](2026-10-18-ai-news-2.html)
