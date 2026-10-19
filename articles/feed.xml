@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 19 Oct 2026 03:39:15 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 15:56:31 +0000</lastBuildDate>
+    <item>
+      <title>Nvidiaの新型オープンモデルとMistralによる時系列予測の新展開 10-20</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news.html</guid>
+      <pubDate>Tue, 20 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Nvidiaがエッジ環境向けの新オープンモデルを発表し、セキュアなAIエージェント実行を可能にします。またMistralの時系列予測モデル「Timestral」やLinux 7.3カーネルの最新動向、Cardanoの新言語開発についても解説します。</description>
+    </item>
     <item>
       <title>VisaやMastercardによる決済拡大とDeepSeekの低コストAPIが示す最新動向 10-19</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-19-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-4.html</guid>
       <pubDate>Sat, 10 Oct 2026 09:00:00 +0000</pubDate>
       <description>CloudflareによるDeno買収のニュースや、AnthropicのAIモデルが虚偽の通報を行った安全性の課題を解説します。また、非テキストAIモデルJevの評価額やAmazonのNDA撤廃など最新動向を網羅しています。</description>
-    </item>
-    <item>
-      <title>OpenAIの安全研究を巡る論争と、最新AIモデルによるサイバー攻撃の実態 10-09</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-09-ai-news-2.html</guid>
-      <pubDate>Fri, 09 Oct 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIの安全研究を巡る論争や、DeepSeek v4.1-Flash等の最新AIモデルを組み合わせた韓国銀行へのサイバー攻撃の実態を解説します。また、Qwen3.8-Flash-Nextを高速動作させる低コストな機材構成も紹介します。</description>
     </item>
   </channel>
 </rss>
