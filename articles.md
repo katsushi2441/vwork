@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [MicrosoftのAIエージェント警告とAmazonによるNvidiaへの挑戦 10-20](2026-10-20-ai-news-2.html)
 - [Nvidiaの新型オープンモデルとMistralによる時系列予測の新展開 10-20](2026-10-20-ai-news.html)
 - [TheとCryptoで読む：GoogleのHarness2公開とハイブリッド推論エージェントが示すAIの進化 10-19](2026-10-19-ai-news-3.html)
 - [DisneyとCharacter.AIの人的資源獲得、そしてソフトウェア開発における「ビジョン」の重要性 10-19](2026-10-19-ai-news-2.html)
