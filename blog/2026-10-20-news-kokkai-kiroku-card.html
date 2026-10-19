@@ -1,0 +1,76 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ニュースに国会答弁のカードを付ける仕組み——「ニュースと国会の記録カード」を作った技術と意図 | VWork バイブコーディングフレームワーク</title><meta name="description" content="報道各社のニュースに、国会の質疑・政府の答弁、経済指標、質問主意書のカードを付けて並べるページ「ニュースと国会の記録カード」（exbridge.jp/news/）を作りました。毎時のXの返信候補づくりで生まれていたカードを、だれでも使える形にしたものです。使っている技術（国会会議録API、判断モデル、静的生成）と、議員・記者・支援者の方に使ってほしい場面を書きます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-20-news-kokkai-kiroku-card.html"><meta property="og:type" content="article"><meta property="og:title" content="ニュースに国会答弁のカードを付ける仕組み——「ニュースと国会の記録カード」を作った技術と意図"><meta property="og:description" content="報道各社のニュースに、国会の質疑・政府の答弁、経済指標、質問主意書のカードを付けて並べるページ「ニュースと国会の記録カード」（exbridge.jp/news/）を作りました。毎時のXの返信候補づくりで生まれていたカードを、だれでも使える形にしたものです。使っている技術（国会会議録API、判断モデル、静的生成）と、議員・記者・支援者の方に使ってほしい場面を書きます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-20-news-kokkai-kiroku-card.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ニュースに国会答弁のカードを付ける仕組み——「ニュースと国会の記録カード」を作った技術と意図"><meta name="twitter:description" content="報道各社のニュースに、国会の質疑・政府の答弁、経済指標、質問主意書のカードを付けて並べるページ「ニュースと国会の記録カード」（exbridge.jp/news/）を作りました。毎時のXの返信候補づくりで生まれていたカードを、だれでも使える形にしたものです。使っている技術（国会会議録API、判断モデル、静的生成）と、議員・記者・支援者の方に使ってほしい場面を書きます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ニュースに国会答弁のカードを付ける仕組み——「ニュースと国会の記録カード」を作った技術と意図", "description": "報道各社のニュースに、国会の質疑・政府の答弁、経済指標、質問主意書のカードを付けて並べるページ「ニュースと国会の記録カード」（exbridge.jp/news/）を作りました。毎時のXの返信候補づくりで生まれていたカードを、だれでも使える形にしたものです。使っている技術（国会会議録API、判断モデル、静的生成）と、議員・記者・支援者の方に使ってほしい場面を書きます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-20-news-kokkai-kiroku-card.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-20", "dateModified": "2026-10-20", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>ニュースに国会答弁のカードを付ける仕組み——「ニュースと国会の記録カード」を作った技術と意図</h1><p class="meta">2026-10-20</p><p>名古屋でAIシステムの開発をしている小嶋です。報道各社のニュースに、関係する国会の質疑・政府の答弁、経済指標、質問主意書のカードを付けて並べるページを公開しました。</p>
+<p>ニュースと国会の記録カード｜国会トラッカーカード
+https://exbridge.jp/news/</p>
+<p><img alt="ニュースと国会の記録カードのトップ。日ごとの見出しの下に、ニュースの見出しと、国会トラッカー・質問主意書・経済指標のカードが並ぶ" src="assets/news-cards-top.png" /></p>
+<h2>何のページか</h2>
+<p>1件ごとに、ニュースの見出し（報道機関のXの投稿の1行目）と、そのニュースに関係する当社のカードを並べています。カードは次の4種類です。</p>
+<ul>
+<li><strong>国会トラッカー</strong>：テーマごとに、全国の国会議員の質疑と政府の答弁を国会会議録から集めたもの。答弁1件のカードと、テーマ全体の年ごとの件数のカードがあります</li>
+<li><strong>質問主意書</strong>：衆議院・参議院の質問主意書と政府の答弁書（第1回国会から23,333件）</li>
+<li><strong>経済指標</strong>：日本銀行の統計から、為替・金利・物価・短観の最新の値と2年分の推移</li>
+<li><strong>議員の記録</strong>：議員ごと・国会の回ごとの質疑の回数など</li>
+</ul>
+<p>各カードには「見出しとURLをコピー」と「Xに投稿」のボタンがあり、押すとカードの画像つきでそのまま共有できます。毎時更新で、トップは直近7日分、日ごとのページは7日を過ぎても残ります。10月2日から20日朝までの18日間で、日経・NHK・ロイター・産経など17の報道機関のニュースに692件のカードが付きました（国会トラッカー494件、当社のシステム172件、質問主意書11件、経済指標11件、議員の記録4件）。</p>
+<h2>どこから生まれたか——毎時のXの返信候補</h2>
+<p>このページは、もともと自社のために作っていた仕組みの「副産物」を、だれでも使える形にしたものです。</p>
+<p>当社は毎時、国会議員と報道機関のXの投稿を集め、政策の話題なら、国会の答弁や公的な統計の事実を添えた返信の文案を作っています。文案には、話題に合うカードのURLを1枚付けます。返信の文と投稿は人が決めますが、「このニュースにはこのカードが合う」という組み合わせは、毎時たまっていきます。</p>
+<p>それを議員あての文案を外して、ニュースとカードの組み合わせだけを並べたのが、このページです。</p>
+<h2>使っている技術</h2>
+<p>流れは次の5段です。</p>
+<ol>
+<li><strong>投稿を集める</strong>：報道機関20アカウントと国会議員の投稿を、毎時、直近30分ぶん集めます（ログインを使わない公開の読み取り口）</li>
+<li><strong>分野を判定する</strong>：小さな判断モデルに「どの分野の話か」を13択（どれでもない、を含む）で選ばせます。当社のサーバーで動くモデルで、1件あたり0.1秒ほどです</li>
+<li><strong>カードを当てる</strong>：分野が決まったら、国会トラッカーの語（テーマごとに決めた言葉）や経済指標の語で、合うカードを規則で選びます。答弁1件のカードは、ニュースの本文といちばん近い政府答弁を選びます</li>
+<li><strong>データを書き出す</strong>：報道機関の投稿に付いたカードだけを、日付・見出し・カードの題名と画像の形で書き出します</li>
+<li><strong>ページを作って置く</strong>：当社のブログや業務OSSカタログと同じ静的サイト生成の仕組み（TypeScript）で、トップと日ごとのページ、サイトマップを作り、変わったファイルだけをサーバーに送ります</li>
+</ol>
+<p>カードの中身は、国会会議録検索システムのAPI（国立国会図書館）、衆議院・参議院の質問主意書の公開ページ、日本銀行の時系列統計データの公開API から作っています。要約や言い換えはしていません。答弁は会議録の文言そのままです。</p>
+<h2>こう使ってほしい</h2>
+<h3>議員の方：ニュースに合わせて、ご自身の質問主意書や質疑を紹介する</h3>
+<p>たとえば10月20日朝、NHKが「事業承継税制に効果疑問視の意見 税制改正の議論で焦点の1つに」と報じました。このページでは、そのニュースに、長友よしひろ議員が2025年11月26日に提出した「法人版事業承継税制の特例措置に関する質問主意書」のカードが付いています。</p>
+<p><img alt="NHKの事業承継税制のニュースに、長友よしひろ議員の質問主意書のカードが付いている。下に「見出しとURLをコピー」「Xに投稿」のボタン" src="assets/news-cards-phone.png" /></p>
+<p>ご自身が以前に出した質問主意書や、委員会での質疑が、いまのニュースとつながることはよくあります。「Xに投稿」を押せば、ニュースの見出しとカードの付いた投稿画面が開くので、「このニュースについては、以前こう質問していました」と一言添えるだけで、記録つきの発信になります。</p>
+<h3>記者・解説をする方：ニュースの背景になる国会のやりとりを、すぐ示す</h3>
+<p>カードの先の国会トラッカーには、そのテーマでだれが質問し、政府が何と答えてきたかが、日付つきで並んでいます。ニュースの背景を説明するときの材料になります。</p>
+<h3>支援者・関心のある方：数字と出典のある形で、話題を共有する</h3>
+<p>カードは公開データからそのまま作っているので、出典をたどれます。感想だけの投稿より、話が具体的になります。</p>
+<h2>国会トラッカーについて</h2>
+<p>カードの多くは、当社の「国会トラッカー」から出ています。全国の国会議員711人の発言を国会会議録から集め、143のテーマごとに、だれが質問し、政府が何と答えたかを並べています。</p>
+<p>国会トラッカー（テーマごとの国会の質疑と政府の答弁）
+https://xb4g.com/giin/tracker/</p>
+<h2>気をつけていること</h2>
+<ul>
+<li><strong>見出しは各社の投稿の1行目だけ</strong>を載せています。記事の中身は、見出しのリンクから各社のページで確かめてください</li>
+<li>カードは言葉の一致で当てているので、<strong>話題と少しずれるカードが付くこともあります</strong>。気づいた組み合わせは直していきます</li>
+<li>どの政党にも寄らないよう、カードは会議録や答弁書の原文から作り、論評はしません</li>
+</ul>
+<h2>よくある質問</h2>
+<h3>カードを自由にXに投稿してもよいですか</h3>
+<p>どうぞお使いください。カードは国会会議録・質問主意書・日本銀行の統計などの公開データから当社が作ったもので、投稿するとカードの画像と題名が表示されます。</p>
+<h3>議員事務所で、自分の質疑や質問主意書だけのカードを作れますか</h3>
+<p>作れます。議員ごとの国会の記録のページや、テーマごとの質疑のカードは、いまもすべての国会議員について公開しています。事務所の発信に合わせた形がほしい場合は、ご相談ください。</p>
+<p>ニュースと国会の記録カード｜国会トラッカーカード
+https://exbridge.jp/news/</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
