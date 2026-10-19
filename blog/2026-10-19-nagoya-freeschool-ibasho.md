@@ -74,8 +74,10 @@ https://kurage.exbridge.jp/kibasho.php/#ref=vb-kibasho
 
 このページの一式は、ほかの市町村でも使えるように作っています。団体の一覧・校内の居場所の実施校・教育支援センター・補助金の要件を、その自治体の公表資料から同じ形のデータに書き写して差し替えます。PHPのファイル1つとデータのファイルで動き、データベースは要りません。
 
-- ソースコード: https://github.com/katsushi2441/kibasho
-- 商品ページ（自治体・議員事務所・フリースクール・NPOのサイトに置く一式）: https://kappstore.exbridge.jp/app.php?id=a2f1706ca3edff6b#ref=vb-kibasho
+ソースコードはオープンソース（MITライセンス）で公開していて、商品ページから見られます。
+
+自治体・議員事務所・フリースクール・NPOのサイトに置く一式（商品ページ）
+https://kappstore.exbridge.jp/app.php?id=a2f1706ca3edff6b#ref=vb-kibasho
 
 ## よくある質問
 
