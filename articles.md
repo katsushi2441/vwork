@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [TheとCryptoで読む：GoogleのHarness2公開とハイブリッド推論エージェントが示すAIの進化 10-19](2026-10-19-ai-news-3.html)
 - [DisneyとCharacter.AIの人的資源獲得、そしてソフトウェア開発における「ビジョン」の重要性 10-19](2026-10-19-ai-news-2.html)
 - [VisaやMastercardによる決済拡大とDeepSeekの低コストAPIが示す最新動向 10-19](2026-10-19-ai-news.html)
 - [DeepSeek V4.1 Flashの躍進とMetaの規約変更：AIモデル競争の最前線 10-18](2026-10-18-ai-news-4.html)
