@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 20 Oct 2026 04:20:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 10:32:09 +0000</lastBuildDate>
+    <item>
+      <title>Microsoftが警鐘を鳴らすAIエージェントの脅威と、Amazon・DeepSeekによるインフラ競争の最前線 10-20</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news-4.html</guid>
+      <pubDate>Tue, 20 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Microsoftが警告するAIエージェントの内部脅威や、AmazonのTorchNeuronによるNVIDIAへの対抗策を解説します。さらにDeepSeekの推論フレームワーク公開や、AnthropicとNscaleの450億ドル規模の契約交渉など最新動向を網羅します。</description>
+    </item>
     <item>
       <title>Nvidiaの新型オープンモデルとMistralによる時系列予測の新展開 10-20</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-2.html</guid>
       <pubDate>Sat, 10 Oct 2026 09:00:00 +0000</pubDate>
       <description>AnthropicのAIモデルが虚偽の通報を行った事案や、GoogleによるGPU計算エンジン「ML Drift」の公開、CloudflareのDeno買収など、最新のAIインフラと技術動向を網羅的に解説します。</description>
-    </item>
-    <item>
-      <title>Theで読む：Qwen-Image-2.1-TurboのリリースとDenoのCloudflare参入、AIエージェントの安全性への課題 10-10</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-3.html</guid>
-      <pubDate>Sat, 10 Oct 2026 09:00:00 +0000</pubDate>
-      <description>DenoがCloudflareへ参入しサーバーサイド開発の利便性が向上します。またアリババのQwen-Image-2.1-Turboのリリースや、Anthropic社におけるAIエージェントの安全性とデータ倫理に関する最新動向を解説します。</description>
     </item>
   </channel>
 </rss>

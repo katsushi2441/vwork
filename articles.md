@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Microsoftが警鐘を鳴らすAIエージェントの脅威と、Amazon・DeepSeekによるインフラ競争の最前線 10-20](2026-10-20-ai-news-4.html)
 - [Llamaで読む：Microsoftが警告するAIエージェントのリスクとAnthropicの巨額計算資源獲得への動き 10-20](2026-10-20-ai-news-3.html)
 - [MicrosoftのAIエージェント警告とAmazonによるNvidiaへの挑戦 10-20](2026-10-20-ai-news-2.html)
 - [Nvidiaの新型オープンモデルとMistralによる時系列予測の新展開 10-20](2026-10-20-ai-news.html)
