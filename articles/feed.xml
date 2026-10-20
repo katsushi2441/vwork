@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 19 Oct 2026 22:08:16 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 04:20:01 +0000</lastBuildDate>
     <item>
       <title>Nvidiaの新型オープンモデルとMistralによる時系列予測の新展開 10-20</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news.html</guid>
       <pubDate>Tue, 20 Oct 2026 09:00:00 +0000</pubDate>
       <description>Nvidiaがエッジ環境向けの新オープンモデルを発表し、セキュアなAIエージェント実行を可能にします。またMistralの時系列予測モデル「Timestral」やLinux 7.3カーネルの最新動向、Cardanoの新言語開発についても解説します。</description>
+    </item>
+    <item>
+      <title>Llamaで読む：Microsoftが警告するAIエージェントのリスクとAnthropicの巨額計算資源獲得への動き 10-20</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news-3.html</guid>
+      <pubDate>Tue, 20 Oct 2026 09:00:00 +0000</pubDate>
+      <description>MicrosoftがAIエージェントを内部脅威と警告し、Anthropicは450億ドル規模の計算資源獲得に向けた交渉を進めています。AmazonのTorchNeuronやVRAM最適化技術など、最新のAI動向を網羅します。</description>
     </item>
     <item>
       <title>MicrosoftのAIエージェント警告とAmazonによるNvidiaへの挑戦 10-20</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news-3.html</guid>
       <pubDate>Sat, 10 Oct 2026 09:00:00 +0000</pubDate>
       <description>DenoがCloudflareへ参入しサーバーサイド開発の利便性が向上します。またアリババのQwen-Image-2.1-Turboのリリースや、Anthropic社におけるAIエージェントの安全性とデータ倫理に関する最新動向を解説します。</description>
-    </item>
-    <item>
-      <title>Qwen-Image-2.1-Turboの登場とCloudflareによるDeno統合など、最新テック動向まとめ 10-10</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-10-ai-news.html</guid>
-      <pubDate>Sat, 10 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Qwen-Image-2.1-TurboのリリースやDenoとCloudflareの統合など、最新のテック動向をまとめました。Oxideの4億4,500万ドルの資金調達やLedgerの盗難被害調査など、AI・Web3の重要ニュースを網羅しています。</description>
     </item>
   </channel>
 </rss>
