@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [NVIDIAのCosmos3やDeepSeek向け推論フレームワークなど、進化するAI技術とWeb3動向 10-21](2026-10-21-ai-news-2.html)
 - [DeepSeekのオープンソース化と米国による規制、そしてQwenを基盤とした新モデルの動向 10-21](2026-10-21-ai-news.html)
 - [Microsoftが警鐘を鳴らすAIエージェントの脅威と、Amazon・DeepSeekによるインフラ競争の最前線 10-20](2026-10-20-ai-news-4.html)
 - [Llamaで読む：Microsoftが警告するAIエージェントのリスクとAnthropicの巨額計算資源獲得への動き 10-20](2026-10-20-ai-news-3.html)
