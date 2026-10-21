@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [SNSコンサルだけでは成果にならない——X運用とホームページ・Webシステムをまとめた「AI-SNS顧問」を始めた理由](2026-10-21-ai-sns-komon-x-hp-web.html)
 - [わかりやすい資料の作り方——政党の会見フリップ3枚を、同じ色使いのまま作り直して分かった5つのこと](2026-10-21-wakariyasui-shiryo-flip-tsukurinaoshi.html)
 - [生活保護の医療費は無駄なのか——1.9兆円はどこへ行き、誰の売上になっているか（データとお金の仕組みから考える）](2026-10-20-seikatsuhogo-iryohi-keizai.html)
 - [Xのフォロワーの増やし方——国会議員と党首にフォローされて、経営者のXの信用はこう変わった](2026-10-20-x-follower-fuyashikata-giin.html)
