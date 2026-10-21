@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [NVIDIAのCosmos3-HやSpaceXのAI事業が牽引する技術革新の最前線 10-21](2026-10-21-ai-news-4.html)
 - [NVIDIAのCosmos3-Hによる医療シミュレーションとAnthropicが提言するAI安全規制の動向 10-21](2026-10-21-ai-news-3.html)
 - [NVIDIAのCosmos3やDeepSeek向け推論フレームワークなど、進化するAI技術とWeb3動向 10-21](2026-10-21-ai-news-2.html)
 - [DeepSeekのオープンソース化と米国による規制、そしてQwenを基盤とした新モデルの動向 10-21](2026-10-21-ai-news.html)

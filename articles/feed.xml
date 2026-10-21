@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 21 Oct 2026 03:34:49 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 09:46:43 +0000</lastBuildDate>
     <item>
       <title>NVIDIAのCosmos3-Hによる医療シミュレーションとAnthropicが提言するAI安全規制の動向 10-21</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news-3.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news-2.html</guid>
       <pubDate>Wed, 21 Oct 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAのCosmos3による外科手術シミュレーションやDeepSeek向け推論フレームワークDeepInferの最新動向を解説します。またFairStressによるLLMの公平性評価やCoinbaseの企業統治課題など、AIとWeb3の重要ニュースを網羅しています。</description>
+    </item>
+    <item>
+      <title>NVIDIAのCosmos3-HやSpaceXのAI事業が牽引する技術革新の最前線 10-21</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news-4.html</guid>
+      <pubDate>Wed, 21 Oct 2026 09:00:00 +0000</pubDate>
+      <description>NVIDIAが発表した臨床手術シミュレーション技術Cosmos3-H-Dreamsや、SpaceXのAI事業による黒字化など最新技術動向を解説します。PHPの脆弱性情報やCSSの進化についても網羅しています。</description>
     </item>
     <item>
       <title>Microsoftが警鐘を鳴らすAIエージェントの脅威と、Amazon・DeepSeekによるインフラ競争の最前線 10-20</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-11-ai-news-3.html</guid>
       <pubDate>Sun, 11 Oct 2026 09:00:00 +0000</pubDate>
       <description>MicrosoftのナデラCEOがAIモデルへの緊急ブレーキと安全性の重要性を強調するほか、Mac用EmbeddingGemma 2アプリやビットコイン暴落後の市場分析、トークン化商品の動向など最新テックニュースを網羅します。</description>
-    </item>
-    <item>
-      <title>Buildで読む：Qualcommが予測する2028年のスマホ進化とDeepSeekのセキュリティリスク 10-11</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-11-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-11-ai-news-4.html</guid>
-      <pubDate>Sun, 11 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Qualcommが予測する2028年のスマホ進化やDeepSeek V4.1 FlashのAPIキー流出リスクを解説します。さらにMSナデラ氏によるAI緊急停止ボタンの提言や、Web3を活用した石油等のトークン化市場についても紹介します。</description>
     </item>
   </channel>
 </rss>
