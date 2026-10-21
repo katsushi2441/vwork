@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [SECで読む：IBM Granite Speech 5.0の進化とiPhoneで動作する35B MoEモデルの衝撃 10-22](2026-10-22-ai-news.html)
 - [NVIDIAのCosmos3-HやSpaceXのAI事業が牽引する技術革新の最前線 10-21](2026-10-21-ai-news-4.html)
 - [NVIDIAのCosmos3-Hによる医療シミュレーションとAnthropicが提言するAI安全規制の動向 10-21](2026-10-21-ai-news-3.html)
 - [NVIDIAのCosmos3やDeepSeek向け推論フレームワークなど、進化するAI技術とWeb3動向 10-21](2026-10-21-ai-news-2.html)
