@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 21 Oct 2026 21:21:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 03:32:12 +0000</lastBuildDate>
     <item>
       <title>SECで読む：IBM Granite Speech 5.0の進化とiPhoneで動作する35B MoEモデルの衝撃 10-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-2.html</guid>
       <pubDate>Thu, 22 Oct 2026 09:00:00 +0000</pubDate>
       <description>LiteLLMの脆弱性やPHPの緊急セキュリティアップデート、Mistral Large 4の最新動向を解説します。また、NVIDIA Kumo Relationalの性能報告やWalmartによるAIエージェント導入など、最新の技術情報を網羅しています。</description>
+    </item>
+    <item>
+      <title>Kitten-TTS 2の登場とRecursive FlintによるコーディングAIの新機軸 10-22</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-3.html</guid>
+      <pubDate>Thu, 22 Oct 2026 09:00:00 +0000</pubDate>
+      <description>KittenMLからCPUで動作する軽量なTTSモデル「Kitten-TTS 2」が登場しました。また、Recursive社はノートPC向けコーディングモデル「Flint」を発表し、NVIDIAのデータ処理技術やDATA社の投資動向も紹介します。</description>
     </item>
     <item>
       <title>NVIDIAのCosmos3-Hによる医療シミュレーションとAnthropicが提言するAI安全規制の動向 10-21</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-12-ai-news-3.html</guid>
       <pubDate>Mon, 12 Oct 2026 09:00:00 +0000</pubDate>
       <description>LLMの能力に対する認識の乖離や、RTX 5090が$5,000に達するAIインフラの現状を解説します。10〜16GBのVRAMで動作するモデルのランキングや、16.9MBで動く音声認識技術Whistleも紹介します。</description>
-    </item>
-    <item>
-      <title>GLM5.3 Flashの高速化とApple HomeView、そしてRTX 5090を巡るAIインフラの動向 10-12</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-12-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-12-ai-news-2.html</guid>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Project MayaによるGLM5.3 Flashの高速化フレームワーク「Strata」や、Appleの新型スマートホームハブ「HomeView」の発表情報を紹介します。また、RTX 5090の価格高騰や軽量な音声認識技術についても解説します。</description>
     </item>
   </channel>
 </rss>
