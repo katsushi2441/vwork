@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 22 Oct 2026 09:46:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 15:13:28 +0000</lastBuildDate>
+    <item>
+      <title>DeepSeekの巨額資金調達とSpotify、AnthropicによるAIエージェント戦略の動向 10-23</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news.html</guid>
+      <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
+      <description>DeepSeekが米国による制限直後に150億ドルの資金調達を実施したニュースや、SpotifyがAIエージェント向け戦略へ転換する動向を解説します。またAnthropicのClaude Duet発表やLing-3.1-flashの更新情報も網羅しています。</description>
+    </item>
     <item>
       <title>Kitten-TTS 2の登場とSolanaの大規模アップデート、および計算アルゴリズムの新展開 10-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-4.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-13-ai-news-4.html</guid>
       <pubDate>Tue, 13 Oct 2026 09:00:00 +0000</pubDate>
       <description>Metaが初のフロンティアモデル「Muse Wonder」を発表し、コーディング等の高度なタスクに対応します。またLedgerデバイスのスパイチップ問題や、AIを用いたCUDAのリバースエンジニアリングなど最新の技術動向を解説します。</description>
-    </item>
-    <item>
-      <title>Ledgerの警告とDecision 3.0の登場：ハードウェアセキュリティとマルチモーダルモデルの最前線 10-12</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-12-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-12-ai-news-4.html</guid>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 +0000</pubDate>
-      <description>LedgerがCryptoBilis製デバイスの不正インプラントを警告し、サプライチェーン攻撃の危険性を指摘します。また、Decision 3.0の登場やQLoRAを用いたExLlamaV3の低ビット幅トレーニング手法など最新技術を解説します。</description>
     </item>
   </channel>
 </rss>
