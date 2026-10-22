@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 22 Oct 2026 15:13:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 21:24:38 +0000</lastBuildDate>
     <item>
       <title>DeepSeekの巨額資金調達とSpotify、AnthropicによるAIエージェント戦略の動向 10-23</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news.html</guid>
       <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
       <description>DeepSeekが米国による制限直後に150億ドルの資金調達を実施したニュースや、SpotifyがAIエージェント向け戦略へ転換する動向を解説します。またAnthropicのClaude Duet発表やLing-3.1-flashの更新情報も網羅しています。</description>
+    </item>
+    <item>
+      <title>OpenAIが意思決定モデルを公開、高度なAI判断の競争が激化・中国のハッカーがConnectWiseを侵入し数千社をスパイ 10-23</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-2.html</guid>
+      <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIが独自の意思決定モデルを公開し、高度な推論分野での競争が加速します。また、中国系ハッカーによるConnectWiseへの侵入や、Microsoftの医療超知能構想、Quad9のフランス撤退など最新ニュースを解説します。</description>
     </item>
     <item>
       <title>Kitten-TTS 2の登場とSolanaの大規模アップデート、および計算アルゴリズムの新展開 10-22</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-13-ai-news-2.html</guid>
       <pubDate>Tue, 13 Oct 2026 09:00:00 +0000</pubDate>
       <description>AlibabaのQwenが複雑なタスクに対応するRLフレームワーク「QwenGyre」を発表しました。またMetaの新型モデルMuse Wonderや法務特化型LLMなど、最新のAI技術動向とサイバー攻撃の事例を解説します。</description>
-    </item>
-    <item>
-      <title>Metaの初フロンティアモデル「Muse Wonder」登場とLedgerのセキュリティ問題 10-13</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-13-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-13-ai-news-4.html</guid>
-      <pubDate>Tue, 13 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Metaが初のフロンティアモデル「Muse Wonder」を発表し、コーディング等の高度なタスクに対応します。またLedgerデバイスのスパイチップ問題や、AIを用いたCUDAのリバースエンジニアリングなど最新の技術動向を解説します。</description>
     </item>
   </channel>
 </rss>
