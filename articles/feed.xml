@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 22 Oct 2026 03:32:12 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 09:46:16 +0000</lastBuildDate>
+    <item>
+      <title>Kitten-TTS 2の登場とSolanaの大規模アップデート、および計算アルゴリズムの新展開 10-22</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-4.html</guid>
+      <pubDate>Thu, 22 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Kitten-TTS 2の公開やSolanaの最大規模アップデート「Alpenglow」など、最新の技術動向を解説します。1.58ビットの低精度で動作するTTSモデルや、整数乗算の新アルゴリズムについても紹介します。</description>
+    </item>
     <item>
       <title>SECで読む：IBM Granite Speech 5.0の進化とiPhoneで動作する35B MoEモデルの衝撃 10-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-12-ai-news-4.html</guid>
       <pubDate>Mon, 12 Oct 2026 09:00:00 +0000</pubDate>
       <description>LedgerがCryptoBilis製デバイスの不正インプラントを警告し、サプライチェーン攻撃の危険性を指摘します。また、Decision 3.0の登場やQLoRAを用いたExLlamaV3の低ビット幅トレーニング手法など最新技術を解説します。</description>
-    </item>
-    <item>
-      <title>LLMの能力に対する認識の乖離と、RTX 5090が$5,000に達するAIインフラの現状 10-12</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-12-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-12-ai-news-3.html</guid>
-      <pubDate>Mon, 12 Oct 2026 09:00:00 +0000</pubDate>
-      <description>LLMの能力に対する認識の乖離や、RTX 5090が$5,000に達するAIインフラの現状を解説します。10〜16GBのVRAMで動作するモデルのランキングや、16.9MBで動く音声認識技術Whistleも紹介します。</description>
     </item>
   </channel>
 </rss>

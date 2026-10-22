@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Kitten-TTS 2の登場とSolanaの大規模アップデート、および計算アルゴリズムの新展開 10-22](2026-10-22-ai-news-4.html)
 - [Kitten-TTS 2の登場とRecursive FlintによるコーディングAIの新機軸 10-22](2026-10-22-ai-news-3.html)
 - [PHPで読む：LiteLLMの脆弱性とMistral Large 4、そして小売業界におけるAIエージェントの動向 10-22](2026-10-22-ai-news-2.html)
 - [SECで読む：IBM Granite Speech 5.0の進化とiPhoneで動作する35B MoEモデルの衝撃 10-22](2026-10-22-ai-news.html)
