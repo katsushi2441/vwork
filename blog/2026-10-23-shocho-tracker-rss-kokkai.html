@@ -1,0 +1,100 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>8府省の新着RSSと国会会議録をつなぐ「省庁トラッカー」を作る——Shift_JISのRSS、発表と質疑の結び付け方、双方向のリンク | VWork バイブコーディングフレームワーク</title><meta name="description" content="デジタル庁・国土交通省・厚生労働省など8府省の新着情報（RSS）を毎日取り込み、発表ごとに同じ話題の国会の質疑・答弁を並べる「Kurage 省庁トラッカー」の作り方です。RSS 1.0・2.0の読み分け、Shift_JISの扱い、題名から国会の話題へ結び付ける規則、国会トラッカー側から省庁の発表へ戻るリンクまでまとめます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-23-shocho-tracker-rss-kokkai.html"><meta property="og:type" content="article"><meta property="og:title" content="8府省の新着RSSと国会会議録をつなぐ「省庁トラッカー」を作る——Shift_JISのRSS、発表と質疑の結び付け方、双方向のリンク"><meta property="og:description" content="デジタル庁・国土交通省・厚生労働省など8府省の新着情報（RSS）を毎日取り込み、発表ごとに同じ話題の国会の質疑・答弁を並べる「Kurage 省庁トラッカー」の作り方です。RSS 1.0・2.0の読み分け、Shift_JISの扱い、題名から国会の話題へ結び付ける規則、国会トラッカー側から省庁の発表へ戻るリンクまでまとめます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-23-shocho-tracker-rss-kokkai.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="8府省の新着RSSと国会会議録をつなぐ「省庁トラッカー」を作る——Shift_JISのRSS、発表と質疑の結び付け方、双方向のリンク"><meta name="twitter:description" content="デジタル庁・国土交通省・厚生労働省など8府省の新着情報（RSS）を毎日取り込み、発表ごとに同じ話題の国会の質疑・答弁を並べる「Kurage 省庁トラッカー」の作り方です。RSS 1.0・2.0の読み分け、Shift_JISの扱い、題名から国会の話題へ結び付ける規則、国会トラッカー側から省庁の発表へ戻るリンクまでまとめます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "8府省の新着RSSと国会会議録をつなぐ「省庁トラッカー」を作る——Shift_JISのRSS、発表と質疑の結び付け方、双方向のリンク", "description": "デジタル庁・国土交通省・厚生労働省など8府省の新着情報（RSS）を毎日取り込み、発表ごとに同じ話題の国会の質疑・答弁を並べる「Kurage 省庁トラッカー」の作り方です。RSS 1.0・2.0の読み分け、Shift_JISの扱い、題名から国会の話題へ結び付ける規則、国会トラッカー側から省庁の発表へ戻るリンクまでまとめます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-23-shocho-tracker-rss-kokkai.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-23", "dateModified": "2026-10-23", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>8府省の新着RSSと国会会議録をつなぐ「省庁トラッカー」を作る——Shift_JISのRSS、発表と質疑の結び付け方、双方向のリンク</h1><p class="meta">2026-10-23</p><p>名古屋でAIシステムの開発をしている小嶋です。各府省の新着情報と、国会の議論をつなぐ「Kurage 省庁トラッカー」を作りました。この記事は、その作り方の記録です。</p>
+<p>Kurage 省庁トラッカー（省庁の発表 × 国会の議論）
+https://exbridge.jp/shocho/#ref=vibeblog-shocho</p>
+<h2>なぜ作ったか</h2>
+<p>当社はこれまで、国会の質疑と答弁をテーマごとに集める「国会トラッカー」と、大学の研究を集める「論文トラッカー」を作ってきました。足りなかったのが、省庁の動きです。</p>
+<p>省庁は、ダッシュボードの公開、ツールの公開、審議会の開催といった発表を毎日のように出しています。国会の会議録より早く、しかも一次情報です。たとえば2026年10月21日、デジタル庁は表の機械可読性を点検するツール「Harunobu」を紹介しました。こうした発表は、国会トラッカーだけを見ていても目に入りません。</p>
+<p>そこで、省庁の発表を毎日集め、発表ごとに「同じ話題を国会でだれが質問し、政府が何と答えたか」を並べることにしました。逆に、国会トラッカーの側からも省庁の新しい発表へ戻れるようにしています。</p>
+<h2>1. 各府省のRSSを確かめる</h2>
+<p>最初に、主な府省が新着情報をRSSで出しているかを実際に取りに行って確かめました（2026年10月23日）。</p>
+<table>
+<thead>
+<tr>
+<th>府省</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>デジタル庁・厚生労働省・農林水産省・文部科学省・内閣府・金融庁</td>
+<td>RSSあり（10〜105件）</td>
+</tr>
+<tr>
+<td>国土交通省・総務省</td>
+<td>RSSあり。ただし文字コードが Shift_JIS</td>
+</tr>
+<tr>
+<td>経済産業省</td>
+<td>403（機械からのアクセスを受け付けない）</td>
+</tr>
+<tr>
+<td>環境省・こども家庭庁</td>
+<td>RSSが見つからない</td>
+</tr>
+</tbody>
+</table>
+<p>8府省から始めて、初回は278件の発表が集まりました。経産省・環境省・こども家庭庁は、新着ページを直接読む形で、これから1つずつ足します。</p>
+<p>持つのは、題名・日付・URL・分類だけです。本文は持たず、各ページに出典と「内容は公式ページで確認を」と書いています。</p>
+<h2>2. RSS 1.0 と 2.0 を、1つの読み方で読む</h2>
+<p>府省によって、RSS 1.0（RDF）と RSS 2.0 が混ざっています。要素名だけを見て、<code>item</code> か <code>entry</code> の中の <code>title</code>・<code>link</code>・日付・分類を拾う形にしました。日付は <code>dc:date</code>（RSS 1.0）と <code>pubDate</code>（RSS 2.0）の両方を見ます。<code>link</code> が無い RSS 1.0 の項目は、<code>rdf:about</code> をURLとして使います。</p>
+<p>つまずいたのは文字コードです。国交省と総務省のRSSは Shift_JIS で、Python の標準の XML パーサー（expat）は Shift_JIS を読めません。先にXML宣言から文字コードを読み、Python で文字列に直してから（Shift_JIS は cp932 として）、宣言を外してパーサーに渡しました。</p>
+<h2>3. 発表を、国会の話題に結び付ける</h2>
+<p>いちばん手間がかかったのがここです。発表の題名は短く、国会トラッカーのテーマの語（「内密出産」「最低賃金」など）はかなり狭いので、そのまま当てると278件中10件しか結び付きませんでした。</p>
+<p>そこで2段にしました。</p>
+<ol>
+<li><strong>題名に国会トラッカーの語があれば、そのテーマに結び付ける。</strong> 例：「中央最低賃金審議会」→ 最低賃金。</li>
+<li><strong>題名が26の分野のどれかに当たれば、その分野の国会トラッカーの中から近いものを選ぶ。</strong> 分野の語には、省庁の発表でよく使う言葉（下水・汚泥・オープンデータ・機械可読・肥料など）を足しました。</li>
+</ol>
+<p>2段目で「近いもの」をどう選ぶかで2回失敗しました。</p>
+<ul>
+<li>最初は、分野の中で直近に発言が多いトラッカーを選びました。すると Harunobu（機械可読性のツール）に、デジタルの分野で最近動いていた「ステーブルコイン」が付きました。</li>
+<li>次に、題名とトラッカーの名前・語に共通する2文字の並びが多い順にしました。すると今度は「デジタル」という語だけで、デジタル教科書などのトラッカーがまとめて付きました。</li>
+</ul>
+<p>最後は、分野を見分けるのに使った語（「デジタル」など）そのものは数えず、それ以外に2つ以上共通する並びがあるものだけを付ける形にしました。結び付く発表は41件に減りましたが、中身の合ったものが残りました。</p>
+<ul>
+<li>中央最低賃金審議会 → 最低賃金</li>
+<li>薬事審議会 医療機器・体外診断薬部会 → 医療機器</li>
+<li>H3ロケット10号機の打上げ成功（文部科学大臣談話）→ 宇宙政策</li>
+<li>「2040年に向けた地域医療構想」について → 地域医療連携推進法人（国会で215件）</li>
+</ul>
+<p>数を増やすより、外れを出さないほうを選びました。結び付かない発表も、分野ごとのページには載ります。</p>
+<h2>4. 双方向のリンク</h2>
+<p>ページは4種類です。トップ、府省ごと、分野ごと、発表ごと。発表ごとのページには、公式ページへのボタンと、同じ話題の国会の直近の質疑・答弁3件、同じ分野のほかの府省の発表を並べました。</p>
+<p>逆向きのリンクは、取り込みのときに「国会トラッカーのテーマ → 結び付いた新しい発表5件」の対応表を書き出し、国会トラッカーの各テーマのページに「省庁の新しい発表」の欄として出しています。最低賃金のトラッカーを開くと、中央最低賃金審議会の発表が出ます。</p>
+<h2>5. 毎日の更新</h2>
+<p>取り込み → ページ作り → 変わったページだけを送る → 国会トラッカー側の対応表を送る、の4工程を、社内の定期処理に1日2回まで流しています。どこかで落ちたら、前の日のページをそのまま残します。</p>
+<p>数日前、当社の補助金ナビの毎日の取り込みが、表に列を足したことに気づかず5週間失敗し続けていました。その反省から、今回は最初に定期処理の中から1回流し、4工程とも成功することを確かめてから公開しました。</p>
+<h2>6. これから</h2>
+<ul>
+<li>経産省・環境省・こども家庭庁を、新着ページを読む形で足す。</li>
+<li>国交省はRSSが14件と少ないので、報道発表のページも読む。</li>
+<li>下水汚泥やオープンデータのように、国会トラッカーにテーマが無い話題は、トラッカーを足すと結び付くようになる。</li>
+</ul>
+<p>国会・研究・省庁の動きを1か所でたどれるようにして、議員の方や事業者の方が、いま何が動いているかを早くつかめるようにしていきます。</p>
+<p>Kurage 国会トラッカー（国会の質疑と答弁）
+https://xb4g.com/giin/tracker/#ref=vibeblog-shocho</p>
+<p>Kurage 論文トラッカー（大学の研究 × 国会の議論）
+https://exbridge.jp/academic/#ref=vibeblog-shocho</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
