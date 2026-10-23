@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 23 Oct 2026 09:51:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 15:14:28 +0000</lastBuildDate>
+    <item>
+      <title>AWS Trainiumの最適化とローカルLLMへの移行、そしてスウェーデン政府によるChatGPT禁止の動向 10-24</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-24-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-24-ai-news.html</guid>
+      <pubDate>Sat, 24 Oct 2026 09:00:00 +0000</pubDate>
+      <description>AWS TrainiumでのPyTorchモデル最適化ガイドや、AIが特定タスク向けのローカルLLMへ移行する動向を解説します。また、スウェーデン政府によるChatGPT禁止措置やBitcoin Coreのセキュリティルール変更についても紹介します。</description>
+    </item>
     <item>
       <title>OpenAIの意思決定モデル競争とAIエージェントの自律的な進化 10-23</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-4.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news-4.html</guid>
       <pubDate>Wed, 14 Oct 2026 09:00:00 +0000</pubDate>
       <description>GoogleのGemini 4 Argonがコーディング能力で進化し、Anthropicはソース管理を再設計します。また、OpenAIに対するAppleの営業秘密訴訟での採用記録開示命令や、LiquidAIの新モデルLFM2.5-24B-A2Bの登場についても解説します。</description>
-    </item>
-    <item>
-      <title>Qwenの「QwenGyre」リリースとスタンダードチャータードによるRLUSDカストディ展開 10-13</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-13-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-13-ai-news.html</guid>
-      <pubDate>Tue, 13 Oct 2026 09:00:00 +0000</pubDate>
-      <description>AlibabaグループのQwenチームが、複雑なタスクに対応するAIエージェント学習用フレームワーク「QwenGyre」をリリースしました。また、スタンダードチャータード銀行がドバイでRLUSDのカストディサービスを開始します。</description>
     </item>
   </channel>
 </rss>

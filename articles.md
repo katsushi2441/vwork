@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [AWS Trainiumの最適化とローカルLLMへの移行、そしてスウェーデン政府によるChatGPT禁止の動向 10-24](2026-10-24-ai-news.html)
 - [OpenAIの意思決定モデル競争とAIエージェントの自律的な進化 10-23](2026-10-23-ai-news-4.html)
 - [OpenAIの意思決定モデルとOpenShellによるAIエージェントの安全な運用 10-23](2026-10-23-ai-news-3.html)
 - [OpenAIが意思決定モデルを公開、高度なAI判断の競争が激化・中国のハッカーがConnectWiseを侵入し数千社をスパイ 10-23](2026-10-23-ai-news-2.html)
