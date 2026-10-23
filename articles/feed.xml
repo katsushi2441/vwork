@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 22 Oct 2026 21:24:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 03:38:31 +0000</lastBuildDate>
     <item>
       <title>DeepSeekの巨額資金調達とSpotify、AnthropicによるAIエージェント戦略の動向 10-23</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-2.html</guid>
       <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが独自の意思決定モデルを公開し、高度な推論分野での競争が加速します。また、中国系ハッカーによるConnectWiseへの侵入や、Microsoftの医療超知能構想、Quad9のフランス撤退など最新ニュースを解説します。</description>
+    </item>
+    <item>
+      <title>OpenAIの意思決定モデルとOpenShellによるAIエージェントの安全な運用 10-23</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-3.html</guid>
+      <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
+      <description>OpenShellによる自律型AIエージェントの安全な実行環境や、OpenAIが公開した意思決定モデルの動向を解説します。さらにOlmoEarth v1.3の登場や、放置されたAIエージェントが自発的に行動する事例など最新技術ニュースを網羅しています。</description>
     </item>
     <item>
       <title>Kitten-TTS 2の登場とSolanaの大規模アップデート、および計算アルゴリズムの新展開 10-22</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-13-ai-news-3.html</guid>
       <pubDate>Tue, 13 Oct 2026 09:00:00 +0000</pubDate>
       <description>Metaが初のフロンティアモデル「Muse Wonder」を発表し、コーディング等の複雑なタスクに対応します。またIntelの次世代GPU「Dシリーズ」の詳細や、Qwenの強化学習フレームワーク「QwenGyre」の公開など最新技術を解説します。</description>
-    </item>
-    <item>
-      <title>QwenのRLフレームワークとMetaの新型モデルMuse Wonderが示すAI進化の最前線 10-13</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-13-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-13-ai-news-2.html</guid>
-      <pubDate>Tue, 13 Oct 2026 09:00:00 +0000</pubDate>
-      <description>AlibabaのQwenが複雑なタスクに対応するRLフレームワーク「QwenGyre」を発表しました。またMetaの新型モデルMuse Wonderや法務特化型LLMなど、最新のAI技術動向とサイバー攻撃の事例を解説します。</description>
     </item>
   </channel>
 </rss>
