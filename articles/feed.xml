@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 23 Oct 2026 21:27:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 03:39:56 +0000</lastBuildDate>
     <item>
       <title>NVIDIAのNemotron 3.5やKimi K3.1 Proに見る最新AIモデルの進化とセキュリティ動向 10-24</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-24-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-24-ai-news-2.html</guid>
       <pubDate>Sat, 24 Oct 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAのNemotron-3.5やKimi K3.1 Proなど最新AIモデルの動向とセキュリティ情報を解説します。iPhoneの脆弱性実証やBitcoin Coreのルール変更、研究支援ツールLitPivotの話題も網羅しています。</description>
+    </item>
+    <item>
+      <title>OpenAIのインターネット学習停止とQwen4の登場：AI開発における新潮流 10-24</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-24-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-24-ai-news-3.html</guid>
+      <pubDate>Sat, 24 Oct 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIがセキュリティリスクを理由にライブインターネットでの学習停止を発表しました。またQwen4-27BやDeepSeek-V4.1-Flashなどの最新モデル動向、Bitcoin Coreの規則変更などAI開発の新潮流を解説します。</description>
     </item>
     <item>
       <title>AWS Trainiumの最適化とローカルLLMへの移行、そしてスウェーデン政府によるChatGPT禁止の動向 10-24</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news-3.html</guid>
       <pubDate>Wed, 14 Oct 2026 09:00:00 +0000</pubDate>
       <description>Science Corporationが視覚回復チップをスターガルト病患者へ埋め込みました。またBNYとCitadel Securitiesによる米国債のトークン化試験や、Anthropicのソース管理システム再設計など最新技術動向を解説します。</description>
-    </item>
-    <item>
-      <title>Gemini 4 Argonの進化とOpenAI対Appleの法的紛争、そしてAnthropicの基盤整備 10-14</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-14-ai-news-2.html</guid>
-      <pubDate>Wed, 14 Oct 2026 09:00:00 +0000</pubDate>
-      <description>GoogleのGemini 4 Argonが示す高度な推論能力や実用性を解説します。また、Anthropicのソース管理システム再設計やOpenAI対Appleの営業秘密訴訟の進展、Appleの新デバイスHomeViewの発表など最新ニュースを網羅します。</description>
     </item>
   </channel>
 </rss>
