@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Blockの超リアルな音声AIと、技術部門以外におけるAI経済への影響 10-25](2026-10-25-ai-news-2.html)
 - [DeepSeekの量子化技術とMetaによるバイト単位の学習など、AIモデルの効率化と進化の最前線 10-25](2026-10-25-ai-news.html)
 - [OpenAIのデータ収集方針転換とQwen4、Sam Altmanが語るモデル公開への懸念 10-24](2026-10-24-ai-news-4.html)
 - [OpenAIのインターネット学習停止とQwen4の登場：AI開発における新潮流 10-24](2026-10-24-ai-news-3.html)
