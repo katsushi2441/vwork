@@ -11,7 +11,7 @@ description: "上場企業の適時開示（TDnet）と有価証券報告書（E
 seo_title: "EDINET APIとTDnetで適時開示を集めるIRトラッカーの仕様"
 head_keyword: "edinet api"
 og_stat: "216件"
-og_stat_label: "TDnetに1日で出た適時開示（2026年10月23日）"
+og_stat_label: "TDnetに1日で出た適時開示（10月23日）"
 og_stat_note: "東証 適時開示情報閲覧サービスの日別一覧を実測（株式会社エクスブリッジ）"
 ---
 
