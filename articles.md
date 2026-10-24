@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIのデータ収集方針転換とQwen4、Sam Altmanが語るモデル公開への懸念 10-24](2026-10-24-ai-news-4.html)
 - [OpenAIのインターネット学習停止とQwen4の登場：AI開発における新潮流 10-24](2026-10-24-ai-news-3.html)
 - [NVIDIAのNemotron 3.5やKimi K3.1 Proに見る最新AIモデルの進化とセキュリティ動向 10-24](2026-10-24-ai-news-2.html)
 - [AWS Trainiumの最適化とローカルLLMへの移行、そしてスウェーデン政府によるChatGPT禁止の動向 10-24](2026-10-24-ai-news.html)
