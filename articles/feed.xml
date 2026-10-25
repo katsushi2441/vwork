@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 25 Oct 2026 10:05:02 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 15:16:31 +0000</lastBuildDate>
+    <item>
+      <title>Nanbeige4.3の登場とローカルLLMにおける量子化モデルの保存重要性 10-26</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news.html</guid>
+      <pubDate>Mon, 26 Oct 2026 09:00:00 +0000</pubDate>
+      <description>33Bパラメータの新モデルNanbeige4.3が登場し、将来的な小型蒸留モデルの基盤となることが期待されています。また、ローカルLLMコミュニティでは量子化モデルのバックアップと共有による資産保護の重要性が議論されています。</description>
+    </item>
     <item>
       <title>DeepSeekやBlockの最新技術から見る、次世代AIとソフトウェア開発の最前線 10-25</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-25-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news.html</guid>
       <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAのNemotron Bolt 3.5やLiquidAIのLFM2.5-24B-A2Bなど、最新AIモデルの動向を解説します。中国と米国のモデル性能差やAnthropicによるオープンソースのリスクに関する議論も網羅しています。</description>
-    </item>
-    <item>
-      <title>Ricursive IntelligenceとNVIDIAの動向から見るAIインフラとモデルの最前線 10-15</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-3.html</guid>
-      <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Ricursive IntelligenceによるAIを用いたチップ設計やNVIDIAのNemotron Bolt 3.5 74B A9Bの最新動向を解説します。計算資源不足への解決策やゲームデコンパイル、詐欺調査へのAI活用など、最先端の技術情報を網羅しています。</description>
     </item>
   </channel>
 </rss>
