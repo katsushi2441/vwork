@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 24 Oct 2026 21:44:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 10:05:02 +0000</lastBuildDate>
+    <item>
+      <title>DeepSeekやBlockの最新技術から見る、次世代AIとソフトウェア開発の最前線 10-25</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-25-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-25-ai-news-3.html</guid>
+      <pubDate>Sun, 25 Oct 2026 09:00:00 +0000</pubDate>
+      <description>DeepSeekやBlock社の最新技術を紹介します。4Bサイズの3Dシーン生成モデルや、量子化によるDeepSeek-V4.1-Flashの高性能化、NVMe SSDオフロードを用いた125Bモデルの動作手法など、次世代AIと開発の最前線を解説します。</description>
+    </item>
     <item>
       <title>DeepSeekの量子化技術とMetaによるバイト単位の学習など、AIモデルの効率化と進化の最前線 10-25</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-25-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-3.html</guid>
       <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
       <description>Ricursive IntelligenceによるAIを用いたチップ設計やNVIDIAのNemotron Bolt 3.5 74B A9Bの最新動向を解説します。計算資源不足への解決策やゲームデコンパイル、詐欺調査へのAI活用など、最先端の技術情報を網羅しています。</description>
-    </item>
-    <item>
-      <title>MusicとAgentsで読む：QwenのPS5動作からNVIDIAの新モデルまで、加速するAI技術と社会への影響 10-15</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news-2.html</guid>
-      <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
-      <description>PS5でQwen 3.8 27Bモデルの動作成功やNVIDIAのNemotron Bolt 3.5 74B A9Bリリースなど、最新AI技術の動向を解説します。気象シミュレーションや詐欺対策への応用、YouTube MusicのAIラベル導入も紹介します。</description>
     </item>
   </channel>
 </rss>
