@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 25 Oct 2026 15:16:31 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 21:26:41 +0000</lastBuildDate>
+    <item>
+      <title>Apolloエコノミストが警鐘：AI投資に対する「実質的な経済的リターン」の欠如 10-26</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news-2.html</guid>
+      <pubDate>Mon, 26 Oct 2026 09:00:00 +0000</pubDate>
+      <description>ApolloのエコノミストはAI投資が財務的成果を生んでいないと警鐘を鳴らしています。またNanbeige4.3-33Bの公開やRTX 3080でのプロンプト処理速度70%向上、クオンツモデルのバックアップ重要性についても解説します。</description>
+    </item>
     <item>
       <title>Nanbeige4.3の登場とローカルLLMにおける量子化モデルの保存重要性 10-26</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-4.html</guid>
       <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
       <description>MetaがAppleシリコン向けオープンウェイトモデル「Muse Spark Open」を発表しました。また、Anthropicの売上高が前年比約50%増となる急成長や、スタンフォード大学によるハイブリッド推論エージェントの研究成果など、AI業界の最新動向を解説します。</description>
-    </item>
-    <item>
-      <title>NVIDIAのNemotron BoltやAnthropicの議論から見るAIモデルの最新動向 10-15</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-15-ai-news.html</guid>
-      <pubDate>Thu, 15 Oct 2026 09:00:00 +0000</pubDate>
-      <description>NVIDIAのNemotron Bolt 3.5やLiquidAIのLFM2.5-24B-A2Bなど、最新AIモデルの動向を解説します。中国と米国のモデル性能差やAnthropicによるオープンソースのリスクに関する議論も網羅しています。</description>
     </item>
   </channel>
 </rss>
