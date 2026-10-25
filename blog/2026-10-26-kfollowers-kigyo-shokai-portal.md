@@ -10,12 +10,9 @@ tags: [企業紹介, 被リンク, SEO, AEO, GEO, AI検索, X, 企業公式ア�
 description: "Xでフォローしてくださった企業を、公式サイトと公式アカウントで公開されている情報から1社1ページで紹介する「Kurage フォロワー企業ポータル」を始めました。作った理由と、企業公式サイトにとってのメリット（被リンク、社名検索の入口、AI検索に引用されやすい形、公式アカウントの一覧）、掲載の申し込み方をまとめます。"
 seo_title: "企業紹介ページを作ります｜被リンクとAI検索に効く理由"
 head_keyword: "企業紹介 被リンク"
-og_stat: "25"
-og_stat_label: "1社目のAZRのページにまとめた公式の入口（公式サイトとSNSのアカウント）"
-og_stat_note: "Kurage フォロワー企業ポータル（株式会社エクスブリッジ・2026年10月）"
 ---
 
-名古屋でAIシステムの開発をしている小嶋です。Xでフォローしてくださった企業を、1社1ページで紹介するサイト「Kurage フォロワー企業ポータル」を始めました。1社目は、愛知県豊明市のAZR（アズールモータリング）さんです。
+名古屋でAIシステムの開発をしている小嶋です。Xでフォローしてくださった企業を、1社1ページで紹介するサイト「Kurage フォロワー企業ポータル」を始めました。
 
 この記事では、作った理由と、紹介される企業の公式サイトにとってのメリットをまとめます。最後に、掲載を希望する企業公式アカウントの方への案内があります。
 
@@ -28,22 +25,17 @@ Kurage フォロワー企業ポータルとは、Xでフォローしてくださ
 - **会社の基本**：運営会社、創業、拠点と営業時間、理念、沿革
 - **よくある質問**：「この会社の運営会社は？」「ショールームはどこ？」のように、検索やAIに聞かれそうなことへの答え
 
-1社目のAZRさんのページには、公式の入口を25、拠点を5か所、2006年からの沿革をまとめました。
-
 Kurage フォロワー企業ポータル
 https://exbridge.jp/kfollowers/#ref=vibeblog-kfollowers
 
-AZR（アズールモータリング）とは｜公式SNS・店舗・沿革
-https://exbridge.jp/kfollowers/azr/#ref=vibeblog-kfollowers
-
 ## 紹介ページに載せている情報
 
-1社目のAZRさんのページを例に、上から順に何が載っているかを紹介します。どれも、公式サイトと公式アカウントで確かめた情報です。
+紹介ページには、上から順に次の情報を載せています。どれも、公式サイトと公式アカウントで確かめた情報です。
 
 - **Xの看板とプロフィール**：ヘッダー画像、アイコン、アカウント名とフォロワー数、プロフィール文。「非公式の紹介ページ（調べた日付）」の表示もここにあります
-- **「◯◯とは」**：会社を1〜2文で説明する定義の文と、取り扱い・カスタム・拠点・理念の4枚のカード。AZRさんなら「輸入車・スーパーカー・アメ車の販売と買取、オリジナルのカスタムカーづくり」
+- **「◯◯とは」**：会社を1〜2文で説明する定義の文と、取り扱い・強み・拠点・理念など事業の要点をまとめたカード
 - **会社の基本情報**：運営会社、屋号、代表者、創業、資本金、本社の所在地
-- **ショールームと拠点**：店舗ごとの住所・電話・営業時間・定休日と、公式サイトの店舗案内と地図へのリンク。AZRさんは愛知と東京の5か所
+- **ショールームと拠点**：店舗ごとの住所・電話・営業時間・定休日と、公式サイトの店舗案内と地図へのリンク
 - **公式サイトと公式アカウント**：公式サイトの主なページ（在庫・買取・採用・通販など）と、X・Instagram・YouTube・TikTok・Facebook・LINE・ブログを種類ごとに。運営しているブランドや、会社が載っている外部のサイト（中古車の情報サイトなど）もここに並べます
 - **理念**：公式サイトに書かれている理念を、出典つきで
 - **沿革**：創業から、店舗の開店、ブランドのデビュー、展示会への出展まで
@@ -82,11 +74,11 @@ https://exbridge.jp/kfollowers/azr/#ref=vibeblog-kfollowers
 
 ChatGPT や Perplexity などのAIは、質問に答えるときに、答えの形で書かれたページを引用します。紹介ページは、最初に「◯◯とは、〜を指します」という定義の文を置き、見出しごとに結論を先に書き、よくある質問と答えを並べています。会社の情報は、検索エンジンとAIが読める構造化データ（AutoDealer・FAQPage など）でも載せ、AI向けの要約（llms.txt）も置いています。
 
-AZRさんのページを当社の診断システムにかけると、SEO 100点、AEO 73点、GEO 100点でした。21社の調査では、3つとも70点以上の会社は0社だったので、その線を越えています。
+公開した紹介ページを当社の診断システムにかけると、SEO 100点、AEO 73点、GEO 100点でした。21社の調査では、3つとも70点以上の会社は0社だったので、その線を越えています。
 
 ### 4. 散らばった公式アカウントが、同じ会社のものだと伝わる
 
-会社が大きくなると、店舗ごと・ブランドごとにアカウントが増えます。AZRさんは、X 2つ、Instagram 5つ、TikTok 2つ、Facebook 2つ、ブログ2つなど、公式の入口が25ありました。紹介ページでは、それらを「同じ会社の公式アカウント」として構造化データ（sameAs）にまとめています。検索エンジンやAIが、ばらばらのアカウントを1つの会社として結びつける手がかりになります。
+会社が大きくなると、店舗ごと・ブランドごとにアカウントが増え、公式サイトとSNSを合わせて20を超える会社もあります。紹介ページでは、それらを「同じ会社の公式アカウント」として構造化データ（sameAs）にまとめています。検索エンジンやAIが、ばらばらのアカウントを1つの会社として結びつける手がかりになります。
 
 ### 5. Xの看板とプロフィールが、そのまま会社の顔になる
 
@@ -100,22 +92,30 @@ AZRさんのページを当社の診断システムにかけると、SEO 100点�
 
 ## 作っている人
 
-**BittensorMan（小嶋 篤）／株式会社エクスブリッジ**
+<div style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;background:#fff;border:1px solid #dbe6f3;border-radius:18px;padding:20px;margin:12px 0 18px;box-shadow:0 1px 2px rgba(18,32,47,.05)">
+<img src="https://kurage.exbridge.jp/images/bittensorman.webp" width="112" height="112" alt="BittensorMan（小嶋 篤）の X のアイコン" style="width:112px;height:112px;border-radius:50%;object-fit:cover;flex:none;border:3px solid #e8f0fb">
+<div style="flex:1;min-width:220px">
+<div style="font-size:12px;font-weight:800;letter-spacing:.08em;color:#1668d6">DEVELOPER</div>
+<div style="font-size:22px;font-weight:900;line-height:1.4;margin:2px 0">BittensorMan（小嶋 篤）</div>
+<div style="font-size:14px;color:#5d6b7a"><a href="https://x.com/xb_bittensor" style="color:#1668d6;font-weight:700">@xb_bittensor</a>・株式会社エクスブリッジ・名古屋</div>
+<div style="font-size:19px;font-weight:800;margin:12px 0 6px">社会の課題を、<span style="color:#1668d6">動くもの</span>にして解く。</div>
+<div style="font-size:14.5px;line-height:1.8">1995年から業務システムの開発に携わり、名古屋と大阪で生命保険・ガス・食品・通信などの業務システムを作ってきました。2004年に中国オフショア開発の会社を立ち上げ、2025年からAI事業に転換。企画からコード、運用、販売まで一人で手がけ、うまくいった数字も外した数字も公開しています。</div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+<a href="https://x.com/intent/follow?screen_name=xb_bittensor" style="background:#0f1419;color:#fff;border-radius:999px;padding:8px 18px;font-weight:800;font-size:14px;text-decoration:none">Xで @xb_bittensor をフォロー</a>
+<a href="https://kurage.exbridge.jp/#ref=vibeblog-kfollowers" style="background:#fff;color:#1668d6;border:2px solid #1668d6;border-radius:999px;padding:6px 16px;font-weight:800;font-size:14px;text-decoration:none">BittensorMan のサイト</a>
+</div></div></div>
 
-「社会の課題を、動くものにして解く。」をテーマに、名古屋でAIプロダクトを開発しています。1995年から業務システムの開発に携わり、名古屋と大阪で生命保険・ガス・食品・通信などの業務システムを作ってきました。2004年に中国オフショア開発の会社を立ち上げ、2025年からAI事業に転換して、企画からコード、運用、販売まで一人で手がけています。うまくいった数字も、外した数字も公開しています。
-
-X（技術の話・作ったものの話はここが一番早いです）
-https://x.com/xb_bittensor
-
-BittensorMan のサイト
-https://kurage.exbridge.jp/#ref=vibeblog-kfollowers
+技術の話や作ったものの話は、Xがいちばん早いです。
 
 ## 掲載を希望する企業の方へ
 
 企業公式アカウントにフォローしていただいたら、随時、紹介ページを作っています。掲載を希望する企業公式サイトのXアカウントの方は、**@xb_bittensor をフォローして、XでDMかコメントをください。** 公式サイトと公式アカウントで公開されている情報から、1社1ページで作ります。
 
-@xb_bittensor
-https://x.com/xb_bittensor
+<div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#f3f8ff;border:2px solid #1668d6;border-radius:16px;padding:16px 18px;margin:12px 0">
+<img src="https://kurage.exbridge.jp/images/bittensorman-96.webp" width="64" height="64" alt="@xb_bittensor のアイコン" style="width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none">
+<div style="flex:1;min-width:200px"><div style="font-weight:900;font-size:17px">掲載の申し込みは @xb_bittensor へ</div><div style="font-size:14px;color:#5d6b7a">フォローしてから、XでDMかコメントをください</div></div>
+<a href="https://x.com/intent/follow?screen_name=xb_bittensor" style="background:#0f1419;color:#fff;border-radius:999px;padding:9px 20px;font-weight:800;font-size:14px;text-decoration:none">フォローする</a>
+</div>
 
 紹介ページの情報発信を、そのまま問い合わせや採用につなげたい会社には、AI-SNS顧問でお手伝いしています。
 
