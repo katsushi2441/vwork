@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Elon MuskのSpaceXが400億ドルの債務調達とNVIDIAのソフトウェア戦略で動くAI市場の最前線 10-26](2026-10-26-ai-news-3.html)
 - [Apolloエコノミストが警鐘：AI投資に対する「実質的な経済的リターン」の欠如 10-26](2026-10-26-ai-news-2.html)
 - [Nanbeige4.3の登場とローカルLLMにおける量子化モデルの保存重要性 10-26](2026-10-26-ai-news.html)
 - [DeepSeekやBlockの最新技術から見る、次世代AIとソフトウェア開発の最前線 10-25](2026-10-25-ai-news-3.html)

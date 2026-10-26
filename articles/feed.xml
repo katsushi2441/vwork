@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 25 Oct 2026 21:26:41 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 03:38:01 +0000</lastBuildDate>
     <item>
       <title>Apolloエコノミストが警鐘：AI投資に対する「実質的な経済的リターン」の欠如 10-26</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news-2.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news.html</guid>
       <pubDate>Mon, 26 Oct 2026 09:00:00 +0000</pubDate>
       <description>33Bパラメータの新モデルNanbeige4.3が登場し、将来的な小型蒸留モデルの基盤となることが期待されています。また、ローカルLLMコミュニティでは量子化モデルのバックアップと共有による資産保護の重要性が議論されています。</description>
+    </item>
+    <item>
+      <title>Elon MuskのSpaceXが400億ドルの債務調達とNVIDIAのソフトウェア戦略で動くAI市場の最前線 10-26</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news-3.html</guid>
+      <pubDate>Mon, 26 Oct 2026 09:00:00 +0000</pubDate>
+      <description>SpaceXがAIチップ獲得のため400億ドルの債務調達を行う計画や、NVIDIAがGPU1基あたり年間2,000ドルのソフトウェア収益を目指す戦略を解説します。CrowdGPTの動向やllama.cppの脆弱性情報も網羅しています。</description>
     </item>
     <item>
       <title>DeepSeekやBlockの最新技術から見る、次世代AIとソフトウェア開発の最前線 10-25</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-3.html</guid>
       <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
       <description>MetaがMacで動作するオープンウェイトモデルを発表し、AnthropicはMETRへ内部アクセス権を付与しました。HuggingFaceでの2.8兆トークン規模の学習やNVIDIAの新モデル公開など、最新のAI動向を解説します。</description>
-    </item>
-    <item>
-      <title>MetaのMac対応モデル投入とAnthropicの急成長など、AI業界の最新動向 10-16</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-4.html</guid>
-      <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
-      <description>MetaがAppleシリコン向けオープンウェイトモデル「Muse Spark Open」を発表しました。また、Anthropicの売上高が前年比約50%増となる急成長や、スタンフォード大学によるハイブリッド推論エージェントの研究成果など、AI業界の最新動向を解説します。</description>
     </item>
   </channel>
 </rss>
