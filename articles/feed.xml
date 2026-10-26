@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 26 Oct 2026 16:35:22 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 22:47:10 +0000</lastBuildDate>
+    <item>
+      <title>AnthropicのIPO準備とSpaceXによる400億ドルのGPU資金調達 10-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news-2.html</guid>
+      <pubDate>Tue, 27 Oct 2026 09:00:00 +0000</pubDate>
+      <description>SpaceXがApollo社と400億ドルのGPU資金調達で合意したニュースや、NVIDIA Blackwellの技術的仕様、OCCによる地域銀行へのステーブルコイン決済参入要請など、最新のAI・金融動向を網羅的に解説します。</description>
+    </item>
     <item>
       <title>AnthropicのIPO申請とQwen4のアーキテクチャ進化から見るAI業界の動向 10-27</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news.html</guid>
       <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAがローカル展開向けのNemotron-3.5-Super-VLを発表したほか、Anthropicの売上高が前年比約50%増の168億ドルに達する急成長を報告しました。最新のAIインフラ動向を解説します。</description>
-    </item>
-    <item>
-      <title>MetaのMuse Spark Open登場とAmazonが描く「アプリ不要」なAIデバイスの未来 10-16</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-2.html</guid>
-      <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
-      <description>MetaがAppleシリコン対応のオープンウェイトモデル「Muse Spark Open」を発表しました。また、Amazonのパノス・パナイ氏によるアプリ不要なAIデバイスの展望や、NVIDIAの最新モデル公開など、最新のAI動向を解説します。</description>
     </item>
   </channel>
 </rss>
