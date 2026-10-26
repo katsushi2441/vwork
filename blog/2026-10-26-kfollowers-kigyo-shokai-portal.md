@@ -114,6 +114,8 @@ ChatGPT や Perplexity などのAIは、質問に答えるときに、答えの�
 
 企業公式アカウントにフォローしていただいたら、随時、紹介ページを作っています。掲載を希望する企業公式サイトのXアカウントの方は、**@xb_bittensor をフォローして、XでDMかコメントをください。** 公式サイトと公式アカウントで公開されている情報から、1社1ページで作ります。
 
+ありがたいことにフォローしてくださる企業が多く、一度にすべての会社のページを作ることはできません。当社が名古屋の会社なので、名古屋・愛知など近い地域の企業から、順番に作っています。
+
 <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#f3f8ff;border:2px solid #1668d6;border-radius:16px;padding:16px 18px;margin:12px 0">
 <img src="https://kurage.exbridge.jp/images/bittensorman-96.webp" width="64" height="64" alt="@xb_bittensor のアイコン" style="width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none">
 <div style="flex:1;min-width:200px"><div style="font-weight:900;font-size:17px">掲載の申し込みは @xb_bittensor へ</div><div style="font-size:14px;color:#5d6b7a">フォローしてから、XでDMかコメントをください</div></div>
@@ -133,7 +135,7 @@ Xでフォローしてくださった企業を、公式サイトと公式アカ�
 
 ### 掲載するにはどうすればよいですか
 
-企業公式サイトのXアカウントで @xb_bittensor をフォローし、XでDMかコメントをください。公開されている情報から紹介ページを作ります。
+企業公式サイトのXアカウントで @xb_bittensor をフォローし、XでDMかコメントをください。公開されている情報から紹介ページを作ります。フォローしてくださる企業が多いため、名古屋・愛知など近い地域の企業から順番に作っています。
 
 ### 紹介ページで、自社のサイトのSEOは強くなりますか
 
