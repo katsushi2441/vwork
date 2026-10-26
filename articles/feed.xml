@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 26 Oct 2026 03:38:01 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 16:35:22 +0000</lastBuildDate>
+    <item>
+      <title>AnthropicのIPO申請とQwen4のアーキテクチャ進化から見るAI業界の動向 10-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news.html</guid>
+      <pubDate>Tue, 27 Oct 2026 09:00:00 +0000</pubDate>
+      <description>AnthropicのIPO申請に伴うS-1書類の内容や市場への影響を解説します。また、Qwen4-27Bで見られる並列残留ストリームへのアーキテクチャ進化や、Qwen 3.8 Flash Nextの低スペック環境での動作検証についても紹介します。</description>
+    </item>
     <item>
       <title>Apolloエコノミストが警鐘：AI投資に対する「実質的な経済的リターン」の欠如 10-26</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-2.html</guid>
       <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
       <description>MetaがAppleシリコン対応のオープンウェイトモデル「Muse Spark Open」を発表しました。また、Amazonのパノス・パナイ氏によるアプリ不要なAIデバイスの展望や、NVIDIAの最新モデル公開など、最新のAI動向を解説します。</description>
-    </item>
-    <item>
-      <title>MetaとAnthropicの動向から見るAIモデルの進化とインフラ競争 10-16</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news-3.html</guid>
-      <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
-      <description>MetaがMacで動作するオープンウェイトモデルを発表し、AnthropicはMETRへ内部アクセス権を付与しました。HuggingFaceでの2.8兆トークン規模の学習やNVIDIAの新モデル公開など、最新のAI動向を解説します。</description>
     </item>
   </channel>
 </rss>
