@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIの「dots」への進化とSpaceXによる400億ドルのGPU資金調達 10-27](2026-10-27-ai-news-4.html)
 - [OpenAIのGPT-6.1 Terra発表とAnthropicのIPO申請で加速するAI進化 10-27](2026-10-27-ai-news-3.html)
 - [AnthropicのIPO準備とSpaceXによる400億ドルのGPU資金調達 10-27](2026-10-27-ai-news-2.html)
 - [AnthropicのIPO申請とQwen4のアーキテクチャ進化から見るAI業界の動向 10-27](2026-10-27-ai-news.html)
