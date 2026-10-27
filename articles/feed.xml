@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 26 Oct 2026 22:47:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 04:59:00 +0000</lastBuildDate>
+    <item>
+      <title>OpenAIのGPT-6.1 Terra発表とAnthropicのIPO申請で加速するAI進化 10-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news-3.html</guid>
+      <pubDate>Tue, 27 Oct 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIが新モデルGPT-6.1 Terraを発表し、高度なタスク実行やコーディング支援を強化します。またAnthropicのIPO申請や、計算複雑性理論における指数時間仮説（ETH）の否定など最新のAI動向を解説します。</description>
+    </item>
     <item>
       <title>AnthropicのIPO準備とSpaceXによる400億ドルのGPU資金調達 10-27</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-17-ai-news-3.html</guid>
       <pubDate>Sat, 17 Oct 2026 09:00:00 +0000</pubDate>
       <description>ElorianのAIモデル「Glimpse」がGPT-6 Astraを上回る視覚的推論性能を実証しました。また、中国による23のAI技術への輸出規制案や、PS5上でLlama.cppを実行するプロジェクトなど最新ニュースを解説します。</description>
-    </item>
-    <item>
-      <title>NVIDIAのNemotron発表とAnthropicの急成長など、AIインフラとビジネスの最前線 10-16</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-16-ai-news.html</guid>
-      <pubDate>Fri, 16 Oct 2026 09:00:00 +0000</pubDate>
-      <description>NVIDIAがローカル展開向けのNemotron-3.5-Super-VLを発表したほか、Anthropicの売上高が前年比約50%増の168億ドルに達する急成長を報告しました。最新のAIインフラ動向を解説します。</description>
     </item>
   </channel>
 </rss>
