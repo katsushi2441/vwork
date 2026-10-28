@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 28 Oct 2026 03:49:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 10:00:30 +0000</lastBuildDate>
     <item>
       <title>Workで読む：OperaのWebAI標準とCF Benchmarksによる金融インフラのオンチェーン化 10-28</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news-2.html</guid>
       <pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
       <description>GoogleのGenie 4がオーディオ対応やリアルタイム操作を実現し、物理演算を含む世界モデルとして進化しました。またLiquidAIのLFM3による特化型マルチモーダル構築や指数時間仮説への反論など、最新のAI動向を解説します。</description>
+    </item>
+    <item>
+      <title>TheとBankで読む：OpenAIのGPT-4o訴訟とデータセンター需要が加速させる米国のインフラ革新 10-28</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news-4.html</guid>
+      <pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIのGPT-4oに対する医療アドバイスに関する訴訟や、バンク・オブ・アメリカによるAIへのパスワード共有禁止の警告を解説します。また、データセンター需要が加速させる米国の送電網インフラ革新についても詳しく紹介します。</description>
     </item>
     <item>
       <title>OpenAIの法的リスクとAnthropicのIPOに向けた巨大資本の動き 10-28</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news-4.html</guid>
       <pubDate>Sun, 18 Oct 2026 09:00:00 +0000</pubDate>
       <description>DeepSeek V4.1 Flash 1017がオープンウェイトモデルで首位を獲得したニュースや、Metaによる利用規約の更新、ReplitのOpenAI採用など、最新のAI技術動向とセキュリティ情報を網羅的に解説します。</description>
-    </item>
-    <item>
-      <title>DeepSeek V4.1 Flashの躍進と、ReplitによるOpenAIへの主力移行 10-18</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news-2.html</guid>
-      <pubDate>Sun, 18 Oct 2026 09:00:00 +0000</pubDate>
-      <description>DeepSeek V4.1 Flashがオープンウェイトモデルで首位を獲得したニュースや、ReplitがデフォルトAIをOpenAIに変更する動向を解説します。また、PolygonのCoinme買収やRTX 5090の販売継続についても報じます。</description>
     </item>
   </channel>
 </rss>
