@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [名古屋市の学級閉鎖は221件、インフルエンザは南区が定点当たり13.67——区ごとの数字（第43週）](2026-10-28-nagoya-influenza-gakkyu-w43.html)
 - [脆弱性診断の結果を相互フォローした企業にDMで送る——「営業DMお断り」で捨てられるセキュリティの忠告と、送る側の作法（Kurage Security Check・21社の集計つき）](2026-10-28-zeijakusei-shindan-sougo-follow-dm.html)
 - [お客様アンケートをQRコードで集めるシステムを、Googleの口コミ規約を守る作りでAIと1日で作った記録](2026-10-23-okyakusama-anketo-qr-google-kiyaku.html)
 - [8府省の新着RSSと国会会議録をつなぐ「省庁トラッカー」を作る——Shift_JISのRSS、発表と質疑の結び付け方、双方向のリンク](2026-10-23-shocho-tracker-rss-kokkai.html)
