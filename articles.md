@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Nvidiaで読む：QwenへのRISC-V CPU組み込みとDTCCによる30兆ドルの証券ブロックチェーン移行 10-29](2026-10-29-ai-news.html)
 - [TheとBankで読む：OpenAIのGPT-4o訴訟とデータセンター需要が加速させる米国のインフラ革新 10-28](2026-10-28-ai-news-4.html)
 - [OpenAIの法的リスクとAnthropicのIPOに向けた巨大資本の動き 10-28](2026-10-28-ai-news-3.html)
 - [GoogleのGenie 4とLiquidAIのLFM3が示す、次世代世界モデルとマルチモーダルAIの進化 10-28](2026-10-28-ai-news-2.html)
