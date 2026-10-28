@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 28 Oct 2026 15:31:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 21:47:55 +0000</lastBuildDate>
+    <item>
+      <title>Qwenのモデル内にCPUを内蔵する技術革新と、Wizが警鐘を鳴らす「脆弱性の黙示録」 10-29</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-29-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-29-ai-news-2.html</guid>
+      <pubDate>Thu, 29 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Qwenのモデル重みに32ビットRISC-V CPUを組み込む技術革新や、WizのCTOが警告する「脆弱性の黙示録」について解説します。さらにGemini 4 Carbonの発表やMicrosoftとOpenAIの収益についても報じます。</description>
+    </item>
     <item>
       <title>Nvidiaで読む：QwenへのRISC-V CPU組み込みとDTCCによる30兆ドルの証券ブロックチェーン移行 10-29</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-29-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news-3.html</guid>
       <pubDate>Sun, 18 Oct 2026 09:00:00 +0000</pubDate>
       <description>DeepSeekの新モデル「v4.1-Flash-1017」のリリースや、ReplitがOpenAIをデフォルト採用する動きなど、最新のAI動向を解説します。またMetaの規約変更や金融機関による資産トークン化の動向も網羅しています。</description>
-    </item>
-    <item>
-      <title>DeepSeek v4.1 Flashの衝撃とNVIDIAが描く物理AIの基礎技術 10-18</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-18-ai-news.html</guid>
-      <pubDate>Sun, 18 Oct 2026 09:00:00 +0000</pubDate>
-      <description>DeepSeek v4.1 Flashがコーディングベンチマークで競合を上回る性能を記録したほか、NVIDIA出身者が語る物理AIの基礎技術や、BISによるステーブルコイン普及への影響、Qwen 3.8 Flash Nextの最適化議論を解説します。</description>
     </item>
   </channel>
 </rss>

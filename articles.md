@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Qwenのモデル内にCPUを内蔵する技術革新と、Wizが警鐘を鳴らす「脆弱性の黙示録」 10-29](2026-10-29-ai-news-2.html)
 - [Nvidiaで読む：QwenへのRISC-V CPU組み込みとDTCCによる30兆ドルの証券ブロックチェーン移行 10-29](2026-10-29-ai-news.html)
 - [TheとBankで読む：OpenAIのGPT-4o訴訟とデータセンター需要が加速させる米国のインフラ革新 10-28](2026-10-28-ai-news-4.html)
 - [OpenAIの法的リスクとAnthropicのIPOに向けた巨大資本の動き 10-28](2026-10-28-ai-news-3.html)
