@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIの法的リスクとAnthropicのIPOに向けた巨大資本の動き 10-28](2026-10-28-ai-news-3.html)
 - [GoogleのGenie 4とLiquidAIのLFM3が示す、次世代世界モデルとマルチモーダルAIの進化 10-28](2026-10-28-ai-news-2.html)
 - [Workで読む：OperaのWebAI標準とCF Benchmarksによる金融インフラのオンチェーン化 10-28](2026-10-28-ai-news.html)
 - [OpenAIの「dots」への進化とSpaceXによる400億ドルのGPU資金調達 10-27](2026-10-27-ai-news-4.html)
