@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 29 Oct 2026 15:28:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 21:39:48 +0000</lastBuildDate>
+    <item>
+      <title>Binanceで読む：Mistral Large 4の公開とFableクラスモデルによるマルチプレイヤーゲームの世界構築 10-30</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-30-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-30-ai-news-2.html</guid>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Mistral社が強力なモデル「Mistral Large 4」の重み公開を発表しました。また、Fableクラスの自律型AIを用いたMMORPG環境「Spawn」や、Rivianとフォルクスワーゲンによる車両へのAIアシスタント搭載など最新動向を解説します。</description>
+    </item>
     <item>
       <title>Modelsで読む：Mistral Large 4のオープン化とDeepgramによるDaily買収など、最新AI動向まとめ 10-30</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-30-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news-2.html</guid>
       <pubDate>Tue, 20 Oct 2026 09:00:00 +0000</pubDate>
       <description>MicrosoftがAIエージェントを内部脅威と同等のリスクと警告したほか、AmazonがNvidiaに対抗する新ツールTorchNeuronを発表しました。またOpenCodeのハッキング被害やMiniMaxの新モデルM3.1 Flashの情報を紹介します。</description>
-    </item>
-    <item>
-      <title>VisaやMastercardによる決済拡大とDeepSeekの低コストAPIが示す最新動向 10-19</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-19-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-19-ai-news.html</guid>
-      <pubDate>Mon, 19 Oct 2026 09:00:00 +0000</pubDate>
-      <description>VisaやMastercardとの統合により仮想通貨決済が45%急増した最新動向を解説します。また、DeepSeekの低コストAPI（1,000リクエスト$0.75）や軽量音声認識モデルAuroraASR-1Mの登場など、AIと金融の最新ニュースを網羅しています。</description>
     </item>
   </channel>
 </rss>
