@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [Google広告の分析を毎朝自動で。成果ゼロの検索語・除外の衝突・同じ曜日との比較を規則で出す「Kurage 広告AI分析」を作った](2026-10-29-google-ads-bunseki-jidouka-kadsai.html)
 - [議員定数削減の合意、維新と国民民主の「3つの齟齬」を国会会議録で確かめたら、相手の党の提出者答弁が味方だった](2026-10-29-giin-teisu-sakugen-3-sogo-kaigiroku.html)
 - [名古屋市の学級閉鎖は221件、インフルエンザは南区が定点当たり13.67——区ごとの数字（第43週）](2026-10-28-nagoya-influenza-gakkyu-w43.html)
 - [脆弱性診断の結果を相互フォローした企業にDMで送る——「営業DMお断り」で捨てられるセキュリティの忠告と、送る側の作法（Kurage Security Check・21社の集計つき）](2026-10-28-zeijakusei-shindan-sougo-follow-dm.html)
