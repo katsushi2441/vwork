@@ -1,0 +1,71 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Google広告の分析を毎朝自動で。成果ゼロの検索語・除外の衝突・同じ曜日との比較を規則で出す「Kurage 広告AI分析」を作った | VWork バイブコーディングフレームワーク</title><meta name="description" content="Google 広告の実績を毎朝取り込み、同じ曜日の過去4週との比較・成果ゼロの検索語・除外キーワードの衝突・予算負けを規則で指摘して日報にする「Kurage 広告AI分析」。AI要約は差し替え式で無くても動く。自社口座で見つかった設定ミスも書く。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-29-google-ads-bunseki-jidouka-kadsai.html"><meta property="og:type" content="article"><meta property="og:title" content="Google広告の分析を毎朝自動で。成果ゼロの検索語・除外の衝突・同じ曜日との比較を規則で出す「Kurage 広告AI分析」を作った"><meta property="og:description" content="Google 広告の実績を毎朝取り込み、同じ曜日の過去4週との比較・成果ゼロの検索語・除外キーワードの衝突・予算負けを規則で指摘して日報にする「Kurage 広告AI分析」。AI要約は差し替え式で無くても動く。自社口座で見つかった設定ミスも書く。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-29-google-ads-bunseki-jidouka-kadsai.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Google広告の分析を毎朝自動で。成果ゼロの検索語・除外の衝突・同じ曜日との比較を規則で出す「Kurage 広告AI分析」を作った"><meta name="twitter:description" content="Google 広告の実績を毎朝取り込み、同じ曜日の過去4週との比較・成果ゼロの検索語・除外キーワードの衝突・予算負けを規則で指摘して日報にする「Kurage 広告AI分析」。AI要約は差し替え式で無くても動く。自社口座で見つかった設定ミスも書く。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Google広告の分析を毎朝自動で。成果ゼロの検索語・除外の衝突・同じ曜日との比較を規則で出す「Kurage 広告AI分析」を作った", "description": "Google 広告の実績を毎朝取り込み、同じ曜日の過去4週との比較・成果ゼロの検索語・除外キーワードの衝突・予算負けを規則で指摘して日報にする「Kurage 広告AI分析」。AI要約は差し替え式で無くても動く。自社口座で見つかった設定ミスも書く。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-29-google-ads-bunseki-jidouka-kadsai.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Google広告の分析を毎朝自動で。成果ゼロの検索語・除外の衝突・同じ曜日との比較を規則で出す「Kurage 広告AI分析」を作った</h1><p class="meta">2026-10-29</p><p>小さな会社の Google 広告は、代理店から月1回のレポートが来て終わり、ということが多いです。昨日いくら使って、どの検索語に流れたかは、管理画面を自分で開かないと分かりません。名古屋の水道修理会社から「広告と電話と売上をまとめて分析して、毎朝 LINE に送ってほしい」という相談があり、まず広告の部分だけを切り出して、1本のシステムにしました。<strong>Kurage 広告AI分析</strong>（kadsai）です。</p>
+<p><img alt="ダッシュボード。昨日・7日・30日の実績と日別のグラフ、指摘、キャンペーン別" src="assets/kadsai-dashboard.png" /></p>
+<h2>毎朝やること</h2>
+<p>cron で1回動き、Google Ads API から日別のキャンペーン・広告グループ・キーワード・検索語・広告・時間帯・地域・除外キーワードを SQLite に取り込みます。そのあと規則で分析して、Markdown と HTML と LINE 用の短文の3つを書きます。AI はその後ろの1段で、数字を経営者向けに「3行と今日やること1つ」に言い換えるだけです。</p>
+<p>規則で出す指摘は次の9種類です。</p>
+<ol>
+<li>昨日の費用・クリック・コンバージョンを、過去4週の同じ曜日の平均と比べて、±50%を超えたら「急な増減」</li>
+<li>直近30日で費用1,000円かクリック5回を超えて成果ゼロの検索語を「除外候補」に</li>
+<li>語（n-gram）単位で集めて「この語を含む検索はすべて成果ゼロ」</li>
+<li>除外キーワードが、入札しているキーワードを止めていないか（除外の衝突）</li>
+<li>インプレッションシェアの「予算が理由で逃した」「順位が理由で逃した」割合</li>
+<li>1ページ目の目安に届いていない入札</li>
+<li>品質スコア4以下のキーワード</li>
+<li>同じ広告グループでクリック率が半分以下の広告文</li>
+<li>費用は使うのにコンバージョンが0の時間帯</li>
+</ol>
+<h2>自社の口座で最初に出た指摘</h2>
+<p>作ってすぐ自社の口座を通したら、重要1件が出ました。除外キーワード「作り方」（部分一致）が、入札キーワード「エクセル 受注 管理 作り方」を止めていました。自分で入れた除外が自分の広告を消していたわけで、管理画面を眺めているだけでは気づかない種類のミスです。ほかに、成果ゼロで費用が流れていた検索語が2つ、品質スコア3のキーワードが1つ、順位負けでインプレッションシェアの83%を逃しているキャンペーンが1つ。</p>
+<p><img alt="検索語の画面。期間と絞り込みを変えて、除外候補にボタンで入れる" src="assets/kadsai-search-terms.png" /></p>
+<h2>似た OSS に無かったもの</h2>
+<p>参考にしたのは Google 公式の gaarf（レポート取得）、Account Anomaly Detector と Campaign Anomaly Detector（同じ曜日との比較）、negative-keyword-miner（n-gram）、Fivetran の dbt パッケージ（4粒度の日次表）です。どれも「コンバージョンまで」で止まっていて、画面と承認の仕組みがありません。このシステムで足したのは3つです。</p>
+<ul>
+<li>画面。ダッシュボード、日報、検索語、キーワード、提案と承認、時間帯、地域、設定の8ページ。標準ライブラリの HTTP サーバーで、リンクは全部相対パスなので中継の下でも動きます</li>
+<li>承認制の変更。除外キーワードの追加や日予算の変更は、画面で「承認して実行」したものだけ API で反映します。自動では何も変えません</li>
+<li>AI の差し替え。設定に <code>claude -p</code> と書けば Claude Code、<code>codex exec</code> なら Codex、OpenAI 互換の API なら DeepSeek や Qwen やローカル LLM。無ければ規則の日報だけが出ます</li>
+</ul>
+<h2>通話や売上とは、つながない</h2>
+<p>最初の相談は「広告×電話×売上」でしたが、1つのシステムにはしませんでした。広告分析、通話分析、売上分析は別の商品にして、必要なら日別の CSV を出して突き合わせる。どれか1つだけ買っても動き、後から足せる形の方が、小さな会社には合います。</p>
+<h2>動かす場所</h2>
+<p>社内の Linux 1台で動き、公開サーバーは要りません。LINE の通知は Messaging API の push で、外向きの通信だけです。Google Ads API の開発者トークンが取れない口座（代理店運用）は、管理画面から出した CSV を取り込めます。</p>
+<ul>
+<li>画面のデモ（ログインが要ります）: <a href="https://proto.exbridge.jp/kadsai/#ref=vibeblog-kadsai">proto.exbridge.jp/kadsai/</a></li>
+<li>商品ページ: <a href="https://kappstore.exbridge.jp/app.php?id=12ae317340f91d51#ref=vibeblog-kadsai">Kurage App Store</a></li>
+<li>ソースコード: GitHub の katsushi2441/kadsai（MIT）</li>
+</ul>
+<h2>よくある質問</h2>
+<h3>AI は必須ですか</h3>
+<p>必須ではありません。数字はすべて規則が作ります。AI は要約の1段だけで、設定しなければ規則の日報が出ます。</p>
+<h3>代理店が運用していて API が使えません</h3>
+<p>Google 広告の管理画面から検索語レポートなどを CSV で出して取り込めます。日本語の見出しと Shift_JIS も読みます。</p>
+<h3>設定変更を勝手にされませんか</h3>
+<p>されません。除外キーワードの追加も予算の変更も、画面で承認したものだけを実行します。承認待ちの一覧と実行結果が残ります。</p>
+<h2>出典</h2>
+<ul>
+<li><a href="https://github.com/google/ads-api-report-fetcher">Google Ads API Report Fetcher (gaarf)</a></li>
+<li><a href="https://github.com/google/cad_campaign_anomaly_detector">Campaign Anomaly Detector</a></li>
+<li><a href="https://github.com/ghazanfar111212/negative-keyword-miner">negative-keyword-miner</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
