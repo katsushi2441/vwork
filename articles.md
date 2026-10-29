@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [MOSSとResearchで読む：Qwen4の登場とLLM学習効率を劇的に改善する新技術の最前線 10-29](2026-10-29-ai-news-4.html)
 - [MOSSで読む：NVIDIA Nemotron 3.5の進化とMicrosoft・OpenAIの巨額収益、そしてAIセキュリティの脅威 10-29](2026-10-29-ai-news-3.html)
 - [Qwenのモデル内にCPUを内蔵する技術革新と、Wizが警鐘を鳴らす「脆弱性の黙示録」 10-29](2026-10-29-ai-news-2.html)
 - [Nvidiaで読む：QwenへのRISC-V CPU組み込みとDTCCによる30兆ドルの証券ブロックチェーン移行 10-29](2026-10-29-ai-news.html)
