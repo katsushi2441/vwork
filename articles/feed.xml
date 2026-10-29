@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 29 Oct 2026 10:10:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 15:28:19 +0000</lastBuildDate>
+    <item>
+      <title>Modelsで読む：Mistral Large 4のオープン化とDeepgramによるDaily買収など、最新AI動向まとめ 10-30</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-30-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-30-ai-news.html</guid>
+      <pubDate>Fri, 30 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Mistral AIが1兆パラメータのMistral Large 4を発表し、オープンウェイトモデルとして提供します。またDeepgramによるDaily社の買収やGemini 4 Carbonの評価など、最新のAI動向をまとめました。</description>
+    </item>
     <item>
       <title>Qwenのモデル内にCPUを内蔵する技術革新と、Wizが警鐘を鳴らす「脆弱性の黙示録」 10-29</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-29-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-19-ai-news.html</guid>
       <pubDate>Mon, 19 Oct 2026 09:00:00 +0000</pubDate>
       <description>VisaやMastercardとの統合により仮想通貨決済が45%急増した最新動向を解説します。また、DeepSeekの低コストAPI（1,000リクエスト$0.75）や軽量音声認識モデルAuroraASR-1Mの登場など、AIと金融の最新ニュースを網羅しています。</description>
-    </item>
-    <item>
-      <title>DisneyとCharacter.AIの人的資源獲得、そしてソフトウェア開発における「ビジョン」の重要性 10-19</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-19-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-19-ai-news-2.html</guid>
-      <pubDate>Mon, 19 Oct 2026 09:00:00 +0000</pubDate>
-      <description>DisneyがCharacter.AIの人材獲得に合意したニュースや、RepRapMicronによるマイクロチップ3Dプリント技術を紹介します。AI時代の開発ではコーディングより製品ビジョンの重要性が高まる動向を解説します。</description>
     </item>
   </channel>
 </rss>
