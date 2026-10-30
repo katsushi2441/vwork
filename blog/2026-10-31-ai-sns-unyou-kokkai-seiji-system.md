@@ -122,6 +122,9 @@ https://exbridge.jp/ai-sns-komon.html
 詳しい記事：SNSコンサルだけでは成果にならない——X運用とホームページ・Webシステムをまとめた「AI-SNS顧問」を始めた理由
 https://exbridge.jp/vibeblog/2026-10-21-ai-sns-komon-x-hp-web.html
 
+詳しい記事：SNS運用代行で成果が出ない4つの理由——投稿を代わりに書くだけでは、問い合わせも採用も増えない
+https://exbridge.jp/vibeblog/2026-10-23-sns-unyou-daikou-erabikata.html
+
 ## すべてバイブコーディングで開発し、AI-IT顧問にも
 
 ここで紹介したシステムは、すべてAIを使ったバイブコーディングで開発しています。人が手で書くより短い期間で、公開まで持っていけます。
@@ -133,6 +136,12 @@ https://exbridge.jp/ai-it-komon.html
 
 詳しい記事：エンジニアを雇えない会社が、情報システム部門を持つ方法——AI-IT顧問という月15時間の契約を作りました
 https://exbridge.jp/vibeblog/2026-08-30-ai-it-komon.html
+
+詳しい記事：IT顧問契約の類似サービスを調べてみた——情シス代行・ヘルプデスク代行・常駐、8つの型と費用の幅
+https://exbridge.jp/vibeblog/2026-08-30-it-komon-similar-services.html
+
+詳しい記事：DXは「要件定義」から始めない——業務の自動化を目指しながら効率化から実現する、現場に来て話を聞きながらその場で作る開発
+https://exbridge.jp/vibeblog/2026-10-14-dx-genba-de-sono-ba-de-tsukuru.html
 
 開発したシステムは、Kurage App Store で、御社のサーバーに置いて使える導入版として提供しています。
 
