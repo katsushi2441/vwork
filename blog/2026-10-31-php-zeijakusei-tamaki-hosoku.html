@@ -1,0 +1,63 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PHPの脆弱性と「PHPを使わないシステム」——玉木代表の投稿と補足から考える、影響力のある人のセキュリティ発信 | VWork バイブコーディングフレームワーク</title><meta name="description" content="バイナンスの不正流出について、国民民主党の玉木代表が「PHPを使わないシステムで、セキュリティにも相当力を入れていた」と投稿し、翌日に補足・訂正を出しました。元の文が何を前提にしていたのか、補足のよかった点、そして影響力のある人がセキュリティを発信するときにどこまで踏み込むべきかを、PHPでシステムを作っている開発会社の立場から短くまとめます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-31-php-zeijakusei-tamaki-hosoku.html"><meta property="og:type" content="article"><meta property="og:title" content="PHPの脆弱性と「PHPを使わないシステム」——玉木代表の投稿と補足から考える、影響力のある人のセキュリティ発信"><meta property="og:description" content="バイナンスの不正流出について、国民民主党の玉木代表が「PHPを使わないシステムで、セキュリティにも相当力を入れていた」と投稿し、翌日に補足・訂正を出しました。元の文が何を前提にしていたのか、補足のよかった点、そして影響力のある人がセキュリティを発信するときにどこまで踏み込むべきかを、PHPでシステムを作っている開発会社の立場から短くまとめます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-31-php-zeijakusei-tamaki-hosoku.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="PHPの脆弱性と「PHPを使わないシステム」——玉木代表の投稿と補足から考える、影響力のある人のセキュリティ発信"><meta name="twitter:description" content="バイナンスの不正流出について、国民民主党の玉木代表が「PHPを使わないシステムで、セキュリティにも相当力を入れていた」と投稿し、翌日に補足・訂正を出しました。元の文が何を前提にしていたのか、補足のよかった点、そして影響力のある人がセキュリティを発信するときにどこまで踏み込むべきかを、PHPでシステムを作っている開発会社の立場から短くまとめます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "PHPの脆弱性と「PHPを使わないシステム」——玉木代表の投稿と補足から考える、影響力のある人のセキュリティ発信", "description": "バイナンスの不正流出について、国民民主党の玉木代表が「PHPを使わないシステムで、セキュリティにも相当力を入れていた」と投稿し、翌日に補足・訂正を出しました。元の文が何を前提にしていたのか、補足のよかった点、そして影響力のある人がセキュリティを発信するときにどこまで踏み込むべきかを、PHPでシステムを作っている開発会社の立場から短くまとめます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-31-php-zeijakusei-tamaki-hosoku.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>PHPの脆弱性と「PHPを使わないシステム」——玉木代表の投稿と補足から考える、影響力のある人のセキュリティ発信</h1><p class="meta">2026-10-31</p><p>名古屋でAIシステムの開発をしている小嶋です。当社はPHPでたくさんのシステムを作っているので、今月のPHPの脆弱性（PHP2Shell）は自分ごととして追ってきました。その流れで、国民民主党の玉木代表の投稿と、翌日に出された補足を読み、考えたことを短くまとめます。</p>
+<h2>何があったか</h2>
+<p>10月30日、バイナンスの大規模な不正流出について、玉木代表がXにこう書きました。</p>
+<blockquote>
+<p>バイナンスはPHPを使わないシステムで、セキュリティにも相当力を入れていたと聞いていたので驚きだ。</p>
+</blockquote>
+<p>この一文に、エンジニアやセキュリティの専門家から多くの指摘が集まりました。翌日、玉木代表は補足を出し、「PHPを使っていないことがセキュリティの高さを意味するわけではなく、また、今回の事案がPHPの脆弱性に起因するという意味でもありません」と書いています。伝えたかったのは「セキュリティに相当の投資をしている事業者でも、サイバー攻撃のリスクは完全には消せない」ということだった、という説明です。</p>
+<p>なお、バイナンスの件がPHPの脆弱性によるものだという情報は、私が確認できた範囲では見当たりません。</p>
+<h2>元の文は「言葉足らず」というより、前提がずれていた</h2>
+<p>元の文は、「PHPを使わない」と「セキュリティに力を入れていた」を、安全だと思っていた理由として並べています。素直に読むと、PHPを使っていないことも安全の理由に数えている文です。</p>
+<p>これは玉木代表だけの話ではないと思います。今月はPHPの重大な脆弱性が修正版の公開前に漏れ、銀行がサイトを一時止め、高市総理が「大至急のお願い」を投稿しました。バイナンスの共同創業者もPHPの脆弱性に注意を呼びかけていました。これだけ続けば、エンジニアでない多くの人に「PHPは危ない」という印象が残るのは自然です。</p>
+<p>ただ、それを踏まえると、補足で「説明が不十分だった」とまとめるのは、少しやわらかい言い方に聞こえます。実際には「PHPを使わない＝安全、という認識がずれていた」という訂正だと受け取りました。</p>
+<h2>補足でよかったところ</h2>
+<p>一方で、補足の中身はきちんとしていました。</p>
+<ul>
+<li>「誤解を招く表現であり」「補足・訂正します」と、訂正であることをはっきり書いている</li>
+<li>今回の件がPHPの脆弱性によるものではない、と因果をはっきり否定している。PHPでサイトを動かしている多くの会社への風評を止めるうえで、これは大事です</li>
+<li>言語の話から、設計・開発・運用の全体で守る（DevSecOps）という正しい方向に話を移している</li>
+<li>「この投稿にも間違いがあれば教えてください」と、指摘を受け止める姿勢を示している</li>
+</ul>
+<p>政治家の訂正として、ここまで書くのは誠実なほうだと思います。</p>
+<h2>影響力のある人の注意喚起は大事。ただし技術の評価までは踏み込まない</h2>
+<p>影響力のある人が、エンジニアでなくてもセキュリティの注意を呼びかけること自体は悪くありません。総理の投稿のように、ふだん情報が届かない人にまで「今夜、更新してください」と届く力があります。</p>
+<p>難しいのは、そこに「どの言語が安全か」「どのシステムが強いか」といった技術の評価が入るときです。専門家から見ると、危ないかどうかは言語では決まらず、更新の速さや設定、運用で決まります。そこに一言でも技術の評価が混ざると、違和感が出るのは当然です。そして、影響力のある人のその一言は、正しくても間違っていても大きく広がります。</p>
+<p>なので、技術に詳しくない立場からの発信は、次の範囲にとどめるのがよいと考えます。</p>
+<ul>
+<li>何が起きたか（事実と、公的機関・事業者の発表）</li>
+<li>何をすればよいか（更新する、確認する、専門家に聞く）</li>
+<li>技術の良し悪しの判断は、専門家の説明に任せる</li>
+</ul>
+<p>「PHPを使っていないから安全」と受け取られると、逆に「うちはPHPだから危ない」「PHPでなければ大丈夫」と考えて、肝心の更新や点検がおろそかになるおそれがあります。中小企業のホームページの多くはPHPで動いています。怖いのは言語ではなく、更新されないまま放っておかれることです。</p>
+<h2>PHPの脆弱性について、当社で書いた記事</h2>
+<p>PHPの脆弱性「PHP2Shell」と、相次ぐ情報漏洩は関係あるのか
+https://exbridge.jp/vibeblog/2026-10-24-php2shell-joho-roei-team-mirai.html#ref=vibeblog-tamaki-php</p>
+<p>PHPの脆弱性、高市総理の「大至急のお願い」は攻撃者にも届いたのか
+https://exbridge.jp/vibeblog/2026-10-25-php-zeijakusei-takaichi-shuchi-kougekisha.html#ref=vibeblog-tamaki-php</p>
+<p>PHPの脆弱性でWebサイトに不正アクセスされても、社内の情報漏えいは起きないのか
+https://exbridge.jp/vibeblog/2026-10-26-php2shell-fusei-access-shanai-joho-roei.html#ref=vibeblog-tamaki-php</p>
+<p>中小企業21社のホームページを、SEO・AEO・GEOと安全面で診断して分かったこと
+https://exbridge.jp/vibeblog/2026-10-24-homepage-shukyaku-security-21sha.html#ref=vibeblog-tamaki-php</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
