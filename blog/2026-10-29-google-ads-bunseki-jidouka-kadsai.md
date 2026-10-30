@@ -4,7 +4,7 @@ title_aixsns: "Google広告の日報を毎朝自動で作るシステム「Kurag
 title_hatena: "広告代理店の月1レポートでは分からない「昨日の無駄」を、Google広告から毎朝拾う仕組み"
 title_blogger: "Google広告の実績をSQLiteに落として規則で分析する小さなシステムの作り"
 date: 2026-10-29
-layout: post
+layout: default
 permalink: /blog/2026-10-29-google-ads-bunseki-jidouka-kadsai.html
 tags: [Google広告, 広告分析, 自動化, Kurage, kadsai, 中小企業]
 description: "Google 広告の実績を毎朝取り込み、同じ曜日の過去4週との比較・成果ゼロの検索語・除外キーワードの衝突・予算負けを規則で指摘して日報にする「Kurage 広告AI分析」。AI要約は差し替え式で無くても動く。自社口座で見つかった設定ミスも書く。"

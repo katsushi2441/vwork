@@ -4,7 +4,7 @@ title_aixsns: "トビラフォン Cloud と PLAUD の文字起こしを毎朝分
 title_hatena: "トビラフォン Cloud の着信通知メールと PLAUD の文字起こしで、失注の理由を毎朝数える"
 title_blogger: "トビラフォン Cloud と PLAUD を Zapier なしでつなぐ、電話分析の小さなシステム"
 date: 2026-10-30
-layout: post
+layout: default
 permalink: /blog/2026-10-30-tobila-plaud-mojiokoshi-ai-bunseki-kcallai.html
 tags: [トビラフォン, PLAUD, 文字起こし, 電話応対, 失注分析, Kurage, kcallai]
 description: "トビラフォン Cloud の着信通知メールと PLAUD の文字起こしを毎朝取り込み、成約・失注・失注の理由・料金の目安を言ったか・折り返しが要る電話・現場の金額トラブルの兆しを規則で判定して LINE に届ける「Kurage 通話AI分析」。Zapier 不要、AI なしでも動く。"
