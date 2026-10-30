@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 30 Oct 2026 04:03:18 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 16:21:29 +0000</lastBuildDate>
+    <item>
+      <title>Claude Codeのバックドア問題とAIデータセンターの量産化に向けた最新動向 10-31</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news.html</guid>
+      <pubDate>Sat, 31 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Cursor MarketplaceでClaude Code拡張機能へのバックドア混入が判明したセキュリティリスクや、Runwareによるプレハブ式AIデータセンターの量産化など、最新のAI技術動向と規制に関するニュースを詳しく解説します。</description>
+    </item>
     <item>
       <title>Minecraftで読む：Binanceの巨額被害とMistral Large 4の公開：AIエージェントとWeb3の最前線 10-30</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-30-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news.html</guid>
       <pubDate>Tue, 20 Oct 2026 09:00:00 +0000</pubDate>
       <description>Nvidiaがエッジ環境向けの新オープンモデルを発表し、セキュアなAIエージェント実行を可能にします。またMistralの時系列予測モデル「Timestral」やLinux 7.3カーネルの最新動向、Cardanoの新言語開発についても解説します。</description>
-    </item>
-    <item>
-      <title>Llamaで読む：Microsoftが警告するAIエージェントのリスクとAnthropicの巨額計算資源獲得への動き 10-20</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news-3.html</guid>
-      <pubDate>Tue, 20 Oct 2026 09:00:00 +0000</pubDate>
-      <description>MicrosoftがAIエージェントを内部脅威と警告し、Anthropicは450億ドル規模の計算資源獲得に向けた交渉を進めています。AmazonのTorchNeuronやVRAM最適化技術など、最新のAI動向を網羅します。</description>
     </item>
   </channel>
 </rss>
