@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [PHPの脆弱性と「PHPを使わないシステム」——玉木代表の投稿と補足から考える、影響力のある人のセキュリティ発信](2026-10-31-php-zeijakusei-tamaki-hosoku.md)
 - [AI SNS運用を国会データで——政治系システム7本で育てた企業のXと、AI-SNS顧問・AI-IT顧問の仕事](2026-10-31-ai-sns-unyou-kokkai-seiji-system.md)
 - [トビラフォン Cloud と PLAUD の文字起こしを毎朝AI分析する「Kurage 通話AI分析」を作った——失注の理由・折り返し漏れ・現場の金額トラブルをLINEへ](2026-10-30-tobila-plaud-mojiokoshi-ai-bunseki-kcallai.md)
 - [Google広告の分析を毎朝自動で。成果ゼロの検索語・除外の衝突・同じ曜日との比較を規則で出す「Kurage 広告AI分析」を作った](2026-10-29-google-ads-bunseki-jidouka-kadsai.md)
