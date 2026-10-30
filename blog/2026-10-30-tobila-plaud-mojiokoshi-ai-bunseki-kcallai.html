@@ -1,0 +1,78 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>トビラフォン Cloud と PLAUD の文字起こしを毎朝AI分析する「Kurage 通話AI分析」を作った——失注の理由・折り返し漏れ・現場の金額トラブルをLINEへ | VWork バイブコーディングフレームワーク</title><meta name="description" content="トビラフォン Cloud の着信通知メールと PLAUD の文字起こしを毎朝取り込み、成約・失注・失注の理由・料金の目安を言ったか・折り返しが要る電話・現場の金額トラブルの兆しを規則で判定して LINE に届ける「Kurage 通話AI分析」。Zapier 不要、AI なしでも動く。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-30-tobila-plaud-mojiokoshi-ai-bunseki-kcallai.html"><meta property="og:type" content="article"><meta property="og:title" content="トビラフォン Cloud と PLAUD の文字起こしを毎朝AI分析する「Kurage 通話AI分析」を作った——失注の理由・折り返し漏れ・現場の金額トラブルをLINEへ"><meta property="og:description" content="トビラフォン Cloud の着信通知メールと PLAUD の文字起こしを毎朝取り込み、成約・失注・失注の理由・料金の目安を言ったか・折り返しが要る電話・現場の金額トラブルの兆しを規則で判定して LINE に届ける「Kurage 通話AI分析」。Zapier 不要、AI なしでも動く。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-30-tobila-plaud-mojiokoshi-ai-bunseki-kcallai.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="トビラフォン Cloud と PLAUD の文字起こしを毎朝AI分析する「Kurage 通話AI分析」を作った——失注の理由・折り返し漏れ・現場の金額トラブルをLINEへ"><meta name="twitter:description" content="トビラフォン Cloud の着信通知メールと PLAUD の文字起こしを毎朝取り込み、成約・失注・失注の理由・料金の目安を言ったか・折り返しが要る電話・現場の金額トラブルの兆しを規則で判定して LINE に届ける「Kurage 通話AI分析」。Zapier 不要、AI なしでも動く。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "トビラフォン Cloud と PLAUD の文字起こしを毎朝AI分析する「Kurage 通話AI分析」を作った——失注の理由・折り返し漏れ・現場の金額トラブルをLINEへ", "description": "トビラフォン Cloud の着信通知メールと PLAUD の文字起こしを毎朝取り込み、成約・失注・失注の理由・料金の目安を言ったか・折り返しが要る電話・現場の金額トラブルの兆しを規則で判定して LINE に届ける「Kurage 通話AI分析」。Zapier 不要、AI なしでも動く。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-30-tobila-plaud-mojiokoshi-ai-bunseki-kcallai.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>トビラフォン Cloud と PLAUD の文字起こしを毎朝AI分析する「Kurage 通話AI分析」を作った——失注の理由・折り返し漏れ・現場の金額トラブルをLINEへ</h1><p class="meta">2026-10-30</p><p>トビラフォン Cloud を入れると、電話は自動で文字起こしされます。PLAUD を使えば、現場の会話も文字になります。ところが、その文字を毎日読み返している会社はほとんどありません。名古屋の水まわり修理の会社から「電話の文字起こしで失注の理由を分析して、毎朝 LINE に送ってほしい」という相談があり、そのためのシステムを作りました。<strong>Kurage 通話AI分析</strong>（kcallai）です。広告の分析は前日に出した <a href="2026-10-29-google-ads-bunseki-jidouka-kadsai.html">Kurage 広告AI分析</a> が受け持ち、こちらは電話と現場の会話だけを扱います。</p>
+<p><img alt="ダッシュボード。AI の要点、指摘、折り返しが確認できない電話" src="assets/kcallai-dashboard.png" /></p>
+<h2>トビラフォン Cloud と PLAUD から、どう取り出すか</h2>
+<p>最初に調べたのは、両方とも外から文字起こしを取り出せるかです。</p>
+<ul>
+<li><strong>トビラフォン Cloud</strong>: 外部向けの API は公開されていません。ただ、外線番号ごとの「着信を通知」をメールにすると、着信のたびに相手先名称・相手先電話番号・応答者・通話時間・通話履歴の URL・<strong>音声テキスト内容</strong>が入ったメールが届きます。通知は着信方式が「コールフロー（IVR）」の番号で使えて、発信は通知されません。</li>
+<li><strong>トビラフォン Cloud の一括ダウンロード</strong>: 通話履歴の「一括操作」で落とせる録音データには、mp3 のほかに音声テキストと要約のテキストファイルが入ります。発信や過去の分はこちらで補えます。</li>
+<li><strong>PLAUD</strong>: 公式の MCP と CLI があり、録音の一覧、話者と時刻つきの文字起こし、AI 要約を取り出せます。法人向けの規約は画面からの抜き出し（scraping）を禁じているので、画面の自動操作は使いません。</li>
+</ul>
+<p>どちらも Zapier や Make のような、つなぎのサービスは要りません。通知用のメールボックスを IMAP で読みに行き、PLAUD は公式の CLI を呼ぶだけです。受け口のサーバーを外へ公開しないので、社内の Linux 1台で動きます。</p>
+<h2>毎朝、何を数えるか</h2>
+<p>判定は決まった言葉で行います。AI が無くても全部動きます。</p>
+<ol>
+<li><strong>成約・失注・検討</strong>: 会話の最後に出た言葉で決めます。「じゃあお願いします」なら成約、「今回はやめておきます」なら失注、「家族と相談して、また連絡します」なら検討</li>
+<li><strong>失注の理由</strong>: 金額が分からない・価格・日程や到着・他社と比較・自分で対応・不安・家族と相談。お客様の言葉に出た語で分けます</li>
+<li><strong>言ったか、言わなかったか</strong>: 名乗り・用件の確認・お名前・住所・料金の目安・到着の時刻・復唱・お礼</li>
+<li><strong>言った電話と言わなかった電話の成約率の差</strong>: 料金の目安・到着の時刻・名乗りについて比べます</li>
+<li><strong>担当者ごとの抜け</strong></li>
+<li><strong>折り返しが確認できない不在着信と留守電</strong>: 同じ番号と、あとで話した記録が無いもの</li>
+<li><strong>営業電話</strong>の件数と合計時間</li>
+<li><strong>現場の会話</strong>: 「電話で聞いた金額と違う」「聞いていない」などの金額トラブルの兆し、作業前に見積もりを伝えたか、追加料金の説明</li>
+</ol>
+<p>1件ごとの画面では、判定に使った言葉を黄色で示します。なぜ「失注」で、なぜ「金額が分からない」なのかを、元の会話で確かめられます。</p>
+<p><img alt="電話1件の画面。応対の確認と、判定に使った言葉の黄色" src="assets/kcallai-call.png" /></p>
+<h2>比べる項目を「決まる前に言うこと」に絞った</h2>
+<p>最初は「復唱」も比べていました。見本データで出た結果は、復唱した電話の成約率100%、しなかった電話43%。いかにも効きそうな差ですが、復唱は「お願いします」と言われてから住所や番号を確かめるものです。成約した電話にしか出てこないので、差は結果を言い直しているだけでした。比べるのは、お客様が決める前に言うこと（料金の目安・到着の時刻・名乗り）だけにしました。</p>
+<p>同じ見本データで、料金の目安を伝えた電話の成約率は88%、伝えなかった電話は33%でした。見本は当社が作った架空のデータで、担当者ごとに「料金の目安を言わない」「名乗らない」といった癖を持たせてあります。規則がその癖を拾えるかを確かめるためのもので、実際の会社の数字ではありません。</p>
+<h2>現場の会話は、電話とつながっている</h2>
+<p>PLAUD の録音で拾いたかったのは、電話で伝えた目安と現場の見積もりの差です。水まわりの修理は、高額請求の苦情が多い業界です。「電話では1万円くらいって」と現場で言われたら、そこで信用を落とします。この言葉が出た現場を毎朝の指摘に出し、作業前に見積もりを伝えたか、追加料金の説明をしたかも並べます。</p>
+<p><img alt="現場の会話の画面。金額トラブルの兆しと、判定に使った言葉" src="assets/kcallai-visit.png" /></p>
+<h2>AI は言い換えだけ</h2>
+<p>数字と判定は規則が作り、AI は「経営者向けに3行と今日やること1つ」に言い換えるだけです。設定に <code>claude -p</code> と書けば Claude Code、<code>codex exec</code> なら Codex、OpenAI 互換の API や社内の Ollama も使えます。デモは社内の gemma4 で動かしていて、要点は4秒弱で返ってきます。AI を設定しなければ、規則の日報だけが LINE に届きます。</p>
+<h2>正直な範囲</h2>
+<ul>
+<li>トビラフォン Cloud の通知メールの実物の文面と、PLAUD CLI の出力の細かい形は、まだ本物で確かめていません。項目名は公式ヘルプから作り、表記ゆれは読めるようにしてあります。導入時に実物1通で合わせます。</li>
+<li>判定は言葉の規則なので、言い回しが違えば「不明」になります。御社の会話を見て言葉を足します。</li>
+<li>通知は着信だけなので、こちらから掛けた折り返しは、一括ダウンロードを取り込むまで見えません。</li>
+</ul>
+<p>デモ（見本データ・ログイン不要）: <a href="https://proto.exbridge.jp/kcallai/#ref=vibeblog-kcallai">proto.exbridge.jp/kcallai/</a>。「見本の新着を1通受信して分析」を押すと、新しい電話が届いて分析されるところを見られます。ソフトウェア一式は <a href="https://kappstore.exbridge.jp/app.php?id=040964c27c153ec2#ref=vibeblog-kcallai">Kurage App Store</a> で、税込220,000円の買い切りです。</p>
+<h2>よくある質問</h2>
+<h3>トビラフォン Cloud の API が無くても取り込めますか</h3>
+<p>取り込めます。公式の「着信を通知」をメールにすれば、音声テキストの入ったメールが着信ごとに届きます。そのメールボックスを読みに行きます。</p>
+<h3>PLAUD のデータはどう取りますか</h3>
+<p>PLAUD 公式の CLI か MCP で取り出します。最初に1回、ブラウザで連携を許可します。画面の自動操作はしません。</p>
+<h3>Zapier や Make は要りますか</h3>
+<p>要りません。メールボックスを読みに行くのと、PLAUD の CLI を呼ぶだけです。つなぎのサービスの月額はかかりません。</p>
+<h3>AI の費用はかかりますか</h3>
+<p>必須ではありません。判定は規則で行います。AI を使う場合は、Claude Code・Codex・OpenAI 互換の API・社内の LLM から選べます。</p>
+<h2>出典</h2>
+<ul>
+<li><a href="https://cloud-faq.tobilaphone.com/pages/217">着信／不在着信の通知を受け取る（トビラフォン Cloud よくある質問）</a></li>
+<li><a href="https://cloud-faq.tobilaphone.com/pages/17631">通話履歴と録音データのダウンロード／削除について（トビラフォン Cloud よくある質問）</a></li>
+<li><a href="https://docs.plaud.ai/plaud-mcp-cli/mcp.md">Plaud MCP</a>・<a href="https://docs.plaud.ai/plaud-mcp-cli/cli.md">Plaud CLI</a></li>
+<li><a href="https://www.plaud.ai/pages/commercial-terms-of-service">Plaud Commercial Terms of Service</a></li>
+</ul></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
