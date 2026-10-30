@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Minecraftで読む：Binanceの巨額被害とMistral Large 4の公開：AIエージェントとWeb3の最前線 10-30](2026-10-30-ai-news-3.html)
 - [Binanceで読む：Mistral Large 4の公開とFableクラスモデルによるマルチプレイヤーゲームの世界構築 10-30](2026-10-30-ai-news-2.html)
 - [Modelsで読む：Mistral Large 4のオープン化とDeepgramによるDaily買収など、最新AI動向まとめ 10-30](2026-10-30-ai-news.html)
 - [MOSSとResearchで読む：Qwen4の登場とLLM学習効率を劇的に改善する新技術の最前線 10-29](2026-10-29-ai-news-4.html)
