@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [広告表現チェックツールを作った——ホームページの「No.1」「〇〇円〜」「見積無料」を、URLを入れるだけで景品表示法と業種の決まりで点検する](2026-10-31-kokoku-hyogen-check-keihyoho.html)
 - [「自分が払った税金の使い道」は追えない——MMTのスペンディング・ファーストと国会会議録で読む、チームみらい「政府予算ビュー」への違和感](2026-10-31-mmt-spending-first-zeikin-tsukaimichi-seifu-yosan-view.html)
 - [GMO不正アクセスと熊谷代表の「能動的サイバー防御」——基本の欠陥を国家級の攻撃に見せる発信は、なぜ技術者の信頼を削るのか](2026-10-31-gmo-kumagai-nodoteki-cyber-bougyo-ensyutsu.html)
 - [PHPの脆弱性と「PHPを使わないシステム」——玉木代表の投稿と補足から考える、影響力のある人のセキュリティ発信](2026-10-31-php-zeijakusei-tamaki-hosoku.html)
