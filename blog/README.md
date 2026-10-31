@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [「自分が払った税金の使い道」は追えない——MMTのスペンディング・ファーストと国会会議録で読む、チームみらい「政府予算ビュー」への違和感](2026-10-31-mmt-spending-first-zeikin-tsukaimichi-seifu-yosan-view.md)
 - [GMO不正アクセスと熊谷代表の「能動的サイバー防御」——基本の欠陥を国家級の攻撃に見せる発信は、なぜ技術者の信頼を削るのか](2026-10-31-gmo-kumagai-nodoteki-cyber-bougyo-ensyutsu.md)
 - [PHPの脆弱性と「PHPを使わないシステム」——玉木代表の投稿と補足から考える、影響力のある人のセキュリティ発信](2026-10-31-php-zeijakusei-tamaki-hosoku.md)
 - [AI SNS運用を国会データで——政治系システム7本で育てた企業のXと、AI-SNS顧問・AI-IT顧問の仕事](2026-10-31-ai-sns-unyou-kokkai-seiji-system.md)
