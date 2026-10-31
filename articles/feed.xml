@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 31 Oct 2026 04:47:10 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 10:58:11 +0000</lastBuildDate>
     <item>
       <title>Nvidiaのデータセンター投資検討とOpenAIの資金調達目標下方修正に見るAI市場の動向 10-31</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-3.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-2.html</guid>
       <pubDate>Sat, 31 Oct 2026 09:00:00 +0000</pubDate>
       <description>Northflankでの大規模なセキュリティ侵害やBinanceによる63億ドルの不正利用に関する報告を解説します。また、NVIDIA Nemotronの最新更新やQwen3.5を用いたNESエミュレータの埋め込み技術など、最新のAI・Web3動向を網羅しています。</description>
+    </item>
+    <item>
+      <title>OpenAIの資金調達見直しとAIブームが引き起こすPCB供給不足の衝撃 10-31</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-4.html</guid>
+      <pubDate>Sat, 31 Oct 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIが資金調達目標や企業評価額の下方修正を検討する中、AI需要によるPCB（プリント基板）の深刻な供給不足が2030年まで続く現状を解説します。Nvidiaのデータセンター共同保証やMOSSの最新プロジェクトも紹介します。</description>
     </item>
     <item>
       <title>Claude Codeのバックドア問題とAIデータセンターの量産化に向けた最新動向 10-31</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news-2.html</guid>
       <pubDate>Wed, 21 Oct 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAのCosmos3による外科手術シミュレーションやDeepSeek向け推論フレームワークDeepInferの最新動向を解説します。またFairStressによるLLMの公平性評価やCoinbaseの企業統治課題など、AIとWeb3の重要ニュースを網羅しています。</description>
-    </item>
-    <item>
-      <title>NVIDIAのCosmos3-HやSpaceXのAI事業が牽引する技術革新の最前線 10-21</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news-4.html</guid>
-      <pubDate>Wed, 21 Oct 2026 09:00:00 +0000</pubDate>
-      <description>NVIDIAが発表した臨床手術シミュレーション技術Cosmos3-H-Dreamsや、SpaceXのAI事業による黒字化など最新技術動向を解説します。PHPの脆弱性情報やCSSの進化についても網羅しています。</description>
     </item>
   </channel>
 </rss>
