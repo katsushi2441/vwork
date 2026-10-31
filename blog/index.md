@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [GMO不正アクセスと熊谷代表の「能動的サイバー防御」——基本の欠陥を国家級の攻撃に見せる発信は、なぜ技術者の信頼を削るのか](2026-10-31-gmo-kumagai-nodoteki-cyber-bougyo-ensyutsu.html)
 - [PHPの脆弱性と「PHPを使わないシステム」——玉木代表の投稿と補足から考える、影響力のある人のセキュリティ発信](2026-10-31-php-zeijakusei-tamaki-hosoku.html)
 - [AI SNS運用を国会データで——政治系システム7本で育てた企業のXと、AI-SNS顧問・AI-IT顧問の仕事](2026-10-31-ai-sns-unyou-kokkai-seiji-system.html)
 - [トビラフォン Cloud と PLAUD の文字起こしを毎朝AI分析する「Kurage 通話AI分析」を作った——失注の理由・折り返し漏れ・現場の金額トラブルをLINEへ](2026-10-30-tobila-plaud-mojiokoshi-ai-bunseki-kcallai.html)
