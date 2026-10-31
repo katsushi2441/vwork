@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 31 Oct 2026 10:58:11 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 15:34:24 +0000</lastBuildDate>
+    <item>
+      <title>Binanceの巨額流出への対応とQwen 3.8 Flash Nextのローカル実行性能 11-01</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-01-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-01-ai-news.html</guid>
+      <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Binanceが63億ドルの大規模侵害において盗難資産の90%を回収したニュースと、RTX 3060環境でQwen 3.8 Flash Nextを高速かつ高精度にローカル実行する事例について解説します。</description>
+    </item>
     <item>
       <title>Nvidiaのデータセンター投資検討とOpenAIの資金調達目標下方修正に見るAI市場の動向 10-31</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news.html</guid>
       <pubDate>Wed, 21 Oct 2026 09:00:00 +0000</pubDate>
       <description>DeepSeekが推論エンジン「DeepInfer」をオープンソース化し、米国政府は国家安全保障の懸念から連邦機関へのDeepSeek削除を命令しました。またQwenを基盤としたOrnith-1.5やAppleデバイスでのローカル実行技術についても解説します。</description>
-    </item>
-    <item>
-      <title>NVIDIAのCosmos3やDeepSeek向け推論フレームワークなど、進化するAI技術とWeb3動向 10-21</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news-2.html</guid>
-      <pubDate>Wed, 21 Oct 2026 09:00:00 +0000</pubDate>
-      <description>NVIDIAのCosmos3による外科手術シミュレーションやDeepSeek向け推論フレームワークDeepInferの最新動向を解説します。またFairStressによるLLMの公平性評価やCoinbaseの企業統治課題など、AIとWeb3の重要ニュースを網羅しています。</description>
     </item>
   </channel>
 </rss>
