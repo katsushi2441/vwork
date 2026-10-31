@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Nvidiaのデータセンター投資検討とOpenAIの資金調達目標下方修正に見るAI市場の動向 10-31](2026-10-31-ai-news-3.html)
 - [Binanceで読む：Northflankのセキュリティ侵害とNVIDIA Nemotron、Qwenによるエミュレーション技術の進展 10-31](2026-10-31-ai-news-2.html)
 - [Claude Codeのバックドア問題とAIデータセンターの量産化に向けた最新動向 10-31](2026-10-31-ai-news.html)
 - [Minecraftで読む：Binanceの巨額被害とMistral Large 4の公開：AIエージェントとWeb3の最前線 10-30](2026-10-30-ai-news-3.html)

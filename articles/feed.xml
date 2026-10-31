@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 30 Oct 2026 22:35:40 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 04:47:10 +0000</lastBuildDate>
+    <item>
+      <title>Nvidiaのデータセンター投資検討とOpenAIの資金調達目標下方修正に見るAI市場の動向 10-31</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-3.html</guid>
+      <pubDate>Sat, 31 Oct 2026 09:00:00 +0000</pubDate>
+      <description>Nvidiaがウェストバージニア州のAIデータセンター建設への共同保証を検討する動きや、OpenAIが資金調達目標と評価額を下方修正した背景など、最新のAI市場動向を解説します。Claude Codeの脆弱性情報も網羅しています。</description>
+    </item>
     <item>
       <title>Binanceで読む：Northflankのセキュリティ侵害とNVIDIA Nemotron、Qwenによるエミュレーション技術の進展 10-31</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-21-ai-news-4.html</guid>
       <pubDate>Wed, 21 Oct 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAが発表した臨床手術シミュレーション技術Cosmos3-H-Dreamsや、SpaceXのAI事業による黒字化など最新技術動向を解説します。PHPの脆弱性情報やCSSの進化についても網羅しています。</description>
-    </item>
-    <item>
-      <title>Microsoftが警鐘を鳴らすAIエージェントの脅威と、Amazon・DeepSeekによるインフラ競争の最前線 10-20</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-20-ai-news-4.html</guid>
-      <pubDate>Tue, 20 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Microsoftが警告するAIエージェントの内部脅威や、AmazonのTorchNeuronによるNVIDIAへの対抗策を解説します。さらにDeepSeekの推論フレームワーク公開や、AnthropicとNscaleの450億ドル規模の契約交渉など最新動向を網羅します。</description>
     </item>
   </channel>
 </rss>
