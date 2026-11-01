@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [ChatGPTの脆弱性とxAIを巡る環境訴訟：最新のAI・Web3動向 11-01](2026-11-01-ai-news-3.html)
 - [Qwenの内部にNPUを実装する技術革新とAppleのAI戦略 11-01](2026-11-01-ai-news-2.html)
 - [Binanceの巨額流出への対応とQwen 3.8 Flash Nextのローカル実行性能 11-01](2026-11-01-ai-news.html)
 - [OpenAIの資金調達見直しとAIブームが引き起こすPCB供給不足の衝撃 10-31](2026-10-31-ai-news-4.html)
