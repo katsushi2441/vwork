@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Heretic 2.0のリリースとNVIDIA GPUの在庫過剰問題から見るAI市場の現状 11-02](2026-11-02-ai-news.html)
 - [Appleの戦略とxAIを巡る訴訟：実用性と環境負荷が問われるAI開発の最前線 11-01](2026-11-01-ai-news-4.html)
 - [ChatGPTの脆弱性とxAIを巡る環境訴訟：最新のAI・Web3動向 11-01](2026-11-01-ai-news-3.html)
 - [Qwenの内部にNPUを実装する技術革新とAppleのAI戦略 11-01](2026-11-01-ai-news-2.html)

@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 01 Nov 2026 10:11:55 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 15:20:49 +0000</lastBuildDate>
+    <item>
+      <title>Heretic 2.0のリリースとNVIDIA GPUの在庫過剰問題から見るAI市場の現状 11-02</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news.html</guid>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Heretic 2.0のリリースにより誰もがモデルのカスタマイズが可能になる一方で、NVIDIA GPUの在庫過剰問題も浮き彫りになっています。AIインフラへの投資と実際の需要の乖離など、現在の市場動向を解説します。</description>
+    </item>
     <item>
       <title>Appleの戦略とxAIを巡る訴訟：実用性と環境負荷が問われるAI開発の最前線 11-01</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-01-ai-news-4.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news.html</guid>
       <pubDate>Thu, 22 Oct 2026 09:00:00 +0000</pubDate>
       <description>IBM Granite Speech 5.0の音声処理能力向上や、iPhoneで35B MoEモデルを高速動作させる新技術LESの実装について解説します。さらにMemT-1.0やNVIDIA Kumo Forecastの新機能も紹介します。</description>
-    </item>
-    <item>
-      <title>PHPで読む：LiteLLMの脆弱性とMistral Large 4、そして小売業界におけるAIエージェントの動向 10-22</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-2.html</guid>
-      <pubDate>Thu, 22 Oct 2026 09:00:00 +0000</pubDate>
-      <description>LiteLLMの脆弱性やPHPの緊急セキュリティアップデート、Mistral Large 4の最新動向を解説します。また、NVIDIA Kumo Relationalの性能報告やWalmartによるAIエージェント導入など、最新の技術情報を網羅しています。</description>
     </item>
   </channel>
 </rss>
