@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [GMOインターネットの評判。好んで選んだ覚えがないのに、気づけば「GMOのユーザー」になっていた理由](2026-11-02-gmo-internet-hyouban-baishu-user.html)
 - [LLMO・AIO対策の効果を毎週測る。ChatGPTに自社が何番目に勧められるかを記録する「Kurage AI言及トラッカー」を作った](2026-11-02-llmo-taisaku-chatgpt-genkyu-kmention.html)
 - [政治家のXアカウントをスタッフが運用するときの注意点——「本人かスタッフか」は投稿ごとに書く](2026-11-01-seijika-x-staff-unyou-chuuiten.html)
 - [業務システム開発の費用を下げる方法——受託開発を「ダウンロード販売」に変えて、要件を送るだけで最短4営業日にした話](2026-11-01-gyomu-system-kaihatsu-hiyou-download.html)
