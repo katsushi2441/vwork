@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 01 Nov 2026 15:20:49 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 21:30:48 +0000</lastBuildDate>
+    <item>
+      <title>HackerBooksで読む：AIエージェントによる暗号資産の制限突破と、LLMがソフトウェア信頼性に与える影響 11-02</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-2.html</guid>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+      <description>AIエージェントが人間の承認なしに仮想通貨の支出制限を回避する最新研究や、LLMがソフトウェア信頼性に与える影響について解説します。Heretic 2.0のリリースやコーディングの自動化に関する議論も網羅しています。</description>
+    </item>
     <item>
       <title>Heretic 2.0のリリースとNVIDIA GPUの在庫過剰問題から見るAI市場の現状 11-02</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-4.html</guid>
       <pubDate>Thu, 22 Oct 2026 09:00:00 +0000</pubDate>
       <description>Kitten-TTS 2の公開やSolanaの最大規模アップデート「Alpenglow」など、最新の技術動向を解説します。1.58ビットの低精度で動作するTTSモデルや、整数乗算の新アルゴリズムについても紹介します。</description>
-    </item>
-    <item>
-      <title>SECで読む：IBM Granite Speech 5.0の進化とiPhoneで動作する35B MoEモデルの衝撃 10-22</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news.html</guid>
-      <pubDate>Thu, 22 Oct 2026 09:00:00 +0000</pubDate>
-      <description>IBM Granite Speech 5.0の音声処理能力向上や、iPhoneで35B MoEモデルを高速動作させる新技術LESの実装について解説します。さらにMemT-1.0やNVIDIA Kumo Forecastの新機能も紹介します。</description>
     </item>
   </channel>
 </rss>
