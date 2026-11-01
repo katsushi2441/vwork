@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [政治家のXアカウントをスタッフが運用するときの注意点——「本人かスタッフか」は投稿ごとに書く](2026-11-01-seijika-x-staff-unyou-chuuiten.md)
 - [業務システム開発の費用を下げる方法——受託開発を「ダウンロード販売」に変えて、要件を送るだけで最短4営業日にした話](2026-11-01-gyomu-system-kaihatsu-hiyou-download.md)
 - [広告表現チェックツールを作った——ホームページの「No.1」「〇〇円〜」「見積無料」を、URLを入れるだけで景品表示法と業種の決まりで点検する](2026-10-31-kokoku-hyogen-check-keihyoho.md)
 - [「自分が払った税金の使い道」は追えない——MMTのスペンディング・ファーストと国会会議録で読む、チームみらい「政府予算ビュー」への違和感](2026-10-31-mmt-spending-first-zeikin-tsukaimichi-seifu-yosan-view.md)
