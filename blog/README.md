@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [GMO熊谷代表の会見まとめ（2026年11月2日）｜お名前.com デスクトップクラウドの不正アクセスで認めたこと・補償・まだ答えていないこと](2026-11-02-gmo-kumagai-kaiken-matome.md)
 - [誤嚥性肺炎を防ぐために、脳梗塞のあとはおかゆから始まる｜退院後の介護保険は40〜64歳も使える（特定疾病）](2026-11-02-goensei-haien-noukousoku-okayu-kaigo.md)
 - [神エクセルを採点するデジタル庁の Harunobu は民業圧迫か｜機械可読性ルールの採点ツールを MIT で公開した狙いを読む](2026-11-02-harunobu-kami-excel-digital-cho-oss.md)
 - [派遣会社のマージン率や求人の年齢制限をホームページで点検する｜Kurage 広告表現チェックに人材派遣・職業紹介の決まりを足した](2026-11-02-haken-margin-ritsu-kyujin-hyogen-check.md)
