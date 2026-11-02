@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [派遣会社のマージン率や求人の年齢制限をホームページで点検する｜Kurage 広告表現チェックに人材派遣・職業紹介の決まりを足した](2026-11-02-haken-margin-ritsu-kyujin-hyogen-check.html)
 - [カブアンドの株価と上場｜株引換券の原資は料金の上乗せ。会員の名簿と取り次ぎの手数料に、株価を支える価値はあるか](2026-11-02-kabuand-kabuka-jojo-shikumi.html)
 - [YouTubeの収益化停止と家族系YouTuber｜西村ゆかさんの「有名配信者の収益化も止めれば」への違和感](2026-11-02-youtube-shuekika-teishi-kazokukei-youtuber.html)
 - [SaaSからオンプレミスへ、業務システムを内製化する｜ソースコード付きの製品とOSSをバイブコーディングで直し、AI-IT顧問で運用する](2026-11-02-saas-onpremise-naiseika-ai-it-komon.html)
