@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [カブアンドの株価と上場｜株引換券の原資は料金の上乗せ。会員の名簿と取り次ぎの手数料に、株価を支える価値はあるか](2026-11-02-kabuand-kabuka-jojo-shikumi.md)
 - [YouTubeの収益化停止と家族系YouTuber｜西村ゆかさんの「有名配信者の収益化も止めれば」への違和感](2026-11-02-youtube-shuekika-teishi-kazokukei-youtuber.md)
 - [SaaSからオンプレミスへ、業務システムを内製化する｜ソースコード付きの製品とOSSをバイブコーディングで直し、AI-IT顧問で運用する](2026-11-02-saas-onpremise-naiseika-ai-it-komon.md)
 - [GMOインターネットの評判。好んで選んだ覚えがないのに、気づけば「GMOのユーザー」になっていた理由](2026-11-02-gmo-internet-hyouban-baishu-user.md)
