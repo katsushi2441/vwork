@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [神エクセルを採点するデジタル庁の Harunobu は民業圧迫か｜機械可読性ルールの採点ツールを MIT で公開した狙いを読む](2026-11-02-harunobu-kami-excel-digital-cho-oss.md)
 - [派遣会社のマージン率や求人の年齢制限をホームページで点検する｜Kurage 広告表現チェックに人材派遣・職業紹介の決まりを足した](2026-11-02-haken-margin-ritsu-kyujin-hyogen-check.md)
 - [カブアンドの株価と上場｜株引換券の原資は料金の上乗せ。会員の名簿と取り次ぎの手数料に、株価を支える価値はあるか](2026-11-02-kabuand-kabuka-jojo-shikumi.md)
 - [YouTubeの収益化停止と家族系YouTuber｜西村ゆかさんの「有名配信者の収益化も止めれば」への違和感](2026-11-02-youtube-shuekika-teishi-kazokukei-youtuber.md)
