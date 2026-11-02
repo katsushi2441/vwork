@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [誤嚥性肺炎を防ぐために、脳梗塞のあとはおかゆから始まる｜退院後の介護保険は40〜64歳も使える（特定疾病）](2026-11-02-goensei-haien-noukousoku-okayu-kaigo.html)
 - [神エクセルを採点するデジタル庁の Harunobu は民業圧迫か｜機械可読性ルールの採点ツールを MIT で公開した狙いを読む](2026-11-02-harunobu-kami-excel-digital-cho-oss.html)
 - [派遣会社のマージン率や求人の年齢制限をホームページで点検する｜Kurage 広告表現チェックに人材派遣・職業紹介の決まりを足した](2026-11-02-haken-margin-ritsu-kyujin-hyogen-check.html)
 - [カブアンドの株価と上場｜株引換券の原資は料金の上乗せ。会員の名簿と取り次ぎの手数料に、株価を支える価値はあるか](2026-11-02-kabuand-kabuka-jojo-shikumi.html)
