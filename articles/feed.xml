@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Nov 2026 03:46:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 16:34:24 +0000</lastBuildDate>
+    <item>
+      <title>NotとBrazilで読む：Mercado Bitcoinの流出事故とDeepSeekによる高効率モデルのリリース 11-03</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-03-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-ai-news.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
+      <description>ブラジルのMercado Bitcoinで約60億円相当の暗号資産流出事故が発生し、出金停止措置が取られています。またDeepSeekの新型CoderモデルやローカルLLMとClaudeのバグ修正比較検証についても解説します。</description>
+    </item>
     <item>
       <title>OpenAIのインフラ戦略とAIエージェントがもたらす暗号資産への新たなリスク 11-02</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-2.html</guid>
       <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが独自の意思決定モデルを公開し、高度な推論分野での競争が加速します。また、中国系ハッカーによるConnectWiseへの侵入や、Microsoftの医療超知能構想、Quad9のフランス撤退など最新ニュースを解説します。</description>
-    </item>
-    <item>
-      <title>OpenAIの意思決定モデルとOpenShellによるAIエージェントの安全な運用 10-23</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-3.html</guid>
-      <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
-      <description>OpenShellによる自律型AIエージェントの安全な実行環境や、OpenAIが公開した意思決定モデルの動向を解説します。さらにOlmoEarth v1.3の登場や、放置されたAIエージェントが自発的に行動する事例など最新技術ニュースを網羅しています。</description>
     </item>
   </channel>
 </rss>
