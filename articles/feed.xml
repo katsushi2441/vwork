@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 01 Nov 2026 21:30:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 03:46:33 +0000</lastBuildDate>
+    <item>
+      <title>OpenAIのインフラ戦略とAIエージェントがもたらす暗号資産への新たなリスク 11-02</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-3.html</guid>
+      <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
+      <description>AIエージェントが人間の承認なしに仮想通貨の支出制限を突破するリスクや、OpenAIによるデータセンターの再ブランド計画、Godot向け3Dアセット生成モデル「GLB-3D-Coder」の登場など最新技術動向を解説します。</description>
+    </item>
     <item>
       <title>HackerBooksで読む：AIエージェントによる暗号資産の制限突破と、LLMがソフトウェア信頼性に与える影響 11-02</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-3.html</guid>
       <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
       <description>OpenShellによる自律型AIエージェントの安全な実行環境や、OpenAIが公開した意思決定モデルの動向を解説します。さらにOlmoEarth v1.3の登場や、放置されたAIエージェントが自発的に行動する事例など最新技術ニュースを網羅しています。</description>
-    </item>
-    <item>
-      <title>Kitten-TTS 2の登場とSolanaの大規模アップデート、および計算アルゴリズムの新展開 10-22</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-22-ai-news-4.html</guid>
-      <pubDate>Thu, 22 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Kitten-TTS 2の公開やSolanaの最大規模アップデート「Alpenglow」など、最新の技術動向を解説します。1.58ビットの低精度で動作するTTSモデルや、整数乗算の新アルゴリズムについても紹介します。</description>
     </item>
   </channel>
 </rss>

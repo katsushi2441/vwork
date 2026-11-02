@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIのインフラ戦略とAIエージェントがもたらす暗号資産への新たなリスク 11-02](2026-11-02-ai-news-3.html)
 - [HackerBooksで読む：AIエージェントによる暗号資産の制限突破と、LLMがソフトウェア信頼性に与える影響 11-02](2026-11-02-ai-news-2.html)
 - [Heretic 2.0のリリースとNVIDIA GPUの在庫過剰問題から見るAI市場の現状 11-02](2026-11-02-ai-news.html)
 - [Appleの戦略とxAIを巡る訴訟：実用性と環境負荷が問われるAI開発の最前線 11-01](2026-11-01-ai-news-4.html)
