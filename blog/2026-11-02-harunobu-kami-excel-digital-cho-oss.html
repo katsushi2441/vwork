@@ -1,0 +1,75 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>神エクセルを採点するデジタル庁の Harunobu は民業圧迫か｜機械可読性ルールの採点ツールを MIT で公開した狙いを読む | VWork バイブコーディングフレームワーク</title><meta name="description" content="デジタル庁が、Excel や CSV が機械で読める作りになっているかを100点満点で採点するツール Harunobu（はるのぶ）を GitHub で公開しました。国が OSS を作って配るのは民業圧迫ではないかと思いましたが、README を読むと、目的は行政自身のデータで、ツールは「サンプル実装」、ライセンスは商用利用も自由な MIT でした。国がものさしを配り、直す仕事は民間に残る形です。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-11-02-harunobu-kami-excel-digital-cho-oss.html"><meta property="og:type" content="article"><meta property="og:title" content="神エクセルを採点するデジタル庁の Harunobu は民業圧迫か｜機械可読性ルールの採点ツールを MIT で公開した狙いを読む"><meta property="og:description" content="デジタル庁が、Excel や CSV が機械で読める作りになっているかを100点満点で採点するツール Harunobu（はるのぶ）を GitHub で公開しました。国が OSS を作って配るのは民業圧迫ではないかと思いましたが、README を読むと、目的は行政自身のデータで、ツールは「サンプル実装」、ライセンスは商用利用も自由な MIT でした。国がものさしを配り、直す仕事は民間に残る形です。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-11-02-harunobu-kami-excel-digital-cho-oss.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="神エクセルを採点するデジタル庁の Harunobu は民業圧迫か｜機械可読性ルールの採点ツールを MIT で公開した狙いを読む"><meta name="twitter:description" content="デジタル庁が、Excel や CSV が機械で読める作りになっているかを100点満点で採点するツール Harunobu（はるのぶ）を GitHub で公開しました。国が OSS を作って配るのは民業圧迫ではないかと思いましたが、README を読むと、目的は行政自身のデータで、ツールは「サンプル実装」、ライセンスは商用利用も自由な MIT でした。国がものさしを配り、直す仕事は民間に残る形です。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "神エクセルを採点するデジタル庁の Harunobu は民業圧迫か｜機械可読性ルールの採点ツールを MIT で公開した狙いを読む", "description": "デジタル庁が、Excel や CSV が機械で読める作りになっているかを100点満点で採点するツール Harunobu（はるのぶ）を GitHub で公開しました。国が OSS を作って配るのは民業圧迫ではないかと思いましたが、README を読むと、目的は行政自身のデータで、ツールは「サンプル実装」、ライセンスは商用利用も自由な MIT でした。国がものさしを配り、直す仕事は民間に残る形です。", "url": "https://katsushi2441.github.io/vwork/blog/2026-11-02-harunobu-kami-excel-digital-cho-oss.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-11-02", "dateModified": "2026-11-02", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>神エクセルを採点するデジタル庁の Harunobu は民業圧迫か｜機械可読性ルールの採点ツールを MIT で公開した狙いを読む</h1><p class="meta">2026-11-02</p><p>名古屋でAIシステムの開発をしている小嶋です。</p>
+<p>11月2日の古川デジタル大臣の会見で、機械可読性チェックツール「Harunobu（はるのぶ）」の公開が取り上げられました。デジタル庁が、自分でソフトウェアを作って、オープンソースで配っているわけです。</p>
+<p>私たちのように、業務システムを作って売っている会社から見ると、最初に浮かぶのは「国が無料のソフトを配ったら、民間の仕事を奪うのではないか」という疑問です。そこで、公開されているリポジトリの説明（README）とライセンスを読んでみました。</p>
+<h2>Harunobu は何をするツールか</h2>
+<p>Excel や CSV のファイルが、プログラムや AI で読める作りになっているかを、100点満点で採点するツールです。セル結合だらけで、見た目は整っているのに機械では読めない、いわゆる「神エクセル」が減点されます。</p>
+<ul>
+<li>基準は、2026年3月31日に政府が決めた「行政データにおける機械可読性に関するルール」です</li>
+<li>採点はルールのレベルごとに行い、違反した箇所、違反したルール、その理由を JSON か CSV で出します</li>
+<li>使い方は、コマンド、ブラウザの画面、Python のプログラムから呼ぶ形の3つです</li>
+<li>判定は決まった規則で行います（AI で補う機能を付けることもできます）</li>
+<li>公開先は、デジタル庁の GitHub（digital-go-jp/machine_readability_rule）です。2026年10月21日に公開されました</li>
+</ul>
+<h2>デジタル庁の狙い</h2>
+<p>README を読むと、狙いは3つあると読めました。</p>
+<h3>1. 目的は、まず行政自身のデータ</h3>
+<p>役所が出す統計や公開データが、AI やシステムで読めない Excel ばかりでは、データを使った行政も、民間でのデータの活用も進みません。ルールも、このツールも、まず行政のデータを直すためのものです。</p>
+<h3>2. 配っているのは「ものさし」</h3>
+<p>リポジトリでは、ルールそのものを、機械で読める JSON と CSV で公開しています。採点ツールのほうは、README で「サンプル実装」と書かれています。さらに、「ルールに基づいたExcelファイルの判定、修正などを行うシステム開発時の参考としてご利用ください」とあります。</p>
+<p>完成品の製品として配っているのではありません。「このルールは、こう使えば判定できる」という見本を出した形です。</p>
+<h3>3. 民間が組み込んで売ってよいライセンス</h3>
+<p>ライセンスは、ツールの部分が MIT ライセンス、ルールの部分が公共データ利用規約（PDL1.0）です。MIT ライセンスは、商用利用も、改変も、再配布も自由です。民間の会社が自社の製品やサービスに組み込んで売ることも認められています。</p>
+<h2>民業圧迫になるのか</h2>
+<p>結論から言うと、なりにくいと私は考えています。</p>
+<p><strong>なりにくい理由</strong>：Harunobu は採点するだけで、Excel を直すことはしません。README でも、結果のファイルを、AI に直させるときの指示書として使うことを想定しています。採点はできても、直すのは別の誰かの仕事です。その「直す仕事」は民間に残ります。</p>
+<p><strong>なりうる部分</strong>：もし Excel の機械可読性を採点するソフトを売っている会社があれば、無料の公式版と競うことになります。ただ、そういう市場は小さく、デジタル庁の主な目的は行政のデータのほうだと思います。</p>
+<p>国がものさしを無料で配り、そのものさしで測られたものを直す仕事は民間に回ってくる。この形なら、民業圧迫というより、民間の仕事の土台を作っていると見るほうが近いと思います。</p>
+<h2>当社から見ると、乗る側に回るほうが得</h2>
+<p>Harunobu の作りは、当社が作っているシステムとよく似ています。</p>
+<ul>
+<li>判定に AI を使わず、決まった規則で採点する</li>
+<li>点数と、違反した箇所と、その理由を出す</li>
+<li>直すところは人や AI に任せる</li>
+</ul>
+<p>当社の「Kurage 広告表現チェック」や「Kurage Security Check」も、この考え方で作っています。同じ考え方の公式のものさしが出てきたのは、心強いことです。</p>
+<p>MIT ライセンスなので、次のような使い方ができます。</p>
+<ul>
+<li>会社や自治体の Excel を Harunobu で採点し、違反した箇所を AI に渡して直すところまで引き受ける</li>
+<li>AI-OCR で紙の書類を読み取ったデータを、機械で読める形に整えるところまでを一式にする</li>
+</ul>
+<p>当社の AI-OCR「Kurage OCR Work」は、注文書や手書きの FAX を読み取って、データにするところまでを行うシステムです。その先の「機械で読める形に整える」ところに、Harunobu のルールを組み込めます。</p>
+<p>https://kappstore.exbridge.jp/app.php?id=ef52a62e1c6bbe7a#ref=vibeblog-harunobu</p>
+<p>社内の Excel を、AI やシステムで使える形に直したいというご相談は、愛知県内の会社さま向けの AI-IT顧問でお引き受けしています。</p>
+<p>https://exbridge.jp/ai-it-komon.html#ref=vibeblog-harunobu</p>
+<h2>よくある質問</h2>
+<h3>Harunobu は無料で使えますか？</h3>
+<p>使えます。デジタル庁の GitHub で公開されていて、ツールの部分は MIT ライセンスです。商用利用や改変、自社のシステムへの組み込みも自由です。</p>
+<h3>Harunobu は Excel を直してくれますか？</h3>
+<p>直しません。違反した箇所と理由を JSON か CSV で出すところまでです。直すのは人の作業か、結果を AI に渡して直させる形になります。</p>
+<h3>「神エクセル」とは何ですか？</h3>
+<p>セル結合や空白の行、見出しの重なりなどで、人が見ると整っているのに、プログラムや AI では読めない Excel のことを指す呼び方です。Harunobu は、こうした作りを政府のルールに照らして減点します。</p>
+<h3>国が OSS を公開するのは、民業圧迫になりませんか？</h3>
+<p>今回の Harunobu は、行政自身のデータを直すためのもので、README では「サンプル実装」と書かれています。採点だけを行い、直す仕事は民間に残ります。商用利用も自由なライセンスなので、民間が組み込んで使える形です。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
