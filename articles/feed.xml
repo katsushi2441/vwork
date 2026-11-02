@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Nov 2026 20:03:54 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 22:46:43 +0000</lastBuildDate>
     <item>
       <title>文字起こしAI「Haas-ja-v1.0」とは——日本語の公開モデルで最高精度・Whisperの15倍速。使い方と弱点、AI議事録の自社サーバー版に組み込む計画</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-03-haas-ja-v1-japanese-asr-kaimom-pro.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-haas-ja-v1-japanese-asr-kaimom-pro.html</guid>
       <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
       <description>2026年10月に公開された日本語の文字起こしAI「Haas-ja-v1.0」（Apache 2.0）を解説します。公開モデルで最も低い文字誤り率6.12%、Whisper large-v3の15〜17倍の速さという公表値、使い方、NVIDIAのGPUが必須などの弱点、当社のAI議事録システムに組み込む Kurage AI MOM Pro（Haas版）の計画までまとめました。</description>
+    </item>
+    <item>
+      <title>Qwenの重み操作からAnthropicの自己構築AIまで：進化するAI技術と法的対立の最前線 11-03</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-03-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-ai-news-2.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
+      <description>AstraによるQwenのモデル重み操作技術や、Anthropicが警告する自己構築AI（RSI）への接近など、最新のAI動向を解説します。42AIの資金調達やSubvocalの無発声対話技術についても紹介します。</description>
     </item>
     <item>
       <title>NotとBrazilで読む：Mercado Bitcoinの流出事故とDeepSeekによる高効率モデルのリリース 11-03</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-4.html</guid>
       <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
       <description>OpenAIの新意思決定モデルやDockerの代替技術、MITの研究によるAIエージェントの自発的な遊びなど、最新のAI動向を解説します。1Passwordの安全なログイン機能やThinkingBoxを用いた強化学習の技術も紹介します。</description>
-    </item>
-    <item>
-      <title>DeepSeekの巨額資金調達とSpotify、AnthropicによるAIエージェント戦略の動向 10-23</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news.html</guid>
-      <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
-      <description>DeepSeekが米国による制限直後に150億ドルの資金調達を実施したニュースや、SpotifyがAIエージェント向け戦略へ転換する動向を解説します。またAnthropicのClaude Duet発表やLing-3.1-flashの更新情報も網羅しています。</description>
     </item>
   </channel>
 </rss>
