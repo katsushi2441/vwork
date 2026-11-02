@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [業務システムを買い切りで安く｜保守契約なし・月額なしで税込55,000円から。全102商品の一覧（オンプレミス）](2026-11-03-kappstore-zen-shohin-ichiran.html)
 - [GMO熊谷代表の会見まとめ（2026年11月2日）｜お名前.com デスクトップクラウドの不正アクセスで認めたこと・補償・まだ答えていないこと](2026-11-02-gmo-kumagai-kaiken-matome.html)
 - [誤嚥性肺炎を防ぐために、脳梗塞のあとはおかゆから始まる｜退院後の介護保険は40〜64歳も使える（特定疾病）](2026-11-02-goensei-haien-noukousoku-okayu-kaigo.html)
 - [神エクセルを採点するデジタル庁の Harunobu は民業圧迫か｜機械可読性ルールの採点ツールを MIT で公開した狙いを読む](2026-11-02-harunobu-kami-excel-digital-cho-oss.html)
