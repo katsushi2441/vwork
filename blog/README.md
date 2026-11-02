@@ -13,6 +13,7 @@ VWork Blogは、バイブコーディングを企業内に導入するための�
 
 ## 記事
 
+- [SaaSからオンプレミスへ、業務システムを内製化する｜ソースコード付きの製品とOSSをバイブコーディングで直し、AI-IT顧問で運用する](2026-11-02-saas-onpremise-naiseika-ai-it-komon.md)
 - [GMOインターネットの評判。好んで選んだ覚えがないのに、気づけば「GMOのユーザー」になっていた理由](2026-11-02-gmo-internet-hyouban-baishu-user.md)
 - [LLMO・AIO対策の効果を毎週測る。ChatGPTに自社が何番目に勧められるかを記録する「Kurage AI言及トラッカー」を作った](2026-11-02-llmo-taisaku-chatgpt-genkyu-kmention.md)
 - [政治家のXアカウントをスタッフが運用するときの注意点——「本人かスタッフか」は投稿ごとに書く](2026-11-01-seijika-x-staff-unyou-chuuiten.md)
