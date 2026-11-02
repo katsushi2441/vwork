@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [文字起こしAI「Haas-ja-v1.0」とは——日本語の公開モデルで最高精度・Whisperの15倍速。使い方と弱点、AI議事録の自社サーバー版に組み込む計画](2026-11-03-haas-ja-v1-japanese-asr-kaimom-pro.html)
 - [NotとBrazilで読む：Mercado Bitcoinの流出事故とDeepSeekによる高効率モデルのリリース 11-03](2026-11-03-ai-news.html)
 - [OpenAIのインフラ戦略とAIエージェントがもたらす暗号資産への新たなリスク 11-02](2026-11-02-ai-news-3.html)
 - [HackerBooksで読む：AIエージェントによる暗号資産の制限突破と、LLMがソフトウェア信頼性に与える影響 11-02](2026-11-02-ai-news-2.html)
