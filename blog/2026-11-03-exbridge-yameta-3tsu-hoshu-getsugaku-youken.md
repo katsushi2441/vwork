@@ -96,6 +96,7 @@ og_stat_note: "株式会社エクスブリッジ（名古屋）"
 - 会社名：株式会社エクスブリッジ
 - 所在地：愛知県名古屋市瑞穂区
 - 設立：2004年
+- 資本金：1億250万円
 - 代表取締役：小嶋 篤
 - 仕事：AI を使った中小企業向けの業務システムの開発、[Kurage App Store](https://kappstore.exbridge.jp/#ref=vibeblog-yameta3) の運営、AI-IT顧問
 
