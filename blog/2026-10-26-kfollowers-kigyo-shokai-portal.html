@@ -1,0 +1,111 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Xでフォローしてくれた企業の紹介ページを作ります——「Kurage フォロワーポータル」を始めた理由と、企業公式サイトにとってのメリット | VWork バイブコーディングフレームワーク</title><meta name="description" content="Xでフォローしてくださった企業を、公式サイトと公式アカウントで公開されている情報から1社1ページで紹介する「Kurage フォロワーポータル」を始めました。作った理由と、企業公式サイトにとってのメリット（被リンク、社名検索の入口、AI検索に引用されやすい形、公式アカウントの一覧）、掲載の申し込み方をまとめます。"><meta name="robots" content="index, follow"><link rel="canonical" href="https://katsushi2441.github.io/vwork/blog/2026-10-26-kfollowers-kigyo-shokai-portal.html"><meta property="og:type" content="article"><meta property="og:title" content="Xでフォローしてくれた企業の紹介ページを作ります——「Kurage フォロワーポータル」を始めた理由と、企業公式サイトにとってのメリット"><meta property="og:description" content="Xでフォローしてくださった企業を、公式サイトと公式アカウントで公開されている情報から1社1ページで紹介する「Kurage フォロワーポータル」を始めました。作った理由と、企業公式サイトにとってのメリット（被リンク、社名検索の入口、AI検索に引用されやすい形、公式アカウントの一覧）、掲載の申し込み方をまとめます。"><meta property="og:url" content="https://katsushi2441.github.io/vwork/blog/2026-10-26-kfollowers-kigyo-shokai-portal.html"><meta property="og:site_name" content="VWork バイブコーディングフレームワーク"><meta property="og:locale" content="ja_JP"><meta property="og:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Xでフォローしてくれた企業の紹介ページを作ります——「Kurage フォロワーポータル」を始めた理由と、企業公式サイトにとってのメリット"><meta name="twitter:description" content="Xでフォローしてくださった企業を、公式サイトと公式アカウントで公開されている情報から1社1ページで紹介する「Kurage フォロワーポータル」を始めました。作った理由と、企業公式サイトにとってのメリット（被リンク、社名検索の入口、AI検索に引用されやすい形、公式アカウントの一覧）、掲載の申し込み方をまとめます。"><meta name="twitter:image" content="https://exbridge.jp/images/vwork-blog-ogp.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Xでフォローしてくれた企業の紹介ページを作ります——「Kurage フォロワーポータル」を始めた理由と、企業公式サイトにとってのメリット", "description": "Xでフォローしてくださった企業を、公式サイトと公式アカウントで公開されている情報から1社1ページで紹介する「Kurage フォロワーポータル」を始めました。作った理由と、企業公式サイトにとってのメリット（被リンク、社名検索の入口、AI検索に引用されやすい形、公式アカウントの一覧）、掲載の申し込み方をまとめます。", "url": "https://katsushi2441.github.io/vwork/blog/2026-10-26-kfollowers-kigyo-shokai-portal.html", "image": "https://exbridge.jp/images/vwork-blog-ogp.png", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "author": {"@type": "Organization", "name": "株式会社エクスブリッジ"}, "publisher": {"@type": "Organization", "name": "株式会社エクスブリッジ"}}</script><script async src="https://www.googletagmanager.com/gtag/js?id=G-BP0650KDFR"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-BP0650KDFR');</script><script>(function(){var s=document.createElement('script');s.src='https://exbridge.jp/simpletrack.php?url='+encodeURIComponent(location.href)+'&ref='+encodeURIComponent(document.referrer);document.head.appendChild(s);})();</script><style>
+:root { --ink:#17242b; --muted:#52636b; --line:#d9e4e8; --blue:#0089a1; --green:#55c500; --paper:#f5f8f9; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif; line-height:1.8; letter-spacing:0; }
+    a { color:var(--blue); text-decoration:none; }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    .bar { max-width:960px; margin:0 auto; padding:16px 22px; display:flex; justify-content:space-between; gap:16px; align-items:center; }
+    .brand { font-weight:800; color:var(--ink); }
+    nav { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; font-weight:700; }
+    main { max-width:960px; margin:0 auto; padding:34px 22px 64px; }
+    article { background:#fff; border:1px solid var(--line); border-radius:8px; padding:34px; box-shadow:0 4px 18px rgba(20,38,50,.06); }
+    h1 { margin:0 0 18px; font-size:34px; line-height:1.3; }
+    h2 { margin:34px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--blue); font-size:23px; line-height:1.35; }
+    h3 { margin:26px 0 10px; font-size:18px; }
+    p { margin:0 0 14px; }
+    article p > img { display:block; width:min(100%, 560px); height:auto; margin:6px auto 22px; border:1px solid var(--line); border-radius:6px; box-shadow:0 3px 14px rgba(20,38,50,.08); }
+    ul { padding-left:1.3em; }
+    code { padding:.1em .28em; background:#edf4f6; border-radius:4px; font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.92em; }
+    pre { overflow:auto; padding:16px; background:#10212a; color:#e7f9ff; border-radius:7px; line-height:1.55; }
+    pre code { padding:0; background:transparent; color:inherit; }
+    .meta { margin:-8px 0 22px; color:var(--muted); font-size:13px; }
+    footer { max-width:960px; margin:0 auto; padding:0 22px 32px; color:var(--muted); font-size:12px; }
+    @media (max-width:720px) { .bar { align-items:flex-start; flex-direction:column; } article { padding:22px; } h1 { font-size:27px; } }
+</style></head><body><header><div class="bar"><a class="brand" href="/vwork/">VWork バイブコーディングフレームワーク</a><nav><a href="/vwork/blog/">VWork Blog</a><a href="/vwork/articles/">AI OSS技術解説</a><a href="https://exbridge.jp/vwork.html">Service</a><a href="https://github.com/katsushi2441/vwork">GitHub</a></nav></div></header><main><article><h1>Xでフォローしてくれた企業の紹介ページを作ります——「Kurage フォロワーポータル」を始めた理由と、企業公式サイトにとってのメリット</h1><p class="meta">2026-10-26</p><p>名古屋でAIシステムの開発をしている小嶋です。Xでフォローしてくださった企業を、1社1ページで紹介するサイト「Kurage フォロワーポータル」を始めました。</p>
+<p>この記事では、作った理由と、紹介される企業の公式サイトにとってのメリットをまとめます。最後に、掲載を希望する企業公式アカウントの方への案内があります。</p>
+<h2>結論：フォローしてくださった企業の「公式の入口」を1ページにまとめ、検索とAIに届く形にします</h2>
+<p>Kurage フォロワーポータルとは、Xでフォローしてくださった企業を、公式サイトと公式アカウントで公開されている情報から紹介する、株式会社エクスブリッジの非公式の紹介ページです。1ページに、次のものをまとめます。</p>
+<ul>
+<li><strong>会社の顔</strong>：Xの看板（ヘッダー画像）とプロフィール</li>
+<li><strong>公式の入口</strong>：公式サイト、X、Instagram、YouTube、TikTok、Facebook、LINE、ブログ、通販、採用サイト</li>
+<li><strong>会社の基本</strong>：運営会社、創業、拠点と営業時間、理念、沿革</li>
+<li><strong>よくある質問</strong>：「この会社の運営会社は？」「ショールームはどこ？」のように、検索やAIに聞かれそうなことへの答え</li>
+</ul>
+<p>Kurage フォロワーポータル
+https://exbridge.jp/kfollowers/#ref=vibeblog-kfollowers</p>
+<h2>紹介ページに載せている情報</h2>
+<p>紹介ページには、上から順に次の情報を載せています。どれも、公式サイトと公式アカウントで確かめた情報です。</p>
+<ul>
+<li><strong>Xの看板とプロフィール</strong>：ヘッダー画像、アイコン、アカウント名とフォロワー数、プロフィール文。「非公式の紹介ページ（調べた日付）」の表示もここにあります</li>
+<li><strong>「◯◯とは」</strong>：会社を1〜2文で説明する定義の文と、取り扱い・強み・拠点・理念など事業の要点をまとめたカード</li>
+<li><strong>会社の基本情報</strong>：運営会社、屋号、代表者、創業、資本金、本社の所在地</li>
+<li><strong>ショールームと拠点</strong>：店舗ごとの住所・電話・営業時間・定休日と、公式サイトの店舗案内と地図へのリンク</li>
+<li><strong>公式サイトと公式アカウント</strong>：公式サイトの主なページ（在庫・買取・採用・通販など）と、X・Instagram・YouTube・TikTok・Facebook・LINE・ブログを種類ごとに。運営しているブランドや、会社が載っている外部のサイト（中古車の情報サイトなど）もここに並べます</li>
+<li><strong>理念</strong>：公式サイトに書かれている理念を、出典つきで</li>
+<li><strong>沿革</strong>：創業から、店舗の開店、ブランドのデビュー、展示会への出展まで</li>
+<li><strong>業界は国会でどう議論されているか</strong>：その会社の業界に関わる言葉が、国会の発言に出てきた回数。押すと当社の国会トラッカーで発言を読めます</li>
+<li><strong>よくある質問</strong>：「運営会社はどこ？」「ショールームはどこ？」「何を扱っている？」「定休日は？」「公式のXはどれ？」など、検索やAIに聞かれそうなことへの答え</li>
+</ul>
+<p>ページの上には「Xで共有」と「紹介文とURLをコピー」のボタンがあるので、紹介された会社が自分のアカウントでそのまま紹介できます。</p>
+<h2>なぜ作ったか</h2>
+<p>当社は、国会の会議録から議員の質疑をテーマごとに集める「国会トラッカー」と、国会議員一人ひとりの発言をまとめた「国会議員 発言ログ」を作っています。議員の質疑を、名前と数字の入ったカード画像にして、Xで議員の投稿に返信する形で紹介してきました。「このテーマで党の中でいちばん多く質問している」「この論点を国会で最初に取り上げた」といった事実を、会議録から数字で示すカードです。</p>
+<p>これが、議員の方にとても喜ばれました。カードを引用してくださったり、リポストやフォローをしてくださったりする方が何人もいて、玉木代表が引用してくださった返信からは、それだけで154人がページを見に来ました。自分の仕事が、第三者の記録として、分かりやすい形で紹介されることは、うれしいものなのだと実感しました。</p>
+<p>それなら、Xでつながった企業の公式アカウントにも、同じように喜んでもらえる仕組みを作れるはずだと考えました。会社の情報を、名前と数字の入ったページとカード画像にして、会社が自分のアカウントでそのまま紹介できる形にする。それが Kurage フォロワーポータルです。</p>
+<p>ただ、議員と違って、中小企業は国会や省庁の記録にはほとんど出てきません。最近フォローし合った5社を調べても、社名が国会の会議録に出てきた会社は0社でした。</p>
+<p>そこで、記録を探すのではなく、その会社がすでに公開している公式の情報を、検索とAIに届く形で1ページにまとめることにしました。悪い話は扱いません。紹介される会社にとって損のないページです。</p>
+<p>もう一つの理由は、中小企業のホームページの弱点です。先日、愛知の中小企業21社のホームページを診断したところ、AIの回答に引用されやすいかを見る点（AEO）が70点以上の会社は1社もありませんでした。会社の公式サイトを作り直すのは大仕事ですが、外に「その会社を説明するページ」を1つ置くことなら、すぐにできます。</p>
+<h2>企業公式サイトにとってのメリット</h2>
+<h3>1. 被リンクが1本増える</h3>
+<p>被リンクとは、ほかのサイトから自社のサイトへ張られたリンクのことです。紹介ページからは、公式サイトと各SNSへ直接リンクしています（nofollow は付けていません）。リンク元は当社の exbridge.jp の中の、社名と事業の説明が書かれたページです。</p>
+<p>ただし、被リンクは1本で検索順位が大きく変わるものではありません。「事業の内容が書かれたページから、社名で張られたリンクが1本増える」という、地道な積み上げの1つと考えてください。</p>
+<h3>2. 社名で検索されたときの入口が増える</h3>
+<p>社名で検索する人は、その会社を知りたい人です。公式サイトのほかに「◯◯とは｜公式SNS・店舗・沿革」というページがあれば、どのアカウントを見ればよいか、どの店舗が近いかを、1ページで確かめられます。介護事業所を紹介する当社のページには、事業所の名前で検索して1日400人以上が来ています。名前で調べる人は、会社の大きさに関係なくいます。</p>
+<h3>3. AI検索とAIの回答に引用されやすい形にしてある</h3>
+<p>ChatGPT や Perplexity などのAIは、質問に答えるときに、答えの形で書かれたページを引用します。紹介ページは、最初に「◯◯とは、〜を指します」という定義の文を置き、見出しごとに結論を先に書き、よくある質問と答えを並べています。会社の情報は、検索エンジンとAIが読める構造化データ（AutoDealer・FAQPage など）でも載せ、AI向けの要約（llms.txt）も置いています。</p>
+<p>公開した紹介ページを当社の診断システムにかけると、SEO 100点、AEO 73点、GEO 100点でした。21社の調査では、3つとも70点以上の会社は0社だったので、その線を越えています。</p>
+<h3>4. 散らばった公式アカウントが、同じ会社のものだと伝わる</h3>
+<p>会社が大きくなると、店舗ごと・ブランドごとにアカウントが増え、公式サイトとSNSを合わせて20を超える会社もあります。紹介ページでは、それらを「同じ会社の公式アカウント」として構造化データ（sameAs）にまとめています。検索エンジンやAIが、ばらばらのアカウントを1つの会社として結びつける手がかりになります。</p>
+<h3>5. Xの看板とプロフィールが、そのまま会社の顔になる</h3>
+<p>ページの一番上には、Xのヘッダー画像とアイコン、プロフィール文を表示します。Xで発信している会社の雰囲気が、そのまま伝わる作りです。画像は X に掲載されているものを表示していて、当社のサーバーにはコピーしていません。</p>
+<h2>気をつけていること</h2>
+<ul>
+<li><strong>公開されている情報だけ</strong>：公式サイトと公式アカウントで確かめた事実だけを書きます。推測は書きません。確かめた日付もページに書きます。</li>
+<li><strong>非公式と明記</strong>：ページの上と下に「非公式の紹介ページ（株式会社エクスブリッジ調べ）」と書いています。紹介する企業とは、資本・業務の関係はありません。</li>
+<li><strong>直してほしい点はすぐ直す</strong>：内容の誤りや、載せてほしくない情報があれば、お問い合わせかXでお知らせください。すぐに直します。</li>
+</ul>
+<h2>作っている人</h2>
+<div style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;background:#fff;border:1px solid #dbe6f3;border-radius:18px;padding:20px;margin:12px 0 18px;box-shadow:0 1px 2px rgba(18,32,47,.05)">
+<img src="https://kurage.exbridge.jp/images/bittensorman.webp" width="112" height="112" alt="BittensorMan（小嶋 篤）の X のアイコン" style="width:112px;height:112px;border-radius:50%;object-fit:cover;flex:none;border:3px solid #e8f0fb">
+<div style="flex:1;min-width:220px">
+<div style="font-size:12px;font-weight:800;letter-spacing:.08em;color:#1668d6">DEVELOPER</div>
+<div style="font-size:22px;font-weight:900;line-height:1.4;margin:2px 0">BittensorMan（小嶋 篤）</div>
+<div style="font-size:14px;color:#5d6b7a"><a href="https://x.com/xb_bittensor" style="color:#1668d6;font-weight:700">@xb_bittensor</a>・株式会社エクスブリッジ・名古屋</div>
+<div style="font-size:19px;font-weight:800;margin:12px 0 6px">社会の課題を、<span style="color:#1668d6">動くもの</span>にして解く。</div>
+<div style="font-size:14.5px;line-height:1.8">1995年から業務システムの開発に携わり、名古屋と大阪で生命保険・ガス・食品・通信などの業務システムを作ってきました。2004年に中国オフショア開発の会社を立ち上げ、2025年からAI事業に転換。企画からコード、運用、販売まで一人で手がけ、うまくいった数字も外した数字も公開しています。</div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+<a href="https://x.com/intent/follow?screen_name=xb_bittensor" style="background:#0f1419;color:#fff;border-radius:999px;padding:8px 18px;font-weight:800;font-size:14px;text-decoration:none">Xで @xb_bittensor をフォロー</a>
+<a href="https://kurage.exbridge.jp/#ref=vibeblog-kfollowers" style="background:#fff;color:#1668d6;border:2px solid #1668d6;border-radius:999px;padding:6px 16px;font-weight:800;font-size:14px;text-decoration:none">BittensorMan のサイト</a>
+</div></div></div>
+
+<p>技術の話や作ったものの話は、Xがいちばん早いです。</p>
+<h2>掲載を希望する企業の方へ</h2>
+<p>企業公式アカウントにフォローしていただいたら、随時、紹介ページを作っています。掲載を希望する企業公式サイトのXアカウントの方は、<strong>@xb_bittensor をフォローして、XでDMかコメントをください。</strong> 公式サイトと公式アカウントで公開されている情報から、1社1ページで作ります。</p>
+<p>ありがたいことにフォローしてくださる企業が多く、一度にすべての会社のページを作ることはできません。当社が名古屋の会社なので、名古屋・愛知など近い地域の企業から、順番に作っています。</p>
+<div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#f3f8ff;border:2px solid #1668d6;border-radius:16px;padding:16px 18px;margin:12px 0">
+<img src="https://kurage.exbridge.jp/images/bittensorman-96.webp" width="64" height="64" alt="@xb_bittensor のアイコン" style="width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none">
+<div style="flex:1;min-width:200px"><div style="font-weight:900;font-size:17px">掲載の申し込みは @xb_bittensor へ</div><div style="font-size:14px;color:#5d6b7a">フォローしてから、XでDMかコメントをください</div></div>
+<a href="https://x.com/intent/follow?screen_name=xb_bittensor" style="background:#0f1419;color:#fff;border-radius:999px;padding:9px 20px;font-weight:800;font-size:14px;text-decoration:none">フォローする</a>
+</div>
+
+<p>紹介ページの情報発信を、そのまま問い合わせや採用につなげたい会社には、AI-SNS顧問でお手伝いしています。</p>
+<p>AI-SNS顧問
+https://exbridge.jp/ai-sns-komon.html#ref=vibeblog-kfollowers</p>
+<h2>よくある質問</h2>
+<h3>Kurage フォロワーポータルとは何ですか</h3>
+<p>Xでフォローしてくださった企業を、公式サイトと公式アカウントで公開されている情報から1社1ページで紹介する、株式会社エクスブリッジの非公式の紹介ページです。公開先は exbridge.jp/kfollowers/ です。</p>
+<h3>掲載するにはどうすればよいですか</h3>
+<p>企業公式サイトのXアカウントで @xb_bittensor をフォローし、XでDMかコメントをください。公開されている情報から紹介ページを作ります。フォローしてくださる企業が多いため、名古屋・愛知など近い地域の企業から順番に作っています。</p>
+<h3>紹介ページで、自社のサイトのSEOは強くなりますか</h3>
+<p>被リンクが1本増え、社名で検索されたときの入口が1つ増えます。ただし、被リンク1本で検索順位が大きく変わるものではありません。地道な積み上げの1つと考えてください。AI検索やAIの回答に引用されやすい形にしてあるのが、もう一つの効き目です。</p>
+<h3>載っている情報を直してもらえますか</h3>
+<p>直します。内容の誤りや載せてほしくない情報は、お問い合わせかXでお知らせください。すぐに反映します。</p></article></main><footer>VWork バイブコーディングフレームワーク / 株式会社エクスブリッジ</footer></body></html>
