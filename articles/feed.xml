@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 03 Nov 2026 17:16:19 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 23:30:39 +0000</lastBuildDate>
     <item>
       <title>Qwenのモデル重み解析とReflection社によるBeamの公開など、最新のLLM技術動向 11-04</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news.html</guid>
       <pubDate>Wed, 04 Nov 2026 09:00:00 +0000</pubDate>
       <description>Qwen 3.8 27Bを用いたWeight-Space Programmingによるモデル重みの直接操作や、推論ループを修正する高度な重み編集技術を紹介します。またReflection社のBeam公開やGoogleの教育向けAIツールに関する最新動向を解説します。</description>
+    </item>
+    <item>
+      <title>Anthropicの「FlashProve」とRevolutの自社ホスト移行に見るAIの信頼性とコスト最適化 11-04</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news-2.html</guid>
+      <pubDate>Wed, 04 Nov 2026 09:00:00 +0000</pubDate>
+      <description>AnthropicがAIコンテンツの真正性を検証するシステム「FlashProve」を開発中です。また、RevolutはLLMを自社ホストへ移行しコーディングコストを10分の1に削減しました。最新のAI技術動向とコスト最適化事例を紹介します。</description>
     </item>
     <item>
       <title>文字起こしAI「Haas-ja-v1.0」とは——日本語の公開モデルで最高精度・Whisperの15倍速。使い方と弱点、AI議事録の自社サーバー版に組み込む計画</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-24-ai-news-2.html</guid>
       <pubDate>Sat, 24 Oct 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAのNemotron-3.5やKimi K3.1 Proなど最新AIモデルの動向とセキュリティ情報を解説します。iPhoneの脆弱性実証やBitcoin Coreのルール変更、研究支援ツールLitPivotの話題も網羅しています。</description>
-    </item>
-    <item>
-      <title>OpenAIのデータ収集方針転換とQwen4、Sam Altmanが語るモデル公開への懸念 10-24</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-24-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-24-ai-news-4.html</guid>
-      <pubDate>Sat, 24 Oct 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIがライブインターネットからのデータ収集停止を発表した背景や、Qwen4-27Bのプレリリース情報、Sam Altman氏による最高モデル公開への懸念を解説します。iPhoneの脆弱性解析やBitcoin Coreのセキュリティ変更も網羅しています。</description>
     </item>
   </channel>
 </rss>
