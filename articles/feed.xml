@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Nov 2026 22:46:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 06:17:02 +0000</lastBuildDate>
     <item>
       <title>文字起こしAI「Haas-ja-v1.0」とは——日本語の公開モデルで最高精度・Whisperの15倍速。使い方と弱点、AI議事録の自社サーバー版に組み込む計画</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-03-haas-ja-v1-japanese-asr-kaimom-pro.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-haas-ja-v1-japanese-asr-kaimom-pro.html</guid>
       <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
       <description>2026年10月に公開された日本語の文字起こしAI「Haas-ja-v1.0」（Apache 2.0）を解説します。公開モデルで最も低い文字誤り率6.12%、Whisper large-v3の15〜17倍の速さという公表値、使い方、NVIDIAのGPUが必須などの弱点、当社のAI議事録システムに組み込む Kurage AI MOM Pro（Haas版）の計画までまとめました。</description>
+    </item>
+    <item>
+      <title>agent-desktop とは——AIがパソコンのアプリを操作する Computer Use のOSS。画面を見ずに部品で操作する仕組みと、RPAの代わりに使うときの注意</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-03-agent-desktop-computer-use-oss.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-agent-desktop-computer-use-oss.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Vercel Labs が公開した agent-desktop（Apache 2.0・GitHubスター1万超）を解説します。スクリーンショットではなくOSのアクセシビリティ情報を読み、ボタンや入力欄を番号で操作するAIエージェント向けのCLIです。仕組み、使い方、macOS・Windows・Linux の対応状況、画面の情報が外部に送られる場面、Windows の業務ソフトへの転記をRPAの代わりに自動化するときの注意までまとめました。</description>
     </item>
     <item>
       <title>Qwenの重み操作からAnthropicの自己構築AIまで：進化するAI技術と法的対立の最前線 11-03</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-24-ai-news.html</guid>
       <pubDate>Sat, 24 Oct 2026 09:00:00 +0000</pubDate>
       <description>AWS TrainiumでのPyTorchモデル最適化ガイドや、AIが特定タスク向けのローカルLLMへ移行する動向を解説します。また、スウェーデン政府によるChatGPT禁止措置やBitcoin Coreのセキュリティルール変更についても紹介します。</description>
-    </item>
-    <item>
-      <title>OpenAIの意思決定モデル競争とAIエージェントの自律的な進化 10-23</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-23-ai-news-4.html</guid>
-      <pubDate>Fri, 23 Oct 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIの新意思決定モデルやDockerの代替技術、MITの研究によるAIエージェントの自発的な遊びなど、最新のAI動向を解説します。1Passwordの安全なログイン機能やThinkingBoxを用いた強化学習の技術も紹介します。</description>
     </item>
   </channel>
 </rss>
