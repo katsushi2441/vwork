@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [熊谷正寿氏（GMO）が賞賛される理由はあるのか｜発明は無く、雇用と納税は他社でも生まれていた](2026-11-03-kumagai-masatoshi-gmo-shousan-riyuu.html)
 - [Xでフォローしてくれた企業の紹介ページを作ります——「Kurage フォロワーポータル」を始めた理由と、企業公式サイトにとってのメリット](2026-10-26-kfollowers-kigyo-shokai-portal.html)
 - [週休3日制は中小企業でもできる｜休日の割り振り直しとAIで仕事を1割減らすだけ。採用でかなり有利になる](2026-11-03-shukyu-3ka-chusho-kigyo-ai-saiyo.html)
 - [エクスブリッジは、お客様が嫌がる3つをやめた｜保守契約・月額のシステム利用料・要件定義をやめて、買い切りの業務システムを100以上](2026-11-03-exbridge-yameta-3tsu-hoshu-getsugaku-youken.html)
