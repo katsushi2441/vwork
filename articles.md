@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Qwenのモデル重み解析とReflection社によるBeamの公開など、最新のLLM技術動向 11-04](2026-11-04-ai-news.html)
 - [Qwenのオープンソースへの強い意志と、AIモデル学習を民主化するTrajectoryの資金調達 11-03](2026-11-03-ai-news-3.html)
 - [Qwenの重み操作からAnthropicの自己構築AIまで：進化するAI技術と法的対立の最前線 11-03](2026-11-03-ai-news-2.html)
 - [agent-desktop とは——AIがパソコンのアプリを操作する Computer Use のOSS。画面を見ずに部品で操作する仕組みと、RPAの代わりに使うときの注意](2026-11-03-agent-desktop-computer-use-oss.html)
