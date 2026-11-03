@@ -24,6 +24,7 @@ head_keyword: "オープンデータ 活用"
 
 ## 記事一覧
 
+- [Xでフォローしてくれた企業の紹介ページを作ります——「Kurage フォロワーポータル」を始めた理由と、企業公式サイトにとってのメリット](2026-10-26-kfollowers-kigyo-shokai-portal.html)
 - [週休3日制は中小企業でもできる｜休日の割り振り直しとAIで仕事を1割減らすだけ。採用でかなり有利になる](2026-11-03-shukyu-3ka-chusho-kigyo-ai-saiyo.html)
 - [エクスブリッジは、お客様が嫌がる3つをやめた｜保守契約・月額のシステム利用料・要件定義をやめて、買い切りの業務システムを100以上](2026-11-03-exbridge-yameta-3tsu-hoshu-getsugaku-youken.html)
 - [保守契約とは？システムの保守費用は何に払っているのか｜保守契約なしで業務システムを使い続ける条件](2026-11-03-hoshu-keiyaku-towa-hoshu-hiyou.html)
