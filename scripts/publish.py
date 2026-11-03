@@ -250,7 +250,7 @@ def wait_for_public_article(article_url: str, title: str, timeout: int = 600):
 
 def post_aixsns(title: str, article_url: str):
     body = (
-        f"VWorkブログを更新しました。\n\n"
+        f"バイブコーディング的仕事ブログを更新しました。\n\n"
         f"{title}\n\n"
         f"記事: {article_url}\n\n"
         f"株式会社エクスブリッジ https://exbridge.jp/"
@@ -267,7 +267,41 @@ def post_aixsns(title: str, article_url: str):
     print(f"  AIxSNS投稿ID: {result['item']['id']}")
 
 
+VIBEBLOG_URL = "https://exbridge.jp/vibeblog"
+KPAYLOAD = Path("/home/kojima/work/kpayload")
+NODE_BIN = "/home/kojima/.nvm/versions/node/v20.20.2/bin"
+
+
+def _env_with_secrets() -> dict:
+    env = {**os.environ, "PATH": NODE_BIN + ":" + os.environ.get("PATH", "/usr/bin:/bin")}
+    path = Path("/home/kojima/work/aixec/.env")
+    if path.is_file():
+        for line in path.read_text(encoding="utf-8", errors="ignore").splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                k, v = line.split("=", 1)
+                env.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+    return env
+
+
+def wait_for_vibeblog(url: str, title: str, tries: int = 6) -> None:
+    for i in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(f"{url}?verify={int(time.time())}", headers={"User-Agent": "vwork-publish/1.0"}), timeout=30) as r:
+                html = r.read().decode("utf-8", "replace")
+            if r.status == 200 and title[:20] in html:
+                print(f"  公開確認: HTTP 200 ({url})")
+                return
+        except urllib.error.HTTPError as e:
+            print(f"  反映待ち: HTTP {e.code}")
+        time.sleep(10)
+    raise SystemExit(f"/vibeblog/ で公開を確認できませんでした: {url}（AIxSNS には告知していません）")
+
+
 def main():
+    """2026-11-03 から /vibeblog/ だけに出す（ユーザー「全部移行したでしょ？ /vibeblog/だけでしょ！」）。
+    以前は gh-pages に HTML を書き、AIxSNS に github.io の URL を告知していた（11/3 の5本がそうなった）。
+    原稿の md は main に commit して push する（原稿の保管とバックアップのため）。"""
     parser = argparse.ArgumentParser()
     parser.add_argument("md_file", help="blog/YYYY-MM-DD-slug.md")
     parser.add_argument("--no-sns", action="store_true", help="AIxSNS告知をスキップ")
@@ -278,66 +312,34 @@ def main():
         print(f"ファイルが見つかりません: {md_path}", file=sys.stderr)
         sys.exit(1)
 
-    fm, body_md = parse_front_matter(md_path)
+    fm, _ = parse_front_matter(md_path)
     title = fm.get("title", "")
+    if str(fm.get("layout", "default")) != "default":
+        raise SystemExit("frontmatter の layout は default にしてください")
     slug = md_path.stem
-    html_filename = slug + ".html"
-    article_url = f"{BASE_URL}/blog/{html_filename}"
+    article_url = f"{VIBEBLOG_URL}/{slug}.html"
 
-    print(f"[1/6] SSH agent を探す")
-    ssh_sock = find_ssh_sock() or ""
-    print(f"  使用: {ssh_sock or '(HTTPSリモートのためSSH agent不要)'}")
-
-    print(f"[2/6] gh-pages worktree を準備")
-    ensure_gh_pages_worktree(ssh_sock)
-
-    print(f"[3/6] HTML生成・インデックス更新")
-    body_html = md_to_html(body_md)
-    article_html = make_article_html(fm, body_html, article_url)
-    out_path = GH_PAGES_DIR / "blog" / html_filename
-    out_path.write_text(article_html, encoding="utf-8")
-    print(f"  {out_path} を作成しました")
-
-    update_html_index(GH_PAGES_DIR / "blog" / "index.html", html_filename, title)
-    update_html_index(GH_PAGES_DIR / "index.html", html_filename, title, prefix="blog/")
-    update_md_index(REPO_ROOT / "blog" / "index.md", html_filename, title)
-    update_md_index(REPO_ROOT / "blog" / "README.md", md_path.name, title)
-
-    print(f"[4/6] commit & push")
-    env = {**os.environ, "SSH_AUTH_SOCK": ssh_sock}
-
-    # main
-    git(["add", "blog/"], cwd=REPO_ROOT)
+    print("[1/4] 原稿を commit & push（main）")
+    git(["add", str(md_path.relative_to(REPO_ROOT))], cwd=REPO_ROOT)
     if git_commit_if_changed(f"Add blog: {title}", REPO_ROOT):
-        subprocess.run(["git", "push", REMOTE, "main"], cwd=REPO_ROOT, env=env, check=True)
+        subprocess.run(["git", "push", REMOTE, "main"], cwd=REPO_ROOT, check=True)
         print("  main: push完了")
-    main_sha = git(["rev-parse", "HEAD"], cwd=REPO_ROOT)
 
-    # gh-pages
-    git(["add", "blog/", "index.html"], cwd=GH_PAGES_DIR)
-    if git_commit_if_changed(f"Publish: {title}", GH_PAGES_DIR):
-        subprocess.run(["git", "push", REMOTE, "HEAD:gh-pages"], cwd=GH_PAGES_DIR, env=env, check=True)
-        print("  gh-pages: push完了")
+    print("[2/4] /vibeblog/ を作って送る（kpayload build-vibeblog.ts → deploy.sh vibeblog）")
+    env = _env_with_secrets()
+    subprocess.run([NODE_BIN + "/npx", "tsx", "scripts/build-vibeblog.ts"], cwd=KPAYLOAD, env=env, check=True, timeout=900)
+    subprocess.run(["bash", "scripts/deploy.sh", "vibeblog"], cwd=KPAYLOAD, env=env, check=True, timeout=2400)
 
-    print(f"[5/6] GitHub Pages公開確認")
-    ensure_pages_workflow(main_sha)
-    wait_for_public_article(article_url, title)
+    print("[3/4] 公開確認")
+    wait_for_vibeblog(article_url, title)
 
-    print(f"[6/6] AIxSNS告知")
+    print("[4/4] AIxSNS告知")
     if args.no_sns:
         print("  --no-sns のためスキップ")
     else:
         # 媒体ごとに主題を変えるルール（同一タイトルの並列はスパム化する）。
         # frontmatter に title_aixsns があればそれを使い、無ければ従来どおり title。
         post_aixsns(fm.get("title_aixsns") or title, article_url)
-
-    # exbridge.jp 側のクロスドメインサイトマップを更新（GitHub Pages のサイトマップは Google が取得しないため）
-    try:
-        subprocess.run([sys.executable, str(REPO_ROOT / "scripts" / "build_crossdomain_sitemap.py"), "--deploy"],
-                       cwd=REPO_ROOT, check=True, timeout=300)
-        print("  vwork-blog-sitemap.xml を更新しました（exbridge.jp）")
-    except Exception as e:  # 失敗しても公開自体は完了している
-        print(f"  クロスドメインサイトマップ更新に失敗: {e}（手動: python3 scripts/build_crossdomain_sitemap.py --deploy）", file=sys.stderr)
 
     print(f"\n完了: {article_url}")
 
