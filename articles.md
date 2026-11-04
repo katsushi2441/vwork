@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Dataで読む：Qwenの軽量モデルやRevolutによる自社運用など、AIインフラとコスト最適化の最前線 11-04](2026-11-04-ai-news-3.html)
 - [Anthropicの「FlashProve」とRevolutの自社ホスト移行に見るAIの信頼性とコスト最適化 11-04](2026-11-04-ai-news-2.html)
 - [Qwenのモデル重み解析とReflection社によるBeamの公開など、最新のLLM技術動向 11-04](2026-11-04-ai-news.html)
 - [Qwenのオープンソースへの強い意志と、AIモデル学習を民主化するTrajectoryの資金調達 11-03](2026-11-03-ai-news-3.html)
