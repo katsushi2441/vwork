@@ -15,6 +15,8 @@ head_keyword: "商圏分析 無料"
 
 先に前提をひとつ。GitHubで「商圏」を検索すると、商圏分析の**専用**オープンソースは事実上存在しません（個人の小さなツールが数件あるだけです）。この分野は**部品を組み合わせて作る**領域で、その部品と、もっと重要な**データ**が、どちらも無料で手に入ります。
 
+> **住所ひとつで出したい方へ。** この記事の手順（到達圏・メッシュ人口・競合）をそのまま自社サーバーで動くシステムにしたのが [Kurage 商圏分析](https://kurage.exbridge.jp/kshoken.php/?ref=vibeblog-shoken-qgis) です。住所を入れると徒歩圏の人口・世帯・事業所が出ます。デモはログインなしで触れ、[Kurage App Store](https://kappstore.exbridge.jp/app.php?id=a5ac4b9f1fdb6d19&ref=vibeblog-shoken-qgis) でオンプレミス版（税込55,000円）を出しています。QGISで自分で組みたい方は、このまま下へ。
+
 ## 商圏分析とは何を出すことか
 
 出店判断・FC本部のエリア設計・士業の開業地選び・営業テリトリー分けで使う分析は、分解するとこの3つです。
@@ -85,4 +87,4 @@ QGISやOSSで組む意味が出るのは、次のどれかに当てはまると�
 
 「うちの店舗リストで一括処理したい」「会員データと重ねた商圏レポートを自動で出したい」といった仕組み化は、[バイブプロトタイピング（税込110,000円〜）](https://kurage.exbridge.jp/vibe-prototype.html)で承っています。どのデータをどう重ねるべきかの相談だけでも構いません。
 
-QGIS の操作を省いて「住所と分数だけ」で同じ計算をしたい方向けに、当社は同じデータ（国勢調査500mメッシュ・経済センサス）と道路網ベースの到達圏で動く商圏分析ツールを公開しています。無料で試せます: [Kurage 商圏分析（住所ひとつで徒歩圏の人口・世帯・事業所）](https://kurage.exbridge.jp/kshoken.php/?ref=vwork-shoken)。自社サーバーに置く設置手順つきの買い切り版は [Kurage App Store（税込55,000円）](https://kappstore.exbridge.jp/app.php?id=a5ac4b9f1fdb6d19&ref=vwork-shoken) にあります。
+QGIS の操作を省いて「住所と分数だけ」で同じ計算をしたい方向けに、当社は同じデータ（国勢調査500mメッシュ・経済センサス）と道路網ベースの到達圏で動く商圏分析ツールを公開しています: [Kurage 商圏分析（住所ひとつで徒歩圏の人口・世帯・事業所）](https://kurage.exbridge.jp/kshoken.php/?ref=vwork-shoken)。自社サーバーに置く設置手順つきの買い切り版は [Kurage App Store（税込55,000円）](https://kappstore.exbridge.jp/app.php?id=a5ac4b9f1fdb6d19&ref=vwork-shoken) にあります。
