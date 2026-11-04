@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 04 Nov 2026 05:42:58 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 11:56:01 +0000</lastBuildDate>
     <item>
       <title>Qwenのモデル重み解析とReflection社によるBeamの公開など、最新のLLM技術動向 11-04</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news.html</guid>
       <pubDate>Wed, 04 Nov 2026 09:00:00 +0000</pubDate>
       <description>Qwen 3.8 27Bを用いたWeight-Space Programmingによるモデル重みの直接操作や、推論ループを修正する高度な重み編集技術を紹介します。またReflection社のBeam公開やGoogleの教育向けAIツールに関する最新動向を解説します。</description>
+    </item>
+    <item>
+      <title>Qwen 3.8のローカル実行とRevolutによるClaude Codeからの脱却など、AIコスト削減と性能向上の最前線 11-04</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news-4.html</guid>
+      <pubDate>Wed, 04 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Qwen 3.8がノートPCでのローカル実行に対応したほか、RevolutがClaude Codeを廃止し中国製モデルへ移行してコストを90%削減した事例を紹介します。AIのコスト削減やStateBench等の最新動向を解説します。</description>
     </item>
     <item>
       <title>Dataで読む：Qwenの軽量モデルやRevolutによる自社運用など、AIインフラとコスト最適化の最前線 11-04</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-25-ai-news.html</guid>
       <pubDate>Sun, 25 Oct 2026 09:00:00 +0000</pubDate>
       <description>DeepSeekの量子化技術やMetaによるバイト単位の学習など、AIモデル効率化の最新動向を解説します。GrapheneOSへの銀行アプリ対応やMoonshot社のKimi K3.1 Pro発表など、技術トレンドを網羅しています。</description>
-    </item>
-    <item>
-      <title>Blockの超リアルな音声AIと、技術部門以外におけるAI経済への影響 10-25</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-25-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-25-ai-news-2.html</guid>
-      <pubDate>Sun, 25 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Block社が発表したMacBook M4 Maxで動作するリアルな音声AIモデルや、Metaのバイトデータ直接読み取り型小型AIモデルの動向を解説します。さらにKimi K3.1の安全性対策など最新のAIニュースを網羅しています。</description>
     </item>
   </channel>
 </rss>
