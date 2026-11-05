@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIのImages 2.6発表と、AIによるLinuxへの大規模攻撃リスクへの警鐘 11-05](2026-11-05-ai-news-4.html)
 - [White Houseのネットワークへのプロキシ検知と、DeepSeekが支配するオープンウェイトモデルの台頭 11-05](2026-11-05-ai-news-3.html)
 - [OpenとDatasetteで読む：MetaのAIコーディング企業買収と、技術的負債を解消するAIの衝撃 11-05](2026-11-05-ai-news-2.html)
 - [Axion 1.0の登場とNVIDIA、Gemmaを巡るAI技術の最適化動向 11-05](2026-11-05-ai-news.html)
