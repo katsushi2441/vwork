@@ -41,7 +41,7 @@ head_keyword: "AI経営"
 
 - もっと本格的に体験したい方へ: [経営者向けバイブコーディングセミナー（訪問型）](https://exbridge.jp/seminar.html)
 - 個別の要件をすぐ相談したい方へ: [Kurage.AI 無料相談チャット](https://kurage.exbridge.jp/chat.php)
-- 動くシステムがほしい方へ: [バイブプロトタイプ制作（最短1営業日・10万円〜）](https://kurage.exbridge.jp/vibe-prototype.html)
+- 動くシステムがほしい方へ: [バイブプロトタイプ制作（最短1営業日・税別30万円）](https://kurage.exbridge.jp/vibe-prototype.html)
 
 名古屋・愛知でAIを経営に活かしたい方、まずはのぞきに来てください。
 
