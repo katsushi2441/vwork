@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [DropboxのTigris Data買収とNVIDIA Nemotron採用で加速する企業向けAIインフラ競争 11-06](2026-11-06-ai-news.html)
 - [OpenAIのImages 2.6発表と、AIによるLinuxへの大規模攻撃リスクへの警鐘 11-05](2026-11-05-ai-news-4.html)
 - [White Houseのネットワークへのプロキシ検知と、DeepSeekが支配するオープンウェイトモデルの台頭 11-05](2026-11-05-ai-news-3.html)
 - [OpenとDatasetteで読む：MetaのAIコーディング企業買収と、技術的負債を解消するAIの衝撃 11-05](2026-11-05-ai-news-2.html)
