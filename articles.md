@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [NVIDIA Cosmos 3の公開とOpenSSHにおける深刻な脆弱性「sshole」の衝撃 11-06](2026-11-06-ai-news-2.html)
 - [DropboxのTigris Data買収とNVIDIA Nemotron採用で加速する企業向けAIインフラ競争 11-06](2026-11-06-ai-news.html)
 - [OpenAIのImages 2.6発表と、AIによるLinuxへの大規模攻撃リスクへの警鐘 11-05](2026-11-05-ai-news-4.html)
 - [White Houseのネットワークへのプロキシ検知と、DeepSeekが支配するオープンウェイトモデルの台頭 11-05](2026-11-05-ai-news-3.html)

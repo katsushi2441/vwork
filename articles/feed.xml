@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 05 Nov 2026 15:23:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 21:37:07 +0000</lastBuildDate>
     <item>
       <title>DropboxのTigris Data買収とNVIDIA Nemotron採用で加速する企業向けAIインフラ競争 11-06</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-06-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-06-ai-news.html</guid>
       <pubDate>Fri, 06 Nov 2026 09:00:00 +0000</pubDate>
       <description>DropboxによるTigris Dataの3億5000万ドルでの買収や、BoxがNVIDIA Nemotronを採用する動きなど、企業向けAIインフラ競争の最新動向を解説します。各社の戦略的な技術統合について紹介します。</description>
+    </item>
+    <item>
+      <title>NVIDIA Cosmos 3の公開とOpenSSHにおける深刻な脆弱性「sshole」の衝撃 11-06</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-06-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-06-ai-news-2.html</guid>
+      <pubDate>Fri, 06 Nov 2026 09:00:00 +0000</pubDate>
+      <description>OpenSSHで認証バイパスを許す深刻な脆弱性「sshole」が発見されたことや、NVIDIA Cosmos 3の公開、Binanceでの63億ドルの盗難事件に関する調査結果など、最新のIT・セキュリティニュースを要約します。</description>
     </item>
     <item>
       <title>OpenとDatasetteで読む：MetaのAIコーディング企業買収と、技術的負債を解消するAIの衝撃 11-05</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news.html</guid>
       <pubDate>Tue, 27 Oct 2026 09:00:00 +0000</pubDate>
       <description>AnthropicのIPO申請に伴うS-1書類の内容や市場への影響を解説します。また、Qwen4-27Bで見られる並列残留ストリームへのアーキテクチャ進化や、Qwen 3.8 Flash Nextの低スペック環境での動作検証についても紹介します。</description>
-    </item>
-    <item>
-      <title>OpenAIの「dots」への進化とSpaceXによる400億ドルのGPU資金調達 10-27</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news-4.html</guid>
-      <pubDate>Tue, 27 Oct 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIがコーディングツールを常駐型アシスタント「dots」へ進化させるほか、SpaceXがApollo社と400億ドルのGPU資金調達契約を締結しました。GPT-6.1 Terraの動向やQwenの調査結果も紹介します。</description>
     </item>
   </channel>
 </rss>
