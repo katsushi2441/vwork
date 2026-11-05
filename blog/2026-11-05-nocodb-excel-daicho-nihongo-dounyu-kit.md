@@ -11,7 +11,7 @@ description: "ノーコードのデータベース NocoDB 2026.10.1 を Docker �
 seo_title: "NocoDB 日本語でExcel台帳をWeb化｜顧客・案件・備品の台帳の型（実測）"
 head_keyword: "nocodb 日本語"
 og_stat: "Excel台帳を社内で共有"
-og_stat_label: "顧客・案件・備品の台帳を、ブラウザでみんなで使う"
+og_stat_label: "表・フォーム・カンバン・共有ビュー・API・Excel取り込み"
 og_stat_note: "株式会社エクスブリッジ（名古屋）"
 ---
 

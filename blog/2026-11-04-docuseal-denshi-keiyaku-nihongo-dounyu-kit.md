@@ -11,7 +11,7 @@ description: "電子契約のオープンソース DocuSeal（AGPL-3.0・v3.3.5�
 seo_title: "電子契約をオープンソースで自社サーバーに｜DocuSeal 日本語導入キット（実測）"
 head_keyword: "電子契約 オープンソース"
 og_stat: "電子契約を自社サーバーで"
-og_stat_label: "保育園・派遣・小売の契約書を、郵送なしで署名まで"
+og_stat_label: "記入欄と署名欄の配置・手書き署名・署名順・監査ログ"
 og_stat_note: "株式会社エクスブリッジ（名古屋）"
 ---
 

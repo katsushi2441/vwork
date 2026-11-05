@@ -11,7 +11,7 @@ description: "ローコードの業務アプリ基盤 Budibase v3.50.0 を単一
 seo_title: "Budibase 日本語で申請・承認アプリ｜自社サーバー構築キット（実測）"
 head_keyword: "budibase 日本語"
 og_stat: "申請・承認をアプリで"
-og_stat_label: "紙とメールの申請を、申請→承認→記録まで一つの画面に"
+og_stat_label: "申請フォーム・承認と差戻し・記録・メール通知・権限"
 og_stat_note: "株式会社エクスブリッジ（名古屋）"
 ---
 

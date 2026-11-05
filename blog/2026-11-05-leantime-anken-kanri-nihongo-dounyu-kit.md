@@ -11,7 +11,7 @@ description: "プロジェクト管理のオープンソース Leantime（AGPL-3
 seo_title: "タスク管理 OSS で案件管理｜Leantime 日本語導入キット（実測）"
 head_keyword: "タスク管理 oss"
 og_stat: "案件の進み具合が見える"
-og_stat_label: "部署→案件・マイルストーン・工数を、自社サーバーで"
+og_stat_label: "タスク・カンバン・ガント・マイルストーン・工数記録"
 og_stat_note: "株式会社エクスブリッジ（名古屋）"
 ---
 

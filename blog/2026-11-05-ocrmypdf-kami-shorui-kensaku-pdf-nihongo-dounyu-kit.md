@@ -11,7 +11,7 @@ description: "スキャンした紙の書類を文字で検索できるPDFにす
 seo_title: "OCRmyPDF 日本語で紙の書類を検索できるPDFに｜導入キット（実測）"
 head_keyword: "ocrmypdf 日本語"
 og_stat: "紙の書類を検索できるPDFに"
-og_stat_label: "請求書・契約書・FAXを、社外に出さずに文字で探せる"
+og_stat_label: "日本語OCR・縦書き・傾き補正・フォルダ監視・paperless連携"
 og_stat_note: "株式会社エクスブリッジ（名古屋）"
 ---
 

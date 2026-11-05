@@ -11,7 +11,7 @@ description: "問い合わせ管理（ヘルプデスク）のオープンソー
 seo_title: "Zammad 日本語で問い合わせ管理｜自社サーバー導入キット（実測）"
 head_keyword: "zammad 日本語"
 og_stat: "問い合わせを取りこぼさない"
-og_stat_label: "部署ごとの担当・自動返信・対応期限を、自社サーバーで"
+og_stat_label: "メール取り込み・担当の割り当て・自動返信・対応期限・定型文"
 og_stat_note: "株式会社エクスブリッジ（名古屋）"
 ---
 

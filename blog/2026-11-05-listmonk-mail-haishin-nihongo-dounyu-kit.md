@@ -11,7 +11,7 @@ description: "メール配信のオープンソース listmonk（AGPL-3.0・v6.2
 seo_title: "メール配信システム オープンソース｜listmonk 日本語導入キット（実測）"
 head_keyword: "メール配信システム オープンソース"
 og_stat: "名簿を外に出さないメール配信"
-og_stat_label: "メルマガ・お知らせを自社サーバーから配信"
+og_stat_label: "購読者リスト・一斉配信・配信停止・開封計測・API"
 og_stat_note: "株式会社エクスブリッジ（名古屋）"
 ---
 

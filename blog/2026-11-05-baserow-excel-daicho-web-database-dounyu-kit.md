@@ -11,7 +11,7 @@ description: "Excel の顧客・案件・備品の台帳を社内の Web デー�
 seo_title: "Excel台帳のWebデータベース化｜Baserow 日本語で社内運用（実測）"
 head_keyword: "baserow 日本語"
 og_stat: "Excel台帳をWebデータベースに"
-og_stat_label: "顧客・案件・備品の台帳を、自社サーバーで共有"
+og_stat_label: "表・公開フォーム・上書き取り込み・API・Webhook"
 og_stat_note: "株式会社エクスブリッジ（名古屋）"
 ---
 
