@@ -8,7 +8,7 @@ layout: default
 permalink: /blog/2026-11-05-nocodb-excel-daicho-nihongo-dounyu-kit.html
 tags: [NocoDB, 台帳管理, Excel, ノーコード, データベース, オープンソース, 日本語化, 顧客管理, 案件管理, 備品管理, Docker, Kurage App Store]
 description: "ノーコードのデータベース NocoDB 2026.10.1 を Docker で立て、顧客台帳・案件台帳・備品台帳を作って実測しました。画面の日本語は本体で 8,799項目中 7,051項目（80.1%）、本体に無い1,556項目の訳を差し込むと 97.8%。Excel を新しいテーブルとして取り込むと日付が 44287 のような数字になり、型を決めた台帳へ入れると全角数字や令和の日付の行が8行中2行、どの行か分からないまま落ちました。整形の仕組みで8行すべてを正しい型で入れ、台帳3つとビュー12個を1.7秒で作るスクリプト、バックアップと別の場所への復元（16〜17秒）まで入れて導入キットにしました。"
-seo_title: "NocoDB 日本語でExcel台帳をWeb化｜顧客・案件・備品の台帳の型（実測）"
+seo_title: "NocoDB 日本語でExcel台帳をWeb化｜社内で共有"
 head_keyword: "nocodb 日本語"
 og_stat: "Excel台帳を社内で共有"
 og_stat_label: "表・フォーム・カンバン・共有ビュー・API・Excel取り込み"

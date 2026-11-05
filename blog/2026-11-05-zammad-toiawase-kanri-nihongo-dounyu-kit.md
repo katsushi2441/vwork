@@ -8,7 +8,7 @@ layout: default
 permalink: /blog/2026-11-05-zammad-toiawase-kanri-nihongo-dounyu-kit.html
 tags: [問い合わせ管理, ヘルプデスク, Zammad, オープンソース, 日本語化, SLA, VPS, Docker, Kurage App Store]
 description: "問い合わせ管理（ヘルプデスク）のオープンソース Zammad（AGPL-3.0）の最新安定版 7.2.2 を公式 docker compose で立てて実測しました。起動から画面まで33秒、Elasticsearch なしで待機メモリ約1.1GB。同梱の日本語訳は5,153項目中1,001項目（19.4%）で、日本語ブラウザ（ja-JP）ではログイン画面と初回ウィザードが英語になります。全項目の訳と言語一覧の差し込みで主要38画面の日本語を64%から94%にし、部署・受付アドレス・平日9〜18時と日本の祝日のSLA・日本語の自動返信・定型文の組み方、復元テスト済みのバックアップ、実機で踏んだトラブル24件を導入キットにしました。"
-seo_title: "Zammad 日本語で問い合わせ管理｜自社サーバー導入キット（実測）"
+seo_title: "Zammad 日本語で問い合わせ管理｜メールの取りこぼしを無くす"
 head_keyword: "zammad 日本語"
 og_stat: "問い合わせを逃さない"
 og_stat_label: "メール取り込み・担当の割り当て・自動返信・対応期限・定型文"

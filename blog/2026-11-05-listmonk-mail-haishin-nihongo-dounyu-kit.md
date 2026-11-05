@@ -8,7 +8,7 @@ layout: default
 permalink: /blog/2026-11-05-listmonk-mail-haishin-nihongo-dounyu-kit.html
 tags: [メール配信, メルマガ, listmonk, オープンソース, 日本語化, 特定電子メール法, VPS, Docker, Kurage App Store]
 description: "メール配信のオープンソース listmonk（AGPL-3.0・v6.2.0）を Docker で立て、外部 SMTP につなぐ型で実測しました。起動からログイン画面まで11.6秒、待機時のメモリは本体42〜46MB＋PostgreSQL 34〜44MB。日本語訳は713項目すべてにありますが「加入者」「ドラフト」「都市（Year の誤訳）」など業務の言葉になっていないため411項目を直して差し込みました。件名・差出人名・本文は髙・﨑・德・㈱・①まで化けず、Gmail のワンクリック配信停止も実測で動作。Excel の普通の CSV（Shift_JIS）が1件も入らない件、テキスト配信で HTML が生で見える件などの対処、特定電子メール法の表示を入れたテンプレートまで入れて導入キットにしました。"
-seo_title: "メール配信システム オープンソース｜listmonk 日本語導入キット（実測）"
+seo_title: "メール配信システム オープンソース｜listmonk 日本語"
 head_keyword: "メール配信システム オープンソース"
 og_stat: "自社でメール配信"
 og_stat_label: "購読者リスト・一斉配信・配信停止・開封計測・API"

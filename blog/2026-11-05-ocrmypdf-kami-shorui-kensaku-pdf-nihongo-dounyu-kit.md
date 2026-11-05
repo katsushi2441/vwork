@@ -8,7 +8,7 @@ layout: default
 permalink: /blog/2026-11-05-ocrmypdf-kami-shorui-kensaku-pdf-nihongo-dounyu-kit.html
 tags: [OCR, OCRmyPDF, tesseract, オープンソース, ペーパーレス, 請求書, 縦書き, paperless-ngx, Kurage App Store]
 description: "スキャンした紙の書類を文字で検索できるPDFにするオープンソース OCRmyPDF（MPL-2.0）と tesseract を、自作の日本語見本6種（請求書・納品書・手書き混じりFAX・縦書きの挨拶状・契約書・A3見積）で、docker 版（17.13.1・tesseract 5.5）と pip 版（16.13.0・tesseract 4.1）の96条件で実測しました。横書きの印字は正答率91〜94%、縦書きは87%。psm 6 で表が消える、--clean で薄い字が消える、影があると --deskew が逆効果、tesseract 4.1 では縦書きの文字の順が逆になる、といった「エラーが出ずに読めていない」所を表にし、フォルダ監視・一括処理・paperless-ngx 連携と一緒に導入キットにしました。"
-seo_title: "OCRmyPDF 日本語で紙の書類を検索できるPDFに｜導入キット（実測）"
+seo_title: "OCRmyPDF 日本語｜紙の請求書・契約書を検索できるPDFに"
 head_keyword: "ocrmypdf 日本語"
 og_stat: "紙の書類を検索可能に"
 og_stat_label: "日本語OCR・縦書き・傾き補正・フォルダ監視・paperless連携"

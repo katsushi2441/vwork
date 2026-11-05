@@ -8,7 +8,7 @@ layout: default
 permalink: /blog/2026-11-04-docuseal-denshi-keiyaku-nihongo-dounyu-kit.html
 tags: [電子契約, DocuSeal, オープンソース, 電子署名, 日本語化, 保育園, 人材派遣, 小売, VPS, Docker, Kurage App Store]
 description: "電子契約のオープンソース DocuSeal（AGPL-3.0・v3.3.5）を Docker で立て、入園契約書で保護者→園長の2者署名を通して実測しました。相手が見る署名画面は最初から日本語ですが、管理画面は本体の日本語訳が1,109項目中108項目（10%）で「言語」に日本語が無く、完成PDFでは同梱フォントに無い「﨑」「𠮷」が空白になります。本体に無い1,001項目の訳の差し込み（再ビルド不要）と IPAexゴシックへの差し替えで塞ぎ、保育園・人材紹介派遣・小売の契約書の組み方、復元テスト済みのバックアップ、API/Webhook の実測ペイロードまで入れて導入キットにしました。"
-seo_title: "電子契約をオープンソースで自社サーバーに｜DocuSeal 日本語導入キット（実測）"
+seo_title: "電子契約を自社サーバーで｜DocuSeal 日本語導入キット"
 head_keyword: "電子契約 オープンソース"
 og_stat: "電子契約を自社サーバーで"
 og_stat_label: "記入欄と署名欄の配置・手書き署名・署名順・監査ログ"

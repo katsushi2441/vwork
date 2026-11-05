@@ -8,7 +8,7 @@ layout: default
 permalink: /blog/2026-11-05-leantime-anken-kanri-nihongo-dounyu-kit.html
 tags: [タスク管理, 案件管理, プロジェクト管理, Leantime, オープンソース, 日本語化, タイムシート, VPS, Docker, Kurage App Store]
 description: "プロジェクト管理のオープンソース Leantime（AGPL-3.0・v3.13.2）を公式 docker イメージで立て、10〜30人の会社の案件管理（部署→案件・マイルストーン・担当と期限・タイムシート）として実測しました。起動から画面まで50秒、待機メモリは本体130〜230MB＋MySQL 430〜480MB。本家の日本語訳は翻訳対象3,627項目中3,539項目（97.6%）ですが、新機能の26項目と英語のままの51項目、誤訳が残ります。71項目の差し込みで主要18画面の日本語を94.6%から96.3%にし、言語ファイルで直らない英語は読み替え表で受け、Excel・Trello・Asana からの CSV 移行、復元テスト済みのバックアップ、トラブル21件と一緒に導入キットにしました。"
-seo_title: "タスク管理 OSS で案件管理｜Leantime 日本語導入キット（実測）"
+seo_title: "案件管理 OSS｜進み具合と工数を一画面で Leantime"
 head_keyword: "タスク管理 oss"
 og_stat: "案件の進み具合が見える"
 og_stat_label: "タスク・カンバン・ガント・マイルストーン・工数記録"
