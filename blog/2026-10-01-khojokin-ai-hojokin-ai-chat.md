@@ -59,3 +59,4 @@ jGrantsにはすべての補助金・助成金が載っているわけではあ�
 士業・支援機関のサイトへの設置や、AIエージェントから呼べるMCPサーバーの形を考えています。お気軽にお問い合わせください。
 
 - [Kurage 補助金AIチャット（開発中）の説明と問い合わせ](https://exbridge.jp/solution/khojokin-ai.html?ref=vibeblog_khojokin-ai)
+- [デジタル化・AI導入補助金2026（旧IT導入補助金）の締切と、愛知県・名古屋市の制度を公式サイトで確かめた一覧](https://exbridge.jp/ai-hojokin.html#ref=vibeblog-khojokin-ai-hojokin)
