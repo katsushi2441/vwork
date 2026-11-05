@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [White Houseのネットワークへのプロキシ検知と、DeepSeekが支配するオープンウェイトモデルの台頭 11-05](2026-11-05-ai-news-3.html)
 - [OpenとDatasetteで読む：MetaのAIコーディング企業買収と、技術的負債を解消するAIの衝撃 11-05](2026-11-05-ai-news-2.html)
 - [Axion 1.0の登場とNVIDIA、Gemmaを巡るAI技術の最適化動向 11-05](2026-11-05-ai-news.html)
 - [Qwen 3.8のローカル実行とRevolutによるClaude Codeからの脱却など、AIコスト削減と性能向上の最前線 11-04](2026-11-04-ai-news-4.html)

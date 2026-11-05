@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 04 Nov 2026 21:43:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 03:57:38 +0000</lastBuildDate>
     <item>
       <title>OpenとDatasetteで読む：MetaのAIコーディング企業買収と、技術的負債を解消するAIの衝撃 11-05</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-05-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-05-ai-news-2.html</guid>
       <pubDate>Thu, 05 Nov 2026 09:00:00 +0000</pubDate>
       <description>MetaによるAIコーディング企業Conductorの買収や、技術的負債を解消するAIの衝撃について解説します。さらにDharma Field Extractorの登場やGemmaの軽量化など、最新のAI動向とOSS情報を網羅しています。</description>
+    </item>
+    <item>
+      <title>White Houseのネットワークへのプロキシ検知と、DeepSeekが支配するオープンウェイトモデルの台頭 11-05</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-05-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-05-ai-news-3.html</guid>
+      <pubDate>Thu, 05 Nov 2026 09:00:00 +0000</pubDate>
+      <description>ホワイトハウスのネットワークで住宅用プロキシの活動が検知されたセキュリティ事案や、DeepSeekがOpenrouterトークンの53%を占有するなどの最新AI動向を解説します。Ripple-65BやKimi-K3.1-Proの公開情報も網羅しています。</description>
     </item>
     <item>
       <title>Axion 1.0の登場とNVIDIA、Gemmaを巡るAI技術の最適化動向 11-05</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news.html</guid>
       <pubDate>Mon, 26 Oct 2026 09:00:00 +0000</pubDate>
       <description>33Bパラメータの新モデルNanbeige4.3が登場し、将来的な小型蒸留モデルの基盤となることが期待されています。また、ローカルLLMコミュニティでは量子化モデルのバックアップと共有による資産保護の重要性が議論されています。</description>
-    </item>
-    <item>
-      <title>Elon MuskのSpaceXが400億ドルの債務調達とNVIDIAのソフトウェア戦略で動くAI市場の最前線 10-26</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-26-ai-news-3.html</guid>
-      <pubDate>Mon, 26 Oct 2026 09:00:00 +0000</pubDate>
-      <description>SpaceXがAIチップ獲得のため400億ドルの債務調達を行う計画や、NVIDIAがGPU1基あたり年間2,000ドルのソフトウェア収益を目指す戦略を解説します。CrowdGPTの動向やllama.cppの脆弱性情報も網羅しています。</description>
     </item>
   </channel>
 </rss>
