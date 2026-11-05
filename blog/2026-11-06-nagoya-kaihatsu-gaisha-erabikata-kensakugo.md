@@ -112,3 +112,7 @@ ChatGPT の検索は Bing の索引を使うので、5番目は ChatGPT に読�
 効いたかどうかは、11月20日ごろに、Google のロボットが新しいページと業種・業務のページを読んだ回数、検索結果に出た回数、問い合わせの数で確かめます。数字が出たら、このブログで続きを書きます。
 
 名古屋でホームページやシステムを頼む先を探している方は、まず2つのページで頼み方と料金を見てください。どの頼み方が合うか分からないときは、[お問い合わせ](https://exbridge.jp/contact.php?ref=vibeblog-nagoya-erabikata)からご相談ください。
+
+頼み方の選び方（買う・変える・作る・任せる）は、note にも書きました。
+
+- [名古屋で業務システムを頼むとき、何から選ぶか（note）](https://note.com/tokoname/n/nb7c131cfe1c4?ref=vibeblog-nagoya-erabikata)
