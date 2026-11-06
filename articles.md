@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [NVIDIA Cosmos 3の登場とMetaによるMuse AIアバターの実装など、AIインフラと体験の最前線 11-06](2026-11-06-ai-news-4.html)
 - [Securityで読む：MS Paintの脆弱性とNVIDIA Cosmos 3、DeepSeekの最新動向から見るAI・セキュリティ… 11-06](2026-11-06-ai-news-3.html)
 - [NVIDIA Cosmos 3の公開とOpenSSHにおける深刻な脆弱性「sshole」の衝撃 11-06](2026-11-06-ai-news-2.html)
 - [DropboxのTigris Data買収とNVIDIA Nemotron採用で加速する企業向けAIインフラ競争 11-06](2026-11-06-ai-news.html)

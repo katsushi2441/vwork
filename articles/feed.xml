@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 03:48:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 10:06:27 +0000</lastBuildDate>
+    <item>
+      <title>NVIDIA Cosmos 3の登場とMetaによるMuse AIアバターの実装など、AIインフラと体験の最前線 11-06</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-06-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-06-ai-news-4.html</guid>
+      <pubDate>Fri, 06 Nov 2026 09:00:00 +0000</pubDate>
+      <description>NVIDIAが世界シミュレーション用モデル「Cosmos 3」を発表したほか、MetaがMuse AIアバターのビデオチャット機能を米国で提供開始しました。Claude Codeのプライバシー問題やPalo Alto NetworksによるClutch買収など最新情報を網羅します。</description>
+    </item>
     <item>
       <title>Securityで読む：MS Paintの脆弱性とNVIDIA Cosmos 3、DeepSeekの最新動向から見るAI・セキュリティ… 11-06</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-06-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news-3.html</guid>
       <pubDate>Tue, 27 Oct 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが新モデルGPT-6.1 Terraを発表し、高度なタスク実行やコーディング支援を強化します。またAnthropicのIPO申請や、計算複雑性理論における指数時間仮説（ETH）の否定など最新のAI動向を解説します。</description>
-    </item>
-    <item>
-      <title>AnthropicのIPO準備とSpaceXによる400億ドルのGPU資金調達 10-27</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-27-ai-news-2.html</guid>
-      <pubDate>Tue, 27 Oct 2026 09:00:00 +0000</pubDate>
-      <description>SpaceXがApollo社と400億ドルのGPU資金調達で合意したニュースや、NVIDIA Blackwellの技術的仕様、OCCによる地域銀行へのステーブルコイン決済参入要請など、最新のAI・金融動向を網羅的に解説します。</description>
     </item>
   </channel>
 </rss>
