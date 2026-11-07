@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 06 Nov 2026 21:46:14 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 04:00:43 +0000</lastBuildDate>
     <item>
       <title>Qwen 4の動向とロボット学習におけるToyBlocksやPhysiclの技術革新 11-07</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news-2.html</guid>
       <pubDate>Sat, 07 Nov 2026 09:00:00 +0000</pubDate>
       <description>Artex AIハッキングツールの公開サーバー発見やOpenWebUIによるローカルLLMでのデスクトップ操作など、最新のAIセキュリティと技術動向を解説します。中国発モデルの機能削除やFAAのフロッピー廃止方針も紹介します。</description>
+    </item>
+    <item>
+      <title>TechとMetaで読む：OpenAIの評価額が1.25兆ドルへ、および最新のAIコスト最適化技術 11-07</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news-3.html</guid>
+      <pubDate>Sat, 07 Nov 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIの企業価値が1.25兆ドルに到達したニュースや、コストを4分の1に抑えるJevアーキテクチャ等の最新技術を紹介します。また、Qwenの微調整モデル公開やローカルLLMの動向など、AI業界の重要トピックを網羅しています。</description>
     </item>
     <item>
       <title>NVIDIA Cosmos 3の登場とMetaによるMuse AIアバターの実装など、AIインフラと体験の最前線 11-06</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news-2.html</guid>
       <pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
       <description>GoogleのGenie 4がオーディオ対応やリアルタイム操作を実現し、物理演算を含む世界モデルとして進化しました。またLiquidAIのLFM3による特化型マルチモーダル構築や指数時間仮説への反論など、最新のAI動向を解説します。</description>
-    </item>
-    <item>
-      <title>TheとBankで読む：OpenAIのGPT-4o訴訟とデータセンター需要が加速させる米国のインフラ革新 10-28</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news-4.html</guid>
-      <pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
-      <description>OpenAIのGPT-4oに対する医療アドバイスに関する訴訟や、バンク・オブ・アメリカによるAIへのパスワード共有禁止の警告を解説します。また、データセンター需要が加速させる米国の送電網インフラ革新についても詳しく紹介します。</description>
     </item>
   </channel>
 </rss>
