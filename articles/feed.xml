@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 04:00:43 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 10:11:29 +0000</lastBuildDate>
     <item>
       <title>Qwen 4の動向とロボット学習におけるToyBlocksやPhysiclの技術革新 11-07</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news.html</guid>
       <pubDate>Sat, 07 Nov 2026 09:00:00 +0000</pubDate>
       <description>Qwen 4の最新動向やロボット学習におけるToyBlocksの発表、Physicl社の1,000万ドル資金調達など、AI技術の最前線を解説します。シミュレーションから現実への移行やセキュリティ制限の議論も網羅しています。</description>
+    </item>
+    <item>
+      <title>OpenAIの1.25兆ドル評価とMetaのMuseエージェントによるAI進化 11-07</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news-4.html</guid>
+      <pubDate>Sat, 07 Nov 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIが企業価値1.25兆ドルで資金調達を実施したニュースや、MetaのMuseエージェント用空間「Spaces」の発表を解説します。さらにLLMのコスト削減手法や中間選挙によるデータセンターへの影響も網羅しています。</description>
     </item>
     <item>
       <title>Securityで読む：Artexの脆弱性とOpenWebUIによるエージェント機能など、最新AIセキュリティと技術動向 11-07</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news.html</guid>
       <pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
       <description>Operaがブラウザ内でのローカルAI実行を可能にする新標準「WebAI」を発表しました。またCF Benchmarksによる金融インフラのオンチェーン化や、Ling-3.1-flash-1019のモデル公開など最新技術動向を解説します。</description>
-    </item>
-    <item>
-      <title>GoogleのGenie 4とLiquidAIのLFM3が示す、次世代世界モデルとマルチモーダルAIの進化 10-28</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news-2.html</guid>
-      <pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
-      <description>GoogleのGenie 4がオーディオ対応やリアルタイム操作を実現し、物理演算を含む世界モデルとして進化しました。またLiquidAIのLFM3による特化型マルチモーダル構築や指数時間仮説への反論など、最新のAI動向を解説します。</description>
     </item>
   </channel>
 </rss>
