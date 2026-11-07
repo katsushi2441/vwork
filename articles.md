@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Appleのプライバシー懸念とGoogleによるデータセンター買収：AIインフラの裏側 11-08](2026-11-08-ai-news.html)
 - [OpenAIの1.25兆ドル評価とMetaのMuseエージェントによるAI進化 11-07](2026-11-07-ai-news-4.html)
 - [TechとMetaで読む：OpenAIの評価額が1.25兆ドルへ、および最新のAIコスト最適化技術 11-07](2026-11-07-ai-news-3.html)
 - [Securityで読む：Artexの脆弱性とOpenWebUIによるエージェント機能など、最新AIセキュリティと技術動向 11-07](2026-11-07-ai-news-2.html)

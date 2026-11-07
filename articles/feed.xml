@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 07 Nov 2026 10:11:29 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 15:32:22 +0000</lastBuildDate>
+    <item>
+      <title>Appleのプライバシー懸念とGoogleによるデータセンター買収：AIインフラの裏側 11-08</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-08-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-08-ai-news.html</guid>
+      <pubDate>Sun, 08 Nov 2026 09:00:00 +0000</pubDate>
+      <description>AppleのMacにおける未公開の家族関係識別機能によるプライバシー懸念や、GoogleによるCrusoe社のデータセンター買収の背景を解説します。軽量なObsessive-1.7Bの登場など、AIインフラと技術動向を網羅します。</description>
+    </item>
     <item>
       <title>Qwen 4の動向とロボット学習におけるToyBlocksやPhysiclの技術革新 11-07</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-29-ai-news.html</guid>
       <pubDate>Thu, 29 Oct 2026 09:00:00 +0000</pubDate>
       <description>DTCCが主要銀行と連携し30兆ドルの証券をブロックチェーンへ移行する動きや、Qwenモデル内に32ビットRISC-V CPUを組み込む新技術を紹介します。またNVIDIAの最新文字起こしモデルのリリース情報も網羅しています。</description>
-    </item>
-    <item>
-      <title>Workで読む：OperaのWebAI標準とCF Benchmarksによる金融インフラのオンチェーン化 10-28</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-28-ai-news.html</guid>
-      <pubDate>Wed, 28 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Operaがブラウザ内でのローカルAI実行を可能にする新標準「WebAI」を発表しました。またCF Benchmarksによる金融インフラのオンチェーン化や、Ling-3.1-flash-1019のモデル公開など最新技術動向を解説します。</description>
     </item>
   </channel>
 </rss>
