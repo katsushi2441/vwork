@@ -8,7 +8,7 @@ layout: default
 permalink: /blog/2026-11-08-wordpress-zeijakusei-ai-jidai-erabu-riyu.html
 tags: [WordPress, 脆弱性, セキュリティ, ホームページ制作, 静的サイト, AIエージェント, バイブコーディング, 中小企業]
 description: "WordPressのプラグインの脆弱性は毎日見つかり、11月8日だけで更新36件・要注意6件（うち10万サイト以上で使われるプラグインに緊急1件）が出ていました。それでも新しくWordPressで作られるサイトが多いのは、社員が更新できる・制作会社が慣れている・プラグインで機能を足せる、といった理由からです。しかしAIエージェントとバイブコーディングで、その理由はほぼなくなりました。WordPressが危ないのではなく、選ぶ理由がなくなった、という見方を、中小企業21社の診断と合わせて書きます。"
-seo_title: "WordPressの脆弱性とAI時代のサイト作り｜WordPressを選ぶ理由はあるか"
+seo_title: "WordPressの脆弱性｜AI時代に選ぶ理由はあるか"
 head_keyword: "WordPress 脆弱性"
 og_stat: "36件"
 og_stat_label: "11月8日のWordPressのセキュリティの更新（うち要注意6件）"
