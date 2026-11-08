@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [HTTPで読む：Claude Codeの脆弱性とMEXCへの制裁など、AI・Web3のセキュリティリスク最新動向 11-08](2026-11-08-ai-news-3.html)
 - [Useで読む：Gnosis Payのデータ流出とDeepSeekモデルのローカル最適化：Web3とAIの最新動向 11-08](2026-11-08-ai-news-2.html)
 - [Appleのプライバシー懸念とGoogleによるデータセンター買収：AIインフラの裏側 11-08](2026-11-08-ai-news.html)
 - [OpenAIの1.25兆ドル評価とMetaのMuseエージェントによるAI進化 11-07](2026-11-07-ai-news-4.html)
