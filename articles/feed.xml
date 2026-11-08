@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 08 Nov 2026 03:57:59 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 10:11:31 +0000</lastBuildDate>
     <item>
       <title>Appleのプライバシー懸念とGoogleによるデータセンター買収：AIインフラの裏側 11-08</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-08-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-08-ai-news.html</guid>
       <pubDate>Sun, 08 Nov 2026 09:00:00 +0000</pubDate>
       <description>AppleのMacにおける未公開の家族関係識別機能によるプライバシー懸念や、GoogleによるCrusoe社のデータセンター買収の背景を解説します。軽量なObsessive-1.7Bの登場など、AIインフラと技術動向を網羅します。</description>
+    </item>
+    <item>
+      <title>Gnosis Payのデータ流出と米国財務省によるMEXCへの制裁、そしてNVIDIAを巡るスパイ疑惑 11-08</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-08-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-08-ai-news-4.html</guid>
+      <pubDate>Sun, 08 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Gnosis Payでカード番号や住所を含む個人情報が流出したニュースや、米国財務省によるMEXCへの制裁動向を解説します。さらにllama.cppの推論最適化やモバイル向けAIエージェントの実証など最新技術も紹介します。</description>
     </item>
     <item>
       <title>Useで読む：Gnosis Payのデータ流出とDeepSeekモデルのローカル最適化：Web3とAIの最新動向 11-08</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-29-ai-news-2.html</guid>
       <pubDate>Thu, 29 Oct 2026 09:00:00 +0000</pubDate>
       <description>Qwenのモデル重みに32ビットRISC-V CPUを組み込む技術革新や、WizのCTOが警告する「脆弱性の黙示録」について解説します。さらにGemini 4 Carbonの発表やMicrosoftとOpenAIの収益についても報じます。</description>
-    </item>
-    <item>
-      <title>MOSSとResearchで読む：Qwen4の登場とLLM学習効率を劇的に改善する新技術の最前線 10-29</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-29-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-29-ai-news-4.html</guid>
-      <pubDate>Thu, 29 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Qwen4の最大100万トークンコンテキストウィンドウや、学習計算量を15%削減する新手法LIMeなどの最新技術を解説します。さらにNVIDIAの新モデルやMicrosoftとOpenAIの収益に関するニュースも網羅しています。</description>
     </item>
   </channel>
 </rss>
