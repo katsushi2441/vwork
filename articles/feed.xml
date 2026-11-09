@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 09:58:02 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 15:26:30 +0000</lastBuildDate>
+    <item>
+      <title>LongCat-2.5の登場とNvidiaを揺るがすGoogleのAIチップ戦略 11-10</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news.html</guid>
+      <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Hugging Faceで公開された1.6T規模のマルチモーダルモデルLongCat-2.5や、Nvidiaへの圧力を強めるGoogleの独自AIチップ戦略を解説します。MoEモデルの圧縮技術や日本の金融向け合成データセットの最新動向も紹介します。</description>
+    </item>
     <item>
       <title>SolanaとHuangで読む：Nvidiaのジェンセン・ファンCEOの動向とAIバブルを巡る議論 11-09</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-09-ai-news-4.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-4.html</guid>
       <pubDate>Sat, 31 Oct 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが資金調達目標や企業評価額の下方修正を検討する中、AI需要によるPCB（プリント基板）の深刻な供給不足が2030年まで続く現状を解説します。Nvidiaのデータセンター共同保証やMOSSの最新プロジェクトも紹介します。</description>
-    </item>
-    <item>
-      <title>Claude Codeのバックドア問題とAIデータセンターの量産化に向けた最新動向 10-31</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news.html</guid>
-      <pubDate>Sat, 31 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Cursor MarketplaceでClaude Code拡張機能へのバックドア混入が判明したセキュリティリスクや、Runwareによるプレハブ式AIデータセンターの量産化など、最新のAI技術動向と規制に関するニュースを詳しく解説します。</description>
     </item>
   </channel>
 </rss>
