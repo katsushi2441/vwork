@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [MetaのMuse Ember登場とNVIDIAを揺るがすJensen Huang氏の動向 11-10](2026-11-10-ai-news-2.html)
 - [LongCat-2.5の登場とNvidiaを揺るがすGoogleのAIチップ戦略 11-10](2026-11-10-ai-news.html)
 - [SolanaとHuangで読む：Nvidiaのジェンセン・ファンCEOの動向とAIバブルを巡る議論 11-09](2026-11-09-ai-news-4.html)
 - [RustとWebGPUで構築されるKetchUpや、Outlook.comのDMARC対応など最新技術動向 11-09](2026-11-09-ai-news-3.html)
