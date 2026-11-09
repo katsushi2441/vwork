@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [SolanaとHuangで読む：Nvidiaのジェンセン・ファンCEOの動向とAIバブルを巡る議論 11-09](2026-11-09-ai-news-4.html)
 - [RustとWebGPUで構築されるKetchUpや、Outlook.comのDMARC対応など最新技術動向 11-09](2026-11-09-ai-news-3.html)
 - [Goldman SachsがClaude Codeを制限、企業AIガバナンスの課題とQwen3.8の動向 11-09](2026-11-09-ai-news-2.html)
 - [RTX 5060 Tiの普及とLLMにおける検閲・バイアスの議論 11-09](2026-11-09-ai-news.html)
