@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 09 Nov 2026 21:46:30 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 04:01:57 +0000</lastBuildDate>
     <item>
       <title>MetaのMuse Ember登場とNVIDIAを揺るがすJensen Huang氏の動向 11-10</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news-2.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news.html</guid>
       <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
       <description>Hugging Faceで公開された1.6T規模のマルチモーダルモデルLongCat-2.5や、Nvidiaへの圧力を強めるGoogleの独自AIチップ戦略を解説します。MoEモデルの圧縮技術や日本の金融向け合成データセットの最新動向も紹介します。</description>
+    </item>
+    <item>
+      <title>ExpertsとUSPSで読む：E-meansの登場とMoEモデルの最適化：AIアルゴリズムの効率化最前線 11-10</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news-3.html</guid>
+      <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
+      <description>k-meansを凌駕する新アルゴリズム「E-means」の登場や、AmazonによるMoEモデルの高次プルーニング手法など、AI効率化の最前線を解説します。USPSの郵便番号データ提供や日本向けの合成データセットについても紹介します。</description>
     </item>
     <item>
       <title>SolanaとHuangで読む：Nvidiaのジェンセン・ファンCEOの動向とAIバブルを巡る議論 11-09</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-3.html</guid>
       <pubDate>Sat, 31 Oct 2026 09:00:00 +0000</pubDate>
       <description>Nvidiaがウェストバージニア州のAIデータセンター建設への共同保証を検討する動きや、OpenAIが資金調達目標と評価額を下方修正した背景など、最新のAI市場動向を解説します。Claude Codeの脆弱性情報も網羅しています。</description>
-    </item>
-    <item>
-      <title>Binanceで読む：Northflankのセキュリティ侵害とNVIDIA Nemotron、Qwenによるエミュレーション技術の進展 10-31</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-10-31-ai-news-2.html</guid>
-      <pubDate>Sat, 31 Oct 2026 09:00:00 +0000</pubDate>
-      <description>Northflankでの大規模なセキュリティ侵害やBinanceによる63億ドルの不正利用に関する報告を解説します。また、NVIDIA Nemotronの最新更新やQwen3.5を用いたNESエミュレータの埋め込み技術など、最新のAI・Web3動向を網羅しています。</description>
     </item>
   </channel>
 </rss>
