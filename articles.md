@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIやAnthropicへの規制強化と、LLMの重み削除による驚異的な効率化 11-11](2026-11-11-ai-news-2.html)
 - [AdobeのAIエージェント導入とAlphaProof Codeによるソフトウェア信頼性の革新 11-11](2026-11-11-ai-news.html)
 - [Amazonのコスト削減とDeepSeek・Qwenによる推論速度の比較 11-10](2026-11-10-ai-news-4.html)
 - [ExpertsとUSPSで読む：E-meansの登場とMoEモデルの最適化：AIアルゴリズムの効率化最前線 11-10](2026-11-10-ai-news-3.html)
