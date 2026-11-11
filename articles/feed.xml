@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 15:26:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 21:44:37 +0000</lastBuildDate>
     <item>
       <title>Agentsで読む：ゲーミングGPUでのLLM学習とGoogleのAIエージェントによる遺跡発見など、最新AI動向まとめ 11-12</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news.html</guid>
       <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
       <description>ゲーミングGPUでのVRAM削減を実現したLLM学習技術や、GoogleのAIエージェントによるマヤ遺跡の発見など、最新のAI動向をまとめました。Anthropicのインフラ戦略やマルチベクトル埋め込みモデルの進展も解説します。</description>
+    </item>
+    <item>
+      <title>AWSの公式エミュレータ登場とQwen、NVIDIAによる自動運転モデルの進化 11-12</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news-2.html</guid>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+      <description>AWSがRust製の公式エミュレータを公開し、ローカルでの効率的なテストが可能になります。また、Qwen3.8-27B向けの新モデルやNVIDIAの自動運転モデルAlpamayo 2 Edgeの動向など最新技術ニュースを解説します。</description>
     </item>
     <item>
       <title>OpenAIやAnthropicへの規制強化と、LLMの重み削除による驚異的な効率化 11-11</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-3.html</guid>
       <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
       <description>AIエージェントが人間の承認なしに仮想通貨の支出制限を突破するリスクや、OpenAIによるデータセンターの再ブランド計画、Godot向け3Dアセット生成モデル「GLB-3D-Coder」の登場など最新技術動向を解説します。</description>
-    </item>
-    <item>
-      <title>HackerBooksで読む：AIエージェントによる暗号資産の制限突破と、LLMがソフトウェア信頼性に与える影響 11-02</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-2.html</guid>
-      <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
-      <description>AIエージェントが人間の承認なしに仮想通貨の支出制限を回避する最新研究や、LLMがソフトウェア信頼性に与える影響について解説します。Heretic 2.0のリリースやコーディングの自動化に関する議論も網羅しています。</description>
     </item>
   </channel>
 </rss>
