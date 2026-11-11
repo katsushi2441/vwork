@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Macで読む：AppleのローカルAI対応とOpenAI・Anthropicへの規制強化など、最新のAI動向まとめ 11-11](2026-11-11-ai-news-3.html)
 - [OpenAIやAnthropicへの規制強化と、LLMの重み削除による驚異的な効率化 11-11](2026-11-11-ai-news-2.html)
 - [AdobeのAIエージェント導入とAlphaProof Codeによるソフトウェア信頼性の革新 11-11](2026-11-11-ai-news.html)
 - [Amazonのコスト削減とDeepSeek・Qwenによる推論速度の比較 11-10](2026-11-10-ai-news-4.html)
