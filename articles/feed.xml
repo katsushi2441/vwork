@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 15:27:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 21:40:13 +0000</lastBuildDate>
     <item>
       <title>Nvidiaのジェンセン・ファンCEO辞任とFireworks AIへのサイバー攻撃によるデータ流出の衝撃 11-13</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news.html</guid>
       <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
       <description>Nvidiaのジェンセン・ファンCEO辞任報道やFireworks AIへのサイバー攻撃によるNotionユーザーのデータ流出を報じます。また新技術KQuantによるQwenモデルの精度向上や3D生成モデルのガイドも紹介します。</description>
+    </item>
+    <item>
+      <title>DTCCがSolanaを採用し、GoogleのGemini 4で検索体験が進化する最新動向 11-13</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-2.html</guid>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
+      <description>DTCCがSolanaを採用し2027年のトークン化を目指す動向や、GoogleのGemini 4による検索体験の進化、LLM用言語LLMONの導入など、最新のWeb3・AI技術ニュースを要約して紹介します。</description>
     </item>
     <item>
       <title>Nvidiaのジェンセン・ファンCEO交代報道と、Gemma4の潜在空間における驚きの発見 11-12</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-haas-ja-v1-japanese-asr-kaimom-pro.html</guid>
       <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
       <description>2026年10月に公開された日本語の文字起こしAI「Haas-ja-v1.0」（Apache 2.0）を解説します。公開モデルで最も低い文字誤り率6.12%、Whisper large-v3の15〜17倍の速さという公表値、使い方、NVIDIAのGPUが必須などの弱点、当社のAI議事録システムに組み込む Kurage AI MOM Pro（Haas版）の計画までまとめました。</description>
-    </item>
-    <item>
-      <title>Qwenのオープンソースへの強い意志と、AIモデル学習を民主化するTrajectoryの資金調達 11-03</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-03-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-ai-news-3.html</guid>
-      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
-      <description>AlibabaのQwenモデルがオープンソースとして提供され続ける方針を表明しました。また、Trajectory社がAI学習の民主化に向け4,500万ドルを調達したほか、Astraによる重み書き込み機能の実装やOSINT技術の発見など最新ニュースを解説します。</description>
     </item>
   </channel>
 </rss>
