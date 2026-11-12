@@ -1,0 +1,347 @@
+{
+ "periods": [
+  {
+   "period": "2024年12月〜2025年2月",
+   "source": "kenshoukekka2412-2502aa",
+   "compare_to": "前年の同じ時期",
+   "before_total": 38229,
+   "before_light": 17803,
+   "before_admit": 20426,
+   "after_total": 38041,
+   "after_light": 16162,
+   "after_admit": 21879,
+   "chg_total": -0.5,
+   "chg_light": -9.2,
+   "chg_admit": 7.1,
+   "charged": 940,
+   "charge_rate": null,
+   "worsened_reports": 0,
+   "neighbors": [
+    {
+     "pref": "福島県",
+     "before": 21935,
+     "after": 23825,
+     "chg": 8.6
+    },
+    {
+     "pref": "茨城県",
+     "before": 38229,
+     "after": 38041,
+     "chg": -0.5
+    },
+    {
+     "pref": "栃木県",
+     "before": 22369,
+     "after": 24264,
+     "chg": 8.5
+    },
+    {
+     "pref": "群馬県",
+     "before": 25350,
+     "after": 26320,
+     "chg": 3.8
+    },
+    {
+     "pref": "埼玉県",
+     "before": 96388,
+     "after": 101777,
+     "chg": 5.6
+    },
+    {
+     "pref": "千葉県",
+     "before": 95497,
+     "after": 100309,
+     "chg": 5.0
+    }
+   ]
+  },
+  {
+   "period": "2025年3月〜5月",
+   "source": "kenshoukekka2503-2505",
+   "compare_to": "前年の同じ時期",
+   "before_total": 33961,
+   "before_light": 15751,
+   "before_admit": 18210,
+   "after_total": 31841,
+   "after_light": 13325,
+   "after_admit": 18516,
+   "chg_total": -6.2,
+   "chg_light": -15.4,
+   "chg_admit": 1.7,
+   "charged": 623,
+   "charge_rate": "3.3",
+   "worsened_reports": 0,
+   "neighbors": [
+    {
+     "pref": "福島県",
+     "before": 20303,
+     "after": 20266,
+     "chg": -0.2
+    },
+    {
+     "pref": "茨城県",
+     "before": 33961,
+     "after": 31841,
+     "chg": -6.2
+    },
+    {
+     "pref": "栃木県",
+     "before": 19876,
+     "after": 20535,
+     "chg": 3.3
+    },
+    {
+     "pref": "群馬県",
+     "before": 25345,
+     "after": 25450,
+     "chg": 0.4
+    },
+    {
+     "pref": "埼玉県",
+     "before": 87199,
+     "after": 87509,
+     "chg": 0.4
+    },
+    {
+     "pref": "千葉県",
+     "before": 77413,
+     "after": 78755,
+     "chg": 1.7
+    }
+   ]
+  },
+  {
+   "period": "2025年6月〜8月",
+   "source": "kenshoukekka2506-2508",
+   "compare_to": "前年の同じ時期",
+   "before_total": 38689,
+   "before_light": 18629,
+   "before_admit": 20060,
+   "after_total": 35491,
+   "after_light": 15094,
+   "after_admit": 20397,
+   "chg_total": -8.3,
+   "chg_light": -19.0,
+   "chg_admit": 1.7,
+   "charged": 673,
+   "charge_rate": "3.3",
+   "worsened_reports": 0,
+   "neighbors": [
+    {
+     "pref": "福島県",
+     "before": 22403,
+     "after": 22534,
+     "chg": 0.6
+    },
+    {
+     "pref": "茨城県",
+     "before": 38689,
+     "after": 35491,
+     "chg": -8.3
+    },
+    {
+     "pref": "栃木県",
+     "before": 22579,
+     "after": 22460,
+     "chg": -0.5
+    },
+    {
+     "pref": "群馬県",
+     "before": 25272,
+     "after": 25052,
+     "chg": -0.9
+    },
+    {
+     "pref": "埼玉県",
+     "before": 99808,
+     "after": 97045,
+     "chg": -2.8
+    },
+    {
+     "pref": "千葉県",
+     "before": 89358,
+     "after": 85755,
+     "chg": -4.0
+    }
+   ]
+  },
+  {
+   "period": "2025年9月〜11月",
+   "source": "kenshoukekka2509-2511",
+   "compare_to": "前年の同じ時期",
+   "before_total": 33947,
+   "before_light": 15555,
+   "before_admit": 18392,
+   "after_total": 33332,
+   "after_light": 13469,
+   "after_admit": 19863,
+   "chg_total": -1.8,
+   "chg_light": -13.4,
+   "chg_admit": 8.0,
+   "charged": 604,
+   "charge_rate": "3.0",
+   "worsened_reports": 0,
+   "neighbors": [
+    {
+     "pref": "福島県",
+     "before": 20775,
+     "after": 21101,
+     "chg": 1.6
+    },
+    {
+     "pref": "茨城県",
+     "before": 33947,
+     "after": 33332,
+     "chg": -1.8
+    },
+    {
+     "pref": "栃木県",
+     "before": 20532,
+     "after": 21351,
+     "chg": 4.0
+    },
+    {
+     "pref": "群馬県",
+     "before": 23702,
+     "after": 23962,
+     "chg": 1.1
+    },
+    {
+     "pref": "埼玉県",
+     "before": 89634,
+     "after": 93241,
+     "chg": 4.0
+    },
+    {
+     "pref": "千葉県",
+     "before": 79049,
+     "after": 81269,
+     "chg": 2.8
+    }
+   ]
+  },
+  {
+   "period": "2025年12月〜2026年2月",
+   "source": "kenshoukekka2512-2602",
+   "compare_to": "開始前（2年前）の同じ時期",
+   "before_total": 38229,
+   "before_light": 17803,
+   "before_admit": 20426,
+   "after_total": 34860,
+   "after_light": 13673,
+   "after_admit": 21187,
+   "chg_total": -8.8,
+   "chg_light": -23.2,
+   "chg_admit": 3.7,
+   "charged": 587,
+   "charge_rate": "2.6",
+   "worsened_reports": 0,
+   "neighbors": [
+    {
+     "pref": "福島県",
+     "before": 21935,
+     "after": 21743,
+     "chg": -0.9
+    },
+    {
+     "pref": "茨城県",
+     "before": 38229,
+     "after": 34860,
+     "chg": -8.8
+    },
+    {
+     "pref": "栃木県",
+     "before": 22369,
+     "after": 22499,
+     "chg": 0.6
+    },
+    {
+     "pref": "群馬県",
+     "before": 25350,
+     "after": 24783,
+     "chg": -2.2
+    },
+    {
+     "pref": "埼玉県",
+     "before": 96388,
+     "after": 97418,
+     "chg": 1.1
+    },
+    {
+     "pref": "千葉県",
+     "before": 85369,
+     "after": 85352,
+     "chg": -0.0
+    }
+   ]
+  },
+  {
+   "period": "2026年3月〜8月",
+   "source": "kenshoukekka2603-2608",
+   "compare_to": "開始前（2年前）の同じ時期",
+   "before_total": 72650,
+   "before_light": 34380,
+   "before_admit": 38270,
+   "after_total": 67348,
+   "after_light": 25905,
+   "after_admit": 41443,
+   "chg_total": -7.3,
+   "chg_light": -24.7,
+   "chg_admit": 8.3,
+   "charged": 1208,
+   "charge_rate": "2.9",
+   "worsened_reports": 0,
+   "neighbors": [
+    {
+     "pref": "福島県",
+     "before": 42706,
+     "after": 42090,
+     "chg": -1.4
+    },
+    {
+     "pref": "茨城県",
+     "before": 72650,
+     "after": 67348,
+     "chg": -7.3
+    },
+    {
+     "pref": "栃木県",
+     "before": 42455,
+     "after": 43088,
+     "chg": 1.5
+    },
+    {
+     "pref": "群馬県",
+     "before": 50617,
+     "after": 48107,
+     "chg": -5.0
+    },
+    {
+     "pref": "埼玉県",
+     "before": 187007,
+     "after": 189369,
+     "chg": 1.3
+    },
+    {
+     "pref": "千葉県",
+     "before": 166771,
+     "after": 167059,
+     "chg": 0.2
+    }
+   ]
+  }
+ ],
+ "year1": {
+  "period": "開始から1年（2024年12月〜2025年11月）",
+  "before_total": 144826,
+  "after_total": 138705,
+  "before_light": 67738,
+  "after_light": 58050,
+  "before_admit": 77088,
+  "after_admit": 80655,
+  "charged": 2840,
+  "chg_total": -4.2,
+  "chg_light": -14.3,
+  "chg_admit": 4.6
+ }
+}
