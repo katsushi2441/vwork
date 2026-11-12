@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 10:13:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 15:27:00 +0000</lastBuildDate>
+    <item>
+      <title>Nvidiaのジェンセン・ファンCEO辞任とFireworks AIへのサイバー攻撃によるデータ流出の衝撃 11-13</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news.html</guid>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Nvidiaのジェンセン・ファンCEO辞任報道やFireworks AIへのサイバー攻撃によるNotionユーザーのデータ流出を報じます。また新技術KQuantによるQwenモデルの精度向上や3D生成モデルのガイドも紹介します。</description>
+    </item>
     <item>
       <title>Nvidiaのジェンセン・ファンCEO交代報道と、Gemma4の潜在空間における驚きの発見 11-12</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news-4.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-ai-news-3.html</guid>
       <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
       <description>AlibabaのQwenモデルがオープンソースとして提供され続ける方針を表明しました。また、Trajectory社がAI学習の民主化に向け4,500万ドルを調達したほか、Astraによる重み書き込み機能の実装やOSINT技術の発見など最新ニュースを解説します。</description>
-    </item>
-    <item>
-      <title>agent-desktop とは——AIがパソコンのアプリを操作する Computer Use のOSS。画面を見ずに部品で操作する仕組みと、RPAの代わりに使うときの注意</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-03-agent-desktop-computer-use-oss.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-agent-desktop-computer-use-oss.html</guid>
-      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
-      <description>Vercel Labs が公開した agent-desktop（Apache 2.0・GitHubスター1万超）を解説します。スクリーンショットではなくOSのアクセシビリティ情報を読み、ボタンや入力欄を番号で操作するAIエージェント向けのCLIです。仕組み、使い方、macOS・Windows・Linux の対応状況、画面の情報が外部に送られる場面、Windows の業務ソフトへの転記をRPAの代わりに自動化するときの注意までまとめました。</description>
     </item>
   </channel>
 </rss>
