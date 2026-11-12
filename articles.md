@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [動物病院の電子カルテをオープンソースで——OpenVPMとは。機能と自院サーバーでの動かし方、当社の変更が本家に取り込まれた話](2026-11-12-openvpm-dobutsu-byoin-denshi-karte.html)
 - [AWSの公式エミュレータ登場とQwen、NVIDIAによる自動運転モデルの進化 11-12](2026-11-12-ai-news-2.html)
 - [Agentsで読む：ゲーミングGPUでのLLM学習とGoogleのAIエージェントによる遺跡発見など、最新AI動向まとめ 11-12](2026-11-12-ai-news.html)
 - [BotPsyの登場とOpenAI・Anthropicへの規制強化：オンデバイスAIと法整備の最前線 11-11](2026-11-11-ai-news-4.html)

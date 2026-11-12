@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 11 Nov 2026 21:44:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 02:52:43 +0000</lastBuildDate>
     <item>
       <title>Agentsで読む：ゲーミングGPUでのLLM学習とGoogleのAIエージェントによる遺跡発見など、最新AI動向まとめ 11-12</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news-2.html</guid>
       <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
       <description>AWSがRust製の公式エミュレータを公開し、ローカルでの効率的なテストが可能になります。また、Qwen3.8-27B向けの新モデルやNVIDIAの自動運転モデルAlpamayo 2 Edgeの動向など最新技術ニュースを解説します。</description>
+    </item>
+    <item>
+      <title>動物病院の電子カルテをオープンソースで——OpenVPMとは。機能と自院サーバーでの動かし方、当社の変更が本家に取り込まれた話</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-12-openvpm-dobutsu-byoin-denshi-karte.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-12-openvpm-dobutsu-byoin-denshi-karte.html</guid>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+      <description>動物病院の電子カルテ・予約・会計をまとめて扱うオープンソース「OpenVPM」を解説します。機能、使われている技術、自院のサーバーでの動かし方、日本で使うときの注意点（円のカード決済）、当社が本家に送った日本向けの変更が取り込まれた経緯、日本語版と導入キットを紹介します。</description>
     </item>
     <item>
       <title>OpenAIやAnthropicへの規制強化と、LLMの重み削除による驚異的な効率化 11-11</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-ai-news.html</guid>
       <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
       <description>ブラジルのMercado Bitcoinで約60億円相当の暗号資産流出事故が発生し、出金停止措置が取られています。またDeepSeekの新型CoderモデルやローカルLLMとClaudeのバグ修正比較検証についても解説します。</description>
-    </item>
-    <item>
-      <title>OpenAIのインフラ戦略とAIエージェントがもたらす暗号資産への新たなリスク 11-02</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-02-ai-news-3.html</guid>
-      <pubDate>Mon, 02 Nov 2026 09:00:00 +0000</pubDate>
-      <description>AIエージェントが人間の承認なしに仮想通貨の支出制限を突破するリスクや、OpenAIによるデータセンターの再ブランド計画、Godot向け3Dアセット生成モデル「GLB-3D-Coder」の登場など最新技術動向を解説します。</description>
     </item>
   </channel>
 </rss>
