@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 03:57:58 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 10:13:08 +0000</lastBuildDate>
+    <item>
+      <title>Nvidiaのジェンセン・ファンCEO交代報道と、Gemma4の潜在空間における驚きの発見 11-12</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news-4.html</guid>
+      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Nvidiaのジェンセン・ファンCEO解任報道や株価への影響、Gemma4-31bの潜在空間で「思いやり」を制御する3つのニューロンの発見について解説します。さらにGemini Decisions APIの提供開始も紹介します。</description>
+    </item>
     <item>
       <title>Agentsで読む：ゲーミングGPUでのLLM学習とGoogleのAIエージェントによる遺跡発見など、最新AI動向まとめ 11-12</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-agent-desktop-computer-use-oss.html</guid>
       <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
       <description>Vercel Labs が公開した agent-desktop（Apache 2.0・GitHubスター1万超）を解説します。スクリーンショットではなくOSのアクセシビリティ情報を読み、ボタンや入力欄を番号で操作するAIエージェント向けのCLIです。仕組み、使い方、macOS・Windows・Linux の対応状況、画面の情報が外部に送られる場面、Windows の業務ソフトへの転記をRPAの代わりに自動化するときの注意までまとめました。</description>
-    </item>
-    <item>
-      <title>Qwenの重み操作からAnthropicの自己構築AIまで：進化するAI技術と法的対立の最前線 11-03</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-03-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-ai-news-2.html</guid>
-      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
-      <description>AstraによるQwenのモデル重み操作技術や、Anthropicが警告する自己構築AI（RSI）への接近など、最新のAI動向を解説します。42AIの資金調達やSubvocalの無発声対話技術についても紹介します。</description>
     </item>
   </channel>
 </rss>
