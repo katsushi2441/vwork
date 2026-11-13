@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [ChatGPTのウォレット機能とNVIDIAを巡る輸出規制の衝撃 11-14](2026-11-14-ai-news-2.html)
 - [llama.cppのアップデートとNVIDIA CEOジェンセン・ファンを巡るスキャンダル 11-14](2026-11-14-ai-news.html)
 - [NvidiaのJensen Huang氏の辞任とRust 1.100リリースなど、AI・開発環境の激震ニュース 11-13](2026-11-13-ai-news-4.html)
 - [Jensen Huangの辞任とRust 1.100リリース：AIインフラを揺るがす動乱のニュース 11-13](2026-11-13-ai-news-3.html)
