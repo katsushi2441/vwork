@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Nov 2026 03:53:11 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 10:04:41 +0000</lastBuildDate>
     <item>
       <title>Jensen Huangの辞任とRust 1.100リリース：AIインフラを揺るがす動乱のニュース 11-13</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-3.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-2.html</guid>
       <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
       <description>DTCCがSolanaを採用し2027年のトークン化を目指す動向や、GoogleのGemini 4による検索体験の進化、LLM用言語LLMONの導入など、最新のWeb3・AI技術ニュースを要約して紹介します。</description>
+    </item>
+    <item>
+      <title>NvidiaのJensen Huang氏の辞任とRust 1.100リリースなど、AI・開発環境の激震ニュース 11-13</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-4.html</guid>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
+      <description>NvidiaのJensen Huang氏の辞任報道やRust 1.100のリリースなど、AI・開発環境の最新ニュースをまとめました。LLMONの導入やMuseの自動電話発信機能など、技術動向を詳しく解説します。</description>
     </item>
     <item>
       <title>Nvidiaのジェンセン・ファンCEO交代報道と、Gemma4の潜在空間における驚きの発見 11-12</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news-3.html</guid>
       <pubDate>Wed, 04 Nov 2026 09:00:00 +0000</pubDate>
       <description>Qwen 3.8 27BがノートPC上で動作可能になったことや、Revolutが自社運用への移行でAIコーディングコストを10分の1に削減した事例を紹介します。最新のAIインフラとコスト最適化の動向を解説します。</description>
-    </item>
-    <item>
-      <title>Anthropicの「FlashProve」とRevolutの自社ホスト移行に見るAIの信頼性とコスト最適化 11-04</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news-2.html</guid>
-      <pubDate>Wed, 04 Nov 2026 09:00:00 +0000</pubDate>
-      <description>AnthropicがAIコンテンツの真正性を検証するシステム「FlashProve」を開発中です。また、RevolutはLLMを自社ホストへ移行しコーディングコストを10分の1に削減しました。最新のAI技術動向とコスト最適化事例を紹介します。</description>
     </item>
   </channel>
 </rss>
