@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 12 Nov 2026 21:40:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 03:53:11 +0000</lastBuildDate>
+    <item>
+      <title>Jensen Huangの辞任とRust 1.100リリース：AIインフラを揺るがす動乱のニュース 11-13</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-3.html</guid>
+      <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
+      <description>NVIDIAのJensen Huang氏の辞任疑惑やRust 1.100のリリースなど、AIインフラを揺るがす最新ニュースを解説します。Binanceへのハック事件やGemini 4の分析、Hugging Faceの動向も網羅しています。</description>
+    </item>
     <item>
       <title>Nvidiaのジェンセン・ファンCEO辞任とFireworks AIへのサイバー攻撃によるデータ流出の衝撃 11-13</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-04-ai-news-2.html</guid>
       <pubDate>Wed, 04 Nov 2026 09:00:00 +0000</pubDate>
       <description>AnthropicがAIコンテンツの真正性を検証するシステム「FlashProve」を開発中です。また、RevolutはLLMを自社ホストへ移行しコーディングコストを10分の1に削減しました。最新のAI技術動向とコスト最適化事例を紹介します。</description>
-    </item>
-    <item>
-      <title>文字起こしAI「Haas-ja-v1.0」とは——日本語の公開モデルで最高精度・Whisperの15倍速。使い方と弱点、AI議事録の自社サーバー版に組み込む計画</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-03-haas-ja-v1-japanese-asr-kaimom-pro.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-03-haas-ja-v1-japanese-asr-kaimom-pro.html</guid>
-      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
-      <description>2026年10月に公開された日本語の文字起こしAI「Haas-ja-v1.0」（Apache 2.0）を解説します。公開モデルで最も低い文字誤り率6.12%、Whisper large-v3の15〜17倍の速さという公表値、使い方、NVIDIAのGPUが必須などの弱点、当社のAI議事録システムに組み込む Kurage AI MOM Pro（Haas版）の計画までまとめました。</description>
     </item>
   </channel>
 </rss>

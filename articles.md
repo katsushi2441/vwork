@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Jensen Huangの辞任とRust 1.100リリース：AIインフラを揺るがす動乱のニュース 11-13](2026-11-13-ai-news-3.html)
 - [DTCCがSolanaを採用し、GoogleのGemini 4で検索体験が進化する最新動向 11-13](2026-11-13-ai-news-2.html)
 - [Nvidiaのジェンセン・ファンCEO辞任とFireworks AIへのサイバー攻撃によるデータ流出の衝撃 11-13](2026-11-13-ai-news.html)
 - [Nvidiaのジェンセン・ファンCEO交代報道と、Gemma4の潜在空間における驚きの発見 11-12](2026-11-12-ai-news-4.html)
