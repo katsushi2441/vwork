@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Nvidiaのジェンセン・ファン氏を巡るスキャンダルと、中国における輸出禁止チップの実態 11-14](2026-11-14-ai-news-4.html)
 - [Nvidiaの輸出規制とJensen Huang氏を巡るスキャンダル、そしてllama.cpp v1.0のリリース 11-14](2026-11-14-ai-news-3.html)
 - [ChatGPTのウォレット機能とNVIDIAを巡る輸出規制の衝撃 11-14](2026-11-14-ai-news-2.html)
 - [llama.cppのアップデートとNVIDIA CEOジェンセン・ファンを巡るスキャンダル 11-14](2026-11-14-ai-news.html)
