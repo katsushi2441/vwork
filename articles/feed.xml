@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 14 Nov 2026 21:35:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 03:47:17 +0000</lastBuildDate>
     <item>
       <title>ステーブルコインの普及とNVIDIA、Jensen HuangによるAIスタートアップへの戦略的投資 11-15</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-15-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-15-ai-news.html</guid>
       <pubDate>Sun, 15 Nov 2026 09:00:00 +0000</pubDate>
       <description>英・星・タイの中央銀行がステーブルコインを用いた国際送金決済のテストを実施しています。また、NVIDIAのJensen Huang氏によるAIスタートアップへの戦略的投資や、SenseNova-Loop-9B-Previewの性能についても解説します。</description>
+    </item>
+    <item>
+      <title>SpaceXのStarship捕獲成功とNvidiaを巡るGPU価格への疑惑 11-15</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-15-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-15-ai-news-3.html</guid>
+      <pubDate>Sun, 15 Nov 2026 09:00:00 +0000</pubDate>
+      <description>SpaceXのStarship Flight 15で機体の空中キャッチに成功し、宇宙アクセスのコスト削減に向けた再利用性が進展しました。また、NvidiaによるGPU価格高止まりの疑惑やdatasette-llmの最新リリース情報などを解説します。</description>
     </item>
     <item>
       <title>Lovableのセキュリティ脆弱性とNVIDIA元CEOジェンセン・ファン氏の動向から見るAI業界の地殻変動 11-15</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-06-ai-news-2.html</guid>
       <pubDate>Fri, 06 Nov 2026 09:00:00 +0000</pubDate>
       <description>OpenSSHで認証バイパスを許す深刻な脆弱性「sshole」が発見されたことや、NVIDIA Cosmos 3の公開、Binanceでの63億ドルの盗難事件に関する調査結果など、最新のIT・セキュリティニュースを要約します。</description>
-    </item>
-    <item>
-      <title>OpenとDatasetteで読む：MetaのAIコーディング企業買収と、技術的負債を解消するAIの衝撃 11-05</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-05-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-05-ai-news-2.html</guid>
-      <pubDate>Thu, 05 Nov 2026 09:00:00 +0000</pubDate>
-      <description>MetaによるAIコーディング企業Conductorの買収や、技術的負債を解消するAIの衝撃について解説します。さらにDharma Field Extractorの登場やGemmaの軽量化など、最新のAI動向とOSS情報を網羅しています。</description>
     </item>
   </channel>
 </rss>
