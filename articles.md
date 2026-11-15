@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [NvidiaのJensen Huang氏退任とセキュリティ体制への懸念、そして欧州の巨大AI「EUROPA」への動き 11-15](2026-11-15-ai-news-4.html)
 - [SpaceXのStarship捕獲成功とNvidiaを巡るGPU価格への疑惑 11-15](2026-11-15-ai-news-3.html)
 - [Lovableのセキュリティ脆弱性とNVIDIA元CEOジェンセン・ファン氏の動向から見るAI業界の地殻変動 11-15](2026-11-15-ai-news-2.html)
 - [ステーブルコインの普及とNVIDIA、Jensen HuangによるAIスタートアップへの戦略的投資 11-15](2026-11-15-ai-news.html)
