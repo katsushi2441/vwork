@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [MacBook ProのOLEDとQwen 27Bの高速推論：最新ハードウェア・AI動向まとめ 11-16](2026-11-16-ai-news-2.html)
 - [前沿モデルの事前学習における再帰的自己改善（RSI）とQwen3.8-Flash-Nextの性能問題 11-16](2026-11-16-ai-news.html)
 - [NvidiaのJensen Huang氏退任とセキュリティ体制への懸念、そして欧州の巨大AI「EUROPA」への動き 11-15](2026-11-15-ai-news-4.html)
 - [SpaceXのStarship捕獲成功とNvidiaを巡るGPU価格への疑惑 11-15](2026-11-15-ai-news-3.html)
