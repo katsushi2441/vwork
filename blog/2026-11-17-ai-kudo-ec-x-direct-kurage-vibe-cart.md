@@ -96,8 +96,8 @@ AIに任せると、速くなるのは想像がつくと思います。意外だ
 
 それでも、AIで仕事が速くなった分、自社のサイトで検索から来てもらう工夫に時間を使えるようになりました。モールの手数料がかからない分は、価格に回しています。モールの手数料については、前に記事にまとめました。
 
-- [Amazonの販売手数料・楽天市場の出店費用・Yahoo!ショッピングの手数料を比べてみた](2026-11-16-amazon-rakuten-yahoo-tesuryo-jisha-ec.md)
-- [おちゃのこネットをやめて、自社のネットショップへ｜AIで運用するECサイト「Kurage Vibe-Cart」に移行しました](2026-11-15-ochanoko-net-kurage-vibe-cart.md)
+- [Amazonの販売手数料・楽天市場の出店費用・Yahoo!ショッピングの手数料を比べてみた](2026-11-16-amazon-rakuten-yahoo-tesuryo-jisha-ec.html)
+- [おちゃのこネットをやめて、自社のネットショップへ｜AIで運用するECサイト「Kurage Vibe-Cart」に移行しました](2026-11-15-ochanoko-net-kurage-vibe-cart.html)
 
 ## おわりに
 
