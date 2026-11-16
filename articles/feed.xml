@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 10:10:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 15:36:15 +0000</lastBuildDate>
+    <item>
+      <title>米国によるAIチップ輸出規制の強化とSolanaの「ベータ」脱却 11-17</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news.html</guid>
+      <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
+      <description>米国によるAIチップ輸出規制の強化やSolanaが「ベータ」表記を撤回したニュースを解説します。また、Dreamteamの5,300万ドル調達や新LLM「Hy4 flash」の登場など最新技術動向を網羅しています。</description>
+    </item>
     <item>
       <title>前沿モデルの事前学習における再帰的自己改善（RSI）とQwen3.8-Flash-Nextの性能問題 11-16</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-16-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news-4.html</guid>
       <pubDate>Sat, 07 Nov 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが企業価値1.25兆ドルで資金調達を実施したニュースや、MetaのMuseエージェント用空間「Spaces」の発表を解説します。さらにLLMのコスト削減手法や中間選挙によるデータセンターへの影響も網羅しています。</description>
-    </item>
-    <item>
-      <title>Securityで読む：Artexの脆弱性とOpenWebUIによるエージェント機能など、最新AIセキュリティと技術動向 11-07</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news-2.html</guid>
-      <pubDate>Sat, 07 Nov 2026 09:00:00 +0000</pubDate>
-      <description>Artex AIハッキングツールの公開サーバー発見やOpenWebUIによるローカルLLMでのデスクトップ操作など、最新のAIセキュリティと技術動向を解説します。中国発モデルの機能削除やFAAのフロッピー廃止方針も紹介します。</description>
     </item>
   </channel>
 </rss>

@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [米国によるAIチップ輸出規制の強化とSolanaの「ベータ」脱却 11-17](2026-11-17-ai-news.html)
 - [XSSとIndustryで読む：Qwen4-Maxの登場とLLM内部可視化ツールなど、最新のAI・Web3動向 11-16](2026-11-16-ai-news-4.html)
 - [Datasetteで読む：LLMの内部構造可視化ツールとBharat Semiの資金調達など、最新のAI・技術動向まとめ 11-16](2026-11-16-ai-news-3.html)
 - [MacBook ProのOLEDとQwen 27Bの高速推論：最新ハードウェア・AI動向まとめ 11-16](2026-11-16-ai-news-2.html)
