@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 17 Nov 2026 10:36:19 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 15:30:15 +0000</lastBuildDate>
+    <item>
+      <title>Swiftで読む：Nvidiaの国家安全保障への注力とSpotifyによるディープフェイク対策など、最新AI・Web3動向 11-18</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-18-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-18-ai-news.html</guid>
+      <pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Nvidiaが国家安全保障のための常設委員会を新設したほか、Spotifyがディープフェイク対策ツールを発表しました。また、香港でのトークン化預金の試験やIntelの次世代GPUベンチマークなど、最新のAI・Web3動向を解説します。</description>
+    </item>
     <item>
       <title>米国によるAIチップ輸出規制の強化とSolanaの「ベータ」脱却 11-17</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-08-ai-news-4.html</guid>
       <pubDate>Sun, 08 Nov 2026 09:00:00 +0000</pubDate>
       <description>Gnosis Payでカード番号や住所を含む個人情報が流出したニュースや、米国財務省によるMEXCへの制裁動向を解説します。さらにllama.cppの推論最適化やモバイル向けAIエージェントの実証など最新技術も紹介します。</description>
-    </item>
-    <item>
-      <title>Useで読む：Gnosis Payのデータ流出とDeepSeekモデルのローカル最適化：Web3とAIの最新動向 11-08</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-08-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-08-ai-news-2.html</guid>
-      <pubDate>Sun, 08 Nov 2026 09:00:00 +0000</pubDate>
-      <description>Gnosis Payでの個人情報流出事件や、RTX 3060でDeepSeek V4.1 Flashを高速動作させる最適化技術を紹介します。さらにMEXCへのアクセス遮断やllama.cppのMoEキャッシュ改善など最新動向を解説します。</description>
     </item>
   </channel>
 </rss>
