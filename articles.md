@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIへの訴訟とNVIDIAの動向：AIガバナンスとセキュリティの最前線 11-17](2026-11-17-ai-news-4.html)
 - [OpenAIへの訴訟とNVIDIAの動向から見るAI業界の規制とインフラの現状 11-17](2026-11-17-ai-news-3.html)
 - [OpenAIへの訴訟とNVIDIAの動向から見るAI業界の法的・構造的変化 11-17](2026-11-17-ai-news-2.html)
 - [米国によるAIチップ輸出規制の強化とSolanaの「ベータ」脱却 11-17](2026-11-17-ai-news.html)
