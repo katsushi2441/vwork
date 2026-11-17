@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Nov 2026 21:58:55 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 04:17:43 +0000</lastBuildDate>
     <item>
       <title>米国によるAIチップ輸出規制の強化とSolanaの「ベータ」脱却 11-17</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news.html</guid>
       <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
       <description>米国によるAIチップ輸出規制の強化やSolanaが「ベータ」表記を撤回したニュースを解説します。また、Dreamteamの5,300万ドル調達や新LLM「Hy4 flash」の登場など最新技術動向を網羅しています。</description>
+    </item>
+    <item>
+      <title>OpenAIへの訴訟とNVIDIAの動向から見るAI業界の規制とインフラの現状 11-17</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news-3.html</guid>
+      <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
+      <description>カリフォルニア州司法長官によるOpenAIへの提訴やWindows 11のデータ収集懸念など、AI規制とプライバシーの現状を解説します。またNVIDIAの次期決算課題やオープンウェイトモデルの普及率30%到達についても報じます。</description>
     </item>
     <item>
       <title>OpenAIへの訴訟とNVIDIAの動向から見るAI業界の法的・構造的変化 11-17</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-08-ai-news-3.html</guid>
       <pubDate>Sun, 08 Nov 2026 09:00:00 +0000</pubDate>
       <description>Claude Codeの「Don&#x27;t Ask Again」機能による機密情報漏洩のリスクや、米財務省によるMEXCへの制裁、Gnosis Payでの大規模なデータ侵害など、AIとWeb3における最新のセキュリティ動向を解説します。</description>
-    </item>
-    <item>
-      <title>Qwen 4の動向とロボット学習におけるToyBlocksやPhysiclの技術革新 11-07</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-07-ai-news.html</guid>
-      <pubDate>Sat, 07 Nov 2026 09:00:00 +0000</pubDate>
-      <description>Qwen 4の最新動向やロボット学習におけるToyBlocksの発表、Physicl社の1,000万ドル資金調達など、AI技術の最前線を解説します。シミュレーションから現実への移行やセキュリティ制限の議論も網羅しています。</description>
     </item>
   </channel>
 </rss>
