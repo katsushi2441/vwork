@@ -49,35 +49,35 @@ og_stat_note: "X-Direct（株式会社エクスブリッジ）"
 
 ## 電菱の12V独立型太陽光の定番品
 
-電菱（DENRYO）は、独立型の太陽光発電やインバーター、バッテリーを長く扱ってきた日本のメーカーです。X-Direct で注文の多い商品を、役割ごとに並べます（価格は税込、2026年11月19日時点）。
+電菱（DENRYO）は、独立型の太陽光発電やインバーター、バッテリーを長く扱ってきた日本のメーカーです。X-Direct で注文の多い商品を、役割ごとに並べます。
 
 ### ソーラーパネル
 
-- [DB032T-12 中・小型太陽電池（32W・12Vシステム用）](https://www.exdirect.net/product/57073#ref=vibeblog-solar)　税込32,153円
+- [DB032T-12 中・小型太陽電池（32W・12Vシステム用）](https://www.exdirect.net/product/57073#ref=vibeblog-solar)
   12Vバッテリーの充電に合わせた電圧（公称最大動作電圧18.0V）のパネルです。512×517mmのほぼ正方形で、重さは2.7kg。X-Direct でいちばん注文の多いパネルです。
-- [DB050-12 大型太陽電池](https://www.exdirect.net/product/57072#ref=vibeblog-solar)　税込35,574円
+- [DB050-12 大型太陽電池](https://www.exdirect.net/product/57072#ref=vibeblog-solar)
 
 ### 充放電コントローラー
 
-- [SA-BA10（SolarAmp B・12V・10A）](https://www.exdirect.net/product/39090#ref=vibeblog-solar)　税込5,687円
+- [SA-BA10（SolarAmp B・12V・10A）](https://www.exdirect.net/product/39090#ref=vibeblog-solar)
   名刺ほどの大きさ（91×55×29mm、65g）で、鉛蓄電池・パネル・機器をつなぐだけで使えます。設定は要りません。およそ120Wまでの小さなシステム向けです。
-- [SA-BA10Li（リチウムイオン電池用）](https://www.exdirect.net/product/88803#ref=vibeblog-solar)　税込8,107円
-- [SA-BGB10（SolarAmp BG・24V・防水防塵IP68）](https://www.exdirect.net/product/74955#ref=vibeblog-solar)　税込9,130円
+- [SA-BA10Li（リチウムイオン電池用）](https://www.exdirect.net/product/88803#ref=vibeblog-solar)
+- [SA-BGB10（SolarAmp BG・24V・防水防塵IP68）](https://www.exdirect.net/product/74955#ref=vibeblog-solar)
   基板ごと樹脂で固めた防水防塵のモデルで、日本国内で設計・製造されています。
-- [PS-30M-3rd（ProStar・12/24V・30A）](https://www.exdirect.net/product/39098#ref=vibeblog-solar)　税込62,480円
+- [PS-30M-3rd（ProStar・12/24V・30A）](https://www.exdirect.net/product/39098#ref=vibeblog-solar)
   液晶表示と記録機能があり、日没後の照明の点灯時間なども設定できます。
-- [TS-MPPT-60（TriStar MPPT・最大60A）](https://www.exdirect.net/product/39102#ref=vibeblog-solar)　税込196,603円
+- [TS-MPPT-60（TriStar MPPT・最大60A）](https://www.exdirect.net/product/39102#ref=vibeblog-solar)
   大きなシステム向けです。MPPT制御で、パネルの電力を無駄なくバッテリーに取り込みます。
 
 PS-30M-3rd と TS-MPPT-60 には、MODBUS などの通信の口があります。記録の読み出しや遠隔の監視に使うためのもので、つなぐかどうか、どこにつなぐかは使う側が決められます。SolarAmp B のような小さなコントローラーには、通信の機能そのものがありません。
 
 ### ディープサイクルバッテリー
 
-- [JC50-12（12V・50Ah）](https://www.exdirect.net/product/52563#ref=vibeblog-solar)　税込26,246円
+- [JC50-12（12V・50Ah）](https://www.exdirect.net/product/52563#ref=vibeblog-solar)
   制御弁式の密閉型で補水が要りません。放電深度50%で約600回のサイクル寿命が目安です。X-Direct の電菱の商品でいちばん注文が多いバッテリーです。
-- [PVX-1080T（Sun Xtender・12V・108Ah）](https://www.exdirect.net/product/38982#ref=vibeblog-solar)　税込175,450円
+- [PVX-1080T（Sun Xtender・12V・108Ah）](https://www.exdirect.net/product/38982#ref=vibeblog-solar)
   AGM（吸収性ガラスマット）式で、-40〜+71℃まで使える寒冷地向きのバッテリーです。
-- [PVX-2120L（Sun Xtender・大容量）](https://www.exdirect.net/product/49871#ref=vibeblog-solar)　税込320,749円
+- [PVX-2120L（Sun Xtender・大容量）](https://www.exdirect.net/product/49871#ref=vibeblog-solar)
 
 ## 組み合わせの目安
 
