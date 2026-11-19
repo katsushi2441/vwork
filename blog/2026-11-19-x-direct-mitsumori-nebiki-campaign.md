@@ -21,6 +21,12 @@ X-Direct で、今日（2026年11月19日）から **見積もり値引きのキ
 
 - [X-Direct のトップページ](https://www.exdirect.net/#ref=vibeblog-campaign)
 
+X-Direct がモールの手数料をかけずにお安くできる仕組みを、58秒の動画にまとめています（音声が出ます）。
+
+<div style="width:100%;max-width:960px;margin:16px auto;border-radius:10px;overflow:hidden;background:#000">
+  <video src="https://kurage.exbridge.jp/pv/kvcart-pv.mp4" poster="https://kurage.exbridge.jp/pv/kvcart-pv-poster.jpg" controls playsinline preload="none" style="display:block;width:100%;height:auto"></video>
+</div>
+
 ## キャンペーンの内容
 
 次の2つの条件にあてはまるお客様に、**特別値引きをしたお見積書** をご提案します。
