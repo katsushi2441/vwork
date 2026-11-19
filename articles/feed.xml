@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Nov 2026 15:30:55 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 22:03:37 +0000</lastBuildDate>
+    <item>
+      <title>Nvidiaのジェンセン・ファン氏を巡る疑惑とGoogle GeminiのMac操作機能など、最新AI・テック動向 11-20</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-20-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-20-ai-news-2.html</guid>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Nvidiaのジェンセン・ファンCEOの辞任疑惑やGoogle GeminiのMac自律操作機能など、最新のAI動向を解説します。Claudeによる物理学の難問解決やPostgreSQL 19のリリース情報も網羅しています。</description>
+    </item>
     <item>
       <title>AnthropicのIPOとBinanceの巨額資産凍結：AI・Web3の資金流動性とセキュリティの最前線 11-20</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-20-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news-2.html</guid>
       <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
       <description>MetaがAIエージェント用の軽量モデル「Muse Ember」を発表しました。また、NVIDIAのJensen Huang氏がイベント出席を見送った動向や、Anthropicの新モデルリリースなど最新のテックニュースを要約します。</description>
-    </item>
-    <item>
-      <title>LongCat-2.5の登場とNvidiaを揺るがすGoogleのAIチップ戦略 11-10</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news.html</guid>
-      <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
-      <description>Hugging Faceで公開された1.6T規模のマルチモーダルモデルLongCat-2.5や、Nvidiaへの圧力を強めるGoogleの独自AIチップ戦略を解説します。MoEモデルの圧縮技術や日本の金融向け合成データセットの最新動向も紹介します。</description>
     </item>
   </channel>
 </rss>
