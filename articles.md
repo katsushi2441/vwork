@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Satya Nadellaが予測するAIエージェントの衝撃とGemini 4 Neonの登場 11-19](2026-11-19-ai-news-3.html)
 - [CryptoとLuckeyで読む：DaisyRose-27Bの登場とMicrosoftが示すAIコスト効率への戦略 11-19](2026-11-19-ai-news-2.html)
 - [Energy-Based Reasonersの革新とHuggingFaceによるRumble-2-Flashの公開 11-19](2026-11-19-ai-news.html)
 - [Nvidiaの中国撤退とGoogleのAI検索によるトラフィック減少が示すテック業界の地殻変動 11-18](2026-11-18-ai-news-4.html)

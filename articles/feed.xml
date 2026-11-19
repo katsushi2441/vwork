@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 18 Nov 2026 21:58:22 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 04:22:10 +0000</lastBuildDate>
     <item>
       <title>CryptoとLuckeyで読む：DaisyRose-27Bの登場とMicrosoftが示すAIコスト効率への戦略 11-19</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-19-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-19-ai-news-2.html</guid>
       <pubDate>Thu, 19 Nov 2026 09:00:00 +0000</pubDate>
       <description>DaisyRose-27Bモデルによるポストトレーニングの効率化や、Microsoftが発表したコストパフォーマンス重視の7つの新AIモデルを解説します。また、Palmer Luckey氏のサイバー攻撃への警告やNginxの脆弱性情報も網羅しています。</description>
+    </item>
+    <item>
+      <title>Satya Nadellaが予測するAIエージェントの衝撃とGemini 4 Neonの登場 11-19</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-19-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-19-ai-news-3.html</guid>
+      <pubDate>Thu, 19 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Googleが新モデル「Gemini 4 Neon」を発表したニュースや、Satya Nadella氏によるAIエージェントがWeb経済を再編する予測を解説します。またNginxの脆弱性やファインチューニングの計算量に関する技術分析も紹介します。</description>
     </item>
     <item>
       <title>Energy-Based Reasonersの革新とHuggingFaceによるRumble-2-Flashの公開 11-19</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news-4.html</guid>
       <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
       <description>AmazonがSonnet 4.6の一部をStrands Deciderへ置き換えてコスト削減を実現した事例や、DeepSeek V4.1 FlashとQwen 3.8 FNの生成速度比較など、最新のAI技術動向を解説します。</description>
-    </item>
-    <item>
-      <title>SolanaとHuangで読む：Nvidiaのジェンセン・ファンCEOの動向とAIバブルを巡る議論 11-09</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-09-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-09-ai-news-4.html</guid>
-      <pubDate>Mon, 09 Nov 2026 09:00:00 +0000</pubDate>
-      <description>Nvidiaのジェンセン・ファンCEOの地位を巡る地政学的リスクやAIバブルへの懐疑的な視点を解説します。また、Solanaでの2億7,000万ドルのDriftハッキング対応や、新ツールKetchUpの登場など最新技術動向を網羅します。</description>
     </item>
   </channel>
 </rss>
