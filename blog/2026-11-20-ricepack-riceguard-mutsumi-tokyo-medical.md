@@ -40,7 +40,7 @@ X-Direct で、炊いたご飯を保温コンテナ（ライスコンテナ）�
 
 ### 睦化学工業の「ライスパック」
 
-<div style="max-width:480px;margin:12px auto"><img src="https://www.exdirect.net/img/f925015ac7cb6f75.jpg" alt="睦化学工業 ライスパック" style="width:100%;height:auto;border-radius:8px"></div>
+<div style="max-width:480px;margin:12px auto"><img src="https://www.exdirect.net/img/2dd76f1ce211a919.jpg" alt="睦化学工業 ライスパック" style="width:100%;height:auto;border-radius:8px"></div>
 
 ライスパックは、睦化学工業の米飯用の吸水袋です。メーカーは、次の3つを特長にあげています。
 
@@ -58,7 +58,7 @@ X-Direct で、炊いたご飯を保温コンテナ（ライスコンテナ）�
 
 ### 睦化学工業の「魔法のシート Z40」（Z40ライスシート）
 
-<div style="max-width:480px;margin:12px auto"><img src="https://www.exdirect.net/img/17b0c86dcc0176da.jpg" alt="睦化学工業 魔法のシート Z40" style="width:100%;height:auto;border-radius:8px"></div>
+<div style="max-width:480px;margin:12px auto"><img src="https://www.exdirect.net/img/9692b77dc4881e49.jpg" alt="睦化学工業 魔法のシート Z40" style="width:100%;height:auto;border-radius:8px"></div>
 
 ライスパックと同じ3層の材料を、300×400mm の平らなシートにしたものです。メーカーのサイトでは「魔法のシート」という名前で載っています。食品から出る湯気・結露水・油をすばやく吸い取るので、ご飯の下に敷くほか、揚げ物や麺をバットに並べるときの下敷きにも使えます。光沢のある面を食品に当てて使います。
 
