@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [AnthropicのIPOとBinanceの巨額資産凍結：AI・Web3の資金流動性とセキュリティの最前線 11-20](2026-11-20-ai-news.html)
 - [Satya Nadellaが予測するAIエージェントの衝撃とGemini 4 Neonの登場 11-19](2026-11-19-ai-news-3.html)
 - [CryptoとLuckeyで読む：DaisyRose-27Bの登場とMicrosoftが示すAIコスト効率への戦略 11-19](2026-11-19-ai-news-2.html)
 - [Energy-Based Reasonersの革新とHuggingFaceによるRumble-2-Flashの公開 11-19](2026-11-19-ai-news.html)
