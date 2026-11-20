@@ -74,7 +74,7 @@ X-Direct で、これまで実際によくご注文いただいている理研�
 
 ### ミニプレスセット CDM-5PA（いちばんの売れ筋）
 
-<div style="max-width:360px;margin:12px auto"><img src="https://www.exdirect.net/img/1c9d0f948fa20137.jpg" alt="理研機器 ミニプレスセット CDM-5PA" style="width:100%;height:auto;border-radius:8px"></div>
+<div style="max-width:360px;margin:12px auto"><img src="https://www.exdirect.net/img/71ae51bb7aecc3b9.jpg" alt="理研機器 ミニプレスセット CDM-5PA" style="width:100%;height:auto;border-radius:8px"></div>
 
 手動ポンプ・油圧シリンダ・圧力計・プレス台がひとそろいになった、手動式のミニプレスセットです。X-Direct の理研機器の商品で、いちばん多くご注文をいただいています。部品の圧入・抜き取り、かしめ、曲げ直しなど、工場や研究室の小さなプレス作業に使われています。
 
