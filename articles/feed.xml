@@ -6,7 +6,21 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Nov 2026 10:37:58 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 21:45:37 +0000</lastBuildDate>
+    <item>
+      <title>Theで読む：Anthropic従業員のリーマン予想への挑戦と、AIによるCPUアーキテクチャ「Frostbite」の衝撃 11-21</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-21-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-21-ai-news.html</guid>
+      <pubDate>Sat, 21 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Anthropic従業員によるリーマン予想への挑戦や、AIで設計された新CPUアーキテクチャ「Frostbite」の衝撃など、最新の技術動向を解説します。Hugging Faceの新機能やNvidiaの動向も網羅しています。</description>
+    </item>
+    <item>
+      <title>Inkling 2 Miniの登場とClaude AIが関与するリーマン予想への挑戦 11-21</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-21-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-21-ai-news-2.html</guid>
+      <pubDate>Sat, 21 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Thinking Machines社から小型LLM「Inkling 2 Mini」が登場しました。また、Levent Alpöge氏がClaude AIの支援を受け、数学の難問である一般リーマン予想の証明を主張したニュースや最新技術動向を解説します。</description>
+    </item>
     <item>
       <title>Gemini 4 Neonが首位獲得とAppleの独自AIエージェント開発など最新動向 11-20</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-20-ai-news-3.html</link>
@@ -272,20 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-11-ai-news-2.html</guid>
       <pubDate>Wed, 11 Nov 2026 09:00:00 +0000</pubDate>
       <description>LLMの事後学習における「Deletion Tuning」技術が、0.05%未満の重みを削除するだけでフルファインチューニングと同等の性能を出すことが判明しました。また、ニューヨーク市のAI安全法によるOpenAIへの規制やOura社の買収動向も解説します。</description>
-    </item>
-    <item>
-      <title>AdobeのAIエージェント導入とAlphaProof Codeによるソフトウェア信頼性の革新 11-11</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-11-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-11-ai-news.html</guid>
-      <pubDate>Wed, 11 Nov 2026 09:00:00 +0000</pubDate>
-      <description>AdobeがPhotoshop等にAIエージェントを統合しクリエイティブ機能を強化するほか、Google DeepMindはコードの形式検証を行うAlphaProof Codeを発表しました。最新のLLM技術や3D生成フレームワークの動向も解説します。</description>
-    </item>
-    <item>
-      <title>BotPsyの登場とOpenAI・Anthropicへの規制強化：オンデバイスAIと法整備の最前線 11-11</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-11-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-11-ai-news-4.html</guid>
-      <pubDate>Wed, 11 Nov 2026 09:00:00 +0000</pubDate>
-      <description>BotPsyによるサブ10億パラメータの軽量モデルやオンデバイスAIの動向を紹介します。ニューヨーク州のAI安全法によるOpenAIやAnthropicへの規制強化、Qwen4-Max PreviewのAPI公開など最新情報を網羅しています。</description>
     </item>
   </channel>
 </rss>

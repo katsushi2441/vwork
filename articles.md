@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Inkling 2 Miniの登場とClaude AIが関与するリーマン予想への挑戦 11-21](2026-11-21-ai-news-2.html)
 - [Appleの独自AIエージェント開発とOpenSSLの重大な脆弱性に関する最新動向 11-20](2026-11-20-ai-news-4.html)
 - [Nvidiaのジェンセン・ファン氏を巡る疑惑とGoogle GeminiのMac操作機能など、最新AI・テック動向 11-20](2026-11-20-ai-news-2.html)
 - [AnthropicのIPOとBinanceの巨額資産凍結：AI・Web3の資金流動性とセキュリティの最前線 11-20](2026-11-20-ai-news.html)
