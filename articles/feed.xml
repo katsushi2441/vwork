@@ -6,13 +6,27 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 19 Nov 2026 22:03:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 10:37:58 +0000</lastBuildDate>
+    <item>
+      <title>Gemini 4 Neonが首位獲得とAppleの独自AIエージェント開発など最新動向 11-20</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-20-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-20-ai-news-3.html</guid>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Gemini 4 NeonがModels Engineering Indexで第1位を獲得したニュースや、AppleによるMac向け独自AIエージェントの開発動向を解説します。さらにAnthropicの20億ドルの資金調達や最新の医療研究も紹介します。</description>
+    </item>
     <item>
       <title>Nvidiaのジェンセン・ファン氏を巡る疑惑とGoogle GeminiのMac操作機能など、最新AI・テック動向 11-20</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-20-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-20-ai-news-2.html</guid>
       <pubDate>Fri, 20 Nov 2026 09:00:00 +0000</pubDate>
       <description>Nvidiaのジェンセン・ファンCEOの辞任疑惑やGoogle GeminiのMac自律操作機能など、最新のAI動向を解説します。Claudeによる物理学の難問解決やPostgreSQL 19のリリース情報も網羅しています。</description>
+    </item>
+    <item>
+      <title>Appleの独自AIエージェント開発とOpenSSLの重大な脆弱性に関する最新動向 11-20</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-20-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-20-ai-news-4.html</guid>
+      <pubDate>Fri, 20 Nov 2026 09:00:00 +0000</pubDate>
+      <description>OpenSSLでCVSS 9.8の重大なバッファオーバーフロー脆弱性が発見されたニュースや、AppleがmacOS向け独自のAIエージェントを開発中との報道を解説します。さらにトークン詐欺やオンチェーン取引の規制動向も網羅しています。</description>
     </item>
     <item>
       <title>AnthropicのIPOとBinanceの巨額資産凍結：AI・Web3の資金流動性とセキュリティの最前線 11-20</title>
@@ -272,20 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-11-ai-news-4.html</guid>
       <pubDate>Wed, 11 Nov 2026 09:00:00 +0000</pubDate>
       <description>BotPsyによるサブ10億パラメータの軽量モデルやオンデバイスAIの動向を紹介します。ニューヨーク州のAI安全法によるOpenAIやAnthropicへの規制強化、Qwen4-Max PreviewのAPI公開など最新情報を網羅しています。</description>
-    </item>
-    <item>
-      <title>Macで読む：AppleのローカルAI対応とOpenAI・Anthropicへの規制強化など、最新のAI動向まとめ 11-11</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-11-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-11-ai-news-3.html</guid>
-      <pubDate>Wed, 11 Nov 2026 09:00:00 +0000</pubDate>
-      <description>AppleがMac向けローカルAI実行アプリを開発するほか、ニューヨーク州でOpenAIやAnthropicへの規制強化が決定しました。LLMの重み削除による効率化やGemini 4 Carbonの公開など最新動向をまとめます。</description>
-    </item>
-    <item>
-      <title>MetaのMuse Ember登場とNVIDIAを揺るがすJensen Huang氏の動向 11-10</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-10-ai-news-2.html</guid>
-      <pubDate>Tue, 10 Nov 2026 09:00:00 +0000</pubDate>
-      <description>MetaがAIエージェント用の軽量モデル「Muse Ember」を発表しました。また、NVIDIAのJensen Huang氏がイベント出席を見送った動向や、Anthropicの新モデルリリースなど最新のテックニュースを要約します。</description>
     </item>
   </channel>
 </rss>
