@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Fairmintが挑むSECの実験とKalshiを巡る規制の最前線 11-21](2026-11-21-ai-news-3.html)
 - [Inkling 2 Miniの登場とClaude AIが関与するリーマン予想への挑戦 11-21](2026-11-21-ai-news-2.html)
 - [Appleの独自AIエージェント開発とOpenSSLの重大な脆弱性に関する最新動向 11-20](2026-11-20-ai-news-4.html)
 - [Nvidiaのジェンセン・ファン氏を巡る疑惑とGoogle GeminiのMac操作機能など、最新AI・テック動向 11-20](2026-11-20-ai-news-2.html)
