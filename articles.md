@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Inkling-2-Miniの軽量化とChainflipの大規模な流出事件から見る技術動向 11-22](2026-11-22-ai-news-2.html)
 - [Riemannで読む：Claudeと数学者が挑むリーマン予想の解明：AIによる証明への挑戦 11-22](2026-11-22-ai-news.html)
 - [Levent Alpögeによるリーマン予想の証明と、AIが発見したBitcoinの脆弱性に関する最新動向 11-21](2026-11-21-ai-news-4.html)
 - [Fairmintが挑むSECの実験とKalshiを巡る規制の最前線 11-21](2026-11-21-ai-news-3.html)
