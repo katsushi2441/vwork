@@ -21,6 +21,14 @@ og_stat_note: "株式会社エクスブリッジ（名古屋）"
 
 では、この予言は結局「次の大災害はいつ」と解釈されているのか。2026年11月の時点で分かっていることを整理しました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の考察を、Kurage が1分で話すショート動画にしました。
+
+[![Kurage の考察ショート動画「『私が見た未来』次の大災害はいつ？」。夜の窓辺の開いた日記と嵐の海を背景に、大きな見出し「次の大災害はいつ？」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/5e37fbdf39659a34.jpg)](https://kurage.exbridge.jp/kuragev.php?id=5e37fbdf39659a34#ref=vibeblog-watashi-ga-mita-mirai)
+
+- [Kurage の考察ショート「『私が見た未来』次の大災害はいつ？」（1分）](https://kurage.exbridge.jp/kuragev.php?id=5e37fbdf39659a34#ref=vibeblog-watashi-ga-mita-mirai)
+
 ## 『私が見た未来』の予言とは
 
 『私が見た未来』は、たつき諒さんが自分の見た夢を記録した「夢日記」をもとに描いた漫画です。
