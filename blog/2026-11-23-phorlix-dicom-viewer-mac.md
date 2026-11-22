@@ -19,6 +19,14 @@ og_stat_note: "株式会社エクスブリッジ（名古屋）"
 
 今日は、Macで医療画像を見るためのアプリ「PHORLIX（フォーリックス）」を紹介します。2026年11月17日、米国の App Store の医療カテゴリーで、有料アプリの1位になりました。開発しているのは、現役の精神科医で開発者の猪股弘明さん（PHAZOR合同会社）です。
 
+## 1分で見る：Kurage の紹介ショート動画
+
+この記事の紹介を、Kurage が1分で話すショート動画にしました。
+
+[![Kurage の紹介ショート動画「精神科医が全米1位」。夜の読影室のノートパソコンに CT・MRI の画像が並び、その上に立体の脳が浮かぶ背景に、大きな見出しと、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/e35d80b566c925b3.jpg)](https://kurage.exbridge.jp/kuragev.php?id=e35d80b566c925b3#ref=vibeblog-phorlix)
+
+- [Kurage の紹介ショート「精神科医が作ったMacアプリが全米1位」（1分）](https://kurage.exbridge.jp/kuragev.php?id=e35d80b566c925b3#ref=vibeblog-phorlix)
+
 ## PHORLIXとは：Macで CT・MRI を見る DICOM ビューア
 
 病院で撮る CT・MRI・レントゲンの画像は、「DICOM（ダイコム）」という医療用の決まった形式で保存されています。ふつうの画像ソフトでは開けないので、専用のビューアが必要です。
