@@ -25,14 +25,6 @@ og_stat_note: "株式会社エクスブリッジ（名古屋）"
 
 この記事の考察を、Kurage が1分で話すショート動画にしました。
 
-[![Kurage の考察ショート動画「『君の名は。』は瀬織津姫の映画だった？」。滝を背景に、大きな見出し「封印された女神」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/f8288d93bb61026f.jpg)](https://kurage.exbridge.jp/kuragev.php?id=f8288d93bb61026f#ref=vibeblog-kiminonawa)
-
-- [Kurage の考察ショート「『君の名は。』は瀬織津姫の映画だった？」（1分）](https://kurage.exbridge.jp/kuragev.php?id=f8288d93bb61026f#ref=vibeblog-kiminonawa)
-
-## 1分で見る：Kurage の考察ショート動画
-
-この記事の考察を、Kurage が1分で話すショート動画にしました。
-
 [![Kurage の考察ショート動画「『君の名は。』は瀬織津姫の映画だった？」。滝の流れを背景に、大きな見出し「封印された女神」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/f8288d93bb61026f.jpg)](https://kurage.exbridge.jp/kuragev.php?id=f8288d93bb61026f#ref=vibeblog-kiminonawa)
 
 - [Kurage の考察ショート「『君の名は。』は瀬織津姫の映画だった？」（1分）](https://kurage.exbridge.jp/kuragev.php?id=f8288d93bb61026f#ref=vibeblog-kiminonawa)
