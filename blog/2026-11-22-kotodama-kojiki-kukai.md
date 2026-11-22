@@ -21,6 +21,14 @@ og_stat_note: "株式会社エクスブリッジ（名古屋）"
 
 私は2020年に note で「古事記と言霊」という連載を書いていました。その中で取り上げたのが、「古事記の神代の巻は、言霊の原理の手引書である」という説です。あれから6年。あらためて、言霊・古事記・空海の3つを、確かめられる事実とつなげて考えてみました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の考察を、Kurage が1分で話すショート動画にしました。
+
+[![Kurage の考察ショート動画「古事記に隠された言霊の暗号？」。夜の寺の参道と、梵字が光る本堂を背景に、大きな見出し「古事記に隠された暗号」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/43b3ab19fbcbc1bb.jpg)](https://kurage.exbridge.jp/kuragev.php?id=43b3ab19fbcbc1bb#ref=vibeblog-kotodama)
+
+- [Kurage の考察ショート「古事記に隠された言霊の暗号？」（1分）](https://kurage.exbridge.jp/kuragev.php?id=43b3ab19fbcbc1bb#ref=vibeblog-kotodama)
+
 ## 言霊は、万葉集にも出てくる古い言葉
 
 言霊は、近代になって作られた言葉ではありません。奈良時代の歌を集めた『万葉集』に、すでに出てきます。
