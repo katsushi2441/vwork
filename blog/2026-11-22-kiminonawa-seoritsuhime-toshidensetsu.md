@@ -21,6 +21,22 @@ og_stat_note: "株式会社エクスブリッジ（名古屋）"
 
 あれから8年。あらためて、確かめられる事実と照らし合わせてみると、この説は思っていた以上に筋が通っていました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の考察を、Kurage が1分で話すショート動画にしました。
+
+[![Kurage の考察ショート動画「『君の名は。』は瀬織津姫の映画だった？」。滝を背景に、大きな見出し「封印された女神」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/f8288d93bb61026f.jpg)](https://kurage.exbridge.jp/kuragev.php?id=f8288d93bb61026f#ref=vibeblog-kiminonawa)
+
+- [Kurage の考察ショート「『君の名は。』は瀬織津姫の映画だった？」（1分）](https://kurage.exbridge.jp/kuragev.php?id=f8288d93bb61026f#ref=vibeblog-kiminonawa)
+
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の考察を、Kurage が1分で話すショート動画にしました。
+
+[![Kurage の考察ショート動画「『君の名は。』は瀬織津姫の映画だった？」。滝の流れを背景に、大きな見出し「封印された女神」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/f8288d93bb61026f.jpg)](https://kurage.exbridge.jp/kuragev.php?id=f8288d93bb61026f#ref=vibeblog-kiminonawa)
+
+- [Kurage の考察ショート「『君の名は。』は瀬織津姫の映画だった？」（1分）](https://kurage.exbridge.jp/kuragev.php?id=f8288d93bb61026f#ref=vibeblog-kiminonawa)
+
 ## 瀬織津姫とは：名前を消された水の女神
 
 瀬織津姫は、神社で読まれる祝詞「大祓詞（おおはらえのことば）」に出てくる女神です。人の罪や穢れを、山から流れ落ちる速い川の流れに乗せて、海へ流し去る役目を持つとされます。川や滝の神として祀る神社も各地にあります。
