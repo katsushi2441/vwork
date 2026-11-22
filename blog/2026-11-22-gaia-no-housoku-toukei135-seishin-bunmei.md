@@ -21,6 +21,14 @@ og_stat_note: "株式会社エクスブリッジ（名古屋）"
 
 あれから7年。答え合わせをしてみると、当たっていないことも、はっきり見えてきました。それでも私は、この説には今だからこそ読む意味があると考えています。順に書きます。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の答え合わせを、Kurage が1分で話すショート動画にしました。
+
+[![Kurage の考察ショート動画「ガイアの法則と東経135度」。宇宙から見た地球に、日本を通る光の線が走る背景に、大きな見出し「文明の中心は日本？」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/3ea1859077fdb7cb.jpg)](https://kurage.exbridge.jp/kuragev.php?id=3ea1859077fdb7cb#ref=vibeblog-gaia)
+
+- [Kurage の考察ショート「ガイアの法則と東経135度｜予言の答え合わせ」（1分）](https://kurage.exbridge.jp/kuragev.php?id=3ea1859077fdb7cb#ref=vibeblog-gaia)
+
 ## ガイアの法則とは：文明の中心は1,611年ごとに22.5度ずつ移る
 
 「ガイアの法則」は、千賀一生さんが2010年に出した本で語られた説です。
