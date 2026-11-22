@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 22 Nov 2026 04:11:31 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 10:21:58 +0000</lastBuildDate>
     <item>
       <title>Riemannで読む：Claudeと数学者が挑むリーマン予想の解明：AIによる証明への挑戦 11-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-22-ai-news.html</link>
@@ -20,6 +20,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-22-ai-news-3.html</guid>
       <pubDate>Sun, 22 Nov 2026 09:00:00 +0000</pubDate>
       <description>AI支援型Rustサーバー「Muru」によるPython開発の効率化や、Signalによるスクリーンショット制限などの最新技術動向を解説します。5.4GBで動作するInkling-2-MiniやNVIDIAの市場分析も網羅しています。</description>
+    </item>
+    <item>
+      <title>Toyotaで読む：Riemann仮説の検証とSignalによるAI監視への対抗策：技術とプライバシーの最前線 11-22</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-22-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-22-ai-news-4.html</guid>
+      <pubDate>Sun, 22 Nov 2026 09:00:00 +0000</pubDate>
+      <description>リーマン仮説の簡潔な検証に向けた進展や、SignalがAI監視対策としてスクリーンショットを制限する動向を紹介します。また、トヨタ等の部品標準化やNVIDIAの二面性など、最新の技術とプライバシーに関するニュースを解説します。</description>
     </item>
     <item>
       <title>Inkling-2-Miniの軽量化とChainflipの大規模な流出事件から見る技術動向 11-22</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-4.html</guid>
       <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
       <description>NvidiaのJensen Huang氏の辞任報道やRust 1.100のリリースなど、AI・開発環境の最新ニュースをまとめました。LLMONの導入やMuseの自動電話発信機能など、技術動向を詳しく解説します。</description>
-    </item>
-    <item>
-      <title>Nvidiaのジェンセン・ファンCEO交代報道と、Gemma4の潜在空間における驚きの発見 11-12</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news-4.html</guid>
-      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
-      <description>Nvidiaのジェンセン・ファンCEO解任報道や株価への影響、Gemma4-31bの潜在空間で「思いやり」を制御する3つのニューロンの発見について解説します。さらにGemini Decisions APIの提供開始も紹介します。</description>
     </item>
   </channel>
 </rss>

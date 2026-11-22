@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Toyotaで読む：Riemann仮説の検証とSignalによるAI監視への対抗策：技術とプライバシーの最前線 11-22](2026-11-22-ai-news-4.html)
 - [FLIPとASGIで読む：Muruの登場とSignalによるAI監視への対抗策：技術革新とプライバシーの最前線 11-22](2026-11-22-ai-news-3.html)
 - [Inkling-2-Miniの軽量化とChainflipの大規模な流出事件から見る技術動向 11-22](2026-11-22-ai-news-2.html)
 - [Riemannで読む：Claudeと数学者が挑むリーマン予想の解明：AIによる証明への挑戦 11-22](2026-11-22-ai-news.html)
