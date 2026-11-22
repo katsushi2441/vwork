@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 21 Nov 2026 21:43:53 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 04:11:31 +0000</lastBuildDate>
     <item>
       <title>Riemannで読む：Claudeと数学者が挑むリーマン予想の解明：AIによる証明への挑戦 11-22</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-22-ai-news.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-22-ai-news.html</guid>
       <pubDate>Sun, 22 Nov 2026 09:00:00 +0000</pubDate>
       <description>Levent Alpöge氏がAIモデル「Claude」を用いてリーマン予想の証明を発見したと主張しています。最新AIによる数学的難問への挑戦や、Ravi Vakil氏が報告した一般化されたリーマン予想（GRH）の進展についても解説します。</description>
+    </item>
+    <item>
+      <title>FLIPとASGIで読む：Muruの登場とSignalによるAI監視への対抗策：技術革新とプライバシーの最前線 11-22</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-22-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-22-ai-news-3.html</guid>
+      <pubDate>Sun, 22 Nov 2026 09:00:00 +0000</pubDate>
+      <description>AI支援型Rustサーバー「Muru」によるPython開発の効率化や、Signalによるスクリーンショット制限などの最新技術動向を解説します。5.4GBで動作するInkling-2-MiniやNVIDIAの市場分析も網羅しています。</description>
     </item>
     <item>
       <title>Inkling-2-Miniの軽量化とChainflipの大規模な流出事件から見る技術動向 11-22</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news-4.html</guid>
       <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
       <description>Nvidiaのジェンセン・ファンCEO解任報道や株価への影響、Gemma4-31bの潜在空間で「思いやり」を制御する3つのニューロンの発見について解説します。さらにGemini Decisions APIの提供開始も紹介します。</description>
-    </item>
-    <item>
-      <title>Agentsで読む：ゲーミングGPUでのLLM学習とGoogleのAIエージェントによる遺跡発見など、最新AI動向まとめ 11-12</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-12-ai-news.html</guid>
-      <pubDate>Thu, 12 Nov 2026 09:00:00 +0000</pubDate>
-      <description>ゲーミングGPUでのVRAM削減を実現したLLM学習技術や、GoogleのAIエージェントによるマヤ遺跡の発見など、最新のAI動向をまとめました。Anthropicのインフラ戦略やマルチベクトル埋め込みモデルの進展も解説します。</description>
     </item>
   </channel>
 </rss>
