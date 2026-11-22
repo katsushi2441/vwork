@@ -19,6 +19,14 @@ og_stat_note: "株式会社エクスブリッジ"
 
 カブアンドの株を上場後も持ち続けるには、12月10日までに大和コネクト証券の口座を開いて、カブアンドの会員情報とID連携しておく必要があります。ほかの証券会社の口座は使えません。株主は約101万人います。これだけの人が1つの証券会社に口座を開くなら、証券会社にとってはかなり大きな話です。では、カブアンドの側は大和コネクト証券から何か見返りを受け取っているのか。それが気になって調べました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分で話すショート動画にしました。
+
+[![Kurage の考察ショート動画「カブアンド100万口座の謎」。夜の渋谷のスクランブル交差点の群衆を背景に、大きな見出し「100万口座の行方」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/7071e75a3372fbf0.jpg)](https://kurage.exbridge.jp/kuragev.php?id=7071e75a3372fbf0#ref=vibeblog-kabuand-shoken-koza)
+
+- [Kurage の考察ショート「カブアンド100万口座の謎」（1分）](https://kurage.exbridge.jp/kuragev.php?id=7071e75a3372fbf0#ref=vibeblog-kabuand-shoken-koza)
+
 ## 分かっていることの表
 
 | 項目 | 内容 |
