@@ -36,6 +36,10 @@ Mac の医療画像ビューアには、長い流れがあります。
 
 2000年代に、高機能な Mac 専用の DICOM ビューア「OsiriX」が登場し、放射線科医や研究者に広く使われました。その流れを受けた無料のビューアが「Horos」で、さらにそれをもとに猪股さんが作ったのが「HorliX」です。PHORLIX は、その HorliX の後継にあたります。猪股さんは、Horos や OsiriX の開発にも協力者として名前を連ねています。
 
+PHORLIX の前身の HorliX は、ソースが公開されているオープンソース（LGPLv3）です。
+
+- [HorliXとは｜Mac用DICOMビューア（LGPLv3）と後継PHORLIX](https://kurage.exbridge.jp/oss/horlix/#ref=vibeblog-phorlix)
+
 Windows では、病院の画像管理システム（PACS）の閲覧ソフトや、CD に付いてくるビューアが主流です。それでも Mac で医療画像を見る文化が医師の中に残っているのは、この流れがあるからです。選択肢が少ない Mac で、使いやすいビューアが出ると、一気に広がります。
 
 ## 宣伝なしで世界に広がった
@@ -61,6 +65,7 @@ Windows では、病院の画像管理システム（PACS）の閲覧ソフト�
 実は、当社の電子カルテのページを見て、OpenDolphin のライセンス表記について指摘をくださったのが、猪股さんでした。おかげで当社のページを正しく直すことができました。
 
 - [OpenDolphinとは｜日本製の電子カルテ（オープンソース・GPL）](https://kurage.exbridge.jp/oss/opendolphin/#ref=vibeblog-phorlix)
+- [OpenOcean／OpenDolphin-2.7mとは｜猪股さんが保守する電子カルテ（GPLv3）](https://kurage.exbridge.jp/oss/openocean/#ref=vibeblog-phorlix)
 
 ## 医療画像ビューアの使い分け：読影と確認
 
@@ -72,6 +77,10 @@ Windows では、病院の画像管理システム（PACS）の閲覧ソフト�
 猪股さんもブログで、「現実の医療機関では、読影用のシステムは認証済み、確認程度で使うビューアは認証・非認証が混在するのが普通」と書いています。個人が手軽に使える認証済みのビューアはほとんど無く、その隙間を埋める形で、医師が自分で作る DICOM ビューアが広がってきました。
 
 使う側としては、診断に使うのか、確認や資料づくりに使うのかを分けて、ビューアを選ぶのがよいと思います。
+
+Mac に限らず、院内のどのパソコンからもブラウザで CT・MRI を見たい場合は、オープンソースの OHIF Viewer という選択肢もあります。
+
+- [OHIF Viewerとは｜ブラウザで動くDICOMビューア（MIT）](https://kurage.exbridge.jp/oss/ohif-viewer/#ref=vibeblog-phorlix)
 
 ## AIの考察：一人の医師が、世界1位のアプリを作れる時代
 
