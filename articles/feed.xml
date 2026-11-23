@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sun, 22 Nov 2026 21:44:23 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 03:54:00 +0000</lastBuildDate>
     <item>
       <title>Perplexityの指標とOpenAIの規制議論：AIの進歩を測る鍵と課題 11-23</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-23-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-23-ai-news-2.html</guid>
       <pubDate>Mon, 23 Nov 2026 09:00:00 +0000</pubDate>
       <description>Perplexity（当惑度）と汎用知能（AGI）の理論的関連性や、OpenAIが提唱するAI開発の規制に向けた測定指標の重要性を解説します。また、データセンターへの批判やビットコインの量子セキュリティ課題についても触れています。</description>
+    </item>
+    <item>
+      <title>Anthropicへの巨額投資とOpenAIが示すAI開発の制御フレームワーク 11-23</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-23-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-23-ai-news-3.html</guid>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 +0000</pubDate>
+      <description>AnthropicへのNotable Capitalらによる巨額投資の背景や、OpenAIが提言するAI開発の制御フレームワークを解説します。さらにローカルLLM導入ガイドやビットコインの量子セキュリティ課題についても網羅しています。</description>
     </item>
     <item>
       <title>Bitcoinで読む：量子コンピューティングの脅威がビットコインのブリッジやカストディアンに波及 11-23</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-3.html</guid>
       <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
       <description>NVIDIAのJensen Huang氏の辞任疑惑やRust 1.100のリリースなど、AIインフラを揺るがす最新ニュースを解説します。Binanceへのハック事件やGemini 4の分析、Hugging Faceの動向も網羅しています。</description>
-    </item>
-    <item>
-      <title>Nvidiaのジェンセン・ファンCEO辞任とFireworks AIへのサイバー攻撃によるデータ流出の衝撃 11-13</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news.html</guid>
-      <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
-      <description>Nvidiaのジェンセン・ファンCEO辞任報道やFireworks AIへのサイバー攻撃によるNotionユーザーのデータ流出を報じます。また新技術KQuantによるQwenモデルの精度向上や3D生成モデルのガイドも紹介します。</description>
     </item>
   </channel>
 </rss>
