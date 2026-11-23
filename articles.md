@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [OpenAIのAI開発制限とiPhoneを狙う仮想通貨詐欺など、最新テック動向まとめ 11-23](2026-11-23-ai-news-4.html)
 - [Anthropicへの巨額投資とOpenAIが示すAI開発の制御フレームワーク 11-23](2026-11-23-ai-news-3.html)
 - [Perplexityの指標とOpenAIの規制議論：AIの進歩を測る鍵と課題 11-23](2026-11-23-ai-news-2.html)
 - [Bitcoinで読む：量子コンピューティングの脅威がビットコインのブリッジやカストディアンに波及 11-23](2026-11-23-ai-news.html)

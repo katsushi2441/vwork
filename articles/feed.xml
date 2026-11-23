@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 23 Nov 2026 03:54:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 10:05:52 +0000</lastBuildDate>
     <item>
       <title>Perplexityの指標とOpenAIの規制議論：AIの進歩を測る鍵と課題 11-23</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-23-ai-news-2.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-23-ai-news.html</guid>
       <pubDate>Mon, 23 Nov 2026 09:00:00 +0000</pubDate>
       <description>量子コンピューティングの進歩がビットコインのセキュリティに与える脅威を解説します。個人の秘密鍵だけでなく、クロスチェーン・ブリッジや機関投資家向けのカストディアンといった複雑なインフラへの影響についても詳しく紹介します。</description>
+    </item>
+    <item>
+      <title>OpenAIのAI開発制限とiPhoneを狙う仮想通貨詐欺など、最新テック動向まとめ 11-23</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-23-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-23-ai-news-4.html</guid>
+      <pubDate>Mon, 23 Nov 2026 09:00:00 +0000</pubDate>
+      <description>OpenAIのチーフサイエンティストが提唱するAI開発への速度制限や、Linux上でOS Xを動作させるXNU Linuxプロジェクトなど最新テック動向をまとめました。iPhoneを狙う仮想通貨詐欺の手口も解説します。</description>
     </item>
     <item>
       <title>Riemannで読む：Claudeと数学者が挑むリーマン予想の解明：AIによる証明への挑戦 11-22</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-14-ai-news-2.html</guid>
       <pubDate>Sat, 14 Nov 2026 09:00:00 +0000</pubDate>
       <description>ChatGPTの新機能WalletによるAIエージェントの自動決済や、NVIDIA製チップの輸出規制を巡る中国の動向を解説します。またLangChainの評価額やXYBenchなど最新のAI技術ニュースを網羅しています。</description>
-    </item>
-    <item>
-      <title>Jensen Huangの辞任とRust 1.100リリース：AIインフラを揺るがす動乱のニュース 11-13</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-13-ai-news-3.html</guid>
-      <pubDate>Fri, 13 Nov 2026 09:00:00 +0000</pubDate>
-      <description>NVIDIAのJensen Huang氏の辞任疑惑やRust 1.100のリリースなど、AIインフラを揺るがす最新ニュースを解説します。Binanceへのハック事件やGemini 4の分析、Hugging Faceの動向も網羅しています。</description>
     </item>
   </channel>
 </rss>
