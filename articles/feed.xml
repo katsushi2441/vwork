@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Mon, 23 Nov 2026 21:43:44 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 03:55:38 +0000</lastBuildDate>
     <item>
       <title>Huangで読む：AmazonがDecartの技術を75億ドルで買収、NVIDIAはジェンセン・ファン氏をCEOに再就任 11-24</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-24-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-24-ai-news-2.html</guid>
       <pubDate>Tue, 24 Nov 2026 09:00:00 +0000</pubDate>
       <description>AmazonがDecart社のAI最適化技術を75億ドルで買収したニュースや、NVIDIAのジェンセン・ファン氏のCEO再就任、Google検索のAIモードとDrive連携など、最新のテック動向を網羅的に解説します。</description>
+    </item>
+    <item>
+      <title>NvidiaのJensen Huang氏復職とAnthropicによるClaude Ship発表など、AI・テック界の最新動向 11-24</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-24-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-24-ai-news-3.html</guid>
+      <pubDate>Tue, 24 Nov 2026 09:00:00 +0000</pubDate>
+      <description>NvidiaのJensen Huang氏再任やAnthropicによるAIエージェント「Claude Ship」の発表など、最新のテック動向をまとめました。Ladybirdブラウザのアルファ版公開やRoboTrackの技術解説も網羅しています。</description>
     </item>
     <item>
       <title>Jensen HuangのNVIDIA再任とGLM-5.4が示す次世代AIの進化 11-24</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-14-ai-news-4.html</guid>
       <pubDate>Sat, 14 Nov 2026 09:00:00 +0000</pubDate>
       <description>中国で開発された高度なAIモデルの学習に、米国の輸出禁止措置を受けたNvidia製チップが使用されている実態を明らかにします。また、ジェンセン・ファン氏の辞任疑惑やllama.cpp v1.0のリリース情報も解説します。</description>
-    </item>
-    <item>
-      <title>llama.cppのアップデートとNVIDIA CEOジェンセン・ファンを巡るスキャンダル 11-14</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-14-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-14-ai-news.html</guid>
-      <pubDate>Sat, 14 Nov 2026 09:00:00 +0000</pubDate>
-      <description>llama.cpp v1.0.0のリリースによりローカルAI環境が強化される一方で、NVIDIA CEOジェンセン・ファン氏の辞任疑惑やイスラエルのVCによる新投資など、AI業界を揺るがす最新ニュースを網羅的に解説します。</description>
     </item>
   </channel>
 </rss>

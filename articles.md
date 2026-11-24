@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [NvidiaのJensen Huang氏復職とAnthropicによるClaude Ship発表など、AI・テック界の最新動向 11-24](2026-11-24-ai-news-3.html)
 - [Huangで読む：AmazonがDecartの技術を75億ドルで買収、NVIDIAはジェンセン・ファン氏をCEOに再就任 11-24](2026-11-24-ai-news-2.html)
 - [Jensen HuangのNVIDIA再任とGLM-5.4が示す次世代AIの進化 11-24](2026-11-24-ai-news.html)
 - [OpenAIのAI開発制限とiPhoneを狙う仮想通貨詐欺など、最新テック動向まとめ 11-23](2026-11-23-ai-news-4.html)
