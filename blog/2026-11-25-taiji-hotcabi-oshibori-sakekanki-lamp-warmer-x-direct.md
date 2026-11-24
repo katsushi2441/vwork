@@ -1,10 +1,10 @@
 ---
-title: "タイジのおしぼりウォーマー「ホットキャビ」・酒燗器・ランプウォーマー・クールプレートを X-Direct で87品掲載"
-title_aixsns: "業務用の保温・保冷機器のメーカー、タイジの商品を X-Direct に87品載せました。おしぼりウォーマー「ホットキャビ」、全自動酒燗器、ランプウォーマー、ビュッフェ用のクールプレートとプレートヒーター、温蔵庫「フードキャビ」、フローズンマシンなどです"
+title: "タイジのおしぼりウォーマー「ホットキャビ」・酒燗器・ランプウォーマー・クールプレートを X-Direct で96品掲載"
+title_aixsns: "業務用の保温・保冷機器のメーカー、タイジの商品を X-Direct に96品載せました。おしぼりウォーマー「ホットキャビ」、全自動酒燗器、ランプウォーマー、ビュッフェ用のクールプレートとプレートヒーター、温蔵庫「フードキャビ」、フローズンマシンなどです"
 title_hatena: "タイジ ホットキャビ・酒燗器・ランプウォーマー・クールプレート"
 title_blogger: "おしぼりウォーマー タイジ ホットキャビの取り扱い"
 tags: [タイジ, ホットキャビ, おしぼりウォーマー, タオルウォーマー, 酒燗器, ランプウォーマー, クールプレート, プレートヒーター, 温蔵庫, フローズンマシン, 業務用, X-Direct]
-description: "業務用の保温・保冷機器のメーカー、タイジの商品を X-Direct に87品掲載しました。おしぼりウォーマー「ホットキャビ」、全自動酒燗器、ランプウォーマー、ビュッフェ用のクールプレートなどを紹介します。"
+description: "業務用の保温・保冷機器のメーカー、タイジの商品を X-Direct に96品掲載しました。おしぼりウォーマー「ホットキャビ」、全自動酒燗器、ランプウォーマー、ビュッフェ用のクールプレートなどを紹介します。"
 seo_title: "タイジ ホットキャビ・酒燗器・ランプウォーマー｜おしぼりウォーマー"
 head_keyword: "おしぼりウォーマー"
 og_stat: "おしぼりウォーマー"
@@ -17,7 +17,7 @@ permalink: /blog/2026-11-25-taiji-hotcabi-oshibori-sakekanki-lamp-warmer-x-direc
 
 名古屋でAIシステムの開発をしている、株式会社エクスブリッジの小嶋です。当社は、工具・機械・業務用品の通販サイト「X-Direct」も運営しています。
 
-X-Direct で、業務用の保温・保冷機器のメーカー **タイジ** の商品を87品掲載しました。飲食店のおしぼり、日本酒の燗、ホテルのビュッフェ、テイクアウトの保温など、料理や飲み物を「ちょうどよい温度で出す」ための機械です。
+X-Direct で、業務用の保温・保冷機器のメーカー **タイジ** の商品を96品掲載しました。飲食店のおしぼり、日本酒の燗、ホテルのビュッフェ、テイクアウトの保温など、料理や飲み物を「ちょうどよい温度で出す」ための機械です。
 
 - [X-Direct のタイジの商品一覧](https://www.exdirect.net/maker/taiji#ref=vibeblog-taiji)
 
@@ -52,6 +52,15 @@ X-Direct で、業務用の保温・保冷機器のメーカー **タイジ** �
 - [ホットスープディスペンサー HSD-5](https://www.exdirect.net/product/201686#ref=vibeblog-taiji)、[フーズウォーマー HS-1](https://www.exdirect.net/product/201687#ref=vibeblog-taiji)、[カップウォーマー DA-23GS](https://www.exdirect.net/product/201728#ref=vibeblog-taiji)
 - [フローズンマシン NG6-1](https://www.exdirect.net/product/201732#ref=vibeblog-taiji)、[miniGEL Plus1](https://www.exdirect.net/product/201768#ref=vibeblog-taiji)、[ジェラートマシン TGM-1000N](https://www.exdirect.net/product/201734#ref=vibeblog-taiji)
 - [卓上電気フライヤー TF-40A](https://www.exdirect.net/product/201684#ref=vibeblog-taiji)、[遠赤外線ホットロースター TEY-202](https://www.exdirect.net/product/201735#ref=vibeblog-taiji)、[殺菌線消毒保管庫 ステリキャビ STR-35](https://www.exdirect.net/product/201683#ref=vibeblog-taiji)
+
+## タイジの公式サイトから加えた商品
+
+問屋の価格表に載っていないタイジの新しい商品も、タイジの公式サイトの希望小売価格をもとに9品加えました。
+
+- [2段式プレートヒーター PHW-300(GK)](https://www.exdirect.net/product/201913#ref=vibeblog-taiji)、[2段式クールプレート CPW-300(GW)](https://www.exdirect.net/product/201907#ref=vibeblog-taiji)
+- [デュアルプレート DP-980](https://www.exdirect.net/product/201908#ref=vibeblog-taiji)
+- [デシャップウォーマー DW-60](https://www.exdirect.net/product/201909#ref=vibeblog-taiji)
+- [スタンドランプウォーマー SL-25K](https://www.exdirect.net/product/201914#ref=vibeblog-taiji)、[ペンダント式ランプウォーマー ILM-18(W)](https://www.exdirect.net/product/201911#ref=vibeblog-taiji)
 
 ## X-Direct で扱える理由
 
