@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Datasetteで読む：Check Pointへの攻撃やNVIDIA Isaac Labを用いたロボティクスなど、AIとサイバーセキ… 11-25](2026-11-25-ai-news-2.html)
 - [LLM Agentsで読む：LLMエージェントの利害対立と、加速するソフトウェア開発のパラダイムシフト 11-25](2026-11-25-ai-news.html)
 - [Datasetteで読む：AnthropicのClaude Ship登場とNVIDIAによるジェンセン・ファンCEO再任で揺れるAI… 11-24](2026-11-24-ai-news-4.html)
 - [NvidiaのJensen Huang氏復職とAnthropicによるClaude Ship発表など、AI・テック界の最新動向 11-24](2026-11-24-ai-news-3.html)
