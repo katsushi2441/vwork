@@ -17,7 +17,7 @@ permalink: /blog/2026-11-25-nissei-annaka-hot-showcase-onzoko-oden-x-direct.html
 
 名古屋でAIシステムの開発をしている、株式会社エクスブリッジの小嶋です。当社は、工具・機械・業務用品の通販サイト「X-Direct」も運営しています。
 
-X-Direct で、業務用の保温機器のメーカー **ニッセイ（株式会社アンナカ）** の商品を29品掲載しました。コンビニやスーパーの揚げ物・中華まんの保温、お弁当の温蔵、おでんや焼き芋の販売など、温かい料理を売り場に並べるための機械です。
+X-Direct で、業務用の保温機器のメーカー **ニッセイ（株式会社アンナカ）** の商品を183品掲載しました。コンビニやスーパーの揚げ物・中華まんの保温、お弁当の温蔵、おでんや焼き芋の販売など、温かい料理を売り場に並べるための機械です。
 
 - [X-Direct のニッセイの商品一覧](https://www.exdirect.net/maker/nissei#ref=vibeblog-nissei)
 
@@ -44,6 +44,19 @@ X-Direct で、業務用の保温機器のメーカー **ニッセイ（株式�
 - [遠赤外線焼き芋機 ほくほく君 NEY-11W](https://www.exdirect.net/product/201815#ref=vibeblog-nissei)
 - [タオルポット TP-35W](https://www.exdirect.net/product/201811#ref=vibeblog-nissei)、[カップウォーマー NWC-43](https://www.exdirect.net/product/201813#ref=vibeblog-nissei)
 - [麺水切機 NMM-720](https://www.exdirect.net/product/201787#ref=vibeblog-nissei)
+
+## ニッセイの公式サイトから加えた商品
+
+問屋の価格表に載っていないニッセイの商品も、アンナカの公式サイトの価格をもとに154品加えました。厨房の作業台の下に置く温蔵庫や、厨房と客席の間で受け渡しをするパススルー型など、病院・介護施設・給食の配膳で使われる機器が多くあります。
+
+- 台下型遠赤外線温蔵庫：[NB-105DE](https://www.exdirect.net/product/201916#ref=vibeblog-nissei) ほか
+- ウォーマーテーブル遠赤外線温蔵庫：[NB-410WTDE](https://www.exdirect.net/product/202048#ref=vibeblog-nissei) ほか
+- パススルー型コールドケース：[NB-1500CCS](https://www.exdirect.net/product/202016#ref=vibeblog-nissei)、[NB-900CCS](https://www.exdirect.net/product/202024#ref=vibeblog-nissei) ほか
+- 電気温蔵庫：[NB-58FG](https://www.exdirect.net/product/202069#ref=vibeblog-nissei)、遠赤外線温蔵庫：[NB-260EG](https://www.exdirect.net/product/201952#ref=vibeblog-nissei) ほか
+- 遠赤外線オープンホットショーケース：[NH-903EO](https://www.exdirect.net/product/202012#ref=vibeblog-nissei) ほか
+- ウォーマーポット：[NWL-870WE](https://www.exdirect.net/product/201964#ref=vibeblog-nissei) ほか、ディッシュウォーマー：[DDW-450](https://www.exdirect.net/product/201940#ref=vibeblog-nissei)
+
+温蔵庫の一部は、コントロールボックスが左（L）と右（R）の2種類があります。ご注文時にお知らせください。
 
 ## X-Direct で扱える理由
 
