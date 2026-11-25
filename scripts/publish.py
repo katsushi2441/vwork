@@ -333,6 +333,22 @@ def main():
     print("[3/4] 公開確認")
     wait_for_vibeblog(article_url, title)
 
+    # 2026-11-25 ユーザー「ブログも書いたらINDEX送信してよ」: 公開を確かめたら、必ずインデックスに送る（手で送り忘れない）。
+    # Bing など（IndexNow）へ記事の URL を送り、Google へは exbridge.jp のサイトマップを Search Console に送り直す。
+    print("  インデックス送信")
+    try:
+        sys.path.insert(0, "/home/kojima/work/kurage_web/backend")
+        import indexnow_jobs  # noqa: E402
+        ok, key_url = indexnow_jobs.verify_key("exbridge.jp")
+        if ok:
+            sent, notes = indexnow_jobs._submit("exbridge.jp", key_url, [article_url, f"{VIBEBLOG_URL}/"])
+            print(f"  IndexNow: {', '.join(notes)}")
+        else:
+            print(f"  IndexNow: 鍵が公開されていない（{key_url}）")
+        print("  " + indexnow_jobs._gsc_resubmit("exbridge.jp"))
+    except Exception as e:  # 送信の失敗で公開そのものは止めない（結果は出す）
+        print(f"  インデックス送信に失敗: {str(e)[:120]}")
+
     print("[4/4] AIxSNS告知")
     if args.no_sns:
         print("  --no-sns のためスキップ")
