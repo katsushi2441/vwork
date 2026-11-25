@@ -19,6 +19,14 @@ og_stat_note: "株式会社エクスブリッジ"
 
 カブアンドを検索すると「赤字」という言葉がよく出てきます。「赤字21億円」「情弱ビジネスではないか」という記事も多く見かけました。ただ、その数字は第1期のものです。カブアンドの運営会社（株式会社カブ&ピース）が2026年10月29日に出した第5期募集の目論見書には、もっと新しい数字が載っていました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分足らずで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「赤字21億円は古い」。夜の渋谷のスクランブル交差点の群衆を背景に、大きな見出し「赤字21億円は古い」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/05cf0e7e2d682c7c.jpg)](https://kurage.exbridge.jp/kuragev.php?id=05cf0e7e2d682c7c#ref=vibeblog-kabuand-kessan)
+
+- [Kurage の考察ショート「赤字21億円は古い」（1分足らず）](https://kurage.exbridge.jp/kuragev.php?id=05cf0e7e2d682c7c#ref=vibeblog-kabuand-kessan)
+
 ## 決算の推移
 
 | | 第1期 | 第2期 | 第3期 中間期 |
