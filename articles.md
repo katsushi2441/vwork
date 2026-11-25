@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [行列演算の理論的限界とSolanaの効率化：AIインフラとWeb3の技術進化 11-25](2026-11-25-ai-news-4.html)
 - [行列演算の理論的進展とNVIDIAへの批判、そして最新SLM「Ternary Bonsai 2.5」の登場 11-25](2026-11-25-ai-news-3.html)
 - [Datasetteで読む：Check Pointへの攻撃やNVIDIA Isaac Labを用いたロボティクスなど、AIとサイバーセキ… 11-25](2026-11-25-ai-news-2.html)
 - [LLM Agentsで読む：LLMエージェントの利害対立と、加速するソフトウェア開発のパラダイムシフト 11-25](2026-11-25-ai-news.html)
