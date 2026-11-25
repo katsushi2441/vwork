@@ -6,13 +6,20 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Tue, 24 Nov 2026 21:41:33 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 03:52:56 +0000</lastBuildDate>
     <item>
       <title>Datasetteで読む：Check Pointへの攻撃やNVIDIA Isaac Labを用いたロボティクスなど、AIとサイバーセキ… 11-25</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-25-ai-news-2.html</link>
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-25-ai-news-2.html</guid>
       <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
       <description>Check Pointへの攻撃手法やNVIDIA Isaac Labを用いたロボティクスのSim2Realワークフローなど、最新のAI・サイバーセキュリティ動向をまとめました。英国当局の警告やAnthropicの株価動向も網羅しています。</description>
+    </item>
+    <item>
+      <title>行列演算の理論的進展とNVIDIAへの批判、そして最新SLM「Ternary Bonsai 2.5」の登場 11-25</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-25-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-25-ai-news-3.html</guid>
+      <pubDate>Wed, 25 Nov 2026 09:00:00 +0000</pubDate>
+      <description>行列乗算の指数が9/4であることを示す論文や、最新SLM「Ternary Bonsai 2.5」の発表など、AI技術の最新動向を解説します。NVIDIAへの批判やロボットのSim2Realワークフローについても紹介します。</description>
     </item>
     <item>
       <title>LLM Agentsで読む：LLMエージェントの利害対立と、加速するソフトウェア開発のパラダイムシフト 11-25</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-15-ai-news-4.html</guid>
       <pubDate>Sun, 15 Nov 2026 09:00:00 +0000</pubDate>
       <description>NvidiaのJensen Huang氏退任に伴うセキュリティ体制への懸念や、欧州で開発中の1兆パラメータを目指すAIモデル「EUROPA」の動向を解説します。SpaceXのStarship成功やLovableアプリの情報流出も報じます。</description>
-    </item>
-    <item>
-      <title>ステーブルコインの普及とNVIDIA、Jensen HuangによるAIスタートアップへの戦略的投資 11-15</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-15-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-15-ai-news.html</guid>
-      <pubDate>Sun, 15 Nov 2026 09:00:00 +0000</pubDate>
-      <description>英・星・タイの中央銀行がステーブルコインを用いた国際送金決済のテストを実施しています。また、NVIDIAのJensen Huang氏によるAIスタートアップへの戦略的投資や、SenseNova-Loop-9B-Previewの性能についても解説します。</description>
     </item>
   </channel>
 </rss>
