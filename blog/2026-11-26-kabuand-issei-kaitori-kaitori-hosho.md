@@ -19,6 +19,14 @@ og_stat_note: "株式会社エクスブリッジ"
 
 カブアンドの株主のあいだで「一斉買取」「買取保証」という言葉がよく出てきます。名前は似ていますが、この2つは別のもので、買い取られる値段も違います。株主規約と、第4期・第5期の目論見書の文言で確かめました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分足らずで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「一斉買取と買取保証」。夜の渋谷のスクランブル交差点の群衆を背景に、大きな見出し「一斉買取と買取保証」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/fd46b2af0475753c.jpg)](https://kurage.exbridge.jp/kuragev.php?id=fd46b2af0475753c#ref=vibeblog-kabuand-kaitori)
+
+- [Kurage の考察ショート「一斉買取と買取保証」（1分足らず）](https://kurage.exbridge.jp/kuragev.php?id=fd46b2af0475753c#ref=vibeblog-kabuand-kaitori)
+
 ## 1つ目：ID連携しなかった株の「一斉買取」（12月16日）
 
 第1期から第3期で株を受け取った人は、2026年12月10日の午後11時59分までに、大和コネクト証券の口座を開いて、カブアンドの会員情報とID連携する必要があります。
