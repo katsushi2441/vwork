@@ -19,6 +19,14 @@ og_stat_note: "株式会社エクスブリッジ"
 
 カブアンドで株を申し込むとき、画面に「ロックアップに関する確約書をご確認のうえ同意してください」と出ます。検索してみると、この言葉の意味が分からない、同意できない、確認できない、という人が多いようです。株主規約と目論見書で、何に同意しているのかを確かめました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分足らずで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「ロックアップ」。夜の渋谷のスクランブル交差点の群衆を背景に、大きな見出し「ロックアップ」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/e2790db280ead40c.jpg)](https://kurage.exbridge.jp/kuragev.php?id=e2790db280ead40c#ref=vibeblog-kabuand-lockup)
+
+- [Kurage の考察ショート「ロックアップ」（1分足らず）](https://kurage.exbridge.jp/kuragev.php?id=e2790db280ead40c#ref=vibeblog-kabuand-lockup)
+
 ## ロックアップとは、上場後しばらく売らない約束
 
 ロックアップは、株が上場したあと、決められた期間は株を売らないという約束です。上場した直後に大量の株が売りに出て、値段が崩れるのを防ぐためのものです。
