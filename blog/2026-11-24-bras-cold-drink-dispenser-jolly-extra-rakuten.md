@@ -10,8 +10,8 @@ tags: [ブラス, BRAS, コールドドリンクディスペンサー, ジュー
 description: "イタリアのブラス（BRAS）の業務用コールドドリンクディスペンサー JOLLY8.1G（1連）・EXTRA12.1A（1連）・EXTRA12.2A（2連）を X-Direct で取り扱い始めました。商品の特長と、楽天市場より安い価格で出せる理由を紹介します。"
 seo_title: "ブラス コールドドリンクディスペンサー JOLLY8.1G・EXTRA12.1A｜楽天より安く"
 head_keyword: "コールドドリンクディスペンサー"
-og_stat: "コールドドリンクディスペンサー"
-og_stat_label: "ブラス（BRAS）JOLLY8.1G・EXTRA12.1A・EXTRA12.2A"
+og_stat: "ドリンクディスペンサー"
+og_stat_label: "業務用のコールドドリンク（ブラス）"
 og_stat_note: "X-Direct（株式会社エクスブリッジ）"
 ---
 
