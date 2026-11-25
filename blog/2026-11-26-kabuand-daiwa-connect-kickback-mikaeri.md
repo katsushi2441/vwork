@@ -23,6 +23,14 @@ og_stat_note: "株式会社エクスブリッジ"
 
 そのあと、前澤さんご本人が、キックバックは無いとはっきり書きました。そこで、カブアンドの目論見書を読み直して、前澤さんの言葉が本当か、それでも見返りと言えるものがあるのかを考えました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分ほどで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「キックバック0円」。夜の渋谷のスクランブル交差点の群衆を背景に、大きな見出し「キックバック0円」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/3018eb8a6d1019e0.jpg)](https://kurage.exbridge.jp/kuragev.php?id=3018eb8a6d1019e0#ref=vibeblog-kabuand-kickback)
+
+- [Kurage の考察ショート「カブアンドと大和コネクト証券、キックバック0円の見返り」（1分ほど）](https://kurage.exbridge.jp/kuragev.php?id=3018eb8a6d1019e0#ref=vibeblog-kabuand-kickback)
+
 ## 前澤さんが書いたこと
 
 11月25日、前澤さんは株主向けのお知らせをXに投稿しました。大和コネクト証券でなければならない理由を、こう書いています。
