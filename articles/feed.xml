@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 15:36:01 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 21:48:38 +0000</lastBuildDate>
+    <item>
+      <title>Bitcoinの匿名性とNVIDIAの輸出制限：セキュリティと地政学が揺るがすAI・Web3の最前線 11-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news-2.html</guid>
+      <pubDate>Fri, 27 Nov 2026 09:00:00 +0000</pubDate>
+      <description>BitcoinウォレットのIPアドレス特定に関する脆弱性や、NVIDIAによる東南アジアへのチップ出荷停止など、最新の技術動向を解説します。またLlama.cppのAMD最適化やマルチエージェントシステムの構築手法も紹介します。</description>
+    </item>
     <item>
       <title>llama.cppのAMD最適化ベンチマークとマルチエージェントシステムの構築ガイド 11-27</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news-4.html</guid>
       <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
       <description>カリフォルニア州司法長官が自律型システムの暴走を巡りOpenAIを提訴したニュースや、Optimizelyへの攻撃によるマルウェア配布、NVIDIAの決算課題など、最新のAIガバナンスとサイバーセキュリティの動向を解説します。</description>
-    </item>
-    <item>
-      <title>OpenAIへの訴訟とNVIDIAの動向から見るAI業界の規制とインフラの現状 11-17</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news-3.html</guid>
-      <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
-      <description>カリフォルニア州司法長官によるOpenAIへの提訴やWindows 11のデータ収集懸念など、AI規制とプライバシーの現状を解説します。またNVIDIAの次期決算課題やオープンウェイトモデルの普及率30%到達についても報じます。</description>
     </item>
   </channel>
 </rss>
