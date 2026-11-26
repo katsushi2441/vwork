@@ -23,6 +23,14 @@ permalink: /blog/2026-11-27-kabuand-demerit-kabu-hikikaeken-cost.html
 
 では、ポイントの代わりに株を配るカブアンドにも、同じような得はあるのか。逆に、ポイントより発行する側の負担が大きいのではないか。カブ＆ピースの有価証券報告書（第2期：2025年2月〜2026年1月）と有価証券届出書（第5期募集）、カブアンドの代理人の法律事務所の解説を読んで考えました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分足らずで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「カブアンドのデメリット」。夜の渋谷のスクランブル交差点の群衆を背景に、大きな見出し「カブアンドのデメリット」と、右下に話す Kurage](https://kurage.exbridge.jp/thumbs/31d2084a74ee6836.jpg)](https://kurage.exbridge.jp/kuragev.php?id=31d2084a74ee6836#ref=vibeblog-kabuand-demerit)
+
+- [Kurage の考察ショート「カブアンドのデメリット」（1分足らず）](https://kurage.exbridge.jp/kuragev.php?id=31d2084a74ee6836#ref=vibeblog-kabuand-demerit)
+
 ## 株引換券にも、失効益に近いものはある
 
 有価証券報告書の会計方針を読むと、株引換券にも失効益に近い扱いがあります。
