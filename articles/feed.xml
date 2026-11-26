@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Wed, 25 Nov 2026 21:44:45 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 03:56:03 +0000</lastBuildDate>
+    <item>
+      <title>Anthropicの技術革新とEUによるDeFi規制動向：AI・Web3の最前線 11-26</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-26-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-26-ai-news-3.html</guid>
+      <pubDate>Thu, 26 Nov 2026 09:00:00 +0000</pubDate>
+      <description>AnthropicによるGRH Lean検証の短縮版公開やAIエージェントの安全性に関する議論を解説します。また、EUの銀行監視機関によるDeFi貸付への規制要求やOpenAIの利用制限方針など、最新の技術動向を網羅しています。</description>
+    </item>
     <item>
       <title>Character.AIのデータ売却問題とOpenAIによるChatGPT利用制限の動向 11-26</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-26-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-16-ai-news.html</guid>
       <pubDate>Mon, 16 Nov 2026 09:00:00 +0000</pubDate>
       <description>基盤モデルの事前学習における再帰的自己改善（RSI）の適用に関する最新論文を紹介します。また、strataのアップデート後にQwen3.8-Flash-Nextの性能が低下した事例を分析し、フレームワーク更新の影響を解説します。</description>
-    </item>
-    <item>
-      <title>MacBook ProのOLEDとQwen 27Bの高速推論：最新ハードウェア・AI動向まとめ 11-16</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-16-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-16-ai-news-2.html</guid>
-      <pubDate>Mon, 16 Nov 2026 09:00:00 +0000</pubDate>
-      <description>MacBook ProのOLEDパネルにおけるPWMちらつきの問題や、Basalt 0.4.0でQwen 27BをRTX 5090で最大770 tok/sで動作させる技術動向を解説します。最新ハードウェアとAI推論の進化をまとめました。</description>
     </item>
   </channel>
 </rss>
