@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 10:10:14 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 15:36:01 +0000</lastBuildDate>
+    <item>
+      <title>llama.cppのAMD最適化ベンチマークとマルチエージェントシステムの構築ガイド 11-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news.html</guid>
+      <pubDate>Fri, 27 Nov 2026 09:00:00 +0000</pubDate>
+      <description>llama.cppにおけるAMD RyzenやRadeon向けのベンチマーク公開情報に加え、自然界の群れを応用したマルチエージェントシステムの構築・学習・評価ガイドを紹介します。最新のAI技術動向を網羅的に解説します。</description>
+    </item>
     <item>
       <title>Anthropicの技術革新とEUによるDeFi規制動向：AI・Web3の最前線 11-26</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-26-ai-news-3.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news-3.html</guid>
       <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
       <description>カリフォルニア州司法長官によるOpenAIへの提訴やWindows 11のデータ収集懸念など、AI規制とプライバシーの現状を解説します。またNVIDIAの次期決算課題やオープンウェイトモデルの普及率30%到達についても報じます。</description>
-    </item>
-    <item>
-      <title>OpenAIへの訴訟とNVIDIAの動向から見るAI業界の法的・構造的変化 11-17</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news-2.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news-2.html</guid>
-      <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
-      <description>カリフォルニア州司法長官によるOpenAIへの提訴や、FBIが警告するArtex AIのハッキング事例など、AI業界の法的・セキュリティ的課題を解説します。またNVIDIAの動向やオープンウェイトモデルの最新動向も網羅しています。</description>
     </item>
   </channel>
 </rss>

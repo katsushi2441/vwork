@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [llama.cppのAMD最適化ベンチマークとマルチエージェントシステムの構築ガイド 11-27](2026-11-27-ai-news.html)
 - [TheとSQLiteで読む：Anthropicの技術進展とビットコインマイニングを標的とした大規模サイバー攻撃の衝撃 11-26](2026-11-26-ai-news-4.html)
 - [Anthropicの技術革新とEUによるDeFi規制動向：AI・Web3の最前線 11-26](2026-11-26-ai-news-3.html)
 - [Character.AIのデータ売却問題とOpenAIによるChatGPT利用制限の動向 11-26](2026-11-26-ai-news-2.html)
