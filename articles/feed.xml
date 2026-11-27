@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 04:01:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 10:15:24 +0000</lastBuildDate>
     <item>
       <title>Nvidiaの東南アジア向け出荷停止と、ビットコインウォレットのIPアドレス露出に関するセキュリティ警告 11-27</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news-3.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news.html</guid>
       <pubDate>Fri, 27 Nov 2026 09:00:00 +0000</pubDate>
       <description>llama.cppにおけるAMD RyzenやRadeon向けのベンチマーク公開情報に加え、自然界の群れを応用したマルチエージェントシステムの構築・学習・評価ガイドを紹介します。最新のAI技術動向を網羅的に解説します。</description>
+    </item>
+    <item>
+      <title>Nvidiaの輸出規制とAIセルフホスティングのセキュリティ課題 11-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news-4.html</guid>
+      <pubDate>Fri, 27 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Nvidiaによる東南アジアへのチップ出荷停止や米国の輸出管理強化など、地政学的な影響を解説します。また、AIセルフホスティングにおけるセキュリティ課題や、Tetherの資産凍結プロセスに関する最新動向をまとめました。</description>
     </item>
     <item>
       <title>Anthropicの技術革新とEUによるDeFi規制動向：AI・Web3の最前線 11-26</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-18-ai-news-2.html</guid>
       <pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate>
       <description>OpenAIが高度なエージェント機能を備えたGPT-6.2 Astraを発表し、Microsoftはコーディング能力を強化するMAI Code 2を公開しました。さらに投資銀行業務の自動化に向けModel MLが2億5000万ドルを調達したニュースも紹介します。</description>
-    </item>
-    <item>
-      <title>米国によるAIチップ輸出規制の強化とSolanaの「ベータ」脱却 11-17</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news.html</guid>
-      <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
-      <description>米国によるAIチップ輸出規制の強化やSolanaが「ベータ」表記を撤回したニュースを解説します。また、Dreamteamの5,300万ドル調達や新LLM「Hy4 flash」の登場など最新技術動向を網羅しています。</description>
     </item>
   </channel>
 </rss>
