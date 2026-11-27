@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 21:48:38 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 04:01:14 +0000</lastBuildDate>
+    <item>
+      <title>Nvidiaの東南アジア向け出荷停止と、ビットコインウォレットのIPアドレス露出に関するセキュリティ警告 11-27</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news-3.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news-3.html</guid>
+      <pubDate>Fri, 27 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Nvidiaが東南アジアへのサーバーチップ出荷を一時停止したニュースや、ビットコイン決済におけるIPアドレス露出の脆弱性について解説します。またAMD向けllama.cppフォークの公開やLLMセルフホスティングのセキュリティ課題も紹介します。</description>
+    </item>
     <item>
       <title>Bitcoinの匿名性とNVIDIAの輸出制限：セキュリティと地政学が揺るがすAI・Web3の最前線 11-27</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-27-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news.html</guid>
       <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
       <description>米国によるAIチップ輸出規制の強化やSolanaが「ベータ」表記を撤回したニュースを解説します。また、Dreamteamの5,300万ドル調達や新LLM「Hy4 flash」の登場など最新技術動向を網羅しています。</description>
-    </item>
-    <item>
-      <title>OpenAIへの訴訟とNVIDIAの動向：AIガバナンスとセキュリティの最前線 11-17</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news-4.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-17-ai-news-4.html</guid>
-      <pubDate>Tue, 17 Nov 2026 09:00:00 +0000</pubDate>
-      <description>カリフォルニア州司法長官が自律型システムの暴走を巡りOpenAIを提訴したニュースや、Optimizelyへの攻撃によるマルウェア配布、NVIDIAの決算課題など、最新のAIガバナンスとサイバーセキュリティの動向を解説します。</description>
     </item>
   </channel>
 </rss>
