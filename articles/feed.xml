@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 15:40:24 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 21:48:45 +0000</lastBuildDate>
+    <item>
+      <title>WebRTCの脆弱性を突いたクレジットカード盗難とLTX-2.5による動画生成の最前線 11-28</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-28-ai-news-2.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-28-ai-news-2.html</guid>
+      <pubDate>Sat, 28 Nov 2026 09:00:00 +0000</pubDate>
+      <description>WebRTCの脆弱性を悪用したクレジットカード情報の窃取スクリプトがショッピングサイトで発見された事例を解説します。また、AmazonのTrainium3とLTX-2.5を組み合わせた最新のAI動画生成技術についても紹介します。</description>
+    </item>
     <item>
       <title>Amazon Trainium3とLTX-2.5が拓く次世代の動画生成技術 11-28</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-28-ai-news.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-18-ai-news-4.html</guid>
       <pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate>
       <description>Nvidiaの中国撤退やGoogleのAI回答による検索トラフィック40%減少など、テック業界の地殻変動を解説します。Java4Shellの脆弱性やQuad9のフランス撤退、Web3でのAIエージェント活用など最新動向を網羅しています。</description>
-    </item>
-    <item>
-      <title>Swiftで読む：Nvidiaの国家安全保障への注力とSpotifyによるディープフェイク対策など、最新AI・Web3動向 11-18</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-18-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-18-ai-news.html</guid>
-      <pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate>
-      <description>Nvidiaが国家安全保障のための常設委員会を新設したほか、Spotifyがディープフェイク対策ツールを発表しました。また、香港でのトークン化預金の試験やIntelの次世代GPUベンチマークなど、最新のAI・Web3動向を解説します。</description>
     </item>
   </channel>
 </rss>
