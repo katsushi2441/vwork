@@ -8,6 +8,7 @@ permalink: /blog/
 
 バイブコーディングによるシステム内製化の実践記録です。名古屋の経営者・プログラマー社長が、AIと一緒に作り続けています。
 
+- [死後にスマホやSNSを見られたくない。データ削除を実現する方法を考える](2026-11-27-shigo-smartphone-sns-data-sakujyo.html)
 - [AI VTuberがライブ配信し、AIがデモ動画まで作る時代へ — Kurage AI VTuberとKurage Argo Videoが完成しました](2026-06-21-kurage-ai-vtuber-kargov-business.html)
 - [AIで経営を変える — 株式会社エクスブリッジが実証するバイブコーディング内製化](2026-05-29-exbridge-for-business.html)
 - [経営者こそ見るべき、AIが毎日作るニュース動画「Horizon-AI生成ニュース動画」](2026-05-29-horizonv-for-business.html)
