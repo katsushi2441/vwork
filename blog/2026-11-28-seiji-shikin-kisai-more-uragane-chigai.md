@@ -21,6 +21,14 @@ permalink: /blog/2026-11-28-seiji-shikin-kisai-more-uragane-chigai.html
 
 これを見て、「自民党の裏金議員と同じことでは」と思った人もいると思います。同じなのか、違うのか。謝罪文に足りないことはないか。そして、こうした記載漏れをどうすればなくせるのかを考えました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分足らずで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「記載漏れは裏金？」。政治資金収支報告書の記載漏れと裏金の違い、AIで記載漏れを防ぐ方法](https://kurage.exbridge.jp/thumbs/f8ffe1bc16f8f4be.jpg)](https://kurage.exbridge.jp/kuragev.php?id=f8ffe1bc16f8f4be#ref=vibeblog-seiji-shikin-kisai-more)
+
+- [Kurage の考察ショート「記載漏れは裏金？」（1分足らず）](https://kurage.exbridge.jp/kuragev.php?id=f8ffe1bc16f8f4be#ref=vibeblog-seiji-shikin-kisai-more)
+
 ## 裏金と同じところ
 
 どちらも、政治資金収支報告書にお金の出入りを書いていなかった、という問題です。政治資金規正法の上では、どちらも「不記載」にあたります。書くべきものを書いていなかったという点では、同じ種類の誤りです。
