@@ -23,6 +23,14 @@ permalink: /blog/2026-11-27-kojin-joho-toriatsukai-sakujo-shomei.html
 
 この「削除します」を、本当に証明できる仕組みはないか。考えたことをまとめます。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分足らずで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「本当に消えた？」。個人情報の「削除します」を第三者機関の削除証明で確かめる仕組み](https://kurage.exbridge.jp/thumbs/7456c3b14ed0df68.jpg)](https://kurage.exbridge.jp/kuragev.php?id=7456c3b14ed0df68#ref=vibeblog-kojin-joho)
+
+- [Kurage の考察ショート「本当に消えた？」（1分足らず）](https://kurage.exbridge.jp/kuragev.php?id=7456c3b14ed0df68#ref=vibeblog-kojin-joho)
+
 ## 法律でも、消すのは「努力義務」
 
 個人情報保護法には、個人データを使う必要がなくなったときは「遅滞なく消去するよう努めなければならない」と書かれています。決まりはありますが、努めなければならない、という努力義務です。いつまでに、どう消したかを本人に示す決まりはありません。
