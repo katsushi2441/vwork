@@ -21,6 +21,15 @@ AIで業務を効率化したい、自動化したいという相談が増えま
 
 この1年、お客様の会社と自社で、AIと一緒に仕事をする仕組みを作ってきました。そこでわかったのは、AIで業務を自動化するには、AIの道具を入れるだけでは足りず、AIが業務システムを直接扱える土台が要るということです。この記事では、その土台を「AIシステム基盤」と呼んで、考えをまとめます。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分ほどで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「AIシステム基盤」。Copilot を入れるだけでは業務は変わらない理由](https://kurage.exbridge.jp/thumbs/eb826d1a98b550a7.jpg)](https://kurage.exbridge.jp/kuragev.php?id=eb826d1a98b550a7#ref=vibeblog-ai-system-kiban)
+
+- [Kurage の考察ショート「AIシステム基盤」（1分ほど）](https://kurage.exbridge.jp/kuragev.php?id=eb826d1a98b550a7#ref=vibeblog-ai-system-kiban)
+- [AIシステム基盤を1枚の図で（画像）](https://exbridge.jp/pdf/ai-system-kiban-zu.png#ref=vibeblog-ai-system-kiban)
+
 ## 業務支援と業務自動化は違う
 
 生成AIを入れてすぐにできるのは、業務支援です。
