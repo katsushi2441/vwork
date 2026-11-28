@@ -99,7 +99,7 @@ AIの道具（Copilot や Claude Code）は、この上に乗るものです。�
 ここまでの話を、A4 1枚の資料にまとめました。左が「AIを入れただけの会社」、右が「AIシステム基盤がある会社」です。画像を押すと PDF が開きます。
 
 <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start;margin:16px 0 8px">
-<a href="https://exbridge.jp/pdf/ai-system-kiban.pdf#ref=vibeblog-ai-system-kiban" target="_blank" rel="noopener" style="flex:1 1 320px;max-width:520px;display:block;border:1px solid #d5dee8;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 20px rgba(16,36,43,.08)"><img src="https://exbridge.jp/pdf/ai-system-kiban.png" alt="AIシステム基盤の説明資料（A4）。AIを入れただけの会社と、AIシステム基盤がある会社の違い、5つの層、めざす4段階、化学分析会社の実績、進め方" width="992" height="1404" loading="lazy" style="width:100%;height:auto;display:block"></a>
+<a href="https://exbridge.jp/pdf/ai-system-kiban.pdf#ref=vibeblog-ai-system-kiban" target="_blank" rel="noopener" style="flex:1 1 320px;max-width:520px;display:block;border:1px solid #d5dee8;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 20px rgba(16,36,43,.08)"><img src="https://exbridge.jp/pdf/ai-system-kiban.png" alt="AIシステム基盤の説明資料（A4）。AIを入れただけの会社と、AIシステム基盤がある会社の違い、5つの層、めざす4段階、化学分析会社の実績、進め方" width="992" height="1404" style="width:100%;height:auto;display:block"></a>
 <div style="flex:1 1 260px;min-width:0">
 <ul style="margin:0 0 14px;padding-left:1.2em;line-height:1.85">
 <li><b>違いはAIの道具ではなく、AIが業務システムに届くかどうか。</b>AIは Copilot・Gemini・ChatGPT・Claude Code のどれでも構いません。</li>
