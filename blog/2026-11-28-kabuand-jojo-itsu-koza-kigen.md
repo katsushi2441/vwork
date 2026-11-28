@@ -23,6 +23,14 @@ permalink: /blog/2026-11-28-kabuand-jojo-itsu-koza-kigen.html
 
 上場の日が決まっていないのに、なぜ期限だけが決まっているのか。この期限はだれのためのものかを考えました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分足らずで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「カブアンドの上場はいつ？」。口座開設の期限は上場が近いという意味ではない](https://kurage.exbridge.jp/thumbs/2c6e4e20324c8c45.jpg)](https://kurage.exbridge.jp/kuragev.php?id=2c6e4e20324c8c45#ref=vibeblog-kabuand-kigen)
+
+- [Kurage の考察ショート「カブアンドの上場はいつ？」（1分足らず）](https://kurage.exbridge.jp/kuragev.php?id=2c6e4e20324c8c45#ref=vibeblog-kabuand-kigen)
+
 ## 期限までにしないと、どうなるか
 
 第5期の目論見書と株主規約から分かることは、次のとおりです。
