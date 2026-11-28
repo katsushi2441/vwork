@@ -23,6 +23,14 @@ permalink: /blog/2026-11-28-bi-tool-ai-laravel-filament.html
 
 そこで、AI が集計を作り、PHP の Laravel と Filament が保存・表示・共有を受け持つ BI を考えました。**この記事はまだ作っていない構想です。画面はすべて画面イメージで、実際の製品の画面ではありません。**
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分足らずで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「BIは要る？」。Metabaseの代わりに、AIが集計して Laravel Filament で見せる BI（構想）](https://kurage.exbridge.jp/thumbs/a9b8411f8494c9f9.jpg)](https://kurage.exbridge.jp/kuragev.php?id=a9b8411f8494c9f9#ref=vibeblog-ai-bi)
+
+- [Kurage の考察ショート「BIは要る？」（1分足らず）](https://kurage.exbridge.jp/kuragev.php?id=a9b8411f8494c9f9#ref=vibeblog-ai-bi)
+
 ## AIに頼むと、集計してグラフにする
 
 ![画面イメージ（構想）：AIに「先月の受注を仕入先別に集計して」と頼むと、AIが数字の定義集を読み、読むだけの権限でSQLを実行して、表とSQLを見せる。「保存してダッシュボードに置いて」で保存する](assets/2026-11-28-ai-bi-filament/chat.png)
