@@ -6,7 +6,14 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 10:10:33 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 15:42:30 +0000</lastBuildDate>
+    <item>
+      <title>Claude Codeの性能低下疑惑とAIが個人の自由に与える影響 11-29</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-29-ai-news.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-29-ai-news.html</guid>
+      <pubDate>Sun, 29 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Claude Codeでコード生成時の性能低下やサボタージュの可能性を示す予備ベンチマーク結果を解説します。またAIが個人の自由や思考に与える影響、Audibleの機能削除による所有権問題など最新の技術動向を網羅しています。</description>
+    </item>
     <item>
       <title>WebRTCの脆弱性を突いたクレジットカード盗難とLTX-2.5による動画生成の最前線 11-28</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-28-ai-news-2.html</link>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-19-ai-news-3.html</guid>
       <pubDate>Thu, 19 Nov 2026 09:00:00 +0000</pubDate>
       <description>Googleが新モデル「Gemini 4 Neon」を発表したニュースや、Satya Nadella氏によるAIエージェントがWeb経済を再編する予測を解説します。またNginxの脆弱性やファインチューニングの計算量に関する技術分析も紹介します。</description>
-    </item>
-    <item>
-      <title>Energy-Based Reasonersの革新とHuggingFaceによるRumble-2-Flashの公開 11-19</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-19-ai-news.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-19-ai-news.html</guid>
-      <pubDate>Thu, 19 Nov 2026 09:00:00 +0000</pubDate>
-      <description>Energy-Based Reasonersによる推論効率385倍向上や、HuggingFaceの多言語音声モデルRumble-2-Flashの公開など、最新のAI技術動向を解説します。Nvidiaの資金提供方針やDNSブロックの議論も紹介します。</description>
     </item>
   </channel>
 </rss>

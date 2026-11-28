@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Claude Codeの性能低下疑惑とAIが個人の自由に与える影響 11-29](2026-11-29-ai-news.html)
 - [UnkernelによるWebAssemblyへのLinuxカーネル移植とGoogleのDeepCrossAttention技術革新 11-28](2026-11-28-ai-news-4.html)
 - [Simon Willisonのdatasette-chartsが新リリース：データ可視化のカスタマイズ性が向上 11-28](2026-11-28-ai-news-3.html)
 - [WebRTCの脆弱性を突いたクレジットカード盗難とLTX-2.5による動画生成の最前線 11-28](2026-11-28-ai-news-2.html)
