@@ -19,6 +19,14 @@ permalink: /blog/2026-11-28-jx-tsushinsha-kaeka-seron-chosa.html
 
 2026年11月28日、JX通信社の代表の米重克洋さんが、Xで説明を投稿しました。妻が代表を務めるカエカ社と、米重さん・JX通信社との関係についての指摘に答えたものです。何が指摘され、説明はどうだったのか。世論調査の信頼という点から考えました。
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分足らずで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「世論調査は大丈夫？」。JX通信社とカエカの関係と、世論調査の信頼を保つためにできること](https://kurage.exbridge.jp/thumbs/8f3f04d868df24c3.jpg)](https://kurage.exbridge.jp/kuragev.php?id=8f3f04d868df24c3#ref=vibeblog-jx-kaeka)
+
+- [Kurage の考察ショート「世論調査は大丈夫？」（1分足らず）](https://kurage.exbridge.jp/kuragev.php?id=8f3f04d868df24c3#ref=vibeblog-jx-kaeka)
+
 ## 何が指摘されたのか
 
 2025年分の政治資金収支報告書で、高市首相の資金管理団体から株式会社カエカへの支出があったと報じられました。カエカは、政治家向けの演説の指導や、ヘアメイク、宣材の撮影などを行う会社です。
