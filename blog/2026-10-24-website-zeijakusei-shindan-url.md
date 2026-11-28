@@ -112,7 +112,7 @@ https://proto.exbridge.jp/kseccheck/#ref=vibeblog-kseccheck-pro
 
 ### 使える条件
 
-- AI-IT顧問・AI-SNS顧問（月15時間）の契約中は、Pro の点検が顧問契約に含まれます
+- AI-IT顧問・AI-SNS顧問（月16時間）の契約中は、Pro の点検が顧問契約に含まれます
 - Pro を自社のサーバーに置く形は、契約中に顧問の時間で設置でき、契約後もそのまま使えます
 
 ### Pro が使っているオープンソース

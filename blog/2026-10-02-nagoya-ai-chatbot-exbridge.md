@@ -75,7 +75,7 @@ AIチャットボットの出来は、AIの性能より、何を根拠に答え�
 2. **試作**: 一部の資料で動かし、実際によく来る質問で答えと出典を確かめます。
 3. **公開と引き継ぎ**: サイトや社内に公開し、資料の更新の仕方を引き継ぎます。
 
-名古屋市内の会社には、月15時間・税別150,000円で情報システム部門の役割を引き受ける [AI-IT顧問契約](https://exbridge.jp/ai-it-komon.html?ref=vibeblog_nagoya-ai-chatbot) もあります。キャンペーン中（期限未定）で、契約期間中に構築できる当社の販売商品は、商品代金なしで構築します。仕様書を待たずに動くものを見たい方には、初日のヒアリングと提案が無料の [AI導入のお試し](https://exbridge.jp/nagoya-system-development.html?ref=vibeblog_nagoya-ai-chatbot) もあります。
+名古屋市内の会社には、月16時間・税別160,000円で情報システム部門の役割を引き受ける [AI-IT顧問契約](https://exbridge.jp/ai-it-komon.html?ref=vibeblog_nagoya-ai-chatbot) もあります。キャンペーン中（期限未定）で、契約期間中に構築できる当社の販売商品は、商品代金なしで構築します。仕様書を待たずに動くものを見たい方には、初日のヒアリングと提案が無料の [AI導入のお試し](https://exbridge.jp/nagoya-system-development.html?ref=vibeblog_nagoya-ai-chatbot) もあります。
 
 ## よくある質問
 

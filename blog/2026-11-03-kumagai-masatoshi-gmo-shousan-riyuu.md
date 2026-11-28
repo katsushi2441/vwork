@@ -101,4 +101,4 @@ GMOグループの売上は約2,856億円（2025年12月期）です。会社を
 - 外から見える守りの弱いところを、URLを入れるだけで点検する（[Kurage Security Check](https://kappstore.exbridge.jp/app.php?id=a96e95e176b48800#ref=vibeblog-kumagai)）
 - サイトの書き換え（改ざん）を見張って知らせる（[Kurage Security Watch](https://kappstore.exbridge.jp/app.php?id=9dd7d5be638f9cb8#ref=vibeblog-kumagai)）
 
-指摘された課題を、どの順で、いつまでに直すかを一緒に決めて進めるなら、[AI-IT顧問](https://exbridge.jp/ai-it-komon.html#ref=vibeblog-kumagai)（愛知県内・月15時間・税別150,000円）で引き受けます。
+指摘された課題を、どの順で、いつまでに直すかを一緒に決めて進めるなら、[AI-IT顧問](https://exbridge.jp/ai-it-komon.html#ref=vibeblog-kumagai)（愛知県内・月16時間・税別160,000円）で引き受けます。

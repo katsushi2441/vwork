@@ -119,6 +119,6 @@ og_stat_note: "株式会社エクスブリッジ（名古屋）"
 - FAX・電話の注文をWEBで受ける受発注（[Kurage Web Order](https://kappstore.exbridge.jp/app.php?id=88acc4be142bd444#ref=vibeblog-shukyu3)）と、注文書を読み取るAI-OCR（[Kurage OCR Work](https://kappstore.exbridge.jp/app.php?id=ef52a62e1c6bbe7a#ref=vibeblog-shukyu3)）
 - 勤怠（[顔打刻つき Kurage Kintai](https://kappstore.exbridge.jp/app.php?id=f0f56c6e4da881be#ref=vibeblog-shukyu3)）
 
-「どの仕事に何時間かかっているかを測る → AIに置き換える → 休日のカレンダーを作る」までを一緒に進めるなら、[AI-IT顧問](https://exbridge.jp/ai-it-komon.html#ref=vibeblog-shukyu3)（愛知県内・月15時間・税別150,000円）で引き受けます。当社が出すのは、何日・どの曜日を休みにできるかの数字と計算までで、就業規則と労使協定は社会保険労務士と進めてください。
+「どの仕事に何時間かかっているかを測る → AIに置き換える → 休日のカレンダーを作る」までを一緒に進めるなら、[AI-IT顧問](https://exbridge.jp/ai-it-komon.html#ref=vibeblog-shukyu3)（愛知県内・月16時間・税別160,000円）で引き受けます。当社が出すのは、何日・どの曜日を休みにできるかの数字と計算までで、就業規則と労使協定は社会保険労務士と進めてください。
 
 週休3日制を考えている方は、[お問い合わせ](https://exbridge.jp/contact.php?subject=%E3%83%96%E3%83%AD%E3%82%B0%E3%80%8C%E9%80%B1%E4%BC%913%E6%97%A5%E5%88%B6%E3%80%8D%E3%82%92%E8%AA%AD%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82#ref=vibeblog-shukyu3)から、いまの年間休日と社員の人数を書いて送ってください。週休3日にするために、仕事の時間を何割減らせばよいかを計算します。

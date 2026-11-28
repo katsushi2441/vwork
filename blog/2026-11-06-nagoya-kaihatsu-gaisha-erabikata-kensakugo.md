@@ -76,8 +76,8 @@ og_stat_note: "株式会社エクスブリッジ（名古屋）"
 - 要件を送って業務システムを作ってもらう（[業務システム開発](https://exbridge.jp/gyomu-system-kaihatsu.html#ref=vibeblog-nagoya-erabikata)・税別15〜20万円・最短4営業日）
 - 設計書から動くデモを先に作る（バイブプロトタイプ制作・税別300,000円）
 - 名古屋市内で、目の前で作る（AI導入のお試し・計15時間・税別150,000円）
-- 情報システムの担当をまとめて任せる（[AI-IT顧問](https://exbridge.jp/ai-it-komon.html#ref=vibeblog-nagoya-erabikata)・愛知県内・月15時間・税別150,000円）
-- 集客とホームページ・Webシステムもまとめて任せる（[AI-SNS顧問](https://exbridge.jp/ai-sns-komon.html#ref=vibeblog-nagoya-erabikata)・月15時間・税別150,000円）
+- 情報システムの担当をまとめて任せる（[AI-IT顧問](https://exbridge.jp/ai-it-komon.html#ref=vibeblog-nagoya-erabikata)・愛知県内・月16時間・税別160,000円）
+- 集客とホームページ・Webシステムもまとめて任せる（[AI-SNS顧問](https://exbridge.jp/ai-sns-komon.html#ref=vibeblog-nagoya-erabikata)・月16時間・税別160,000円）
 
 ### ホームページ制作 名古屋
 

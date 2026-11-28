@@ -97,4 +97,4 @@ DD2030 のコアループの最後は「社会の改善実感まで届ける」�
 
 ### このやり方を、自分たちの組織で回したいときは？
 
-当社のシステムは、議員事務所や自治体が自前のサーバーで持てる形で、[Kurage App Store](https://kappstore.exbridge.jp/?ref=vibeblog_bl-kouhan)で扱っています。追いたい論点に合わせて作り変える[バイブカスタマイズ](https://kurage.exbridge.jp/vibe-customize.html?ref=vibeblog_bl-kouhan)や、名古屋市内で月15時間の[AI-IT顧問契約](https://exbridge.jp/ai-it-komon.html?ref=vibeblog_bl-kouhan)もお受けしています。
+当社のシステムは、議員事務所や自治体が自前のサーバーで持てる形で、[Kurage App Store](https://kappstore.exbridge.jp/?ref=vibeblog_bl-kouhan)で扱っています。追いたい論点に合わせて作り変える[バイブカスタマイズ](https://kurage.exbridge.jp/vibe-customize.html?ref=vibeblog_bl-kouhan)や、名古屋市内で月16時間の[AI-IT顧問契約](https://exbridge.jp/ai-it-komon.html?ref=vibeblog_bl-kouhan)もお受けしています。

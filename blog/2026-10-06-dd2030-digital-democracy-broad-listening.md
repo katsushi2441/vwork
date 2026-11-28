@@ -83,4 +83,4 @@ AIを使って市民の意見を集め、合意をつくり、政策として実
 
 ### 当社のシステムはどこで買えますか？
 
-[Kurage App Store](https://kappstore.exbridge.jp/?ref=vibeblog_dd2030)で扱っています。ソースコード付きで、月額はかかりません。議員事務所や自治体の業務に合わせて作り変える[バイブカスタマイズ](https://kurage.exbridge.jp/vibe-customize.html?ref=vibeblog_dd2030)や、名古屋市内で月15時間の[AI-IT顧問契約](https://exbridge.jp/ai-it-komon.html?ref=vibeblog_dd2030)もお受けしています。
+[Kurage App Store](https://kappstore.exbridge.jp/?ref=vibeblog_dd2030)で扱っています。ソースコード付きで、月額はかかりません。議員事務所や自治体の業務に合わせて作り変える[バイブカスタマイズ](https://kurage.exbridge.jp/vibe-customize.html?ref=vibeblog_dd2030)や、名古屋市内で月16時間の[AI-IT顧問契約](https://exbridge.jp/ai-it-komon.html?ref=vibeblog_dd2030)もお受けしています。

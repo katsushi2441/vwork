@@ -120,4 +120,4 @@ agent-desktop は、この「ブラウザの外」に手が届く部品です。
 
 それでも、最後に Windows の会計ソフトや販売管理ソフトへ打ち直す手間が残る会社があります。agent-desktop は、その最後の転記を自動にする候補です。当社では、判断を手元のサーバーで行い、画面の情報を社外に出さない形で試す予定です。
 
-「この業務ソフトへの転記を自動にできるか」を一緒に確かめて進めるなら、[AI-IT顧問](https://exbridge.jp/ai-it-komon.html#ref=vwork-agent-desktop)（愛知県内・月15時間・税別150,000円）で引き受けます。
+「この業務ソフトへの転記を自動にできるか」を一緒に確かめて進めるなら、[AI-IT顧問](https://exbridge.jp/ai-it-komon.html#ref=vwork-agent-desktop)（愛知県内・月16時間・税別160,000円）で引き受けます。

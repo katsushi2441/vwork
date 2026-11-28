@@ -116,4 +116,4 @@ og_stat_note: "第211回国会〜第222回国会"
 
 ### 自分の会社や団体でも、こうした仕組みを持てますか？
 
-当社は、議会・行政向けのシステムを、議員事務所や自治体が自前のサーバーで持てる形で作っています。[Kurage App Store](https://kappstore.exbridge.jp/?ref=vibeblog_mirai) で扱っているほか、業務に合わせて作り変える[バイブカスタマイズ](https://kurage.exbridge.jp/vibe-customize.html?ref=vibeblog_mirai)や、名古屋市内で月15時間の[AI-IT顧問契約](https://exbridge.jp/ai-it-komon.html?ref=vibeblog_mirai)もお受けしています。
+当社は、議会・行政向けのシステムを、議員事務所や自治体が自前のサーバーで持てる形で作っています。[Kurage App Store](https://kappstore.exbridge.jp/?ref=vibeblog_mirai) で扱っているほか、業務に合わせて作り変える[バイブカスタマイズ](https://kurage.exbridge.jp/vibe-customize.html?ref=vibeblog_mirai)や、名古屋市内で月16時間の[AI-IT顧問契約](https://exbridge.jp/ai-it-komon.html?ref=vibeblog_mirai)もお受けしています。
