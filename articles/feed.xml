@@ -6,7 +6,7 @@
     <description>OSSの日本語化・本家貢献・セルフホストの技術解説。</description>
     <atom:link href="https://katsushi2441.github.io/vwork/articles/feed.xml" rel="self" type="application/rss+xml"/>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 04:01:34 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 10:10:33 +0000</lastBuildDate>
     <item>
       <title>WebRTCの脆弱性を突いたクレジットカード盗難とLTX-2.5による動画生成の最前線 11-28</title>
       <link>https://katsushi2441.github.io/vwork/articles/2026-11-28-ai-news-2.html</link>
@@ -27,6 +27,13 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-28-ai-news.html</guid>
       <pubDate>Sat, 28 Nov 2026 09:00:00 +0000</pubDate>
       <description>HuggingFaceが最新動画生成モデル「LTX-2.5」を公開しました。Amazon Trainium3を活用することで高速なビデオ生成が可能となり、クリエイティブなワークフローにおけるAI活用が加速します。</description>
+    </item>
+    <item>
+      <title>UnkernelによるWebAssemblyへのLinuxカーネル移植とGoogleのDeepCrossAttention技術革新 11-28</title>
+      <link>https://katsushi2441.github.io/vwork/articles/2026-11-28-ai-news-4.html</link>
+      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-28-ai-news-4.html</guid>
+      <pubDate>Sat, 28 Nov 2026 09:00:00 +0000</pubDate>
+      <description>WebAssembly上で動作するLinuxカーネル「Unkernel」の登場や、Googleが発表したTransformerを最大3倍高速化するDeepCrossAttention技術について解説します。最新のデータ可視化ツールdatasette-chartsの更新情報も紹介します。</description>
     </item>
     <item>
       <title>Nvidiaの東南アジア向け出荷停止と、ビットコインウォレットのIPアドレス露出に関するセキュリティ警告 11-27</title>
@@ -279,13 +286,6 @@
       <guid>https://katsushi2441.github.io/vwork/articles/2026-11-19-ai-news.html</guid>
       <pubDate>Thu, 19 Nov 2026 09:00:00 +0000</pubDate>
       <description>Energy-Based Reasonersによる推論効率385倍向上や、HuggingFaceの多言語音声モデルRumble-2-Flashの公開など、最新のAI技術動向を解説します。Nvidiaの資金提供方針やDNSブロックの議論も紹介します。</description>
-    </item>
-    <item>
-      <title>Nvidiaの経営体制激変とJava4Shellの脆弱性：Jensen Huang氏の退任が与える衝撃 11-18</title>
-      <link>https://katsushi2441.github.io/vwork/articles/2026-11-18-ai-news-3.html</link>
-      <guid>https://katsushi2441.github.io/vwork/articles/2026-11-18-ai-news-3.html</guid>
-      <pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate>
-      <description>OpenJDKで発見されたJava4ShellのRCE脆弱性や、NvidiaのJensen Huang氏退任に伴う中国市場撤退の報道を解説します。また、AIエージェントによる金融取引の未来予測など最新技術動向を網羅しています。</description>
     </item>
   </channel>
 </rss>
