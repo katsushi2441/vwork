@@ -20,6 +20,7 @@ Codex、Claude、Ollama、AIエージェント、OSS、自動化、GitHub活用�
 
 ## 2026年8月の記事（63本）
 
+- [Simon Willisonのdatasette-chartsが新リリース：データ可視化のカスタマイズ性が向上 11-28](2026-11-28-ai-news-3.html)
 - [WebRTCの脆弱性を突いたクレジットカード盗難とLTX-2.5による動画生成の最前線 11-28](2026-11-28-ai-news-2.html)
 - [Amazon Trainium3とLTX-2.5が拓く次世代の動画生成技術 11-28](2026-11-28-ai-news.html)
 - [Nvidiaの輸出規制とAIセルフホスティングのセキュリティ課題 11-27](2026-11-27-ai-news-4.html)
