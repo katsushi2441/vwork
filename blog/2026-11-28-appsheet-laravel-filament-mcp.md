@@ -25,6 +25,14 @@ permalink: /blog/2026-11-28-appsheet-laravel-filament-mcp.html
 
 そこで、オープンソースの部品で同じような業務アプリの土台を作り、さらに AI がつながって操作できる形を考えました。**この記事はまだ作っていない構想です。画面はすべて「こうなる」という画面イメージで、実際の製品の画面ではありません。**
 
+## 1分で見る：Kurage の考察ショート動画
+
+この記事の要点を、Kurage が1分足らずで話すショート動画にしました。
+
+[![Kurage の考察ショート動画「AppSheetの料金が気になる会社へ」。Laravel Filament と MCP で、AIが作る業務アプリ（構想）](https://kurage.exbridge.jp/thumbs/bffc67d3ea1d04c6.jpg)](https://kurage.exbridge.jp/kuragev.php?id=bffc67d3ea1d04c6#ref=vibeblog-filament-mcp)
+
+- [Kurage の考察ショート「AppSheetの料金が気になる会社へ」（1分足らず）](https://kurage.exbridge.jp/kuragev.php?id=bffc67d3ea1d04c6#ref=vibeblog-filament-mcp)
+
 ## 何ができるか：AIに頼むと、業務アプリができる
 
 一番の違いは、画面を組み立てる人が要らないことです。AI（Claude・ChatGPT・Copilot・Gemini など、どれでも）に頼むと、AI が MCP という共通のつなぎ方で業務アプリを操作します。
