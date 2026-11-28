@@ -28,7 +28,7 @@ AIで業務を効率化したい、自動化したいという相談が増えま
 [![Kurage の考察ショート動画「AIシステム基盤」。Copilot を入れるだけでは業務は変わらない理由](https://kurage.exbridge.jp/thumbs/eb826d1a98b550a7.jpg)](https://kurage.exbridge.jp/kuragev.php?id=eb826d1a98b550a7#ref=vibeblog-ai-system-kiban)
 
 - [Kurage の考察ショート「AIシステム基盤」（1分ほど）](https://kurage.exbridge.jp/kuragev.php?id=eb826d1a98b550a7#ref=vibeblog-ai-system-kiban)
-- [AIシステム基盤を1枚の図で（画像）](https://exbridge.jp/pdf/ai-system-kiban-zu.png#ref=vibeblog-ai-system-kiban)
+- [AIシステム基盤を1枚の資料で（PDF・A4）](https://exbridge.jp/pdf/ai-system-kiban.pdf#ref=vibeblog-ai-system-kiban)
 
 ## 業務支援と業務自動化は違う
 
@@ -93,6 +93,23 @@ Copilot や Claude Code は、AIの側の道具です。AIが触れる業務シ�
 4. **止まらずに動く**：受注の取り込みや定期の処理が、夜も休日も動き続ける
 
 AIの道具（Copilot や Claude Code）は、この上に乗るものです。土台があれば、使うAIを替えても業務は回り続けます。
+
+## AIシステム基盤を1枚の資料で
+
+ここまでの話を、A4 1枚の資料にまとめました。左が「AIを入れただけの会社」、右が「AIシステム基盤がある会社」です。画像を押すと PDF が開きます。
+
+<div style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start;margin:16px 0 8px">
+<a href="https://exbridge.jp/pdf/ai-system-kiban.pdf#ref=vibeblog-ai-system-kiban" target="_blank" rel="noopener" style="flex:1 1 320px;max-width:520px;display:block;border:1px solid #d5dee8;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 6px 20px rgba(16,36,43,.08)"><img src="https://exbridge.jp/pdf/ai-system-kiban.png" alt="AIシステム基盤の説明資料（A4）。AIを入れただけの会社と、AIシステム基盤がある会社の違い、5つの層、めざす4段階、化学分析会社の実績、進め方" width="992" height="1404" loading="lazy" style="width:100%;height:auto;display:block"></a>
+<div style="flex:1 1 260px;min-width:0">
+<ul style="margin:0 0 14px;padding-left:1.2em;line-height:1.85">
+<li><b>違いはAIの道具ではなく、AIが業務システムに届くかどうか。</b>AIは Copilot・Gemini・ChatGPT・Claude Code のどれでも構いません。</li>
+<li><b>つくるもの</b>：業務システム、AIの入口（API・MCP）、記録と承認、止まらない置き場所（Linux サーバー）。</li>
+<li><b>めざす姿</b>：① 業務支援 → ② 業務自動化 → ③ AI駆動経営 → ④ 完全自動の収益化。</li>
+<li><b>実績</b>：ある化学分析会社で、4か月・120時間で約40の業務システム（1つ平均3時間）。</li>
+</ul>
+<p style="margin:0"><a href="https://exbridge.jp/pdf/ai-system-kiban.pdf#ref=vibeblog-ai-system-kiban" target="_blank" rel="noopener" style="display:inline-block;border-radius:10px;padding:10px 14px;font-weight:700;text-decoration:none;background:#0a8f85;color:#fff;margin:0 8px 8px 0">資料をPDFで開く（A4・1枚）</a><a href="https://exbridge.jp/ai-it-komon.html#ref=vibeblog-ai-system-kiban" style="display:inline-block;border-radius:10px;padding:8px 12px;font-weight:700;text-decoration:none;border:2px solid #0a8f85;color:#0a8f85;background:#fff">AI-IT顧問を見る</a></p>
+</div>
+</div>
 
 ## 置き場所は Linux がよい
 
